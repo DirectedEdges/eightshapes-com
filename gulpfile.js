@@ -19,7 +19,7 @@ gulp.task('browser-sync', function(){
 
 // MARKUP
 gulp.task('render-nunjucks', function(){
-	var env = nunjucksRender.nunjucks.configure(['src/templates/', 'src/layouts/', 'src/partials/', 'src/templates/components/'], {watch: false, autoescape: true });
+	var env = nunjucksRender.nunjucks.configure(['src/templates/'], {watch: false, autoescape: true });
 
 
 	// Update/Add a property within an object 
