@@ -1,0 +1,28 @@
+{
+  "name": "eightshapes_com",
+  "version": "1.0.0",
+  "description": "Marketing site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://nathanacurtis@github.com/EightShapes/eightshapes_com.git"
+  },
+  "author": "Nathan Curtis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EightShapes/eightshapes_com/issues"
+  },
+  "homepage": "https://github.com/EightShapes/eightshapes_com#readme",
+  "devDependencies": {
+    "browser-sync": "^2.9.11",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-nunjucks-render": "^1.0.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.6"
+  }
+}
