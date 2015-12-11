@@ -1,0 +1,87 @@
+hr {
+  background: $color-gray-95;
+  border: 0;
+  height: 1px;
+  margin-bottom: $spacing-default;
+  margin-top: $spacing-default;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-light;
+  margin: 0;
+
+  + {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: $spacing-default;
+    }
+  }
+}
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-size: $font-size-h2;
+}
+
+h3 {
+  font-size: $font-size-h3;
+}
+
+h4 {
+  font-size: $font-size-h4;
+}
+
+h5 {
+  font-size: $font-size-h5;
+}
+
+h6 {
+  font-size: $font-size-h6;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  color: $color-text-default;
+  font-size: $font-size-default;
+  margin: 0;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-link-hover;
+    text-decoration: underline;
+  }
+}
+
+.grid-block {
+  &:after {
+    color: $color-white;
+    content: 'Grid';
+    display: block;
+    font-size: $font-size-lg;
+    text-align: center;
+    width: 100%;
+  }
+  background: $color-blue;
+  height: 100px;
+  margin-bottom: $grid-gutter-width;
+  width: 100%;
+}

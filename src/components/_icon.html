@@ -1,0 +1,8 @@
+{% macro icon(args) %}
+  {%- if args.icon_name == undefined -%}
+      {% set args = args|updateobj('icon_name', 'twitter') %}
+  {%- endif -%}
+  <svg class="icon-{{args.icon_name}} {{args.class}}">
+    <use xlink:href="svg/sprite.svg#{{args.icon_name}}"></use>
+  </svg>
+{% endmacro %}
