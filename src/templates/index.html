@@ -1,0 +1,46 @@
+{% extends 'default.layout.html' %}
+
+{% block content %}
+  <h1>New Site Goes Here</h1>
+  <h2>New Site Goes Here</h2>
+  <h3>New Site Goes Here</h3>
+  <h4>New Site Goes Here</h4>
+  <h5>New Site Goes Here</h5>
+  <h6>New Site Goes Here</h6>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime dignissimos nam soluta, quo dolore nulla repellat similique dicta dolorem, amet eius. Recusandae beatae nulla doloremque, illum cupiditate earum cum!</p>
+
+  {{ components.icon({icon_name: 'twitter'}) }}
+  {{ components.icon({icon_name: 'linkedin'}) }}
+  {{ components.icon({icon_name: 'medium'}) }}
+  {{ components.icon({icon_name: 'eightshapes-logo'}) }}
+  {{ components.icon({icon_name: 'eightshapes-mark', class: 'icon--large'}) }}
+  {{ components.icon({icon_name: 'eightshapes-mark', class: 'icon--blue'}) }}
+  {{ components.icon({icon_name: 'eightshapes-mark', class: 'icon--gray'}) }}
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="grid-block"></div>
+      </div>
+      <div class="col-md-4">
+        <div class="grid-block"></div>
+      </div>
+      <div class="col-md-4">
+        <div class="grid-block"></div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="grid-block"></div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="grid-block"></div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="grid-block"></div>
+      </div>
+      <div class="col-sm-6 col-md-3">
+        <div class="grid-block"></div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
