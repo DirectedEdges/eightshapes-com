@@ -8,7 +8,7 @@
   </div>
 
   <div class="container-fluid">
-    <div class="fluid-inner">
+    <div class="container-fluid-inner">
       <h2>How We've Contributed</h2>
       <p class="lead">
         EightShapes’ contributions to the UX design work include three books, a documentation templating system and a prototyping framework, not to mention countless workshops, webinars and articles.
@@ -70,5 +70,37 @@
     </div>
   </div>
   
+  {{ components.xups({
+    "up_responsiveness": "",
+    "h2": "Who We Are",
+    "lead": "We’re tenacious about solving business, customers and design challenges. We prioritize a friendly, collaborative environment. And we believe that successful projects depend on transparency, cooperation and Post-Its.",
+    "ups" : [
+       {
+         "header": "Nathan Curtis",
+         "paragraph": "Principal & Founder",  
+         "thumbnail": "nathan"
+       },
+       {
+         "header": "Dan Brown",
+         "paragraph": "Principal & Founder",
+         "thumbnail": "dan"
+       },
+       {
+         "header": "Chris Detzi",
+         "paragraph": "Sr. Director, UX",
+         "thumbnail": "chris"
+       },
+       {
+         "header": "James Melzer",
+         "paragraph": "Director, UX",
+         "thumbnail": "james"
+       },
+       {
+         "header": "Kevin Powell",
+         "paragraph": "Sr. Front End Developer",
+         "thumbnail": "kevin"
+       }
+     ]
+  }) }}
   {{ components.footer() }}
 {% endblock %}
