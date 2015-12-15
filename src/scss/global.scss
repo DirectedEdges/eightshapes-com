@@ -3,9 +3,10 @@
 // Bootstrap Grid Only
 @import "bootstrap/mixins";
 @import "bootstrap/grid";
-
 @import 'elements';
+@import 'layouts';
 
 @import 'components/workshops';
+@import 'components/xups';
 @import 'components/footer';
 @import 'components/icon';
