@@ -1,0 +1,8 @@
+{% macro content_card_double(args) %}
+  <div class="col-md-6">
+    <div class="content-card" style="background-image: url({{args.background_image}})">
+      <h4>{{args.pre_heading}}</h4>
+      <h3>{{args.heading}}</h3>
+    </div>
+  </div>
+{% endmacro %}

@@ -1,0 +1,18 @@
+.fluid-inner {
+  margin: 0 auto;
+  max-width: $screen-lg;
+}
+
+.content-card-wrap {
+  margin-left: 12px;
+  margin-right: 12px;
+
+  [class^='col-'] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.content-card {
+  padding: $spacing-default;
+}
