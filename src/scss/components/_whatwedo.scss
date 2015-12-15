@@ -1,3 +1,130 @@
+.color-charcoal {
+  background: $color-gray-20;  
+}
+
 .whatwedo {
+  margin: 0 auto 70px;
+  
+  h2 {
+    margin: 30px auto;
+    text-align: center;
+  
+    @media screen and (min-width: $screen-md) {
+      margin: 100px auto 70px;
+    }
+  }
+  h2, h3, p, li {
+    color: $color-white;    
+  }
+   
+  h3, p, li {
+    margin-bottom: $spacing-default/2;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  .block {
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;  
+  }
+  
+  ul {
+    display: inline-block;
+    width: 49%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .cta {
+    font-weight: 700;
+    text-transform: uppercase;
+    a {
+      color: white;
+    }
+    
+    @media screen and (min-width: $screen-sm) {
+      position: absolute;
+      bottom: $spacing-default;
+    }
+    @media screen and (min-width: $screen-md) {
+      position: absolute;
+      bottom: $spacing-default;
+      width: 100%;
+      a {
+        color: $color-black;
+        background-color: $color-white;
+        padding: $spacing-default/2;
+        width: calc(100% - 64px);
+        display: block;
+        border-radius: 4px;
+        text-align: center;
+      }
+    }
+  }
+  
+  
+  .pseudo-row {
+    margin-right: -12px;
+    margin-left: -12px;
+    position: relative;
+  }
+  
+  .productdesign-block {
+    padding: $spacing-default;
+    background: $color-gray-30;
+    width: calc(100%-16px);
+    margin: 16px;
+  
+    @media screen and (min-width: $screen-md) {
+      padding: $spacing-default;
+      width: 40%;
+      margin: 0 0 0 30%;
+      min-height: 350px;
+    }
+  
+  }
+  .discovery-block {
+    padding: $spacing-default;
+    background: $color-orange;
+    width: calc(100% - 32px);
+    margin: 0 16px 16px;
+  
+    @media screen and (min-width: $screen-sm) {
+      width: calc(50% - 32px);
+      min-height: 275px;
+    }
+    @media screen and (min-width: $screen-md) {
+      position: absolute;
+      width: 30%;
+      left: 0;
+      top: 0;
+      margin: 0;
+      min-height: 350px;
+    }
+  }
+  .systems-block {
+    padding: $spacing-default;
+    background: $color-gray-12;
+    width: calc(100% - 32px);
+    margin: 0 16px 16px;
+
+    @media screen and (min-width: $screen-sm) {
+      width: calc(50% - 32px);
+      min-height: 275px;
+    }
+  
+    @media screen and (min-width: $screen-md) {
+      position: absolute;
+      width: 30%;
+      right: 0;
+      top: 0;
+      margin: 0;
+      min-height: 350px;
+    }
+  }
   
 }
