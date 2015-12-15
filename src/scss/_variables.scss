@@ -2,7 +2,7 @@
 $font-family-default: 'Lato', sans-serif;
 $font-weight-light: 300;
 $font-weight-normal: 400;
-$font-weight-bold: 900;
+$font-weight-bold: 700;
 
 $font-size-default: 16px;
 $font-size-xs: 12px;
@@ -26,10 +26,10 @@ $spacing-sm: round($spacing-default / 2);
 $spacing-lg: round($spacing-default * 2);
 $spacing-xl: round($spacing-default * 4);
 
-$screen-sm:  (420px / $font-size-default) * 1em;
-$screen-md:  (768px / $font-size-default) * 1em;
-$screen-lg:  (1024px / $font-size-default) * 1em;
-$screen-xl:  (1394px / $font-size-default) * 1em;
+$spacing-sm: 8px;
+$spacing-md: 26px;
+$spacing-default: 32px;
+$spacing-lg: $spacing-default * 2;
 
 $color-white:           #FFFFFF;
 $color-black:           #000000;
@@ -42,6 +42,7 @@ $color-gray-30:         #4d4d4d;
 $color-gray-53:         #888888;
 $color-gray-95:         #f3f1f1;
 $color-orange:          #e46017;
+$color-orange-light:    #F57026;
 $color-blue:            #0795aa;
 
 $color-text-default:    $color-gray-20;
@@ -51,9 +52,9 @@ $color-link-hover:      darken($color-link, 20%);
 
 $drop-shadow-default: 0 2px 6px rgba($color-black, .3);
 $drop-shadow-even: 0 0 5px rgba($color-black, .3);
-$border-radius-xs: $spacing-xs / 2;
-$border-radius-sm: 6px;
-$border-radius-default: $spacing-lg;
+// $border-radius-xs: $spacing-xs / 2;
+// $border-radius-sm: 6px;
+$border-radius-default: 4px;
 
 //== Media queries breakpoints
 //
@@ -80,8 +81,6 @@ $screen-md:                  1000px !default;
 $screen-md-min:              $screen-md !default;
 //** Deprecated `$screen-desktop` as of v3.0.1
 $screen-desktop:             $screen-md-min !default;
-
-$screen-mml:                  1100px;
 
 // Large screen / wide desktop
 //** Deprecated `$screen-lg` as of v3.0.1

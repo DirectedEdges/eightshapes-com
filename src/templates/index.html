@@ -1,47 +1,72 @@
 {% extends 'default.layout.html' %}
 
 {% block content %}
-  <h1>New Site Goes Here</h1>
-  <h2>New Site Goes Here</h2>
-  <h3>New Site Goes Here</h3>
-  <h4>New Site Goes Here</h4>
-  <h5>New Site Goes Here</h5>
-  <h6>New Site Goes Here</h6>
-
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime dignissimos nam soluta, quo dolore nulla repellat similique dicta dolorem, amet eius. Recusandae beatae nulla doloremque, illum cupiditate earum cum!</p>
-
-  <h1>Footer Goes Here</h1>
-
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="grid-block"></div>
-      </div>
-      <div class="col-md-4">
-        <div class="grid-block"></div>
-      </div>
-      <div class="col-md-4">
-        <div class="grid-block"></div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="grid-block"></div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="grid-block"></div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="grid-block"></div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="grid-block"></div>
-      </div>
+    <div class="fluid-inner">
+        {{ components.casestudies() }}
     </div>
   </div>
-  
-  
+
   <div class="container-fluid">
     <div class="container-fluid-inner">
-        {{ components.casestudies() }}
+      <h2 class="homepage__heading">How We've Contributed</h2>
+      <p class="lead homepage__lead">
+        EightShapes’ contributions to the UX design work include three books, a documentation templating system and a prototyping framework, not to mention countless workshops, webinars and articles.
+      </p>
+      <div class="row content-card-wrap">
+        {{ components.content_card_double({
+          href: "https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0#.ajm21o3f1",
+          pre_heading: "Medium",
+          heading: "Team Models for Scaling a Design System",
+          background_image: "images/components/content_card/medium_castle.jpg"
+        }) }}
+        {{ components.content_card({
+          href: "#",
+          class: "content-card--event",
+          pre_heading: "Webinar",
+          date: "December 23-24, 2015",
+          heading: "Title Goes Here of a Really Nifty Blow Your Mind Webinar",
+          cta: "Register"
+        }) }}
+        {{ components.content_card({
+          href: "http://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351",
+          class: "content-card--book",
+          pre_heading: "Nathan Curtis",
+          heading: "Modular Web Design",
+          copy: "Creating Reusable Components for User Experience Design and Documentation",
+          background_image: "images/components/content_card/modular_web_design.jpg"
+        }) }}
+        {{ components.content_card({
+          href: "http://www.amazon.com/Communicating-Design-Developing-Documentation-Planning/dp/0321712463",
+          class: "content-card--book",
+          pre_heading: "Dan Brown",
+          heading: "Communicating Design",
+          copy: "Developing Website Documentation for Design and Planning",
+          background_image: "images/components/content_card/communicating_design.jpg"
+        }) }}
+        {{ components.content_card({
+          href: "https://medium.com/eightshapes-llc/behind-the-wheel-with-product-and-ux-287dba3e6d64#.hzx8jmnbq",
+          pre_heading: "Medium",
+          heading: "Behind The Wheel",
+          copy: "My kids aren’t yet old enough to learn to drive. But I picture myself in the passenger seat, years from now, and imagine what it feels like to teach them. I’m sure it’s terrifying, but that’s not what I mean.",
+          cta: "Read More"
+        }) }}
+        {{ components.content_card({
+          href: "http://www.amazon.com/Designing-Together-collaboration-management-professionals/dp/0321918630",
+          class: "content-card--book",
+          pre_heading: "Dan Brown",
+          heading: "Designing Together",
+          copy: "The Collaboration and Conflict Management Handbook for Creative Professionals",
+          background_image: "images/components/content_card/designing_together.jpg"
+        }) }}
+        {{ components.content_card({
+          href: "https://medium.com/eightshapes-llc/the-component-cut-up-workshop-1378ae110517#.5ibx9rqm8",
+          pre_heading: "Medium",
+          heading: "The Component Cut-Up Workshop",
+          copy: "Nothing beats the energy of getting a team together to deconstruct an existing design system and arrive at a component library together.",
+          cta: "Read More"
+        }) }}
+      </div>
     </div>
   </div>
   <div class="container-fluid color-charcoal">

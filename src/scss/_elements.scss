@@ -14,17 +14,6 @@ h5,
 h6 {
   font-weight: $font-weight-light;
   margin: 0;
-
-  + {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      margin-top: $spacing-default;
-    }
-  }
 }
 
 h1 {
@@ -59,6 +48,16 @@ h6 {
 
 img {
   max-width: 100%;
+}
+
+.homepage__heading {
+  color: $color-orange;
+  text-align: center;
+}
+
+.homepage__lead {
+  margin-bottom: $spacing-content;
+  text-align: center;
 }
 
 p {
@@ -103,7 +102,7 @@ a {
 // Layouts
 
 .container-fluid-inner {
-  max-width: 1200px;
+  max-width: $screen-lg;
   margin: 0 auto;
 }
 
