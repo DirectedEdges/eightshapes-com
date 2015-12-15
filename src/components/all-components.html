@@ -39,36 +39,43 @@
 {% endmacro %}
 
 {% macro content_card_double(args) %}
-  <div class="col-md-6">
-    <a href="{{args.href}}" class="content-card" style="background-image: url({{args.background_image}})">
-      <h4>{{args.pre_heading}}</h4>
-      <h3>{{args.heading}}</h3>
+  <div class="col-sm-12 col-md-12 col-lg-6">
+    <a href="{{args.href}}" class="content-card content-card--double" style="background-image: url({{args.background_image}})">
+      <span class="content-card__content">
+        <h4 class="content-card__pre-heading">{{args.pre_heading}}</h4>
+        <h3 class="content-card__heading">{{args.heading}}</h3>
+      </span>
     </a>
   </div>
 {% endmacro %}
 
 {% macro content_card(args) %}
-  <div class="col-md-3">
-    <a href="{{args.href}}" class="content-card {{args.class}}" {%- if args.background_image -%} style="background-image: url({{args.background_image}})" {%- endif -%}>
-      {%- if args.pre_heading -%}
-        <h4 class="content-card__pre-heading">{{args.pre_heading}}</h4>
+  <div class="col-sm-6 col-md-4 col-lg-3">
+    <a href="{{args.href}}" class="content-card {{args.class}}">
+      {%- if args.background_image -%}
+        <img src="{{args.background_image}}" class="content-card__background-image">
       {%- endif -%}
-      {%- if args.date -%}
-        <h4 class="content-card__date">{{args.date}}</h4>
-      {%- endif -%}
-        <h3 class="content-card__heading">{{args.heading}}</h3>
-      {%- if args.copy -%}
-        <p class="content-card__copy">{{args.copy}}</p>
-      {%- endif -%}
-      {%- if args.cta -%}
-        <span href="{{args.cta_link}}" class="content-card__cta">{{args.cta}}</span>
-      {%- endif -%}
+      <span class="content-card__content">
+        {%- if args.pre_heading -%}
+          <h4 class="content-card__pre-heading">{{args.pre_heading}}</h4>
+        {%- endif -%}
+        {%- if args.date -%}
+          <h4 class="content-card__date">{{args.date}}</h4>
+        {%- endif -%}
+          <h3 class="content-card__heading">{{args.heading}}</h3>
+        {%- if args.copy -%}
+          <p class="content-card__copy">{{args.copy}}</p>
+        {%- endif -%}
+        {%- if args.cta -%}
+          <span href="{{args.cta_link}}" class="content-card__cta">{{args.cta}}</span>
+        {%- endif -%}
+      </span>
     </a>
   </div>
 {% endmacro %}
 
 {% macro footer(args) %}
-  <div class="footer">
+  <div class="footer container-fluid">
     <div class="footer__inner">
       {{ icon({icon_name: 'eightshapes-logo', class: 'footer__logo'})}}
       <div class="footer__address">

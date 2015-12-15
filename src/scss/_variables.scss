@@ -20,6 +20,7 @@ $font-size-h6: 14px;
 $spacing-row-vertical: 100px;
 $spacing-content: 70px;
 
+$spacing-sm: 8px;
 $spacing-md: 26px;
 $spacing-default: 32px;
 $spacing-lg: $spacing-default * 2;
@@ -35,6 +36,7 @@ $color-gray-30:         #4D4D4D;
 $color-gray-53:         #888888;
 $color-gray-95:         #F3F1F1;
 $color-orange:          #E46017;
+$color-orange-light:    #F57026;
 $color-blue:            #0795AA;
 
 $color-text-default:    $color-gray-20;
@@ -46,7 +48,7 @@ $drop-shadow-default: 0 2px 6px rgba($color-black, .3);
 $drop-shadow-even: 0 0 5px rgba($color-black, .3);
 // $border-radius-xs: $spacing-xs / 2;
 // $border-radius-sm: 6px;
-// $border-radius-default: $spacing-lg;
+$border-radius-default: 4px;
 
 //== Media queries breakpoints
 //
