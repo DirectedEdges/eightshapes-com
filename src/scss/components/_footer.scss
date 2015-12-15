@@ -60,7 +60,7 @@ $footer-background-color: $color-gray-15;
   }
 }
 
-@media screen and (min-width: ($screen-lg + ($spacing-default * 2) )) {
+@media screen and (min-width: ($screen-lg)) {
   .footer__inner {
     padding: 0;
   }
