@@ -50,6 +50,16 @@ img {
   max-width: 100%;
 }
 
+.homepage__heading {
+  color: $color-orange;
+  text-align: center;
+}
+
+.homepage__lead {
+  margin-bottom: $spacing-content;
+  text-align: center;
+}
+
 p {
   color: $color-text-default;
   font-size: $font-size-default;
@@ -92,7 +102,7 @@ a {
 // Layouts
 
 .container-fluid-inner {
-  max-width: 1200px;
+  max-width: $screen-lg;
   margin: 0 auto;
 }
 

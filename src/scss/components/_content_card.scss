@@ -67,6 +67,21 @@
     color: $color-white;
   }
 
+  &:before {
+    background-color: rgba($color-blue, 0);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background .5s;
+  }
+
+  &:hover:before {
+    background-color: rgba($color-blue, .5);
+  }
+
   .content-card__content {
     bottom: $spacing-default;
     left: $spacing-default;
@@ -138,7 +153,28 @@
 }
 
 .content-card__background-image {
+  display: block;
   width: 100%;
+}
+
+.content-card__background-image-wrap {
+  display: block;
+  position: relative;
+
+  &:before {
+    background-color: rgba($color-blue, 0);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background .5s;
+  }
+
+  .content-card:hover &:before {
+    background-color: rgba($color-blue, .5);
+  }
 }
 
 @media screen and (min-width: 400px) {
