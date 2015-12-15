@@ -2,16 +2,17 @@
   background: $color-white;
   margin: 0 auto 70px;
   
-  //temporary outer shell
-  max-width: 1200px;
-  margin: 0 auto 70px;
-  // ******************************
   h2 {
     color: $color-orange;
-    margin: 100px auto 70px;
+    margin: 30px auto;
     text-align: center;
+    
+    @media screen and (min-width: $screen-md) {
+      margin: 100px auto 70px;
+    }
   }
 }
+
 .casestudy {
   background-color: $color-blue;
   display: block;
@@ -20,8 +21,8 @@
   background-color: $color-white;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 175px;
-  margin: 0 0 $spacing-default/2 0;
+  height: 128px;
+  margin: 0;
   position: relative;
   
   &:before {
@@ -39,11 +40,9 @@
   &:hover:before {
     opacity: .5;
   }
-  
-  
+    
   @media screen and (min-width: $screen-md) {
     height: 400px;
-    margin-bottom: 0;
   }
   
   .title {
@@ -60,22 +59,14 @@
     position: relative;
     top: 2px;
   }
-  //temporary
+
   a:hover {
     text-decoration: none;
   }
-  // ******************************
-  a h3,
-  a h4 {
+  h3, h4 {
     color: $color-white;
-    text-decoration: none;
     margin: 0;
     font-size: $font-size-h3;
-    &:hover {
-      text-decoration: none;
-    }
-  }
-  h3 {
     font-weight: $font-weight-normal;
   }
   h4 {
