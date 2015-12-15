@@ -1,3 +1,76 @@
+{% macro casestudies(args) %}
+  <div class="casestudies">
+    <h2>Our Work</h2>
+    <div class="row">
+      <div class="casestudy col-md-8" style="background-image: url('images/components/casestudies/cs-title--marriott.jpg');">
+        <a href="#" class="title">
+          <h3>Marriott</h3>
+          <h4>Responsive Design</h4>
+        </a>
+      </div>
+      <div class="casestudy col-md-4" style="background-image: url('images/components/casestudies/cs-title--sonatype.jpg');">
+        <a href="#" class="title">
+          <h3>Sonotype</h3>
+          <h4>Product Design</h4>
+        </a>
+      </div>
+    </div>
+    <div class="row">
+        <div class="casestudy col-md-4" style="background-image: url('images/components/casestudies/cs-title--ncarb.jpg');">
+          <a href="#" class="title">
+            <h3>NCARB</h3>
+            <h4>Product Design</h4>
+          </a>
+        </div>
+        <div class="casestudy col-md-4" style="background-image: url('images/components/casestudies/cs-title--fireeye.jpg');">
+          <a href="#" class="title">
+            <h3>FireEye</h3>
+            <h4>Responsive Design</h4>
+          </a>
+        </div>
+        <div class="casestudy col-md-4" style="background-image: url('images/components/casestudies/cs-title--aact.jpg');">
+          <a href="#" class="title">
+            <h3>AACT</h3>
+            <h4>Design Strategy</h4>
+          </a>
+        </div>
+    </div>
+  </div>
+{% endmacro %}
+
+{% macro footer(args) %}
+  <div class="footer">
+    <div class="footer__inner">
+      {{ icon({icon_name: 'eightshapes-logo', class: 'footer__logo'})}}
+      <div class="footer__address">
+        12805 Misty Creek Lane<br/>
+        Fairfax, VA 22033<br/>
+        <strong>p:</strong> <a href="tel:7032968831">703.296.8831</a><br/>
+        <strong>e:</strong> <a href="mailto:info@eightshapes.com">info@eightshapes.com</a>
+      </div>
+      <div class="footer__social">
+        <ul class="footer__social-list">
+          <li>
+            <a href="https://twitter.com/eightshapes">
+              {{icon({icon_name: 'twitter', class: 'footer__social-icon'})}}@eightshapes
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/eightshapes-llc">
+              {{icon({icon_name: 'linkedin', class: 'footer__social-icon'})}}EightShapes
+            </a>
+          </li>
+          <li>
+            <a href="https://medium.com/eightshapes-llc">
+              {{icon({icon_name: 'medium', class: 'footer__social-icon'})}}@eightshapes
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endmacro %}
+
 {% macro icon(args) %}
   {%- if args.icon_name == undefined -%}
       {% set args = args|updateobj('icon_name', 'twitter') %}

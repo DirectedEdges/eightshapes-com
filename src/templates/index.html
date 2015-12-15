@@ -10,14 +10,6 @@
 
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus maxime dignissimos nam soluta, quo dolore nulla repellat similique dicta dolorem, amet eius. Recusandae beatae nulla doloremque, illum cupiditate earum cum!</p>
 
-  {{ components.icon({icon_name: 'twitter'}) }}
-  {{ components.icon({icon_name: 'linkedin'}) }}
-  {{ components.icon({icon_name: 'medium'}) }}
-  {{ components.icon({icon_name: 'eightshapes-logo'}) }}
-  {{ components.icon({icon_name: 'eightshapes-mark', class: 'icon--large'}) }}
-  {{ components.icon({icon_name: 'eightshapes-mark', class: 'icon--blue'}) }}
-  {{ components.icon({icon_name: 'eightshapes-mark', class: 'icon--gray'}) }}
-
   <h1>Footer Goes Here</h1>
 
   <div class="container-fluid">
@@ -45,4 +37,13 @@
       </div>
     </div>
   </div>
+  
+  
+  <div class="container-fluid">
+    <div class="fluid-inner">
+        {{ components.casestudies() }}
+    </div>
+  </div>
+  
+  {{ components.footer() }}
 {% endblock %}

@@ -21,7 +21,7 @@ module.exports = function(grunt) {
             tasks: ['copy:images']
           },
           markup: {
-            files: ['src/templates/**', 'src/layouts/**', 'src/components/**'],
+            files: ['src/templates/**', 'src/layouts/**', 'src/components/**', '!src/components/all-components.html'],
             tasks: ['markup']
           }
         },
@@ -62,7 +62,8 @@ module.exports = function(grunt) {
             files: [
               {
                 expand: true,
-                src: 'src/images/**',
+                cwd: 'src/images/',
+                src: '**',
                 dest: 'dist/images',
                 filter: 'isFile'
               }

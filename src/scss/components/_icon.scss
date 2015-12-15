@@ -1,24 +1,21 @@
-[class^='icon-'] {
-  fill: $color-orange;
-  height: 40px;
-  width: 40px;
-}
+$color-blue-twitter: #08D0EC;
+$color-blue-linkedin: #0174BD;
+$color-gray-medium: #D2D3D5;
+
 
 .icon--large {
   height: 200px;
   width: 200px;
 }
 
-.icon--blue {
-  fill: $color-blue;
+.icon-twitter {
+  fill: $color-blue-twitter;
 }
 
-.icon--gray {
-  fill: $color-gray-20;
+.icon-linkedin {
+  fill: $color-blue-linkedin;
 }
 
-.icon-eightshapes-logo {
-  height: 60px;
-  width: 300px;
+.icon-medium {
+  fill: $color-gray-medium;
 }
-
