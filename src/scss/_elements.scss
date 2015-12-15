@@ -32,7 +32,13 @@ h1 {
 }
 
 h2 {
-  font-size: $font-size-h2;
+  font-size: 32px;
+  @media screen and (min-width: $screen-md) {
+    font-size: 36px;
+  }
+  @media screen and (min-width: $screen-lg) {
+    font-size: $font-size-h2;
+  }
 }
 
 h3 {
@@ -61,6 +67,14 @@ p {
   margin: 0;
 }
 
+p.lead {
+  font-size: 18px;
+  @media screen and (min-width: $screen-lg) {
+    font-size: 26px;
+  }
+}
+
+
 a {
   color: $color-link;
   text-decoration: none;
@@ -85,3 +99,13 @@ a {
   margin-bottom: $grid-gutter-width;
   width: 100%;
 }
+
+// Layouts
+
+.container-fluid-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
