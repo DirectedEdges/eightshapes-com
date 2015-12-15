@@ -4,15 +4,60 @@
 }
 
 .content-card-wrap {
-  margin-left: 12px;
-  margin-right: 12px;
+  margin: 0 auto;
+  max-width: $screen-lg;
+  padding: 0 $spacing-default - ($grid-gutter-width / 2);
 
   [class^='col-'] {
     padding-left: 0;
     padding-right: 0;
   }
+
 }
 
 .content-card {
+  background-color: $color-gray-95;
+  color: $color-gray-20;
+  display: block;
+  height: 300px;
   padding: $spacing-default;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.content-card--event {
+    background-color: $color-orange;
+    color: $color-white;
+  }
+}
+
+.content-card__pre-heading,
+.content-card__date {
+  font-size: $font-size-xs;
+  font-weight: $font-weight-bold;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.content-card__cta {
+  color: $color-link;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+
+  .content-card--event & {
+    background: $color-white;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: ($screen-lg + ($spacing-default * 2) )) {
+  .content-card-wrap {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
 }

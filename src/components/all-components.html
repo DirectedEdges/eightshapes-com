@@ -40,10 +40,30 @@
 
 {% macro content_card_double(args) %}
   <div class="col-md-6">
-    <div class="content-card" style="background-image: url({{args.background_image}})">
+    <a href="{{args.href}}" class="content-card" style="background-image: url({{args.background_image}})">
       <h4>{{args.pre_heading}}</h4>
       <h3>{{args.heading}}</h3>
-    </div>
+    </a>
+  </div>
+{% endmacro %}
+
+{% macro content_card(args) %}
+  <div class="col-md-3">
+    <a href="{{args.href}}" class="content-card {{args.class}}" {%- if args.background_image -%} style="background-image: url({{args.background_image}})" {%- endif -%}>
+      {%- if args.pre_heading -%}
+        <h4 class="content-card__pre-heading">{{args.pre_heading}}</h4>
+      {%- endif -%}
+      {%- if args.date -%}
+        <h4 class="content-card__date">{{args.date}}</h4>
+      {%- endif -%}
+        <h3 class="content-card__heading">{{args.heading}}</h3>
+      {%- if args.copy -%}
+        <p class="content-card__copy">{{args.copy}}</p>
+      {%- endif -%}
+      {%- if args.cta -%}
+        <span href="{{args.cta_link}}" class="content-card__cta">{{args.cta}}</span>
+      {%- endif -%}
+    </a>
   </div>
 {% endmacro %}
 
