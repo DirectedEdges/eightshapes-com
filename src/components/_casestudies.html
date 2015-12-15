@@ -37,22 +37,3 @@
     </div>
   </div>
 {% endmacro %}
-
-{% macro footer(args) %}
-  <div class="footer">
-    <div class="footer__inner">
-      {{ icon({icon_name: 'eightshapes-logo', class: 'footer__logo'})}}
-      <div class="footer__address"></div>
-      <div class="footer__social"></div>
-    </div>
-  </div>
-{% endmacro %}
-
-{% macro icon(args) %}
-  {%- if args.icon_name == undefined -%}
-      {% set args = args|updateobj('icon_name', 'twitter') %}
-  {%- endif -%}
-  <svg class="icon-{{args.icon_name}} {{args.class}}">
-    <use xlink:href="svg/sprite.svg#{{args.icon_name}}"></use>
-  </svg>
-{% endmacro %}

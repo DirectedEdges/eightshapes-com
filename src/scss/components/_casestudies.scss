@@ -1,0 +1,59 @@
+.casestudies {
+  background: $color-white;
+  margin: 0 auto 70px;
+  
+  //temporary outer shell
+  max-width: 1200px;
+  margin: 0 auto 70px;
+  // ******************************
+  h2 {
+    color: $color-orange;
+    margin: 100px auto 70px;
+    text-align: center;
+  }
+}
+.casestudy {
+  background: $color-blue;
+  display: block;
+  background-image: url('../images/components/casestudies/cs-title--aact.jpg');
+  background-position: center top;
+  background-color: $color-white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 175px;
+  margin-bottom: 16px;
+  
+  @media screen and (min-width: $screen-md) {
+    height: 400px;
+    margin-bottom: 0;
+  }
+  
+  .title {
+    display: block;
+    //padding: $padding-default;
+    padding: 32px;
+    position: absolute;
+    bottom: 0;
+  }
+  //temporary
+  a:hover {
+    text-decoration: none;
+  }
+  // ******************************
+  a h3,
+  a h4 {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    font-size: $font-size-h3;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  h3 {
+    font-weight: $font-weight-normal;
+  }
+  h4 {
+    font-weight: $font-weight-light;
+  }
+}
