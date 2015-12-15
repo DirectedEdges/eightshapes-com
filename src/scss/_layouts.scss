@@ -1,0 +1,9 @@
+.container-fluid {
+	padding: 16px;
+	@media screen and (min-width: $screen-md) {
+		padding: 32px;
+	}
+	@media screen and (min-width: $screen-md) {
+		padding: 100px;
+	}
+}

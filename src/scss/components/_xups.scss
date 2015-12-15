@@ -1,0 +1,99 @@
+.xups {
+
+	&.background-gray {
+		background-color: $color-gray-95;
+	}
+
+	h2 {
+		color: $color-orange;
+		margin: 16px 0 32px;
+		text-align: center;
+		@media screen and (min-width: $screen-md) {
+			margin: 0 0 32px;
+		}
+	}
+
+	p.lead {
+		margin: 0 auto 32px;
+		text-align: center;
+		@media screen and (min-width: $screen-md) {
+			width: 70%;
+		}
+	}
+
+	h3 {
+		color: $color-orange;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: $font-weight-normal;
+		margin-bottom: 8px;
+	}
+
+	.ups {
+		@media screen and (min-width: $screen-md) {
+			margin: 0 -32px 8px;
+		}
+	}
+
+	.up {
+		margin: 0 0 32px;
+
+		@media screen and (min-width: $screen-md) {
+			padding: 32px;
+			h3 {
+				font-size: 20px;
+				margin-bottom: 8px;
+			}
+		}
+	}
+
+	.ups.biophotos {
+
+		.up {
+			position: relative;
+			margin-bottom: 32px;
+			padding-left: 90px;
+		}
+		
+		h3 {
+			padding-top: 12px;
+			margin-bottom: 4px;
+		}
+
+		img {
+			width: 75px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		@media screen and (min-width: $screen-xs) {
+			.up {
+				padding-left: 105px;
+				min-height: 75px;
+				width: 49%;
+				display: inline-block;
+			}
+			img {
+				width: 90px;
+			}
+		}
+		@media screen and (min-width: $screen-sm) {
+			text-align: center;
+
+			.up {
+				width: 19%;
+				text-align: center;
+				padding: 0 8px;
+				vertical-align: top;
+			}
+			h3 {
+				font-size: 16px;
+			}
+			img {
+				position: relative;
+				width: auto;
+			}
+		}
+	}
+}
