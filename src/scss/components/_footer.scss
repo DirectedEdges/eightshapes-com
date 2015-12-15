@@ -7,7 +7,7 @@ $footer-background-color: $color-gray-15;
   font-size: $font-size-sm;
   font-weight: $font-weight-normal;
   line-height: $font-size-lg;
-  padding: $spacing-row-vertical 0;
+  // padding: $spacing-row-vertical 0;
 
   a {
     color: $color-white;
@@ -60,7 +60,7 @@ $footer-background-color: $color-gray-15;
   }
 }
 
-@media screen and (min-width: ($screen-lg + $spacing-default)) {
+@media screen and (min-width: ($screen-lg)) {
   .footer__inner {
     padding: 0;
   }

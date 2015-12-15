@@ -1,0 +1,210 @@
+.fluid-inner {
+  margin: 0 auto;
+  max-width: $screen-lg;
+}
+
+.content-card-wrap {
+  margin: 0 auto;
+  max-width: $screen-lg;
+  // padding: 0 $spacing-default - ($grid-gutter-width / 2);
+
+  [class^='col-'] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+.content-card {
+  background-color: $color-gray-95;
+  background-position: center -20%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: $color-gray-20;
+  display: block;
+  min-height: 280px;
+  padding: $spacing-default;
+  position: relative;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.content-card--event {
+    background-color: $color-orange;
+    color: $color-white;
+  }
+}
+
+.content-card__pre-heading,
+.content-card__date {
+  font-size: $font-size-xs;
+  font-weight: $font-weight-bold;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.content-card__heading {
+  margin-bottom: $spacing-sm;
+}
+
+.content-card__date {
+  margin-bottom: $spacing-sm;
+}
+
+.content-card__copy {
+  font-weight: $font-weight-normal;
+  margin-bottom: $spacing-md;
+}
+
+.content-card--double {
+  background-position: center center;
+  background-size: cover;
+  color: $color-white;
+
+  &:hover {
+    color: $color-white;
+  }
+
+  &:before {
+    background-color: rgba($color-blue, 0);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background .5s;
+  }
+
+  &:hover:before {
+    background-color: rgba($color-blue, .5);
+  }
+
+  .content-card__content {
+    bottom: $spacing-default;
+    left: $spacing-default;
+    max-width: 320px;
+    position: absolute;
+    right: $spacing-default;
+  }
+
+  .content-card__heading {
+    font-weight: $font-weight-normal;
+  }
+}
+
+.content-card__cta {
+  color: $color-link;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+
+  .content-card:hover & {
+    text-decoration: underline;
+  }
+
+  .content-card--event & {
+    background: $color-white;
+    border-radius: $border-radius-default;
+    bottom: $spacing-default;
+    color: $color-gray-20;
+    display: block;
+    left: $spacing-default;
+    padding: 20px 0;
+    position: absolute;
+    right: $spacing-default;
+    text-align: center;
+    // width: 100%;
+  }
+
+  .content-card--event:hover & {
+    color: $color-gray-53;
+    text-decoration: none;
+  }
+}
+
+.content-card--book {
+  background-color: $color-gray-20;
+  padding: 0;
+
+  .content-card__pre-heading {
+    color: $color-orange-light;
+  }
+
+  .content-card__content {
+    background-color: $color-gray-20;
+    // bottom: 0;
+    color: $color-white;
+    display: block;
+    // left: 0;
+    min-height: 185px;
+    padding: $spacing-default;
+    // position: absolute;
+    width: 100%;
+  }
+
+  .content-card__copy {
+    color: $color-white;
+    font-weight: $font-weight-light;
+    margin-bottom: 0;
+    // min-height: 70px;
+  }
+}
+
+.content-card__background-image {
+  display: block;
+  width: 100%;
+}
+
+.content-card__background-image-wrap {
+  display: block;
+  position: relative;
+
+  &:before {
+    background-color: rgba($color-blue, 0);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background .5s;
+  }
+
+  .content-card:hover &:before {
+    background-color: rgba($color-blue, .5);
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .content-card--book {
+    .content-card__content {
+      min-height: 0;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-sm) {
+  .content-card {
+    min-height: 375px;
+  }
+}
+
+@media screen and (min-width: $screen-md) {
+  .content-card {
+    min-height: 360px;
+  }
+}
+
+@media screen and (min-width: ($screen-lg + ($spacing-default * 2) )) {
+  .content-card {
+    min-height: 340px;
+  }
+
+  .content-card-wrap {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+}

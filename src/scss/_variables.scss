@@ -2,7 +2,7 @@
 $font-family-default: 'Lato', sans-serif;
 $font-weight-light: 300;
 $font-weight-normal: 400;
-$font-weight-bold: 900;
+$font-weight-bold: 700;
 
 $font-size-default: 16px;
 $font-size-xs: 12px;
@@ -19,7 +19,14 @@ $font-size-h6: 14px;
 
 $spacing-row-vertical: 100px;
 $spacing-content: 70px;
+$spacing-default: 30px;
+$spacing-md: 26px;
+$spacing-xs: round($spacing-default / 4);
+$spacing-sm: round($spacing-default / 2);
+$spacing-lg: round($spacing-default * 2);
+$spacing-xl: round($spacing-default * 4);
 
+$spacing-sm: 8px;
 $spacing-md: 26px;
 $spacing-default: 32px;
 $spacing-lg: $spacing-default * 2;
@@ -28,14 +35,15 @@ $color-white:           #FFFFFF;
 $color-black:           #000000;
 
 // Gray color numbers are based on the "B" value of the HEX code's HSB equivalent
-$color-gray-12:         #1E1E1E;
+$color-gray-12:         #1e1e1e;
 $color-gray-15:         #262626;
 $color-gray-20:         #323232;
-$color-gray-30:         #4D4D4D;
+$color-gray-30:         #4d4d4d;
 $color-gray-53:         #888888;
-$color-gray-95:         #F3F1F1;
-$color-orange:          #E46017;
-$color-blue:            #0795AA;
+$color-gray-95:         #f3f1f1;
+$color-orange:          #e46017;
+$color-orange-light:    #F57026;
+$color-blue:            #0795aa;
 
 $color-text-default:    $color-gray-20;
 
@@ -46,7 +54,7 @@ $drop-shadow-default: 0 2px 6px rgba($color-black, .3);
 $drop-shadow-even: 0 0 5px rgba($color-black, .3);
 // $border-radius-xs: $spacing-xs / 2;
 // $border-radius-sm: 6px;
-// $border-radius-default: $spacing-lg;
+$border-radius-default: 4px;
 
 //== Media queries breakpoints
 //
