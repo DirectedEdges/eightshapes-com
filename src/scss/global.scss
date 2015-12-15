@@ -4,11 +4,12 @@
 // Bootstrap Grid Only
 @import 'bootstrap/mixins';
 @import 'bootstrap/grid';
-
 @import 'elements';
+@import 'layouts';
 
 @import 'components/content_card';
 @import 'components/workshops';
+@import 'components/xups';
 @import 'components/footer';
 @import 'components/icon';
 @import 'components/casestudies';
