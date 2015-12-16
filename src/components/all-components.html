@@ -146,12 +146,21 @@
 {% endmacro %}
 
 {% macro page_cta(args) %}
+  {% if args == undefined %}
+    {% set args = 
+    	{
+	    	header: 'Ready?', 
+	    	lead: 'About to start a system? Want a partner to build it? Ready to spread or sustain it?'
+    	} 
+    %}
+  {% endif %}
+
   <div class="container-fluid xups background-orange">
     <div class="container-fluid-inner">
       <div class="systems-cta">
-        <h2>Work With Us</h2>
-        <p class="lead">About to start a system? Want a partner to build it? Ready to spread or sustain it?</p>
-        <p><a class="systems-button" href="mailto:nathan@eightshapes.com">Let's talk</a></p>
+        <h2>{{ args.header }} </h2>
+        <p class="lead">{{ args.lead }}</p>
+        <p><a class="systems-button" href="mailto:info@eightshapes.com">Let's talk</a></p>
       </div>
     </div>
   </div>

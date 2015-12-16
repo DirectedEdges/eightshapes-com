@@ -3,6 +3,7 @@
 {% block content %}
   {{ components.header() }}
 
+  <!-- Our Work -->
   <div id="our-work" class="container-fluid">
     <div class="fluid-inner">
         {{ components.casestudies() }}
@@ -10,6 +11,7 @@
   </div>
 
   {{ components.client_brands() }}
+  <!-- What We Do -->
 
   <div id="services" class="container-fluid color-charcoal">
     <div class="container-fluid-inner">
@@ -17,6 +19,7 @@
     </div>
   </div>
   
+  <!-- People -->
   {{ components.xups({
     "id": "who-we-are",
     "up_responsiveness": "",
@@ -52,6 +55,7 @@
      ]
   }) }}
 
+  <!-- Contributions -->
    <div class="container-fluid" id="contributions">
     <div class="container-fluid-inner">
       <h2 class="homepage__heading">How We've Contributed</h2>
@@ -114,7 +118,10 @@
       </div>
     </div>
   </div>
+  
+  <!-- Page CTA -->
+  {{ components.page_cta({header:'Ready?', lead: 'Working on a UX design? Crafting a product strategy? Starting a design system?'}) }}
 
-  {{ components.page_cta() }}
+  <!-- Footer -->
   {{ components.footer() }}
 {% endblock %}
