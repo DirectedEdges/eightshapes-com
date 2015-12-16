@@ -136,6 +136,13 @@
   </div>
 {% endmacro %}
 
+{% macro header_slim(args) %}
+  <div class="header--slim">
+    <a class="header__back-link" href="/">{{ icon({icon_name: 'angle-left', class: 'header__back-link-icon'}) }}</a>
+    <a href="/">{{ eightshapes_logo({class: 'header__logo'}) }}</a>
+  </div>
+{% endmacro %}
+
 {% macro icon(args) %}
   {%- if args.icon_name == undefined -%}
       {% set args = args|updateobj('icon_name', 'twitter') %}

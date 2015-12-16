@@ -35,6 +35,26 @@
   max-width: 930px;
 }
 
+.header--slim {
+  background: $color-gray-15;
+  text-align: center;
+  padding: 40px 0 0;
+  position: relative;
+
+  + * {
+    padding-top: $spacing-default;
+  }
+}
+
+.header__back-link-icon {
+  fill: $color-white;
+  height: 40px;
+  position: absolute;
+  left: $spacing-default;
+  top: 40px;
+  width: 40px;
+}
+
 @media screen and (min-width: $screen-xs) {
 }
 
