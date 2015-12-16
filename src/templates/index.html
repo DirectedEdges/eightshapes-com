@@ -3,7 +3,7 @@
 {% block content %}
   {{ components.header() }}
 
-  <div class="container-fluid">
+  <div id="our-work" class="container-fluid">
     <div class="fluid-inner">
         {{ components.casestudies() }}
     </div>
@@ -11,13 +11,14 @@
 
   {{ components.client_brands() }}
 
-  <div class="container-fluid color-charcoal">
+  <div id="services" class="container-fluid color-charcoal">
     <div class="container-fluid-inner">
         {{ components.whatwedo() }}
     </div>
   </div>
   
   {{ components.xups({
+    "id": "who-we-are",
     "up_responsiveness": "",
     "type": "ups__bio-photos",
     "h2": "Who We Are",
@@ -51,7 +52,7 @@
      ]
   }) }}
 
-   <div class="container-fluid">
+   <div class="container-fluid" id="contributions">
     <div class="container-fluid-inner">
       <h2 class="homepage__heading">How We've Contributed</h2>
       <p class="lead homepage__lead">
