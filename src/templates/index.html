@@ -1,11 +1,15 @@
 {% extends 'default.layout.html' %}
 
 {% block content %}
+  {{ components.header() }}
+
   <div class="container-fluid">
     <div class="fluid-inner">
         {{ components.casestudies() }}
     </div>
   </div>
+
+  {{ components.client_brands() }}
 
   <div class="container-fluid color-charcoal">
     <div class="container-fluid-inner">
@@ -109,7 +113,7 @@
       </div>
     </div>
   </div>
-  
+
   {{ components.page_cta() }}
   {{ components.footer() }}
 {% endblock %}

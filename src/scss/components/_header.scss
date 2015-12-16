@@ -1,0 +1,40 @@
+.header {
+  background: $color-orange;
+  color: $color-white;
+  padding: 40px 0 100px;
+  text-align: center;
+}
+
+.header__logo {
+  margin-bottom: 40px;
+}
+
+.header__anchor-nav {
+  @extend %list-reset;
+  font-size: 0;
+  margin-bottom: $spacing-content;
+}
+
+.header__anchor-nav-item {
+  display: inline-block;
+}
+
+.header__anchor-nav-link {
+  color: $color-white;
+  display: block;
+  font-size: $font-size-default;
+  font-weight: $font-weight-normal;
+  margin-right: 50px;
+  text-transform: uppercase;
+
+  .header__anchor-nav-item:last-child & {
+    margin-right: 0;
+  }
+}
+
+.header__copy {
+  color: $color-white;
+  font-size: 42px;
+  margin: 0 auto;
+  max-width: 930px;
+}
