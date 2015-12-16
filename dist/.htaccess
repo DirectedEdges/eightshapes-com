@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteRule ^/aboutus/nathan-curtis/$ nathan-curtis.html
+RewriteRule ^/aboutus/dan-brown/$ dan-brown.html
+RewriteRule ^/aboutus/chris-detzi/$ chris-detzi.html
+RewriteRule ^/aboutus/james-melzer/$ james-melzer.html
+RewriteRule ^/aboutus/kevin-powell/$ kevin-powell.html
