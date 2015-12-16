@@ -1,16 +1,19 @@
 {% extends 'default.layout.html' %}
 
 {% block content %}
+  {{ components.header() }}
 
   <!-- Our Work -->
-  <div class="container-fluid">
+  <div id="our-work" class="container-fluid">
     <div class="fluid-inner">
         {{ components.casestudies() }}
     </div>
   </div>
 
+  {{ components.client_brands() }}
   <!-- What We Do -->
-  <div class="container-fluid color-charcoal">
+
+  <div id="services" class="container-fluid color-charcoal">
     <div class="container-fluid-inner">
         {{ components.whatwedo() }}
     </div>
@@ -18,6 +21,7 @@
   
   <!-- People -->
   {{ components.xups({
+    "id": "who-we-are",
     "up_responsiveness": "",
     "type": "ups__bio-photos",
     "h2": "Who We Are",
@@ -52,7 +56,7 @@
   }) }}
 
   <!-- Contributions -->
-   <div class="container-fluid">
+   <div class="container-fluid" id="contributions">
     <div class="container-fluid-inner">
       <h2 class="homepage__heading">How We've Contributed</h2>
       <p class="lead homepage__lead">

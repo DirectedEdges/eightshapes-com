@@ -38,6 +38,13 @@
   </div>
 {% endmacro %}
 
+{% macro client_brands(args) %}
+  <div class="client-brands">
+    <img class="client-brands__image" src="images/client_brands/brands-1.png"/>
+    <img class="client-brands__image" src="images/client_brands/brands-2.png"/>
+  </div>
+{% endmacro %}
+
 {% macro content_card_double(args) %}
   <div class="col-sm-12 col-md-12 col-lg-6">
     <a href="{{args.href}}" class="content-card content-card--double" style="background-image: url({{args.background_image}})">
@@ -76,6 +83,11 @@
   </div>
 {% endmacro %}
 
+{% macro eightshapes_logo(args) %}
+  {% set class = args.class + " eightshapes-logo" %}
+  {{ icon({icon_name: 'eightshapes-logo', class: class}) }}
+{% endmacro %}
+
 {% macro footer(args) %}
   <div class="footer container-fluid">
     <div class="container-fluid-inner">
@@ -106,6 +118,21 @@
         </ul>
       </div>
     </div>
+  </div>
+{% endmacro %}
+
+{% macro header(args) %}
+  <div class="header">
+    {{ eightshapes_logo({class: 'header__logo'}) }}
+    <ul class="header__anchor-nav">
+      <li class="header__anchor-nav-item"><a class="header__anchor-nav-link" href="#our-work">Our Work</a></li>
+      <li class="header__anchor-nav-item"><a class="header__anchor-nav-link" href="#services">Services</a></li>
+      <li class="header__anchor-nav-item"><a class="header__anchor-nav-link" href="#who-we-are">Who We Are</a></li>
+      <li class="header__anchor-nav-item"><a class="header__anchor-nav-link" href="#contributions">Contributions</a></li>
+    </ul>
+    <p class="header__copy">
+      EightShapes designs web-based products and systems that make for beautiful, usable,cohesive experiences.
+    </p>
   </div>
 {% endmacro %}
 
@@ -191,7 +218,7 @@
     {% set args = args|updateobj('type', 'biophotos') %}
   {% endif %}
 
-  <div class="container-fluid xups {{ args.background }}">
+  <div {% if args.id %} id="who-we-are" {% endif %} class="container-fluid xups {{ args.background }}">
     <div class="container-fluid-inner {{ args.context }}">
       <h2>{{ args.h2 }}</h2>
       <p class="lead">{{ args.lead }}</p>
