@@ -1,18 +1,22 @@
 {% extends 'default.layout.html' %}
 
 {% block content %}
+
+  <!-- Our Work -->
   <div class="container-fluid">
     <div class="fluid-inner">
         {{ components.casestudies() }}
     </div>
   </div>
 
+  <!-- What We Do -->
   <div class="container-fluid color-charcoal">
     <div class="container-fluid-inner">
         {{ components.whatwedo() }}
     </div>
   </div>
   
+  <!-- People -->
   {{ components.xups({
     "up_responsiveness": "",
     "type": "ups__bio-photos",
@@ -47,6 +51,7 @@
      ]
   }) }}
 
+  <!-- Contributions -->
    <div class="container-fluid">
     <div class="container-fluid-inner">
       <h2 class="homepage__heading">How We've Contributed</h2>
@@ -110,6 +115,9 @@
     </div>
   </div>
   
-  {{ components.page_cta() }}
+  <!-- Page CTA -->
+  {{ components.page_cta({header:'Ready?', lead: 'Working on a UX design? Crafting a product strategy? Starting a design system?'}) }}
+
+  <!-- Footer -->
   {{ components.footer() }}
 {% endblock %}
