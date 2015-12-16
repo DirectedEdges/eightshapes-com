@@ -2,10 +2,13 @@
 
 	&.background-gray {
 		background-color: $color-gray-95;
+
+		h2 {
+			color: $color-orange;
+		}
 	}
 
 	h2 {
-		color: $color-orange;
 		margin: 16px 0 32px;
 		text-align: center;
 		@media screen and (min-width: 768px) {
