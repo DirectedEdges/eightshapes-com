@@ -1,9 +1,15 @@
 .container-fluid {
 	padding: 16px;
-	@media screen and (min-width: $screen-md) {
+	@media screen and (min-width: 480px) {
 		padding: 32px;
 	}
-	@media screen and (min-width: $screen-md) {
+	@media screen and (min-width: 768px) {
 		padding: 100px;
 	}
 }
+
+.container-fluid-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
