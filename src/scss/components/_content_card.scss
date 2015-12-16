@@ -16,23 +16,31 @@
 }
 
 .content-card {
-  background-color: $color-gray-95;
-  background-position: center -20%;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  color: $color-gray-20;
   display: block;
-  min-height: 280px;
-  padding: $spacing-default;
   position: relative;
+  margin-bottom: $spacing-md;
+  
+  @media screen and (min-width: $screen-sm) {
+    color: $color-gray-20;
+    min-height: 280px;
+    padding: $spacing-default;
+    background-color: $color-gray-95;
+    background-position: center -20%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 0;
+  }
 
   &:hover {
     text-decoration: none;
   }
 
   &.content-card--event {
-    background-color: $color-orange;
-    color: $color-white;
+
+    @media screen and (min-width: $screen-sm) {
+      background-color: $color-orange;
+      color: $color-white;
+    }
   }
 }
 
@@ -40,54 +48,95 @@
 .content-card__date {
   font-size: $font-size-xs;
   font-weight: $font-weight-bold;
-  margin-bottom: 0;
   margin-top: 0;
   text-transform: uppercase;
+  display: inline-block;
+  color: $color-gray-15;
+  margin-bottom: $spacing-sm/2;
+  
+  & + .content-card__date:before {
+    content: " / ";
+    margin: 0 8px;
+    color: $color-gray-53;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    margin-bottom: 0;
+    display: block;
+    & + .content-card__date:before {
+      content: "";
+      margin: 0;
+    }
+  }
 }
 
 .content-card__heading {
   margin-bottom: $spacing-sm;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  
+  @media screen and (min-width: $screen-sm) {
+    text-transform: inherit;
+    font-size: 26px;
+    font-weight: 300;
+  }
 }
 
-.content-card__date {
-  margin-bottom: $spacing-sm;
+.content-card__date {  
+    margin-bottom: $spacing-sm/2;
+    @media screen and (min-width: $screen-sm) {
+      margin-bottom: $spacing-sm;
+    }
 }
 
 .content-card__copy {
-  font-weight: $font-weight-normal;
-  margin-bottom: $spacing-md;
+  display: none;
+  
+  @media screen and (min-width: $screen-sm) {
+    display: block;
+    font-weight: $font-weight-normal;
+    margin-bottom: $spacing-md;
+  }  
 }
 
 .content-card--double {
-  background-position: center center;
-  background-size: cover;
-  color: $color-white;
+  background-size: 0;
 
-  &:hover {
+  @media screen and (min-width: $screen-sm) {
     color: $color-white;
-  }
+    background-position: center center;
+    background-size: cover;
+    
+    &:hover {
+      color: $color-white;
+    }
 
-  &:before {
-    background-color: rgba($color-blue, 0);
-    bottom: 0;
-    content: '';
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: background .5s;
-  }
+    &:before {
+      background-color: rgba($color-blue, 0);
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: background .5s;
+    }
 
-  &:hover:before {
-    background-color: rgba($color-blue, .5);
+    &:hover:before {
+      background-color: rgba($color-blue, .5);
+    }
   }
-
+  
   .content-card__content {
-    bottom: $spacing-default;
-    left: $spacing-default;
-    max-width: 320px;
-    position: absolute;
-    right: $spacing-default;
+
+    @media screen and (min-width: $screen-sm) {
+      bottom: $spacing-default;
+      left: $spacing-default;
+      max-width: 320px;
+      position: absolute;
+      right: $spacing-default;
+    }
   }
 
   .content-card__heading {
@@ -96,9 +145,14 @@
 }
 
 .content-card__cta {
+  display: none;
   color: $color-link;
   font-weight: $font-weight-bold;
   text-transform: uppercase;
+  
+  @media screen and (min-width: $screen-sm) {
+    display: block;
+  }
 
   .content-card:hover & {
     text-decoration: underline;
@@ -109,13 +163,16 @@
     border-radius: $border-radius-default;
     bottom: $spacing-default;
     color: $color-gray-20;
-    display: block;
     left: $spacing-default;
     padding: 20px 0;
     position: absolute;
     right: $spacing-default;
     text-align: center;
     // width: 100%;
+    
+    @media screen and (min-width: $screen-sm) {
+      display: block;
+    }
   }
 
   .content-card--event:hover & {
@@ -125,30 +182,41 @@
 }
 
 .content-card--book {
-  background-color: $color-gray-20;
-  padding: 0;
+
+  @media screen and (min-width: $screen-sm) {
+    background-color: $color-gray-20;
+    padding: 0;
+  }
 
   .content-card__pre-heading {
-    color: $color-orange-light;
+
+    @media screen and (min-width: $screen-sm) {
+      color: $color-orange-light;
+    }
   }
 
   .content-card__content {
-    background-color: $color-gray-20;
-    // bottom: 0;
-    color: $color-white;
     display: block;
-    // left: 0;
-    min-height: 185px;
-    padding: $spacing-default;
-    // position: absolute;
-    width: 100%;
+
+    @media screen and (min-width: $screen-sm) {
+      color: $color-white;
+      background-color: $color-gray-20;
+      // bottom: 0;
+      // left: 0;
+      min-height: 185px;
+      // position: absolute;
+      width: 100%;
+      padding: $spacing-default;
+    }
   }
 
   .content-card__copy {
-    color: $color-white;
     font-weight: $font-weight-light;
     margin-bottom: 0;
     // min-height: 70px;
+    @media screen and (min-width: $screen-sm) {
+      color: $color-white;
+    }
   }
 }
 
@@ -158,8 +226,11 @@
 }
 
 .content-card__background-image-wrap {
-  display: block;
+  display: none;
   position: relative;
+  @media screen and (min-width: $screen-sm) {
+    display: block;
+  }
 
   &:before {
     background-color: rgba($color-blue, 0);
