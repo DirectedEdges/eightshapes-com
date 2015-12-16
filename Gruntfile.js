@@ -137,7 +137,7 @@ module.exports = function(grunt) {
                {
                   expand: true,
                   cwd: "src/templates/",
-                  src: "*.html",
+                  src: "**/*.html",
                   dest: "dist/",
                   ext: ".html"
                }
