@@ -25,28 +25,6 @@ p.duration {
 	margin-top: 8px;
 }
 
-.systems-cta {
-	p {
-		text-align: center;
-	}
-	.systems-button {
-	  font-weight: 700;
-	  text-transform: uppercase;
-	  width: 250px;
-	  display: inline-block;
-	  color: $color-black;
-	  background-color: $color-white;
-	  padding: $spacing-default/2;
-	  border-radius: 4px;
-	  text-align: center;
-
-	  &:hover {
-	  	background-color: $color-gray-95;
-	  	text-decoration: none;
-	  }
-	}
-}
-
 .system-introduction {
 	max-width: 900px;
 	margin: 0 auto;

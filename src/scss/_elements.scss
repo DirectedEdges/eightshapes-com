@@ -22,10 +22,10 @@ h1 {
 
 h2 {
   font-size: 32px;
-  @media screen and (min-width: $screen-md) {
+  @media screen and (min-width: 768px) {
     font-size: 36px;
   }
-  @media screen and (min-width: $screen-lg) {
+  @media screen and (min-width: 1000px) {
     font-size: $font-size-h2;
   }
 }
@@ -44,6 +44,16 @@ h5 {
 
 h6 {
   font-size: $font-size-h6;
+}
+
+p.lead {
+  font-size: 18px;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+  }
+  @media screen and (min-width: 1000px) {
+    font-size: 28px;
+  }
 }
 
 img {
@@ -66,14 +76,6 @@ p {
   font-size: $font-size-default;
   margin: 0;
 }
-
-p.lead {
-  font-size: 18px;
-  @media screen and (min-width: 1024px) {
-    font-size: 28px;
-  }
-}
-
 
 a {
   color: $color-link;
