@@ -34,7 +34,7 @@
 
 	.ups {
 		@media screen and (min-width: 768px) {
-			margin: 0 -32px 8px;
+			margin: 0 -32px;
 		}
 	}
 
@@ -55,21 +55,29 @@
 
 		@media screen and (min-width: 768px) {
 			.up-container {
-				width: 49%;
+				width: 49.8%;
 				padding: 0 16px;
 				display: inline-block;
 				vertical-align: top;
 			}
 			.up {
 				background-color: white;
+				min-height: 215px;
+			}
+		}
+		@media screen and (min-width: 768px) {
+			margin: 0 -16px;
+			.up {
+				min-height: 175px;
 			}
 		}
 		@media screen and (min-width: 1400px) {
 			.up-container {
-				width: 24.5%;
+				width: 24.8%;
 			}
 			.up {
 				min-height: 225px;
+				margin-bottom: 0;
 			}
 		}
 	}
@@ -113,6 +121,7 @@
 				text-align: center;
 				padding: 0 8px;
 				vertical-align: top;
+				margin-bottom: 0;
 			}
 			h3 {
 				font-size: 16px;
