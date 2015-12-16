@@ -1,3 +1,20 @@
+{% macro bio_hero(args) %}
+  <div class="bio-hero" style="background:white;">
+    {{ header_slim({class: 'bio-hero__header'}) }}
+    <div class="bio-hero__image" style="background-image: url({{args.background_image}});"></div>
+    <div class="bio-hero__content">
+      <h1 class="bio-hero__heading">Dan Brown</h1>
+      <span class="bio-hero__title">Founder and Principal</span>
+      <span class="bio-hero__tenure">EightShapes since <span class="bio-hero__tenure-value">2006</span></span>
+      <ul class="bio-hero__social">
+        <li class="bio-hero__social-item"><a href="#" class="bio-hero__social-link">Medium</a></li>
+        <li class="bio-hero__social-item"><a href="#" class="bio-hero__social-link">Twitter</a></li>
+        <li class="bio-hero__social-item"><a href="#" class="bio-hero__social-link">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+{% endmacro %}
+
 {% macro casestudies(args) %}
   <div class="casestudies">
     <h2>Our Work</h2>
@@ -137,7 +154,7 @@
 {% endmacro %}
 
 {% macro header_slim(args) %}
-  <div class="header--slim">
+  <div class="header--slim {{args.class}}">
     <a class="header__back-link" href="/">{{ icon({icon_name: 'angle-left', class: 'header__back-link-icon'}) }}</a>
     <a href="/">{{ eightshapes_logo({class: 'header__logo'}) }}</a>
   </div>

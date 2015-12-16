@@ -1,0 +1,15 @@
+{% extends 'default.layout.html' %}
+
+{% block content %}
+  {{ components.bio_hero({
+    background_image: 'images/bio_hero/dan-brown.jpg'
+  }) }}
+  <div class="container-fluid">
+    <div class="container-fluid-inner">
+      <p class="lead">
+        Since 1994, Dan’s focused on user research, information architecture, content strategy and interaction design for large marketing sites, complex web applications, and digital products. He’s worked on teams large and small to perfect collaboration and productivity. In 2006, Dan co-founded EightShapes with Nathan Curtis to serve clients in healthcare, education, not-for-profit and high-tech.
+      </p>
+    </div>
+  </div>
+ {{ components.footer() }}
+{% endblock %}

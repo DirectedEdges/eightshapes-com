@@ -1,0 +1,68 @@
+.bio-hero {
+  // background-color: $color-gray-12;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 559px;
+}
+
+.bio-hero__header {
+  background: none;
+
+  .eightshapes-logo {
+    fill: $color-gray-12;
+  }
+
+  .header__back-link-icon {
+    fill: $color-gray-12;
+  }
+}
+
+.bio-hero__image {
+  position: static;
+  background-position: 30% top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+.bio-hero__content {
+  // color: $color-white;
+  max-width: 1368px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 20;
+  // padding: $spacing-row-vertical $spacing-default $spacing-default 200px;
+}
+
+@media screen and (min-width: $screen-md) {
+  .bio-hero__header {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    right: 0; 
+
+    .eightshapes-logo {
+      fill: $color-white;
+    }
+  }
+
+  .bio-hero__image {
+    position: absolute;
+    background-position: 30% top;
+    background-repeat: no-repeat;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+  }
+}
+
+@media screen and (min-width: 1368px) {
+  .bio-hero__image {
+    background-position: center top;
+  }
+}
