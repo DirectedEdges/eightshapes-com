@@ -78,6 +78,10 @@ module.exports = function(grunt) {
               dest: 'dist/js',
               filter: 'isFile'
             }]
+          },
+          htaccess: {
+            src: 'src/.htaccess',
+            dest: 'dist/.htaccess'
           }
         },
         svg_sprite: {
