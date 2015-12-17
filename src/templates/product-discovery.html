@@ -121,66 +121,69 @@
       </div>
     </div>
   </div>
-    
-  <div class="container-fluid">
+
+  <!-- Contributions -->
+   <div class="container-fluid" id="contributions">
     <div class="container-fluid-inner">
-      <h2 class="homepage__heading">How We’ve Contributed</h2>
+      <h2 class="homepage__heading">How We've Contributed</h2>
       <p class="lead homepage__lead">EightShapes has contributed three books, a documentation templating system, and a prototyping framework, not to mention countless workshops and articles.</p>
-      <div class="row content-card-wrap">
-        <div class="col-sm-12 col-md-12 col-lg-6">
-          <a href="https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0#.ajm21o3f1" class="content-card content-card--double" style="background-image: url(images/components/content_card/medium_castle.jpg)">
-            <span class="content-card__content">
-              <h4 class="content-card__pre-heading">Medium</h4>
-              <h4 class="content-card__date">0/08/2015</h4>
-              <h3 class="content-card__heading">Behind the Wheel with Product 
-and UX</h3>
-            </span>
-          </a>
-        </div>
-
-    
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <a href="https://www.ux-lx.com/speakers/nathan_curtis.html" class="content-card content-card--event"><span class="content-card__content"><h4 class="content-card__pre-heading">Conference</h4><h4 class="content-card__date">May 25, 2016, Lisbon, Portugal</h4><h3 class="content-card__heading">Scalable Design Systems Workshop</h3><span href="" class="content-card__cta">Register</span></span>
-          </a>
-        </div>
-
-
-    
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <a href="http://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351" class="content-card content-card--book"><div class="content-card__background-image-wrap">
-                <img src="images/components/content_card/modular_web_design.jpg" class="content-card__background-image">
-              </div><span class="content-card__content"><h4 class="content-card__pre-heading">Nathan Curtis</h4><h3 class="content-card__heading">Modular Web Design</h3><p class="content-card__copy">Creating Reusable Components for User Experience Design and Documentation</p></span>
-          </a>
-        </div>
-
-    
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <a href="http://www.amazon.com/Communicating-Design-Developing-Documentation-Planning/dp/0321712463" class="content-card content-card--book"><div class="content-card__background-image-wrap">
-                <img src="images/components/content_card/communicating_design.jpg" class="content-card__background-image">
-              </div><span class="content-card__content"><h4 class="content-card__pre-heading">Dan Brown</h4><h3 class="content-card__heading">Communicating Design</h3><p class="content-card__copy">Developing Website Documentation for Design and Planning</p></span>
-          </a>
-        </div>
-
-    
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <a href="https://medium.com/eightshapes-llc/behind-the-wheel-with-product-and-ux-287dba3e6d64#.hzx8jmnbq" class="content-card "><span class="content-card__content"><h4 class="content-card__pre-heading">Medium</h4><h3 class="content-card__heading">Behind The Wheel</h3><p class="content-card__copy">My kids aren’t yet old enough to learn to drive. But I picture myself in the passenger seat, years from now, and imagine what it feels like to teach them. I’m sure it’s terrifying, but that’s not what I mean.</p><span href="" class="content-card__cta">Read More</span></span>
-          </a>
-        </div>
-
-    
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <a href="http://www.amazon.com/Designing-Together-collaboration-management-professionals/dp/0321918630" class="content-card content-card--book"><div class="content-card__background-image-wrap">
-                <img src="images/components/content_card/designing_together.jpg" class="content-card__background-image">
-              </div><span class="content-card__content"><h4 class="content-card__pre-heading">Dan Brown</h4><h3 class="content-card__heading">Designing Together</h3><p class="content-card__copy">The Collaboration and Conflict Management Handbook for Creative Professionals</p></span>
-          </a>
-        </div>
-
-    
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <a href="https://medium.com/eightshapes-llc/the-component-cut-up-workshop-1378ae110517#.5ibx9rqm8" class="content-card "><span class="content-card__content"><h4 class="content-card__pre-heading">Medium</h4><h3 class="content-card__heading">The Component Cut-Up Workshop</h3><p class="content-card__copy">Nothing beats the energy of getting a team together to deconstruct an existing design system and arrive at a component library together.</p><span href="" class="content-card__cta">Read More</span></span>
-          </a>
-        </div>
-      </div>
+     <div class="row content-card-wrap">
+       {{ components.content_card_double({
+         href: "https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0#.ajm21o3f1",
+         pre_heading: "Medium",
+         heading: "Behind the Wheel with Product and UX",
+         background_image: "images/components/content_card/behind-ther-wheel.jpg"
+       }) }}
+       {{ components.content_card({
+         href: "https://medium.com/eightshapes-llc/13-principles-of-effective-design-teams-1d0815deefd6#.hm4e1wpw7",
+         pre_heading: "Medium",
+         heading: "13 Principles of Effective Design Teams",
+         copy: "Roles, tools, objectives, and project plans are crucial to team effectiveness
+",
+         cta: "Read More"
+       }) }}
+       {{ components.content_card({
+         href: "http://www.amazon.com/Communicating-Design-Developing-Documentation-Planning/dp/0321712463",
+         class: "content-card--book",
+         pre_heading: "Book",
+         heading: "Communicating Design",
+         copy: "Developing Website Documentation for Design and Planning",
+         background_image: "images/components/content_card/communicating_design.jpg"
+       }) }}
+       {{ components.content_card({
+         href: "http://www.oreilly.com/pub/e/3605",
+         class: "content-card--event",
+         pre_heading: "Webinar",
+         heading: "Collaborative Design Discovery",
+         copy: "Essential techniques for successful product definition",
+         cta: "Register"
+       }) }}
+       {{ components.content_card({
+         href: "https://medium.com/@detzi/from-design-vision-to-reality-in-5-steps-535124a0a96d#.m4j0w38zd",
+         class: "content-card--book",
+         pre_heading: "Medium",
+         heading: "From Design Vision to Reality in 5 Steps",
+         cta: "Read More",
+         background_image: "images/components/content_card/five-steps.png"
+         
+       }) }}
+       {{ components.content_card({
+         href: "http://conferences.oreilly.com/design/ux-interaction-iot-us/public/schedule/detail/45380",
+         class: "content-card--event",
+         pre_heading: "Workshop",
+         date: "Wednesday January 20",
+         heading: "Crafting the Discovery Phase",
+         copy: "How to put research in context and set direction for your product",
+         cta: "Register"
+       }) }}
+       {{ components.content_card({
+         href: "https://www.oreilly.com/ideas/dan-brown-on-mindsets-managing-designers-and-mastering-impostor-syndrome",
+         pre_heading: "Podcast",
+         heading: "O’Reilly Radar",
+         copy: "Dan talks about the most important skills for designers",
+         cta: "Read More"
+       }) }}
+     </div>
     </div>
   </div>
   

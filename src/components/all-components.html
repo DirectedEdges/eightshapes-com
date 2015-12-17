@@ -1,48 +1,58 @@
 {% macro casestudies(args) %}
-  <div class="casestudies">
-    <h2>Our Work</h2>
-    <div class="row">
-      <a class="casestudy col-md-8" style="background-image: url('images/components/casestudies/cs-title--marriott.jpg');" href="case-studies/marriott.html" >
-        <div class="title">
-          <h3>Marriott</h3>
-          <h4>Responsive <span>Design {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</span></h4>
-        </div>
-      </a>
-      <a class="casestudy col-md-4" style="background-image: url('images/components/casestudies/cs-title--sonatype.jpg');" href="case-studies/sonatype.html">
-        <div class="title">
-          <h3>Sonatype</h3>
-          <h4>Product <span>Design {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</span></h4>
-        </div>
-      </a>
-    </div>
-    <div class="row">
-        <a class="casestudy col-md-4" style="background-image: url('images/components/casestudies/cs-title--ncarb.jpg');" href="case-studies/ncarb.html">
-          <div class="title">
-            <h3>NCARB</h3>
-            <h4>Product  <span>Design {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</span></h4>
+  <div id="our-work" class="container-fluid casestudies">
+    <div class="fluid-inner">
+      <h2>Our Work</h2>
+      <div class="cases">
+        <a href="case-studies/marriott.html" >
+          <div class="casestudy casestudy-doublewide" style="background-image: url('images/components/casestudies/cs-title--marriott.jpg');">
+            <div class="title">
+              <h3>Marriott</h3>
+              <h4>Responsive <span>Design {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</span></h4>
+            </div>
           </div>
         </a>
-        <a class="casestudy col-md-4" style="background-image: url('images/components/casestudies/cs-title--fireeye.jpg');" href="case-studies/fireeye.html">
-          <div class="title">
-            <h3>FireEye</h3>
-            <h4>Responsive  <span>Design {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</span></h4>
+        <a href="case-studies/sonatype.html">
+          <div class="casestudy" style="background-image: url('images/components/casestudies/cs-title--sonatype.jpg');">
+            <div class="title">
+              <h3>Sonatype</h3>
+              <h4>Product <span>Design {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</span></h4>
+            </div>
           </div>
         </a>
-        <a class="casestudy col-md-4" style="background-image: url('images/components/casestudies/cs-title--aact.jpg');" href="case-studies/aact.html">
-          <div class="title">
-            <h3>AACT</h3>
-            <h4>Design <span>Strategy {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</span></h4>
+        <a href="case-studies/ncarb.html">
+          <div class="casestudy" style="background-image: url('images/components/casestudies/cs-title--ncarb.jpg');">
+            <div class="title">
+              <h3>NCARB</h3>
+              <h4>Product  <span>Design {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</span></h4>
+            </div>
           </div>
         </a>
+        <a href="case-studies/fireeye.html">
+          <div class="casestudy" style="background-image: url('images/components/casestudies/cs-title--fireeye.jpg');">
+            <div class="title">
+              <h3>FireEye</h3>
+              <h4>Responsive  <span>Design {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</span></h4>
+            </div>
+          </div>
+        </a>
+        <a href="case-studies/aact.html">
+          <div class="casestudy" style="background-image: url('images/components/casestudies/cs-title--aact.jpg');">
+            <div class="title">
+              <h3>AACT</h3>
+              <h4>Design <span>Strategy {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</span></h4>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="client-brands">
+        <img class="client-brands__image" src="images/client_brands/brands-1.png"/>
+        <img class="client-brands__image" src="images/client_brands/brands-2.png"/>
+      </div>
     </div>
   </div>
 {% endmacro %}
 
 {% macro client_brands(args) %}
-  <div class="client-brands">
-    <img class="client-brands__image" src="images/client_brands/brands-1.png"/>
-    <img class="client-brands__image" src="images/client_brands/brands-2.png"/>
-  </div>
 {% endmacro %}
 
 {% macro content_card_double(args) %}
@@ -122,7 +132,7 @@
 {% endmacro %}
 
 {% macro header(args) %}
-  <div id="our-work" class="container-fluid header">
+  <div class="container-fluid header">
     <div class="fluid-inner">
     {{ eightshapes_logo({class: 'header__logo'}) }}
     <p class="header__copy lead">
@@ -181,7 +191,7 @@
     <div class="pseudo-row">
       <div class="productdesign-block block">
           <h3>Design</h3>
-          <p>We provide end-to-end user experience design services, and structure our projects to be collaborative, intense, and sensitive to constraints.</p>
+          <p>We provide end-to-end user experience design, structuring projects to be collaborative, intense, and sensitive to constraints.</p>
           <ul>
             <li>UX Strategy</li>
             <li>UX Design</li>
@@ -196,12 +206,12 @@
           </ul>
       </div><div class="discovery-block block">
           <h3>Discovery</h3>
-          <p>EightShapes aligns your team around a shared product vision through design principles, customer insights, prototyped concepts.</p>
-          <div class="cta"><a href="#">Learn More</a></div>
+          <p>We align your team around a shared product vision through design principles, customer insights, prototyped concepts.</p>
+          <div class="cta"><a href="product-discovery.html">Learn More{{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</a></div>
       </div><div class="systems-block block">
           <h3>Systems</h3>
-          <p>EightShapes guides your investment in design systems as living products so teams can make innovative, beautiful experiences together.</p>
-          <div class="cta"><a href="#">Learn More</a></div>
+          <p>We guide you to start, build, spread and sustain design systems so your teams can make innovative, beautiful experiences together.</p>
+          <div class="cta"><a href="design-systems.html">Learn More {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</a></div>
       </div>
     </div>
   </div>
@@ -230,11 +240,11 @@
     <div class="container-fluid-inner {{ args.context }}">
       <h2>{{ args.h2 }}</h2>
       <p class="lead">{{ args.lead }}</p>
-      <div class="row ups {{ args.type }}">
+      <div class="ups {{ args.type }}">
 				{% for up in args.ups %}
         <div class="up">
 	        <a href="{{ up.header }}.html">
-	        	<img src="images/bios/{{ up.thumbnail }}.jpg" alt="{{ up.header }}">
+	        	<img src="images/bios/bio-thumb-{{ up.thumbnail }}.jpg" alt="{{ up.header }}">
 	          <h3>{{ up.header }}</h3>
 	          <p>{{ up.paragraph }}</p>
 	        </a>

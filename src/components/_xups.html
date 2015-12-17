@@ -21,11 +21,11 @@
     <div class="container-fluid-inner {{ args.context }}">
       <h2>{{ args.h2 }}</h2>
       <p class="lead">{{ args.lead }}</p>
-      <div class="row ups {{ args.type }}">
+      <div class="ups {{ args.type }}">
 				{% for up in args.ups %}
         <div class="up">
 	        <a href="{{ up.header }}.html">
-	        	<img src="images/bios/{{ up.thumbnail }}.jpg" alt="{{ up.header }}">
+	        	<img src="images/bios/bio-thumb-{{ up.thumbnail }}.jpg" alt="{{ up.header }}">
 	          <h3>{{ up.header }}</h3>
 	          <p>{{ up.paragraph }}</p>
 	        </a>

@@ -24,8 +24,12 @@
   display: block;
   font-size: $font-size-default;
   font-weight: $font-weight-normal;
-  margin-bottom: $spacing-md;
+  margin-bottom: 32px;
   text-transform: uppercase;
+
+  &:hover {
+    color: white;
+  }
 }
 
 .header__copy {
@@ -61,6 +65,9 @@
     &:last-child {
       margin-right: 0;
     }
+  }
+  .header__anchor-nav-link {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) {
