@@ -2,9 +2,8 @@ $brand-max-width: 960px;
 
 .client-brands {
   display: block;
-  margin: 0 auto $spacing-row-vertical;
+  margin: 32px auto 0;
   max-width: $brand-max-width;
-  padding: 0 $spacing-default;
   width: 100%;
 }
 
@@ -14,7 +13,7 @@ $brand-max-width: 960px;
 
 @media screen and (min-width: $screen-sm) {
   .client-brands {
-    padding: 0 $spacing-row-vertical;
+    padding: 0;
   }
 }
 
