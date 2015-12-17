@@ -39,6 +39,7 @@
     @media screen and (min-width: 768px) {
       background-color: $color-orange;
       color: $color-white;
+      .content-card__copy,
       .content-card__pre-heading,
       .content-card__date {
           color: $color-gray-95;

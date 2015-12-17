@@ -4,10 +4,6 @@
   text-align: center;
 }
 
-.header__logo {
-  margin-bottom: 40px;
-}
-
 .header__anchor-nav {
   @extend %list-reset;
   font-size: 0;
@@ -41,21 +37,25 @@
 .header--slim {
   background: $color-gray-15;
   text-align: center;
-  padding: 40px 0 0;
+  padding: 20px 0 0;
   position: relative;
 
   + * {
     padding-top: $spacing-default;
   }
+
+  @media screen and (min-width: 768px) {
+    padding: 100px 0 0;
+  }
 }
 
 .header__back-link-icon {
   fill: $color-white;
-  height: 40px;
+  height: 30px;
   position: absolute;
   left: $spacing-default;
-  top: 40px;
-  width: 40px;
+  top: 20px;
+  width: 20px;
 }
 
 @media screen and (min-width: 568px) {
@@ -78,6 +78,5 @@
   .header__anchor-nav-item {
     display: inline-block;
     margin-right: 50px;
-
   }
 }

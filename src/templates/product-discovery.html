@@ -3,10 +3,11 @@
 {% block content %}
 
   <!-- Introduction -->
+  {{ components.header_slim() }}
   <div class="container-fluid background-charcoal">
-    <div class="system-introduction">
+    <div class="container-fluid-inner line-of-business-introduction">
       <h1>Product Discovery</h1>
-      <h2>EightShapes aligns your team around a shared product vision through design principles, customer insights, &amp; prototyped concepts.</h2>
+      <p class="lead">We align your team around a shared product vision through design principles, customer insights, &amp; prototyped concepts.</p>
     </div>
   </div>
  
@@ -17,7 +18,7 @@
       <div class="photo-text__half-text">
 
         <h2>What We Deliver</h2>
-        <p>In partnership with product managers, EightShapes defines an experience strategy grounded in audience insights and expressed through a prototype.</p>
+        <p class="lead">In partnership with product managers, EightShapes defines an experience strategy grounded in audience insights and expressed through a prototype.</p>
 
         <h3>Experience Strategy</h3>
         <p>Communicate the big picture or future state of your product.</p>
@@ -68,7 +69,7 @@
     <div class="container-fluid-inner">
       <h2>Baseline Research</h2>
       <p class="lead">Baseline research projects are quick studies to inject targeted user insights into your design and development processes.</p>
-      <div class="ups__color-blocks">
+      <div class="ups__color-blocks ups__3-ups">
         <div class="up-container">
           <div class="up">
             <h3>Usability Testing</h3>
@@ -188,7 +189,7 @@
   </div>
   
   <!-- Page CTA -->
-  {{ components.page_cta({header:'Ready?', lead: '[Does your product need a vision? Does your UX need a concept? Does your team need design direction?]'}) }}
+  {{ components.page_cta({header:'Ready?', lead: 'Does your product need a vision? Does your UX need a concept? Does your team need design direction?'}) }}
 
   <!-- Footer -->
   {{ components.footer() }}

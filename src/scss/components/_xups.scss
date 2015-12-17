@@ -92,7 +92,29 @@
 
 		// 3 ups
 
-
+		&.ups__3-ups {
+			@media screen and (min-width: 768px) {
+				.up-container {
+					width: 100%;
+				}
+				.up {
+					min-height: auto;
+				}
+			}
+			@media screen and (min-width: 1000px) {
+				.up-container {
+					width: 33%;
+				}
+				.up {
+					min-height: 210px;
+				}
+			}
+			@media screen and (min-width: 1200px) {
+				.up {
+					min-height: 180px;
+				}
+			}
+		}
 	}
 
 	.ups__bio-photos {
