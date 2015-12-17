@@ -1,59 +1,5 @@
 .xups {
 
-	&.white-block-on-light-gray {
-		background-color: $color-gray-95;
-		h2 {
-			color: $color-orange;
-		}
-		@media screen and (min-width: 768px) {
-			.up {
-				background-color: white;
-			}
-		}
-	}
-
-	&.light-gray-block-on-white {
-		h2 {
-			color: $color-orange;
-		}
-		@media screen and (min-width: 768px) {
-			.up {
-				background-color: $color-gray-95;
-			}
-		}
-	}
-
-	&.charcoal-block-on-light-gray {
-		background-color: $color-gray-95;
-		h2 {
-			color: $color-orange;
-		}
-		@media screen and (min-width: 768px) {
-			.up {
-				background-color: $color-gray-15;
-			}
-			h3 {
-				color: $color-orange;
-			}
-			p {
-				color: white;
-			}
-		}
-	}
-
-	h2 {
-		margin-bottom: 32px;
-		text-align: center;
-	}
-
-	p.lead {
-		margin: 0 auto 32px;
-		text-align: center;
-		@media screen and (min-width: 768px) {
-			width: 70%;
-		}
-	}
-
 	h3 {
 		color: $color-orange;
 		margin-bottom: 8px;
@@ -146,7 +92,29 @@
 
 		// 3 ups
 
-
+		&.ups__3-ups {
+			@media screen and (min-width: 768px) {
+				.up-container {
+					width: 100%;
+				}
+				.up {
+					min-height: auto;
+				}
+			}
+			@media screen and (min-width: 1000px) {
+				.up-container {
+					width: 33%;
+				}
+				.up {
+					min-height: 210px;
+				}
+			}
+			@media screen and (min-width: 1200px) {
+				.up {
+					min-height: 180px;
+				}
+			}
+		}
 	}
 
 	.ups__bio-photos {
@@ -160,6 +128,7 @@
 		h3 {
 			padding-top: 12px;
 			margin-bottom: 4px;
+			font-weight: 700;
 		}
 
 		img {
@@ -167,6 +136,14 @@
 			position: absolute;
 			top: 0;
 			left: 0;
+		}
+
+		a h3, a p {
+			color: $color-blue;
+		}
+
+		a:hover h3, a:hover p {
+			text-decoration: underline;
 		}
 
 		@media screen and (min-width: 480px) {
@@ -202,6 +179,56 @@
 			h3 {
 				font-size: 20px;
 			}
+		}
+	}
+
+	// Coloring
+
+	&.white-block-on-light-gray {
+		background-color: $color-gray-95;
+		h2 {
+			color: $color-orange;
+		}
+		@media screen and (min-width: 768px) {
+			.up {
+				background-color: white;
+			}
+		}
+	}
+
+	&.light-gray-block-on-white {
+		h2 {
+			color: $color-orange;
+		}
+		@media screen and (min-width: 768px) {
+			.up {
+				background-color: $color-gray-95;
+			}
+		}
+	}
+
+	&.charcoal-block-on-light-gray {
+		background-color: $color-gray-95;
+		h2 {
+			color: $color-orange;
+		}
+		@media screen and (min-width: 768px) {
+			.up {
+				background-color: $color-gray-15;
+			}
+			h3 {
+				color: $color-orange;
+			}
+			p {
+				color: white;
+			}
+		}
+	}
+
+	&.light-gray {
+		background-color: $color-gray-95;
+		h2 {
+			color: $color-orange;
 		}
 	}
 }
