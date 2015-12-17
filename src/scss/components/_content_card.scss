@@ -12,7 +12,6 @@
     padding-left: 0;
     padding-right: 0;
   }
-
 }
 
 .content-card {
@@ -20,7 +19,7 @@
   position: relative;
   margin-bottom: $spacing-md;
   
-  @media screen and (min-width: $screen-sm) {
+  @media screen and (min-width: 768px) {
     color: $color-gray-20;
     min-height: 280px;
     padding: $spacing-default;
@@ -37,9 +36,14 @@
 
   &.content-card--event {
 
-    @media screen and (min-width: $screen-sm) {
+    @media screen and (min-width: 768px) {
       background-color: $color-orange;
       color: $color-white;
+      .content-card__copy,
+      .content-card__pre-heading,
+      .content-card__date {
+          color: $color-gray-95;
+      }
     }
   }
 }
@@ -60,7 +64,7 @@
     color: $color-gray-53;
   }
 
-  @media screen and (min-width: $screen-sm) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 0;
     display: block;
     & + .content-card__date:before {
@@ -76,7 +80,7 @@
   font-size: 18px;
   font-weight: 400;
   
-  @media screen and (min-width: $screen-sm) {
+  @media screen and (min-width: 768px) {
     text-transform: inherit;
     font-size: 26px;
     font-weight: 300;
@@ -85,7 +89,7 @@
 
 .content-card__date {  
     margin-bottom: $spacing-sm/2;
-    @media screen and (min-width: $screen-sm) {
+    @media screen and (min-width: 768px) {
       margin-bottom: $spacing-sm;
     }
 }
@@ -93,7 +97,7 @@
 .content-card__copy {
   display: none;
   
-  @media screen and (min-width: $screen-sm) {
+  @media screen and (min-width: 768px) {
     display: block;
     font-weight: $font-weight-normal;
     margin-bottom: $spacing-md;
@@ -103,7 +107,7 @@
 .content-card--double {
   background-size: 0;
 
-  @media screen and (min-width: $screen-sm) {
+  @media screen and (min-width: 768px) {
     color: $color-white;
     background-position: center center;
     background-size: cover;
@@ -130,12 +134,18 @@
   
   .content-card__content {
 
-    @media screen and (min-width: $screen-sm) {
+    @media screen and (min-width: 768px) {
       bottom: $spacing-default;
       left: $spacing-default;
       max-width: 320px;
       position: absolute;
       right: $spacing-default;
+    }
+  }
+
+  .content-card__pre-heading {
+    @media screen and (min-width: 768px) {
+      color: $color-gray-95;
     }
   }
 
@@ -150,7 +160,7 @@
   font-weight: $font-weight-bold;
   text-transform: uppercase;
   
-  @media screen and (min-width: $screen-sm) {
+  @media screen and (min-width: 768px) {
     display: block;
   }
 
@@ -170,7 +180,7 @@
     text-align: center;
     // width: 100%;
     
-    @media screen and (min-width: $screen-sm) {
+    @media screen and (min-width: 768px) {
       display: block;
     }
   }
@@ -183,14 +193,13 @@
 
 .content-card--book {
 
-  @media screen and (min-width: $screen-sm) {
+  @media screen and (min-width: 768px) {
     background-color: $color-gray-20;
     padding: 0;
   }
 
   .content-card__pre-heading {
-
-    @media screen and (min-width: $screen-sm) {
+    @media screen and (min-width: 768px) {
       color: $color-orange-light;
     }
   }
@@ -198,7 +207,7 @@
   .content-card__content {
     display: block;
 
-    @media screen and (min-width: $screen-sm) {
+    @media screen and (min-width: 768px) {
       color: $color-white;
       background-color: $color-gray-20;
       // bottom: 0;
@@ -214,7 +223,7 @@
     font-weight: $font-weight-light;
     margin-bottom: 0;
     // min-height: 70px;
-    @media screen and (min-width: $screen-sm) {
+    @media screen and (min-width: 768px) {
       color: $color-white;
     }
   }
@@ -228,7 +237,7 @@
 .content-card__background-image-wrap {
   display: none;
   position: relative;
-  @media screen and (min-width: $screen-sm) {
+  @media screen and (min-width: 768px) {
     display: block;
   }
 
@@ -256,13 +265,13 @@
   }
 }
 
-@media screen and (min-width: $screen-sm) {
+@media screen and (min-width: 768px) {
   .content-card {
-    min-height: 375px;
+    min-height: 350px;
   }
 }
 
-@media screen and (min-width: $screen-md) {
+@media screen and (min-width: 1000px) {
   .content-card {
     min-height: 360px;
   }
