@@ -1,14 +1,13 @@
 .casestudies {
   background: $color-white;
-  margin: 0 auto 70px;
   
   h2 {
     color: $color-orange;
-    margin: 30px auto;
+    margin: 0 0 16px;
     text-align: center;
     
     @media screen and (min-width: $screen-md) {
-      margin: 100px auto 70px;
+      margin: 0 0 32px;
     }
   }
 }
