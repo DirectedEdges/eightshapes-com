@@ -1,19 +1,49 @@
 .xups {
 
-	&.background-gray {
+	&.white-block-on-light-gray {
 		background-color: $color-gray-95;
-
 		h2 {
 			color: $color-orange;
+		}
+		@media screen and (min-width: 768px) {
+			.up {
+				background-color: white;
+			}
+		}
+	}
+
+	&.light-gray-block-on-white {
+		h2 {
+			color: $color-orange;
+		}
+		@media screen and (min-width: 768px) {
+			.up {
+				background-color: $color-gray-95;
+			}
+		}
+	}
+
+	&.charcoal-block-on-light-gray {
+		background-color: $color-gray-95;
+		h2 {
+			color: $color-orange;
+		}
+		@media screen and (min-width: 768px) {
+			.up {
+				background-color: $color-gray-15;
+			}
+			h3 {
+				color: $color-orange;
+			}
+			p {
+				color: white;
+			}
 		}
 	}
 
 	h2 {
-		margin: 16px 0 32px;
+		margin-bottom: 32px;
 		text-align: center;
-		@media screen and (min-width: 768px) {
-			margin: 0 0 32px;
-		}
 	}
 
 	p.lead {
@@ -26,9 +56,6 @@
 
 	h3 {
 		color: $color-orange;
-		text-transform: uppercase;
-		font-size: 16px;
-		font-weight: $font-weight-normal;
 		margin-bottom: 8px;
 	}
 
@@ -45,41 +72,81 @@
 			padding: 32px;
 			min-height: 175px;
 			h3 {
-				font-size: 20px;
 				margin-bottom: 8px;
 			}
 		}
 	}
 
-	.ups__systems-what-we-do {
+	.ups__color-blocks {
+
+		.number {
+			background-color: $color-orange;
+			color: white;
+			padding: 7px 13px;
+			margin-right: 8px;
+			border-radius: 25px;
+			position: inline-block;
+		}
+
+		// 4 ups
 
 		@media screen and (min-width: 768px) {
+			margin: 0 -16px;
+
+			&.numbers {
+				padding-top: 20px;
+			}
+
 			.up-container {
-				width: 49.8%;
+				width: 49.7%;
 				padding: 0 16px;
 				display: inline-block;
 				vertical-align: top;
+
 			}
 			.up {
-				background-color: white;
-				min-height: 215px;
+				position: relative;
+				min-height: 230px;
+			}
+			.number {
+				position: absolute;
+				top: -20px;
+				left: 45%;
 			}
 		}
-		@media screen and (min-width: 768px) {
-			margin: 0 -16px;
+		@media screen and (min-width: 900px) {
 			.up {
-				min-height: 175px;
+				min-height: 200px;
 			}
 		}
-		@media screen and (min-width: 1400px) {
+		@media screen and (min-width: 1000px) {
+			.up {
+				min-height: 180px;
+			}
+		}
+		@media screen and (min-width: 1200px) {
 			.up-container {
-				width: 24.8%;
+				width: 24.7%;
 			}
 			.up {
-				min-height: 225px;
+				min-height: 290px;
 				margin-bottom: 0;
 			}
 		}
+		@media screen and (min-width: 1300px) {
+			.up {
+				min-height: 270px;
+			}
+		}
+		@media screen and (min-width: 1400px) {
+			.up {
+				min-height: 250px;
+			}
+		}
+
+		// 3 ups
+
+
 	}
 
 	.ups__bio-photos {
