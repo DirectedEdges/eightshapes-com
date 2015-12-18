@@ -1,6 +1,0 @@
-RewriteEngine on
-RewriteRule ^aboutus/nathan-curtis/$ /nathan-curtis.html [R=301,L]
-RewriteRule ^aboutus/dan-brown/$ /dan-brown.html [R=301,L]
-RewriteRule ^aboutus/chris-detzi/$ /chris-detzi.html [R=301,L]
-RewriteRule ^aboutus/james-melzer/$ /james-melzer.html [R=301,L]
-RewriteRule ^aboutus/kevin-powell/$ /kevin-powell.html [R=301,L]
