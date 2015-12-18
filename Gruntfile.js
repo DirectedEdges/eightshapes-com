@@ -82,6 +82,12 @@ module.exports = function(grunt) {
           htaccess: {
             src: 'src/.htaccess',
             dest: 'dist/.htaccess'
+          },
+          responsive_grid_demo: {
+            expand: true,
+            cwd: 'src/responsive-grid-demo',
+            src: '**',
+            dest: 'dist/responsive-grid-demo/'
           }
         },
         svg_sprite: {
