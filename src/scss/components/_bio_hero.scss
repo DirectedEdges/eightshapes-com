@@ -124,6 +124,7 @@
   .bio-hero__image {
     max-width: 100%;
     width: auto;
+    margin: 0 auto;
   }
 }
 
@@ -149,10 +150,12 @@
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100%;
   }
 
   .bio-hero__image-wrap {
     position: absolute;
+    width: 100%;
   }
 
   .bio-hero__image {
@@ -218,7 +221,7 @@
 }
 
 @media screen and (min-width: 1368px + ($spacing-default * 2)) {
-  .header__back-link-icon {
+  .header--bio .header__back-link-icon {
     fill: $color-gray-12;
   }
 }
