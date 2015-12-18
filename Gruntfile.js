@@ -121,7 +121,7 @@ module.exports = function(grunt) {
         nunjucks: {
           options: {
             data: grunt.file.readJSON('nunjucks_data.json'),
-            paths: ['src/templates', 'src/layouts', 'src/components'],
+            paths: ['src/templates', 'src/layouts', 'src/components', 'src/includes'],
             configureEnvironment: function(env, nunjucks) {
               env.addFilter('updateobj', function(obj, key, value){
                 if (obj === undefined) {

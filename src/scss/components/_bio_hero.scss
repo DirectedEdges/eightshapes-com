@@ -25,7 +25,11 @@
 
 .bio-hero__copy {
   color: $color-gray-12;
-  padding: $spacing-default;
+  padding: $spacing-default 16px;
+}
+
+.bio-hero__heading {
+  margin-left: -3px;
 }
 
 .bio-hero__title,
@@ -44,6 +48,7 @@
 .bio-hero__social {
   @extend %list-reset;
   font-size: 0;
+  margin-left: 6px;
 }
 
 .bio-hero__social-item {
@@ -120,6 +125,12 @@
   }
 }
 
+@media screen and (min-width: 480px) {
+  .bio-hero__copy {
+    padding: $spacing-default;
+  }
+}
+
 @media screen and (min-width: 500px) {
   .bio-hero__image {
     max-width: 100%;
@@ -189,6 +200,7 @@
 
   .bio-hero__heading {
     font-size: 66px;
+    margin-left: -5px;
   }
 
   .bio-hero__title,
