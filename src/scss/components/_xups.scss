@@ -132,17 +132,46 @@
 		}
 
 		img {
+			display: block;
 			width: 75px;
 			position: absolute;
 			top: 0;
 			left: 0;
 		}
 
-		a h3, a p {
+		a h3 {
 			color: $color-blue;
 		}
 
-		a:hover h3, a:hover p {
+		a {
+			cursor: pointer;
+		}
+
+		.up__image-wrap {
+			position: relative;
+		
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: rgba($color-link, 0);
+				z-index: 10;
+				transition: background .5s;
+			}
+		}
+
+		a:hover {
+			text-decoration: none;
+
+			.up__image-wrap:before {
+				background: rgba($color-link, .5);
+			}
+		}
+
+		a:hover h3 {
 			text-decoration: underline;
 		}
 

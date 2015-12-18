@@ -16,9 +16,15 @@
 {% endmacro %}
 
 {% macro header_slim(args) %}
-  <div class="header--slim">
-      <a class="header__back-link" href="/">{{ icon({icon_name: 'angle-left', class: 'header__back-link-icon'}) }}</a>
-      <a href="/">{{ eightshapes_logo({class: 'header__logo'}) }}</a>
-      
+  <div class="header--slim {{args.class}}">
+    <a class="header__back-link" href="/">{{ icon({icon_name: 'angle-left', class: 'header__back-link-icon'}) }}</a>
+    <a href="/">{{ eightshapes_logo({class: 'header__logo'}) }}</a>
+  </div>
+{% endmacro %}
+
+{% macro header_bio(args) %}
+  <div class="header--bio {{args.class}}">
+    <a class="header__back-link" href="/">{{ icon({icon_name: 'angle-left', class: 'header__back-link-icon'}) }}</a>
+    <a href="/">{{ eightshapes_logo({class: 'header__logo'}) }}</a>
   </div>
 {% endmacro %}

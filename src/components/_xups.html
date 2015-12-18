@@ -24,8 +24,10 @@
       <div class="ups {{ args.type }}">
 				{% for up in args.ups %}
         <div class="up">
-	        <a href="{{ up.header }}.html">
-	        	<img src="images/bios/bio-thumb-{{ up.thumbnail }}.jpg" alt="{{ up.header }}">
+	        <a href="{{ up.thumbnail }}.html">
+            <div class="up__image-wrap">
+  	        	<img src="images/bios/bio-thumb-{{ up.thumbnail }}.jpg" alt="{{ up.header }}">
+            </div>
 	          <h3>{{ up.header }}</h3>
 	          <p>{{ up.paragraph }}</p>
 	        </a>
