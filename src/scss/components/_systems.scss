@@ -25,83 +25,30 @@ p.duration {
 	margin-top: 8px;
 }
 
-.system-introduction {
-	max-width: 900px;
-	margin: 0 auto;
+.line-of-business-introduction {
 	h1 {
-		font-size: 30px;
+		font-size: 36px;
 		margin-bottom: 16px;
+		text-transform: uppercase;
+		font-weight: 700;
+		text-align: center;
 	}
-	h2 {
-		font-size: 20px;			
-		margin-bottom: 16px;
-	}
+
 	p.lead {
-		margin-bottom: 32px;
+		text-align: left;
 	}
 	@media screen and (min-width: 767px) {
 		h1 {
 			font-size: 48px;
-			margin-bottom: 32px;
-		}
-		h2 {
-			font-size: 26px;
-		}
-		p.lead {
-			margin-bottom: 0;
+			margin: 0 auto 32px;
+			width: 80%;
 		}
 	}
-	@media screen and (min-width: 767px) {
+	@media screen and (min-width: 1000px) {
 		h1 {
-			font-size: 72px;
+			font-size: 64px;
 			margin-bottom: 48px;
 		}
-		h2 {
-			font-size: 32px;
-		}
 	}
 }
 
-.mwd-quote {
-	display: none;
-
-	@media screen and (min-width: 768px) {
-		display: block;
-		margin: 50px 0;
-	}
-
-	.half-photo {
-		width: 49%;
-		display: inline-block;
-		vertical-align: middle;
-		height: 200px;
-		background-image: url("../images/modular-web-design-cover-photo.jpg");
-		background-position: center center;
-		background-size: cover;
-		@media screen and (min-width: 1000px) {
-			height: 300px;
-		}
-		@media screen and (min-width: 1000px) {
-			height: 350px;
-		}
-	}
-
-	.half-text {
-		width: 49.5%;
-		max-width: 600px;
-		display: inline-block;
-		vertical-align: middle;
-		padding: 0 50px;
-
-		p {
-			margin-top: 12px;
-		}
-		
-		@media screen and (min-width: 1000px) {
-			p {
-				margin-top: 24px;
-				font-size: 22px;
-			}
-		}
-	}
-}

@@ -4,13 +4,8 @@
   {{ components.header() }}
 
   <!-- Our Work -->
-  <div id="our-work" class="container-fluid">
-    <div class="fluid-inner">
-        {{ components.casestudies() }}
-    </div>
-  </div>
+  {{ components.casestudies() }}
 
-  {{ components.client_brands() }}
   <!-- What We Do -->
 
   <div id="services" class="container-fluid color-charcoal">
@@ -22,35 +17,36 @@
   <!-- People -->
   {{ components.xups({
     "id": "who-we-are",
+    "background": "light-gray",
     "up_responsiveness": "",
     "type": "ups__bio-photos",
     "h2": "Who We Are",
-    "lead": "We’re tenacious about solving business, customers and design challenges. We prioritize a friendly, collaborative environment. And we believe that successful projects depend on transparency, cooperation and Post-Its.",
+    "lead": "Though tenacious in solving complex experience design problems, we believe successful projects depend on transparency, cooperation, and Post-Its.",
     "ups" : [
        {
          "header": "Nathan Curtis",
          "paragraph": "Principal & Founder",  
-         "thumbnail": "nathan"
+         "thumbnail": "nathan-curtis"
        },
        {
          "header": "Dan Brown",
          "paragraph": "Principal & Founder",
-         "thumbnail": "dan"
+         "thumbnail": "dan-brown"
        },
        {
          "header": "Chris Detzi",
          "paragraph": "Sr. Director, UX",
-         "thumbnail": "chris"
+         "thumbnail": "chris-detzi"
        },
        {
          "header": "James Melzer",
          "paragraph": "Director, UX",
-         "thumbnail": "james"
+         "thumbnail": "james-melzer"
        },
        {
          "header": "Kevin Powell",
          "paragraph": "Sr. Front End Developer",
-         "thumbnail": "kevin"
+         "thumbnail": "kevin-powell"
        }
      ]
   }) }}
@@ -59,9 +55,7 @@
    <div class="container-fluid" id="contributions">
     <div class="container-fluid-inner">
       <h2 class="homepage__heading">How We've Contributed</h2>
-      <p class="lead homepage__lead">
-        EightShapes’ contributions to the UX design work include three books, a documentation templating system and a prototyping framework, not to mention countless workshops, webinars and articles.
-      </p>
+      <p class="lead">EightShapes has contributed three books, a documentation templating system, and a prototyping framework, not to mention countless workshops and articles.</p>
       <div class="row content-card-wrap">
         {{ components.content_card_double({
           href: "https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0#.ajm21o3f1",
@@ -70,17 +64,17 @@
           background_image: "images/components/content_card/medium_castle.jpg"
         }) }}
         {{ components.content_card({
-          href: "#",
+          href: "http://alistapart.com/event/responsive-style-guides",
           class: "content-card--event",
-          pre_heading: "Webinar",
-          date: "December 23-24, 2015",
-          heading: "Title Goes Here of a Really Nifty Blow Your Mind Webinar",
-          cta: "Register"
+          pre_heading: "A List Apart Online Panel",
+          date: "June 16, 2015",
+          heading: "Pattern Language: Responsive Style Guides",
+          cta: "Watch"
         }) }}
         {{ components.content_card({
           href: "http://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351",
           class: "content-card--book",
-          pre_heading: "Nathan Curtis",
+          pre_heading: "Book by Nathan Curtis",
           heading: "Modular Web Design",
           copy: "Creating Reusable Components for User Experience Design and Documentation",
           background_image: "images/components/content_card/modular_web_design.jpg"
@@ -88,7 +82,7 @@
         {{ components.content_card({
           href: "http://www.amazon.com/Communicating-Design-Developing-Documentation-Planning/dp/0321712463",
           class: "content-card--book",
-          pre_heading: "Dan Brown",
+          pre_heading: "Book by Dan Brown",
           heading: "Communicating Design",
           copy: "Developing Website Documentation for Design and Planning",
           background_image: "images/components/content_card/communicating_design.jpg"
@@ -103,7 +97,7 @@
         {{ components.content_card({
           href: "http://www.amazon.com/Designing-Together-collaboration-management-professionals/dp/0321918630",
           class: "content-card--book",
-          pre_heading: "Dan Brown",
+          pre_heading: "Book by Dan Brown",
           heading: "Designing Together",
           copy: "The Collaboration and Conflict Management Handbook for Creative Professionals",
           background_image: "images/components/content_card/designing_together.jpg"

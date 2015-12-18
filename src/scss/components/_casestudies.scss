@@ -1,14 +1,22 @@
 .casestudies {
   background: $color-white;
-  margin: 0 auto 70px;
   
   h2 {
     color: $color-orange;
-    margin: 30px auto;
+    margin: 0 0 16px;
     text-align: center;
     
-    @media screen and (min-width: $screen-md) {
-      margin: 100px auto 70px;
+    @media screen and (min-width: 768px) {
+      margin: 0 0 32px;
+    }
+  }
+
+  .cases {
+    max-width: 1200px;
+    margin: 0 auto 16px;
+    @include clearfix;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
     }
   }
 }
@@ -16,60 +24,94 @@
 .casestudy {
   background-color: $color-blue;
   display: block;
+
   background-image: url('../images/components/casestudies/cs-title--aact.jpg');
-  background-position: center top;
+  background-position: center center;
   background-color: $color-white;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 128px;
+  height: 80px;
   margin: 0;
   position: relative;
   
   &:before {
     content: "";
-    background: $color-blue;
+    background: rgba($color-link, 0);
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     display: block;
     position: absolute;
-    opacity: .0;
-    transition: opacity 0.5s;
+    // opacity: .0;
+    transition: background 0.5s;
   }
+
   &:hover:before {
-    opacity: .5;
+    background: rgba($color-link, .5);
   }
-    
-  @media screen and (min-width: $screen-md) {
-    height: 400px;
-  }
-  
+
   .title {
     display: block;
-    padding: $spacing-default ($spacing-default - 12px);
     position: absolute;
-    bottom: 0;
+    bottom: 16px;
+    left: 16px;
   }
+
   .title-carat {
     display: inline;
     fill: $color-white;
     height: 24px;
     width: 24px;
     position: relative;
-    top: 2px;
+    top: 4px;
   }
 
   a:hover {
     text-decoration: none;
   }
+
   h3, h4 {
     color: $color-white;
     margin: 0;
-    font-size: $font-size-h3;
     font-weight: $font-weight-normal;
   }
+
   h4 {
     font-weight: $font-weight-light;
   }
+
+  @media screen and (min-width: 560px) {
+    position: relative;
+    display: block;
+    float: left;
+    width: 49.7%;
+    height: 100px;
+
+    &.casestudy-doublewide {
+      width: 99.4%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 170px;
+
+    .title {
+      bottom: 32px;
+      left: 32px;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    width: 33.2%;
+    
+    &.casestudy-doublewide {
+      width: 66.4%;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 250px;
+  }
+
 }

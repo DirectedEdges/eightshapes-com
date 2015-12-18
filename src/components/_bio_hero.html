@@ -1,16 +1,89 @@
 {% macro bio_hero(args) %}
-  <div class="bio-hero" style="background:white;">
-    {{ header_slim({class: 'bio-hero__header'}) }}
-    <div class="bio-hero__image" style="background-image: url({{args.background_image}});"></div>
+  {% set profiles = [
+      {
+        name: "Nathan Curtis",
+        title: "Founder and Principal",
+        start_year: "2006",
+        medium: "https://medium.com/@nathanacurtis",
+        twitter: "https://twitter.com/nathanacurtis",
+        linkedin: "https://www.linkedin.com/in/nathancurtis",
+        eightshapes_com: "nathan-curtis.html",
+        image: "images/components/bio_hero/bio-nathan-curtis.jpg"
+      },
+      {
+        name: "Dan Brown",
+        title: "Founder and Principal",
+        start_year: "2006",
+        medium: "https://medium.com/@brownorama",
+        twitter: "https://twitter.com/brownorama",
+        linkedin: "https://www.linkedin.com/in/danmbrown",
+        eightshapes_com: "dan-brown.html",
+        image: "images/components/bio_hero/bio-dan-brown.jpg"
+      },
+      {
+        name: "Chris Detzi",
+        title: "Senior Director, User Experience",
+        start_year: "2009",
+        medium: "https://medium.com/@detzi",
+        twitter: "https://twitter.com/detzi",
+        linkedin: "https://www.linkedin.com/in/chrisdetzi",
+        eightshapes_com: "chris-detzi.html",
+        image: "images/components/bio_hero/bio-chris-detzi.jpg"
+      },
+      {
+        name: "James Melzer",
+        title: "Director, User Experience",
+        start_year: "2009",
+        medium: "https://medium.com/@jamesmelzer",
+        twitter: "https://twitter.com/jamesmelzer",
+        linkedin: "https://www.linkedin.com/in/jamesmelzer",
+        eightshapes_com: "james-melzer.html",
+        image: "images/components/bio_hero/bio-james-melzer.jpg"
+      },
+      {
+        name: "Kevin Powell",
+        title: "Senior Front End Developer",
+        start_year: "2014",
+        medium: "https://medium.com/@kevinmpowell",
+        twitter: "https://twitter.com/kevinmpowell",
+        linkedin: "https://www.linkedin.com/in/kevinmpowell",
+        eightshapes_com: "kevin-powell.html",
+        image: "images/components/bio_hero/bio-kevin-powell.jpg"
+      }
+    ]
+  %}
+  {% set next_index = args.index + 1 %}
+  {% set prev_index = args.index - 1 %}
+
+  {% if next_index == profiles.length %}
+    {% set next_index = 0 %}
+  {% endif %}
+
+  {% if prev_index < 0 %}
+    {% set prev_index = (profiles.length - 1) %}
+  {% endif %}
+
+  {% set profile = profiles[args.index] %}
+
+  <div class="bio-hero">
     <div class="bio-hero__content">
-      <h1 class="bio-hero__heading">Dan Brown</h1>
-      <span class="bio-hero__title">Founder and Principal</span>
-      <span class="bio-hero__tenure">EightShapes since <span class="bio-hero__tenure-value">2006</span></span>
-      <ul class="bio-hero__social">
-        <li class="bio-hero__social-item"><a href="#" class="bio-hero__social-link">Medium</a></li>
-        <li class="bio-hero__social-item"><a href="#" class="bio-hero__social-link">Twitter</a></li>
-        <li class="bio-hero__social-item"><a href="#" class="bio-hero__social-link">LinkedIn</a></li>
-      </ul>
+      <div class="bio-hero__image-wrap">
+        <img src="{{ profile.image }}" alt="{{ profile.name }}" class="bio-hero__image">
+        <div class="bio-hero__navigation">
+          <a href="{{ profiles[prev_index].eightshapes_com }}" class="bio-hero__prev-bio">{{ icon({icon_name: 'angle-left', class: 'bio-hero__nav-icon'}) }}</a>
+          <a href="{{ profiles[next_index].eightshapes_com }}" class="bio-hero__next-bio">{{ icon({icon_name: 'angle-right', class: 'bio-hero__nav-icon'}) }}</a>
+        </div>
+      </div>
+      <div class="bio-hero__copy">
+        <h1 class="bio-hero__heading">{{ profile.name }}</h1>
+        <span class="bio-hero__title">{{ profile.title }}</span>
+        <span class="bio-hero__tenure">EightShapes since <span class="bio-hero__tenure-value">{{ profile.start_year }}</span></span>
+        <ul class="bio-hero__social">
+          <li class="bio-hero__social-item"><a href="#" class="bio-hero__social-link"><span class="visually-hidden">Medium</span>{{icon({icon_name: 'medium', class: 'bio-hero__social-icon'})}}</a></li>
+          <li class="bio-hero__social-item"><a href="#" class="bio-hero__social-link"><span class="visually-hidden">Twitter</span>{{icon({icon_name: 'twitter', class: 'bio-hero__social-icon'})}}</a></li>
+          <li class="bio-hero__social-item"><a href="#" class="bio-hero__social-link"><span class="visually-hidden">LinkedIn</span>{{icon({icon_name: 'linkedin', class: 'bio-hero__social-icon'})}}</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 {% endmacro %}

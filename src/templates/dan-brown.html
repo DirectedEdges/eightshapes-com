@@ -1,9 +1,7 @@
-{% extends 'default.layout.html' %}
+{% extends 'bio.layout.html' %}
 
-{% block content %}
-  {{ components.bio_hero({
-    background_image: 'images/bio_hero/dan-brown.jpg'
-  }) }}
+{% block bio_content %}
+  {{ components.bio_hero({ index: 1}) }}
   <div class="container-fluid">
     <div class="container-fluid-inner">
       <p class="lead">
@@ -11,5 +9,4 @@
       </p>
     </div>
   </div>
- {{ components.footer() }}
 {% endblock %}

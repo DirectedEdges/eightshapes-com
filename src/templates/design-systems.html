@@ -6,53 +6,53 @@
   <!-- Header -->
   {{ components.header_slim() }}
   <div class="container-fluid background-charcoal">
-    <div class="system-introduction">
+    <div class="container-fluid-inner line-of-business-introduction">
       <h1>Design Systems</h1>
-      <h2>Parts and people serving a portfolio of products, making your teams more efficient and experiences more cohesive.</h2>
-      <p class="lead">It’s not just a style guide. Today's enterprises invest in systems so teams can sustain innovative, beautiful products together. <a href="mailto:nathan@eightshapes.com">EightShapes can guide you</a>.</p>
+      <p class="lead">Make your experience <strong>cohesive</strong> and your teams <strong>efficient</strong> with a design system of parts and practices to serve your product teams.</p>
+      <p class="lead">It’s not <i>just</i> a living style guide. Modern organizations invest in systems so they can deliver innovative and beautiful products, together. <a href="mailto:nathan@eightshapes.com">We can guide you</a>.</p>
     </div>
   </div>
  
   <!-- Components Book -->
-  <div class="container-half-fluid mwd-quote">
-    <div class="half-photo"></div>
-    <div class="half-text">
-      <h2>It’s components time.</h2>
-      <p>Designers and devs now modularize their work. They deliver systems as living, coded style guides. Everyone’s thinking atomic.</p>
-      <p>We've spent over 10 years designing in components, sustaining libraries for our clients, and sharing what we know with 2009’s <a href="www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351">Modular Web Design</a> book and workshops worldwide.</p>
+  <div class="photo-text photo-text__systems">
+    <div class="photo-text__half-photo"></div>
+    <div class="photo-text__half-text">
+      <h2>Make It Modular</h2>
+      <p class="lead">Designers are getting systematic with their work. They deliver systems as living, coded guides. Everyone’s thinking atomic and building modular.</p>
+      <p class="lead">EightShapes has 10+ years experience designing components, sustaining client libraries, and sharing what we know with 2009’s <a href="www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351">Modular Web Design</a> and workshops worldwide.</p>
     </div>
   </div>
 
   <!-- What We Do -->
-  <div class="container-fluid xups background-gray">
+  <div class="container-fluid xups white-block-on-light-gray">
     <div class="container-fluid-inner">
       <h2>What We Do</h2>
-      <div class="ups__systems-what-we-do">
+      <div class="ups__color-blocks">
         <div class="up-container">
           <div class="up">
             <h3>Discover &amp; Plan</h3>
-            <p>We can assess opportunities, catalog your library, plan a formative period, and pair with you on the parts, products, and people.</p>
+            <p>We assess opportunities, catalog your library, plan a formative period, and pair with you on the parts, products, and people.</p>
             <p class="duration">2–4 weeks</p>
           </div>
         </div>
         <div class="up-container">
           <div class="up">
             <h3>Design &amp; Build</h3>
-            <p>Hire us to make the library with your or for you, from designing components &amp; page concepts to building the living style guide.</p>
+            <p>We make the library with you or for you, from designing components &amp; page concepts to building the living style guide.</p>
             <p class="duration">2–3 months</p>
           </div>
         </div>
         <div class="up-container">
           <div class="up">
             <h3>Workshop</h3>
-            <p>Kickoff efforts, deepen understanding, sell the ideas, and leap forward internally via prepared talks and custom workshops.</p>
+            <p>We kickoff efforts, sell the mission, teach concepts, and propel in-house teams forward with custom presentations and workshops.</p>
             <p class="duration">1–5 days</p>
           </div>
         </div>
         <div class="up-container">
           <div class="up">
             <h3>Coach</h3>
-            <p>Ask hard questions. Share your ideas. Get straight advice to make changes that matter whether 1-on-1 or with a small team.</p>
+            <p>We ask hard questions, respond to your ideas, and offer straight advice to improve your efforts, with just you or your whole team.</p>
             <p class="duration">10 hr blocks</p>
           </div>
         </div>
@@ -64,7 +64,7 @@
   <div class="container-fluid workshops-display">
     <div class="container-fluid-inner">
       <h2>Workshops</h2>
-      <p class="lead">We can come to you for in-house talks and activities tailored so you can get the most out of the event.</p>
+      <p class="lead">We can bring you in-house talks and hands-on activities customized to your needs.</p>
       <div class="workshops">
         <div class="workshop-item-container">
           <div class="workshop-item">
@@ -117,7 +117,7 @@
     <div class="container-fluid-inner">
       <h2 class="homepage__heading">Contributions</h2>
       <p class="lead homepage__lead">
-        EightShapes has a leading voice in the design systems domain and strongly values contributing to the field, whether by books, a documentation templating system and a prototyping framework, not to mention countless workshops, webinars and articles.
+        EightShapes contributes to the design community with writing, seminars, books, and toolkits to document UX and prototype in HTML &amp; CSS.
       </p>
       <div class="row content-card-wrap">
         {{ components.content_card_double({
@@ -129,7 +129,7 @@
         {{ components.content_card({
           href: "https://www.ux-lx.com/speakers/nathan_curtis.html",
           class: "content-card--event",
-          pre_heading: "Conference",
+          pre_heading: "UXLX Conference",
           date: "May 25, 2016, Lisbon, Portugal",
           heading: "Scalable Design Systems Workshop",
           cta: "Register"
@@ -137,40 +137,42 @@
         {{ components.content_card({
           href: "http://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351",
           class: "content-card--book",
-          pre_heading: "Nathan Curtis",
+          pre_heading: "Book by Nathan Curtis",
           heading: "Modular Web Design",
           copy: "Creating Reusable Components for User Experience Design and Documentation",
           background_image: "images/components/content_card/modular_web_design.jpg"
         }) }}
         {{ components.content_card({
-          href: "http://www.amazon.com/Communicating-Design-Developing-Documentation-Planning/dp/0321712463",
-          class: "content-card--book",
-          pre_heading: "Dan Brown",
-          heading: "Communicating Design",
-          copy: "Developing Website Documentation for Design and Planning",
-          background_image: "images/components/content_card/communicating_design.jpg"
+          href: "http://2016.enterpriseux.net/speakers/nathan-curtis/",
+          class: "content-card--event",
+          pre_heading: "Enterprise UX Conference",
+          date: "June 8-10, 2016 • San Antonio, TX",
+          heading: "Designing Design Systems",
+          copy: "Enable a wide array of people—including non-designers—to improve enterprise UX",
+          cta: "Register"
         }) }}
         {{ components.content_card({
-          href: "https://medium.com/eightshapes-llc/behind-the-wheel-with-product-and-ux-287dba3e6d64#.hzx8jmnbq",
+          href: "https://medium.com/eightshapes-llc/stitching-a-journey-together-in-a-prototype-d3b86d26ebb#.4vw4t8nwf",
+          class: "content-card--book",
           pre_heading: "Medium",
-          heading: "Behind The Wheel",
-          copy: "My kids aren’t yet old enough to learn to drive. But I picture myself in the passenger seat, years from now, and imagine what it feels like to teach them. I’m sure it’s terrifying, but that’s not what I mean.",
+          heading: "Stitching Prototypes",
+          copy: "Demoing a User’s Journey Spanning Many In-Flight Products
+",
+          background_image: "images/components/content_card/stitching-prototypes.jpg"
+        }) }}
+        {{ components.content_card({
+          href: "https://medium.com/eightshapes-llc/finding-platform-balance-in-a-design-system-47eaae48de98#.lo737xuvw",
+          pre_heading: "Medium",
+          heading: "Finding Platform Balance in a Design System",
+          copy: "Focusing on Fundamentals and Balancing Influence Across Platforms",
           cta: "Read More"
         }) }}
         {{ components.content_card({
-          href: "http://www.amazon.com/Designing-Together-collaboration-management-professionals/dp/0321918630",
+          href: "https://medium.com/eightshapes-llc/the-component-cut-up-workshop-1378ae110517#.5hls51ylu",
           class: "content-card--book",
-          pre_heading: "Dan Brown",
-          heading: "Designing Together",
-          copy: "The Collaboration and Conflict Management Handbook for Creative Professionals",
-          background_image: "images/components/content_card/designing_together.jpg"
-        }) }}
-        {{ components.content_card({
-          href: "https://medium.com/eightshapes-llc/the-component-cut-up-workshop-1378ae110517#.5ibx9rqm8",
           pre_heading: "Medium",
           heading: "The Component Cut-Up Workshop",
-          copy: "Nothing beats the energy of getting a team together to deconstruct an existing design system and arrive at a component library together.",
-          cta: "Read More"
+          background_image: "images/components/content_card/component-cut-up.png"
         }) }}
       </div>
     </div>

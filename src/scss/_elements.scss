@@ -22,8 +22,12 @@ h1 {
 
 h2 {
   font-size: 32px;
+  text-align: center;
+  margin: 0 auto 16px;
+
   @media screen and (min-width: 768px) {
     font-size: 36px;
+    margin: 0 auto 32px;
   }
   @media screen and (min-width: 1000px) {
     font-size: $font-size-h2;
@@ -31,7 +35,11 @@ h2 {
 }
 
 h3 {
-  font-size: $font-size-h3;
+  font-size: 16px;
+  text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 h4 {
@@ -47,9 +55,15 @@ h6 {
 }
 
 p.lead {
-  font-size: 18px;
+  font-size: 20px;
+  margin: 0 auto 16px;
+  text-align: left;
   @media screen and (min-width: 768px) {
-    font-size: 22px;
+    margin: 0 auto 32px;
+    width: 80%;
+  }
+  @media screen and (min-width: 900px) {
+    font-size: 24px;
   }
   @media screen and (min-width: 1000px) {
     font-size: 28px;
@@ -62,13 +76,6 @@ img {
 
 .homepage__heading {
   color: $color-orange;
-  text-align: center;
-  margin-bottom: $spacing-sm;
-}
-
-.homepage__lead {
-  margin-bottom: $spacing-content;
-  text-align: center;
 }
 
 p {
@@ -102,4 +109,14 @@ a {
   width: 100%;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0; 
+}
 

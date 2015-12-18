@@ -1,39 +1,53 @@
 {% macro casestudies(args) %}
-  <div class="casestudies">
-    <h2>Our Work</h2>
-    <div class="row">
-      <div class="casestudy col-md-8" style="background-image: url('images/components/casestudies/cs-title--marriott.jpg');">
-        <a href="case-studies/marriott.html" class="title">
-          <h3>Marriott</h3>
-          <h4>Responsive <span>Design {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</span></h4>
+  <div id="our-work" class="container-fluid casestudies">
+    <div class="fluid-inner">
+      <h2>Our Work</h2>
+      <div class="cases">
+        <a href="case-studies/marriott.html" >
+          <div class="casestudy casestudy-doublewide" style="background-image: url('images/components/casestudies/cs-title--marriott.jpg');">
+            <div class="title">
+              <h3>Marriott</h3>
+              <h4>Responsive <span>Design {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</span></h4>
+            </div>
+          </div>
+        </a>
+        <a href="case-studies/sonatype.html">
+          <div class="casestudy" style="background-image: url('images/components/casestudies/cs-title--sonatype.jpg');">
+            <div class="title">
+              <h3>Sonatype</h3>
+              <h4>Product <span>Design {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</span></h4>
+            </div>
+          </div>
+        </a>
+        <a href="case-studies/ncarb.html">
+          <div class="casestudy" style="background-image: url('images/components/casestudies/cs-title--ncarb.jpg');">
+            <div class="title">
+              <h3>NCARB</h3>
+              <h4>Product  <span>Design {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</span></h4>
+            </div>
+          </div>
+        </a>
+        <a href="case-studies/fireeye.html">
+          <div class="casestudy" style="background-image: url('images/components/casestudies/cs-title--fireeye.jpg');">
+            <div class="title">
+              <h3>FireEye</h3>
+              <h4>Responsive  <span>Design {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</span></h4>
+            </div>
+          </div>
+        </a>
+        <a href="case-studies/aact.html">
+          <div class="casestudy" style="background-image: url('images/components/casestudies/cs-title--aact.jpg');">
+            <div class="title">
+              <h3>AACT</h3>
+              <h4>Design <span>Strategy {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</span></h4>
+            </div>
+          </div>
         </a>
       </div>
-      <div class="casestudy col-md-4" style="background-image: url('images/components/casestudies/cs-title--sonatype.jpg');">
-        <a href="case-studies/sonatype.html" class="title">
-          <h3>Sonatype</h3>
-          <h4>Product <span>Design {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</span></h4>
-        </a>
+      <div class="client-brands">
+        <img class="client-brands__image" src="images/client_brands/brands-1.png"/>
+        <img class="client-brands__image" src="images/client_brands/brands-2.png"/>
       </div>
-    </div>
-    <div class="row">
-        <div class="casestudy col-md-4" style="background-image: url('images/components/casestudies/cs-title--ncarb.jpg');">
-          <a href="case-studies/ncarb.html" class="title">
-            <h3>NCARB</h3>
-            <h4>Product  <span>Design {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</span></h4>
-          </a>
-        </div>
-        <div class="casestudy col-md-4" style="background-image: url('images/components/casestudies/cs-title--fireeye.jpg');">
-          <a href="case-studies/fireeye.html" class="title">
-            <h3>FireEye</h3>
-            <h4>Responsive  <span>Design {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</span></h4>
-          </a>
-        </div>
-        <div class="casestudy col-md-4" style="background-image: url('images/components/casestudies/cs-title--aact.jpg');">
-          <a href="case-studies/aact.html" class="title">
-            <h3>AACT</h3>
-            <h4>Design <span>Strategy {{ icon({icon_name: 'angle-right', class: 'title-carat'})}}</span></h4>
-          </a>
-        </div>
     </div>
   </div>
 {% endmacro %}
