@@ -125,6 +125,10 @@
   }
 }
 
+p.lead.bio__lead {
+  margin-bottom: 64px;
+}
+
 @media screen and (min-width: 480px) {
   .bio-hero__copy {
     padding: $spacing-default;
@@ -143,7 +147,6 @@
   .bio-hero {
     position: relative;
     z-index: 0;
-    max-height: 560px;
     overflow: hidden;
 
 
@@ -193,11 +196,78 @@
   }
 }
 
-@media screen and (min-width: $screen-md) {
+@media screen and (min-width: 768px) {
+
+  .bio-hero {
+    background-color: $color-gray-15;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .bio-hero__content, .bio-hero__image-wrap {
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .bio-hero {
+    padding-bottom: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
   .bio-hero__copy {
     top: 20%;
   }
 
+  .header--bio {
+    background: $color-gray-15;
+    padding-bottom: 26px;
+    position: relative;
+    width: 100%;
+    z-index: 20;
+  }
+
+  .header--bio .header__back-link-icon {
+    top: 36px;
+  }
+
+  .header--bio .eightshapes-logo {
+    margin-top: 12px;
+  }
+
+  .bio-hero__heading {
+    font-size: 48px;
+    margin-left: -5px;
+  }
+
+  .bio-hero__title,
+  .bio-hero__tenure {
+    font-size: 24px;
+  }
+
+  .bio-hero__tenure {
+    margin-bottom: 30px;
+  }
+
+  .bio-hero__social-link {
+    height: 45px;
+    width: 45px;
+  }
+
+  .bio-hero__social-icon {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media screen and (min-width: 1175px) {
+  
   .bio-hero__heading {
     font-size: 66px;
     margin-left: -5px;
@@ -212,28 +282,4 @@
     margin-bottom: 50px;
   }
 
-  .header--bio {
-    background: none;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 20;
-  }
-
-  .bio-hero__social-link {
-    height: 45px;
-    width: 45px;
-  }
-
-  .bio-hero__social-icon {
-    height: 25px;
-    width: 25px;
-  }
-}
-
-@media screen and (min-width: 1368px + ($spacing-default * 2)) {
-  .header--bio .header__back-link-icon {
-    fill: $color-gray-12;
-  }
 }
