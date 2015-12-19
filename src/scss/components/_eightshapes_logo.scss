@@ -7,3 +7,10 @@
   	height: 40px;
   }
 }
+
+.header .eightshapes-logo {
+  @media screen and (min-width: 1000px) {
+  	height: 60px;
+  	width: 250px;
+  }
+}
