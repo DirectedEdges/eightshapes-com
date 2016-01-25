@@ -1,8 +1,8 @@
-.bio-hero {
+.hero {
   width: 100%;
 }
 
-.bio-hero__image {
+.hero__image {
   display: block;
   position: static;
   max-width: none;
@@ -13,7 +13,7 @@
   // height: 200px;
 }
 
-.bio-hero__content {
+.hero__content {
   // color: $color-white;
   max-width: 1368px;
   margin: 0 auto;
@@ -23,35 +23,35 @@
   // padding: $spacing-row-vertical $spacing-default $spacing-default 200px;
 }
 
-.bio-hero__copy {
+.hero__copy {
   color: $color-gray-12;
   padding: $spacing-default 16px;
 }
 
-.bio-hero__heading {
+.hero__heading {
   margin-left: -3px;
 }
 
-.bio-hero__title,
-.bio-hero__tenure {
+.hero__title,
+.hero__tenure {
   display: block;
 }
 
-.bio-hero__tenure {
+.hero__tenure {
   margin-bottom: $spacing-md;
 }
 
-.bio-hero__tenure-value {
+.hero__tenure-value {
   font-weight: $font-weight-bold;
 }
 
-.bio-hero__social {
+.hero__social {
   @extend %list-reset;
   font-size: 0;
   margin-left: 6px;
 }
 
-.bio-hero__social-item {
+.hero__social-item {
   display: inline-block;
   margin-right: $spacing-md;
 
@@ -60,23 +60,23 @@
   }
 }
 
-.bio-hero__social-link {
+.hero__social-link {
   font-size: $font-size-default;
 }
 
-.bio-hero__image-wrap {
+.hero__image-wrap {
   position: relative;
 }
 
-.bio-hero__navigation {
+.hero__navigation {
   bottom: 0;
   position: absolute;
   right: 0;
   z-index: 30;
 }
 
-.bio-hero__prev-bio,
-.bio-hero__next-bio {
+.hero__prev-bio,
+.hero__next-bio {
   background: rgba($color-black, .5);
   display: inline-block;
   height: 40px;
@@ -89,7 +89,7 @@
   }
 }
 
-.bio-hero__nav-icon {
+.hero__nav-icon {
   fill: $color-white;
   height: 25px;
   position: relative;
@@ -97,7 +97,7 @@
   width: 25px;
 }
 
-.bio-hero__social-link {
+.hero__social-link {
   background: rgba($color-black, .8);
   border-radius: $border-radius-default * 2;
   display: block;
@@ -112,7 +112,7 @@
   }
 }
 
-.bio-hero__social-icon {
+.hero__social-icon {
   height: 20px;
   position: relative;
   top: 9px;
@@ -120,7 +120,7 @@
   transform: rotate(-45deg);
   transition: fill .5s;
 
-  .bio-hero__social-link:hover & {
+  .hero__social-link:hover & {
     fill: $color-white;
   }
 }
@@ -130,13 +130,13 @@ p.lead.bio__lead {
 }
 
 @media screen and (min-width: 480px) {
-  .bio-hero__copy {
+  .hero__copy {
     padding: $spacing-default;
   }
 }
 
 @media screen and (min-width: 500px) {
-  .bio-hero__image {
+  .hero__image {
     max-width: 100%;
     width: auto;
     margin: 0 auto;
@@ -144,7 +144,7 @@ p.lead.bio__lead {
 }
 
 @media screen and (min-width: 560px) {
-  .bio-hero {
+  .hero {
     position: relative;
     z-index: 0;
     overflow: hidden;
@@ -158,7 +158,7 @@ p.lead.bio__lead {
     }
   }
 
-  .bio-hero__content {
+  .hero__content {
     position: absolute;
     top: 0;
     left: 0;
@@ -167,29 +167,29 @@ p.lead.bio__lead {
     width: 100%;
   }
 
-  .bio-hero__image-wrap {
+  .hero__image-wrap {
     position: absolute;
     width: 100%;
   }
 
-  .bio-hero__image {
+  .hero__image {
     width: 100%;
   }
 
-  .bio-hero__copy {
+  .hero__copy {
     position: absolute;
     color: $color-white;
     z-index: 10;
     left: 43%;
   }
 
-  .bio-hero__social-link {
+  .hero__social-link {
     background: rgba($color-black, .5);
   }
 }
 
 @media screen and (min-width: 640px) {
-  .bio-hero__copy {
+  .hero__copy {
     left: 50%;
     right: auto;
     top: $spacing-default;
@@ -198,7 +198,7 @@ p.lead.bio__lead {
 
 @media screen and (min-width: 768px) {
 
-  .bio-hero {
+  .hero {
     background-color: $color-gray-15;
     padding-bottom: 32px;
     padding-left: 32px;
@@ -209,23 +209,23 @@ p.lead.bio__lead {
     }
   }
 
-  .bio-hero__content, .bio-hero__image-wrap {
+  .hero__content, .hero__image-wrap {
     position: relative;
   }
 }
 
 @media screen and (min-width: 1000px) {
-  .bio-hero {
+  .hero {
     padding-bottom: 80px;
     padding-left: 100px;
     padding-right: 100px;
   }
 
-  .bio-hero__copy {
+  .hero__copy {
     top: 20%;
   }
 
-  .header--bio {
+  .header__bio {
     background: $color-gray-15;
     padding-bottom: 26px;
     position: relative;
@@ -233,34 +233,34 @@ p.lead.bio__lead {
     z-index: 20;
   }
 
-  .header--bio .header__back-link-icon {
+  .header__bio .header__back-link-icon {
     top: 36px;
   }
 
-  .header--bio .eightshapes-logo {
+  .header__bio .eightshapes-logo {
     margin-top: 12px;
   }
 
-  .bio-hero__heading {
+  .hero__heading {
     font-size: 48px;
     margin-left: -5px;
   }
 
-  .bio-hero__title,
-  .bio-hero__tenure {
+  .hero__title,
+  .hero__tenure {
     font-size: 24px;
   }
 
-  .bio-hero__tenure {
+  .hero__tenure {
     margin-bottom: 30px;
   }
 
-  .bio-hero__social-link {
+  .hero__social-link {
     height: 45px;
     width: 45px;
   }
 
-  .bio-hero__social-icon {
+  .hero__social-icon {
     height: 25px;
     width: 25px;
   }
@@ -268,17 +268,17 @@ p.lead.bio__lead {
 
 @media screen and (min-width: 1175px) {
   
-  .bio-hero__heading {
+  .hero__heading {
     font-size: 66px;
     margin-left: -5px;
   }
 
-  .bio-hero__title,
-  .bio-hero__tenure {
+  .hero__title,
+  .hero__tenure {
     font-size: 28px;
   }
 
-  .bio-hero__tenure {
+  .hero__tenure {
     margin-bottom: 50px;
   }
 

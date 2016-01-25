@@ -16,15 +16,25 @@
 {% endmacro %}
 
 {% macro header_slim(args) %}
-  <div class="header--slim {{args.class}}">
+  <div class="header__slim {{args.class}}">
     <a class="header__back-link" href="/">{{ icon({icon_name: 'angle-left', class: 'header__back-link-icon'}) }}</a>
     <a href="/">{{ eightshapes_logo({class: 'header__logo'}) }}</a>
   </div>
 {% endmacro %}
 
 {% macro header_bio(args) %}
-  <div class="header--bio {{args.class}}">
+  <div class="header__bio {{args.class}}">
     <a class="header__back-link" href="/">{{ icon({icon_name: 'angle-left', class: 'header__back-link-icon'}) }}</a>
     <a href="/">{{ eightshapes_logo({class: 'header__logo'}) }}</a>
+  </div>
+{% endmacro %}
+
+{% macro header_workshop(args) %}
+  {% if args.back_href == undefined %}
+    {% set args = args|updateobj('back_href', '/design-systems.html') %}
+  {% endif %}
+  <div class="header__bio {{args.class}}">
+    <a class="header__back-link" href="{{ args.back_href }}">{{ icon({icon_name: 'angle-left', class: 'header__back-link-icon'}) }}</a>
+    <a href="/">{{ eightshapes_logo({class: 'header__logo'}) }}</a> Workshops
   </div>
 {% endmacro %}
