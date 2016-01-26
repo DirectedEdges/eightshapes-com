@@ -33,7 +33,7 @@
   {% if args.back_href == undefined %}
     {% set args = args|updateobj('back_href', '/design-systems.html') %}
   {% endif %}
-  <div class="header__bio {{args.class}}">
+  <div class="header__workshop {{args.class}}">
     <a class="header__back-link" href="{{ args.back_href }}">{{ icon({icon_name: 'angle-left', class: 'header__back-link-icon'}) }}</a>
     <a href="/">{{ eightshapes_logo({class: 'header__logo'}) }}</a> Workshops
   </div>

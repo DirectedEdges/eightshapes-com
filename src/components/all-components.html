@@ -166,7 +166,7 @@
   {% if args.back_href == undefined %}
     {% set args = args|updateobj('back_href', '/design-systems.html') %}
   {% endif %}
-  <div class="header__bio {{args.class}}">
+  <div class="header__workshop {{args.class}}">
     <a class="header__back-link" href="{{ args.back_href }}">{{ icon({icon_name: 'angle-left', class: 'header__back-link-icon'}) }}</a>
     <a href="/">{{ eightshapes_logo({class: 'header__logo'}) }}</a> Workshops
   </div>
@@ -239,23 +239,23 @@
 
   {% set profile = profiles[args.index] %}
 
-  <div class="hero">
-    <div class="hero__content">
-      <div class="hero__image-wrap">
-        <img src="{{ profile.image }}" alt="{{ profile.name }}" class="hero__image">
-        <div class="hero__navigation">
-          <a href="{{ profiles[prev_index].eightshapes_com }}" class="hero__prev-bio">{{ icon({icon_name: 'angle-left', class: 'hero__nav-icon'}) }}</a>
-          <a href="{{ profiles[next_index].eightshapes_com }}" class="hero__next-bio">{{ icon({icon_name: 'angle-right', class: 'hero__nav-icon'}) }}</a>
+  <div class="hero-bio">
+    <div class="hero-bio__content">
+      <div class="hero-bio__image-wrap">
+        <img src="{{ profile.image }}" alt="{{ profile.name }}" class="hero-bio__image">
+        <div class="hero-bio__navigation">
+          <a href="{{ profiles[prev_index].eightshapes_com }}" class="hero-bio__prev-bio">{{ icon({icon_name: 'angle-left', class: 'hero-bio__nav-icon'}) }}</a>
+          <a href="{{ profiles[next_index].eightshapes_com }}" class="hero-bio__next-bio">{{ icon({icon_name: 'angle-right', class: 'hero-bio__nav-icon'}) }}</a>
         </div>
       </div>
-      <div class="hero__copy">
-        <h1 class="hero__heading">{{ profile.name }}</h1>
-        <span class="hero__title">{{ profile.title }}</span>
-        <span class="hero__tenure">EightShapes since <span class="hero__tenure-value">{{ profile.start_year }}</span></span>
-        <ul class="hero__social">
-          <li class="hero__social-item"><a href="{{ profile.medium }}" class="hero__social-link"><span class="visually-hidden">Medium</span>{{icon({icon_name: 'medium', class: 'hero__social-icon'})}}</a></li>
-          <li class="hero__social-item"><a href="{{ profile.twitter }}" class="hero__social-link"><span class="visually-hidden">Twitter</span>{{icon({icon_name: 'twitter', class: 'hero__social-icon'})}}</a></li>
-          <li class="hero__social-item"><a href="{{ profile.linkedin }}" class="hero__social-link"><span class="visually-hidden">LinkedIn</span>{{icon({icon_name: 'linkedin', class: 'hero__social-icon'})}}</a></li>
+      <div class="hero-bio__copy">
+        <h1 class="hero-bio__heading">{{ profile.name }}</h1>
+        <span class="hero-bio__title">{{ profile.title }}</span>
+        <span class="hero-bio__tenure">EightShapes since <span class="hero-bio__tenure-value">{{ profile.start_year }}</span></span>
+        <ul class="hero-bio__social">
+          <li class="hero-bio__social-item"><a href="{{ profile.medium }}" class="hero-bio__social-link"><span class="visually-hidden">Medium</span>{{icon({icon_name: 'medium', class: 'hero-bio__social-icon'})}}</a></li>
+          <li class="hero-bio__social-item"><a href="{{ profile.twitter }}" class="hero-bio__social-link"><span class="visually-hidden">Twitter</span>{{icon({icon_name: 'twitter', class: 'hero-bio__social-icon'})}}</a></li>
+          <li class="hero-bio__social-item"><a href="{{ profile.linkedin }}" class="hero-bio__social-link"><span class="visually-hidden">LinkedIn</span>{{icon({icon_name: 'linkedin', class: 'hero-bio__social-icon'})}}</a></li>
         </ul>
       </div>
     </div>
