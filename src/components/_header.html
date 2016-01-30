@@ -16,15 +16,33 @@
 {% endmacro %}
 
 {% macro header_slim(args) %}
-  <div class="header--slim {{args.class}}">
-    <a class="header__back-link" href="/">{{ icon({icon_name: 'angle-left', class: 'header__back-link-icon'}) }}</a>
+  <div class="header__slim {{args.class}}">
     <a href="/">{{ eightshapes_logo({class: 'header__logo'}) }}</a>
   </div>
 {% endmacro %}
 
-{% macro header_bio(args) %}
-  <div class="header--bio {{args.class}}">
-    <a class="header__back-link" href="/">{{ icon({icon_name: 'angle-left', class: 'header__back-link-icon'}) }}</a>
-    <a href="/">{{ eightshapes_logo({class: 'header__logo'}) }}</a>
+{% macro header_section(args) %}
+  <div class="header__section">
+    <a class="header__crumb-link" href="/" title="EightShapes Home">
+      {{ eightshapes_logo({class: 'header__logo-subpage'}) }}
+    </a>
+  </div>
+{% endmacro %}
+
+{% macro header_workshop(args) %}
+  {% if args.back_href == undefined %}
+    {% set args = args|updateobj('back_href', '/design-systems.html') %}
+  {% endif %}
+  {% if args.section == undefined %}
+    {% set args = args|updateobj('section', 'Design Systems') %}
+  {% endif %}
+  <div class="header__workshop {{args.class}}">
+    <a class="header__crumb-link" href="/" title="EightShapes Home">
+      {{ eightshapes_logo({class: 'header__logo-subpage'}) }}
+      {{ icon({icon_name: 'angle-right', class: 'header__crumb-arrow-icon'}) }}
+    </a>
+    <a class="header__crumb-link" href="{{ args.back_href }}" title="{{ args.section }}">
+      <span class="header__section-title">{{ args.section }}</span>
+    </a>
   </div>
 {% endmacro %}

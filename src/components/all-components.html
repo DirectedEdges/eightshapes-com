@@ -1,93 +1,3 @@
-{% macro bio_hero(args) %}
-  {% set profiles = [
-      {
-        name: "Nathan Curtis",
-        title: "Founder and Principal",
-        start_year: "2006",
-        medium: "https://medium.com/@nathanacurtis",
-        twitter: "https://twitter.com/nathanacurtis",
-        linkedin: "https://www.linkedin.com/in/nathancurtis",
-        eightshapes_com: "nathan-curtis.html",
-        image: "images/components/bio_hero/bio-nathan-curtis.jpg"
-      },
-      {
-        name: "Dan Brown",
-        title: "Founder and Principal",
-        start_year: "2006",
-        medium: "https://medium.com/@brownorama",
-        twitter: "https://twitter.com/brownorama",
-        linkedin: "https://www.linkedin.com/in/danmbrown",
-        eightshapes_com: "dan-brown.html",
-        image: "images/components/bio_hero/bio-dan-brown.jpg"
-      },
-      {
-        name: "Chris Detzi",
-        title: "Senior Director, User Experience",
-        start_year: "2007",
-        medium: "https://medium.com/@detzi",
-        twitter: "https://twitter.com/detzi",
-        linkedin: "https://www.linkedin.com/in/chrisdetzi",
-        eightshapes_com: "chris-detzi.html",
-        image: "images/components/bio_hero/bio-chris-detzi.jpg"
-      },
-      {
-        name: "James Melzer",
-        title: "Director, User Experience",
-        start_year: "2009",
-        medium: "https://medium.com/@jamesmelzer",
-        twitter: "https://twitter.com/jamesmelzer",
-        linkedin: "https://www.linkedin.com/in/jamesmelzer",
-        eightshapes_com: "james-melzer.html",
-        image: "images/components/bio_hero/bio-james-melzer.jpg"
-      },
-      {
-        name: "Kevin Powell",
-        title: "Senior Front End Developer",
-        start_year: "2014",
-        medium: "https://medium.com/@kevinmpowell",
-        twitter: "https://twitter.com/kevinmpowell",
-        linkedin: "https://www.linkedin.com/in/kevinmpowell",
-        eightshapes_com: "kevin-powell.html",
-        image: "images/components/bio_hero/bio-kevin-powell.jpg"
-      }
-    ]
-  %}
-  {% set next_index = args.index + 1 %}
-  {% set prev_index = args.index - 1 %}
-
-  {% if next_index == profiles.length %}
-    {% set next_index = 0 %}
-  {% endif %}
-
-  {% if prev_index < 0 %}
-    {% set prev_index = (profiles.length - 1) %}
-  {% endif %}
-
-  {% set profile = profiles[args.index] %}
-
-  <div class="bio-hero">
-    <div class="bio-hero__content">
-      <div class="bio-hero__image-wrap">
-        <img src="{{ profile.image }}" alt="{{ profile.name }}" class="bio-hero__image">
-        <div class="bio-hero__navigation">
-          <a href="{{ profiles[prev_index].eightshapes_com }}" class="bio-hero__prev-bio">{{ icon({icon_name: 'angle-left', class: 'bio-hero__nav-icon'}) }}</a>
-          <a href="{{ profiles[next_index].eightshapes_com }}" class="bio-hero__next-bio">{{ icon({icon_name: 'angle-right', class: 'bio-hero__nav-icon'}) }}</a>
-        </div>
-      </div>
-      <div class="bio-hero__copy">
-        <h1 class="bio-hero__heading">{{ profile.name }}</h1>
-        <span class="bio-hero__title">{{ profile.title }}</span>
-        <span class="bio-hero__tenure">EightShapes since <span class="bio-hero__tenure-value">{{ profile.start_year }}</span></span>
-        <ul class="bio-hero__social">
-          <li class="bio-hero__social-item"><a href="{{ profile.medium }}" class="bio-hero__social-link"><span class="visually-hidden">Medium</span>{{icon({icon_name: 'medium', class: 'bio-hero__social-icon'})}}</a></li>
-          <li class="bio-hero__social-item"><a href="{{ profile.twitter }}" class="bio-hero__social-link"><span class="visually-hidden">Twitter</span>{{icon({icon_name: 'twitter', class: 'bio-hero__social-icon'})}}</a></li>
-          <li class="bio-hero__social-item"><a href="{{ profile.linkedin }}" class="bio-hero__social-link"><span class="visually-hidden">LinkedIn</span>{{icon({icon_name: 'linkedin', class: 'bio-hero__social-icon'})}}</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-{% endmacro %}
-
 {% macro casestudies(args) %}
   <div id="our-work" class="container-fluid casestudies">
     <div class="fluid-inner">
@@ -239,19 +149,155 @@
 {% endmacro %}
 
 {% macro header_slim(args) %}
-  <div class="header--slim {{args.class}}">
-    <a class="header__back-link" href="/">{{ icon({icon_name: 'angle-left', class: 'header__back-link-icon'}) }}</a>
+  <div class="header__slim {{args.class}}">
     <a href="/">{{ eightshapes_logo({class: 'header__logo'}) }}</a>
   </div>
 {% endmacro %}
 
-{% macro header_bio(args) %}
-  <div class="header--bio {{args.class}}">
-    <a class="header__back-link" href="/">{{ icon({icon_name: 'angle-left', class: 'header__back-link-icon'}) }}</a>
-    <a href="/">{{ eightshapes_logo({class: 'header__logo'}) }}</a>
+{% macro header_section(args) %}
+  <div class="header__section">
+    <a class="header__crumb-link" href="/" title="EightShapes Home">
+      {{ eightshapes_logo({class: 'header__logo-subpage'}) }}
+    </a>
   </div>
 {% endmacro %}
 
+{% macro header_workshop(args) %}
+  {% if args.back_href == undefined %}
+    {% set args = args|updateobj('back_href', '/design-systems.html') %}
+  {% endif %}
+  {% if args.section == undefined %}
+    {% set args = args|updateobj('section', 'Design Systems') %}
+  {% endif %}
+  <div class="header__workshop {{args.class}}">
+    <a class="header__crumb-link" href="/" title="EightShapes Home">
+      {{ eightshapes_logo({class: 'header__logo-subpage'}) }}
+      {{ icon({icon_name: 'angle-right', class: 'header__crumb-arrow-icon'}) }}
+    </a>
+    <a class="header__crumb-link" href="{{ args.back_href }}" title="{{ args.section }}">
+      <span class="header__section-title">{{ args.section }}</span>
+    </a>
+  </div>
+{% endmacro %}
+
+{% macro bio_hero(args) %}
+  {% set profiles = [
+      {
+        name: "Nathan Curtis",
+        title: "Founder and Principal",
+        start_year: "2006",
+        medium: "https://medium.com/@nathanacurtis",
+        twitter: "https://twitter.com/nathanacurtis",
+        linkedin: "https://www.linkedin.com/in/nathancurtis",
+        eightshapes_com: "nathan-curtis.html",
+        image: "images/components/bio_hero/bio-nathan-curtis.jpg"
+      },
+      {
+        name: "Dan Brown",
+        title: "Founder and Principal",
+        start_year: "2006",
+        medium: "https://medium.com/@brownorama",
+        twitter: "https://twitter.com/brownorama",
+        linkedin: "https://www.linkedin.com/in/danmbrown",
+        eightshapes_com: "dan-brown.html",
+        image: "images/components/bio_hero/bio-dan-brown.jpg"
+      },
+      {
+        name: "Chris Detzi",
+        title: "Senior Director, UX",
+        start_year: "2007",
+        medium: "https://medium.com/@detzi",
+        twitter: "https://twitter.com/detzi",
+        linkedin: "https://www.linkedin.com/in/chrisdetzi",
+        eightshapes_com: "chris-detzi.html",
+        image: "images/components/bio_hero/bio-chris-detzi.jpg"
+      },
+      {
+        name: "James Melzer",
+        title: "Director, UX",
+        start_year: "2009",
+        medium: "https://medium.com/@jamesmelzer",
+        twitter: "https://twitter.com/jamesmelzer",
+        linkedin: "https://www.linkedin.com/in/jamesmelzer",
+        eightshapes_com: "james-melzer.html",
+        image: "images/components/bio_hero/bio-james-melzer.jpg"
+      },
+      {
+        name: "Kevin Powell",
+        title: "Sr. Front End Developer",
+        start_year: "2014",
+        medium: "https://medium.com/@kevinmpowell",
+        twitter: "https://twitter.com/kevinmpowell",
+        linkedin: "https://www.linkedin.com/in/kevinmpowell",
+        eightshapes_com: "kevin-powell.html",
+        image: "images/components/bio_hero/bio-kevin-powell.jpg"
+      }
+    ]
+  %}
+  {% set next_index = args.index + 1 %}
+  {% set prev_index = args.index - 1 %}
+
+  {% if next_index == profiles.length %}
+    {% set next_index = 0 %}
+  {% endif %}
+
+  {% if prev_index < 0 %}
+    {% set prev_index = (profiles.length - 1) %}
+  {% endif %}
+
+  {% set profile = profiles[args.index] %}
+
+  <div class="hero hero__bio">
+    <div class="hero-bio__content">
+      <div class="hero-bio__image-wrap">
+        <img src="{{ profile.image }}" alt="{{ profile.name }}" class="hero-bio__image">
+        <div class="hero-bio__navigation">
+          <a href="{{ profiles[prev_index].eightshapes_com }}" class="hero-bio__prev-bio">{{ icon({icon_name: 'angle-left', class: 'hero-bio__nav-icon'}) }}</a>
+          <a href="{{ profiles[next_index].eightshapes_com }}" class="hero-bio__next-bio">{{ icon({icon_name: 'angle-right', class: 'hero-bio__nav-icon'}) }}</a>
+        </div>
+      </div>
+      <div class="hero__bio-copy">
+        <h1 class="hero__title">{{ profile.name }}</h1>
+        <div class="hero__subhead">{{ profile.title }}</div>
+        <div class="hero__subhead">EightShapes since <span class="hero-bio__tenure-value">{{ profile.start_year }}</span></div>
+      </div>
+    </div>
+    <dl class="hero__attributes">
+      <dt>{{icon({icon_name: 'medium', class: 'hero-bio__social-icon'})}}</dt>
+      <dd><a href="{{ profile.medium }}">Medium</a></dd>
+      <dt>{{icon({icon_name: 'twitter', class: 'hero-bio__social-icon'})}}</dt>
+      <dd><a href="{{ profile.twitter }}">Twitter</a></dd>
+      <dt>{{icon({icon_name: 'linkedin', class: 'hero-bio__social-icon'})}}</dt>
+      <dd><a href="{{ profile.linkedin }}">LinkedIn</a></dd>
+    </dl>
+  </div>
+{% endmacro %}
+
+{% macro workshop_hero(args) %}
+  {% if args.background == undefined %}
+    {% set args = args|updateobj('background', '') %}
+  {% endif %}
+  {% if args.title == undefined %}
+    {% set args = args|updateobj('title', 'The Component Cut-Up') %}
+  {% endif %}
+  {% if args.duration == undefined %}
+    {% set args = args|updateobj('duration', 'Up to 1/2 Day') %}
+  {% endif %}
+  {% if args.participants == undefined %}
+    {% set args = args|updateobj('participants', '4 to 40') %}
+  {% endif %}
+
+  <div class="hero hero__workshop {{ args.background }}">
+    <div class="hero__subhead">Workshop</div>
+    <h1 class="hero__title">{{ args.title }}</h1>
+  </div>
+  <dl class="hero__attributes">
+    <dt>{{icon({icon_name: 'stopwatch', class: 'hero__attribute-icon'})}} Duration</dt>
+    <dd>{{ args.duration }}</dd>
+    <dt>{{icon({icon_name: 'participants', class: 'hero__attribute-icon'})}}Participants</dt>
+    <dd>{{ args.participants }}</dd>
+  </dl>
+{% endmacro %}
 {% macro icon(args) %}
   {%- if args.icon_name == undefined -%}
       {% set args = args|updateobj('icon_name', 'twitter') %}
