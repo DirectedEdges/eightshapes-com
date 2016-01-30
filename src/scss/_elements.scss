@@ -55,12 +55,16 @@ h6 {
 }
 
 p.lead, .content__long-form p.lead {
-  font-size: 20px;
+  font-size: 16px;
   margin: 0 auto 16px;
   text-align: left;
+  max-width: 940px;
+
+  @media screen and (min-width: 480px) {
+    font-size: 20px;
+  }
   @media screen and (min-width: 768px) {
     margin: 0 auto 32px;
-    width: 80%;
   }
   @media screen and (min-width: 900px) {
     font-size: 24px;
@@ -150,13 +154,11 @@ a {
     list-style: none;
     margin: 0 0 32px;
     padding: 0;
-    max-width: 700px;
   }
 
   p, li {
     font-size: 18px;
     margin: 0 auto 16px;
-    max-width: 700px;
     text-align: left;
   }
 
@@ -234,6 +236,10 @@ a {
     }
 
   }
-
+}
+.container-fluid-inner.content__long-form {
+  @media screen and (min-width: 768px) {
+    max-width: 700px;
+  }
 }
 

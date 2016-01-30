@@ -150,15 +150,15 @@
 
 {% macro header_slim(args) %}
   <div class="header__slim {{args.class}}">
-    <a class="header__back-link" href="/">{{ icon({icon_name: 'angle-left', class: 'header__back-link-icon'}) }}</a>
     <a href="/">{{ eightshapes_logo({class: 'header__logo'}) }}</a>
   </div>
 {% endmacro %}
 
-{% macro header_bio(args) %}
-  <div class="header__bio {{args.class}}">
-    <a class="header__back-link" href="/">{{ icon({icon_name: 'angle-left', class: 'header__back-link-icon'}) }}</a>
-    <a href="/">{{ eightshapes_logo({class: 'header__logo'}) }}</a>
+{% macro header_section(args) %}
+  <div class="header__section">
+    <a class="header__crumb-link" href="/" title="EightShapes Home">
+      {{ eightshapes_logo({class: 'header__logo-subpage'}) }}
+    </a>
   </div>
 {% endmacro %}
 
@@ -166,9 +166,17 @@
   {% if args.back_href == undefined %}
     {% set args = args|updateobj('back_href', '/design-systems.html') %}
   {% endif %}
+  {% if args.section == undefined %}
+    {% set args = args|updateobj('section', 'Design Systems') %}
+  {% endif %}
   <div class="header__workshop {{args.class}}">
-    <a class="header__back-link" href="{{ args.back_href }}">{{ icon({icon_name: 'angle-left', class: 'header__back-link-icon'}) }}</a>
-    <a href="/">{{ eightshapes_logo({class: 'header__logo'}) }}</a> Workshops
+    <a class="header__crumb-link" href="/" title="EightShapes Home">
+      {{ eightshapes_logo({class: 'header__logo-subpage'}) }}
+      {{ icon({icon_name: 'angle-right', class: 'header__crumb-arrow-icon'}) }}
+    </a>
+    <a class="header__crumb-link" href="{{ args.back_href }}" title="{{ args.section }}">
+      <span class="header__section-title">{{ args.section }}</span>
+    </a>
   </div>
 {% endmacro %}
 
@@ -196,7 +204,7 @@
       },
       {
         name: "Chris Detzi",
-        title: "Senior Director, User Experience",
+        title: "Senior Director, UX",
         start_year: "2007",
         medium: "https://medium.com/@detzi",
         twitter: "https://twitter.com/detzi",
@@ -206,7 +214,7 @@
       },
       {
         name: "James Melzer",
-        title: "Director, User Experience",
+        title: "Director, UX",
         start_year: "2009",
         medium: "https://medium.com/@jamesmelzer",
         twitter: "https://twitter.com/jamesmelzer",
@@ -216,7 +224,7 @@
       },
       {
         name: "Kevin Powell",
-        title: "Senior Front End Developer",
+        title: "Sr. Front End Developer",
         start_year: "2014",
         medium: "https://medium.com/@kevinmpowell",
         twitter: "https://twitter.com/kevinmpowell",
@@ -239,7 +247,7 @@
 
   {% set profile = profiles[args.index] %}
 
-  <div class="hero-bio">
+  <div class="hero hero__bio">
     <div class="hero-bio__content">
       <div class="hero-bio__image-wrap">
         <img src="{{ profile.image }}" alt="{{ profile.name }}" class="hero-bio__image">
@@ -248,24 +256,47 @@
           <a href="{{ profiles[next_index].eightshapes_com }}" class="hero-bio__next-bio">{{ icon({icon_name: 'angle-right', class: 'hero-bio__nav-icon'}) }}</a>
         </div>
       </div>
-      <div class="hero-bio__copy">
-        <h1 class="hero-bio__heading">{{ profile.name }}</h1>
-        <span class="hero-bio__title">{{ profile.title }}</span>
-        <span class="hero-bio__tenure">EightShapes since <span class="hero-bio__tenure-value">{{ profile.start_year }}</span></span>
-        <ul class="hero-bio__social">
-          <li class="hero-bio__social-item"><a href="{{ profile.medium }}" class="hero-bio__social-link"><span class="visually-hidden">Medium</span>{{icon({icon_name: 'medium', class: 'hero-bio__social-icon'})}}</a></li>
-          <li class="hero-bio__social-item"><a href="{{ profile.twitter }}" class="hero-bio__social-link"><span class="visually-hidden">Twitter</span>{{icon({icon_name: 'twitter', class: 'hero-bio__social-icon'})}}</a></li>
-          <li class="hero-bio__social-item"><a href="{{ profile.linkedin }}" class="hero-bio__social-link"><span class="visually-hidden">LinkedIn</span>{{icon({icon_name: 'linkedin', class: 'hero-bio__social-icon'})}}</a></li>
-        </ul>
+      <div class="hero__bio-copy">
+        <h1 class="hero__title">{{ profile.name }}</h1>
+        <div class="hero__subhead">{{ profile.title }}</div>
+        <div class="hero__subhead">EightShapes since <span class="hero-bio__tenure-value">{{ profile.start_year }}</span></div>
       </div>
     </div>
+    <dl class="hero__attributes">
+      <dt>{{icon({icon_name: 'medium', class: 'hero-bio__social-icon'})}}</dt>
+      <dd><a href="{{ profile.medium }}">Medium</a></dd>
+      <dt>{{icon({icon_name: 'twitter', class: 'hero-bio__social-icon'})}}</dt>
+      <dd><a href="{{ profile.twitter }}">Twitter</a></dd>
+      <dt>{{icon({icon_name: 'linkedin', class: 'hero-bio__social-icon'})}}</dt>
+      <dd><a href="{{ profile.linkedin }}">LinkedIn</a></dd>
+    </dl>
   </div>
 {% endmacro %}
 
 {% macro workshop_hero(args) %}
-  <div class="hero hero__workshop-detail">
-    
+  {% if args.background == undefined %}
+    {% set args = args|updateobj('background', '') %}
+  {% endif %}
+  {% if args.title == undefined %}
+    {% set args = args|updateobj('title', 'The Component Cut-Up') %}
+  {% endif %}
+  {% if args.duration == undefined %}
+    {% set args = args|updateobj('duration', 'Up to 1/2 Day') %}
+  {% endif %}
+  {% if args.participants == undefined %}
+    {% set args = args|updateobj('participants', '4 to 40') %}
+  {% endif %}
+
+  <div class="hero hero__workshop {{ args.background }}">
+    <div class="hero__subhead">Workshop</div>
+    <h1 class="hero__title">{{ args.title }}</h1>
   </div>
+  <dl class="hero__attributes">
+    <dt>{{icon({icon_name: 'stopwatch', class: 'hero__attribute-icon'})}} Duration</dt>
+    <dd>{{ args.duration }}</dd>
+    <dt>{{icon({icon_name: 'participants', class: 'hero__attribute-icon'})}}Participants</dt>
+    <dd>{{ args.participants }}</dd>
+  </dl>
 {% endmacro %}
 {% macro icon(args) %}
   {%- if args.icon_name == undefined -%}

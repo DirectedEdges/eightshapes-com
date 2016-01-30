@@ -1,7 +1,3 @@
-.workshop-hero {
-
-}
-
 .workshops-display {
 
 	background-image: url("../images/workshop-cutup.png");
@@ -22,6 +18,7 @@
 	}
 
 	.workshop-item-container {
+		position: relative;
 		@media screen and (min-width: 768px) {
 			width: 49%;
 			padding: 0 16px 32px;
@@ -38,6 +35,7 @@
 		list-style: none;
 		margin: 0;
 		padding: 12px 16px 8px;
+		display: block;
 
 		h3 {
 			color: $color-orange;
@@ -77,4 +75,38 @@
 			min-height: 185px;
 		}
 	}
+
+	a.workshop-item {
+		position: relative;
+		&:hover {
+			text-decoration: none;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba($color-link, 0);
+			z-index: 10;
+			transition: background .5s;
+		}
+		&:hover:before {
+			background: rgba($color-link, .1);
+		}
+	}
+
 }
+
+
+
+
+.workshop__attributes {
+
+}
+
+.workshop__attribute-icon {
+
+}
+

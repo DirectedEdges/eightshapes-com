@@ -62,3 +62,11 @@
     width: 0;
   }
 }
+
+.content-tabs__tab-content {
+  @media screen and (min-width: 768px) {
+    float: left;
+    width: 100%;
+    text-align: left;
+  }
+}

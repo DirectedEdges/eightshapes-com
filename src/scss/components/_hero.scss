@@ -1,5 +1,141 @@
-.hero-bio {
+.hero {
   width: 100%;
+  background-color: $color-gray-20;
+  position: relative;
+}
+
+.hero__workshop {
+  padding: 80px 40px;
+  margin-bottom: 0;
+  background-position: center center;
+  background-size: cover; 
+  position: relative;
+  background-color: $color-gray-30;
+
+  &:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $color-gray-12;
+    opacity: 0.65;
+    z-index: 1;
+  }
+}
+
+.hero__bio {
+  background-color: $color-gray-12;
+}
+
+.hero__workshop-component-cut-up {
+  background-image: url('../images/workshops/hero-component-cutup.png');
+}
+
+.hero__workshop-planning-systems {
+  background-image: url('../images/workshops/hero-planning-parts-people-products.jpg');
+}
+
+.hero__workshop-roadmapping {
+  background-image: url('../images/workshops/hero-roadmapping.png');
+  background-position: top center;
+}
+
+.hero__title {
+  font-weight: $font-weight-bold;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero__subhead {
+  font-size: $font-size-default;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  color: #aaa;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero__bio-copy {
+  position: absolute;
+  color: $color-white;
+  top: 35%;
+  left: 50%;
+  right: 12px;
+  z-index: 10;
+  text-align: left;
+
+  .hero__title {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .hero__subhead {
+    text-align: left;
+    font-size: 11px;
+  }
+}
+
+.hero__attributes {
+  background-color: $color-gray-12;
+  margin: 0;
+  padding: 4px 16px;
+  font-size: 14px;
+}
+
+.hero__attributes dt {
+  color: $color-gray-53;  
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0;
+  padding: 8px 0;
+  width: 49%;
+  white-space: nowrap;
+}
+
+.hero__attributes dd {
+  color: white;  
+  font-weight: $font-weight-bold;
+  display: inline-block;
+  margin: 0;
+  padding: 8px 0;
+  width: 49%;
+  a {
+    color: white;
+  }
+}
+
+.hero__bio .hero__attributes {
+  text-align: center;
+  dt {
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    svg {
+      fill: $color-gray-53;
+    }
+  }
+  dd {
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: $font-weight-light;
+    margin-right: 16px;
+  }
+}
+
+.hero__attribute-icon {
+  fill: $color-gray-53;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .hero-bio__image {
@@ -7,6 +143,7 @@
   position: static;
   max-width: none;
   width: 500px;
+  margin-left: -60px;
   // background-position: 30% top;
   // background-size: cover;
   // background-repeat: no-repeat;
@@ -21,47 +158,6 @@
   z-index: 20;
   overflow: hidden;
   // padding: $spacing-row-vertical $spacing-default $spacing-default 200px;
-}
-
-.hero-bio__copy {
-  color: $color-gray-12;
-  padding: $spacing-default 16px;
-}
-
-.hero-bio__heading {
-  margin-left: -3px;
-}
-
-.hero-bio__title,
-.hero-bio__tenure {
-  display: block;
-}
-
-.hero-bio__tenure {
-  margin-bottom: $spacing-md;
-}
-
-.hero-bio__tenure-value {
-  font-weight: $font-weight-bold;
-}
-
-.hero-bio__social {
-  @extend %list-reset;
-  font-size: 0;
-  margin-left: 6px;
-}
-
-.hero-bio__social-item {
-  display: inline-block;
-  margin-right: $spacing-md;
-
-  &:last-child {
-    margin-right: 0;
-  }
-}
-
-.hero-bio__social-link {
-  font-size: $font-size-default;
 }
 
 .hero-bio__image-wrap {
@@ -97,28 +193,9 @@
   width: 25px;
 }
 
-.hero-bio__social-link {
-  background: rgba($color-black, .8);
-  border-radius: $border-radius-default * 2;
-  display: block;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  transition: background .5s;
-  transform: rotate(45deg);
-
-  &:hover {
-    background: rgba($color-link, 0.5);
-  }
-}
-
 .hero-bio__social-icon {
-  height: 20px;
-  position: relative;
-  top: 9px;
-  width: 20px;
-  transform: rotate(-45deg);
-  transition: fill .5s;
+  height: 24px;
+  width: 24px;
 
   .hero-bio__social-link:hover & {
     fill: $color-white;
@@ -129,100 +206,105 @@ p.lead.bio__lead {
   margin-bottom: 64px;
 }
 
-@media screen and (min-width: 480px) {
-  .hero-bio__copy {
-    padding: $spacing-default;
-  }
-}
-
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 400px) {
   .hero-bio__image {
-    max-width: 100%;
-    width: auto;
-    margin: 0 auto;
+    margin-left: 0;
+    width: 100%;
   }
 }
 
-@media screen and (min-width: 560px) {
-  .hero-bio {
-    position: relative;
-    z-index: 0;
-    overflow: hidden;
+@media screen and (min-width: 480px) {
 
+  .hero__title {
+    font-size: 32px;
+  }
 
-    &:before {
-      display: block;
-      content: "";
-      width: 100%;
-      padding-top: (560 / 1368) * 100%;
+  .hero__bio-copy {
+    left: 50%;
+    .hero__title {
+      font-size: 24px;
     }
   }
-
-  .hero-bio__content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-  }
-
-  .hero-bio__image-wrap {
-    position: absolute;
-    width: 100%;
-  }
-
-  .hero-bio__image {
-    width: 100%;
-  }
-
-  .hero-bio__copy {
-    position: absolute;
-    color: $color-white;
-    z-index: 10;
-    left: 43%;
-  }
-
-  .hero-bio__social-link {
-    background: rgba($color-black, .5);
-  }
 }
 
-@media screen and (min-width: 640px) {
-  .hero-bio__copy {
-    left: 50%;
-    right: auto;
-    top: $spacing-default;
+@media screen and (min-width: 650px) {
+  .hero__bio-copy {
+    .hero__title {
+      font-size: 36px;
+    }
+    .hero__subhead {
+      font-size: 16px;
+    }
   }
 }
 
 @media screen and (min-width: 768px) {
 
-  .hero-bio {
-    background-color: $color-gray-15;
-    padding-bottom: 32px;
-    padding-left: 32px;
-    padding-right: 32px;
-
-    &:before {
-      display: none;
-    }
+  .hero__workshop {
+    padding: 100px 40px;
   }
 
-  .hero-bio__content, .hero-bio__image-wrap {
-    position: relative;
+  .hero__title {
+    font-size: 36px;
+  }
+
+  .hero__attributes {
+    text-align: center;
+  }
+
+  .hero__attributes dt {
+    width: auto;
+    padding: 8px 4px 8px 12px;
+  }
+  .hero__attributes dd {
+    width: auto;
+    padding: 8px 12px 8px 4px;
+  }
+
+  .hero__bio-copy {
+    top: 35%;
+
+    .hero__title {
+      font-size: 42px;
+    }
+    .hero__subhead {
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hero__bio-copy {
+    .hero__title {
+      font-size: 48px;
+    }
+    .hero__subhead {
+      font-size: 18px;
+    }
   }
 }
 
 @media screen and (min-width: 1000px) {
+
+  .hero__workshop {
+    padding: 140px 40px;
+  }
+
+  .hero__title {
+    font-size: 48px;
+  }
+
   .hero-bio {
     padding-bottom: 80px;
     padding-left: 100px;
     padding-right: 100px;
   }
 
-  .hero-bio__copy {
-    top: 20%;
+  .hero__bio-copy {
+    top: 40%;
+    .hero__title {
+      font-size: 64px;
+    }
   }
 
   .header__bio {
@@ -241,11 +323,6 @@ p.lead.bio__lead {
     margin-top: 12px;
   }
 
-  .hero-bio__heading {
-    font-size: 48px;
-    margin-left: -5px;
-  }
-
   .hero-bio__title,
   .hero-bio__tenure {
     font-size: 24px;
@@ -254,32 +331,15 @@ p.lead.bio__lead {
   .hero-bio__tenure {
     margin-bottom: 30px;
   }
-
-  .hero-bio__social-link {
-    height: 45px;
-    width: 45px;
-  }
-
-  .hero-bio__social-icon {
-    height: 25px;
-    width: 25px;
-  }
 }
 
-@media screen and (min-width: 1175px) {
-  
-  .hero-bio__heading {
-    font-size: 66px;
-    margin-left: -5px;
+@media screen and (min-width: 1200px) {
+  .hero__bio-copy {
+    .hero__title {
+      font-size: 72px;
+    }
+    .hero__subhead {
+      font-size: 24px;
+    }
   }
-
-  .hero-bio__title,
-  .hero-bio__tenure {
-    font-size: 28px;
-  }
-
-  .hero-bio__tenure {
-    margin-bottom: 50px;
-  }
-
 }
