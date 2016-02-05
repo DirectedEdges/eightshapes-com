@@ -70,3 +70,22 @@
     text-align: left;
   }
 }
+
+// new simple thumbnail style / intentionally left out of the content-tabs namespace / move or change namespace as needed
+
+.illustration-thumb {
+  float: left;
+  margin-right: 20px;
+  padding: 10px;
+  width: 150px;
+  border: 1px solid $color-link;
+  transition: box-shadow .25s;
+  box-shadow: 0 0 0 $color-white;
+}
+.illustration-thumb:hover {
+  box-shadow: $drop-shadow-default;
+}
+.content__long-form .illustration-thumb__wrapper {
+  clear: left; 
+  padding-top: 36px
+}
