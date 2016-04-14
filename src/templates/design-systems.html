@@ -69,21 +69,21 @@
       <div class="workshops">
         <div class="workshop-item-container">
           <a href="workshop-planning-parts-products-people.html" class="workshop-item">
-            <h3>Plan Parts, Products and People {{ components.icon({icon_name: 'angle-right', class: 'workshop__details-arrow-icon'}) }}</h3>
+            <h3>Plan Parts, Products &amp; People {{ components.icon({icon_name: 'angle-right', class: 'workshop__details-arrow-icon'}) }}</h3>
             <p>Learn basic concepts and activities to start, spread and sustain a system for a single product or a large enterprise.</p>
             <p class="duration">¼ day</p>
           </a>
         </div>
         <div class="workshop-item-container">
           <a href="workshop-component-cutup.html" class="workshop-item">
-            <h3>Cut Up a Component Inventory {{ components.icon({icon_name: 'angle-right', class: 'workshop__details-arrow-icon'}) }}</h3>
+            <h3>Component Cut-Up {{ components.icon({icon_name: 'angle-right', class: 'workshop__details-arrow-icon'}) }}</h3>
             <p>Dive into an immersive activity to visualize, slice up, group, label and prioritize your components.</p>
             <p class="duration">Up to ½ day</p>
           </a>
         </div>
         <div class="workshop-item-container">
           <a class="workshop-item" href="workshop-roadmapping.html">
-            <h3>Roadmap a Sustainable System {{ components.icon({icon_name: 'angle-right', class: 'workshop__details-arrow-icon'}) }}</h3>
+            <h3>System Roadmapping {{ components.icon({icon_name: 'angle-right', class: 'workshop__details-arrow-icon'}) }}</h3>
             <p>Transition a system from project to product via roadmapping, a backlog, and aligning with product teams.</p>
             <p class="duration">Up to ½ day</p>
           </a>
@@ -121,12 +121,6 @@
         EightShapes contributes to the design community with writing, seminars, books, and toolkits to document UX and prototype in HTML &amp; CSS.
       </p>
       <div class="row content-card-wrap">
-        {{ components.content_card_double({
-          href: "https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0#.ajm21o3f1",
-          pre_heading: "Medium",
-          heading: "Team Models for Scaling a Design System",
-          background_image: "images/components/content_card/medium_castle.jpg"
-        }) }}
         {{ components.content_card({
           href: "https://www.ux-lx.com/speakers/nathan_curtis.html",
           class: "content-card--event",
@@ -136,12 +130,34 @@
           cta: "Register"
         }) }}
         {{ components.content_card({
-          href: "http://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351",
+          href: "https://medium.com/eightshapes-llc/a-design-system-isn-t-a-project-it-s-a-product-serving-products-74dcfffef935#.saa08k6op",
+          pre_heading: "Medium • February 2016",
+          heading: "A Design System isn’t a Project. It’s a Product, Serving Products.",
+          copy: "Shifting Focus from Design and Development to Managing and Marketing a System",
+          cta: "Read More"
+        }) }}
+        {{ components.content_card({
+          href: "https://medium.com/@nathanacurtis/color-in-design-systems-a1c80f65fa3#.l23xnagaz",
+          pre_heading: "Medium • April 2016",
           class: "content-card--book",
-          pre_heading: "Book by Nathan Curtis",
-          heading: "Modular Web Design",
-          copy: "Creating Reusable Components for User Experience Design and Documentation",
-          background_image: "images/components/content_card/modular_web_design.jpg"
+          heading: "Color in Design Systems",
+          copy: "Exploring palettes, theming, tints and shades, and accessibility",
+          background_image: "images/components/content_card/color-in-design-systems.png"
+        }) }}
+        {{ components.content_card({
+          href: "https://medium.com/eightshapes-llc/right-sizing-the-rectangles-936894ca0f99",
+          pre_heading: "Medium • March 2016",
+          class: "content-card--book",
+          heading: "Right-Sizing the Rectangles",
+          copy: "Grappling with Hierarchy for a More Effective Design System",
+          background_image: "images/components/content_card/right-sizing-rectangles.png"
+        }) }}
+        {{ components.content_card({
+          href: "https://medium.com/eightshapes-llc/on-classification-in-design-systems-6b33b97f4a8f#.hffoe570s",
+          pre_heading: "Medium • February 2016",
+          heading: "On Classification in Design Systems",
+          copy: "Recent Trends in Naming Things in Design Libraries",
+          cta: "Read More"
         }) }}
         {{ components.content_card({
           href: "http://2016.enterpriseux.net/speakers/nathan-curtis/",
@@ -152,9 +168,23 @@
           copy: "Enable a wide array of people—including non-designers—to improve enterprise UX",
           cta: "Register"
         }) }}
+        {{ components.content_card_double({
+          href: "https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0#.ajm21o3f1",
+          pre_heading: "Medium • September 2015",
+          heading: "Team Models for Scaling a Design System",
+          background_image: "images/components/content_card/medium_castle.jpg"
+        }) }}
+        {{ components.content_card({
+          href: "http://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351",
+          class: "content-card--book",
+          pre_heading: "Book by Nathan Curtis",
+          heading: "Modular Web Design",
+          copy: "Creating Reusable Components for User Experience Design and Documentation",
+          background_image: "images/components/content_card/modular_web_design.jpg"
+        }) }}
         {{ components.content_card({
           href: "https://medium.com/eightshapes-llc/finding-platform-balance-in-a-design-system-47eaae48de98#.lo737xuvw",
-          pre_heading: "Medium",
+          pre_heading: "Medium • October 2015",
           heading: "Finding Platform Balance in a Design System",
           copy: "Focusing on Fundamentals and Balancing Influence Across Platforms",
           cta: "Read More"
@@ -162,17 +192,17 @@
         {{ components.content_card({
           href: "https://medium.com/eightshapes-llc/the-component-cut-up-workshop-1378ae110517#.5hls51ylu",
           class: "content-card--book",
-          pre_heading: "Medium",
+          pre_heading: "Medium • November 2015",
           heading: "The Component Cut-Up Workshop",
           background_image: "images/components/content_card/component-cut-up.png"
         }) }}
         {{ components.content_card({
-          href: "http://clarityconf.com/",
+          href: "http://smashingconf.com/freiburg-2016/",
           class: "content-card--event",
-          heading: "Clarity",
-          pre_heading: "A Style Guide Conference",
-          date: "March 31-April 1, 2016 • San Francisco, CA",
-          copy: "Dig into the parts, people and products to which a design system spreads.",
+          pre_heading: "Smashing Conference",
+          date: "September 12-14, 2016 • Freiburg, Germany",
+          heading: "Scalable Design Systems",
+          copy: "Introduce design systems, discuss how style guides help us, and plan for how to sustain a system over time.",
           cta: "Register"
         }) }}
       </div>
