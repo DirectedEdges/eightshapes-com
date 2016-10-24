@@ -170,4 +170,5 @@ module.exports = function(grunt) {
     grunt.registerTask('markup', ['concat:components', 'nunjucks'])
     grunt.registerTask('build', ['clean:dist', 'markup', 'styles', 'scripts', 'svg_sprite', 'copy']);
     grunt.registerTask('dev', ['build', 'browserSync', 'watch']);
+    grunt.registerTask('default', 'dev');
 };
