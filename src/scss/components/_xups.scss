@@ -234,6 +234,19 @@
 		}
 	}
 
+	.ups__logos {
+		.ups__logo {
+			width: 32%;
+			@media screen and (min-width: 768px) {
+				width: 24%;				
+			}
+			@media screen and (min-width: 1024px) {
+				width: 16%;
+				margin-bottom: 16px;				
+			}
+		}
+	}
+
 	// Coloring
 
 	&.white-block-on-light-gray {
@@ -270,6 +283,28 @@
 			}
 			h3 {
 				color: $color-orange;
+			}
+			.ups__color-blocks p {
+				color: white;
+			}
+		}
+	}
+
+	&.white-on-charcoal {
+		background-color: $color-gray-15;
+		margin-top: -1px;
+		h2 {
+			color: $color-white;
+		}
+		.lead {
+			color: $color-white;
+		}
+		@media screen and (min-width: 768px) {
+			.up {
+				background-color: $color-gray-15;
+			}
+			h3 {
+				color: $color-white;
 			}
 			.ups__color-blocks p {
 				color: white;
