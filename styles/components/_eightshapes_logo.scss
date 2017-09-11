@@ -1,0 +1,25 @@
+.eightshapes-logo {
+  fill: $color-white;
+  height: 30px;
+  width: 200px;
+
+  &.header__logo-subpage {
+    width: 120px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  @media screen and (min-width: 768px) {
+  	height: 40px;
+    &.header__logo-subpage {
+      width: 160px;
+    }
+  }
+}
+
+.header .eightshapes-logo {
+  @media screen and (min-width: 1000px) {
+  	height: 60px;
+  	width: 250px;
+  }
+}

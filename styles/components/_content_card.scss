@@ -1,0 +1,290 @@
+.fluid-inner {
+  margin: 0 auto;
+  max-width: $screen-lg;
+}
+
+.content-card-wrap {
+  margin: 0 auto;
+  max-width: $screen-lg;
+  // padding: 0 $spacing-default - ($grid-gutter-width / 2);
+
+  [class^='col-'] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.content-card {
+  display: block;
+  position: relative;
+  margin-bottom: $spacing-md;
+  
+  @media screen and (min-width: 768px) {
+    color: $color-gray-20;
+    min-height: 280px;
+    padding: $spacing-default;
+    background-color: $color-gray-95;
+    background-position: center -20%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.content-card--event {
+
+    @media screen and (min-width: 768px) {
+      background-color: $color-orange;
+      color: $color-white;
+      .content-card__copy,
+      .content-card__pre-heading,
+      .content-card__date {
+          color: $color-gray-95;
+      }
+    }
+  }
+}
+
+.content-card__pre-heading,
+.content-card__date {
+  font-size: $font-size-xs;
+  font-weight: $font-weight-bold;
+  margin-top: 0;
+  text-transform: uppercase;
+  display: inline-block;
+  color: $color-gray-15;
+  margin-bottom: $spacing-sm/2;
+  
+  & + .content-card__date:before {
+    content: " / ";
+    margin: 0 8px;
+    color: $color-gray-53;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    display: block;
+    & + .content-card__date:before {
+      content: "";
+      margin: 0;
+    }
+  }
+}
+
+.content-card__heading {
+  margin-bottom: $spacing-sm;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  
+  @media screen and (min-width: 768px) {
+    text-transform: inherit;
+    font-size: 26px;
+    font-weight: 300;
+  }
+}
+
+.content-card__date {  
+    margin-bottom: $spacing-sm/2;
+    @media screen and (min-width: 768px) {
+      margin-bottom: $spacing-sm;
+    }
+}
+
+.content-card__copy {
+  display: none;
+  
+  @media screen and (min-width: 768px) {
+    display: block;
+    font-weight: $font-weight-normal;
+    margin-bottom: $spacing-md;
+  }  
+}
+
+.content-card--double {
+  background-size: 0;
+
+  @media screen and (min-width: 768px) {
+    color: $color-white;
+    background-position: center center;
+    background-size: cover;
+    
+    &:hover {
+      color: $color-white;
+    }
+
+    &:before {
+      background-color: rgba($color-blue, 0);
+      bottom: 0;
+      content: '';
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transition: background .5s;
+    }
+
+    &:hover:before {
+      background-color: rgba($color-blue, .5);
+    }
+  }
+  
+  .content-card__content {
+
+    @media screen and (min-width: 768px) {
+      bottom: $spacing-default;
+      left: $spacing-default;
+      max-width: 320px;
+      position: absolute;
+      right: $spacing-default;
+    }
+  }
+
+  .content-card__pre-heading {
+    @media screen and (min-width: 768px) {
+      color: $color-gray-95;
+    }
+  }
+
+  .content-card__heading {
+    font-weight: $font-weight-normal;
+  }
+}
+
+.content-card__cta {
+  display: none;
+  color: $color-link;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  .content-card:hover & {
+    text-decoration: underline;
+  }
+
+  .content-card--event & {
+    background: $color-white;
+    border-radius: $border-radius-default;
+    bottom: $spacing-default;
+    color: $color-gray-20;
+    left: $spacing-default;
+    padding: 20px 0;
+    position: absolute;
+    right: $spacing-default;
+    text-align: center;
+    // width: 100%;
+    
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  .content-card--event:hover & {
+    background: $color-gray-95;
+    text-decoration: none;
+  }
+}
+
+.content-card--book {
+
+  @media screen and (min-width: 768px) {
+    background-color: $color-gray-20;
+    padding: 0;
+  }
+
+  .content-card__pre-heading {
+    @media screen and (min-width: 768px) {
+      color: $color-orange-light;
+    }
+  }
+
+  .content-card__content {
+    display: block;
+
+    @media screen and (min-width: 768px) {
+      color: $color-white;
+      background-color: $color-gray-20;
+      // bottom: 0;
+      // left: 0;
+      min-height: 185px;
+      // position: absolute;
+      width: 100%;
+      padding: $spacing-default;
+    }
+  }
+
+  .content-card__copy {
+    font-weight: $font-weight-light;
+    margin-bottom: 0;
+    // min-height: 70px;
+    @media screen and (min-width: 768px) {
+      color: $color-white;
+    }
+  }
+}
+
+.content-card__background-image {
+  display: block;
+  width: 100%;
+}
+
+.content-card__background-image-wrap {
+  display: none;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+
+  &:before {
+    background-color: rgba($color-blue, 0);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background .5s;
+  }
+
+  .content-card:hover &:before {
+    background-color: rgba($color-blue, .5);
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .content-card--book {
+    .content-card__content {
+      min-height: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content-card {
+    min-height: 350px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .content-card {
+    min-height: 360px;
+  }
+}
+
+@media screen and (min-width: ($screen-lg + ($spacing-default * 2) )) {
+  .content-card {
+    min-height: 340px;
+  }
+
+  .content-card-wrap {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,21 @@
+$color-blue-twitter: #08D0EC;
+$color-blue-linkedin: #0174BD;
+$color-gray-medium: #D2D3D5;
+
+
+.icon--large {
+  height: 200px;
+  width: 200px;
+}
+
+.icon-twitter {
+  fill: $color-blue-twitter;
+}
+
+.icon-linkedin {
+  fill: $color-blue-linkedin;
+}
+
+.icon-medium {
+  fill: $color-gray-medium;
+}
