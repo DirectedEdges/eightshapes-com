@@ -4,7 +4,8 @@
   "description": "Marketing site",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepack": "gulp build:all"
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,9 @@
   },
   "homepage": "http://eightshapes.com",
   "devDependencies": {
-    "@eightshapes/eightshapes-build-tools": "^0.13.0"
+    "esds-build": "^0.25.0"
   },
   "dependencies": {
-    "@eightshapes/eightshapes-library": "^0.1.0"
+    "esds-library": "^0.4.0-alpha.3"
   }
 }
