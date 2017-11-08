@@ -27,6 +27,11 @@ module.exports = {
             name: 'legacy-scripts',
             sources: ['scripts/legacy/*.js'],
             destination: 'docs/scripts/legacy'
+        },
+        {
+            name: 'github-pages-cname',
+            sources: ['CNAME'],
+            destination: 'docs'
         }
     ]
 }
