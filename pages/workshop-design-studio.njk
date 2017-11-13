@@ -1,7 +1,7 @@
-{% extends 'templates/default.njk' %}
+{% extends 'templates/legacy/default.njk' %}
 {% block content %}
-  {{ components.header_workshop({ 'back_href': '/product-discovery.html', 'section': 'Product Discovery' }) }}
-  {{ components.workshop_hero({ 'title': 'Design Studio for Digital Products', 'background': '', 'duration':'1/2 day - 2 days', 'participants': 'Up to 24' }) }}
+  {{ legacy_components.header_workshop({ 'back_href': '/product-discovery.html', 'section': 'Product Discovery' }) }}
+  {{ legacy_components.workshop_hero({ 'title': 'Design Studio for Digital Products', 'background': '', 'duration':'1/2 day - 2 days', 'participants': 'Up to 24' }) }}
   <div class="container-fluid">
     <div class="container-fluid-inner content__long-form">
       <p class="lead">If your team needs some fresh perspectives, let us facilitate a design studio to translate a product vision into concrete designs.</p>
@@ -29,7 +29,7 @@
     </div>
   </div>
   <!-- Page CTA -->
-  {{ components.page_cta({header:'Ready?', lead: 'If your product needs direction, we can stop the analysis paralysis.'}) }}
+  {{ legacy_components.page_cta({header:'Ready?', lead: 'If your product needs direction, we can stop the analysis paralysis.'}) }}
 
-  {{ components.footer() }}
+  {{ legacy_components.footer() }}
 {% endblock %}
