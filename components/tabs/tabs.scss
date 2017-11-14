@@ -1,0 +1,53 @@
+.escom-tabs__tabs {
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+}
+
+.escom-tabs__cell {
+    padding: 0 $esds-space-generic-half-x;
+
+    @media screen and (min-width: $escom-breakpoints-mobile-portrait) {
+        padding: 0 $esds-space-generic-1-and-half-x;
+    }
+}
+
+.escom-tabs__button {
+    @include esds-font-reset;
+    background: none;
+    border: 0;
+    border-bottom: 5px solid transparent;
+    color: $esds-color-teal-71;
+    cursor: pointer;
+    display: block;
+    font: inherit;
+    font-size: $esds-font-size-s;
+    margin: 0;
+    outline: 0;
+    overflow: visible;
+    padding: $esds-space-generic-1-x 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (min-width: $escom-breakpoints-mobile-portrait) {
+        font-size: $esds-font-size-m;
+    }
+
+    &:hover {
+        border-bottom-color: $esds-color-teal-71;
+    }
+}
+
+.escom-tabs__button--is-active {
+    border-bottom-color: $esds-color-neutral-42;
+    color: $esds-color-neutral-42;
+    pointer-events: none;
+}
+
+.escom-tabs__content {
+    display: none;
+}
+
+.escom-tabs__content--is-active {
+    display: block;
+}

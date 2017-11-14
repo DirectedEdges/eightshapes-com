@@ -1,0 +1,29 @@
+.escom-link-list {
+    list-style: none;
+    margin: $esds-space-stack-1-x;
+    padding: 0;
+}
+
+.escom-link-list__item {
+    margin: $esds-space-stack-1-and-half-x;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.escom-link-list__group {
+    @include esds-body-text-m();
+    @include esds-text-color('secondary');
+    margin: 0;
+}
+
+.escom-link-list__title {
+    color: $esds-text-color-primary-on-white;
+    font-weight: $esds-font-weight-bold;
+}
+
+.escom-link-list__link {
+    color: $esds-color-teal-71;
+    text-decoration: none;
+}

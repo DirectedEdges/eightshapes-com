@@ -1,0 +1,10 @@
+{% macro badge(
+    class=false,
+    label="Badge Label"
+) %}
+
+<span class="escom-badge{% if class %} {{ class }}{% endif %}">
+    {{ label }}
+</span>
+
+{% endmacro %}

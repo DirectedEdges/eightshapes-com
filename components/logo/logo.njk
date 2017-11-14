@@ -1,0 +1,4 @@
+{% macro logo(args) %}
+  {% set class = args.class + " eightshapes-logo" %}
+  {{ icon({icon_name: 'eightshapes-logo', class: class}) }}
+{% endmacro %}

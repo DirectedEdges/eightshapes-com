@@ -1,0 +1,571 @@
+{% extends 'templates/base.njk' %}
+{% block body %}
+    {{ esds.headcrumb(href="/design-systems.html", text="Design Systems") }}
+    {% call esds.row(background_image="/images/systems/workshops-hero.png", class="esds-row--hero-inset") %}
+        <h1 class="esds-row__level-1-heading">Workshops</h1>
+        <p class="esds-row__p-lead">
+            Looking to start or reinvigorate a design system? We’ll workshop with your group to teach individuals and align teams pursuing design systems.
+        </p>
+    {% endcall %}
+
+    {% call esds.row(background="light", class="esds-row--tall-inset esds-row--narrow-inner") %}
+        <h2 class="esds-row__level-2-heading">Why a Workshop with EightShapes?</h2>
+        <p class="esds-row__p-lead">
+            With EightShapes’ seasoned experience and enthusiasm, you’ll inspire your teams and spark systems work. Your team can use a workshop to:
+        </p>
+        {{ esds.tiles(
+            class = "esds-tiles--2-column esds-tiles--no-padding",
+            container = "light",
+            items = [
+                {
+                    list: [
+                        "Kickoff or energize in-house systems efforts",
+                        "Define your system and what it offers",
+                        "Refine how to design and code system features"
+                    ]
+                },
+                {
+                    list: [
+                        "Roadmap how to create and adopt a system",
+                        "Develop a common vocabulary for your teams",
+                        "Produce meaningful outcomes and teach concepts with engaging hands-on activities"
+                    ]
+                }
+            ]
+        ) }}
+    {% endcall %}
+
+    {% call esds.row(background="white", class="esds-row--tall-inset esds-row--narrow-inner") %}
+        <h2 class="esds-row__level-2-heading">What We Cover</h2>
+        <p class="esds-row__p-l">
+            During one or two days together, we’ll combine lecture and hands-on activities on how to plan, design, document, operate and adopt a system.
+        </p>
+        <p class="esds-row__p-l">
+            If the standard, out-of-the-box agenda suits your needs, excellent! Otherwise, we’ll work with you to tailor topics and hands-on activities to your current needs.
+        </p>
+    {% endcall %}
+
+    <div class="escom-tabs">
+        {% call esds.row(background="white", class="esds-row--narrow-inner esds-row--no-inset") %}
+            <div class="escom-tabs__tabs">
+                <div class="escom-tabs__cell">
+                    <button class="escom-tabs__button escom-tabs__button--is-active" data-target="tab-standard-agenda">
+                        Standard Agenda
+                    </button>
+                </div>
+
+                <div class="escom-tabs__cell">
+                    <button class="escom-tabs__button" data-target="tab-custom-agendas">
+                        Custom Agendas
+                    </button>
+                </div>
+
+                <div class="escom-tabs__cell">
+                    <button class="escom-tabs__button" data-target="tab-all-topics-and-activities">
+                        All Topics & Activities
+                    </button>
+                </div>
+            </div>
+        {% endcall %}
+
+        <div id="tab-standard-agenda" class="escom-tabs__content escom-tabs__content--is-active">
+            {% call esds.row(background="white", class="esds-row--narrow-inner esds-row--no-inset-bottom") %}
+                <p class="esds-row__p-l">
+                    For public events and organizations looking for general education, we’ll follow a standard agenda that hits all the primary topics.
+                </p>
+            {% endcall %}
+
+            {% call esds.row(background="white", class="esds-row--tall-inset") %}
+                {{ escom.agenda(
+                    items = [
+                        {
+                            time: "8:30AM - 9:00AM",
+                            heading: "Arrival & Setup"
+                        },
+                        {
+                            time: "9:00AM - 10:45AM",
+                            heading: "Planning Systems",
+                            list: [
+                                "Define your design system, including relationships across systems",
+                                "Explore your library’s scope of visual style, UI components and more",
+                                "Plan a path from nothing (or a previous version) to launch a new system",
+                                "Identify, prioritize and prepare products that’ll adopt the system"
+                            ],
+                            card_1_heading: "Deep Dive Topic",
+                            card_1: esds.card(
+                                container="light",
+                                thumbnail_image="/images/systems/workshop-color-in-design.png",
+                                title="Color in Design Systems",
+                                cta="View Article",
+                                href="#"
+                            ),
+                            card_2_heading: "Hands-On Activity",
+                            card_2: esds.card(
+                                container="light",
+                                thumbnail_image="/images/systems/workshop-parts-projects-people.png",
+                                title="Parts, Products, and People",
+                                cta="View Article",
+                                href="#"
+                            )
+                        },
+                        {
+                            time: "11:00AM – 12:30pm",
+                            heading: "Designing Systems",
+                            list: [
+                                "Create a new visual language, from conceptual reference designs to a Sketch sticker sheet",
+                                "Discover a UI component inventory by deconstructing existing product experiences",
+                                "Organize your library into topics, sections, and assets everyone understands"
+                            ],
+                            card_1_heading: "Deep Dive Topic",
+                            card_1: esds.card(
+                                container="light",
+                                thumbnail_image="/images/systems/workshop-buttons-in-ds.png",
+                                title="Buttons In Design Systems",
+                                cta="View Article",
+                                href="#"
+                            ),
+                            card_2_heading: "Hands-On Activity",
+                            card_2: esds.card(
+                                container="light",
+                                thumbnail_image="/images/systems/workshop-component-cut-up.png",
+                                title="Component Cut Up",
+                                cta="View Article",
+                                href="#"
+                            )
+                        },
+                        {
+                            time: "12:30pm – 1:30pm",
+                            heading: "Lunch (provided by you)"
+                        },
+                        {
+                            time: "1:30pm – 3:00pm",
+                            heading: "Building & Documenting Systems",
+                            list: [
+                                "Form a predictable process for designing, building, and documenting a library",
+                                "Deliver on promises of quality and scale via a rigorous system QA practice",
+                                "Establish an information architecture strategy for documenting design and code assets",
+                                "Design effective component doc, from conventional displays to custom guidance"
+                            ],
+                            card_1_heading: "Deep Dive Topic",
+                            card_1: esds.card(
+                                container="light",
+                                thumbnail_image="/images/systems/workshop-space-in-ds.png",
+                                title="Space In Design Systems",
+                                cta="View Article",
+                                href="#"
+                            ),
+                            card_2_heading: "Hands-On Activity",
+                            card_2: esds.card(
+                                container="light",
+                                thumbnail_image="/images/systems/workshop-sketch-homepage.png",
+                                title="Sketch The System Homepage",
+                                cta="View Article",
+                                href="#"
+                            )
+                        },
+                        {
+                            time: "3:30pm – 5:00pm",
+                            heading: "Practicing Systems",
+                            list: [
+                                "Form a shared vocabulary for your system’s roles: team members, users, and contributors",
+                                "Identify the regular activities and processes to operate a systems team",
+                                "Strategize on how to coordinate with and support adopting products",
+                                "Build an inclusive and participatory community of contributors and experts"
+                            ],
+                            card_1_heading: "Deep Dive Topic",
+                            card_1: esds.card(
+                                container="light",
+                                thumbnail_image="/images/systems/workshop-measuring-system-success.png",
+                                title="Measuring System Success",
+                                cta="View Article",
+                                href="#"
+                            ),
+                            card_2_heading: "Hands-On Activity",
+                            card_2: esds.card(
+                                container="light",
+                                thumbnail_image="/images/systems/workshop-system-ops.png",
+                                title="System Operations How Do I...?",
+                                cta="View Article",
+                                href="#"
+                            )
+                        }
+                    ]
+                ) }}
+            {% endcall %}
+        </div>
+
+        <div id="tab-custom-agendas" class="escom-tabs__content">
+            {% call esds.row(background="white", class="esds-row--narrow-inner esds-row--no-inset-bottom") %}
+                <p class="esds-row__p-l">
+                    Most in-house teams choose to customize their agenda to tailor topics to their current needs. This may result in a workshop lengthened to two days or shortened a half day (usually paired with a sponsored talk for a larger group).
+                </p>
+
+                <h3 class="esds-row__p-lead">Example 1: Half Day for Organization with Multiple Systems</h3>
+
+                <p class="esds-row__p-l">
+                    In one instance, a company paired an sponsored talk to the local community with a customized half-day in-house workshop. They chose to focus on aligning multiple in-house system efforts around a future strategy along topics covering how to practice systems. As a result, they omitted topics of system design, code and documentation.
+                </p>
+            {% endcall %}
+
+            {% call esds.row(background="white", class="esds-row--tall-inset") %}
+                {{ escom.agenda(
+                    items = [
+                        {
+                            time: "9:30am – 10:00am",
+                            heading: "Arrival & Setup"
+                        },
+                        {
+                            time: "10:00 – 11:45am",
+                            heading: "Planning Systems"
+                        },
+                        {
+                            time: "11:45pm – 12:30pm",
+                            heading: "Lunch (provided by you)"
+                        },
+                        {
+                            time: "12:30pm – 2:00pm",
+                            heading: "Practicing Systems",
+                            list: [
+                                "Form a shared vocabulary for your system’s roles: team members, users, and contributors",
+                                "Identify the regular activities and processes to operate a systems team",
+                                "Strategize on how to coordinate with and support adopting products",
+                                "Build an inclusive and participatory community of contributors and experts"
+                            ],
+                            card_1_heading: "Hands-On Activity",
+                            card_1: esds.card(
+                                container="light",
+                                thumbnail_image="/images/systems/workshop-system-ops.png",
+                                title="System Operations How Do I...?",
+                                cta="View Article",
+                                href="#"
+                            )
+                        }
+                    ]
+                ) }}
+            {% endcall %}
+        </div>
+
+        <div id="tab-all-topics-and-activities" class="escom-tabs__content">
+            {% call esds.row(background="white", class="esds-row--narrow-inner esds-row--no-inset-bottom") %}
+                <p class="esds-row__p-l">
+                    When customizing a workshop, we’ll discuss your interests and select a range of topics and activities that fit your needs. Those include:
+                </p>
+            {% endcall %}
+
+            {% call esds.row(background="white", class="esds-row--tall-inset") %}
+                {{ escom.agenda(
+                    class = "escom-agenda--no-timeline",
+                    col_1_heading="Category",
+                    col_2_heading="Topic",
+                    items = [
+                        {
+                            heading: "Planning",
+                            topics: [
+                                escom.link_list(
+                                    items = [
+                                        {
+                                            title: "Defining Design Systems",
+                                            description: "The Scope, Output, and Participants"
+                                        },
+                                        {
+                                            title: "A Design System isn’t a Project. It’s a Product, Serving Products",
+                                            href: "#",
+                                            description: "Shifting Focus from Design and Development to Managing and Marketing a System"
+                                        },
+                                        {
+                                            title: "Systems of Systems",
+                                            description: "Relating Libraries in a Multi-System Enterprise"
+                                        },
+                                        {
+                                            title: "Starting a Design System",
+                                            href: "#",
+                                            description: "From Pitching a Strategy to Launching 1.0 and Beyond"
+                                        },
+                                        {
+                                            title: "And You Thought Buttons Were Easy?",
+                                            href: "#",
+                                            description: "A Story for Selling a System that Scales"
+                                        },
+                                        {
+                                            title: "Principles of Designing Systems",
+                                            href: "#",
+                                            description: "Core Beliefs to Guide System Strategy and Tactics"
+                                        },
+                                        {
+                                            title: "Measuring Design System Success",
+                                            href: "#",
+                                            description: "Use OKRs to Set Goals & Track Progress"
+                                        },
+                                        {
+                                            badge: "Activity",
+                                            title: "Picking Parts, Products & People",
+                                            href: "#",
+                                            description: "A Team Activity to Start a Design System"
+                                        },
+                                        {
+                                            title: "Roadmaps for Design Systems",
+                                            href: "#",
+                                            description: "Communicate What You’ll Do Next That Teams Can Depend On"
+                                        },
+                                        {
+                                            title: "Balancing Platforms in a Design System",
+                                            href: "#"
+                                        }
+                                    ]
+                                )
+                            ]
+                        },
+                        {
+                            heading: "Products & Adoption",
+                            topics: [
+                                escom.link_list(
+                                    items = [
+                                        {
+                                            title: "Adopting Design Systems",
+                                            href: "#",
+                                            description: "A Playbook for Working with Product Teams & Managers"
+                                        },
+                                        {
+                                            title: "Promoting a Design System Across Your Products",
+                                            href: "#",
+                                            description: "Published on AListApart"
+                                        }
+                                    ]
+                                )
+                            ]
+                        },
+                        {
+                            heading: "Design & Build",
+                            topics: [
+                                escom.link_list(
+                                    items = [
+                                        {
+                                            badge: "Activity",
+                                            title: "Creating a Visual Language via Reference Designs",
+                                            href: "#",
+                                            description: "Page Concepts Comparing Before & After, with a System Twist"
+                                        },
+                                        {
+                                            title: "Color in Design Systems",
+                                            href: "#",
+                                            description: "16 Tips for Setting Up a System That Endures"
+                                        },
+                                        {
+                                            title: "Buttons in Design Systems",
+                                            href: "#",
+                                            description: "12 Tips for Setting Up a System That Endures"
+                                        },
+                                        {
+                                            title: "Space in Design Systems",
+                                            href: "#",
+                                            description: "From Basics to Expanded Concepts to Apply Space with Intent"
+                                        },
+                                        {
+                                            title: "Patterns ≠ Components",
+                                            href: "#",
+                                            description: "Our Community, not Companies, Should Build Pattern Libraries"
+                                        },
+                                        {
+                                            badge: "Activity",
+                                            title: "The Component Cut-Up Workshop",
+                                            href: "#",
+                                            description: "Kickoff a Design Library Effort by Engaging the Whole Team"
+                                        },
+                                        {
+                                            title: "On Classification in Design Systems",
+                                            href: "#",
+                                            description: "Recent Trends in Naming Things in Design Libraries"
+                                        },
+                                        {
+                                            title: "Light & Dark Color Systems",
+                                            href: "#",
+                                            description: "Model Decisions Across Backgrounds, Borders, Text, and More"
+                                        },
+                                        {
+                                            title: "Tokens in Design Systems",
+                                            href: "#",
+                                            description: "10 Tips to Architect & Implement Design Decisions for Everyone"
+                                        },
+                                        {
+                                            title: "Right-Sizing the Rectangles",
+                                            href: "#",
+                                            description: "Grappling with Hierarchy for a More Effective Design System"
+                                        },
+                                        {
+                                            title: "Component QA in Design Systems",
+                                            href: "#",
+                                            description: "Establish a process to deliver on the quality you promise"
+                                        }
+                                    ]
+                                )
+                            ]
+                        },
+                        {
+                            heading: "Documentation",
+                            topics: [
+                                escom.link_list(
+                                    items = [
+                                        {
+                                            title: "Design System Doc Components",
+                                            href: "#",
+                                            description: "The Top 8 Reusable Components to Document a Library"
+                                        }
+                                    ]
+                                )
+                            ]
+                        },
+                        {
+                            heading: "Practicing",
+                            topics: [
+                                escom.link_list(
+                                    items = [
+                                        {
+                                            title: "Contributions to Design Systems",
+                                            href: "#",
+                                            description: "Opening a Library to a Community’s Code, Design, and More"
+                                        }
+                                    ]
+                                )
+                            ]
+                        },
+                        {
+                            heading: "People",
+                            topics: [
+                                escom.link_list(
+                                    items = [
+                                        {
+                                            title: "Designing a Systems Team",
+                                            href: "#",
+                                            description: "Models and Lessons Learned to Scale a Team for an Enterprise"
+                                        },
+                                        {
+                                            title: "Design System Leader(s) & Manager(s)",
+                                            href: "#",
+                                            description: "A Job Description for Those That Drive a System"
+                                        },
+                                        {
+                                            title: "Team Models for Scaling a Design System",
+                                            href: "#",
+                                            description: "Evolving Past Overlords to Centralize or Federate Design Decision-Making Across Platforms"
+                                        }
+                                    ]
+                                )
+                            ]
+                        }
+                    ]
+                ) }}
+            {% endcall %}
+        </div>
+    </div>
+
+    {% call esds.row(background_image="/images/systems/workshop-participants.png", class="esds-row--tall-inset esds-row--narrow-inner") %}
+        <h2 class="esds-row__level-2-heading">Who Should You Invite?</h2>
+        <p class="esds-row__p-lead">The systems workshop provides content relevant to many disciplines and is suitable for as many as 80 participants.</p>
+
+        {{ esds.tiles(
+            class = "esds-tiles--2-column",
+            container = "white-opacity-85",
+            items = [
+                {
+                    heading: "Required Participants",
+                    description: "As a system bridges design and engineering, you should at least invite:",
+                    list: [
+                        "Assigned staff already making system(s)",
+                        "UX and visual designers",
+                        "Front-end engineers",
+                        "Design and engineering leaders"
+                    ]
+                },
+                {
+                    heading: "Recommended Participants",
+                    description: "Systems impact an entire organization, so the workshop is even better with:",
+                    list: [
+                        "Content strategists",
+                        "Researchers",
+                        "Product managers",
+                        "Executive sponsors"
+                    ]
+                }
+            ]
+        ) }}
+    {% endcall %}
+
+    {% call esds.row(background="light", class="esds-row--tall-inset esds-row--narrow-inner") %}
+        <h2 class="esds-row__level-2-heading">How We Prepare</h2>
+        <p class="esds-row__p-lead">
+            Once we sign an agreement, we’ll meet three times over one to two weeks. 
+        </p>
+        <p class="esds-row__p-lead">
+            Over two of those sessions, we’ll set objectives, agenda and logistics. The third sessions provides for a quick, hour-long tour for your team to immerse us in your relevant products and systems already in use.
+        </p>
+    {% endcall %}
+
+    {% call esds.row(background="light", class="esds-row--no-inset") %}
+        <hr class="esds-row__horizontal-rule" />
+    {% endcall %}
+
+    {% call esds.row(background="light", class="esds-row--tall-inset esds-row--no-inset-bottom esds-row--narrow-inner") %}
+        <h3 class="esds-row__lead-heading">Workshop Customization</h3>
+        <p class="esds-row__p-m">
+            While we’ll start from preexisting material used for at public conferences, we can also customize materials to focus conversation with optional additional activities billed hourly. These activities can include:
+        </p>
+    {% endcall %}
+
+    {% call esds.row(background="light", class="esds-row--tall-inset") %}
+        {{ esds.tiles(
+            container = "white",
+            class= "esds-tiles--secondary",
+            items = [
+                {
+                    heading: "Interviews",
+                    description: "Interview system stakeholders to understand priorities, culture, and existing practices."
+                },
+                {
+                    heading: "System Reviews",
+                    description: "Dig into your as-is systems documentation, design assets, and code."
+                },
+                {
+                    heading: "Customize Materials",
+                    description: "Develop client-specific slides & stories, integrating relevant quotes, product and system examples."
+                }
+            ]
+        ) }}
+    {% endcall %}
+
+    {% call esds.row(background="dark", class="esds-row--tall-inset esds-row--narrow-inner") %}
+        <h2 class="esds-row__level-2-heading">Our Workshop Clients</h2>
+        <p class="esds-row__p-lead">
+            EightShapes has conducted workshops at public events and for in-house teams across industries since 2007.
+        </p>
+        {{ escom.table(headers=[
+            {
+                key: 'year',
+                label: 'Year',
+                column_class: 'escom-table__responsive-row-header'
+            },
+            {
+                key: 'in_house_events',
+                label: 'In-House Events'
+            },
+            {
+                key: 'public_events',
+                label: 'Public Events'
+            }],
+            rows=workshops,
+            suppress_responsive_headers=['year']
+        ) }}
+    {% endcall %}
+
+    {% call esds.row(background="brand", class="esds-row--tall-inset esds-row--narrow-inner") %}
+        <h2 class="esds-row__level-2-heading">Ready?</h2>
+        <div class="esds-row__text-center">
+            <p class="esds-row__p-lead">We’re ready to energize your systems effort, whether you’re just getting started or working with version 2.0. Are you ready?</p> 
+            {{ esds.button(text="Let's Talk", class="esds-button--reverse") }}
+        </div>
+    {% endcall %}
+
+    {% call esds.row(background="dark", class="esds-row--narrow-inner") %}
+
+    {% endcall %}
+
+{% endblock body %}

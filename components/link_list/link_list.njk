@@ -1,0 +1,38 @@
+{% macro link_list(
+    class=false,
+    items=[
+        {
+            title: "[link 1 title]",
+            href: "[link 1 href]",
+            description: "[link 1 description]"
+        }
+    ]
+) %}
+
+<ul class="escom-link-list{% if class %} {{ class }}{% endif %}">
+    {% for item in items %}
+    <li class="escom-link-list__item">
+        <dl class="escom-link-list__group">
+            <dt class="escom-link-list__title">
+                {% if item.href %}
+                    <a class="escom-link-list__link" href="{{ item.href }}">
+                {% endif %}
+                {{ item.title }}
+                {% if item.href %}
+                    </a>
+                {% endif %}
+                {% if item.badge %}
+                    {{ badge(class="escom-badge--brand", label=item.badge) }}
+                {% endif %}
+            </dt>
+            {% if item.description %}
+            <dt class="escom-link-list__description">
+                {{ item.description }}
+            </dt>
+        </dl>
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>
+
+{% endmacro %}
