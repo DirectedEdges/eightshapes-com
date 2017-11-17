@@ -557,7 +557,7 @@
   color: #0A9DB3;
   text-decoration: none; }
 
-.escom-badge {
+.escom-pill {
   background-color: #F3F1F1;
   color: #262626;
   font-size: 18px;
@@ -566,7 +566,7 @@
   text-transform: uppercase;
   vertical-align: middle; }
 
-.escom-badge--brand {
+.escom-pill--brand {
   background-color: #E76822;
   color: #FFFFFF; }
 
