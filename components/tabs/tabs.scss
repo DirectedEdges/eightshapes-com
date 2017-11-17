@@ -7,7 +7,7 @@
 .escom-tabs__cell {
     padding: 0 $esds-space-generic-half-x;
 
-    @media screen and (min-width: $escom-breakpoints-mobile-portrait) {
+    @media screen and (min-width: $escom-breakpoints-width-500) {
         padding: 0 $esds-space-generic-1-and-half-x;
     }
 }
@@ -29,7 +29,7 @@
     text-align: center;
     text-transform: uppercase;
 
-    @media screen and (min-width: $escom-breakpoints-mobile-portrait) {
+    @media screen and (min-width: $escom-breakpoints-width-500) {
         font-size: $esds-font-size-m;
     }
 

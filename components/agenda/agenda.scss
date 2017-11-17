@@ -3,7 +3,7 @@
     margin: $esds-space-stack-2-x;
     padding-left: $esds-space-generic-half-x;
 
-    @media screen and (min-width: $escom-breakpoints-tablet-portrait) {
+    @media screen and (min-width: $escom-breakpoints-width-768) {
         padding-left: $esds-space-generic-2-x;
     }
 
@@ -18,7 +18,7 @@
     padding-left: $esds-space-generic-2-x;
     position: relative;
 
-    @media screen and (min-width: $escom-breakpoints-tablet-portrait) {
+    @media screen and (min-width: $escom-breakpoints-width-768) {
         padding-bottom: $esds-space-generic-4-x;
     }
 
@@ -56,7 +56,7 @@
     display: none;
     padding-bottom: $esds-space-generic-2-x;
 
-    @media screen and (min-width: $escom-breakpoints-tablet-portrait) {
+    @media screen and (min-width: $escom-breakpoints-width-768) {
         display: block;
     }
 
@@ -86,7 +86,7 @@
 .escom-agenda__row-cards {
     margin: $esds-space-stack-2-x;
 
-    @media screen and (min-width: $escom-breakpoints-tablet-portrait) {
+    @media screen and (min-width: $escom-breakpoints-width-768) {
         display: grid;
         grid-gap: $esds-space-generic-2-x;
         grid-template-areas:
@@ -94,7 +94,7 @@
         'escom-agenda__cell-cards--card-1 escom-agenda__cell-cards--card-2';
     }
 
-    @media screen and (min-width: $escom-breakpoints-desktop-portrait) {
+    @media screen and (min-width: $escom-breakpoints-width-1200) {
         grid-template-areas:
         'escom-agenda__cell-cards--bullets escom-agenda__cell-cards--card-1 escom-agenda__cell-cards--card-2';
     }
@@ -117,7 +117,7 @@
 }
 
 .escom-agenda__row-text {
-    @media screen and (min-width: $escom-breakpoints-tablet-portrait) {
+    @media screen and (min-width: $escom-breakpoints-width-768) {
         display: grid;
         grid-gap: $esds-space-generic-2-x;
         grid-template-columns: 20% 80%;
@@ -130,7 +130,7 @@
     padding-left: $esds-space-generic-1-and-half-x;
 
     &:last-child {
-        @media screen and (min-width: $escom-breakpoints-tablet-portrait) {
+        @media screen and (min-width: $escom-breakpoints-width-768) {
             margin: 0;
         }
     }

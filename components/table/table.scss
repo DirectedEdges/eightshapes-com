@@ -5,7 +5,7 @@
     display: block;
     width: 100%;
 
-    @media screen and (min-width: $escom-breakpoints-mobile-portrait) {
+    @media screen and (min-width: $escom-breakpoints-width-500) {
         display: table;
         font-size: $esds-font-size-m;
     }
@@ -14,7 +14,7 @@
 .escom-table__head {
     display: none;
 
-    @media screen and (min-width: $escom-breakpoints-mobile-portrait) {
+    @media screen and (min-width: $escom-breakpoints-width-500) {
         display: table-header-group;
     }
 }
@@ -22,7 +22,7 @@
 .escom-table__body  {
     display: block;
 
-    @media screen and (min-width: $escom-breakpoints-mobile-portrait) {
+    @media screen and (min-width: $escom-breakpoints-width-500) {
         display: table-row-group;
     }
 }
@@ -31,7 +31,7 @@
     display: block;
     margin: $esds-space-stack-2-x;
 
-    @media screen and (min-width: $escom-breakpoints-mobile-portrait) {
+    @media screen and (min-width: $escom-breakpoints-width-500) {
         display: table-row;
     }
 }
@@ -41,7 +41,7 @@
     display: block;
     text-align: left;
 
-    @media screen and (min-width: $escom-breakpoints-mobile-portrait) {
+    @media screen and (min-width: $escom-breakpoints-width-500) {
         display: table-cell;
         font-size: $esds-font-size-heading-eyebrow;
         padding: $esds-space-inset-stretch-2-x;
@@ -54,7 +54,7 @@
     margin: $esds-space-stack-1-x;
     vertical-align: top;
 
-    @media screen and (min-width: $escom-breakpoints-mobile-portrait) {
+    @media screen and (min-width: $escom-breakpoints-width-500) {
         display: table-cell;
         padding: $esds-space-inset-stretch-2-x;
         padding-left: 0;
@@ -65,7 +65,7 @@
         content: attr(data-escom-header);
         display: block;
 
-        @media screen and (min-width: $escom-breakpoints-mobile-portrait) {
+        @media screen and (min-width: $escom-breakpoints-width-500) {
             display: none;
         }
     }
@@ -75,7 +75,7 @@
     @include esds-level-3-heading;
     margin: $esds-space-stack-half-x;
 
-    @media screen and (min-width: $escom-breakpoints-mobile-portrait) {
+    @media screen and (min-width: $escom-breakpoints-width-500) {
         font-size: $esds-font-size-m;
     }
 }
