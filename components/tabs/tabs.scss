@@ -17,11 +17,12 @@
     background: none;
     border: 0;
     border-bottom: 5px solid transparent;
+    border-radius: 0;
     color: $esds-color-teal-71;
     cursor: pointer;
     display: block;
     font: inherit;
-    font-size: $esds-font-size-s;
+    font-size: $esds-font-size-body-s-default;
     margin: 0;
     outline: 0;
     overflow: visible;
@@ -30,7 +31,7 @@
     text-transform: uppercase;
 
     @media screen and (min-width: $escom-breakpoints-width-500) {
-        font-size: $esds-font-size-m;
+        font-size: $esds-font-size-body-m-default;
     }
 
     &:hover {

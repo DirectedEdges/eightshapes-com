@@ -7,7 +7,7 @@
 
     @media screen and (min-width: $escom-breakpoints-width-500) {
         display: table;
-        font-size: $esds-font-size-m;
+        font-size: $esds-font-size-body-m-default;
     }
 }
 
@@ -43,8 +43,8 @@
 
     @media screen and (min-width: $escom-breakpoints-width-500) {
         display: table-cell;
-        font-size: $esds-font-size-heading-eyebrow;
-        padding: $esds-space-inset-stretch-2-x;
+        font-size: $esds-font-size-heading-eyebrow-default;
+        padding: $esds-space-inset-squish-2-x;
         padding-left: 0;
     }
 }
@@ -56,7 +56,7 @@
 
     @media screen and (min-width: $escom-breakpoints-width-500) {
         display: table-cell;
-        padding: $esds-space-inset-stretch-2-x;
+        padding: $esds-space-inset-squish-2-x;
         padding-left: 0;
     }
 
@@ -76,6 +76,6 @@
     margin: $esds-space-stack-half-x;
 
     @media screen and (min-width: $escom-breakpoints-width-500) {
-        font-size: $esds-font-size-m;
+        font-size: $esds-font-size-body-m-default;
     }
 }

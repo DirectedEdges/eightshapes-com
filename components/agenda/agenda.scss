@@ -68,7 +68,7 @@
 .escom-agenda__time {
     @include esds-font-reset();
     color: $esds-text-color-secondary-on-white;
-    font-size: $esds-font-size-heading-eyebrow;
+    font-size: $esds-font-size-heading-eyebrow-default;
     margin: 0;
 
     &:last-child {
@@ -79,7 +79,7 @@
 .escom-agenda__heading {
     @include esds-font-reset();
     color: $esds-text-color-brand;
-    font-size: $esds-font-size-lead;
+    font-size: $esds-font-size-heading-level-3-default;
     margin: $esds-space-stack-2-x;
 }
 
@@ -149,7 +149,7 @@
 .escom-agenda__item-heading {
     @include esds-font-reset();
     color: $esds-text-color-secondary-on-white;
-    font-size: $esds-font-size-heading-eyebrow;
+    font-size: $esds-font-size-heading-eyebrow-default;
     margin: $esds-space-stack-quarter-x;
     text-transform: uppercase;
 }

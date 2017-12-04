@@ -1,6 +1,6 @@
 {% extends 'templates/base.njk' %}
 {% block body %}
-    {{ esds.headcrumb(href="/design-systems.html", text="Design Systems") }}
+    {{ esds.breadcrumb(href="/design-systems.html", text="Design Systems") }}
     {% call esds.row(background_image="/images/systems/workshops-hero.png", class="esds-row--hero-inset") %}
         <h1 class="esds-row__level-1-heading">Workshops</h1>
         <p class="esds-row__p-lead">
@@ -560,7 +560,7 @@
         <h2 class="esds-row__level-2-heading">Ready?</h2>
         <div class="esds-row__text-center">
             <p class="esds-row__p-lead">We’re ready to energize your systems effort, whether you’re just getting started or working with version 2.0. Are you ready?</p> 
-            {{ esds.button(text="Let's Talk", class="esds-button--reverse") }}
+            {{ esds.button(text="LET'S TALK", class="esds-button--large esds-button--secondary") }}
         </div>
     {% endcall %}
 
