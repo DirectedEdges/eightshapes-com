@@ -21,6 +21,6 @@
     "esds-build": "^0.25.0"
   },
   "dependencies": {
-    "esds-library": "git+ssh://git@github.com/EightShapes/esds-library.git#548b231"
+    "esds-library": "^0.4.0"
   }
 }
