@@ -1,7 +1,7 @@
-{% extends 'templates/default.njk' %}
+{% extends 'templates/legacy/default.njk' %}
 {% block content %}
-  {{ components.header_workshop() }}
-  {{ components.workshop_hero({ 'title': 'System Roadmapping', 'background': 'hero__workshop-roadmapping', 'duration':'Up to 1/2 day', 'participants': 'Up to 10' }) }}
+  {{ legacy_components.header_workshop() }}
+  {{ legacy_components.workshop_hero({ 'title': 'System Roadmapping', 'background': 'hero__workshop-roadmapping', 'duration':'Up to 1/2 day', 'participants': 'Up to 10' }) }}
   <div class="container-fluid">
     <div class="container-fluid-inner content__long-form">
       <p class="lead">We’ll get your system team's head out of the weeds to plan across releases, discuss challenges and opportunities, and align on what it takes to sustain the system.</p>
@@ -27,7 +27,7 @@
     </div>
   </div>
   <!-- Page CTA -->
-  {{ components.page_cta({header:'Ready?', lead: 'About to embark on a design system, or need to dive deeper to discuss products and players?'}) }}
+  {{ legacy_components.page_cta({header:'Ready?', lead: 'About to embark on a design system, or need to dive deeper to discuss products and players?'}) }}
 
-  {{ components.footer() }}
+  {{ legacy_components.footer() }}
 {% endblock %}

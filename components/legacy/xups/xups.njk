@@ -1,0 +1,39 @@
+{% macro xups(args) %}
+
+	{# Default: First 2 then 4 Across #}
+  {% if args.ups_across == undefined %}
+    {% set args = args|updateobj('ups_across', '4') %}
+  {% endif %}
+  {% if args.up_responsiveness == undefined %}
+    {% set args = args|updateobj('up_responsiveness', 'col-md-6 col-lg-3') %}
+  {% endif %}
+  {% if args.background == undefined %}
+    {% set args = args|updateobj('background', 'background-gray') %}
+  {% endif %}
+  {% if args.context == undefined %}
+    {% set args = args|updateobj('context', '') %}
+  {% endif %}
+  {% if args.type == undefined %}
+    {% set args = args|updateobj('type', 'biophotos') %}
+  {% endif %}
+
+  <div {% if args.id %} id="who-we-are" {% endif %} class="container-fluid xups {{ args.background }}">
+    <div class="container-fluid-inner {{ args.context }}">
+      <h2>{{ args.h2 }}</h2>
+      <p class="lead">{{ args.lead }}</p>
+      <div class="ups {{ args.type }}">
+				{% for up in args.ups %}
+        <div class="up">
+	        <a href="{{ up.thumbnail }}.html">
+            <div class="up__image-wrap">
+  	        	<img src="images/bios/bio-thumb-{{ up.thumbnail }}.jpg" alt="{{ up.header }}">
+            </div>
+	          <h3>{{ up.header }}</h3>
+	          <p>{{ up.paragraph }}</p>
+	        </a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endmacro %}

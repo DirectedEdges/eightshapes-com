@@ -1,0 +1,91 @@
+.content-tabs {
+  @include clearfix;
+  position: relative;
+  z-index: 1;
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+}
+
+.content-tabs__tab {
+  display: inline;
+}
+
+.content-tabs__tab-label {
+  border-bottom: 5px solid rgba(255,255,255,0);
+  color: $color-blue;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  margin-bottom: 32px;
+  padding-bottom: 10px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: bottom;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
+.content-tabs__tab-input {
+  clip: rect(0 0 0 0);
+  opacity: 0;
+  position: fixed;
+  z-index: -1;
+
+  &:checked {
+    @media screen and (min-width: 768px) {
+      + label {
+        border-bottom: 5px solid black;
+        color: black;
+      }
+      ~ .content-tabs__panel {
+        display: inline;
+      }
+    }
+  }
+}
+
+.content-tabs__panel {
+  display: block;
+  margin-bottom: 64px;
+
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    width: 0;
+  }
+}
+
+.content-tabs__tab-content {
+  @media screen and (min-width: 768px) {
+    float: left;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+// new simple thumbnail style / intentionally left out of the content-tabs namespace / move or change namespace as needed
+
+.illustration-thumb {
+  float: left;
+  margin-right: 20px;
+  padding: 10px;
+  width: 150px;
+  border: 1px solid $color-link;
+  transition: box-shadow .25s;
+  box-shadow: 0 0 0 $color-white;
+}
+.illustration-thumb:hover {
+  box-shadow: $drop-shadow-default;
+}
+.content__long-form .illustration-thumb__wrapper {
+  clear: left; 
+  padding-top: 36px
+}

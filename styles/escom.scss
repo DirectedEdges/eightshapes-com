@@ -1,0 +1,17 @@
+// New ESDS-based system
+@import 'esds-library/tokens/tokens'; 
+@import 'esds-library/styles/shared/util'; 
+@import 'esds-library/styles/shared/color'; 
+@import 'esds-library/styles/shared/typography'; 
+@import 'tokens/tokens';
+@import 'components/table/table';
+@import 'components/agenda/agenda';
+@import 'components/tabs/tabs';
+@import 'components/link_list/link_list';
+@import 'components/pill/pill';
+
+body {
+    @include esds-box-sizing;
+    margin: 0;
+    padding: 0;
+}

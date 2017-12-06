@@ -1,7 +1,7 @@
-{% extends 'templates/default.njk' %}
+{% extends 'templates/legacy/default.njk' %}
 {% block content %}
-  {{ components.header_workshop({ 'back_href': '/product-discovery.html', 'section': 'Product Discovery' }) }}
-  {{ components.workshop_hero({ 'title': 'User Analysis', 'background': '', 'duration':'1/2 day - 1 day', 'participants': 'Up to 8' }) }}
+  {{ legacy_components.header_workshop({ 'back_href': '/product-discovery.html', 'section': 'Product Discovery' }) }}
+  {{ legacy_components.workshop_hero({ 'title': 'User Analysis', 'background': '', 'duration':'1/2 day - 1 day', 'participants': 'Up to 8' }) }}
   <div class="container-fluid">
     <div class="container-fluid-inner content__long-form">
       <p class="lead">Sitting on a pile of user research? Get your team together for collaborative user analysis, building insights and personas together as a team.</p>
@@ -27,7 +27,7 @@
     </div>
   </div>
   <!-- Page CTA -->
-  {{ components.page_cta({header:'Ready?', lead: 'Not sure what to do with user research findings? We can help you turn data into action.'}) }}
+  {{ legacy_components.page_cta({header:'Ready?', lead: 'Not sure what to do with user research findings? We can help you turn data into action.'}) }}
 
-  {{ components.footer() }}
+  {{ legacy_components.footer() }}
 {% endblock %}

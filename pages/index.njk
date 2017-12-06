@@ -1,21 +1,21 @@
-{% extends 'templates/default.njk' %}
+{% extends 'templates/legacy/default.njk' %}
 
 {% block content %}
-  {{ components.header() }}
+  {{ legacy_components.header() }}
 
   <!-- Our Work -->
-  {{ components.casestudies() }}
+  {{ legacy_components.casestudies() }}
 
   <!-- What We Do -->
 
   <div id="services" class="container-fluid color-charcoal">
     <div class="container-fluid-inner">
-        {{ components.whatwedo() }}
+        {{ legacy_components.whatwedo() }}
     </div>
   </div>
   
   <!-- People -->
-  {{ components.xups({
+  {{ legacy_components.xups({
     "id": "who-we-are",
     "background": "light-gray",
     "up_responsiveness": "",
@@ -57,13 +57,13 @@
       <h2 class="homepage__heading">How We've Contributed</h2>
       <p class="lead">EightShapes has contributed three books, a documentation templating, and a prototyping framework, not to mention countless workshops and articles.</p>
       <div class="row content-card-wrap">
-        {{ components.content_card_double({
+        {{ legacy_components.content_card_double({
           href: "https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.29y3lestl",
           pre_heading: "Medium",
           heading: "Buttons in Design Systems",
           background_image: "images/components/content_card/buttons.png"
         }) }}
-        {{ components.content_card({
+        {{ legacy_components.content_card({
           href: "http://alistapart.com/event/responsive-style-guides",
           class: "content-card--event",
           pre_heading: "A List Apart Online Panel",
@@ -71,7 +71,7 @@
           heading: "Pattern Language: Responsive Style Guides",
           cta: "Watch"
         }) }}
-        {{ components.content_card({
+        {{ legacy_components.content_card({
           href: "http://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351",
           class: "content-card--book",
           pre_heading: "Book by Nathan Curtis",
@@ -79,7 +79,7 @@
           copy: "Creating Reusable Components for User Experience Design and Documentation",
           background_image: "images/components/content_card/modular_web_design.jpg"
         }) }}
-        {{ components.content_card({
+        {{ legacy_components.content_card({
           href: "http://www.amazon.com/Communicating-Design-Developing-Documentation-Planning/dp/0321712463",
           class: "content-card--book",
           pre_heading: "Book by Dan Brown",
@@ -87,14 +87,14 @@
           copy: "Developing Website Documentation for Design and Planning",
           background_image: "images/components/content_card/communicating_design.jpg"
         }) }}
-        {{ components.content_card({
+        {{ legacy_components.content_card({
           href: "https://medium.com/eightshapes-llc/beyond-utility-re-discovering-product-discovery-5ae210a1399e#.iwpp5obw8",
           pre_heading: "Medium",
           heading: "Re-Discovering Product Discovery",
           copy: "The time is right for we designers to look at Discovery, that squishy, early part of the design process.",
           cta: "Read More"
         }) }}
-        {{ components.content_card({
+        {{ legacy_components.content_card({
           href: "http://www.amazon.com/Designing-Together-collaboration-management-professionals/dp/0321918630",
           class: "content-card--book",
           pre_heading: "Book by Dan Brown",
@@ -102,7 +102,7 @@
           copy: "The Collaboration and Conflict Management Handbook for Creative Professionals",
           background_image: "images/components/content_card/designing_together.jpg"
         }) }}
-        {{ components.content_card({
+        {{ legacy_components.content_card({
           href: "https://medium.com/eightshapes-llc/the-component-cut-up-workshop-1378ae110517#.5ibx9rqm8",
           pre_heading: "Medium",
           heading: "The Component Cut-Up Workshop",
@@ -114,8 +114,8 @@
   </div>
   
   <!-- Page CTA -->
-  {{ components.page_cta({header:'Ready?', lead: 'Working on a UX design? Crafting a product strategy? Starting a design system?'}) }}
+  {{ legacy_components.page_cta({header:'Ready?', lead: 'Working on a UX design? Crafting a product strategy? Starting a design system?'}) }}
 
   <!-- Footer -->
-  {{ components.footer() }}
+  {{ legacy_components.footer() }}
 {% endblock %}
