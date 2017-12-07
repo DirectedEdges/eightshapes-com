@@ -81,6 +81,10 @@
     color: $esds-text-color-brand;
     font-size: $esds-font-size-heading-level-3-default;
     margin: $esds-space-stack-2-x;
+
+    &:first-child {
+      margin-top: -6px;
+    }
 }
 
 .escom-agenda__row-cards {

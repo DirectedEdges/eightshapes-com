@@ -1,289 +1,335 @@
-{% extends 'templates/legacy/bio.njk' %}
+{% extends 'templates/base.njk' %}
+{% block body %}
+    {{ esds.breadcrumb(href="/nathan-curtis.html") }}
+    
 
-{% block bio_content %}
-  {{ legacy_components.bio_hero({ index: 0}) }}
-  <div class="container-fluid">
-    <div class="container-fluid-inner  content__long-form">
-      <p class="lead bio__lead">
-        Nathan co-founded EightShapes in 2006 and is passionate about interaction design, information architecture, and front-end development. He specializes in <a href="design-systems.html">design systems</a> consulting for teams large and small, regularly writing about and speaking at events worldwide. Nathan conceived of EightShapes Unify (for UX documentation) and EightShapes Blocks (for HTML/CSS prototyping), toolkits downloaded by over 50,000 designers worldwide.
-      </p>
-        <form action="#">
-          <div class="content-tabs">
-            <div class="content-tabs__tab">
-              <input class="content-tabs__tab-input" type="radio" id="appearances" name="tabcontent" checked="checked">
-              <label class="content-tabs__tab-label" for="appearances">Appearances</label>
-              <div class="content-tabs__panel">
-                <div class="content__long-form content-tabs__tab-content">
-                  <h3>2018</h3>
-                  <ul>
-                    <li>
-                      <p class="pre-heading">February 14, 2018 • Public Workshop</p>
-                      <a href="https://www.webstock.org.nz/18/speakers/nathan-curtis/">
-                        <h4 class="heading">Webstock 2018, Wellington, New Zealand</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">January 19, 2018 • Public Workshop</p>
-                      <a href="https://ti.to/eightshapes/chicago-jan-2018-design-systems-workshop">
-                        <h4 class="heading">Chicago Design Systems Meetup</h4>
-                      </a>
-                    </li>
-                  </ul>
-                  <h3>2017</h3>
-                  <ul>
-                    <li>
-                      <p class="pre-heading">November, 2017 • Public Workshop</p>
-                      <a href="https://www.clarityconf.com/scalable-design-systems/">
-                        <h4 class="heading">Clarity Conference, San Francisco, CA</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">November, 2017 • Public Workshop</p>
-                      <a href="https://ui22.uie.com/">
-                        <h4 class="heading">UI22, Boston, MA</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">August 24-25, 2017 • Talk</p>
-                      <a href="https://www.eventbrite.com/e/beyond-the-toolkit-with-nathan-curtis-tickets-36606807948#">
-                        <h4 class="heading">Carmax Speaker Series, Richmond, VA</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">June 13-14, 2017 • Talk</p>
-                      <a href="https://smashingconf.com/ny-2017/speakers/nathan-curtis">
-                        <h4 class="heading">SmashingConf, New York, NY</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">June 6, 2017 • Public Workshop</p>
-                      <a href="http://2017.enterpriseux.net/">
-                        <h4 class="heading">EnterpriseUX, San Francisco, CA</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">April 3-4, 2017 • Talk</p>
-                      <a href="https://smashingconf.com/workshops/nathan-curtis">
-                        <h4 class="heading">SmashingConf, San Francisco, CA</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">February 23, 2017 • Talk</p>
-                      <a href="https://nvite.com/refreshdc/wvyp9e">
-                        <h4 class="heading">RefreshDC, Washington, DC</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">January 26-27, 2017 • Public Workshop</p>
-                      <a href="https://ti.to/eightshapes/charlotte-nc-jan-2017-design-systems-workshop">
-                        <h4 class="heading">Charlotte UX, Charlotte, NC</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">January 18, 2017 • Talk</p>
-                      <a href="https://www.meetup.com/nova-ux/events/235272224/">
-                        <h4 class="heading">NOVAUX, Mclean, VA</h4>
-                      </a>
-                    </li>
-                  </ul>
-                  <h3>2016</h3>
-                  <ul>
-                    <li>
-                      <p class="pre-heading">November 16, 2016 • Talk</p>
-                      <a href="https://2016.godigital.is/">
-                        <h4 class="heading">Go Digital 2016, Iceland</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">November 1-2, 2016 • Public Workshop</p>
-                      <a href="https://ui21.uie.com/">
-                        <h4 class="heading">UI21, Boston, MA</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">September 14-15, 2016 • Public Workshop</p>
-                      <a href="http://ixda.no/">
-                        <h4 class="heading">IXDA Oslo, Norway</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">September 12-13, 2016 • Public Workshop</p>
-                      <a href="http://smashingconf.com/freiburg-2016/">
-                        <h4 class="heading">SmashingConf, Freiburg, Germany</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">June 8-10, 2016 • Public Workshop</p>
-                      <a href="http://www.enterpriseux.net/">
-                        <h4 class="heading">Enterprise UX, San Antonio, TX</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">May 24-27, 2016 • Public Workshops</p>
-                      <a href="https://www.ux-lx.com/speakers/nathan_curtis.html">
-                        <h4 class="heading">UXLX, Lisbon, Portugal</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">March 2016 • Talk</p>
-                      <a href="http://clarityconf.com/">
-                        <h4 class="heading">Clarity, a Style Guides Conference, San Francisco, CA</h4>
-                      </a>
-                    </li>
-                  </ul>
-                  <h3>2015</h3>
-                  <ul>
-                    <li>
-                      <p class="pre-heading">Dec 2015 • Talk</p>
-                      <a href="http://www.meetup.com/nova-ux/events/225377048/">
-                        <h4 class="heading">NOVAUX, McLean, VA</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">Nov 2015 • Public Workshop</p>
-                      <a href="https://ui20.uie.com/workshops/building-scalable-design-systems-and-style-guides">
-                        <h4 class="heading">UI20, Boston, MA</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">Oct 2015 • Talk</p>
-                      <a href="http://uxdcconference.org/">
-                        <h4 class="heading">UXDC 15, Washington, DC</h4>
-                      </a>
-                    </li>
-                  </ul>
+    {% call esds.row(background="white", class="esds-row--tall-inset esds-row--narrow-inner") %}
+        <div class="escom-long-form-text">
+            <p class="escom-long-form-text__p--l">
+                Nathan co-founded EightShapes in 2006 and is passionate about interaction design, information architecture, and front-end development. He specializes in design systems consulting for teams large and small, regularly writing about and speaking at events worldwide. Nathan conceived of EightShapes Unify (for UX documentation) and EightShapes Blocks (for HTML/CSS prototyping), toolkits downloaded by over 50,000 designers worldwide.
+            </p>
+        </div>
+    {% endcall %}
+
+    <div class="escom-tabs">
+        {% call esds.row(background="white", class="esds-row--narrow-inner esds-row--no-inset") %}
+            <div class="escom-tabs__tabs">
+                <div class="escom-tabs__cell">
+                    <button class="escom-tabs__button escom-tabs__button--is-active" data-target="tab-appearances">
+                        Appearances
+                    </button>
                 </div>
-              </div>
-            </div>          
-            <div class="content-tabs__tab">
-              <input class="content-tabs__tab-input" type="radio" id="webinars" name="tabcontent">
-              <label class="content-tabs__tab-label" for="webinars">Webinars</label>
-              <div class="content-tabs__panel">
-                <div class="content__long-form content-tabs__tab-content">
-                  <ul>
-                    <li>
-                      <p class="pre-heading">Dec 2015 / UIE</p>
-                      <a href="https://aycl.uie.com/virtual_seminars/deeper_dive_design_systems">
-                        <h4 class="heading">Design Systems: From Project Done to Product Sustained</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">Jun 2015 / A List Apart</p>
-                      <a href="http://alistapart.com/event/responsive-style-guides">
-                        <h4 class="heading">Pattern Language: Responsive Style Guides</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">Jan 2015 / UIE</p>
-                      <a href="https://aycl.uie.com/virtual_seminars/design_systems">
-                        <h4 class="heading">Cohesive Design Systems for Enterprise</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">2013 / UIE</p>
-                      <a href="https://aycl.uie.com/virtual_seminars/vs96_sketching_understanding">
-                        <h4 class="heading">Sketching for Understanding</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">2012 / UIE</p>
-                      <a href="https://aycl.uie.com/virtual_seminars/fearless_prototyping_for_skeptics">
-                        <h4 class="heading">Fearless Prototyping for Skeptics</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">2012 / UIE</p>
-                      <a href="https://aycl.uie.com/virtual_seminars/start_full_screen">
-                        <h4 class="heading">Start Full Screen: Organize, Communicate, &amp; Annotate HTML Prototypes</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">2011 / UIE</p>
-                      <a href="https://aycl.uie.com/virtual_seminars/from_pdfs_to_html_prototypes">
-                        <h4 class="heading">From PDFs to HTML Prototypes</h4>
-                      </a>
-                    </li>
-                  </ul>
+
+                <div class="escom-tabs__cell">
+                    <button class="escom-tabs__button" data-target="tab-webinars">
+                        Webinars
+                    </button>
                 </div>
-              </div>
+
+                <div class="escom-tabs__cell">
+                    <button class="escom-tabs__button" data-target="tab-podcasts">
+                        Podcasts
+                    </button>
+                </div>
+
+                <div class="escom-tabs__cell">
+                    <button class="escom-tabs__button" data-target="tab-posters">
+                        Posters
+                    </button>
+                </div>
             </div>
-            <div class="content-tabs__tab">
-              <input class="content-tabs__tab-input" type="radio" id="podcasts" name="tabcontent">
-              <label class="content-tabs__tab-label" for="podcasts">Podcasts</label>
-              <div class="content-tabs__panel">
-                <div class="content__long-form content-tabs__tab-content">
-                  <ul>
-                    <li>
-                      <p class="pre-heading">August 2017 / Non Breaking Space Show</p>
-                      <a href="https://goodstuff.fm/nbsp/130">
-                        <h4 class="heading">Deep Foundations of Design Systems</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">May 2015 / Style Guides with Brad Frost &amp; Anna Debenham</p>
-                      <a href="http://styleguides.io/podcast/nathan-curtis/">
-                        <h4 class="heading">On Style Guides</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">Sept 2015 / UIE</p>
-                      <a href="https://www.uie.com/brainsparks/2015/09/09/nathan-curtis-building-scalable-design-systems-and-style-guides/">
-                        <h4 class="heading">Building Scalable Design Systems and Style Guides</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">Apr 2013 / UIE</p>
-                      <a href="https://www.uie.com/brainsparks/2013/04/09/nathan-curtis-sketching-for-understanding/">
-                        <h4 class="heading">Sketching for Understanding</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">Aug 2012 / UIE</p>
-                      <a href="https://www.uie.com/brainsparks/2012/08/30/nathan-curtis-prototyping-with-html-and-css/">
-                        <h4 class="heading">Prototyping with HTML and CSS</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">Sept 2010 / UIE</p>
-                      <a href="https://www.uie.com/brainsparks/2010/09/16/spoolcast-reusable-components-libraries-with-nathan-curtis/">
-                        <h4 class="heading">Reusable Components and Libraries</h4>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="content-tabs__tab">
-              <input class="content-tabs__tab-input" type="radio" id="posters" name="tabcontent">
-              <label class="content-tabs__tab-label" for="posters">Posters</label>
-              <div class="content-tabs__panel">
-                <div class="content__long-form content-tabs__tab-content">
-                  <ul>
-                    <li>
-                      <p class="pre-heading">2010</p>
-                      <a href="http://eightshapesunify.s3.amazonaws.com/CreatingAUXDesignLibrary.Final.pdf">
-                        <h4 class="heading">Creating a UX Design Library</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">2009 / IA Summit</p>
-                      <a href="http://unify.eightshapes.com/concepts/reduce-reuse-recycle/">
-                        <h4 class="heading">Reduce,  Reuse, and Recycle</h4>
-                      </a>
-                    </li>
-                    <li>
-                      <p class="pre-heading">2008 / IA Summit</p>
-                      <a href="http://www.nathancurtis.com/2008/04/02/instant-deliverable-mix-2008-ia-summit-poster/">
-                        <h4 class="heading">Instant Deliverable Mix</h4>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
+        {% endcall %}
+
+        <div id="tab-appearances" class="escom-tabs__content escom-tabs__content--is-active">
+            {% call esds.row(background="white", class="esds-row--narrow-inner") %}
+                {{ escom.agenda(
+                    items = [
+                        {
+                            heading: "2018",
+                            topics: [
+                                escom.link_list(
+                                    class = "escom-link-list--large",
+                                    items = [
+                                        {
+                                            eyebrow: "FEBRUARY 14, 2018 • PUBLIC WORKSHOP",
+                                            title: "Webstock 2018, Wellington, New Zealand",
+                                            href: "https://www.webstock.org.nz/18/speakers/nathan-curtis/"
+                                        },
+                                        {
+                                            eyebrow: "JANUARY 19, 2018 • PUBLIC WORKSHOP",
+                                            title: "Chicago Design Systems Meetup",
+                                            href: "https://ti.to/eightshapes/chicago-jan-2018-design-systems-workshop"
+                                        }
+                                    ]
+                                )
+                            ]
+                        },
+                        {
+                            heading: "2017",
+                            topics: [
+                                escom.link_list(
+                                    class = "escom-link-list--large",
+                                    items = [
+                                        {
+                                            eyebrow: "NOVEMBER, 2017 • PUBLIC WORKSHOP",
+                                            title: "Clarity Conference, San Francisco, CA",
+                                            href: "https://www.clarityconf.com/scalable-design-systems/"
+                                        },
+                                        {
+                                            eyebrow: "NOVEMBER, 2017 • PUBLIC WORKSHOP",
+                                            title: "UI22, Boston, MA",
+                                            href: "https://ui22.uie.com/"
+                                        },
+                                        {
+                                            eyebrow: "AUGUST 24-25, 2017 • TALK",
+                                            title: "Carmax Speaker Series, Richmond, VA",
+                                            href: "https://www.eventbrite.com/e/beyond-the-toolkit-with-nathan-curtis-tickets-36606807948#"
+                                        },
+                                        {
+                                            eyebrow: "JUNE 13-14, 2017 • TALK",
+                                            title: "SmashingConf, New York, NY",
+                                            href: "https://smashingconf.com/ny-2017/speakers/nathan-curtis"
+                                        },
+                                        {
+                                            eyebrow: "JUNE 6, 2017 • PUBLIC WORKSHOP",
+                                            title: "EnterpriseUX, San Francisco, CA",
+                                            href: "http://2017.enterpriseux.net/"
+                                        },
+                                        {
+                                            eyebrow: "APRIL 3-4, 2017 • TALK",
+                                            title: "SmashingConf, San Francisco, CA",
+                                            href: "https://smashingconf.com/workshops/nathan-curtis"
+                                        },
+                                        {
+                                            eyebrow: "FEBRUARY 23, 2017 • TALK",
+                                            title: "RefreshDC, Washington, DC",
+                                            href: "https://nvite.com/refreshdc/wvyp9e"
+                                        },
+                                        {
+                                            eyebrow: "JANUARY 26-27, 2017 • PUBLIC WORKSHOP",
+                                            title: "Charlotte UX, Charlotte, NC",
+                                            href: "https://ti.to/eightshapes/charlotte-nc-jan-2017-design-systems-workshop"
+                                        },
+                                        {
+                                            eyebrow: "JANUARY 18, 2017 • TALK",
+                                            title: "NOVAUX, Mclean, VA",
+                                            href: "https://www.meetup.com/nova-ux/events/235272224/"
+                                        }
+                                    ]
+                                )
+                            ]
+                        },
+                        {
+                            heading: "2016",
+                            topics: [
+                                escom.link_list(
+                                    class = "escom-link-list--large",
+                                    items = [
+                                        {
+                                            eyebrow: "NOVEMBER 16, 2016 • TALK",
+                                            title: "Go Digital 2016, Iceland",
+                                            href: "https://2016.godigital.is/"
+                                        },
+                                        {
+                                            eyebrow: "NOVEMBER 1-2, 2016 • PUBLIC WORKSHOP",
+                                            title: "UI21, Boston, MA",
+                                            href: "https://ui21.uie.com/"
+                                        },
+                                        {
+                                            eyebrow: "SEPTEMBER 14-15, 2016 • PUBLIC WORKSHOP",
+                                            title: "IXDA Oslo, Norway",
+                                            href: "http://ixda.no/"
+                                        },
+                                        {
+                                            eyebrow: "SEPTEMBER 12-13, 2016 • PUBLIC WORKSHOP",
+                                            title: "SmashingConf, Freiburg, Germany",
+                                            href: "http://smashingconf.com/freiburg-2016/"
+                                        },
+                                        {
+                                            eyebrow: "JUNE 8-10, 2016 • PUBLIC WORKSHOP",
+                                            title: "Enterprise UX, San Antonio, TX",
+                                            href: "http://www.enterpriseux.net/"
+                                        },
+                                        {
+                                            eyebrow: "MAY 24-27, 2016 • PUBLIC WORKSHOPS",
+                                            title: "UXLX, Lisbon, Portugal",
+                                            href: "https://www.ux-lx.com/speakers/nathan_curtis.html"
+                                        },
+                                        {
+                                            eyebrow: "MARCH 2016 • TALK",
+                                            title: "Clarity, a Style Guides Conference, San Francisco, CA",
+                                            href: "http://clarityconf.com/"
+                                        }
+                                    ]
+                                )
+                            ]
+                        },
+                        {
+                            heading: "2015",
+                            topics: [
+                                escom.link_list(
+                                    class = "escom-link-list--large",
+                                    items = [
+                                        {
+                                            eyebrow: "DEC 2015 • TALK",
+                                            title: "NOVAUX, McLean, VA",
+                                            href: "http://www.meetup.com/nova-ux/events/225377048/"
+                                        },
+                                        {
+                                            eyebrow: "NOV 2015 • PUBLIC WORKSHOP",
+                                            title: "UI20, Boston, MA",
+                                            href: "https://ui20.uie.com/workshops/building-scalable-design-systems-and-style-guides"
+                                        },
+                                        {
+                                            eyebrow: "OCT 2015 • TALK",
+                                            title: "UXDC 15, Washington, DC",
+                                            href: "http://uxdcconference.org/"
+                                        }
+                                    ]
+                                )
+                            ]
+                        }
+                    ]
+                ) }}
+            {% endcall %}
+        </div>
+
+        <div id="tab-webinars" class="escom-tabs__content">
+            {% call esds.row(background="white", class="esds-row--narrow-inner") %}
+                {{ escom.agenda(
+                    class = "escom-agenda--no-timeline",
+                    items = [
+                        {
+                            topics: [
+                                escom.link_list(
+                                    class = "escom-link-list--large",
+                                    items = [
+                                        {
+                                            eyebrow: "DEC 2015 / UIE",
+                                            title: "Design Systems: From Project Done to Product Sustained",
+                                            href: "https://aycl.uie.com/virtual_seminars/deeper_dive_design_systems"
+                                        },
+                                        {
+                                            eyebrow: "JUN 2015 / A LIST APART",
+                                            title: "Pattern Language: Responsive Style Guides",
+                                            href: "http://alistapart.com/event/responsive-style-guides"
+                                        },
+                                        {
+                                            eyebrow: "JAN 2015 / UIE",
+                                            title: "Cohesive Design Systems for Enterprise",
+                                            href: "https://aycl.uie.com/virtual_seminars/design_systems"
+                                        },
+                                        {
+                                            eyebrow: "2013 / UIE",
+                                            title: "Sketching for Understanding",
+                                            href: "https://aycl.uie.com/virtual_seminars/vs96_sketching_understanding"
+                                        },
+                                        {
+                                            eyebrow: "2012 / UIE",
+                                            title: "Fearless Prototyping for Skeptics",
+                                            href: "https://aycl.uie.com/virtual_seminars/fearless_prototyping_for_skeptics"
+                                        },
+                                        {
+                                            eyebrow: "2012 / UIE",
+                                            title: "Start Full Screen: Organize, Communicate, & Annotate HTML Prototypes",
+                                            href: "https://aycl.uie.com/virtual_seminars/start_full_screen"
+                                        },
+                                        {
+                                            eyebrow: "2011 / UIE",
+                                            title: "From PDFs to HTML Prototypes",
+                                            href: "https://aycl.uie.com/virtual_seminars/from_pdfs_to_html_prototypes"
+                                        }
+                                    ]
+                                )
+                            ]
+                        }
+                    ]
+                ) }}
+            {% endcall %}
+        </div>
+
+        <div id="tab-podcasts" class="escom-tabs__content">
+            {% call esds.row(background="white", class="esds-row--narrow-inner") %}
+                {{ escom.agenda(
+                    class = "escom-agenda--no-timeline",
+                    items = [
+                        {
+                            topics: [
+                                escom.link_list(
+                                    class = "escom-link-list--large",
+                                    items = [
+                                        {
+                                            eyebrow: "AUGUST 2017 / NON BREAKING SPACE SHOW",
+                                            title: "Deep Foundations of Design Systems",
+                                            href: "https://goodstuff.fm/nbsp/130"
+                                        },
+                                        {
+                                            eyebrow: "MAY 2015 / STYLE GUIDES WITH BRAD FROST & ANNA DEBENHAM",
+                                            title: "On Style Guides",
+                                            href: "http://styleguides.io/podcast/nathan-curtis/"
+                                        },
+                                        {
+                                            eyebrow: "SEPT 2015 / UIE",
+                                            title: "Building Scalable Design Systems and Style Guides",
+                                            href: "https://www.uie.com/brainsparks/2015/09/09/nathan-curtis-building-scalable-design-systems-and-style-guides/"
+                                        },
+                                        {
+                                            eyebrow: "APR 2013 / UIE",
+                                            title: "Sketching for Understanding",
+                                            href: "https://www.uie.com/brainsparks/2013/04/09/nathan-curtis-sketching-for-understanding/"
+                                        },
+                                        {
+                                            eyebrow: "AUG 2012 / UIE",
+                                            title: "Prototyping with HTML and CSS",
+                                            href: "https://www.uie.com/brainsparks/2012/08/30/nathan-curtis-prototyping-with-html-and-css/"
+                                        },
+                                        {
+                                            eyebrow: "SEPT 2010 / UIE",
+                                            title: "Reusable Components and Libraries",
+                                            href: "https://www.uie.com/brainsparks/2010/09/16/spoolcast-reusable-components-libraries-with-nathan-curtis/"
+                                        }
+                                    ]
+                                )
+                            ]
+                        }
+                    ]
+                ) }}
+            {% endcall %}
+        </div>
+
+        <div id="tab-posters" class="escom-tabs__content">
+            {% call esds.row(background="white", class="esds-row--narrow-inner") %}
+                {{ escom.agenda(
+                    class = "escom-agenda--no-timeline",
+                    items = [
+                        {
+                            topics: [
+                                escom.link_list(
+                                    class = "escom-link-list--large",
+                                    items = [
+                                        {
+                                            eyebrow: "2010",
+                                            title: "Creating a UX Design Library",
+                                            href: "http://eightshapesunify.s3.amazonaws.com/CreatingAUXDesignLibrary.Final.pdf"
+                                        },
+                                        {
+                                            eyebrow: "2009 / IA SUMMIT",
+                                            title: "Reduce, Reuse, and Recycle",
+                                            href: "http://unify.eightshapes.com/concepts/reduce-reuse-recycle/"
+                                        },
+                                        {
+                                            eyebrow: "2008 / IA SUMMIT",
+                                            title: "Instant Deliverable Mix",
+                                            href: "http://www.nathancurtis.com/2008/04/02/instant-deliverable-mix-2008-ia-summit-poster/"
+                                        }
+                                    ]
+                                )
+                            ]
+                        }
+                    ]
+                ) }}
+            {% endcall %}
+        </div>
 
     </div>
-  </div>
-{% endblock %}
+{% endblock body %}

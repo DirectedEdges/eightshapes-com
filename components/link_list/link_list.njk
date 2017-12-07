@@ -13,6 +13,11 @@
     {% for item in items %}
     <li class="escom-link-list__item">
         <dl class="escom-link-list__group">
+            {% if item.eyebrow %}
+            <dt class="escom-link-list__eyebrow">
+                {{ item.eyebrow }}
+            </dt>
+            {% endif %}
             <dt class="escom-link-list__title">
                 {% if item.href %}
                     <a class="escom-link-list__link" href="{{ item.href }}">
@@ -26,12 +31,12 @@
                 {% endif %}
             </dt>
             {% if item.description %}
-            <dt class="escom-link-list__description">
+            <dd class="escom-link-list__description">
                 {{ item.description }}
-            </dt>
+            </dd>
+            {% endif %}
         </dl>
     </li>
-    {% endif %}
     {% endfor %}
 </ul>
 

@@ -648,6 +648,8 @@
   color: #E76822;
   font-size: 23.04px;
   margin: 0 0 32px; }
+  .escom-agenda__heading:first-child {
+    margin-top: -6px; }
 
 .escom-agenda__row-cards {
   margin: 0 0 32px; }
@@ -772,7 +774,8 @@
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  margin: 0 0 16px; }
 
 .escom-tabs__cell {
   padding: 0 8px; }
@@ -882,14 +885,95 @@
     color: #E6E3E3; }
   .esds-container--white-opacity-85 .escom-link-list__group {
     color: #6B6B6B; }
+  .escom-link-list--large .escom-link-list__group {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.3;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+    text-shadow: none;
+    text-transform: none;
+    font-size: 19.2px;
+    font-weight: 400; }
+    .esds-container--white .escom-link-list--large .escom-link-list__group {
+      color: #262626; }
+    .esds-container--light .escom-link-list--large .escom-link-list__group {
+      color: #262626; }
+    .esds-container--dark .escom-link-list--large .escom-link-list__group {
+      color: #FFFFFF; }
+    .esds-container--black .escom-link-list--large .escom-link-list__group {
+      color: #F3F1F1; }
+    .esds-container--brand .escom-link-list--large .escom-link-list__group {
+      color: #FFFFFF; }
+    .esds-container--white-opacity-85 .escom-link-list--large .escom-link-list__group {
+      color: #262626; }
+    @media screen and (min-width: 480px) {
+      .escom-link-list--large .escom-link-list__group {
+        font-size: 20px; } }
+    @media screen and (min-width: 768px) {
+      .escom-link-list--large .escom-link-list__group {
+        font-size: 21.28px; } }
+    @media screen and (min-width: 1000px) {
+      .escom-link-list--large .escom-link-list__group {
+        font-size: 22.624px; } }
 
 .escom-link-list__title {
   color: #262626;
   font-weight: 700; }
+  .escom-link-list--large .escom-link-list__title {
+    font-weight: 300; }
+
+.escom-link-list__description {
+  margin: 0; }
 
 .escom-link-list__link {
   color: #0A9DB3;
   text-decoration: none; }
+
+.escom-link-list__eyebrow {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.3;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+  font-weight: 300;
+  line-height: 1.2;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.67px;
+  line-height: 1.2;
+  text-transform: uppercase; }
+  .esds-container--white .escom-link-list__eyebrow {
+    color: #6B6B6B; }
+  .esds-container--light .escom-link-list__eyebrow {
+    color: #6B6B6B; }
+  .esds-container--dark .escom-link-list__eyebrow {
+    color: #CCCACA; }
+  .esds-container--black .escom-link-list__eyebrow {
+    color: #B3B1B1; }
+  .esds-container--brand .escom-link-list__eyebrow {
+    color: #E6E3E3; }
+  .esds-container--white-opacity-85 .escom-link-list__eyebrow {
+    color: #6B6B6B; }
+  @media screen and (min-width: 480px) {
+    .escom-link-list__eyebrow {
+      font-size: 12px; } }
+  @media screen and (min-width: 768px) {
+    .escom-link-list__eyebrow {
+      font-size: 12px; } }
+  @media screen and (min-width: 1000px) {
+    .escom-link-list__eyebrow {
+      font-size: 12px; } }
 
 .escom-pill {
   background-color: #F3F1F1;
