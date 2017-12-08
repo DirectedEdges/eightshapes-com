@@ -6,13 +6,25 @@
             image="/images/case_studies/cs-title--marriott.jpg"
     ) }}
 
-    {% call esds.row(background="white", class="esds-row--tall-inset esds-row--narrow-inner") %}
-        <div class="escom-layout__content--narrow">
-            <div class="escom-long-form-text">
-                <p class="escom-long-form-text__p--l">
-                    In 2013, EightShapes partnered with Marriott.com Digital to transform their desktop-only room reservation process into a new, responsive design language. The project produced sophisticated, fluid displays across devices, setting the stage for billions of dollars in hotel reservations for years to come.
-                </p>
-            </div>
+    {% call escom.case_study(
+        summary=[
+            {
+                eyebrow: true,
+                text: "Project"
+            },
+            {
+                text: "Responsive"
+            },
+            {
+                text: "marriott.com",
+                href: "http://marriott.com/"
+            }
+        ]
+    ) %}
+        <div class="escom-long-form-text">
+            <p class="escom-long-form-text__p--l">
+                In 2013, EightShapes partnered with Marriott.com Digital to transform their desktop-only room reservation process into a new, responsive design language. The project produced sophisticated, fluid displays across devices, setting the stage for billions of dollars in hotel reservations for years to come.
+            </p>
         </div>
     {% endcall %}
 {% endblock body %}

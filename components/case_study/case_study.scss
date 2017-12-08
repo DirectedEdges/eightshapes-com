@@ -1,0 +1,45 @@
+.escom-case-study__summary {
+    left: 100%;
+    position: absolute;
+    top: $esds-space-generic-4-x;
+    width: 220px;
+}
+
+.escom-case-study__inner {
+    margin: 0 auto;
+    max-width: $escom-space-container-narrow;
+    padding: $esds-space-inset-1-x;
+    padding-bottom: $esds-space-inset-2-x;
+    padding-top: $esds-space-inset-2-x;
+    position: relative;
+    
+    @media screen and (min-width: 768px) {
+        padding-bottom: $esds-space-inset-4-x;
+        padding-top: $esds-space-inset-4-x;
+    }
+}
+
+.escom-case-study__list {
+    list-style: none;
+    margin: $esds-space-stack-1-x;
+    padding: 0;
+}
+
+.escom-case-study__list-item {
+    @include esds-body-text-m();
+    margin: $esds-space-stack-1-x;
+}
+
+.escom-case-study__list-item-eyebrow {
+    @include esds-eyebrow-heading();
+    margin: $esds-space-stack-1-x;
+}
+
+.escom-case-study__link {
+    color: $esds-text-color-primary-on-light;
+
+    &:hover {
+        color: $esds-text-color-secondary-on-light;
+        text-decoration: none;
+    }
+}

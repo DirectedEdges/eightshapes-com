@@ -9,3 +9,7 @@ color:
     linkedin: "#0174BD"
   gray:
     medium: "#D2D3D5"
+space:
+  container:
+    default: 1200px
+    narrow: 700px
