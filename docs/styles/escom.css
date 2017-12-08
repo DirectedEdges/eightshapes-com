@@ -583,32 +583,32 @@ body {
     .escom-table__responsive-row-header {
       font-size: 16px; } }
 
-.escom-agenda {
+.escom-timeline {
   list-style: none;
   margin: 0 0 32px;
   padding-left: 8px; }
   @media screen and (min-width: 768px) {
-    .escom-agenda {
+    .escom-timeline {
       padding-left: 32px; } }
-  .escom-agenda:last-child {
+  .escom-timeline:last-child {
     margin: 0; }
 
-.escom-agenda__item {
+.escom-timeline__item {
   border-left: 3px solid #6B6B6B;
   padding-bottom: 32px;
   padding-left: 32px;
   position: relative; }
   @media screen and (min-width: 768px) {
-    .escom-agenda__item {
+    .escom-timeline__item {
       padding-bottom: 64px; } }
-  .escom-agenda--no-timeline .escom-agenda__item {
+  .escom-timeline--no-timeline .escom-timeline__item {
     border-left: 0;
     margin-left: -8px;
     padding-left: 0; }
-  .escom-agenda__item:last-child {
+  .escom-timeline__item:last-child {
     border-left-color: transparent;
     padding-bottom: 0; }
-  .escom-agenda__item::after {
+  .escom-timeline__item::after {
     background-color: #FFFFFF;
     border: 3px solid #6B6B6B;
     border-radius: 50%;
@@ -619,20 +619,20 @@ body {
     position: absolute;
     top: -1px;
     width: 21px; }
-    .escom-agenda--no-timeline .escom-agenda__item::after {
+    .escom-timeline--no-timeline .escom-timeline__item::after {
       display: none; }
 
-.escom-agenda__item--header {
+.escom-timeline__item--header {
   border-left: 0;
   display: none;
   padding-bottom: 32px; }
   @media screen and (min-width: 768px) {
-    .escom-agenda__item--header {
+    .escom-timeline__item--header {
       display: block; } }
-  .escom-agenda__item--header::after {
+  .escom-timeline__item--header::after {
     display: none; }
 
-.escom-agenda__time {
+.escom-timeline__time {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -647,10 +647,10 @@ body {
   color: #6B6B6B;
   font-size: 12px;
   margin: 0; }
-  .escom-agenda__time:last-child {
+  .escom-timeline__time:last-child {
     margin: 0; }
 
-.escom-agenda__heading {
+.escom-timeline__heading {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -665,56 +665,56 @@ body {
   color: #E76822;
   font-size: 23.04px;
   margin: 0 0 32px; }
-  .escom-agenda__heading:first-child {
+  .escom-timeline__heading:first-child {
     margin-top: -6px; }
 
-.escom-agenda__row-cards {
+.escom-timeline__row-cards {
   margin: 0 0 32px; }
   @media screen and (min-width: 768px) {
-    .escom-agenda__row-cards {
+    .escom-timeline__row-cards {
       display: -ms-grid;
       display: grid;
       grid-gap: 32px;
-          grid-template-areas: 'escom-agenda__cell-cards--bullets escom-agenda__cell-cards--bullets' 'escom-agenda__cell-cards--card-1 escom-agenda__cell-cards--card-2'; } }
+          grid-template-areas: 'escom-timeline__cell-cards--bullets escom-timeline__cell-cards--bullets' 'escom-timeline__cell-cards--card-1 escom-timeline__cell-cards--card-2'; } }
   @media screen and (min-width: 1200px) {
-    .escom-agenda__row-cards {
-          grid-template-areas: 'escom-agenda__cell-cards--bullets escom-agenda__cell-cards--card-1 escom-agenda__cell-cards--card-2'; } }
-  .escom-agenda__row-cards:last-child {
+    .escom-timeline__row-cards {
+          grid-template-areas: 'escom-timeline__cell-cards--bullets escom-timeline__cell-cards--card-1 escom-timeline__cell-cards--card-2'; } }
+  .escom-timeline__row-cards:last-child {
     margin: 0; }
 
-.escom-agenda__cell-cards--bullets {
+.escom-timeline__cell-cards--bullets {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
-  grid-area: escom-agenda__cell-cards--bullets; }
+  grid-area: escom-timeline__cell-cards--bullets; }
 
-.escom-agenda__cell-cards--card-1 {
+.escom-timeline__cell-cards--card-1 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-area: escom-agenda__cell-cards--card-1; }
+  grid-area: escom-timeline__cell-cards--card-1; }
 
-.escom-agenda__cell-cards--card-2 {
+.escom-timeline__cell-cards--card-2 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
-  grid-area: escom-agenda__cell-cards--card-2; }
+  grid-area: escom-timeline__cell-cards--card-2; }
 
 @media screen and (min-width: 768px) {
-  .escom-agenda__row-text {
+  .escom-timeline__row-text {
     display: -ms-grid;
     display: grid;
     grid-gap: 32px;
     -ms-grid-columns: 20% 80%;
         grid-template-columns: 20% 80%; } }
 
-.escom-agenda__list {
+.escom-timeline__list {
   list-style: disc;
   margin: 0 0 32px;
   padding-left: 24px; }
   @media screen and (min-width: 768px) {
-    .escom-agenda__list:last-child {
+    .escom-timeline__list:last-child {
       margin: 0; } }
 
-.escom-agenda__list-item {
+.escom-timeline__list-item {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -729,43 +729,43 @@ body {
   font-size: 16px;
   font-weight: 400;
   margin: 0 0 16px; }
-  .esds-container--white .escom-agenda__list-item {
+  .esds-container--white .escom-timeline__list-item {
     color: #262626; }
-  .esds-container--light .escom-agenda__list-item {
+  .esds-container--light .escom-timeline__list-item {
     color: #262626; }
-  .esds-container--dark .escom-agenda__list-item {
+  .esds-container--dark .escom-timeline__list-item {
     color: #FFFFFF; }
-  .esds-container--black .escom-agenda__list-item {
+  .esds-container--black .escom-timeline__list-item {
     color: #F3F1F1; }
-  .esds-container--brand .escom-agenda__list-item {
+  .esds-container--brand .escom-timeline__list-item {
     color: #FFFFFF; }
-  .esds-container--white-opacity-85 .escom-agenda__list-item {
+  .esds-container--white-opacity-85 .escom-timeline__list-item {
     color: #262626; }
   @media screen and (min-width: 480px) {
-    .escom-agenda__list-item {
+    .escom-timeline__list-item {
       font-size: 16px; } }
   @media screen and (min-width: 768px) {
-    .escom-agenda__list-item {
+    .escom-timeline__list-item {
       font-size: 16px; } }
   @media screen and (min-width: 1000px) {
-    .escom-agenda__list-item {
+    .escom-timeline__list-item {
       font-size: 16px; } }
-  .esds-container--white .escom-agenda__list-item {
+  .esds-container--white .escom-timeline__list-item {
     color: #6B6B6B; }
-  .esds-container--light .escom-agenda__list-item {
+  .esds-container--light .escom-timeline__list-item {
     color: #6B6B6B; }
-  .esds-container--dark .escom-agenda__list-item {
+  .esds-container--dark .escom-timeline__list-item {
     color: #CCCACA; }
-  .esds-container--black .escom-agenda__list-item {
+  .esds-container--black .escom-timeline__list-item {
     color: #B3B1B1; }
-  .esds-container--brand .escom-agenda__list-item {
+  .esds-container--brand .escom-timeline__list-item {
     color: #E6E3E3; }
-  .esds-container--white-opacity-85 .escom-agenda__list-item {
+  .esds-container--white-opacity-85 .escom-timeline__list-item {
     color: #6B6B6B; }
-  .escom-agenda__list-item:last-child {
+  .escom-timeline__list-item:last-child {
     margin: 0; }
 
-.escom-agenda__item-heading {
+.escom-timeline__item-heading {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;

@@ -1,4 +1,4 @@
-.escom-agenda {
+.escom-timeline {
     list-style: none;
     margin: $esds-space-stack-2-x;
     padding-left: $esds-space-generic-half-x;
@@ -12,7 +12,7 @@
     }
 }
 
-.escom-agenda__item {
+.escom-timeline__item {
     border-left: 3px solid $esds-color-neutral-42;
     padding-bottom: $esds-space-generic-2-x;
     padding-left: $esds-space-generic-2-x;
@@ -22,7 +22,7 @@
         padding-bottom: $esds-space-generic-4-x;
     }
 
-    .escom-agenda--no-timeline & {
+    .escom-timeline--no-timeline & {
         border-left: 0;
         margin-left: -$esds-space-generic-half-x;
         padding-left: 0;
@@ -45,13 +45,13 @@
         top: -1px;
         width: 21px;
 
-        .escom-agenda--no-timeline & {
+        .escom-timeline--no-timeline & {
             display: none;
         }
     }
 }
 
-.escom-agenda__item--header {
+.escom-timeline__item--header {
     border-left: 0;
     display: none;
     padding-bottom: $esds-space-generic-2-x;
@@ -65,7 +65,7 @@
     }
 }
 
-.escom-agenda__time {
+.escom-timeline__time {
     @include esds-font-reset();
     color: $esds-text-color-secondary-on-white;
     font-size: $esds-font-size-heading-eyebrow-default;
@@ -76,7 +76,7 @@
     }
 }
 
-.escom-agenda__heading {
+.escom-timeline__heading {
     @include esds-font-reset();
     color: $esds-text-color-brand;
     font-size: $esds-font-size-heading-level-3-default;
@@ -87,20 +87,20 @@
     }
 }
 
-.escom-agenda__row-cards {
+.escom-timeline__row-cards {
     margin: $esds-space-stack-2-x;
 
     @media screen and (min-width: $escom-breakpoints-width-768) {
         display: grid;
         grid-gap: $esds-space-generic-2-x;
         grid-template-areas:
-        'escom-agenda__cell-cards--bullets escom-agenda__cell-cards--bullets'
-        'escom-agenda__cell-cards--card-1 escom-agenda__cell-cards--card-2';
+        'escom-timeline__cell-cards--bullets escom-timeline__cell-cards--bullets'
+        'escom-timeline__cell-cards--card-1 escom-timeline__cell-cards--card-2';
     }
 
     @media screen and (min-width: $escom-breakpoints-width-1200) {
         grid-template-areas:
-        'escom-agenda__cell-cards--bullets escom-agenda__cell-cards--card-1 escom-agenda__cell-cards--card-2';
+        'escom-timeline__cell-cards--bullets escom-timeline__cell-cards--card-1 escom-timeline__cell-cards--card-2';
     }
 
     &:last-child {
@@ -108,19 +108,19 @@
     }
 }
 
-.escom-agenda__cell-cards--bullets {
-    grid-area: escom-agenda__cell-cards--bullets;
+.escom-timeline__cell-cards--bullets {
+    grid-area: escom-timeline__cell-cards--bullets;
 }
 
-.escom-agenda__cell-cards--card-1 {
-    grid-area: escom-agenda__cell-cards--card-1;
+.escom-timeline__cell-cards--card-1 {
+    grid-area: escom-timeline__cell-cards--card-1;
 }
 
-.escom-agenda__cell-cards--card-2 {
-    grid-area: escom-agenda__cell-cards--card-2;
+.escom-timeline__cell-cards--card-2 {
+    grid-area: escom-timeline__cell-cards--card-2;
 }
 
-.escom-agenda__row-text {
+.escom-timeline__row-text {
     @media screen and (min-width: $escom-breakpoints-width-768) {
         display: grid;
         grid-gap: $esds-space-generic-2-x;
@@ -128,7 +128,7 @@
     }
 }
 
-.escom-agenda__list {
+.escom-timeline__list {
     list-style: disc;
     margin: $esds-space-stack-2-x;
     padding-left: $esds-space-generic-1-and-half-x;
@@ -140,7 +140,7 @@
     }
 }
 
-.escom-agenda__list-item {
+.escom-timeline__list-item {
     @include esds-body-text-m();
     @include esds-text-color('secondary');
     margin: $esds-space-stack-1-x;
@@ -150,7 +150,7 @@
     }
 }
 
-.escom-agenda__item-heading {
+.escom-timeline__item-heading {
     @include esds-font-reset();
     color: $esds-text-color-secondary-on-white;
     font-size: $esds-font-size-heading-eyebrow-default;
