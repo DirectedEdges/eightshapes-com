@@ -1,5 +1,5 @@
 {% macro hero(
-    class="",
+    class=false,
     bio={
         "name": "First Name",
         "title": "Job Position",
@@ -7,7 +7,7 @@
         "image": "http://via.placeholder.com/1368x560"
     }
   ) %}
-    <div class="escom-hero">
+    <div class="escom-hero{{ ' ' + class if class }}">
         <div class="escom-hero__inner">
             <img alt="{{ bio.name }}" class="escom-hero__image" src="{{ bio.image }}" />
             <div class="hero__body">

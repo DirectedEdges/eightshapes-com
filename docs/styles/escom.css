@@ -1530,3 +1530,76 @@ body {
   @media screen and (min-width: 1000px) {
     .escom-hero__subhead {
       font-size: 22.624px; } }
+
+.escom-site-footer__logo {
+  fill: #FFFFFF;
+  height: 40px;
+  margin: 0 0 24px;
+  width: 180px; }
+
+.escom-site-footer__list {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.3;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+  font-size: 16px;
+  font-weight: 400;
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0; }
+  .esds-container--white .escom-site-footer__list {
+    color: #262626; }
+  .esds-container--light .escom-site-footer__list {
+    color: #262626; }
+  .esds-container--dark .escom-site-footer__list {
+    color: #FFFFFF; }
+  .esds-container--black .escom-site-footer__list {
+    color: #F3F1F1; }
+  .esds-container--brand .escom-site-footer__list {
+    color: #FFFFFF; }
+  .esds-container--white-opacity-85 .escom-site-footer__list {
+    color: #262626; }
+  @media screen and (min-width: 480px) {
+    .escom-site-footer__list {
+      font-size: 16px; } }
+  @media screen and (min-width: 768px) {
+    .escom-site-footer__list {
+      font-size: 16px; } }
+  @media screen and (min-width: 1000px) {
+    .escom-site-footer__list {
+      font-size: 16px; } }
+  @media screen and (min-width: 480px) {
+    .escom-site-footer__list {
+      display: inline-block;
+      margin-right: 64px;
+      vertical-align: top; } }
+
+.escom-site-footer__list-item {
+  margin: 0 0 8px; }
+
+.escom-site-footer__link {
+  color: #FFFFFF;
+  text-decoration: none; }
+  .escom-site-footer__link:hover {
+    text-decoration: underline; }
+
+.escom-site-footer__icon {
+  fill: #FFFFFF;
+  padding-right: 4px;
+  vertical-align: middle; }
+
+.escom-site-footer__icon--twitter {
+  fill: #08D0EC; }
+
+.escom-site-footer__icon--linkedin {
+  fill: #0174BD; }
+
+.escom-site-footer__icon--medium {
+  fill: #D2D3D5; }

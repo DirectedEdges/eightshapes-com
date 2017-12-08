@@ -1,0 +1,50 @@
+.escom-site-footer__logo {
+    fill: $esds-color-white;
+    height: 40px;
+    margin: $esds-space-stack-1-and-half-x;
+    width: 180px;
+}
+
+.escom-site-footer__list {
+    @include esds-body-text-m();
+    list-style: none;
+    margin: $esds-space-stack-1-x;
+    padding: 0;
+
+    @media screen and (min-width: 480px) {
+        display: inline-block;
+        margin-right: $esds-space-generic-4-x;
+        vertical-align: top;
+    }
+}
+
+.escom-site-footer__list-item {
+    margin: $esds-space-stack-half-x;
+}
+
+.escom-site-footer__link {
+    color: $esds-color-white;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.escom-site-footer__icon {
+    fill: $esds-color-white;
+    padding-right: $esds-space-generic-quarter-x;
+    vertical-align: middle;
+}
+
+.escom-site-footer__icon--twitter {
+    fill: $escom-color-blue-twitter;
+}
+
+.escom-site-footer__icon--linkedin {
+    fill: $escom-color-blue-linkedin;
+}
+
+.escom-site-footer__icon--medium {
+    fill: $escom-color-gray-medium;
+}
