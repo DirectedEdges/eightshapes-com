@@ -4,6 +4,7 @@
 @import 'esds-library/styles/shared/color'; 
 @import 'esds-library/styles/shared/typography'; 
 @import 'tokens/tokens';
+@import 'base/layout';
 @import 'components/table/table';
 @import 'components/agenda/agenda';
 @import 'components/tabs/tabs';
@@ -11,9 +12,3 @@
 @import 'components/pill/pill';
 @import 'components/long_form_text/long_form_text';
 @import 'components/hero/hero';
-
-body {
-    @include esds-box-sizing;
-    margin: 0;
-    padding: 0;
-}

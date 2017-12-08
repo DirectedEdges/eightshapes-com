@@ -12,6 +12,13 @@
     }
 }
 
+.escom-link-list__item--heading {
+    @include esds-font-reset();
+    color: $esds-text-color-brand;
+    font-size: $esds-font-size-heading-level-3-default;
+    margin: $esds-space-stack-2-x;
+}
+
 .escom-link-list__group {
     @include esds-body-text-m();
     @include esds-text-color('secondary');
