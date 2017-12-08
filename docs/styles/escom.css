@@ -824,6 +824,10 @@
 .escom-tabs__content {
   display: none; }
 
+.escom-tabs__content--narrrow {
+  margin: 0 auto;
+  max-width: 700px; }
+
 .escom-tabs__content--is-active {
   display: block; }
 
@@ -1476,10 +1480,10 @@
       font-size: 16px; } }
   @media screen and (min-width: 768px) {
     .escom-hero__subhead {
-      font-size: 28.432px; } }
+      font-size: 21.328px; } }
   @media screen and (min-width: 1000px) {
     .escom-hero__subhead {
-      font-size: 32px; } }
+      font-size: 22.624px; } }
 
 body {
   margin: 0;

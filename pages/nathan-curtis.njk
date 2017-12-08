@@ -1,6 +1,6 @@
 {% extends 'templates/base.njk' %}
 {% block body %}
-    {{ esds.breadcrumb(href="/nathan-curtis.html") }}
+    {{ esds.breadcrumb(href=profiles[0].eightshapes_com) }}
     
     {{ escom.hero(bio=profiles[0]) }}
 
@@ -41,7 +41,7 @@
             </div>
         {% endcall %}
 
-        <div id="tab-appearances" class="escom-tabs__content escom-tabs__content--is-active">
+        <div id="tab-appearances" class="escom-tabs__content escom-tabs__content--narrrow escom-tabs__content--is-active">
             {% call esds.row(background="white", class="esds-row--narrow-inner") %}
                 {{ escom.agenda(
                     items = [
@@ -195,227 +195,110 @@
             {% endcall %}
         </div>
 
-        <div id="tab-webinars" class="escom-tabs__content">
+        <div id="tab-webinars" class="escom-tabs__content escom-tabs__content--narrrow">
             {% call esds.row(background="white", class="esds-row--narrow-inner") %}
-                {{ escom.agenda(
+                {{ escom.link_list(
+                    class = "escom-link-list--large",
                     items = [
                         {
-                            heading: 2015,
-                            topics: [
-                                escom.link_list(
-                                    class = "escom-link-list--large",
-                                    items = [
-                                        {
-                                            eyebrow: "DEC 2015 / UIE",
-                                            title: "Design Systems: From Project Done to Product Sustained",
-                                            href: "https://aycl.uie.com/virtual_seminars/deeper_dive_design_systems"
-                                        },
-                                        {
-                                            eyebrow: "JUN 2015 / A LIST APART",
-                                            title: "Pattern Language: Responsive Style Guides",
-                                            href: "http://alistapart.com/event/responsive-style-guides"
-                                        },
-                                        {
-                                            eyebrow: "JAN 2015 / UIE",
-                                            title: "Cohesive Design Systems for Enterprise",
-                                            href: "https://aycl.uie.com/virtual_seminars/design_systems"
-                                        }
-                                    ]
-                                )
-                            ]
+                            eyebrow: "DEC 2015 / UIE",
+                            title: "Design Systems: From Project Done to Product Sustained",
+                            href: "https://aycl.uie.com/virtual_seminars/deeper_dive_design_systems"
                         },
                         {
-                            heading: 2013,
-                            topics: [
-                                escom.link_list(
-                                    class = "escom-link-list--large",
-                                    items = [
-                                        {
-                                            eyebrow: "2013 / UIE",
-                                            title: "Sketching for Understanding",
-                                            href: "https://aycl.uie.com/virtual_seminars/vs96_sketching_understanding"
-                                        }
-                                    ]
-                                )
-                            ]
+                            eyebrow: "JUN 2015 / A LIST APART",
+                            title: "Pattern Language: Responsive Style Guides",
+                            href: "http://alistapart.com/event/responsive-style-guides"
                         },
                         {
-                            heading: 2012,
-                            topics: [
-                                escom.link_list(
-                                    class = "escom-link-list--large",
-                                    items = [
-                                        {
-                                            eyebrow: "2012 / UIE",
-                                            title: "Fearless Prototyping for Skeptics",
-                                            href: "https://aycl.uie.com/virtual_seminars/fearless_prototyping_for_skeptics"
-                                        },
-                                        {
-                                            eyebrow: "2012 / UIE",
-                                            title: "Start Full Screen: Organize, Communicate, & Annotate HTML Prototypes",
-                                            href: "https://aycl.uie.com/virtual_seminars/start_full_screen"
-                                        }
-                                    ]
-                                )
-                            ]
+                            eyebrow: "JAN 2015 / UIE",
+                            title: "Cohesive Design Systems for Enterprise",
+                            href: "https://aycl.uie.com/virtual_seminars/design_systems"
                         },
                         {
-                            heading: 2011,
-                            topics: [
-                                escom.link_list(
-                                    class = "escom-link-list--large",
-                                    items = [
-                                        {
-                                            eyebrow: "2011 / UIE",
-                                            title: "From PDFs to HTML Prototypes",
-                                            href: "https://aycl.uie.com/virtual_seminars/from_pdfs_to_html_prototypes"
-                                        }
-                                    ]
-                                )
-                            ]
+                            eyebrow: "2013 / UIE",
+                            title: "Sketching for Understanding",
+                            href: "https://aycl.uie.com/virtual_seminars/vs96_sketching_understanding"
+                        },
+                        {
+                            eyebrow: "2012 / UIE",
+                            title: "Fearless Prototyping for Skeptics",
+                            href: "https://aycl.uie.com/virtual_seminars/fearless_prototyping_for_skeptics"
+                        },
+                        {
+                            eyebrow: "2012 / UIE",
+                            title: "Start Full Screen: Organize, Communicate, & Annotate HTML Prototypes",
+                            href: "https://aycl.uie.com/virtual_seminars/start_full_screen"
+                        },
+                        {
+                            eyebrow: "2011 / UIE",
+                            title: "From PDFs to HTML Prototypes",
+                            href: "https://aycl.uie.com/virtual_seminars/from_pdfs_to_html_prototypes"
                         }
                     ]
                 ) }}
             {% endcall %}
         </div>
 
-        <div id="tab-podcasts" class="escom-tabs__content">
+        <div id="tab-podcasts" class="escom-tabs__content escom-tabs__content--narrrow">
             {% call esds.row(background="white", class="esds-row--narrow-inner") %}
-                {{ escom.agenda(
+                {{ escom.link_list(
+                    class = "escom-link-list--large",
                     items = [
                         {
-                            heading: 2017,
-                            topics: [
-                                escom.link_list(
-                                    class = "escom-link-list--large",
-                                    items = [
-                                        {
-                                            eyebrow: "AUGUST 2017 / NON BREAKING SPACE SHOW",
-                                            title: "Deep Foundations of Design Systems",
-                                            href: "https://goodstuff.fm/nbsp/130"
-                                        }
-                                    ]
-                                )
-                            ]
+                            eyebrow: "AUGUST 2017 / NON BREAKING SPACE SHOW",
+                            title: "Deep Foundations of Design Systems",
+                            href: "https://goodstuff.fm/nbsp/130"
                         },
                         {
-                            heading: 2015,
-                            topics: [
-                                escom.link_list(
-                                    class = "escom-link-list--large",
-                                    items = [
-                                        {
-                                            eyebrow: "MAY 2015 / STYLE GUIDES WITH BRAD FROST & ANNA DEBENHAM",
-                                            title: "On Style Guides",
-                                            href: "http://styleguides.io/podcast/nathan-curtis/"
-                                        },
-                                        {
-                                            eyebrow: "SEPT 2015 / UIE",
-                                            title: "Building Scalable Design Systems and Style Guides",
-                                            href: "https://www.uie.com/brainsparks/2015/09/09/nathan-curtis-building-scalable-design-systems-and-style-guides/"
-                                        }
-                                    ]
-                                )
-                            ]
+                            eyebrow: "MAY 2015 / STYLE GUIDES WITH BRAD FROST & ANNA DEBENHAM",
+                            title: "On Style Guides",
+                            href: "http://styleguides.io/podcast/nathan-curtis/"
                         },
                         {
-                            heading: 2013,
-                            topics: [
-                                escom.link_list(
-                                    class = "escom-link-list--large",
-                                    items = [
-                                        {
-                                            eyebrow: "APR 2013 / UIE",
-                                            title: "Sketching for Understanding",
-                                            href: "https://www.uie.com/brainsparks/2013/04/09/nathan-curtis-sketching-for-understanding/"
-                                        }
-                                    ]
-                                )
-                            ]
+                            eyebrow: "SEPT 2015 / UIE",
+                            title: "Building Scalable Design Systems and Style Guides",
+                            href: "https://www.uie.com/brainsparks/2015/09/09/nathan-curtis-building-scalable-design-systems-and-style-guides/"
                         },
                         {
-                            heading: 2012,
-                            topics: [
-                                escom.link_list(
-                                    class = "escom-link-list--large",
-                                    items = [
-                                        {
-                                            eyebrow: "AUG 2012 / UIE",
-                                            title: "Prototyping with HTML and CSS",
-                                            href: "https://www.uie.com/brainsparks/2012/08/30/nathan-curtis-prototyping-with-html-and-css/"
-                                        }
-                                    ]
-                                )
-                            ]
+                            eyebrow: "APR 2013 / UIE",
+                            title: "Sketching for Understanding",
+                            href: "https://www.uie.com/brainsparks/2013/04/09/nathan-curtis-sketching-for-understanding/"
                         },
                         {
-                            heading: 2010,
-                            topics: [
-                                escom.link_list(
-                                    class = "escom-link-list--large",
-                                    items = [
-                                        {
-                                            eyebrow: "SEPT 2010 / UIE",
-                                            title: "Reusable Components and Libraries",
-                                            href: "https://www.uie.com/brainsparks/2010/09/16/spoolcast-reusable-components-libraries-with-nathan-curtis/"
-                                        }
-                                    ]
-                                )
-                            ]
+                            eyebrow: "AUG 2012 / UIE",
+                            title: "Prototyping with HTML and CSS",
+                            href: "https://www.uie.com/brainsparks/2012/08/30/nathan-curtis-prototyping-with-html-and-css/"
+                        },
+                        {
+                            eyebrow: "SEPT 2010 / UIE",
+                            title: "Reusable Components and Libraries",
+                            href: "https://www.uie.com/brainsparks/2010/09/16/spoolcast-reusable-components-libraries-with-nathan-curtis/"
                         }
                     ]
                 ) }}
             {% endcall %}
         </div>
 
-        <div id="tab-posters" class="escom-tabs__content">
+        <div id="tab-posters" class="escom-tabs__content escom-tabs__content--narrrow">
             {% call esds.row(background="white", class="esds-row--narrow-inner") %}
-                {{ escom.agenda(
+                {{ escom.link_list(
+                    class = "escom-link-list--large",
                     items = [
                         {
-                            heading: 2010,
-                            topics: [
-                                escom.link_list(
-                                    class = "escom-link-list--large",
-                                    items = [
-                                        {
-                                            eyebrow: "2010",
-                                            title: "Creating a UX Design Library",
-                                            href: "http://eightshapesunify.s3.amazonaws.com/CreatingAUXDesignLibrary.Final.pdf"
-                                        }
-                                    ]
-                                )
-                            ]
+                            eyebrow: "2010",
+                            title: "Creating a UX Design Library",
+                            href: "http://eightshapesunify.s3.amazonaws.com/CreatingAUXDesignLibrary.Final.pdf"
                         },
                         {
-                            heading: 2009,
-                            topics: [
-                                escom.link_list(
-                                    class = "escom-link-list--large",
-                                    items = [
-                                        {
-                                            eyebrow: "2009 / IA SUMMIT",
-                                            title: "Reduce, Reuse, and Recycle",
-                                            href: "http://unify.eightshapes.com/concepts/reduce-reuse-recycle/"
-                                        }
-                                    ]
-                                )
-                            ]
+                            eyebrow: "2009 / IA SUMMIT",
+                            title: "Reduce, Reuse, and Recycle",
+                            href: "http://unify.eightshapes.com/concepts/reduce-reuse-recycle/"
                         },
                         {
-                            heading: 2008,
-                            topics: [
-                                escom.link_list(
-                                    class = "escom-link-list--large",
-                                    items = [
-                                        {
-                                            eyebrow: "2008 / IA SUMMIT",
-                                            title: "Instant Deliverable Mix",
-                                            href: "http://www.nathancurtis.com/2008/04/02/instant-deliverable-mix-2008-ia-summit-poster/"
-                                        }
-                                    ]
-                                )
-                            ]
+                            eyebrow: "2008 / IA SUMMIT",
+                            title: "Instant Deliverable Mix",
+                            href: "http://www.nathancurtis.com/2008/04/02/instant-deliverable-mix-2008-ia-summit-poster/"
                         }
                     ]
                 ) }}

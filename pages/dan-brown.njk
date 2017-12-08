@@ -1,215 +1,248 @@
-{% extends 'templates/legacy/bio.njk' %}
+{% extends 'templates/base.njk' %}
+{% block body %}
+    {{ esds.breadcrumb(href=profiles[1].eightshapes_com) }}
+    
+    {{ escom.hero(bio=profiles[1]) }}
 
-{% block bio_content %}
-  {{ legacy_components.bio_hero({ index: 1}) }}
-  <div class="container-fluid">
-    <div class="container-fluid-inner content__long-form">
-      <p class="lead bio__lead">
-        Since 1994, Dan’s focused on <a href="/product-discovery.html">digital product discovery and definition</a>, user research, information architecture, content strategy and interaction design for content-heavy sites, complex web applications, and digital products. He’s worked on teams large and small to perfect collaboration and productivity. In 2006, Dan co-founded EightShapes with Nathan Curtis to serve clients in healthcare, education, not-for-profit and high-tech.
-      </p>
-      <form action="#">
-        <div class="content-tabs">
-          <div class="content-tabs__tab">
-            <input class="content-tabs__tab-input" type="radio" id="appearances" name="tabcontent" checked="checked">
-            <label class="content-tabs__tab-label" for="appearances">Appearances</label>
-            <div class="content-tabs__panel">
-              <div class="content__long-form content-tabs__tab-content">
-                <h3>2016</h3>
-                <ul>
-                  <li>
-                    <p class="pre-heading">January 20, 2016 / O'Reilly Design Conference, San Francisco</p>
-                    <a href="http://conferences.oreilly.com/design/ux-interaction-iot-us/public/schedule/detail/45380">
-                      <h4 class="heading">Crafting the Discovery Phase: First Steps in Effective UX Projects</h4>
-                    </a>
-                  </li>
-                </ul>
-                <h3>2015</h3>
-                <ul>
-                  <li>
-                    <p class="pre-heading">Oct 2015 / Midwest UX, Pittsburgh</p>
-                    <a href="http://midwestux2015.sched.org/event/4CCY/crafting-the-discovery-phase-first-steps-in-effective-ux-projects">
-                      <h4 class="heading">Crafting the Discovery Phase: First Steps in Effective UX Projects</h4>
-                    </a>
-                  </li>
-                  <li>
-                    <p class="pre-heading">Oct 2015 / UXDC, Washington, DC</p>
-                    <a href="http://user-centered.org/uxdc/slides/craftingdiscovery.brown.talk-distro.pdf">
-                      <h4 class="heading">The Four Essential Activities of Design Discovery</h4>
-                    </a>
-                  </li>
-                  <li>
-                    <p class="pre-heading">May 2015 / 18F Speaker Series, Washington, DC</p>
-                    <a href="https://18f.gsa.gov/2015/05/27/dan-brown-conflict-in-design/">
-                      <h4 class="heading">Stop Fighting, Start Designing</h4>
-                    </a>
-                  </li>
-                  <li>
-                    <p class="pre-heading">Apr 2015 / IA Summit 2015, Minneapolis</p>
-                    <a href="http://www.iasummit.org/node/450">
-                      <h4 class="heading">Crafting the Discovery Phase: First Steps in Effective UX Projects</h4>
-                    </a>
-                  </li>
-				</ul>
-				<h3>2014</h3>
-                <ul>
-                  <li>
-                    <p class="pre-heading">Mar 2014 / IA Summit 2014, San Diego</p>
-                      <h4 class="heading">Collaboration Workshop</h4>
-                  </li>
-				  <li>
-					<p class="pre-heading">Feb 2014 / Interaction 14, Amsterdam</p>
-                    <a href="https://vimeo.com/86763622">
-                      <h4 class="heading">Stop Fighting, Start Designing</h4>
-                    </a>
-                  </li>
-                    
-                </ul>
-              </div>
-            </div>
-          </div>          
-          <div class="content-tabs__tab">
-            <input class="content-tabs__tab-input" type="radio" id="books" name="tabcontent">
-            <label class="content-tabs__tab-label" for="books">Books</label>
-            <div class="content-tabs__panel">
-              <div class="content__long-form content-tabs__tab-content">
-                <ul>
-                  <li>
-                    <p class="pre-heading">2016 (Forthcoming) / A Book Apart</p>
-                      <h4 class="heading">Practical Design Discovery</h4>
-                  </li>
-                  <li>
-                    <p class="pre-heading">2013 / New Riders</p>
-                    <a href="http://designingtogetherbook.com">
-                      <h4 class="heading">Designing Together: The Collaboration and Conflict Management Handbook for Creative Professionals</h4>
-                    </a>
-                  </li>
-                  <li>
-                    <p class="pre-heading">2011 / New Riders</p>
-                    <a href="http://amzn.to/1Re6tnk">
-                      <h4 class="heading">Communicating Design: Developing Web Site Documentation for Design and Planning</h4>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="content-tabs__tab">
-            <input class="content-tabs__tab-input" type="radio" id="webinars" name="tabcontent">
-            <label class="content-tabs__tab-label" for="webinars">Webinars</label>
-            <div class="content-tabs__panel">
-              <div class="content__long-form content-tabs__tab-content">
-                <ul>
-                  <li>
-                    <p class="pre-heading">Dec 2015 / O'Reilly</p>
-                    <a href="http://www.oreilly.com/pub/e/3605">
-                      <h4 class="heading">Collaborative Design Discovery: Four Essential Techniques for Successful Product Definition</h4>
-                    </a>
-                  </li>
-                  <li>
-                    <p class="pre-heading">UIE</p>
-                    <a href="http://aycl.uie.com/virtual_seminars/the_secrets_of_great_ux_documentation">
-                      <h4 class="heading">The Secrets of Great UX Documentation</h4>
-                    </a>
-                  </li>
-                  <li>
-                    <p class="pre-heading">UIE</p>
-                    <a href="http://aycl.uie.com/virtual_seminars/plays_well_with_others">
-                      <h4 class="heading">Plays Well With Others: Survival Skills for Design Teams</h4>
-                    </a>
-                  </li>
-                  <li>
-                    <p class="pre-heading">UIE</p>
-                    <a href="http://aycl.uie.com/virtual_seminars/make_collaboration_happen_even_with_stubborn_people">
-                      <h4 class="heading">Make Collaboration Happen, Even with Stubborn People</h4>
-                    </a>
-                  </li>
-                  <li>
-                    <p class="pre-heading">UIE</p>
-                    <a href="http://aycl.uie.com/virtual_seminars/5_simple_principles_to_improve_your_information_architecture">
-                      <h4 class="heading">Five Simple Principles to Improve Your Information Architecture</h4>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-         <div class="content-tabs__tab">
-            <input class="content-tabs__tab-input" type="radio" id="podcasts" name="tabcontent">
-            <label class="content-tabs__tab-label" for="podcasts">Podcasts</label>
-            <div class="content-tabs__panel">
-              <div class="content__long-form content-tabs__tab-content">
-                <ul>
-                  <li>
-                    <p class="pre-heading">Oct 2013 / The Big Web Show with Jeffrey Zeldman</p>
-                    <a href="http://www.muleradio.net/thebigwebshow/100/">
-                      <h4 class="heading">Works Well With Others</h4>
-                    </a>
-                  </li>
-                  <li>
-                    <p class="pre-heading">Dec 2013 / UX Radio</p>
-                    <a href="http://ux-radio.com/2013/12/dan-brown/">
-                      <h4 class="heading">Surviving Design Projects</h4>
-                    </a>
-                  </li>
-                  <li>
-                    <p class="pre-heading">Nov 2015 / O'Reilly</p>
-                    <a href="https://www.oreilly.com/ideas/dan-brown-on-mindsets-managing-designers-and-mastering-impostor-syndrome">
-                      <h4 class="heading">Mindsets, Managing Designers, and Mastering Imposter Syndrome</h4>
-                    </a>
-                  </li>
-                  <li>
-                    <p class="pre-heading">Apr 2015 / Modev</p>
-                    <a href="http://go.modev.com/blog/modev-presents-dan-brown">
-                      <h4 class="heading">Modev Presents: Dan Brown</h4>
-                    </a>
-                  </li>
-                  <li>
-                    <p class="pre-heading">May 2014 / UX Discovery Session</p>
-                    <a href="http://uxdiscoverysession.com/2014/05/11/ds029-dan-brown-eightshapes/">
-                      <h4 class="heading">Dan Brown of EightShapes</h4>
-                    </a>
-                  </li>
-                  <li>
-                    <p class="pre-heading">Aug 2013 / UIE Book Corner</p>
-                    <a href="https://www.uie.com/brainsparks/2013/08/27/uie-book-corner-dan-browns-designing-together/">
-                      <h4 class="heading">Dan Brown's Designing Together</h4>
-                    </a>
-                  </li>
-                  <li>
-                    <p class="pre-heading">Dec 2013 / Project Management Podcast</p>
-                    <a href="http://www.projectmanagement.com/blog/Drunken-PM/7217/">
-                      <h4 class="heading">Designing Together - Podcast Interview with Dan Brown</h4>
-                    </a>
-                  </li>
-                  <li>
-                    <p class="pre-heading">Nov 2014 / DPM Radio Interview</p>
-                    <a href="https://soundcloud.com/dpm-radio/interview-dan-brown">
-                      <h4 class="heading">Interview</h4>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="content-tabs__tab">
-            <input class="content-tabs__tab-input" type="radio" id="posters" name="tabcontent">
-            <label class="content-tabs__tab-label" for="posters">Games</label>
-            <div class="content-tabs__panel">
-              <div class="content__long-form content-tabs__tab-content">
-                <ul>
-                  <li>
-                    <p class="pre-heading">2013</p>
-                    <a href="https://www.thegamecrafter.com/games/surviving-design-projects-v2">
-                      <h4 class="heading">Surviving Design Projects: Solving Design Projects' Most Difficult Situations, with Cards</h4>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+    {% call esds.row(background="white", class="esds-row--tall-inset esds-row--narrow-inner") %}
+        <div class="escom-long-form-text">
+            <p class="escom-long-form-text__p--l">
+                Since 1994, Dan’s focused on <a href="/product-discovery.html">digital product discovery and definition</a>, user research, information architecture, content strategy and interaction design for content-heavy sites, complex web applications, and digital products. He’s worked on teams large and small to perfect collaboration and productivity. In 2006, Dan co-founded EightShapes with Nathan Curtis to serve clients in healthcare, education, not-for-profit and high-tech.
+            </p>
         </div>
-      </form>
+    {% endcall %}
+
+    <div class="escom-tabs">
+        {% call esds.row(background="white", class="esds-row--narrow-inner esds-row--no-inset") %}
+            <div class="escom-tabs__tabs">
+                <div class="escom-tabs__cell">
+                    <button class="escom-tabs__button escom-tabs__button--is-active" data-target="tab-appearances">
+                        Appearances
+                    </button>
+                </div>
+
+                <div class="escom-tabs__cell">
+                    <button class="escom-tabs__button" data-target="tab-books">
+                        Books
+                    </button>
+                </div>
+
+                <div class="escom-tabs__cell">
+                    <button class="escom-tabs__button" data-target="tab-webinars">
+                        Webinars
+                    </button>
+                </div>
+
+                <div class="escom-tabs__cell">
+                    <button class="escom-tabs__button" data-target="tab-podcasts">
+                        Podcasts
+                    </button>
+                </div>
+
+                <div class="escom-tabs__cell">
+                    <button class="escom-tabs__button" data-target="tab-games">
+                        Games
+                    </button>
+                </div>
+            </div>
+        {% endcall %}
+
+        <div id="tab-appearances" class="escom-tabs__content escom-tabs__content--narrrow escom-tabs__content--is-active">
+            {% call esds.row(background="white", class="esds-row--narrow-inner") %}
+                {{ escom.agenda(
+                    items = [
+                        {
+                            heading: "2016",
+                            topics: [
+                                escom.link_list(
+                                    class = "escom-link-list--large",
+                                    items = [
+                                        {
+                                            eyebrow: "JANUARY 20, 2016 / O'REILLY DESIGN CONFERENCE, SAN FRANCISCO",
+                                            title: "Crafting the Discovery Phase: First Steps in Effective UX Projects",
+                                            href: "http://conferences.oreilly.com/design/ux-interaction-iot-us/public/schedule/detail/45380"
+                                        }
+                                    ]
+                                )
+                            ]
+                        },
+                        {
+                            heading: "2015",
+                            topics: [
+                                escom.link_list(
+                                    class = "escom-link-list--large",
+                                    items = [
+                                        {
+                                            eyebrow: "OCT 2015 / MIDWEST UX, PITTSBURGH",
+                                            title: "Crafting the Discovery Phase: First Steps in Effective UX Projects",
+                                            href: "http://midwestux2015.sched.org/event/4CCY/crafting-the-discovery-phase-first-steps-in-effective-ux-projects"
+                                        },
+                                        {
+                                            eyebrow: "OCT 2015 / UXDC, WASHINGTON, DC",
+                                            title: "The Four Essential Activities of Design Discovery",
+                                            href: "http://user-centered.org/uxdc/slides/craftingdiscovery.brown.talk-distro.pdf"
+                                        },
+                                        {
+                                            eyebrow: "MAY 2015 / 18F SPEAKER SERIES, WASHINGTON, DC",
+                                            title: "Stop Fighting, Start Designing",
+                                            href: "https://18f.gsa.gov/2015/05/27/dan-brown-conflict-in-design/"
+                                        },
+                                        {
+                                            eyebrow: "APR 2015 / IA SUMMIT 2015, MINNEAPOLIS",
+                                            title: "Crafting the Discovery Phase: First Steps in Effective UX Projects",
+                                            href: "http://www.iasummit.org/node/450"
+                                        }
+                                    ]
+                                )
+                            ]
+                        },
+                        {
+                            heading: "2014",
+                            topics: [
+                                escom.link_list(
+                                    class = "escom-link-list--large",
+                                    items = [
+                                        {
+                                            eyebrow: "MAR 2014 / IA SUMMIT 2014, SAN DIEGO",
+                                            title: "Collaboration Workshop"
+                                        },
+                                        {
+                                            eyebrow: "FEB 2014 / INTERACTION 14, AMSTERDAM",
+                                            title: "Stop Fighting, Start Designing",
+                                            href: "https://vimeo.com/86763622"
+                                        }
+                                    ]
+                                )
+                            ]
+                        }
+                    ]
+                ) }}
+            {% endcall %}
+        </div>
+
+        <div id="tab-books" class="escom-tabs__content escom-tabs__content--narrrow">
+            {% call esds.row(background="white", class="esds-row--narrow-inner") %}
+                {{ escom.link_list(
+                    class = "escom-link-list--large",
+                    items = [
+                        {
+                            eyebrow: "2016 (FORTHCOMING) / A BOOK APART",
+                            title: "Practical Design Discovery"
+                        },
+                        {
+                            eyebrow: "2013 / NEW RIDERS",
+                            title: "Designing Together: The Collaboration and Conflict Management Handbook for Creative Professionals",
+                            href: "http://designingtogetherbook.com/"
+                        },
+                        {
+                            eyebrow: "2011 / NEW RIDERS",
+                            title: "Communicating Design: Developing Web Site Documentation for Design and Planning",
+                            href: "http://amzn.to/1Re6tnk"
+                        }
+                    ]
+                ) }}
+            {% endcall %}
+        </div>
+
+        <div id="tab-webinars" class="escom-tabs__content escom-tabs__content--narrrow">
+            {% call esds.row(background="white", class="esds-row--narrow-inner") %}
+                {{ escom.link_list(
+                    class = "escom-link-list--large",
+                    items = [
+                        {
+                            eyebrow: "DEC 2015 / O'REILLY",
+                            title: "Collaborative Design Discovery: Four Essential Techniques for Successful Product Definition",
+                            href: "http://www.oreilly.com/pub/e/3605"
+                        },
+                        {
+                            eyebrow: "UIE",
+                            title: "The Secrets of Great UX Documentation",
+                            href: "http://aycl.uie.com/virtual_seminars/the_secrets_of_great_ux_documentation"
+                        },
+                        {
+                            eyebrow: "UIE",
+                            title: "Plays Well With Others: Survival Skills for Design Teams",
+                            href: "http://aycl.uie.com/virtual_seminars/plays_well_with_others"
+                        },
+                        {
+                            eyebrow: "UIE",
+                            title: "Make Collaboration Happen, Even with Stubborn People",
+                            href: "http://aycl.uie.com/virtual_seminars/make_collaboration_happen_even_with_stubborn_people"
+                        },
+                        {
+                            eyebrow: "UIE",
+                            title: "Five Simple Principles to Improve Your Information Architecture",
+                            href: "http://aycl.uie.com/virtual_seminars/5_simple_principles_to_improve_your_information_architecture"
+                        }
+                    ]
+                ) }}
+            {% endcall %}
+        </div>
+
+        <div id="tab-podcasts" class="escom-tabs__content escom-tabs__content--narrrow">
+            {% call esds.row(background="white", class="esds-row--narrow-inner") %}
+                {{ escom.link_list(
+                    class = "escom-link-list--large",
+                    items = [
+                        {
+                            eyebrow: "OCT 2013 / THE BIG WEB SHOW WITH JEFFREY ZELDMAN",
+                            title: "Works Well With Others",
+                            href: "http://www.muleradio.net/thebigwebshow/100/"
+                        },
+                        {
+                            eyebrow: "DEC 2013 / UX RADIO",
+                            title: "Surviving Design Projects",
+                            href: "http://ux-radio.com/2013/12/dan-brown/"
+                        },
+                        {
+                            eyebrow: "NOV 2015 / O'REILLY",
+                            title: "Mindsets, Managing Designers, and Mastering Imposter Syndrome",
+                            href: "https://www.oreilly.com/ideas/dan-brown-on-mindsets-managing-designers-and-mastering-impostor-syndrome"
+                        },
+                        {
+                            eyebrow: "APR 2015 / MODEV",
+                            title: "Modev Presents: Dan Brown",
+                            href: "http://go.modev.com/blog/modev-presents-dan-brown"
+                        },
+                        {
+                            eyebrow: "MAY 2014 / UX DISCOVERY SESSION",
+                            title: "Dan Brown of EightShapes",
+                            href: "http://uxdiscoverysession.com/2014/05/11/ds029-dan-brown-eightshapes/"
+                        },
+                        {
+                            eyebrow: "AUG 2013 / UIE BOOK CORNER",
+                            title: "Dan Brown's Designing Together",
+                            href: "https://www.uie.com/brainsparks/2013/08/27/uie-book-corner-dan-browns-designing-together/"
+                        },
+                        {
+                            eyebrow: "DEC 2013 / PROJECT MANAGEMENT PODCAST",
+                            title: "Designing Together - Podcast Interview with Dan Brown",
+                            href: "http://www.projectmanagement.com/blog/Drunken-PM/7217/"
+                        },
+                        {
+                            eyebrow: "NOV 2014 / DPM RADIO INTERVIEW",
+                            title: "Interview",
+                            href: "https://soundcloud.com/dpm-radio/interview-dan-brown"
+                        }
+                    ]
+                ) }}
+            {% endcall %}
+        </div>
+
+        <div id="tab-games" class="escom-tabs__content escom-tabs__content--narrrow">
+            {% call esds.row(background="white", class="esds-row--narrow-inner") %}
+                {{ escom.link_list(
+                    class = "escom-link-list--large",
+                    items = [
+                        {
+                            eyebrow: "2013",
+                            title: "Surviving Design Projects: Solving Design Projects' Most Difficult Situations, with Cards",
+                            href: "https://www.thegamecrafter.com/games/surviving-design-projects-v2"
+                        }
+                    ]
+                ) }}
+            {% endcall %}
+        </div>
 
     </div>
-  </div>
-{% endblock %}
+{% endblock body %}
