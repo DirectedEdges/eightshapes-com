@@ -1,27 +1,37 @@
-.escom-hero {
+.escom-hero-profile {
     background-color: $esds-color-neutral-5;
 }
 
-.escom-hero__inner {
+.escom-hero-profile__inner {
     margin: 0 auto;
     max-width: 1368px;
     position: relative;
 }
 
-.escom-hero__image {
+.escom-hero-profile__image {
     display: block;
-    max-width: 100%;
+    height: 200px;
+    left: -60px;
+    position: relative;
+    width: auto;
     z-index: 5;
+
+    @media screen and (min-width: 380px) {
+        height: auto;
+        left: auto;
+        max-width: 100%;
+    }  
 }
 
-.hero__body {
+.hero-profile__body {
     left: 50%;
     padding-right: $esds-space-generic-1-x;
     position: absolute;
-    top: 30%;
+    top: 25%;
     width: 50%;
+    z-index: 10;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 380px) {
         top: 35%;
     }
 
@@ -30,7 +40,7 @@
     }
 }
 
-.escom-hero__heading {
+.escom-hero-profile__heading {
     @include esds-heading-reset;
     color: $esds-text-color-primary-on-dark;
     font-size:  $esds-font-size-heading-level-3-default;
@@ -46,7 +56,7 @@
     }
 }
 
-.escom-hero__subhead {
+.escom-hero-profile__subhead {
     @include esds-heading-reset;
     color: $esds-text-color-secondary-on-dark;
     font-size:  $esds-font-size-body-s-at-480;
