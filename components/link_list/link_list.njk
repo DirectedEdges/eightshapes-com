@@ -16,7 +16,18 @@
         {{ item.heading }}
     </li>
     {% else %}
-    <li class="escom-link-list__item">
+    <li class="escom-link-list__item{{ ' escom-link-list__item--grid' if item.image}}">
+        {% if item.image %}
+        <div class="escom-link-list__image-cell">
+            {% if item.href %}
+            <a class="escom-link-list__image-link" href="{{ item.href }}">
+            {% endif %}
+                <img class="escom-link-list__image" alt="{{ item.title }}" src="{{ item.image }}"/>
+            {% if item.href %}
+            </a>
+            {% endif %}
+        </div>
+        {% endif %}
         <dl class="escom-link-list__group">
             {% if item.eyebrow %}
             <dt class="escom-link-list__eyebrow">
@@ -25,14 +36,14 @@
             {% endif %}
             <dt class="escom-link-list__title">
                 {% if item.href %}
-                    <a class="escom-link-list__link" href="{{ item.href }}">
+                <a class="escom-link-list__link" href="{{ item.href }}">
                 {% endif %}
-                {{ item.title }}
+                    {{ item.title }}
                 {% if item.href %}
-                    </a>
+                </a>
                 {% endif %}
                 {% if item.pill %}
-                    {{ pill(class="escom-pill--brand", label=item.pill) }}
+                {{ pill(class="escom-pill--brand", label=item.pill) }}
                 {% endif %}
             </dt>
             {% if item.description %}

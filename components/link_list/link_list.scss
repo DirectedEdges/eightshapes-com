@@ -50,3 +50,23 @@
 .escom-link-list__eyebrow {
     @include esds-eyebrow-heading();
 }
+
+.escom-link-list__item--grid {
+    display: grid;
+    grid-column-gap: $esds-space-generic-1-x;
+    grid-template-columns: 20% 80%;
+}
+
+.escom-link-list__image {
+    max-width: 100%;
+}
+
+.escom-link-list__image-link {
+    border: 1px solid $esds-color-teal-71;
+    display: inline-block;
+    text-decoration: none;
+
+    &:hover {
+        box-shadow: 0 0 8px $esds-color-neutral-80;
+    }
+}
