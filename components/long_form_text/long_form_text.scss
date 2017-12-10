@@ -1,0 +1,28 @@
+.esds-long-form-text {
+    @include esds-font-reset();
+
+    h2 {
+        @include esds-level-2-heading();
+        margin: $esds-space-stack-2-x;
+    }
+
+    h3 {
+        @include esds-level-3-heading();
+        margin: $esds-space-stack-2-x;
+    }
+
+    h4 {
+        @include esds-level-4-heading();
+        margin: $esds-space-stack-2-x;
+    }
+
+    p {
+        @include esds-body-text-m();
+        margin: $esds-space-stack-1-x;
+    }
+
+    p.esds-long-form-text__lead {
+        @include esds-body-text-l();
+    }
+}
+

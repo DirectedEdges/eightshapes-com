@@ -35,12 +35,12 @@
         ) }}
     {% endcall %}
 
-    {% call esds.row(background="white", class="esds-row--tall-inset esds-row--narrow-inner") %}
-        <h2 class="esds-row__level-2-heading">What We Cover</h2>
-        <p class="esds-row__p-l">
+    {% call esds.row(background="white", class="esds-row--tall-inset esds-row--narrow-inner esds-long-form-text") %}
+        <h2>What We Cover</h2>
+        <p>
             During one or two days together, we’ll combine lecture and hands-on activities on how to plan, design, document, operate and adopt a system.
         </p>
-        <p class="esds-row__p-l">
+        <p>
             If the standard, out-of-the-box agenda suits your needs, excellent! Otherwise, we’ll work with you to tailor topics and hands-on activities to your current needs.
         </p>
     {% endcall %}
@@ -491,27 +491,16 @@
     {% endcall %}
 
     {% call esds.row(background="light", class="esds-row--tall-inset esds-row--narrow-inner") %}
-        <h2 class="esds-row__level-2-heading">How We Prepare</h2>
-        <p class="esds-row__p-lead">
-            Once we sign an agreement, we’ll meet three times over one to two weeks. 
-        </p>
-        <p class="esds-row__p-lead">
-            Over two of those sessions, we’ll set objectives, agenda and logistics. The third sessions provides for a quick, hour-long tour for your team to immerse us in your relevant products and systems already in use.
-        </p>
-    {% endcall %}
-
-    {% call esds.row(background="light", class="esds-row--no-inset") %}
-        <hr class="esds-row__horizontal-rule" />
-    {% endcall %}
-
-    {% call esds.row(background="light", class="esds-row--tall-inset esds-row--no-inset-bottom esds-row--narrow-inner") %}
-        <h3 class="esds-row__lead-heading">Workshop Customization</h3>
-        <p class="esds-row__p-m">
-            While we’ll start from preexisting material used for at public conferences, we can also customize materials to focus conversation with optional additional activities billed hourly. These activities can include:
-        </p>
-    {% endcall %}
-
-    {% call esds.row(background="light", class="esds-row--tall-inset") %}
+        <div class="esds-long-form-text">
+            <h2>How We Prepare</h2>
+            <p>
+                Once we sign an agreement, we’ll meet three times over one to two weeks. Over two of those sessions, we’ll set objectives, agenda and logistics. The third sessions provides for a quick, hour-long tour for your team to immerse us in your relevant products and systems already in use.
+            </p>
+            <h3>Workshop Customization</h3>
+            <p>
+                While we’ll start from preexisting material used for at public conferences, we can also customize materials to focus conversation with optional additional activities billed hourly. These activities can include:
+            </p>
+        </div>
         {{ esds.tiles(
             container = "white",
             class= "esds-tiles--secondary",
