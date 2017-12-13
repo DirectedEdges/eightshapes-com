@@ -1,0 +1,33 @@
+.escom-dark-header {
+    
+    @media screen and (min-width: $escom-breakpoints-width-768) {
+        padding-top: 100px;
+    }
+}
+
+.escom-dark-header__inner {
+    text-align: center;
+}
+
+.escom-dark-header__icon {
+    fill: $esds-color-white;
+    height: 30px;
+    margin: $esds-space-stack-2-x;
+    width: 200px;
+
+    @media screen and (min-width: $escom-breakpoints-width-768) {
+        height: 40px;
+    }
+}
+
+.escom-dark-header__heading {
+    @include esds-level-1-heading();
+    margin: $esds-space-stack-2-x;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.escom-dark-header__deck {
+    @include esds-body-text-l();
+    text-align: left;
+}

@@ -1,0 +1,18 @@
+{% macro cta(
+    class=false,
+    heading="Ready?",
+    deck=false,
+    button_text=false
+) %}
+    <div class="escom-cta esds-row esds-row--tall-inset esds-row--narrow-inner esds-container--brand{{ ' ' + class if class }}">
+        <div class="esds-row__inner escom-cta__inner">
+            <h1 class="escom-cta__heading">{{heading}}</h1>
+            {% if deck %}
+            <p class="escom-cta__deck">{{ deck }}</p>
+            {% endif %}
+            {% if button_text %}
+            {{ esds.button(text=button_text, class="esds-button--secondary esds-button--large") }}
+            {% endif %}
+        </div>
+    </div>
+{% endmacro %}

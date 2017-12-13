@@ -1,0 +1,34 @@
+.escom-row {
+    margin: $esds-space-stack-2-x;
+}
+
+.escom-row__inner {
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+.escom-row__heading {
+    @include esds-text-crop();
+    @include esds-level-2-heading();
+    margin: $esds-space-stack-2-x;
+    text-align: center;
+}
+
+.escom-row__heading--brand {
+
+    .esds-container--white &,
+    .esds-container--light &,
+    .esds-container--dark &,
+    .esds-container--black & {
+        color: $esds-text-color-brand;
+    }
+}
+
+.escom-row__deck {
+    @include esds-body-text-l();
+    margin: $esds-space-stack-2-x;
+
+    &:last-child {
+        margin: 0;
+    }
+}

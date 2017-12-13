@@ -575,11 +575,6 @@
         ) }}
     {% endcall %}
 
-    {% call esds.row(background="brand", class="esds-row--tall-inset esds-row--narrow-inner") %}
-        <div class="escom-long-form-text escom-long-form-text--align-center">
-            <h2 class="escom-long-form-text__h2--align-center">Ready?</h2>
-            <p class="escom-long-form-text__p--l escom-long-form-text__p--align-center">We’re ready to energize your systems effort, whether you’re just getting started or working with version 2.0. Are you ready?</p> 
-            {{ esds.button(text="LET'S TALK", class="esds-button--large esds-button--secondary") }}
-        </div>
-    {% endcall %}
+    {{ escom.cta(heading="Ready?", deck="We’re ready to energize your systems effort, whether you’re just getting started or working with version 2.0. Are you ready?", button_text="LET'S TALK") }}
+
 {% endblock body %}
