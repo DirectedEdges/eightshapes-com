@@ -11,12 +11,17 @@
 
 .escom-cta__heading {
     @include esds-level-2-heading();
+    @include esds-text-crop();
     margin: $esds-space-stack-1-x;
     text-align: center;
+
+    @media screen and (min-width: $escom-breakpoints-width-768) {
+    }
 }
 
 .escom-cta__deck {
     @include esds-body-text-l();
+    @include esds-text-crop();
     margin: 0 auto $esds-space-generic-2-x;
     max-width: 700px;
     text-align: center;

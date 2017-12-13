@@ -1,5 +1,5 @@
 .escom-dark-header {
-    
+
     @media screen and (min-width: $escom-breakpoints-width-768) {
         padding-top: 100px;
     }
@@ -22,12 +22,18 @@
 
 .escom-dark-header__heading {
     @include esds-level-1-heading();
+    @include esds-text-crop();
     margin: $esds-space-stack-2-x;
     text-align: center;
     text-transform: uppercase;
+
+    @media screen and (min-width: $escom-breakpoints-width-768) {
+        margin: $esds-space-stack-2-x;
+    }
 }
 
 .escom-dark-header__deck {
     @include esds-body-text-l();
+    @include esds-text-crop();
     text-align: left;
 }

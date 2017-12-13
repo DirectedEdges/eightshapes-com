@@ -42,10 +42,11 @@
 
 .escom-hero-profile__heading {
     @include esds-heading-reset;
+    @include esds-text-crop();
     color: $esds-text-color-primary-on-dark;
     font-size:  $esds-font-size-heading-level-3-default;
     font-weight: $esds-font-weight-bold;
-    margin: 0;
+    margin: $esds-space-stack-1-x;
 
     @media screen and (min-width: 768px) {
         font-size:  $esds-font-size-heading-level-1-at-768;
