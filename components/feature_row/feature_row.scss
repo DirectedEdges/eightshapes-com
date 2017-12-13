@@ -1,20 +1,20 @@
-.escom-row {
+.escom-feature-row {
     margin: $esds-space-stack-2-x;
 }
 
-.escom-row__inner {
+.escom-feature-row__inner {
     margin: 0 auto;
     max-width: 940px;
 }
 
-.escom-row__heading {
+.escom-feature-row__heading {
     @include esds-text-crop();
     @include esds-level-2-heading();
     margin: $esds-space-stack-2-x;
     text-align: center;
 }
 
-.escom-row__heading--brand {
+.escom-feature-row__heading--brand {
 
     .esds-container--white &,
     .esds-container--light &,
@@ -24,7 +24,7 @@
     }
 }
 
-.escom-row__deck {
+.escom-feature-row__deck {
     @include esds-body-text-l();
     margin: $esds-space-stack-2-x;
 
