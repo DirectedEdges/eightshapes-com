@@ -1747,7 +1747,12 @@ body {
   min-height: 200px; }
   @media screen and (min-width: 1000px) {
     .escom-fifty-fifty__image {
+      -ms-grid-column: 1;
       min-height: 500px; } }
+
+@media screen and (min-width: 1000px) {
+  .escom-fifty-fifty__body {
+    -ms-grid-column: 2; } }
 
 .escom-fifty-fifty__content {
   margin: 0 auto;
@@ -1970,11 +1975,20 @@ body {
 
 @media screen and (min-width: 500px) {
   .escom-card-grid {
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 16px;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr; } }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -8px; }
+    @supports (grid-column-gap: 0) {
+      .escom-card-grid {
+        display: -ms-grid;
+        display: grid;
+        grid-gap: 16px;
+        -ms-grid-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        margin: 0; } } }
 
 @media screen and (min-width: 768px) {
   .escom-card-grid {
@@ -1990,15 +2004,36 @@ body {
   .escom-card-grid .esds-card {
     margin: 0; } }
 
+@supports not (grid-column-gap: 0) {
+  @media screen and (min-width: 500px) {
+    .escom-card-grid .esds-card {
+      margin: 0 8px 16px;
+      width: calc(50% - 16px) !important; } }
+  @media screen and (min-width: 768px) {
+    .escom-card-grid .esds-card {
+      width: calc(33.333% - 16px) !important; } }
+  @media screen and (min-width: 1200px) {
+    .escom-card-grid .esds-card {
+      width: calc(25% - 16px) !important; } } }
+
 .escom-cta .esds-button {
   display: inline-block; }
 
 .escom-logo-grid {
-  display: -ms-grid;
-  display: grid;
-  grid-row-gap: 16px;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr); }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -4px; }
+  @supports (grid-column-gap: 0) {
+    .escom-logo-grid {
+      display: -ms-grid;
+      display: grid;
+      grid-row-gap: 16px;
+      -ms-grid-columns: (1fr)[3];
+          grid-template-columns: repeat(3, 1fr);
+      margin: 0; } }
   @media screen and (min-width: 768px) {
     .escom-logo-grid {
       -ms-grid-columns: (1fr)[4];
@@ -2011,3 +2046,13 @@ body {
 .logo-grid__image {
   display: block;
   max-width: 100%; }
+  @supports not (grid-column-gap: 0) {
+    .logo-grid__image {
+      margin: 0 4px 8px;
+      width: calc(33.333% - 8px) !important; }
+      @media screen and (min-width: 768px) {
+        .logo-grid__image {
+          width: calc(25% - 8px) !important; } }
+      @media screen and (min-width: 1200px) {
+        .logo-grid__image {
+          width: calc(16.666% - 8px) !important; } } }

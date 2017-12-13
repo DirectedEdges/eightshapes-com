@@ -15,9 +15,17 @@
     min-height: 200px;
 
     @media screen and (min-width: 1000px) {
+        -ms-grid-column: 1;
         min-height: 500px;
     }
 }
+
+.escom-fifty-fifty__body {
+    
+    @media screen and (min-width: 1000px) {
+        -ms-grid-column: 2;
+     }
+ }
 
 .escom-fifty-fifty__content {
     margin: 0 auto;
