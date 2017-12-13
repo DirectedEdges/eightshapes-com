@@ -2,16 +2,17 @@
     class=false,
     heading="Ready?",
     deck=false,
-    button_text=false
+    button_text=false,
+    button_href=false
 ) %}
     <div class="escom-cta esds-row esds-row--tall-inset esds-row--narrow-inner esds-container--brand{{ ' ' + class if class }}">
-        <div class="esds-row__inner escom-cta__inner">
-            <h1 class="escom-cta__heading">{{heading}}</h1>
+        <div class="escom-promotional-text escom-promotional-text--center-all">
+            <h2>{{heading}}</h2>
             {% if deck %}
-            <p class="escom-cta__deck">{{ deck }}</p>
+            <p>{{ deck }}</p>
             {% endif %}
             {% if button_text %}
-            {{ esds.button(text=button_text, class="esds-button--secondary esds-button--large") }}
+            {{ esds.button(text=button_text, class="esds-button--secondary esds-button--large", element="a", href=button_href) }}
             {% endif %}
         </div>
     </div>

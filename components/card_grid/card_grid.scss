@@ -7,6 +7,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    @media screen and (min-width: $escom-breakpoints-width-768) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     @media screen and (min-width: $escom-breakpoints-width-1200) {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }

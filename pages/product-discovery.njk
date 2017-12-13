@@ -30,13 +30,11 @@
     {% endcall %}
 
     {% call esds.row(background="light", class="esds-row--tall-inset") %}
-        <div class="escom-feature-row">
-            <div class="escom-feature-row__inner">
-                <h2 class="escom-feature-row__heading escom-feature-row__heading--brand">Design Discovery Projects</h2>
-                <p class="escom-feature-row__deck">
-                    Drawing on time-tested design techniques, EightShapes crafts a Discovery process that emphasizes exploration, iteration, and validation.
-                </p>
-            </div>
+        <div class="escom-promotional-text">
+            <h2>Design Discovery Projects</h2>
+            <p>
+                Drawing on time-tested design techniques, EightShapes crafts a Discovery process that emphasizes exploration, iteration, and validation.
+            </p>
         </div>
 
         {{ esds.tiles(
@@ -64,13 +62,11 @@
     {% endcall %}
 
     {% call esds.row(background="white", class="esds-row--tall-inset") %}
-        <div class="escom-feature-row">
-            <div class="escom-feature-row__inner">
-                <h2 class="escom-feature-row__heading escom-feature-row__heading--brand">Baseline Research</h2>
-                <p class="escom-feature-row__deck">
-                    Baseline research projects are quick studies to inject targeted user insights into your design and development processes.
-                </p>
-            </div>
+        <div class="escom-promotional-text">
+            <h2>Baseline Research</h2>
+            <p>
+                Baseline research projects are quick studies to inject targeted user insights into your design and development processes.
+            </p>
         </div>
 
         {{ esds.tiles(
@@ -94,11 +90,9 @@
     {% endcall %}
 
     {% call esds.row(background_image="/images/workshop-cutup.png", class="esds-row--tall-inset") %}
-        <div class="escom-feature-row">
-            <div class="escom-feature-row__inner">
-                <h2 class="escom-feature-row__heading">Workshops</h2>
-                <p class="escom-feature-row__deck">These half- or full-day workshops draw from design thinking best practices, and can be customized to fit anywhere in your development lifecycle.</p>
-            </div>
+        <div class="escom-promotional-text">
+            <h2>Workshops</h2>
+            <p>These half- or full-day workshops draw from design thinking best practices, and can be customized to fit anywhere in your development lifecycle.</p>
         </div>
         {{ esds.tiles(
             class="esds-tiles--secondary",
@@ -124,13 +118,11 @@
     {% endcall %}
 
     {% call esds.row(background="white", class="esds-row--tall-inset") %}
-        <div class="escom-feature-row">
-            <div class="escom-feature-row__inner">
-                <h2 class="escom-feature-row__heading escom-feature-row__heading--brand">How We’ve Contributed</h2>
-                <p class="escom-feature-row__deck">
-                    EightShapes has contributed three books, a documentation templating system, and a prototyping framework, not to mention countless workshops and articles.
-                </p>
-            </div>
+        <div class="escom-promotional-text">
+            <h2>How We’ve Contributed</h2>
+            <p>
+                EightShapes has contributed three books, a documentation templating system, and a prototyping framework, not to mention countless workshops and articles.
+            </p>
         </div>
 
         <div class="escom-card-grid">
@@ -205,6 +197,6 @@
         </div>
     {% endcall %}
 
-    {{ escom.cta(heading="Ready?", deck="Does your product need a vision? Does your UX need a concept? Does your team need design direction?", button_text="LET'S TALK") }}
+    {{ escom.cta(heading="Ready?", deck="Does your product need a vision? Does your UX need a concept? Does your team need design direction?", button_text="LET'S TALK", href="mailto:info@eightshapes.com") }}
 
 {% endblock %}
