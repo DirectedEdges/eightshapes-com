@@ -1,0 +1,18 @@
+.escom-logo-grid {
+    display: grid;
+    grid-row-gap: $esds-space-generic-1-x;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media screen and (min-width: $escom-breakpoints-width-768) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media screen and (min-width: $escom-breakpoints-width-1200) {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.logo-grid__image {
+    display: block;
+    max-width: 100%;
+}

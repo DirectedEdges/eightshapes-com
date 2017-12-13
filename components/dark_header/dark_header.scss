@@ -28,12 +28,27 @@
     text-transform: uppercase;
 
     @media screen and (min-width: $escom-breakpoints-width-768) {
-        margin: $esds-space-stack-2-x;
+        margin: $esds-space-stack-4-x;
     }
 }
 
 .escom-dark-header__deck {
     @include esds-body-text-l();
     @include esds-text-crop();
+    margin: $esds-space-stack-2-x;
     text-align: left;
+
+    &:last-child {
+        margin: 0;
+    }
+
+    a {
+        color: $esds-color-orange-91;
+        text-decoration: none;
+
+        &:hover {
+            color: $esds-color-orange-82;
+            text-decoration: underline;
+        }
+    }
 }

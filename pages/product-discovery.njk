@@ -2,7 +2,7 @@
 
 {% block body %}
 
-    {{ escom.dark_header(logo=true, heading="Product Discovery", deck="We align your team around a shared product vision through design principles, customer insights, & prototyped concepts.") }}
+    {{ escom.dark_header(logo=true, heading="Product Discovery", decks=["We align your team around a shared product vision through design principles, customer insights, & prototyped concepts."]) }}
 
     {% call escom.fifty_fifty(image="/images/product-discovery-photo.jpg") %}
         <div class="escom-long-form-text">
@@ -101,17 +101,20 @@
                 {
                     heading: "Product Design Studio",
                     description: "Translate a product vision into concrete interface concepts.",
-                    property: "From 1 hr to full day"
+                    property: "From 1 hr to full day",
+                    href: "http://eightshapes.com/workshop-design-studio.html"
                 },
                 {
                     heading: "Experience Visioning",
                     description: "Align your team around design principles for the product experience.",
-                    property: "Up to two days"
+                    property: "Up to two days",
+                    href: "http://eightshapes.com/workshop-visioning.html"
                 },
                 {
                     heading: "User Analysis",
                     description: "Extract insights from user research.",
-                    property: "Up to ½ day"
+                    property: "Up to ½ day",
+                    href: "http://eightshapes.com/workshop-user-analysis.html"
                 }
             ]
         ) }}
