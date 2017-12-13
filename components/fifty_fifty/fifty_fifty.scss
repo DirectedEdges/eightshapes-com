@@ -24,7 +24,11 @@
     max-width: 600px;
     padding: $esds-space-generic-2-x $esds-space-generic-1-x;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: $escom-breakpoints-width-768) {
+        padding: $esds-space-inset-2-x;
+    }
+
+    @media screen and (min-width: $escom-breakpoints-width-1200) {
         margin: 0;
         padding: $esds-space-inset-4-x;
     }
