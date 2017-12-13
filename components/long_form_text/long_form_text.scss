@@ -13,10 +13,6 @@
         &:last-child {
             margin: 0;
         }
-
-        &.escom-long-form-text__h1--align-center {
-            text-align: center;
-        }
     }
 
     * + h1 {
@@ -30,10 +26,6 @@
 
         &:last-child {
             margin: 0;
-        }
-
-        &.escom-long-form-text__h2--align-center {
-            text-align: center;
         }
     }
 
@@ -49,10 +41,6 @@
         &:last-child {
             margin: 0;
         }
-
-        &.escom-long-form-text__h3--align-center {
-            text-align: center;
-        }
     }
 
     * + h3 {
@@ -66,10 +54,6 @@
 
         &:last-child {
             margin: 0;
-        }
-
-        &.escom-long-form-text__h4--align-center {
-            text-align: center;
         }
     }
 
@@ -98,10 +82,6 @@
             @include esds-body-text-s();
             margin: $esds-space-stack-half-x;
         }
-
-        &.escom-long-form-text__p--align-center {
-            text-align: center;
-        }
     }
 
     a {
@@ -118,8 +98,4 @@
             margin: 0;
         }
     }
-}
-
-.escom-long-form-text--align-center {
-    text-align: center;
 }

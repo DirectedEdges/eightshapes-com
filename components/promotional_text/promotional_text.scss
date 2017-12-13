@@ -6,6 +6,17 @@
         margin-bottom: 0;
     }
 
+    h1 {
+        @include esds-text-crop();
+        @include esds-level-1-heading();
+        margin: $esds-space-stack-2-x;
+        text-align: center;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
     h2 {
         @include esds-text-crop();
         @include esds-level-2-heading();
@@ -18,6 +29,17 @@
         .esds-container--black & {
             color: $esds-text-color-brand;
         }
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    h3 {
+        @include esds-text-crop();
+        @include esds-level-3-heading();
+        margin: $esds-space-stack-2-x;
+        text-align: center;
 
         &:last-child {
             margin: 0;

@@ -1085,8 +1085,6 @@ body {
         font-size: 63.968px; } }
     .escom-long-form-text h1:last-child {
       margin: 0; }
-    .escom-long-form-text h1.escom-long-form-text__h1--align-center {
-      text-align: center; }
   .escom-long-form-text * + h1 {
     margin-top: 64px; }
   .escom-long-form-text h2 {
@@ -1139,8 +1137,6 @@ body {
         font-size: 45.232px; } }
     .escom-long-form-text h2:last-child {
       margin: 0; }
-    .escom-long-form-text h2.escom-long-form-text__h2--align-center {
-      text-align: center; }
   .escom-long-form-text * + h2 {
     margin-top: 64px; }
   .escom-long-form-text h3 {
@@ -1193,8 +1189,6 @@ body {
         font-size: 32px; } }
     .escom-long-form-text h3:last-child {
       margin: 0; }
-    .escom-long-form-text h3.escom-long-form-text__h3--align-center {
-      text-align: center; }
   .escom-long-form-text * + h3 {
     margin-top: 64px; }
   .escom-long-form-text h4 {
@@ -1247,8 +1241,6 @@ body {
         font-size: 22.624px; } }
     .escom-long-form-text h4:last-child {
       margin: 0; }
-    .escom-long-form-text h4.escom-long-form-text__h4--align-center {
-      text-align: center; }
   .escom-long-form-text * + h4 {
     margin-top: 32px; }
   .escom-long-form-text p {
@@ -1363,8 +1355,6 @@ body {
       @media screen and (min-width: 1000px) {
         .escom-long-form-text p.escom-long-form-text__p--s {
           font-size: 12px; } }
-    .escom-long-form-text p.escom-long-form-text__p--align-center {
-      text-align: center; }
   .esds-container--white .escom-long-form-text a {
     color: #068194; }
   .esds-container--light .escom-long-form-text a {
@@ -1440,9 +1430,6 @@ body {
     .escom-long-form-text ul:last-child,
     .escom-long-form-text ol:last-child {
       margin: 0; }
-
-.escom-long-form-text--align-center {
-  text-align: center; }
 
 .escom-hero-profile {
   background-color: #0D0D0D; }
@@ -1767,6 +1754,57 @@ body {
   max-width: 940px; }
   .escom-promotional-text:last-child {
     margin-bottom: 0; }
+  .escom-promotional-text h1 {
+    line-height: 1.3;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.3;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+    text-shadow: none;
+    text-transform: none;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 33.184px;
+    font-weight: 700;
+    margin: 0 0 32px;
+    text-align: center; }
+    .escom-promotional-text h1::before, .escom-promotional-text h1::after {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0; }
+    .escom-promotional-text h1::before {
+      margin-bottom: calc(-0.31829em + 0px); }
+    .escom-promotional-text h1::after {
+      margin-top: calc(-0.26951em + 0px); }
+    .esds-container--white .escom-promotional-text h1 {
+      color: #262626; }
+    .esds-container--light .escom-promotional-text h1 {
+      color: #262626; }
+    .esds-container--dark .escom-promotional-text h1 {
+      color: #FFFFFF; }
+    .esds-container--black .escom-promotional-text h1 {
+      color: #F3F1F1; }
+    .esds-container--brand .escom-promotional-text h1 {
+      color: #FFFFFF; }
+    .esds-container--white-opacity-85 .escom-promotional-text h1 {
+      color: #262626; }
+    @media screen and (min-width: 480px) {
+      .escom-promotional-text h1 {
+        font-size: 39.056px; } }
+    @media screen and (min-width: 768px) {
+      .escom-promotional-text h1 {
+        font-size: 50.512px; } }
+    @media screen and (min-width: 1000px) {
+      .escom-promotional-text h1 {
+        font-size: 63.968px; } }
+    .escom-promotional-text h1:last-child {
+      margin: 0; }
   .escom-promotional-text h2 {
     line-height: 1.3;
     font-family: "Lato", sans-serif;
@@ -1822,6 +1860,57 @@ body {
     .esds-container--black .escom-promotional-text h2 {
       color: #E76822; }
     .escom-promotional-text h2:last-child {
+      margin: 0; }
+  .escom-promotional-text h3 {
+    line-height: 1.3;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.3;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+    text-shadow: none;
+    text-transform: none;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 23.04px;
+    font-weight: 400;
+    margin: 0 0 32px;
+    text-align: center; }
+    .escom-promotional-text h3::before, .escom-promotional-text h3::after {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0; }
+    .escom-promotional-text h3::before {
+      margin-bottom: calc(-0.31829em + 0px); }
+    .escom-promotional-text h3::after {
+      margin-top: calc(-0.26951em + 0px); }
+    .esds-container--white .escom-promotional-text h3 {
+      color: #262626; }
+    .esds-container--light .escom-promotional-text h3 {
+      color: #262626; }
+    .esds-container--dark .escom-promotional-text h3 {
+      color: #FFFFFF; }
+    .esds-container--black .escom-promotional-text h3 {
+      color: #F3F1F1; }
+    .esds-container--brand .escom-promotional-text h3 {
+      color: #FFFFFF; }
+    .esds-container--white-opacity-85 .escom-promotional-text h3 {
+      color: #262626; }
+    @media screen and (min-width: 480px) {
+      .escom-promotional-text h3 {
+        font-size: 25.008px; } }
+    @media screen and (min-width: 768px) {
+      .escom-promotional-text h3 {
+        font-size: 28.432px; } }
+    @media screen and (min-width: 1000px) {
+      .escom-promotional-text h3 {
+        font-size: 32px; } }
+    .escom-promotional-text h3:last-child {
       margin: 0; }
   .escom-promotional-text p {
     font-family: "Lato", sans-serif;
