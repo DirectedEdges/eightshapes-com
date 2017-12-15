@@ -1985,6 +1985,7 @@ body {
       .escom-card-grid {
         display: -ms-grid;
         display: grid;
+        grid-auto-rows: 1fr;
         grid-gap: 16px;
         -ms-grid-columns: 1fr 1fr;
             grid-template-columns: 1fr 1fr;
