@@ -2,6 +2,7 @@
     align-items: flex-end;
     display: flex;
     justify-content: center;
+    padding: $esds-space-stack-1-x;
 }
 
 .escom-tabs__cell {
@@ -21,7 +22,6 @@
     color: $esds-color-teal-71;
     cursor: pointer;
     display: block;
-    font: inherit;
     font-size: $esds-font-size-body-s-default;
     margin: 0;
     outline: 0;

@@ -1,0 +1,17 @@
+{% macro dark_header(
+    class=false,
+    heading="Dark Header Heading",
+    decks=false
+) %}
+    <div class="escom-dark-header esds-row esds-row--tall-inset esds-row--narrow-inner esds-container--dark{{ ' ' + class if class }}">
+        <div class="esds-row__inner escom-dark-header__inner">
+            {{ esds.icon(name="eightshapes-logo", class="escom-dark-header__icon") }}
+            <h1 class="escom-dark-header__heading">{{heading}}</h1>
+            {% if decks %}
+            {% for deck in decks %}
+            <p class="escom-dark-header__deck">{{ deck | safe }}</p>
+            {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+{% endmacro %}

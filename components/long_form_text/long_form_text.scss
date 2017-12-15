@@ -1,0 +1,101 @@
+.escom-long-form-text {
+    margin: $esds-space-stack-2-x;
+
+    &:last-child {
+        margin: 0;
+    }
+
+    h1 {
+        @include esds-text-crop();
+        @include esds-level-1-heading();
+        margin: $esds-space-stack-2-x;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    * + h1 {
+        margin-top: $esds-space-generic-4-x;
+    }
+
+    h2 {
+        @include esds-text-crop();
+        @include esds-level-2-heading();
+        margin: $esds-space-stack-2-x;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    * + h2 {
+        margin-top: $esds-space-generic-4-x;
+    }
+
+    h3 {
+        @include esds-text-crop();
+        @include esds-level-3-heading();
+        margin: $esds-space-stack-2-x;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    * + h3 {
+        margin-top: $esds-space-generic-4-x;
+    }
+
+    h4 {
+        @include esds-text-crop();
+        @include esds-level-4-heading();
+        margin: $esds-space-stack-2-x;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    * + h4 {
+        margin-top: $esds-space-generic-2-x;
+    }
+
+    p {
+        @include esds-body-text-m();
+        margin: $esds-space-stack-1-x;
+
+        &:last-child {
+            margin: 0;
+        }
+
+        &.escom-long-form-text__p--l {
+            @include esds-body-text-l();
+            margin: $esds-space-stack-2-x;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        &.escom-long-form-text__p--s {
+            @include esds-body-text-s();
+            margin: $esds-space-stack-half-x;
+        }
+    }
+
+    a {
+        @include esds-link();
+    }
+
+    ul,
+    ol {
+        @include esds-text-crop();
+        @include esds-body-text-l();
+        margin: $esds-space-stack-2-x;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}

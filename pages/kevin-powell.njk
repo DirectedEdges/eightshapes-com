@@ -1,12 +1,16 @@
-{% extends 'templates/legacy/bio.njk' %}
+{% extends 'templates/base.njk' %}
+{% block body %}
+    {{ esds.breadcrumb(href="/") }}
+    
+    {{ escom.hero_profile(bio=profiles[4]) }}
 
-{% block bio_content %}
-  {{ legacy_components.bio_hero({ index: 4}) }}
-  <div class="container-fluid">
-    <div class="container-fluid-inner content__long-form">
-      <p class="lead">
-        Kevin is an interaction designer with a passion for rendering modern designs through the latest production techniques. Kevin consults with in-house dev teams to implement design systems and fine-tune their prototyping and production environments. His presentations on User Experience and CSS precompilers garnered enough views in 2013 to place him in the top 5% of most-viewed presentations on slideshare.net.
-      </p>
-    </div>
-  </div>
-{% endblock %}
+    {% call esds.row(background="white", class="esds-row--tall-inset esds-row--narrow-inner") %}
+        <div class="escom-layout__content--narrow">
+            <div class="escom-long-form-text">
+                <p class="escom-long-form-text__p--l">
+                    Kevin is an interaction designer with a passion for rendering modern designs through the latest production techniques. Kevin consults with in-house dev teams to implement design systems and fine-tune their prototyping and production environments. His presentations on User Experience and CSS precompilers garnered enough views in 2013 to place him in the top 5% of most-viewed presentations on slideshare.net.
+                </p>
+            </div>
+        </div>
+    {% endcall %}
+{% endblock body %}

@@ -1,5 +1,5 @@
 {% import 'esds-library/components/esds.njk' as esds %}
-{% import 'components/escom.njk' as escom %}
+{% import 'components/escom.njk' as escom with context %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -22,6 +22,9 @@
     <body>
         {% block body %}
         {% endblock %}
+        {% call esds.row(background="dark", class="esds-row--narrow-inner") %}
+            {{ escom.site_footer() }}
+        {% endcall %}
         {# jQuery pulled in to support legacy code concatenated into escom.js #}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         {# Remove when legacy JS that depends on jquery is gone #}
