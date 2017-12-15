@@ -1,8 +1,10 @@
 // New ESDS-based system
+@import 'shared/esds_library_overrides';
 @import 'esds-library/tokens/tokens';
 @import 'esds-library/styles/shared/util';
 @import 'esds-library/styles/shared/color';
 @import 'esds-library/styles/shared/typography';
+@import 'shared/esds_library_enhancements';
 @import 'tokens/tokens';
 @import 'base/layout';
 @import 'components/table/table';

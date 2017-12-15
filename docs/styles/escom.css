@@ -379,6 +379,10 @@
     .esds-typography-sink--body-text-s {
       font-size: 12px; } }
 
+.esds-card__link {
+  display: block;
+  height: 100%; }
+
 body {
   background-color: #262626;
   margin: 0;
