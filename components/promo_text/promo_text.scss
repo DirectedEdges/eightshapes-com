@@ -1,0 +1,65 @@
+.escom-promo-text {
+    margin: 0 auto $esds-space-generic-2-x;
+    max-width: 940px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    h1 {
+        @include esds-text-crop();
+        @include esds-level-1-heading();
+        margin: $esds-space-stack-2-x;
+        text-align: center;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    h2 {
+        @include esds-text-crop();
+        @include esds-level-2-heading();
+        color: $esds-text-color-brand;
+        margin: $esds-space-stack-2-x;
+        text-align: center;
+
+        .esds-container--white &,
+        .esds-container--light &,
+        .esds-container--black & {
+            color: $esds-text-color-brand;
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    h3 {
+        @include esds-text-crop();
+        @include esds-level-3-heading();
+        margin: $esds-space-stack-2-x;
+        text-align: center;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    p {
+        @include esds-body-text-l();
+        margin: $esds-space-stack-2-x;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+
+.escom-promo-text--center-all {
+    text-align: center;
+
+    p {
+        text-align: center;
+    }
+}

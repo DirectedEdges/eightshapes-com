@@ -1,0 +1,79 @@
+.escom-hero-profile {
+    background-color: $esds-color-neutral-5;
+}
+
+.escom-hero-profile__inner {
+    margin: 0 auto;
+    max-width: 1368px;
+    position: relative;
+}
+
+.escom-hero-profile__image {
+    display: block;
+    height: 200px;
+    left: -60px;
+    position: relative;
+    width: auto;
+    z-index: 5;
+
+    @media screen and (min-width: 380px) {
+        height: auto;
+        left: auto;
+        max-width: 100%;
+    }  
+}
+
+.hero-profile__body {
+    left: 50%;
+    padding-right: $esds-space-generic-1-x;
+    position: absolute;
+    top: 25%;
+    width: 50%;
+    z-index: 10;
+
+    @media screen and (min-width: 380px) {
+        top: 35%;
+    }
+
+    @media screen and (min-width: 1000px) {
+        top: 40%;
+    }
+}
+
+.escom-hero-profile__heading {
+    @include esds-heading-reset;
+    @include esds-text-crop();
+    color: $esds-text-color-primary-on-dark;
+    font-size:  $esds-font-size-heading-level-3-default;
+    font-weight: $esds-font-weight-bold;
+    margin: $esds-space-stack-1-x;
+
+    @media screen and (min-width: 768px) {
+        font-size:  $esds-font-size-heading-level-1-at-768;
+    }
+
+    @media screen and (min-width: 1000px) {
+        font-size:  $esds-font-size-heading-level-1-at-1000;
+    }
+}
+
+.escom-hero-profile__subhead {
+    @include esds-heading-reset;
+    color: $esds-text-color-secondary-on-dark;
+    font-size:  $esds-font-size-body-s-at-480;
+    font-weight: $esds-font-weight-bold;
+    margin: 0;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 480px) {
+        font-size:  $esds-font-size-body-m-at-480;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size:  $esds-font-size-heading-level-4-at-768;
+    }
+
+    @media screen and (min-width: 1000px) {
+        font-size:  $esds-font-size-heading-level-4-at-1000;
+    }
+}

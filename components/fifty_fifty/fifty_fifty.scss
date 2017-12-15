@@ -1,0 +1,43 @@
+.escom-fifty-fifty {
+
+    @media screen and (min-width: 1000px) {
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.escom-fifty-fifty__image {
+    background-color: $esds-background-color-light;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+
+    @media screen and (min-width: 1000px) {
+        -ms-grid-column: 1;
+        min-height: 500px;
+    }
+}
+
+.escom-fifty-fifty__body {
+    
+    @media screen and (min-width: 1000px) {
+        -ms-grid-column: 2;
+     }
+ }
+
+.escom-fifty-fifty__content {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: $esds-space-generic-2-x $esds-space-generic-1-x;
+
+    @media screen and (min-width: $escom-breakpoints-width-768) {
+        padding: $esds-space-inset-2-x;
+    }
+
+    @media screen and (min-width: $escom-breakpoints-width-1200) {
+        margin: 0;
+        padding: $esds-space-generic-2-x $esds-space-generic-4-x;
+    }
+}

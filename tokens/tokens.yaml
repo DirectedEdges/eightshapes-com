@@ -3,3 +3,13 @@ breakpoints:
   width-500: 500px
   width-768: 768px
   width-1200: 1200px
+color:
+  blue:
+    twitter: "#08D0EC"
+    linkedin: "#0174BD"
+  gray:
+    medium: "#D2D3D5"
+space:
+  container:
+    default: 1200px
+    narrow: 700px

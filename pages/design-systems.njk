@@ -1,281 +1,292 @@
+{% extends 'templates/base.njk' %}
 
-{% extends 'templates/legacy/default.njk' %}
+{% block body %}
 
-{% block content %}
+    {{ escom.dark_header(logo=true, heading="DESIGN SYSTEMS", decks=[
+        "Make your experience <strong>cohesive</strong> and your teams <strong>efficient</strong> with a design system of parts and practices to serve your product teams.",
+        "It’s not <i>just</i> a living style guide. Modern organizations invest in systems so they can deliver innovative and beautiful products, together. <a href='mailto:nathan@eightshapes.com'>We can guide you</a>."
+        ]
+    ) }}
 
+    {% call escom.fifty_fifty(image="/images/modular-web-design-cover-photo.jpg") %}
+        <div class="escom-long-form-text">
+            <h2>Make It Modular</h2>
+            <p class="escom-long-form-text__p--l">
+                Designers are getting systematic with their work. They deliver systems as living, coded guides. Everyone’s thinking atomic and building modular.
+            </p>
 
-  <!-- Header -->
-  {{ legacy_components.header_slim() }}
-  <div class="container-fluid background-charcoal">
-    <div class="container-fluid-inner line-of-business-introduction">
-
-      <h1>Design Systems</h1>
-      <p class="lead">Make your experience <strong>cohesive</strong> and your teams <strong>efficient</strong> with a design system of parts and practices to serve your product teams.</p>
-      <p class="lead">It’s not <i>just</i> a living style guide. Modern organizations invest in systems so they can deliver innovative and beautiful products, together. <a href="mailto:nathan@eightshapes.com">We can guide you</a>.</p>
-    </div>
-  </div>
- 
-  <!-- Components Book -->
-  <div class="photo-text photo-text__systems">
-    <div class="photo-text__half-photo"></div>
-    <div class="photo-text__half-text">
-      <h2>Make It Modular</h2>
-      <p class="lead">Designers are getting systematic with their work. They deliver systems as living, coded guides. Everyone’s thinking atomic and building modular.</p>
-      <p class="lead">EightShapes has 10+ years experience designing components, sustaining client libraries, and sharing what we know with 2009’s <a href="www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351">Modular Web Design</a> and workshops worldwide.</p>
-    </div>
-  </div>
-
-  <!-- What We Do -->
-  <div class="container-fluid xups white-block-on-light-gray">
-    <div class="container-fluid-inner">
-      <h2>What We Do</h2>
-      <div class="ups__color-blocks ups__3-ups">
-        <div class="up-container">
-          <div class="up">
-            <h3>Workshop &amp; Talks</h3>
-            <p>We help you gather a group to collaborate through a series of working sessions, often paired with a large-group talk or two.</p>
-            <p class="duration">1-2 days</p>
-          </div>
+            <p class="escom-long-form-text__p--l">
+                EightShapes has 10+ years experience designing components, sustaining client libraries, and sharing what we know with 2009’s <a href="http://eightshapes.com/www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351">Modular Web Design</a> and workshops worldwide.
+            </p>
         </div>
-        <div class="up-container">
-          <div class="up">
-            <h3>System Strategy</h3>
-            <p>We help you pitch a vision and objectives, plan a roadmap, and articulate the library, products, and people involved.</p>
-            <p class="duration">1-2 months</p>
-          </div>
-        </div>
-        <div class="up-container">
-          <div class="up">
-            <h3>System Design/Build</h3>
-            <p>We make a library with you, designing and documenting components, building guides, and forming a community.</p>
-            <p class="duration">3 month cycle</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    {% endcall %}
 
-  <!-- Workshops -->
-  <div class="container-fluid workshops-display">
-    <div class="container-fluid-inner">
-      <h2>Workshops</h2>
-      <p class="lead">We can bring you in-house talks and hands-on activities customized to your needs.</p>
-      <div class="workshops">
-        <div class="workshop-item-container">
-          <a href="workshop-planning-parts-products-people.html" class="workshop-item">
-            <h3>Parts, Products &amp; People {{ legacy_components.icon({icon_name: 'angle-right', class: 'workshop__details-arrow-icon'}) }}</h3>
-            <p>Learn basic concepts and activities to start, spread and sustain a system for a single product or a large enterprise.</p>
-            <p class="duration">¼ day</p>
-          </a>
+    {% call esds.row(background="light", class="esds-row--tall-inset") %}
+        <div class="escom-promo-text">
+            <h2>What We Do</h2>
         </div>
-        <div class="workshop-item-container">
-          <a href="workshop-component-cutup.html" class="workshop-item">
-            <h3>Component Cut-Up {{ legacy_components.icon({icon_name: 'angle-right', class: 'workshop__details-arrow-icon'}) }}</h3>
-            <p>Dive into an immersive activity to visualize, slice up, group, label and prioritize your components.</p>
-            <p class="duration">Up to ½ day</p>
-          </a>
-        </div>
-        <div class="workshop-item-container">
-          <a class="workshop-item" href="workshop-roadmapping.html">
-            <h3>Roadmapping {{ legacy_components.icon({icon_name: 'angle-right', class: 'workshop__details-arrow-icon'}) }}</h3>
-            <p>Transition a system from project to product via roadmapping, a backlog, and aligning with product teams.</p>
-            <p class="duration">Up to ½ day</p>
-          </a>
-        </div>
-        <div class="workshop-item-container">
-          <div class="workshop-item">
-            <h3>Modular Web Design</h3>
-            <p>Design modularly, organize a library, and code up components and page types via hands-on activities.</p>
-            <p class="duration">Up to full day</p>
-          </div>
-        </div>
-        <div class="workshop-item-container">
-          <div class="workshop-item">
-            <h3>System Docs</h3>
-            <p>Plan, architect, and design effective web-based style guides for code, patterns, and custom topics.</p>
-            <p class="duration">Up to ½ day</p>
-          </div>
-        </div>
-        <div class="workshop-item-container">
-          <div class="workshop-item">
-            <h3>System OKRs</h3>
-            <p>Get your team prioritizing objectives and articulating key results and stretch goals for a systems practice.</p>
-            <p class="duration">¼ day</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Our Clients -->
-  <div class="container-fluid xups white-on-charcoal">
-    <div class="container-fluid-inner">
-      <h2>Our Systems Clients</h2>
-      <p class="lead">Since 2006, we've helped clients formulate strategies, create visual languages, design, build and document libraries, and operate across releases.</p>
-      <div class="ups__logos">
-        <img src="/images/client_brands/logos/1.png" alt="Marriott" class="ups__logo">
-        <img src="/images/client_brands/logos/2.png" alt="Cisco" class="ups__logo">
-        <img src="/images/client_brands/logos/5.png" alt="Discovery Education" class="ups__logo">
-        <img src="/images/client_brands/logos/11.png" alt="Sun Microsystems" class="ups__logo">
-        <img src="/images/client_brands/logos/14.png" alt="NetApp" class="ups__logo">
-        <img src="/images/client_brands/logos/18.png" alt="Yahoo" class="ups__logo">
-        <img src="/images/client_brands/logos/3.png" alt="Capital One" class="ups__logo">
-        <img src="/images/client_brands/logos/4.png" alt="3M" class="ups__logo">
-        <img src="/images/client_brands/logos/6.png" alt="The George Washington University" class="ups__logo">
-        <img src="/images/client_brands/logos/7.png" alt="Comcast" class="ups__logo">
-        <img src="/images/client_brands/logos/8.png" alt="eBay" class="ups__logo">
-        <img src="/images/client_brands/logos/9.png" alt="US Bank" class="ups__logo">
-        <img src="/images/client_brands/logos/10.png" alt="Sprint" class="ups__logo">
-        <img src="/images/client_brands/logos/12.png" alt="Morningstar" class="ups__logo">
-        <img src="/images/client_brands/logos/13.png" alt="Redgate" class="ups__logo">
-        <img src="/images/client_brands/logos/15.png" alt="National Geographic" class="ups__logo">
-        <img src="/images/client_brands/logos/16.png" alt="Wikia" class="ups__logo">
-        <img src="/images/client_brands/logos/17.png" alt="Hudl" class="ups__logo">
-      </div>
-    </div>
-  </div>
+        {{ esds.tiles(
+            class="esds-tiles--secondary",
+            container="white",
+            items = [
+                {
+                    heading: "WORKSHOP & TALKS",
+                    description: "We help you gather a group to collaborate through a series of working sessions, often paired with a large-group talk or two.",
+                    property: "1-2 days"
+                },
+                {
+                    heading: "SYSTEM STRATEGY",
+                    description: "We help you pitch a vision and objectives, plan a roadmap, and articulate the library, products, and people involved.",
+                    property: "1-2 days"
+                },
+                {
+                    heading: "SYSTEM DESIGN/BUILD",
+                    description: "We make a library with you, designing and documenting components, building guides, and forming a community.",
+                    property: "3 month cycle"
+                }
+            ]
+        ) }}
+    {% endcall %}
 
-  <!-- Contributions -->
-  <div class="container-fluid">
-    <div class="container-fluid-inner">
-      <h2 class="homepage__heading">Contributions</h2>
-      <p class="lead homepage__lead">
-        EightShapes contributes to the design community with writing, seminars, books, and toolkits to document UX and prototype in HTML &amp; CSS.
-      </p>
-      <div class="row content-card-wrap">
-        {{ legacy_components.content_card({
-          href: "https://medium.com/@nathanacurtis/color-in-design-systems-a1c80f65fa3#.l23xnagaz",
-          pre_heading: "Medium • April 2016",
-          class: "content-card--book",
-          heading: "Color in Design Systems",
-          copy: "Exploring palettes, theming, tints and shades, and accessibility",
-          background_image: "images/components/content_card/color-in-design-systems.png"
-        }) }}
-        {{ legacy_components.content_card({
-          href: "https://medium.com/eightshapes-llc/a-design-system-isn-t-a-project-it-s-a-product-serving-products-74dcfffef935#.saa08k6op",
-          pre_heading: "Medium • February 2016",
-          heading: "A Design System isn’t a Project. It’s a Product, Serving Products.",
-          copy: "Shifting Focus from Design and Development to Managing and Marketing a System",
-          cta: "Read More"
-        }) }}
-        {{ legacy_components.content_card({
-          href: "https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62#.fwng4aef7",
-          class: "content-card--book",
-          pre_heading: "Medium • September 2016",
-          heading: "Space in Design System",
-          copy: "From Basics to Expanded Concepts to Apply Space with Intent",
-          background_image: "images/components/content_card/medium-space.png"
-        }) }}
-        {{ legacy_components.content_card({
-          href: "https://2017.enterpriseux.net/workshops/",
-          class: "content-card--event",
-          pre_heading: "Enterprise UX",
-          date: "June 7, 2017 • San Francisco, CA",
-          heading: "Scalable Design Systems",
-          copy: "Full day workshop at the premier conference serving enterprises tackling UX",
-          cta: "Register"
-        }) }}
-        {{ legacy_components.content_card({
-          href: "https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0#.ajm21o3f1",
-          class: "content-card--book",
-          pre_heading: "Medium • September 2015",
-          heading: "Team Models for Scaling a Design System",
-          background_image: "images/components/content_card/medium_castle.jpg"
-        }) }}
-        {{ legacy_components.content_card({
-          href: "https://smashingconf.com/speakers/nathan-curtis",
-          class: "content-card--event",
-          pre_heading: "SmashingConf",
-          date: "April 3-4, 2016 • San Francisco, CA",
-          heading: "Scalable Design Systems",
-          copy: "Workshop & talk",
-          cta: "Register"
-        }) }}
-        {{ legacy_components.content_card({
-          href: "https://medium.com/eightshapes-llc/finding-platform-balance-in-a-design-system-47eaae48de98#.lo737xuvw",
-          pre_heading: "Medium • October 2015",
-          heading: "Finding Platform Balance in a Design System",
-          copy: "Focusing on Fundamentals and Balancing Influence Across Platforms",
-          cta: "Read More"
-        }) }}
-        {{ legacy_components.content_card({
-          href: "http://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351",
-          class: "content-card--book",
-          pre_heading: "Book by Nathan Curtis",
-          heading: "Modular Web Design",
-          copy: "Creating Reusable Components for User Experience Design and Documentation",
-          background_image: "images/components/content_card/modular_web_design.jpg"
-        }) }}
-        {{ legacy_components.content_card({
-          href: "https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.ej345veis",
-          class: "content-card--book",
-          pre_heading: "Medium • April 2016",
-          heading: "Buttons in Design System",
-          copy: "12 Tips for Setting Up a System That Endures",
-          background_image: "images/components/content_card/buttons.png"
-        }) }}
-        {{ legacy_components.content_card({
-          href: "https://medium.com/eightshapes-llc/right-sizing-the-rectangles-936894ca0f99",
-          pre_heading: "Medium • March 2016",
-          class: "content-card--book",
-          heading: "Right-Sizing the Rectangles",
-          copy: "Grappling with Hierarchy for a More Effective Design System",
-          background_image: "images/components/content_card/right-sizing-rectangles.png"
-        }) }}
-        {{ legacy_components.content_card({
-          href: "https://medium.com/eightshapes-llc/patterns-components-2ce778cbe4e8#.wrzpxkpf1",
-          class: "content-card--book",
-          pre_heading: "Medium • January 2017",
-          heading: "Patterns ≠ Components",
-          copy: "Our Community, not Companies, Should Build Pattern Libraries",
-          background_image: "images/components/content_card/medium-patternscomponents.jpeg"
-        }) }}
-        {{ legacy_components.content_card({
-          href: "https://medium.com/eightshapes-llc/light-dark-9f8ea42c9081#.h4i6mommi",
-          class: "content-card--book",
-          pre_heading: "Medium • February 2017",
-          heading: "Light and Dark Color Systems",
-          copy: "Model Decisions Across Backgrounds, Borders, Text, and More",
-          background_image: "images/components/content_card/medium-lightanddark.png"
-        }) }}
-        {{ legacy_components.content_card({
-          href: "https://medium.com/eightshapes-llc/on-classification-in-design-systems-6b33b97f4a8f#.hffoe570s",
-          pre_heading: "Medium • February 2016",
-          heading: "On Classification in Design Systems",
-          copy: "Recent Trends in Naming Things in Design Libraries",
-          cta: "Read More"
-        }) }}
-        {{ legacy_components.content_card({
-          href: "https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421#.d2ohowma6",
-          class: "content-card--book",
-          pre_heading: "Medium • June 2016",
-          heading: "Tokens in Design System",
-          copy: "Architect & Implement Design Decisions for Everyone",
-          background_image: "images/components/content_card/tokens.jpeg"
-        }) }}
-        {{ legacy_components.content_card({
-          href: "https://medium.com/eightshapes-llc/contributions-to-design-systems-89261a9363d8#.lv3jfh1e4",
-          class: "content-card--book",
-          pre_heading: "Medium • March 2017",
-          heading: "Contributions to Design Systems",
-          copy: "Opening a Library to a Community’s Code, Design, and More",
-          background_image: "images/components/content_card/medium-contributions.png"
-        }) }}
-        {{ legacy_components.content_card({
-          href: "https://medium.com/eightshapes-llc/the-component-cut-up-workshop-1378ae110517#.5hls51ylu",
-          class: "content-card--book",
-          pre_heading: "Medium • November 2015",
-          heading: "The Component Cut-Up Workshop",
-          background_image: "images/components/content_card/component-cut-up.png"
-        }) }}
-      </div>
-    </div>
-  </div>  
+    {% call esds.row(background_image="/images/workshop-cutup.png", class="esds-row--tall-inset") %}
+        <div class="escom-promo-text">
+            <h2>Workshops</h2>
+            <p>We can bring you in-house talks and hands-on activities customized to your needs.</p>
+        </div>
+        {{ esds.tiles(
+            class="esds-tiles--secondary",
+            container = "white",
+            items = [
+                {
+                    heading: "Parts, Products & People",
+                    description: "Learn basic concepts and activities to start, spread and sustain a system for a single product or a large enterprise.",
+                    property: "¼ day",
+                    href:"http://eightshapes.com/workshop-planning-parts-products-people.html"
+                },
+                {
+                    heading: "Component Cut-Up",
+                    description: "Dive into an immersive activity to visualize, slice up, group, label and prioritize your components.",
+                    property: "Up to ½ day",
+                    href:"http://eightshapes.com/workshop-component-cutup.html"
+                },
+                {
+                    heading: "Roadmapping",
+                    description: "Transition a system from project to product via roadmapping, a backlog, and aligning with product teams.",
+                    property: "Up to ½ day",
+                    href:"http://eightshapes.com/workshop-roadmapping.html"
+                },
+                {
+                    heading: "MODULAR WEB DESIGN",
+                    description: "Design modularly, organize a library, and code up components and page types via hands-on activities.",
+                    property: "Up to full day"
+                },
+                {
+                    heading: "SYSTEM DOCS",
+                    description: "Plan, architect, and design effective web-based style guides for code, patterns, and custom topics.",
+                    property: "Up to ½ day"
+                },
+                {
+                    heading: "SYSTEM OKRS",
+                    description: "Get your team prioritizing objectives and articulating key results and stretch goals for a systems practice.",
+                    property: "¼ day"
+                }
+            ]
+        ) }}
+    {% endcall %}
 
-  <!-- Get Started -->
-  {{ legacy_components.page_cta() }}
+    {% call esds.row(background="dark", class="esds-row--tall-inset") %}
+        <div class="escom-promo-text">
+            <h2>Our Systems Clients</h2>
+            <p>
+                Since 2006, we've helped clients formulate strategies, create visual languages, design, build and document libraries, and operate across releases.
+            </p>
+        </div>
 
-  <!-- Footer -->
-  {{ legacy_components.footer() }}
+        <div class="escom-logo-grid">
+            <img src="/images/client_brands/logos/1.png" alt="Marriott" class="logo-grid__image">
+            <img src="/images/client_brands/logos/2.png" alt="Cisco" class="logo-grid__image">
+            <img src="/images/client_brands/logos/5.png" alt="Discovery Education" class="logo-grid__image">
+            <img src="/images/client_brands/logos/11.png" alt="Sun Microsystems" class="logo-grid__image">
+            <img src="/images/client_brands/logos/14.png" alt="NetApp" class="logo-grid__image">
+            <img src="/images/client_brands/logos/18.png" alt="Yahoo" class="logo-grid__image">
+            <img src="/images/client_brands/logos/3.png" alt="Capital One" class="logo-grid__image">
+            <img src="/images/client_brands/logos/4.png" alt="3M" class="logo-grid__image">
+            <img src="/images/client_brands/logos/6.png" alt="The George Washington University" class="logo-grid__image">
+            <img src="/images/client_brands/logos/7.png" alt="Comcast" class="logo-grid__image">
+            <img src="/images/client_brands/logos/8.png" alt="eBay" class="logo-grid__image">
+            <img src="/images/client_brands/logos/9.png" alt="US Bank" class="logo-grid__image">
+            <img src="/images/client_brands/logos/10.png" alt="Sprint" class="logo-grid__image">
+            <img src="/images/client_brands/logos/12.png" alt="Morningstar" class="logo-grid__image">
+            <img src="/images/client_brands/logos/13.png" alt="Redgate" class="logo-grid__image">
+            <img src="/images/client_brands/logos/15.png" alt="National Geographic" class="logo-grid__image">
+            <img src="/images/client_brands/logos/16.png" alt="Wikia" class="logo-grid__image">
+            <img src="/images/client_brands/logos/17.png" alt="Hudl" class="logo-grid__image">
+        </div>
+    {% endcall %}
+
+    {% call esds.row(background="white", class="esds-row--tall-inset") %}
+        <div class="escom-promo-text">
+            <h2>Contributions</h2>
+            <p>
+                EightShapes contributes to the design community with writing, seminars, books, and toolkits to document UX and prototype in HTML & CSS.
+            </p>
+        </div>
+
+        <div class="escom-card-grid">
+            {{ esds.card(
+                container="brand",
+                type="Medium",
+                date="April 2016",
+                title="Color in Design Systems",
+                description="Exploring palettes, theming, tints and shades, and accessibility",
+                href="https://medium.com/@nathanacurtis/color-in-design-systems-a1c80f65fa3#.l23xnagaz",
+                cta="Learn More",
+                width="auto"
+            ) }}
+
+            {{ esds.card(
+                container="light",
+                type="Medium",
+                date="February 2016",
+                title="A Design System isn’t a Project. It’s a Product, Serving Products.",
+                description="Shifting Focus from Design and Development to Managing and Marketing a System",
+                href="https://medium.com/eightshapes-llc/a-design-system-isn-t-a-project-it-s-a-product-serving-products-74dcfffef935#.saa08k6op",
+                cta="Learn More",
+                width="auto"
+            ) }}
+
+            {{ esds.card(
+                container="dark",
+                type="Medium",
+                date="September 2016",
+                title="Space in Design System",
+                description="From Basics to Expanded Concepts to Apply Space with Intent",
+                href="https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62#.fwng4aef7",
+                cta="Learn More",
+                width="auto"
+            ) }}
+
+            {{ esds.card(
+                container="light",
+                type="Medium",
+                date="September 2015",
+                title="Team Models for Scaling a Design System",
+                href="https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0#.ajm21o3f1",
+                cta="Learn More",
+                width="auto"
+            ) }}
+
+            {{ esds.card(
+                container="black",
+                type="Medium ",
+                date="October 2015",
+                title="Finding Platform Balance in a Design System",
+                description="Focusing on Fundamentals and Balancing Influence Across Platforms",
+                href="https://medium.com/eightshapes-llc/finding-platform-balance-in-a-design-system-47eaae48de98#.lo737xuvw",
+                cta="Learn More",
+                width="auto"
+            ) }}
+
+            {{ esds.card(
+                container="brand",
+                type="Book by Nathan Curtis",
+                title="Modular Web Design",
+                description="Creating Reusable Components for User Experience Design and Documentation",
+                href="http://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351",
+                cta="Learn More",
+                width="auto"
+            ) }}
+
+            {{ esds.card(
+                container="light",
+                type="Medium",
+                date="April 2016",
+                title="Buttons in Design System",
+                description="12 Tips for Setting Up a System That Endures",
+                href="https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.ej345veis",
+                cta="Learn More",
+                width="auto"
+            ) }}
+
+            {{ esds.card(
+                container="dark",
+                type="Medium",
+                date="March 2016",
+                title="Right-Sizing the Rectangles",
+                description="Grappling with Hierarchy for a More Effective Design System",
+                href="https://medium.com/eightshapes-llc/right-sizing-the-rectangles-936894ca0f99",
+                cta="Learn More",
+                width="auto"
+            ) }}
+
+            {{ esds.card(
+                container="black",
+                type="Medium",
+                date="January 2017",
+                title="Patterns ≠ Components",
+                description="Our Community, not Companies, Should Build Pattern Libraries",
+                href="https://medium.com/eightshapes-llc/patterns-components-2ce778cbe4e8#.wrzpxkpf1",
+                cta="Learn More",
+                width="auto"
+            ) }}
+
+            {{ esds.card(
+                container="light",
+                type="Medium",
+                date="February 2017",
+                title="Light and Dark Color Systems",
+                description="Model Decisions Across Backgrounds, Borders, Text, and More",
+                href="https://medium.com/eightshapes-llc/light-dark-9f8ea42c9081#.h4i6mommi",
+                cta="Learn More",
+                width="auto"
+            ) }}
+
+            {{ esds.card(
+                container="dark",
+                type="Medium",
+                date="February 2016",
+                title="On Classification in Design Systems",
+                description="Recent Trends in Naming Things in Design Libraries",
+                href="https://medium.com/eightshapes-llc/on-classification-in-design-systems-6b33b97f4a8f#.hffoe570s",
+                cta="Learn More",
+                width="auto"
+            ) }}
+
+            {{ esds.card(
+                container="brand",
+                type="Medium",
+                date="June 2016",
+                title="Tokens in Design System",
+                description="Architect & Implement Design Decisions for Everyone",
+                href="https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421#.d2ohowma6",
+                cta="Learn More",
+                width="auto"
+            ) }}
+
+            {{ esds.card(
+                container="light",
+                type="Medium",
+                date="March 2017",
+                title="Contributions to Design Systems",
+                description="Opening a Library to a Community’s Code, Design, and More",
+                href="https://medium.com/eightshapes-llc/contributions-to-design-systems-89261a9363d8#.lv3jfh1e4",
+                cta="Learn More",
+                width="auto"
+            ) }}
+
+            {{ esds.card(
+                container="black",
+                type="Medium",
+                date="November 2015",
+                title="The Component Cut-Up Workshop",
+                href="https://medium.com/eightshapes-llc/the-component-cut-up-workshop-1378ae110517#.5hls51ylu",
+                cta="Learn More",
+                width="auto"
+            ) }}
+        </div>
+    {% endcall %}
+
+    {{ escom.cta(heading="Ready?", deck="About to kickstart a system? Need a partner to build it? Ready to spread or sustain it?", button_text="LET'S TALK", href="mailto:info@eightshapes.com") }}
 
 {% endblock %}

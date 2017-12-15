@@ -1,0 +1,93 @@
+{% macro timeline(
+    class=false,
+    col_1_heading=false,
+    col_2_heading=false,
+    items=[
+        {
+            time: "[Timeline time]",
+            heading: "[Timeline 1 heading]",
+            list: [
+                "[Timeline bullet 1]",
+                "[Timeline bullet 2]",
+                "[Timeline bullet 3]"
+            ]
+        }
+    ]
+) %}
+    <ul class="escom-timeline{% if class %} {{ class }}{% endif %}">
+        {% if col_1_heading %}
+        <li class="escom-timeline__item escom-timeline__item--header">
+            <div class="escom-timeline__row-text">
+                <div class="escom-timeline__cell-text">
+                    <span class="escom-timeline__item-heading">
+                        {{ col_1_heading }}
+                    </span>
+                </div>
+
+                <div class="escom-timeline__cell-text">
+                    <span class="escom-timeline__item-heading">
+                        {{ col_2_heading }}
+                    </span>
+                </div>
+            </div>
+        </li>
+        {% endif %}
+        {% for item in items %}
+        <li class="escom-timeline__item">
+            {% if item.time %}
+            <p class="escom-timeline__time">
+                {{ item.time }}
+            </p>
+            {% endif %}
+            {% if item.topics %}
+            <div class="escom-timeline__row-text">
+                <div class="escom-timeline__cell-text">
+                    <h3 class="escom-timeline__heading">
+                        {{ item.heading }}
+                    </h3>
+                </div>
+
+                <div class="escom-timeline__cell-text">
+                    {% for topics in item.topics %}
+                        {{ topics }}
+                    {% endfor %}
+                </div>
+            </div>
+            {% else %}
+            <h3 class="escom-timeline__heading">
+                {{ item.heading }}
+            </h3>
+            {% endif %}
+            {% if item.list %}
+            <div class="escom-timeline__row-cards">
+                <div class="escom-timeline__cell-cards escom-timeline__cell-cards--bullets">
+                    <ul class="escom-timeline__list">
+                        {% for bullets in item.list %}
+                        <li class="escom-timeline__list-item">
+                            {{ bullets }}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="escom-timeline__cell-cards escom-timeline__cell-cards--card-1">
+                    {% if item.card_1_heading %}
+                    <h4 class="escom-timeline__item-heading">
+                        {{ item.card_1_heading }}
+                    </h4>
+                    {% endif %}
+                    {{ item.card_1 }}
+                </div>
+                <div class="escom-timeline__cell-cards escom-timeline__cell-cards--card-2">
+                    {% if item.card_2_heading %}
+                    <h4 class="escom-timeline__item-heading">
+                        {{ item.card_2_heading }}
+                    </h4>
+                    {% endif %}
+                    {{ item.card_2 }}
+                </div>
+            </div>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+{% endmacro %}
