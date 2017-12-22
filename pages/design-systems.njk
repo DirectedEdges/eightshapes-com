@@ -2,9 +2,12 @@
 
 {% block body %}
 
-    {{ escom.dark_header(logo=true, heading="DESIGN SYSTEMS", decks=[
-        "Make your experience <strong>cohesive</strong> and your teams <strong>efficient</strong> with a design system of parts and practices to serve your product teams.",
-        "It’s not <i>just</i> a living style guide. Modern organizations invest in systems so they can deliver innovative and beautiful products, together. <a href='mailto:nathan@eightshapes.com'>We can guide you</a>."
+    {{ escom.title_row(
+        logo=true,
+        heading="Design Systems", 
+        decks=[
+            "Make your experience <strong>cohesive</strong> and your teams <strong>efficient</strong> with a design system of parts and practices to serve your product teams.",
+            "It’s not <i>just</i> a style guide. Modern organizations invest in systems so they can deliver innovative and beautiful products, together. <a href='mailto:nathan@eightshapes.com'>We can guide you</a>."
         ]
     ) }}
 
@@ -31,18 +34,18 @@
             container="white",
             items = [
                 {
-                    heading: "WORKSHOP & TALKS",
-                    description: "We help you gather a group to collaborate through a series of working sessions, often paired with a large-group talk or two.",
+                    heading: "Workshops & Talks",
+                    description: "We help you gather a group to collaborate through a series of half, full, or two-day working sessions or provide an in-house talk to a large-group.",
                     property: "1-2 days"
                 },
                 {
-                    heading: "SYSTEM STRATEGY",
-                    description: "We help you pitch a vision and objectives, plan a roadmap, and articulate the library, products, and people involved.",
+                    heading: "Strategy",
+                    description: "We'll help you discover the system you need and help you pitch its vision, objectives, products it serves, and people involved.",
                     property: "1-2 days"
                 },
                 {
-                    heading: "SYSTEM DESIGN/BUILD",
-                    description: "We make a library with you, designing and documenting components, building guides, and forming a community.",
+                    heading: "Design & Build",
+                    description: "We make a system with you by designing, building and documenting together while forming community and nurturing adoption.",
                     property: "3 month cycle"
                 }
             ]
@@ -97,7 +100,7 @@
 
     {% call esds.row(background="dark", class="esds-row--tall-inset") %}
         <div class="escom-promo-text">
-            <h2>Our Systems Clients</h2>
+            <h2>Our Clients</h2>
             <p>
                 Since 2006, we've helped clients formulate strategies, create visual languages, design, build and document libraries, and operate across releases.
             </p>
@@ -287,6 +290,6 @@
         </div>
     {% endcall %}
 
-    {{ escom.cta(heading="Ready?", deck="About to kickstart a system? Need a partner to build it? Ready to spread or sustain it?", button_text="LET'S TALK", href="mailto:info@eightshapes.com") }}
+    {{ escom.cta(heading="Ready?", deck="About to kickstart a system? Need a partner to build it? Ready to spread or sustain it?", button_text="Email Us", href="mailto:info@eightshapes.com") }}
 
 {% endblock %}

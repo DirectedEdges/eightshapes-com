@@ -2,7 +2,11 @@
 
 {% block body %}
 
-    {{ escom.dark_header(logo=true, heading="Product Discovery", decks=["We align your team around a shared product vision through design principles, customer insights, & prototyped concepts."]) }}
+    {{ escom.title_row(
+        logo=true, 
+        heading="Product Discovery", 
+        decks=["We align your team around a shared product vision through design principles, customer insights, & prototyped concepts."]) 
+    }}
 
     {% call escom.fifty_fifty(image="/images/product-discovery-photo.jpg") %}
         <div class="escom-long-form-text">
@@ -200,6 +204,6 @@
         </div>
     {% endcall %}
 
-    {{ escom.cta(heading="Ready?", deck="Does your product need a vision? Does your UX need a concept? Does your team need design direction?", button_text="LET'S TALK", href="mailto:info@eightshapes.com") }}
+    {{ escom.cta(heading="Ready?", deck="Does your product need a vision? Does your UX need a concept? Does your team need design direction?", button_text="Email Us", href="mailto:info@eightshapes.com") }}
 
 {% endblock %}

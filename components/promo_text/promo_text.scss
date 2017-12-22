@@ -1,6 +1,6 @@
 .escom-promo-text {
     margin: 0 auto $esds-space-generic-2-x;
-    max-width: 940px;
+    max-width: $esds-font-line-length-long-form;
 
     &:last-child {
         margin-bottom: 0;
@@ -9,8 +9,8 @@
     h1 {
         @include esds-text-crop();
         @include esds-level-1-heading();
-        margin: $esds-space-stack-2-x;
-        text-align: center;
+        @include esds-text-color('primary');
+        margin: $esds-space-stack-3-x;
 
         &:last-child {
             margin: 0;
@@ -22,7 +22,6 @@
         @include esds-level-2-heading();
         color: $esds-text-color-brand;
         margin: $esds-space-stack-2-x;
-        text-align: center;
 
         .esds-container--white &,
         .esds-container--light &,
@@ -38,21 +37,35 @@
     h3 {
         @include esds-text-crop();
         @include esds-level-3-heading();
+        @include esds-text-color('primary');
         margin: $esds-space-stack-2-x;
-        text-align: center;
 
         &:last-child {
             margin: 0;
         }
     }
 
-    p {
+    p, 
+    li {
         @include esds-body-text-l();
+        @include esds-text-color('primary');
         margin: $esds-space-stack-2-x;
 
         &:last-child {
             margin: 0;
         }
+    }
+
+    a {
+        @include esds-link();
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        margin: $esds-space-stack-half-x;
     }
 }
 

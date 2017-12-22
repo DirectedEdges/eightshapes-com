@@ -1,0 +1,14 @@
+.escom-title-row__logo-container {
+    text-align: center;
+}
+
+.escom-title-row__logo {
+    fill: $esds-color-white;
+    height: 30px;
+    margin: $esds-space-stack-2-x;
+    width: 200px;
+
+    @media screen and (min-width: $esds-breakpoints-width-768) {
+        height: 40px;
+    }
+}

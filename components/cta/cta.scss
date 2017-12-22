@@ -1,6 +1,8 @@
-.escom-cta {
+.escom-cta__action {
+    margin: 0 auto;
+    max-width: $esds-font-line-length-long-form;
+}
 
-    .esds-button {
-        display: inline-block;
-    }
+.escom-cta__action-button {
+    text-transform: uppercase;
 }

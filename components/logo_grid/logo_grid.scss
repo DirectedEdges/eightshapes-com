@@ -9,11 +9,11 @@
         grid-template-columns: repeat(3, 1fr);
         margin: 0;
 
-        @media screen and (min-width: $escom-breakpoints-width-768) {
+        @media screen and (min-width: $esds-breakpoints-width-768) {
             grid-template-columns: repeat(4, 1fr);
         }
 
-        @media screen and (min-width: $escom-breakpoints-width-1200) {
+        @media screen and (min-width: $esds-breakpoints-width-1200) {
             grid-template-columns: repeat(6, 1fr);
         }
     }
@@ -29,7 +29,7 @@
         width: auto;
     }
 
-    @media screen and (min-width: $escom-breakpoints-width-768) {
+    @media screen and (min-width: $esds-breakpoints-width-768) {
         width: calc(25% - #{$esds-space-generic-half-x});
 
         @supports (grid-column-gap: 0) {
@@ -37,7 +37,7 @@
         }
     }
 
-    @media screen and (min-width: $escom-breakpoints-width-1200) {
+    @media screen and (min-width: $esds-breakpoints-width-1200) {
         width: calc(16.666% - #{$esds-space-generic-half-x});
 
         @supports (grid-column-gap: 0) {

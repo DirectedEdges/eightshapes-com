@@ -1,26 +1,19 @@
 .escom-timeline {
     list-style: none;
-    margin: $esds-space-stack-2-x;
+    margin: $esds-space-generic-2-x auto;
+    max-width: $esds-font-line-length-long-form;
     padding-left: $esds-space-generic-half-x;
 
-    @media screen and (min-width: $escom-breakpoints-width-768) {
+    @media screen and (min-width: $esds-breakpoints-width-768) {
         padding-left: $esds-space-generic-2-x;
-    }
-
-    &:last-child {
-        margin: 0;
     }
 }
 
 .escom-timeline__item {
     border-left: 3px solid $esds-color-neutral-42;
-    padding-bottom: $esds-space-generic-2-x;
+    padding-bottom: $esds-space-generic-1-x;
     padding-left: $esds-space-generic-2-x;
     position: relative;
-
-    @media screen and (min-width: $escom-breakpoints-width-768) {
-        padding-bottom: $esds-space-generic-4-x;
-    }
 
     .escom-timeline--no-timeline & {
         border-left: 0;
@@ -54,9 +47,9 @@
 .escom-timeline__item--header {
     border-left: 0;
     display: none;
-    padding-bottom: $esds-space-generic-2-x;
+    margin: $esds-space-stack-1-x;
 
-    @media screen and (min-width: $escom-breakpoints-width-768) {
+    @media screen and (min-width: $esds-breakpoints-width-768) {
         display: block;
     }
 
@@ -67,13 +60,8 @@
 
 .escom-timeline__time {
     @include esds-font-reset();
-    color: $esds-text-color-secondary-on-white;
-    font-size: $esds-font-size-heading-eyebrow-default;
+    @include esds-eyebrow-heading();
     margin: 0;
-
-    &:last-child {
-        margin: 0;
-    }
 }
 
 .escom-timeline__heading {
@@ -90,7 +78,7 @@
 .escom-timeline__row-cards {
     margin: $esds-space-stack-2-x;
 
-    @media screen and (min-width: $escom-breakpoints-width-768) {
+    @media screen and (min-width: $esds-breakpoints-width-768) {
         display: grid;
         grid-gap: $esds-space-generic-2-x;
         grid-template-areas:
@@ -98,7 +86,7 @@
         'escom-timeline__cell-cards--card-1 escom-timeline__cell-cards--card-2';
     }
 
-    @media screen and (min-width: $escom-breakpoints-width-1200) {
+    @media screen and (min-width: $esds-breakpoints-width-1200) {
         grid-template-areas:
         'escom-timeline__cell-cards--bullets escom-timeline__cell-cards--card-1 escom-timeline__cell-cards--card-2';
     }
@@ -121,7 +109,7 @@
 }
 
 .escom-timeline__row-text {
-    @media screen and (min-width: $escom-breakpoints-width-768) {
+    @media screen and (min-width: $esds-breakpoints-width-768) {
         display: grid;
         grid-gap: $esds-space-generic-2-x;
         grid-template-columns: 20% 80%;
@@ -131,13 +119,7 @@
 .escom-timeline__list {
     list-style: disc;
     margin: $esds-space-stack-2-x;
-    padding-left: $esds-space-generic-1-and-half-x;
-
-    &:last-child {
-        @media screen and (min-width: $escom-breakpoints-width-768) {
-            margin: 0;
-        }
-    }
+    padding-left: 20px;
 }
 
 .escom-timeline__list-item {

@@ -1,3 +1,8 @@
+.escom-site-footer {
+    margin: 0 auto;
+    max-width: $esds-font-line-length-long-form;
+}
+
 .escom-site-footer__logo {
     fill: $esds-color-white;
     height: 40px;
@@ -5,17 +10,17 @@
     width: 180px;
 }
 
+.escom-site-footer__layout {
+    display: grid;
+    grid-column-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .escom-site-footer__list {
     @include esds-body-text-m();
     list-style: none;
     margin: $esds-space-stack-1-x;
     padding: 0;
-
-    @media screen and (min-width: 480px) {
-        display: inline-block;
-        margin-right: $esds-space-generic-4-x;
-        vertical-align: top;
-    }
 }
 
 .escom-site-footer__list-item {
