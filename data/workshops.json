@@ -3,8 +3,9 @@
         "year": "2018",
         "in_house_events": [
         ],
-        "public_events": [ 
-            "Chicago Design Systems Meetup"
+        "public_venues": [ 
+            "Webstock New Zealand",
+            "Chicago Systems Meetup"
         ]
     },
     {
@@ -18,7 +19,7 @@
             "Universal Services Administration",
             "IDEXX"
         ],
-        "public_events": [
+        "public_venues": [
             "UIE's UI22",
             "Clarity",
             "SmashingConf San Francisco",
@@ -34,7 +35,7 @@
             "World Bank",
             "Wikia"
         ],
-        "public_events": [
+        "public_venues": [
             "UIE's UI21",
             "SmashingConf Freiburg",
             "IXDA Oslo",
@@ -47,7 +48,7 @@
             "Discovery Education",
             "Red Gate Software"
         ],
-        "public_events": [
+        "public_venues": [
             "UIE's UI20"
         ]
     },
@@ -58,14 +59,14 @@
             "NetApp",
             "3M"
         ],
-        "public_events": []
+        "public_venues": []
     },
     {
         "year": "2012",
         "in_house_events": [
             "Marriott"
         ],
-        "public_events": [
+        "public_venues": [
             "UIE's UI17"
         ]
     },
@@ -74,7 +75,7 @@
         "in_house_events": [
             "Yahoo"
         ],
-        "public_events": [
+        "public_venues": [
             "UIE's UI15"
         ]
     },
@@ -86,7 +87,7 @@
             "AutoTrader",
             "George Washington University"
         ],
-        "public_events": [
+        "public_venues": [
             "IDEA",
             "UIE's Web App Summit",
             "CanUX"
@@ -98,7 +99,7 @@
             "eBay",
             "CenturyLink"
         ],
-        "public_events": [
+        "public_venues": [
             "IA Summit",
             "NN Group"
         ]
@@ -109,6 +110,6 @@
             "Cisco",
             "Sprint"
         ],
-        "public_events": []
+        "public_venues": []
     }
 ]

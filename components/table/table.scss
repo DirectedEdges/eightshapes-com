@@ -1,6 +1,6 @@
 .escom-table {
     @include esds-text-color('primary');
-    border-collapse: separate;
+    border-collapse: collapse;
     display: block;
     width: 100%;
 
@@ -41,13 +41,14 @@
 
 .escom-table__header-cell,
 .escom-table__cell {
+    border-bottom: 1px solid $esds-color-neutral-25;
     display: block;
     text-align: left;
 
     @media screen and (min-width: $esds-breakpoints-width-500) {
         display: table-cell;
         font-size: $esds-font-size-heading-eyebrow-default;
-        padding: $esds-space-inset-squish-1-x;
+        padding: $esds-space-inset-squish-2-x;
     }
 
     &:first-child {
@@ -78,6 +79,10 @@
         @media screen and (min-width: $esds-breakpoints-width-500) {
             display: none;
         }
+    }
+
+    .escom-table__row:last-child & {
+        border-bottom: 0;
     }
 }
 

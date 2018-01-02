@@ -20,12 +20,12 @@
         {% endif %}
         <div class="escom-promo-text">
             <h1>{{heading}}</h1>
-            {% if decks %}
-                {% for deck in decks %}
-                <p>{{ deck | safe }}</p>
-                {% endfor %}
-            {% endif %}
         </div>
+        {% if decks %}
+            {% for deck in decks %}
+            <p class="escom-title-row__lead">{{ deck | safe }}</p>
+            {% endfor %}
+        {% endif %}
 
     {% endcall %}
 {% endmacro %}
