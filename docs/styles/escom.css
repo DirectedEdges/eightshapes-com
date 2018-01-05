@@ -792,10 +792,10 @@ body {
       display: -ms-grid;
       display: grid;
       grid-gap: 32px;
-      grid-template-areas: 'escom-timeline__cell-cards--bullets escom-timeline__cell-cards--bullets' 'escom-timeline__cell-cards--card-1 escom-timeline__cell-cards--card-2'; } }
+          grid-template-areas: 'escom-timeline__cell-cards--bullets escom-timeline__cell-cards--bullets' 'escom-timeline__cell-cards--card-1 escom-timeline__cell-cards--card-2'; } }
   @media screen and (min-width: 1200px) {
     .escom-timeline__row-cards {
-      grid-template-areas: 'escom-timeline__cell-cards--bullets escom-timeline__cell-cards--card-1 escom-timeline__cell-cards--card-2'; } }
+          grid-template-areas: 'escom-timeline__cell-cards--bullets escom-timeline__cell-cards--card-1 escom-timeline__cell-cards--card-2'; } }
   .escom-timeline__row-cards:last-child {
     margin: 0; }
 
