@@ -1,4 +1,6 @@
-{% macro table(headers=[{
+{% macro table(
+    class="",
+    headers=[{
                             key: 'header_1',
                             label: 'Header 1'
                         },
@@ -24,7 +26,7 @@
                     }
                 ],
                 suppress_responsive_headers=['header_2']) %}
-    <table class="escom-table">
+    <table class="escom-table {{ class }}">
         <thead class="escom-table__head">
             <tr class="escom-table__row">
                 {% for header in headers %}

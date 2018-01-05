@@ -1,58 +1,32 @@
 {% extends 'templates/base.njk' %}
 {% block body %}
-    {{ esds.breadcrumb(href="/systems/workshops.html", text="Workshops") }}
-    {% call esds.row(background_image="/images/systems/workshops-hero.png", class="esds-row--hero-inset") %}
-        <div class="escom-promo-text">
-            <h1>Workshops</h1>
-            <p>
-                Looking to start or reinvigorate a design system? We’ll workshop with your group to teach individuals and align teams pursuing design systems.
-            </p>
-        </div>
-    {% endcall %}
 
-    {% call esds.row(background="light", class="esds-row--tall-inset esds-row--narrow-inner") %}
-        <div class="escom-promo-text">
-            <h2>Why a Workshop with EightShapes?</h2>
-            <p>
-                With EightShapes’ seasoned experience and enthusiasm, you’ll inspire your teams and spark systems work. Your team can use a workshop to:
-            </p>
-        </div>
-        {{ esds.tiles(
-            class = "esds-tiles--2-column esds-tiles--no-padding",
-            container = "light",
-            items = [
-                {
-                    list: [
-                        "Kickoff or energize in-house systems efforts",
-                        "Define your system and what it offers",
-                        "Refine how to design and code system features"
-                    ]
-                },
-                {
-                    list: [
-                        "Roadmap how to create and adopt a system",
-                        "Develop a common vocabulary for your teams",
-                        "Produce meaningful outcomes and teach concepts with engaging hands-on activities"
-                    ]
-                }
-            ]
-        ) }}
-    {% endcall %}
+    {# Breadcrumb #}
 
-    {% call esds.row(background="white", class="esds-row--tall-inset esds-row--narrow-inner") %}
+    {{ esds.breadcrumb(href="/design-systems.html", text="Design Systems") }}
+
+    {# Title #}
+
+    {{ escom.title_row(
+        class="esds-row--very-very-tall-inset",
+        background_image="/images/systems/workshops-hero.png",
+        logo=false, 
+        heading="System Workshops",
+        decks=[
+            "Looking to start or reinvigorate a design system? We’ll workshop with your group to teach individuals and align teams pursuing design systems."
+        ]) }}
+
+    {# What We Cover #}
+
+    {% call esds.row(background="white", class="esds-row--tall-inset") %}
         <div class="escom-promo-text">
             <h2>What We Cover</h2>
             <p>
-                During one or two days together, we’ll combine lecture and hands-on activities on how to plan, design, document, operate and adopt a system.
-            </p>
-            <p>
-                If the standard, out-of-the-box agenda suits your needs, excellent! Otherwise, we’ll work with you to tailor topics and hands-on activities to your current needs.
+                During one or two days together, we’ll combine lecture and hands-on activities. If the standard, out-of-the-box agenda suits your needs, excellent! Otherwise, we’ll tailor topics and hands-on activities to your needs.
             </p>
         </div>
-    {% endcall %}
 
-    <div class="escom-tabs">
-        {% call esds.row(background="white", class="esds-row--narrow-inner esds-row--no-inset") %}
+        <div class="escom-tabs">
             <div class="escom-tabs__tabs">
                 <div class="escom-tabs__cell">
                     <button class="escom-tabs__button escom-tabs__button--is-active" data-target="tab-standard-agenda">
@@ -72,18 +46,14 @@
                     </button>
                 </div>
             </div>
-        {% endcall %}
 
-        <div id="tab-standard-agenda" class="escom-tabs__content escom-tabs__content--is-active">
-            {% call esds.row(background="white", class="esds-row--narrow-inner esds-row--no-inset-bottom") %}
-                <div class="escom-long-form-text">
+            <div id="tab-standard-agenda" class="escom-tabs__content escom-tabs__content--is-active">
+                <div class="escom-promo-text">
                     <p>
-                        For public events and organizations looking for general education, we’ll follow a standard agenda that hits all the primary topics.
+                        For public venues and organizations looking for learning fundamentals, we’ll follow a standard agenda that hits all the important topics.
                     </p>
                 </div>
-            {% endcall %}
 
-            {% call esds.row(background="white", class="esds-row--tall-inset") %}
                 {{ escom.timeline(
                     items = [
                         {
@@ -92,54 +62,22 @@
                         },
                         {
                             time: "9:00AM - 10:45AM",
-                            heading: "Planning Systems",
+                            heading: "Segment 1: Planning a System",
                             list: [
                                 "Define your design system, including relationships across systems",
                                 "Explore your library’s scope of visual style, UI components and more",
                                 "Plan a path from nothing (or a previous version) to launch a new system",
                                 "Identify, prioritize and prepare products that’ll adopt the system"
-                            ],
-                            card_1_heading: "Deep Dive Topic",
-                            card_1: esds.card(
-                                container="light",
-                                thumbnail_image="/images/systems/workshop-color-in-design.png",
-                                title="Color in Design Systems",
-                                cta="View Article",
-                                href="#"
-                            ),
-                            card_2_heading: "Hands-On Activity",
-                            card_2: esds.card(
-                                container="light",
-                                thumbnail_image="/images/systems/workshop-parts-projects-people.png",
-                                title="Parts, Products, and People",
-                                cta="View Article",
-                                href="#"
-                            )
+                            ]
                         },
                         {
                             time: "11:00AM – 12:30pm",
-                            heading: "Designing Systems",
+                            heading: "Segment 2: Starting a System",
                             list: [
                                 "Create a new visual language, from conceptual reference designs to a Sketch sticker sheet",
                                 "Discover a UI component inventory by deconstructing existing product experiences",
                                 "Organize your library into topics, sections, and assets everyone understands"
-                            ],
-                            card_1_heading: "Deep Dive Topic",
-                            card_1: esds.card(
-                                container="light",
-                                thumbnail_image="/images/systems/workshop-buttons-in-ds.png",
-                                title="Buttons In Design Systems",
-                                cta="View Article",
-                                href="#"
-                            ),
-                            card_2_heading: "Hands-On Activity",
-                            card_2: esds.card(
-                                container="light",
-                                thumbnail_image="/images/systems/workshop-component-cut-up.png",
-                                title="Component Cut Up",
-                                cta="View Article",
-                                href="#"
-                            )
+                            ]
                         },
                         {
                             time: "12:30pm – 1:30pm",
@@ -147,64 +85,30 @@
                         },
                         {
                             time: "1:30pm – 3:00pm",
-                            heading: "Building & Documenting Systems",
+                            heading: "Segment 3: Making the System",
                             list: [
                                 "Form a predictable process for designing, building, and documenting a library",
                                 "Deliver on promises of quality and scale via a rigorous system QA practice",
                                 "Establish an information architecture strategy for documenting design and code assets",
                                 "Design effective component doc, from conventional displays to custom guidance"
-                            ],
-                            card_1_heading: "Deep Dive Topic",
-                            card_1: esds.card(
-                                container="light",
-                                thumbnail_image="/images/systems/workshop-space-in-ds.png",
-                                title="Space In Design Systems",
-                                cta="View Article",
-                                href="#"
-                            ),
-                            card_2_heading: "Hands-On Activity",
-                            card_2: esds.card(
-                                container="light",
-                                thumbnail_image="/images/systems/workshop-sketch-homepage.png",
-                                title="Sketch The System Homepage",
-                                cta="View Article",
-                                href="#"
-                            )
+                            ]
                         },
                         {
                             time: "3:30pm – 5:00pm",
-                            heading: "Practicing Systems",
+                            heading: "Segment 4: Practicing Systems",
                             list: [
                                 "Form a shared vocabulary for your system’s roles: team members, users, and contributors",
                                 "Identify the regular activities and processes to operate a systems team",
                                 "Strategize on how to coordinate with and support adopting products",
                                 "Build an inclusive and participatory community of contributors and experts"
-                            ],
-                            card_1_heading: "Deep Dive Topic",
-                            card_1: esds.card(
-                                container="light",
-                                thumbnail_image="/images/systems/workshop-measuring-system-success.png",
-                                title="Measuring System Success",
-                                cta="View Article",
-                                href="#"
-                            ),
-                            card_2_heading: "Hands-On Activity",
-                            card_2: esds.card(
-                                container="light",
-                                thumbnail_image="/images/systems/workshop-system-ops.png",
-                                title="System Operations How Do I...?",
-                                cta="View Article",
-                                href="#"
-                            )
+                            ]
                         }
                     ]
                 ) }}
-            {% endcall %}
-        </div>
+            </div>
 
-        <div id="tab-custom-agendas" class="escom-tabs__content">
-            {% call esds.row(background="white", class="esds-row--narrow-inner esds-row--no-inset-bottom") %}
-                <div class="escom-long-form-text">
+            <div id="tab-custom-agendas" class="escom-tabs__content">
+                <div class="escom-promo-text">
                     <p>
                         Most in-house teams choose to customize their agenda to tailor topics to their current needs. This may result in a workshop lengthened to two days or shortened a half day (usually paired with a sponsored talk for a larger group).
                     </p>
@@ -215,9 +119,7 @@
                         In one instance, a company paired an sponsored talk to the local community with a customized half-day in-house workshop. They chose to focus on aligning multiple in-house system efforts around a future strategy along topics covering how to practice systems. As a result, they omitted topics of system design, code and documentation.
                     </p>
                 </div>
-            {% endcall %}
 
-            {% call esds.row(background="white", class="esds-row--tall-inset") %}
                 {{ escom.timeline(
                     items = [
                         {
@@ -240,40 +142,19 @@
                                 "Identify the regular activities and processes to operate a systems team",
                                 "Strategize on how to coordinate with and support adopting products",
                                 "Build an inclusive and participatory community of contributors and experts"
-                            ],
-                            card_1_heading: "Hands-On Activity",
-                            card_1: esds.card(
-                                container="light",
-                                thumbnail_image="/images/systems/workshop-system-ops.png",
-                                title="System Operations How Do I...?",
-                                cta="View Article",
-                                href="#"
-                            )
+                            ]
                         }
                     ]
                 ) }}
-            {% endcall %}
-        </div>
+            </div>
 
-        <div id="tab-all-topics-and-activities" class="escom-tabs__content">
-            {% call esds.row(background="white", class="esds-row--narrow-inner esds-row--no-inset-bottom") %}
+            <div id="tab-all-topics-and-activities" class="escom-tabs__content">
                 <div class="escom-long-form-text">
                     <p>
                         When customizing a workshop, we’ll discuss your interests and select a range of topics and activities that fit your needs. Those include:
                     </p>
                 </div>
-            {% endcall %}
-
-            {% call esds.row(background="white", class="esds-row--tall-inset") %}
-                {{ escom.timeline(
-                    class = "escom-agenda--no-timeline",
-                    col_1_heading="Category",
-                    col_2_heading="Topic",
-                    items = [
-                        {
-                            heading: "Planning",
-                            topics: [
-                                escom.link_list(
+                {{ escom.link_list(
                                     items = [
                                         {
                                             title: "Defining Design Systems",
@@ -322,16 +203,7 @@
                                         {
                                             title: "Balancing Platforms in a Design System",
                                             href: "#"
-                                        }
-                                    ]
-                                )
-                            ]
-                        },
-                        {
-                            heading: "Products & Adoption",
-                            topics: [
-                                escom.link_list(
-                                    items = [
+                                        },
                                         {
                                             title: "Adopting Design Systems",
                                             href: "#",
@@ -341,16 +213,7 @@
                                             title: "Promoting a Design System Across Your Products",
                                             href: "#",
                                             description: "Published on AListApart"
-                                        }
-                                    ]
-                                )
-                            ]
-                        },
-                        {
-                            heading: "Design & Build",
-                            topics: [
-                                escom.link_list(
-                                    items = [
+                                        },
                                         {
                                             pill: "Activity",
                                             title: "Creating a Visual Language via Reference Designs",
@@ -407,44 +270,17 @@
                                             title: "Component QA in Design Systems",
                                             href: "#",
                                             description: "Establish a process to deliver on the quality you promise"
-                                        }
-                                    ]
-                                )
-                            ]
-                        },
-                        {
-                            heading: "Documentation",
-                            topics: [
-                                escom.link_list(
-                                    items = [
+                                        },
                                         {
                                             title: "Design System Doc Components",
                                             href: "#",
                                             description: "The Top 8 Reusable Components to Document a Library"
-                                        }
-                                    ]
-                                )
-                            ]
-                        },
-                        {
-                            heading: "Practicing",
-                            topics: [
-                                escom.link_list(
-                                    items = [
+                                        },
                                         {
                                             title: "Contributions to Design Systems",
                                             href: "#",
                                             description: "Opening a Library to a Community’s Code, Design, and More"
-                                        }
-                                    ]
-                                )
-                            ]
-                        },
-                        {
-                            heading: "People",
-                            topics: [
-                                escom.link_list(
-                                    items = [
+                                        },
                                         {
                                             title: "Designing a Systems Team",
                                             href: "#",
@@ -461,27 +297,60 @@
                                             description: "Evolving Past Overlords to Centralize or Federate Design Decision-Making Across Platforms"
                                         }
                                     ]
-                                )
-                            ]
-                        }
-                    ]
-                ) }}
-            {% endcall %}
+                                ) }}
+            </div>
         </div>
-    </div>
+    {% endcall %}
 
-    {% call esds.row(background_image="/images/systems/workshop-participants.png", class="esds-row--tall-inset esds-row--narrow-inner") %}
+    {# How We Prepare #}
+
+    {% call esds.row(background="light", class="esds-row--tall-inset") %}
         <div class="escom-promo-text">
-            <h2>Who Should You Invite?</h2>
-            <p>The systems workshop provides content relevant to many disciplines and is suitable for as many as 80 participants.</p>
+            <h2>Prepping for the Event</h2>
+            <p>
+                Once we sign an agreement, we’ll meet with you at least three times over one to two weeks to plan the event.
+            </p>
+        </div>
+        {{ esds.tiles(
+            container = "white",
+            class= "esds-tiles--secondary",
+            items = [
+                {
+                    subheading: "Meeting 1 (60 min)",
+                    heading: "Draft Agenda & Logistics",
+                    description: "During our first call, we'll review available topics and activities, discuss who should attend why, and talk space & timing."
+                },
+                {
+                    subheading: "Meeting 2 (90 min)",
+                    heading: "System & Product Tour",
+                    description: "During a second call, we'll immerse ourselves in the existing design, code and docs of your system(s) and tour the products it targets."
+                },
+                {
+                    subheading: "Meeting 3 (60 min)",
+                    heading: "Finalize Agenda",
+                    description: "We'll review a proposed agenda and any customized materials and finalize logistics."
+                }
+            ]
+        ) }}
+    {% endcall %}
+
+    {# Who Do You Invite #}
+
+    {% call esds.row(background_image="/images/systems/workshop-participants.png", class="esds-row--tall-inset") %}
+        <div class="esds-container--dark-photograph">
+            <div class="escom-promo-text">
+                <h2>Who Should You Invite?</h2>
+                <p>The workshop format is suitable for up to 100 participants and covers content relevant to many disciplines beyond just designers and engineers.</p>
+                <p></p>
+            </div>
         </div>
         {{ esds.tiles(
             class = "esds-tiles--2-column",
-            container = "white-opacity-85",
+            container = "white",
             items = [
                 {
-                    heading: "Required Participants",
-                    description: "As a system bridges design and engineering, you should at least invite:",
+                    heading: "Core Participants",
+                    description: "System workshops work best with:",
                     list: [
                         "Assigned staff already making system(s)",
                         "UX and visual designers",
@@ -490,12 +359,13 @@
                     ]
                 },
                 {
-                    heading: "Recommended Participants",
-                    description: "Systems impact an entire organization, so the workshop is even better with:",
+                    heading: "Optional Participants",
+                    description: "Expand the workshop to include:",
                     list: [
+                        "Product managers",
+                        "Project managers",
                         "Content strategists",
                         "Researchers",
-                        "Product managers",
                         "Executive sponsors"
                     ]
                 }
@@ -503,60 +373,38 @@
         ) }}
     {% endcall %}
 
-    {% call esds.row(background="light", class="esds-row--tall-inset esds-row--narrow-inner") %}
+    {# Why #}
+
+    {% call esds.row(background="black", class="esds-row--tall-inset") %}
         <div class="escom-promo-text">
-            <h2>How We Prepare</h2>
+            <h2>Why a Workshop with EightShapes?</h2>
             <p>
-                Once we sign an agreement, we’ll meet three times over one to two weeks. 
+                With EightShapes’ seasoned experience and enthusiasm, you’ll inspire your teams and spark systems work. Your team can use a workshop to:
             </p>
-            <p>
-                Over two of those sessions, we’ll set objectives, agenda and logistics. The third sessions provides for a quick, hour-long tour for your team to immerse us in your relevant products and systems already in use.
-            </p>
+            <ul>
+                <li>Kickoff or energize in-house systems efforts</li>
+                <li>Define your system and what it offers</li>
+                <li>Frame how to form a system team and energize a community</li>
+                <li>Plan how to create and adopt a system</li>
+                <li>Refine how to design and code features like color, buttons, and space</li>
+                <li>Develop a shared vocabulary for dispersed teams</li>
+                <li>Achieve outcomes and teach via with engaging hands-on activities</li>
+            </ul>
         </div>
     {% endcall %}
 
-    {% call esds.row(background="light", class="esds-row--no-inset") %}
-        <hr class="esds-row__horizontal-rule" />
-    {% endcall %}
+    {# Our Clients #}
 
-    {% call esds.row(background="light", class="esds-row--tall-inset esds-row--no-inset-bottom esds-row--narrow-inner") %}
+    {% call esds.row(background="dark", class="esds-row--tall-inset") %}
         <div class="escom-promo-text">
-            <h3>Workshop Customization</h3>
-            <p>
-                While we’ll start from preexisting material used for at public conferences, we can also customize materials to focus conversation with optional additional activities billed hourly. These activities can include:
-            </p>
-        </div>
-    {% endcall %}
-
-    {% call esds.row(background="light", class="esds-row--tall-inset") %}
-        {{ esds.tiles(
-            container = "white",
-            class= "esds-tiles--secondary",
-            items = [
-                {
-                    heading: "Interviews",
-                    description: "Interview system stakeholders to understand priorities, culture, and existing practices."
-                },
-                {
-                    heading: "System Reviews",
-                    description: "Dig into your as-is systems documentation, design assets, and code."
-                },
-                {
-                    heading: "Customize Materials",
-                    description: "Develop client-specific slides & stories, integrating relevant quotes, product and system examples."
-                }
-            ]
-        ) }}
-    {% endcall %}
-
-    {% call esds.row(background="dark", class="esds-row--tall-inset esds-row--narrow-inner") %}
-        <div class="escom-promo-text">
-            <h2>Our Workshop Clients</h2>
+            <h2>Our Clients</h2>
             <p>
                 EightShapes has conducted workshops at public events and for in-house teams across industries since 2007.
             </p>
         </div>
-        {{ escom.table(headers=[
+        {{ escom.table(
+            class="escom-table--long-form-width",
+            headers=[
             {
                 key: 'year',
                 label: 'Year',
@@ -567,14 +415,20 @@
                 label: 'In-House Events'
             },
             {
-                key: 'public_events',
-                label: 'Public Events'
+                key: 'public_venues',
+                label: 'Public Venues'
             }],
             rows=workshops,
             suppress_responsive_headers=['year']
         ) }}
     {% endcall %}
 
-    {{ escom.cta(heading="Ready?", deck="We’re ready to energize your systems effort, whether you’re just getting started or working with version 2.0. Are you ready?", button_text="LET'S TALK") }}
+    {# CTA #}
+
+    {{ escom.cta(
+        heading="Let's Get Started!", 
+        deck="We’re ready to energize your design system efforts, whether you’re just getting started or rebooting to 2.0. Are you ready?", 
+        button_text="Email Us"
+    ) }}
 
 {% endblock body %}

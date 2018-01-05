@@ -1,19 +1,24 @@
 {% macro cta(
-    class=false,
+    class="",
     heading="Ready?",
     deck=false,
-    button_text=false,
+    button_text="Email Us",
     button_href=false
 ) %}
-    <div class="escom-cta esds-row esds-row--tall-inset esds-row--narrow-inner esds-container--brand{{ ' ' + class if class }}">
-        <div class="escom-promo-text escom-promo-text--center-all">
+
+    {% set cta_class = "esds-row esds-row--tall-inset esds-container--brand escom-cta " + class %}
+
+    {% call esds.row(class=cta_class) %}
+        <div class="escom-promo-text">
             <h2>{{heading}}</h2>
             {% if deck %}
             <p>{{ deck }}</p>
             {% endif %}
-            {% if button_text %}
-            {{ esds.button(text=button_text, class="esds-button--secondary esds-button--large", element="a", href=button_href) }}
-            {% endif %}
         </div>
-    </div>
+        {% if button_text %}
+        <div class="escom-cta__action">
+        {{ esds.button(text=button_text, class="esds-button--secondary esds-button--large escom-cta__action-button", element="a", href=button_href) }}
+        </div>
+        {% endif %}
+    {% endcall %}
 {% endmacro %}

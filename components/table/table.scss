@@ -1,20 +1,24 @@
 .escom-table {
     @include esds-text-color('primary');
-    border-collapse: separate;
-    border-spacing: 0 $esds-space-generic-1-x;
+    border-collapse: collapse;
     display: block;
     width: 100%;
 
-    @media screen and (min-width: $escom-breakpoints-width-500) {
+    @media screen and (min-width: $esds-breakpoints-width-500) {
         display: table;
         font-size: $esds-font-size-body-m-default;
+    }
+
+    &.escom-table--long-form-width {
+        margin: 0 auto;
+        max-width: $esds-font-line-length-long-form;
     }
 }
 
 .escom-table__head {
     display: none;
 
-    @media screen and (min-width: $escom-breakpoints-width-500) {
+    @media screen and (min-width: $esds-breakpoints-width-500) {
         display: table-header-group;
     }
 }
@@ -22,52 +26,63 @@
 .escom-table__body  {
     display: block;
 
-    @media screen and (min-width: $escom-breakpoints-width-500) {
+    @media screen and (min-width: $esds-breakpoints-width-500) {
         display: table-row-group;
     }
 }
 
 .escom-table__row {
     display: block;
-    margin: $esds-space-stack-2-x;
 
-    @media screen and (min-width: $escom-breakpoints-width-500) {
+    @media screen and (min-width: $esds-breakpoints-width-500) {
         display: table-row;
     }
 }
 
-.escom-table__header-cell {
-    @include esds-eyebrow-heading;
+.escom-table__header-cell,
+.escom-table__cell {
+    border-bottom: 1px solid $esds-color-neutral-25;
     display: block;
     text-align: left;
 
-    @media screen and (min-width: $escom-breakpoints-width-500) {
+    @media screen and (min-width: $esds-breakpoints-width-500) {
         display: table-cell;
         font-size: $esds-font-size-heading-eyebrow-default;
         padding: $esds-space-inset-squish-2-x;
+    }
+
+    &:first-child {
         padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
     }
 }
 
-.escom-table__cell {
-    display: block;
-    margin: $esds-space-stack-1-x;
-    vertical-align: top;
+.escom-table__header-cell {
+    @include esds-eyebrow-heading();
+    @include esds-text-color('secondary');
+    vertical-align: bottom;
+}
 
-    @media screen and (min-width: $escom-breakpoints-width-500) {
-        display: table-cell;
-        padding: $esds-space-inset-squish-2-x;
-        padding-left: 0;
-    }
+.escom-table__cell {
+    @include esds-body-text-m();
+    @include esds-text-color('primary');
+    vertical-align: top;
 
     &:before {
         @include esds-eyebrow-heading;
         content: attr(data-escom-header);
         display: block;
 
-        @media screen and (min-width: $escom-breakpoints-width-500) {
+        @media screen and (min-width: $esds-breakpoints-width-500) {
             display: none;
         }
+    }
+
+    .escom-table__row:last-child & {
+        border-bottom: 0;
     }
 }
 
@@ -75,7 +90,7 @@
     @include esds-level-3-heading;
     margin: $esds-space-stack-half-x;
 
-    @media screen and (min-width: $escom-breakpoints-width-500) {
+    @media screen and (min-width: $esds-breakpoints-width-500) {
         font-size: $esds-font-size-body-m-default;
     }
 }

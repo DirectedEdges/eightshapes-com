@@ -1,34 +1,45 @@
 {% macro site_footer(
-    class=false
   ) %}
-    <div class="escom-site-footer{{ ' ' + class if class }}">
-        {{ esds.icon(name="eightshapes-logo", class="escom-site-footer__logo") }}
 
-        <div class="escom-site-footer__grid">
-            <ul class="escom-site-footer__list">
-                <li class="escom-site-footer__list-item">
-                    12805 Misty Creek Lane<br>
-                    Fairfax, VA 22033
-                </li>
-                <li class="escom-site-footer__list-item">
-                    <strong>p:</strong> <a class="escom-site-footer__link" tel="703.296.8831"> 7032968831</a>
-                </li>
-                <li class="escom-site-footer__list-item">
-                    <strong>e:</strong> <a class="escom-site-footer__link" href="mailto:info@eightshapes.com">info@eightshapes.com</a>
-                </li>
-            </ul>
+    <div class="escom-site-footer">
+        
+        <div class="escom-site-footer__logo-container">
+            {{ esds.icon(name="eightshapes-logo", class="escom-site-footer__logo") }}
+        </div>
 
-            <ul class="escom-site-footer__list">
-                <li class="escom-site-footer__list-item">
-                    {{ esds.icon(name="twitter", class="escom-site-footer__icon escom-site-footer__icon--twitter") }} <a class="escom-site-footer__link" href="https://twitter.com/eightshapes">@eightshapes</a>
-                </li>
-                <li class="escom-site-footer__list-item">
-                    {{ esds.icon(name="linkedin", class="escom-site-footer__icon escom-site-footer__icon--linkedin") }} <a class="escom-site-footer__link" href="https://www.linkedin.com/company/eightshapes-llc">@EightShapes</a>
-                </li>
-                <li class="escom-site-footer__list-item">
-                    {{ esds.icon(name="medium", class="escom-site-footer__icon escom-site-footer__icon--medium") }} <a class="escom-site-footer__link" href="https://medium.com/eightshapes-llc">@eightshapes</a>
-                </li>
-            </ul>
+        <div class="escom-site-footer__layout">
+            <div class="escom-site-footer__column">
+                <ul class="escom-site-footer__list">
+                    <li class="escom-site-footer__list-item">
+                        12805 Misty Creek Lane<br>
+                        Fairfax, VA 22033
+                    </li>
+                </ul>
+            </div>
+            <div class="escom-site-footer__column">
+                <ul class="escom-site-footer__list">
+                    <li class="escom-site-footer__list-item">
+                        <strong>p:</strong> <a class="escom-site-footer__link" tel="703.296.8831"> (703) 296-8831</a>
+                    </li>
+                    <li class="escom-site-footer__list-item">
+                        <strong>e:</strong> <a class="escom-site-footer__link" href="mailto:info@eightshapes.com">info@eightshapes.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="escom-site-footer__column">
+                <ul class="escom-site-footer__list">
+                    <li class="escom-site-footer__list-item">
+                        {{ esds.icon(name="twitter", class="escom-site-footer__icon escom-site-footer__icon--twitter") }} <a class="escom-site-footer__link" href="https://twitter.com/eightshapes">@eightshapes</a>
+                    </li>
+                    <li class="escom-site-footer__list-item">
+                        {{ esds.icon(name="linkedin", class="escom-site-footer__icon escom-site-footer__icon--linkedin") }} <a class="escom-site-footer__link" href="https://www.linkedin.com/company/eightshapes-llc">@EightShapes</a>
+                    </li>
+                    <li class="escom-site-footer__list-item">
+                        {{ esds.icon(name="medium", class="escom-site-footer__icon escom-site-footer__icon--medium") }} <a class="escom-site-footer__link" href="https://medium.com/eightshapes-llc">@eightshapes</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
+
 {% endmacro %}
