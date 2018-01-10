@@ -1,14 +1,6 @@
 .xups {
-
-	h3 {
-		color: $color-orange;
-		margin-bottom: 8px;
-	}
-
 	.ups {
-		@media screen and (min-width: 768px) {
-			margin: 0 -32px;
-		}
+		display: flex;
 	}
 
 	.up {
@@ -23,107 +15,12 @@
 		}
 	}
 
-	.ups__color-blocks {
-
-		.number {
-			background-color: $color-orange;
-			color: white;
-			padding: 7px 13px;
-			margin-right: 8px;
-			border-radius: 25px;
-			position: inline-block;
-		}
-
-		// 4 ups
-
-		@media screen and (min-width: 768px) {
-			margin: 0 -16px;
-
-			&.numbers {
-				padding-top: 20px;
-			}
-
-			.up-container {
-				width: 49.7%;
-				padding: 0 16px;
-				display: inline-block;
-				vertical-align: top;
-
-			}
-			.up {
-				position: relative;
-				min-height: 230px;
-			}
-			.number {
-				position: absolute;
-				top: -20px;
-				left: 45%;
-			}
-		}
-		@media screen and (min-width: 900px) {
-			.up {
-				min-height: 200px;
-			}
-		}
-		@media screen and (min-width: 1000px) {
-			.up {
-				min-height: 180px;
-			}
-		}
-		@media screen and (min-width: 1200px) {
-			.up-container {
-				width: 24.6%;
-			}
-			.up {
-				min-height: 290px;
-				margin-bottom: 0;
-			}
-		}
-		@media screen and (min-width: 1300px) {
-			.up {
-				min-height: 270px;
-			}
-		}
-		@media screen and (min-width: 1400px) {
-			.up {
-				min-height: 250px;
-			}
-		}
-
-		// 3 ups
-
-		&.ups__3-ups {
-			@media screen and (min-width: 768px) {
-				.up-container {
-					width: 100%;
-				}
-				.up {
-					min-height: auto;
-				}
-			}
-			@media screen and (min-width: 1000px) {
-				.up-container {
-					width: 33%;
-				}
-				.up {
-					min-height: 210px;
-				}
-			}
-			@media screen and (min-width: 1200px) {
-				.up {
-					min-height: 180px;
-				}
-			}
-		}
-	}
-
 	.ups__bio-photos {
 
 		.up {
 			height: 56px;
 			position: relative;
-			margin-bottom: $spacing-default;
-			// padding-left: 90px;
+			margin: $esds-space-stack-2-x;
 		}
 		
 		h3 {
@@ -154,7 +51,7 @@
 		}
 
 		a h3 {
-			color: $color-blue;
+			color: $esds-text-color-link-on-light;
 		}
 
 		a {
@@ -171,7 +68,7 @@
 				left: 0;
 				right: 0;
 				bottom: 0;
-				background: rgba($color-link, 0);
+				background: rgba($esds-text-color-link-on-dark-photograph, 0);
 				z-index: 10;
 				transition: background .5s;
 			}
@@ -181,7 +78,7 @@
 			text-decoration: none;
 
 			.up__image-wrap:before {
-				background: rgba($color-link, .5);
+				background: rgba($esds-text-color-link-on-dark-photograph, .5);
 			}
 		}
 
@@ -244,78 +141,6 @@
 				width: 16%;
 				margin-bottom: 16px;				
 			}
-		}
-	}
-
-	// Coloring
-
-	&.white-block-on-light-gray {
-		background-color: $color-gray-95;
-		h2 {
-			color: $color-orange;
-		}
-		@media screen and (min-width: 768px) {
-			.up {
-				background-color: white;
-			}
-		}
-	}
-
-	&.light-gray-block-on-white {
-		h2 {
-			color: $color-orange;
-		}
-		@media screen and (min-width: 768px) {
-			.up {
-				background-color: $color-gray-95;
-			}
-		}
-	}
-
-	&.charcoal-block-on-light-gray {
-		background-color: $color-gray-95;
-		h2 {
-			color: $color-orange;
-		}
-		@media screen and (min-width: 768px) {
-			.up {
-				background-color: $color-gray-15;
-			}
-			h3 {
-				color: $color-orange;
-			}
-			.ups__color-blocks p {
-				color: white;
-			}
-		}
-	}
-
-	&.white-on-charcoal {
-		background-color: $color-gray-15;
-		margin-top: -1px;
-		h2 {
-			color: $color-white;
-		}
-		.lead {
-			color: $color-white;
-		}
-		@media screen and (min-width: 768px) {
-			.up {
-				background-color: $color-gray-15;
-			}
-			h3 {
-				color: $color-white;
-			}
-			.ups__color-blocks p {
-				color: white;
-			}
-		}
-	}
-
-	&.light-gray {
-		background-color: $color-gray-95;
-		h2 {
-			color: $color-orange;
 		}
 	}
 }

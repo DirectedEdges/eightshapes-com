@@ -17,9 +17,8 @@
     {% set args = args|updateobj('type', 'biophotos') %}
   {% endif %}
 
-  <div {% if args.id %} id="who-we-are" {% endif %} class="container-fluid xups {{ args.background }}">
+  <div class="container-fluid xups {{ args.background }}">
     <div class="container-fluid-inner {{ args.context }}">
-      <h2>{{ args.h2 }}</h2>
       <p class="lead">{{ args.lead }}</p>
       <div class="ups {{ args.type }}">
 				{% for up in args.ups %}
