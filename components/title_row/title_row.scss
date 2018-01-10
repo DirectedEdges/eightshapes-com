@@ -13,6 +13,10 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    .escom-title-row--centered-deck & {
+        text-align: center;
+    }
 }
 
 .escom-title-row__logo {
@@ -23,5 +27,24 @@
 
     @media screen and (min-width: $esds-breakpoints-width-768) {
         height: 40px;
+    }
+}
+
+.escom-title-row__navigation {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto;
+    max-width: $esds-font-line-length-long-form;
+    padding: 0;
+}
+
+.escom-title-row__navigation-link {
+    color: $esds-text-color-link-on-brand;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        text-decoration: underline;
     }
 }

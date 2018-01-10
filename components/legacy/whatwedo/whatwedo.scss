@@ -2,26 +2,25 @@ $wwd-min-height-2up: 315px;
 $wwd-min-height-3up-sm: 390px;
 $wwd-min-height-3up-lg: 370px;
 
-.color-charcoal {
-  background: $color-gray-20;  
-}
-
 .whatwedo {
   
   h2, h3, p, li {
-    color: $color-white;    
+    color: $esds-text-color-primary-on-dark;    
   }
   
   h3 {
-    font-weight: 400;
+    font-size: $esds-font-size-heading-level-3-default;
+    font-weight: $esds-font-weight-regular;
+    text-transform: uppercase;
   }
   
   h3, li {
-    margin-bottom: $spacing-default/2;
+    margin: $esds-space-stack-1-x;
   }
   
   p {
-    margin-bottom: 16px;
+    margin: $esds-space-stack-1-x;
+    font-weight: $esds-font-weight-light;
   }
   
   p {
@@ -33,6 +32,8 @@ $wwd-min-height-3up-lg: 370px;
 
   li {
     font-size: 18px;
+    font-weight: $esds-font-weight-light
+    ;
     &:last-child {
       margin-bottom: 0;
     }
@@ -64,27 +65,33 @@ $wwd-min-height-3up-lg: 370px;
   
   .cta {
     a {
-      color: white;
+      color: $esds-text-color-primary-on-dark;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     .title-carat {
       display: inline;
-      fill: $color-white;
+      fill: $esds-text-color-primary-on-dark;
       height: 24px;
       width: 24px;
       position: relative;
       top: 6px;
     }
 
-    @media screen and (min-width: 768px) {      
+    @media screen and (min-width: $esds-breakpoints-width-768) {      
       text-transform: uppercase;
       position: absolute;
-      font-weight: 700;
-      bottom: $spacing-default;
+      font-weight: $esds-font-weight-bold;
+      bottom: $esds-space-generic-2-x;
       width: 100%;
+
       a {
-        color: $color-black;
-        background-color: $color-white;
+        color: $esds-text-color-primary-on-white;
+        background-color: $esds-background-color-white;
         padding: 16px;
         width: calc(100% - 64px);
         display: block;
@@ -108,12 +115,12 @@ $wwd-min-height-3up-lg: 370px;
   }
   
   .productdesign-block {
-    padding: $spacing-default;
-    background: $color-gray-30;
+    padding: $esds-space-inset-2-x;
+    background: $esds-color-neutral-25;
     width: 100%;
   
-    @media screen and (min-width: 1200px) {
-      padding: $spacing-default;
+    @media screen and (min-width: $esds-breakpoints-width-1200) {
+      padding: $esds-space-inset-2-x;
       width: 40%;
       margin: 0 0 0 30%;
       min-height: $wwd-min-height-3up-sm;
@@ -123,8 +130,8 @@ $wwd-min-height-3up-lg: 370px;
     }
   }
   .discovery-block {
-    padding: $spacing-default;
-    background: $color-orange;
+    padding: $esds-space-inset-2-x;
+    background: $esds-background-color-brand;
     width: 100%;
   
     @media screen and (min-width: 768px) {      
@@ -142,9 +149,10 @@ $wwd-min-height-3up-lg: 370px;
       min-height: $wwd-min-height-3up-lg;
     }
   }
+
   .systems-block {
-    padding: $spacing-default;
-    background: $color-gray-12;
+    background: $esds-background-color-black;
+    padding: $esds-space-inset-2-x;
     width: 100%;
 
     @media screen and (min-width: 768px) {

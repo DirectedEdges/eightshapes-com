@@ -1,18 +1,49 @@
 {% extends 'templates/base.njk' %}
 
 {% block body %}
-  {{ escom.header() }}
+    {{ escom.title_row(
+        class="escom-title-row--centered-deck",
+        logo=true,
+        background="brand",
+        decks=[
+            "EightShapes designs web-based products and systems that make for beautiful, usable, cohesive experiences."
+        ],
+        nav_items=[
+          {    
+            href: "#our-work",
+            label: "Our Work"
+          },
+          {
+            href: "#services",
+            label: "What We Do"
+          },
+          {
+            href: "#who-we-are",
+            label: "Who We Are"
+          },
+          {
+            href: "#contributions",
+            label: "Contributions"
+          }
+        ]
+   
+    ) }}
 
   <!-- Our Work -->
-  {{ escom.casestudies() }}
+  {% call esds.row(background="light") %}
+    <div class="escom-promo-text">
+        <h2 id="our-work">Our Work</h2>
+    </div>
+    {{ escom.casestudies() }}
+  {% endcall %}
 
   <!-- What We Do -->
-
-  <div id="services" class="container-fluid color-charcoal">
-    <div class="container-fluid-inner">
-        {{ escom.whatwedo() }}
+  {% call esds.row(background="dark") %}
+    <div class="escom-promo-text">
+      <h2 id="services">What We Do</h2>
     </div>
-  </div>
+    {{ escom.whatwedo() }}
+  {% endcall %}
   
   <!-- People -->
   {{ escom.xups({

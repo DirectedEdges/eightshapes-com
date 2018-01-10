@@ -22,3 +22,8 @@
 @import 'components/card_grid/card_grid';
 @import 'components/cta/cta';
 @import 'components/logo_grid/logo_grid';
+
+// Include SOME legacy components for now
+@import 'components/legacy/casestudies/casestudies';
+@import 'components/legacy/client_brands/client_brands';
+@import 'components/legacy/whatwedo/whatwedo';
