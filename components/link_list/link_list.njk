@@ -38,7 +38,7 @@
                 {% if item.href %}
                 <a class="escom-link-list__link" href="{{ item.href }}">
                 {% endif %}
-                    {{ item.title }}
+                    {{ item.title | markdown }}
                 {% if item.href %}
                 </a>
                 {% endif %}
