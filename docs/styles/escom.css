@@ -2720,7 +2720,7 @@ body {
   .casestudy h3, .casestudy h4 {
     color: #FFFFFF;
     margin: 0;
-    font-weight: 400; }
+    font-weight: 300; }
   .casestudy h4 {
     font-weight: 300; }
   @media screen and (min-width: 560px) {
@@ -2785,7 +2785,7 @@ body {
 
 .whatwedo h3 {
   font-size: 23.04px;
-  font-weight: 400;
+  font-weight: 300;
   text-transform: uppercase; }
 
 .whatwedo h3, .whatwedo li {
@@ -2844,7 +2844,7 @@ body {
   .whatwedo .cta {
     text-transform: uppercase;
     position: absolute;
-    font-weight: 700;
+    font-weight: 300;
     bottom: 32px;
     width: 100%; }
     .whatwedo .cta a {
