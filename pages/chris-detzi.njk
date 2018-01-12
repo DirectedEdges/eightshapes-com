@@ -108,7 +108,7 @@
                     ]
                 ) }}
             {% endcall %}
-            {% call escom.tab_pane(label='projects', active=true) %}
+            {% call escom.tab_pane(label='writing', active=true) %}
                 {{ escom.timeline(
                     items = [
                         {
@@ -141,7 +141,17 @@
                                             eyebrow: "UX MAGAZINE, MARCH 2012",
                                             title: "From Content Audit to Design Insight",
                                             href: "http://uxmag.com/articles/from-content-audit-to-design-insight"
-                                        },
+                                        }
+                                    ]
+                                )
+                            ]
+                        },
+                        {
+                            heading: "2009",
+                            topics: [
+                                escom.link_list(
+                                    class = "escom-link-list--large",
+                                    items = [
                                         {
                                             eyebrow: "BOXES AND ARROWS, AUGUST 2009",
                                             title: "The Content Conundrum",
