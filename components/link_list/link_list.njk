@@ -51,6 +51,11 @@
                 {{ item.description }}
             </dd>
             {% endif %}
+            {% if item.metadata %}
+            <dt class="escom-link-list__metadata">
+                {{ item.metadata }}
+            </dt>
+            {% endif %}
         </dl>
     </li>
     {% endif %}
