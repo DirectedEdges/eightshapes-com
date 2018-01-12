@@ -20,7 +20,7 @@
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -31,7 +31,7 @@
   font-weight: 300;
   line-height: 1.2;
   font-size: 33.184px;
-  font-weight: 700; }
+  font-weight: 300; }
   .esds-typography-sink--level-1-heading::before, .esds-typography-sink--level-1-heading::after {
     content: '';
     display: block;
@@ -68,7 +68,7 @@
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -79,7 +79,7 @@
   font-weight: 300;
   line-height: 1.2;
   font-size: 27.648px;
-  font-weight: 400; }
+  font-weight: 300; }
   .esds-typography-sink--level-2-heading::before, .esds-typography-sink--level-2-heading::after {
     content: '';
     display: block;
@@ -116,7 +116,7 @@
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -127,7 +127,7 @@
   font-weight: 300;
   line-height: 1.2;
   font-size: 23.04px;
-  font-weight: 400; }
+  font-weight: 300; }
   .esds-typography-sink--level-3-heading::before, .esds-typography-sink--level-3-heading::after {
     content: '';
     display: block;
@@ -164,7 +164,7 @@
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -175,7 +175,7 @@
   font-weight: 300;
   line-height: 1.2;
   font-size: 19.2px;
-  font-weight: 700; }
+  font-weight: 300; }
   .esds-typography-sink--level-4-heading::before, .esds-typography-sink--level-4-heading::after {
     content: '';
     display: block;
@@ -212,7 +212,7 @@
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -223,7 +223,7 @@
   font-weight: 300;
   line-height: 1.2;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: 1.67px;
   line-height: 1.2;
   text-transform: uppercase; }
@@ -263,7 +263,7 @@
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -272,7 +272,7 @@
   text-shadow: none;
   text-transform: none;
   font-size: 19.2px;
-  font-weight: 400; }
+  font-weight: 300; }
   .esds-typography-sink--body-text-l::before, .esds-typography-sink--body-text-l::after {
     content: '';
     display: block;
@@ -309,7 +309,7 @@
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -318,7 +318,7 @@
   text-shadow: none;
   text-transform: none;
   font-size: 16px;
-  font-weight: 400; }
+  font-weight: 300; }
   .esds-typography-sink--body-text-m::before, .esds-typography-sink--body-text-m::after {
     content: '';
     display: block;
@@ -355,7 +355,7 @@
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -364,7 +364,7 @@
   text-shadow: none;
   text-transform: none;
   font-size: 12px;
-  font-weight: 400; }
+  font-weight: 300; }
   .esds-typography-sink--body-text-s::before, .esds-typography-sink--body-text-s::after {
     content: '';
     display: block;
@@ -481,7 +481,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -492,7 +492,7 @@ body {
   font-weight: 300;
   line-height: 1.2;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: 1.67px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -535,7 +535,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -544,7 +544,7 @@ body {
   text-shadow: none;
   text-transform: none;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   vertical-align: top; }
   .esds-container--white .escom-table__cell {
     color: #262626; }
@@ -583,7 +583,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 1.3;
     text-align: left;
@@ -594,7 +594,7 @@ body {
     font-weight: 300;
     line-height: 1.2;
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 300;
     letter-spacing: 1.67px;
     line-height: 1.2;
     text-transform: uppercase;
@@ -631,7 +631,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -642,7 +642,7 @@ body {
   font-weight: 300;
   line-height: 1.2;
   font-size: 23.04px;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0 0 8px; }
   .esds-container--white .escom-table__responsive-row-header {
     color: #262626; }
@@ -718,7 +718,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -729,7 +729,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -740,7 +740,7 @@ body {
   font-weight: 300;
   line-height: 1.2;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: 1.67px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -771,7 +771,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -825,7 +825,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -834,7 +834,7 @@ body {
   text-shadow: none;
   text-transform: none;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0 0 16px; }
   .esds-container--white .escom-timeline__list-item {
     color: #262626; }
@@ -876,7 +876,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -911,7 +911,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -964,7 +964,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -980,7 +980,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -989,7 +989,7 @@ body {
   text-shadow: none;
   text-transform: none;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0; }
   .esds-container--white .escom-link-list__group {
     color: #262626; }
@@ -1028,7 +1028,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 1.3;
     text-align: left;
@@ -1037,7 +1037,7 @@ body {
     text-shadow: none;
     text-transform: none;
     font-size: 19.2px;
-    font-weight: 400; }
+    font-weight: 300; }
     .esds-container--white .escom-link-list--large .escom-link-list__group {
       color: #262626; }
     .esds-container--light .escom-link-list--large .escom-link-list__group {
@@ -1062,7 +1062,7 @@ body {
 
 .escom-link-list__title {
   color: #262626;
-  font-weight: 700; }
+  font-weight: 300; }
   .escom-link-list--large .escom-link-list__title {
     font-weight: 300; }
 
@@ -1077,7 +1077,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -1088,7 +1088,7 @@ body {
   font-weight: 300;
   line-height: 1.2;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 300;
   letter-spacing: 1.67px;
   line-height: 1.2;
   text-transform: uppercase; }
@@ -1141,7 +1141,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 1.3;
     text-align: left;
@@ -1152,7 +1152,7 @@ body {
     font-weight: 300;
     line-height: 1.2;
     font-size: 33.184px;
-    font-weight: 700;
+    font-weight: 300;
     margin: 0 0 32px; }
     .escom-long-form-text h1::before, .escom-long-form-text h1::after {
       content: '';
@@ -1193,7 +1193,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 1.3;
     text-align: left;
@@ -1204,7 +1204,7 @@ body {
     font-weight: 300;
     line-height: 1.2;
     font-size: 27.648px;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0 0 32px; }
     .escom-long-form-text h2::before, .escom-long-form-text h2::after {
       content: '';
@@ -1245,7 +1245,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 1.3;
     text-align: left;
@@ -1256,7 +1256,7 @@ body {
     font-weight: 300;
     line-height: 1.2;
     font-size: 23.04px;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0 0 32px; }
     .escom-long-form-text h3::before, .escom-long-form-text h3::after {
       content: '';
@@ -1297,7 +1297,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 1.3;
     text-align: left;
@@ -1308,7 +1308,7 @@ body {
     font-weight: 300;
     line-height: 1.2;
     font-size: 19.2px;
-    font-weight: 700;
+    font-weight: 300;
     margin: 0 0 32px; }
     .escom-long-form-text h4::before, .escom-long-form-text h4::after {
       content: '';
@@ -1348,7 +1348,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 1.3;
     text-align: left;
@@ -1357,7 +1357,7 @@ body {
     text-shadow: none;
     text-transform: none;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0 0 16px; }
     .esds-container--white .escom-long-form-text p {
       color: #262626; }
@@ -1386,7 +1386,7 @@ body {
       font-family: "Lato", sans-serif;
       font-size: 16px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 300;
       letter-spacing: 0;
       line-height: 1.3;
       text-align: left;
@@ -1395,7 +1395,7 @@ body {
       text-shadow: none;
       text-transform: none;
       font-size: 19.2px;
-      font-weight: 400;
+      font-weight: 300;
       margin: 0 0 32px; }
       .esds-container--white .escom-long-form-text p.escom-long-form-text__p--l {
         color: #262626; }
@@ -1424,7 +1424,7 @@ body {
       font-family: "Lato", sans-serif;
       font-size: 16px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 300;
       letter-spacing: 0;
       line-height: 1.3;
       text-align: left;
@@ -1433,7 +1433,7 @@ body {
       text-shadow: none;
       text-transform: none;
       font-size: 12px;
-      font-weight: 400;
+      font-weight: 300;
       margin: 0 0 8px; }
       .esds-container--white .escom-long-form-text p.escom-long-form-text__p--s {
         color: #6B6B6B; }
@@ -1478,7 +1478,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 1.3;
     text-align: left;
@@ -1487,7 +1487,7 @@ body {
     text-shadow: none;
     text-transform: none;
     font-size: 19.2px;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0 0 32px; }
     .escom-long-form-text ul::before, .escom-long-form-text ul::after,
     .escom-long-form-text ol::before,
@@ -1540,7 +1540,7 @@ body {
   background-color: #F3F1F1;
   color: #262626;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 300;
   padding: 2px 4px;
   text-transform: uppercase;
   vertical-align: middle; }
@@ -1558,7 +1558,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 1.3;
     text-align: left;
@@ -1569,7 +1569,7 @@ body {
     font-weight: 300;
     line-height: 1.2;
     font-size: 33.184px;
-    font-weight: 700;
+    font-weight: 300;
     margin: 0 0 32px; }
     .escom-long-form-text h1::before, .escom-long-form-text h1::after {
       content: '';
@@ -1610,7 +1610,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 1.3;
     text-align: left;
@@ -1621,7 +1621,7 @@ body {
     font-weight: 300;
     line-height: 1.2;
     font-size: 27.648px;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0 0 32px; }
     .escom-long-form-text h2::before, .escom-long-form-text h2::after {
       content: '';
@@ -1662,7 +1662,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 1.3;
     text-align: left;
@@ -1673,7 +1673,7 @@ body {
     font-weight: 300;
     line-height: 1.2;
     font-size: 23.04px;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0 0 32px; }
     .escom-long-form-text h3::before, .escom-long-form-text h3::after {
       content: '';
@@ -1714,7 +1714,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 1.3;
     text-align: left;
@@ -1725,7 +1725,7 @@ body {
     font-weight: 300;
     line-height: 1.2;
     font-size: 19.2px;
-    font-weight: 700;
+    font-weight: 300;
     margin: 0 0 32px; }
     .escom-long-form-text h4::before, .escom-long-form-text h4::after {
       content: '';
@@ -1765,7 +1765,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 1.3;
     text-align: left;
@@ -1774,7 +1774,7 @@ body {
     text-shadow: none;
     text-transform: none;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0 0 16px; }
     .esds-container--white .escom-long-form-text p {
       color: #262626; }
@@ -1803,7 +1803,7 @@ body {
       font-family: "Lato", sans-serif;
       font-size: 16px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 300;
       letter-spacing: 0;
       line-height: 1.3;
       text-align: left;
@@ -1812,7 +1812,7 @@ body {
       text-shadow: none;
       text-transform: none;
       font-size: 19.2px;
-      font-weight: 400;
+      font-weight: 300;
       margin: 0 0 32px; }
       .esds-container--white .escom-long-form-text p.escom-long-form-text__p--l {
         color: #262626; }
@@ -1841,7 +1841,7 @@ body {
       font-family: "Lato", sans-serif;
       font-size: 16px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 300;
       letter-spacing: 0;
       line-height: 1.3;
       text-align: left;
@@ -1850,7 +1850,7 @@ body {
       text-shadow: none;
       text-transform: none;
       font-size: 12px;
-      font-weight: 400;
+      font-weight: 300;
       margin: 0 0 8px; }
       .esds-container--white .escom-long-form-text p.escom-long-form-text__p--s {
         color: #6B6B6B; }
@@ -1895,7 +1895,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 1.3;
     text-align: left;
@@ -1904,7 +1904,7 @@ body {
     text-shadow: none;
     text-transform: none;
     font-size: 19.2px;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0 0 32px; }
     .escom-long-form-text ul::before, .escom-long-form-text ul::after,
     .escom-long-form-text ol::before,
@@ -1992,7 +1992,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -2005,7 +2005,7 @@ body {
   line-height: 1.3;
   color: #FFFFFF;
   font-size: 23.04px;
-  font-weight: 700;
+  font-weight: 300;
   margin: 0 0 16px; }
   .escom-hero-profile__heading::before, .escom-hero-profile__heading::after {
     content: '';
@@ -2027,7 +2027,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -2039,7 +2039,7 @@ body {
   line-height: 1.2;
   color: #CCCACA;
   font-size: 13.6px;
-  font-weight: 700;
+  font-weight: 300;
   margin: 0;
   text-transform: uppercase; }
   @media screen and (min-width: 480px) {
@@ -2073,7 +2073,7 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -2082,7 +2082,7 @@ body {
   text-shadow: none;
   text-transform: none;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   list-style: none;
   margin: 0 0 16px;
   padding: 0; }
@@ -2250,7 +2250,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 1.3;
     text-align: left;
@@ -2261,7 +2261,7 @@ body {
     font-weight: 300;
     line-height: 1.2;
     font-size: 33.184px;
-    font-weight: 700;
+    font-weight: 300;
     margin: 0 0 48px;
     text-align: center; }
     .escom-promo-text h1::before, .escom-promo-text h1::after {
@@ -2313,7 +2313,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 1.3;
     text-align: left;
@@ -2324,7 +2324,7 @@ body {
     font-weight: 300;
     line-height: 1.2;
     font-size: 27.648px;
-    font-weight: 400;
+    font-weight: 300;
     color: #E76822;
     margin: 0 0 32px;
     text-align: center; }
@@ -2368,7 +2368,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 1.3;
     text-align: left;
@@ -2379,7 +2379,7 @@ body {
     font-weight: 300;
     line-height: 1.2;
     font-size: 23.04px;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0 0 32px; }
     .escom-promo-text h3::before, .escom-promo-text h3::after {
       content: '';
@@ -2430,7 +2430,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 0;
     line-height: 1.3;
     text-align: left;
@@ -2439,7 +2439,7 @@ body {
     text-shadow: none;
     text-transform: none;
     font-size: 19.2px;
-    font-weight: 400;
+    font-weight: 300;
     margin: 0 0 32px; }
     .esds-container--white .escom-promo-text p, .esds-container--white
     .escom-promo-text li {

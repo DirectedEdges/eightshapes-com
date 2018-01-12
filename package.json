@@ -21,6 +21,6 @@
     "esds-build": "^0.28.1"
   },
   "dependencies": {
-    "esds-library": "^0.6.0"
+    "esds-library": "^0.7.0"
   }
 }
