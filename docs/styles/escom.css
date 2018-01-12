@@ -901,10 +901,10 @@ body {
           justify-content: center;
   padding: 0 0 16px; }
 
-.escom-tabs__cell {
+.escom-tabs__tab {
   padding: 0 8px; }
   @media screen and (min-width: 500px) {
-    .escom-tabs__cell {
+    .escom-tabs__tab {
       padding: 0 24px; } }
 
 .escom-tabs__button {
@@ -945,7 +945,8 @@ body {
   pointer-events: none; }
 
 .escom-tabs__content {
-  display: none; }
+  display: none;
+  padding: 16px; }
 
 .escom-tabs__content--is-active {
   display: block; }

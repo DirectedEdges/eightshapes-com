@@ -5,7 +5,7 @@
     padding: $esds-space-stack-1-x;
 }
 
-.escom-tabs__cell {
+.escom-tabs__tab {
     padding: 0 $esds-space-generic-half-x;
 
     @media screen and (min-width: $esds-breakpoints-width-500) {
@@ -47,6 +47,7 @@
 
 .escom-tabs__content {
     display: none;
+    padding: $esds-space-inset-1-x;
 }
 
 .escom-tabs__content--is-active {
