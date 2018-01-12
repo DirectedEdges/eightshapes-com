@@ -8,17 +8,18 @@ $brand-max-width: 960px;
 }
 
 .client-brands__image {
-  margin-bottom: $spacing-default;
+  margin: $esds-space-stack-2-x;
+  max-width: 100%;
 }
 
-@media screen and (min-width: $screen-sm) {
+@media screen and (min-width: $esds-breakpoints-width-768) {
   .client-brands {
     padding: 0;
   }
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $esds-breakpoints-width-768) {
 
   .client-brands {
     @include clearfix;
@@ -37,7 +38,7 @@ $brand-max-width: 960px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $esds-breakpoints-width-1200) {
   .client-brands {
     padding: 0;
   }

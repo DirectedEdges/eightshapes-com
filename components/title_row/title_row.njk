@@ -1,31 +1,38 @@
 {% macro title_row(
     class=false,
     background_image="",
+    background="dark",
     logo=true,
-    heading="[Title]",
-    decks=["[Empty Deck Paragraph]"]
+    heading=false,
+    decks=["[Empty Deck Paragraph]"],
+    page_anchors=[]
 ) %}
 
-    {% set title_row_class = "esds-row esds-row--tall-inset esds-container--dark escom_title_row " + class %}
-
-    {% call esds.row(
-        background_image=background_image,
-        class=title_row_class
-    )%}
-
+    {% set title_row_class = "esds-row esds-row--tall-inset esds-container--" + background + " escom_title_row " + class %}
+    {% call esds.row(background_image=background_image, class=title_row_class)%}
         {% if logo %}
             <div class="escom-title-row__logo-container">
                 {{ esds.icon(name="eightshapes-logo", class="escom-title-row__logo") }}
             </div>
         {% endif %}
-        <div class="escom-promo-text">
-            <h1>{{heading}}</h1>
-        </div>
+        {% if heading %}
+            <div class="escom-promo-text">
+                <h1>{{heading}}</h1>
+            </div>
+        {% endif %}
         {% if decks %}
             {% for deck in decks %}
             <p class="escom-title-row__lead">{{ deck | safe }}</p>
             {% endfor %}
         {% endif %}
-
+        {% if page_anchors.length > 0 %}
+            <ul class="escom-title-row__page-anchor">
+                {% for page_anchor in page_anchors %}
+                    <li class="escom-title-row__page-anchor-item">
+                        <a href="{{ page_anchor.href}}" class="escom-title-row__page-anchor-link"> {{ page_anchor.label }} </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
     {% endcall %}
 {% endmacro %}

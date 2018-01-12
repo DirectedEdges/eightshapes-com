@@ -1,33 +1,28 @@
-.casestudies {
-  background: $color-white;
-  
-  h2 {
-    color: $color-orange;
-    margin: 0 0 16px;
-    text-align: center;
-    
-    @media screen and (min-width: 768px) {
-      margin: 0 0 32px;
-    }
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
   }
+  &:after {
+    clear: both;
+  }
+}
 
-  .cases {
-    max-width: 1200px;
-    margin: 0 auto 16px;
-    @include clearfix;
-    @media screen and (min-width: 768px) {
-      margin-bottom: 32px;
-    }
+.cases {
+  max-width: 1200px;
+  margin: 0 auto 16px;
+  @include clearfix;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
   }
 }
 
 .casestudy {
-  background-color: $color-blue;
   display: block;
 
   background-image: url('../images/components/casestudies/cs-title--aact.jpg');
   background-position: center center;
-  background-color: $color-white;
   background-repeat: no-repeat;
   background-size: cover;
   height: 80px;
@@ -36,7 +31,7 @@
   
   &:before {
     content: "";
-    background: rgba($color-link, 0);
+    background: rgba($esds-text-color-link-on-dark-photograph, 0);
     top: 0;
     bottom: 0;
     left: 0;
@@ -48,7 +43,7 @@
   }
 
   &:hover:before {
-    background: rgba($color-link, .5);
+    background: rgba($esds-text-color-link-on-dark-photograph, .5);
   }
 
   .title {
@@ -60,7 +55,7 @@
 
   .title-carat {
     display: inline;
-    fill: $color-white;
+    fill: $esds-text-color-primary-on-dark-photograph;
     height: 24px;
     width: 24px;
     position: relative;
@@ -72,13 +67,13 @@
   }
 
   h3, h4 {
-    color: $color-white;
+    color: $esds-text-color-primary-on-dark-photograph;
     margin: 0;
-    font-weight: $font-weight-normal;
+    font-weight: $esds-font-weight-regular;
   }
 
   h4 {
-    font-weight: $font-weight-light;
+    font-weight: $esds-font-weight-light;
   }
 
   @media screen and (min-width: 560px) {
