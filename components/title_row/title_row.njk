@@ -5,7 +5,7 @@
     logo=true,
     heading=false,
     decks=["[Empty Deck Paragraph]"],
-    nav_items=[]
+    page_anchors=[]
 ) %}
 
     {% set title_row_class = "esds-row esds-row--tall-inset esds-container--" + background + " escom_title_row " + class %}
@@ -25,11 +25,11 @@
             <p class="escom-title-row__lead">{{ deck | safe }}</p>
             {% endfor %}
         {% endif %}
-        {% if nav_items.length > 0 %}
-            <ul class="escom-title-row__navigation">
-                {% for nav_item in nav_items %}
-                    <li class="escom-title-row__navigation-item">
-                        <a href="{{ nav_item.href}}" class="escom-title-row__navigation-link"> {{ nav_item.label }} </a>
+        {% if page_anchors.length > 0 %}
+            <ul class="escom-title-row__page-anchor">
+                {% for page_anchor in page_anchors %}
+                    <li class="escom-title-row__page-anchor-item">
+                        <a href="{{ page_anchor.href}}" class="escom-title-row__page-anchor-link"> {{ page_anchor.label }} </a>
                     </li>
                 {% endfor %}
             </ul>

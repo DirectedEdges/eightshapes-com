@@ -30,7 +30,7 @@
     }
 }
 
-.escom-title-row__navigation {
+.escom-title-row__page-anchor {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -39,7 +39,7 @@
     padding: 0;
 }
 
-.escom-title-row__navigation-link {
+.escom-title-row__page-anchor-link {
     color: $esds-text-color-link-on-brand;
     text-decoration: none;
     text-transform: uppercase;

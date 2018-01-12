@@ -2184,7 +2184,7 @@ body {
     .escom-title-row__logo {
       height: 40px; } }
 
-.escom-title-row__navigation {
+.escom-title-row__page-anchor {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2196,11 +2196,11 @@ body {
   max-width: 800px;
   padding: 0; }
 
-.escom-title-row__navigation-link {
+.escom-title-row__page-anchor-link {
   color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase; }
-  .escom-title-row__navigation-link:hover {
+  .escom-title-row__page-anchor-link:hover {
     text-decoration: underline; }
 
 @media screen and (min-width: 1000px) {
