@@ -8,20 +8,33 @@
         <div class="escom-layout__content--narrow">
             <div class="escom-long-form-text">
                 <p class="escom-long-form-text__p--l">
-                    Chris leads a wide range of design programs at Eightshapes, delivering results for clients across numerous industries. He balances strategic consultation with high quality execution.  He’s at ease working directly with an organization’s senior most staff or right alongside designers, developers, and management teams. 
+                    Chris leads a wide range of design programs at Eightshapes, delivering results for clients across numerous industries. He balances strategic consultation with high quality execution and delivery.   
                 </p>
                 <p class="escom-long-form-text__p--l">
-                    Throughout his career, Chris has:
+                    He’s at ease working directly with an organization’s senior most staff or right alongside designers, developers, and management teams. Throughout his career, Chris has:
                 <ul>
-                    <li> **built and integrated** in-house design teams into product development workflows </li>
-                    <li> led **multi-disciplinary project teams** on projects </li>
-                    <li> directed large, multi-faceted design and development programs both in-house and as consultant</li>
+                    <li style="margin-bottom:12px"> <b>Built and integrated</b> in-house design teams into product development workflows </li>
+                    <li style="margin-bottom:12px"> <b>Led cross-functional</b> project teams to complete complex design and development projects </li>
+                    <li> <b>Directed</b> large, multi-faceted <b>design programs</b> both in-house and as consultant</li>
                 </ul>
-
             </div>
-        </div>
+            <p>--</p>
+            <!-- Select Quotes from Linked In -->
+            <style>
+            .bq1 p { color: ##888888; font-size: 18px; font-weight: 300;}
+            p.after { margin-left: 40px;}
+            </style>
+            <blockquote class="bq1" cite="http://www.hongkiat.com/blog/top-css-editors-reviewed/">
+                <p>Chris is a strategic thinker who designs with the big picture in mind. He sees important connections and always asks the right questions. Chris's leadership and creative direction was vital to helping the team scale and manage the variety of different projects.</p>
+            </blockquote>
+            <p class="after">- <a href="https://www.linkedin.com/in/chrisdetzi/">Brynna Donn, Director at Yahoo!</a></p>
+            <p>--</p>
+            <blockquote class="bq1" cite="http://www.hongkiat.com/blog/top-css-editors-reviewed/">
+                <p>Chris understands the big picture, sets clear expectations and motivates his team to care about the project. He’s a confident decision maker, yet a calming presence that can handle conflict resolution.......and Chris’ projects are always successful.</p>
+            </blockquote>
+            <p class="after">- <a href="https://www.linkedin.com/in/chrisdetzi/">Debbie LeNard, Content Strategist</a></p>
+            </div>
     {% endcall %}
-
     {% call esds.row(background="white", class="esds-row--narrow-inner") %}
         <div class="escom-layout__content--narrow">
                        {{ escom.tabs(tabs=[
@@ -37,7 +50,25 @@
             {% call escom.tab_pane(label='projects', active=true) %}
                 {{ escom.timeline(
                     items = [
-                        {
+{
+                            heading: "2018",
+                            topics: [
+                                escom.link_list(
+                                    class = "escom-link-list--large",
+                                    items = [
+                                        {
+                                            eyebrow: "Design Lead and Information Architect",
+                                            title: "**Virtru** Control Center Application Design"
+                                        },
+                                        {
+                                            eyebrow: "System Lead of blended eightshapes/client team",
+                                            title: "**NetApp** LUCI Design System",
+                                            href: "http://luci.netapp.com"
+                                        }
+                                    ]
+                                )
+                            ]
+                        },                        {
                             heading: "2017",
                             topics: [
                                 escom.link_list(
@@ -45,7 +76,7 @@
                                     items = [
                                         {
                                             eyebrow: "Design Lead",
-                                            title: "**Netapp** Dashboard Design"
+                                            title: "**NetApp** Dashboard Design"
                                         },
                                         {
                                             eyebrow: "System Lead of blended eightshapes/client team",
@@ -53,9 +84,8 @@
                                             href: "https:indigo.universalservice.org"
                                         },
                                         {
-                                            eyebrow: "System Lead of blended eightshapes/client team",
-                                            title: "**NetApp** LUCI Design System",
-                                            href: "http://luci.netapp.com"
+                                            eyebrow: "Information Architect",
+                                            title: "**NetApp** Software Trials Redesign"
                                         }
                                     ]
                                 )
@@ -144,7 +174,7 @@
                     ]
                 ) }}
             {% endcall %}
-            {% call escom.tab_pane(label='writing', active=true) %}
+            {% call escom.tab_pane(label='writing') %}
                 {{ escom.timeline(
                     items = [
                         {
