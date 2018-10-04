@@ -12,8 +12,8 @@ $escom-bio-thumbnails-color-photo-overlay: rgba($esds-text-color-link-on-dark-ph
 }
 
 .escom-bio-thumbnail__image-wrap {
-    position: relative;
     margin: $esds-space-stack-half-x;
+    position: relative;
 
     &:before {
         background: $escom-bio-thumbnails-color-photo-overlay;

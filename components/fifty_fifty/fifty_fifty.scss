@@ -1,4 +1,5 @@
 .escom-fifty-fifty {
+    border-radius: $esds-border-radius-default;
 
     @media screen and (min-width: 1000px) {
         align-items: center;
@@ -12,6 +13,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: $esds-border-radius-default;
     min-height: 200px;
 
     @media screen and (min-width: 1000px) {

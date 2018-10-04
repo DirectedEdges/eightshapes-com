@@ -15,11 +15,11 @@
         
         <title></title>
         
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,300" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,600" rel="stylesheet">
         <link rel="stylesheet" href="/styles/dependencies/esds.css"> <!-- copied from esds-library dependency -->
         <link rel="stylesheet" href="/styles/escom.css">
     </head>
-    <body>
+    <body class="escom-page-type--marketing">
         
 
     
@@ -66,7 +66,7 @@
     
     
 
-<div class="esds-row esds-row esds-row--tall-inset esds-container--dark escom_title_row esds-row--very-very-tall-inset"
+<div class="esds-row esds-row esds-row--tall-inset esds-container--dark escom_title_row esds-row--very-tall-inset"
     
         style="background-image: url(/images/systems/workshops-hero.png)"
     
@@ -76,9 +76,7 @@
             
         
         
-            <div class="escom-promo-text">
-                <h1>System Workshops</h1>
-            </div>
+            <h1 class="escom-title-row__title">System Workshops</h1>
         
         
             
@@ -104,36 +102,49 @@
     <div class="esds-row__inner">
         
             
-        <div class="escom-promo-text">
+        <div class="escom-long-form-text">
             <h2>What We Cover</h2>
-            <p>
+            <p class="escom-long-form-text__lead">
                 During one or two days together, we’ll combine lecture and hands-on activities. If the standard, out-of-the-box agenda suits your needs, excellent! Otherwise, we’ll tailor topics and hands-on activities to your needs.
             </p>
         </div>
 
-        <div class="escom-tabs">
-            <div class="escom-tabs__tabs">
-                <div class="escom-tabs__cell">
+            
+    <div class="escom-tabs">
+        <div class="escom-tabs__tabs">
+            
+                
+                <div class="escom-tabs__tab">
                     <button class="escom-tabs__button escom-tabs__button--is-active" data-target="tab-standard-agenda">
                         Standard Agenda
                     </button>
                 </div>
-
-                <div class="escom-tabs__cell">
+            
+                
+                <div class="escom-tabs__tab">
                     <button class="escom-tabs__button" data-target="tab-custom-agendas">
                         Custom Agendas
                     </button>
                 </div>
-
-                <div class="escom-tabs__cell">
-                    <button class="escom-tabs__button" data-target="tab-all-topics-and-activities">
-                        All Topics & Activities
+            
+                
+                <div class="escom-tabs__tab">
+                    <button class="escom-tabs__button" data-target="tab-available-topics">
+                        Available Topics
                     </button>
                 </div>
-            </div>
+            
+        </div>
 
-            <div id="tab-standard-agenda" class="escom-tabs__content escom-tabs__content--is-active">
-                <div class="escom-promo-text">
+
+    </div>
+
+
+            
+    
+    <div id="tab-standard-agenda" class="escom-tabs__content  escom-tabs__content--is-active">
+        
+                <div class="escom-long-form-text">
                     <p>
                         For public venues and organizations looking for learning fundamentals, we’ll follow a standard agenda that hits all the important topics.
                     </p>
@@ -165,7 +176,7 @@
             
             
             <h3 class="escom-timeline__heading">
-                Segment 1: Planning a System
+                Planning
             </h3>
             
             
@@ -174,19 +185,15 @@
                     <ul class="escom-timeline__list">
                         
                         <li class="escom-timeline__list-item">
-                            Define your design system, including relationships across systems
+                            Defining Design Systems
                         </li>
                         
                         <li class="escom-timeline__list-item">
-                            Explore your library’s scope of visual style, UI components and more
+                            Starting a Design System
                         </li>
                         
                         <li class="escom-timeline__list-item">
-                            Plan a path from nothing (or a previous version) to launch a new system
-                        </li>
-                        
-                        <li class="escom-timeline__list-item">
-                            Identify, prioritize and prepare products that’ll adopt the system
+                            Designing a System Team
                         </li>
                         
                     </ul>
@@ -211,7 +218,7 @@
             
             
             <h3 class="escom-timeline__heading">
-                Segment 2: Starting a System
+                Designing &amp; Building
             </h3>
             
             
@@ -220,15 +227,23 @@
                     <ul class="escom-timeline__list">
                         
                         <li class="escom-timeline__list-item">
-                            Create a new visual language, from conceptual reference designs to a Sketch sticker sheet
+                            Color
                         </li>
                         
                         <li class="escom-timeline__list-item">
-                            Discover a UI component inventory by deconstructing existing product experiences
+                            Tokens
                         </li>
                         
                         <li class="escom-timeline__list-item">
-                            Organize your library into topics, sections, and assets everyone understands
+                            Inventories &amp; Scoping
+                        </li>
+                        
+                        <li class="escom-timeline__list-item">
+                            Buttons
+                        </li>
+                        
+                        <li class="escom-timeline__list-item">
+                            Component Quality
                         </li>
                         
                     </ul>
@@ -267,7 +282,7 @@
             
             
             <h3 class="escom-timeline__heading">
-                Segment 3: Making the System
+                Documenting
             </h3>
             
             
@@ -276,19 +291,23 @@
                     <ul class="escom-timeline__list">
                         
                         <li class="escom-timeline__list-item">
-                            Form a predictable process for designing, building, and documenting a library
+                            Cards &amp; Composibility
                         </li>
                         
                         <li class="escom-timeline__list-item">
-                            Deliver on promises of quality and scale via a rigorous system QA practice
+                            Documenting Components
                         </li>
                         
                         <li class="escom-timeline__list-item">
-                            Establish an information architecture strategy for documenting design and code assets
+                            Component Examples
                         </li>
                         
                         <li class="escom-timeline__list-item">
-                            Design effective component doc, from conventional displays to custom guidance
+                            Design Guidelines
+                        </li>
+                        
+                        <li class="escom-timeline__list-item">
+                            Editing Component Documentation
                         </li>
                         
                     </ul>
@@ -313,7 +332,7 @@
             
             
             <h3 class="escom-timeline__heading">
-                Segment 4: Practicing Systems
+                Practicing
             </h3>
             
             
@@ -322,19 +341,19 @@
                     <ul class="escom-timeline__list">
                         
                         <li class="escom-timeline__list-item">
-                            Form a shared vocabulary for your system’s roles: team members, users, and contributors
+                            Adopting Design Systems
                         </li>
                         
                         <li class="escom-timeline__list-item">
-                            Identify the regular activities and processes to operate a systems team
+                            How Do I...? Processes (*)
                         </li>
                         
                         <li class="escom-timeline__list-item">
-                            Strategize on how to coordinate with and support adopting products
+                            Contributing
                         </li>
                         
                         <li class="escom-timeline__list-item">
-                            Build an inclusive and participatory community of contributors and experts
+                            Measuring Success
                         </li>
                         
                     </ul>
@@ -353,10 +372,15 @@
         
     </ul>
 
-            </div>
+            
+    </div>
 
-            <div id="tab-custom-agendas" class="escom-tabs__content">
-                <div class="escom-promo-text">
+
+            
+    
+    <div id="tab-custom-agendas" class="escom-tabs__content ">
+        
+                <div class="escom-long-form-text">
                     <p>
                         Most in-house teams choose to customize their agenda to tailor topics to their current needs. This may result in a workshop lengthened to two days or shortened a half day (usually paired with a sponsored talk for a larger group).
                     </p>
@@ -462,11 +486,16 @@
         
     </ul>
 
-            </div>
+            
+    </div>
 
-            <div id="tab-all-topics-and-activities" class="escom-tabs__content">
+
+            
+    
+    <div id="tab-available-topics" class="escom-tabs__content ">
+        
                 <div class="escom-long-form-text">
-                    <p>
+                    <p class="escom-long-form-text__lead">
                         When customizing a workshop, we’ll discuss your interests and select a range of topics and activities that fit your needs. Those include:
                     </p>
                 </div>
@@ -1217,8 +1246,10 @@
 </ul>
 
 
-            </div>
-        </div>
+            
+    </div>
+
+
     
         
     </div>
@@ -1236,10 +1267,10 @@
     <div class="esds-row__inner">
         
             
-        <div class="escom-promo-text">
-            <h2>Prepping for the Event</h2>
-            <p>
-                Once we sign an agreement, we’ll meet with you at least three times over one to two weeks to plan the event.
+        <div class="escom-long-form-text">
+            <h2>Prepping for the Day</h2>
+            <p class="escom-long-form-text__lead">
+                Once you're signed up, we’ll meet over 1 to 2 weeks to plan the event. If there are additional activities needed — deeper customization, interviews, other discovery tasks — preparation may take longer, but we'll define that upfront.
             </p>
         </div>
         
@@ -1257,7 +1288,7 @@
         
         
         
-        <p class="esds-tiles__description">During our first call, we&#39;ll review available topics and activities, discuss who should attend why, and talk space &amp; timing.</p>
+        <p class="esds-tiles__description">During a first call, we review topics and activities, identify attendees and custom materials, and propose day and time.</p>
         
         
         
@@ -1272,11 +1303,11 @@
         
 
         
-        <h3 class="esds-tiles__heading">System &amp; Product Tour</h3>
+        <h3 class="esds-tiles__heading">System &amp; Product Tours</h3>
         
         
         
-        <p class="esds-tiles__description">During a second call, we&#39;ll immerse ourselves in the existing design, code and docs of your system(s) and tour the products it targets.</p>
+        <p class="esds-tiles__description">During a second call, we immerse in your existing system design, code and doc and also tour the products to which it applies.</p>
         
         
         
@@ -1295,7 +1326,7 @@
         
         
         
-        <p class="esds-tiles__description">We&#39;ll review a proposed agenda and any customized materials and finalize logistics.</p>
+        <p class="esds-tiles__description">In the final call, we confirm the day&#39;s agenda, any customized materials and discussion prompts, and finalize logistics.</p>
         
         
         
@@ -1326,9 +1357,9 @@
         
             
         <div class="esds-container--dark-photograph">
-            <div class="escom-promo-text">
+            <div class="escom-long-form-text">
                 <h2>Who Should You Invite?</h2>
-                <p>The workshop format is suitable for up to 100 participants and covers content relevant to many disciplines beyond just designers and engineers.</p>
+                <p class="escom-long-form-text__lead">The workshop format is suitable for up to 100 participants and covers content relevant to many disciplines beyond just designers and engineers.</p>
                 <p></p>
             </div>
         </div>
@@ -1341,7 +1372,7 @@
         
 
         
-        <h3 class="esds-tiles__heading">Core Participants</h3>
+        <h3 class="esds-tiles__heading">Essential Participants</h3>
         
         
         
@@ -1370,11 +1401,11 @@
         
 
         
-        <h3 class="esds-tiles__heading">Optional Participants</h3>
+        <h3 class="esds-tiles__heading">Additional Participants</h3>
         
         
         
-        <p class="esds-tiles__description">Expand the workshop to include:</p>
+        <p class="esds-tiles__description">Workshop content is also relevant for:</p>
         
         
         
@@ -1410,25 +1441,27 @@
 
     
 
-<div class="esds-row esds-container--black esds-row--tall-inset"
+<div class="esds-row esds-container--dark esds-row--tall-inset"
     
     >
     <div class="esds-row__inner">
         
             
-        <div class="escom-promo-text">
-            <h2>Why a Workshop with EightShapes?</h2>
-            <p>
-                With EightShapes’ seasoned experience and enthusiasm, you’ll inspire your teams and spark systems work. Your team can use a workshop to:
+        <div class="escom-long-form-text">
+            <h2>Why an EightShapes Workshop?</h2>
+            <p class="escom-long-form-text__lead">
+                EightShapes’ seasoned experience and enthusiasm will inspire and challenge your teams, sparking new ideas and meaningful discussion. Use a workshop to:
             </p>
             <ul>
                 <li>Kickoff or energize in-house systems efforts</li>
                 <li>Define your system and what it offers</li>
+                <li>Dive deep on workflows to make or contribute components</li>
                 <li>Frame how to form a system team and energize a community</li>
                 <li>Plan how to create and adopt a system</li>
                 <li>Refine how to design and code features like color, buttons, and space</li>
                 <li>Develop a shared vocabulary for dispersed teams</li>
-                <li>Achieve outcomes and teach via with engaging hands-on activities</li>
+                <li>Identify achievable outcomes you can measure</li>
+                <li>Engage stakeholders with hands-on activities</li>
             </ul>
         </div>
     
@@ -1442,15 +1475,15 @@
 
     
 
-<div class="esds-row esds-container--dark esds-row--tall-inset"
+<div class="esds-row esds-container--black esds-row--tall-inset"
     
     >
     <div class="esds-row__inner">
         
             
-        <div class="escom-promo-text">
-            <h2>Our Clients</h2>
-            <p>
+        <div class="escom-long-form-text">
+            <h2>Past Workshop Clients</h2>
+            <p class="escom-long-form-text__lead">
                 EightShapes has conducted workshops at public events and for in-house teams across industries since 2007.
             </p>
         </div>
@@ -1474,7 +1507,7 @@
                         <td class="escom-table__cell escom-table__responsive-row-header" >
                             
                                 
-                                2018
+                                2019
                             
                         </td>
                     
@@ -1488,7 +1521,32 @@
                         <td class="escom-table__cell"  data-escom-header="Public Venues" >
                             
                                 
-                                Webstock New Zealand<br>Chicago Systems Meetup
+                                UXI Live, Tel Aviv
+                            
+                        </td>
+                    
+                </tr>
+            
+                <tr class="escom-table__row">
+                    
+                        <td class="escom-table__cell escom-table__responsive-row-header" >
+                            
+                                
+                                2018
+                            
+                        </td>
+                    
+                        <td class="escom-table__cell"  data-escom-header="In-House Events" >
+                            
+                                
+                                Fidelity<br>REI<br>Liberty Mutual<br>Cvent<br>George Mason<br>Air New Zealand<br>Digital Arts Network (New Zealand)
+                            
+                        </td>
+                    
+                        <td class="escom-table__cell"  data-escom-header="Public Venues" >
+                            
+                                
+                                Clarity<br>UIE's UI23<br>Invision, Munich<br>Invision, Denver<br>Enterprise UX<br>Invision, New York<br>DS Conference Helsinki<br>Webstock New Zealand<br>Chicago Systems Meetup
                             
                         </td>
                     
@@ -1513,7 +1571,7 @@
                         <td class="escom-table__cell"  data-escom-header="Public Venues" >
                             
                                 
-                                UIE's UI22<br>Clarity<br>SmashingConf San Francisco<br>UX Charlotte
+                                UIE's UI22<br>Clarity<br>Enterprise UX<br>SmashingConf San Francisco<br>UX Charlotte
                             
                         </td>
                     
@@ -1538,7 +1596,7 @@
                         <td class="escom-table__cell"  data-escom-header="Public Venues" >
                             
                                 
-                                UIE's UI21<br>SmashingConf Freiburg<br>IXDA Oslo<br>UXLX
+                                UIE's UI21<br>SmashingConf Freiburg<br>IXDA Oslo<br>Enterprise UX<br>UXLX
                             
                         </td>
                     
@@ -1743,7 +1801,7 @@
     <div class="esds-row__inner">
         
             
-        <div class="escom-promo-text">
+        <div class="escom-long-form-text">
             <h2>Let&#39;s Get Started!</h2>
             
             <p>We’re ready to energize your design system efforts, whether you’re just getting started or rebooting to 2.0. Are you ready?</p>

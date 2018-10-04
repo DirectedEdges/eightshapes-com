@@ -1,14 +1,10 @@
 .escom-long-form-text {
-    margin: $esds-space-stack-2-x;
-
-    &:last-child {
-        margin: 0;
-    }
+    margin: 0 auto $esds-space-generic-2-x;
 
     h1 {
         @include esds-text-crop();
         @include esds-level-1-heading();
-        margin: $esds-space-stack-2-x;
+        margin: $esds-space-stack-3-x;
 
         &:last-child {
             margin: 0;
@@ -26,6 +22,16 @@
 
         &:last-child {
             margin: 0;
+        }
+
+    }
+
+    .escom-page-type--marketing & {
+        max-width: $esds-font-line-length-long-form;
+
+        h2 {
+            color: $esds-text-color-brand;
+            text-align: center;
         }
     }
 
@@ -69,13 +75,14 @@
             margin: 0;
         }
 
+        &.escom-long-form-text__lead {
+            @include esds-body-text-lead();
+            margin: $esds-space-stack-2-x;
+        }
+
         &.escom-long-form-text__p--l {
             @include esds-body-text-l();
             margin: $esds-space-stack-2-x;
-
-            &:last-child {
-                margin: 0;
-            }
         }
 
         &.escom-long-form-text__p--s {
