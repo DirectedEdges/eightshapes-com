@@ -17,10 +17,10 @@
 
 .esds-typography-sink--level-1-heading {
   line-height: 1.3;
-  font-family: "Lato", sans-serif;
+  font-family: Barlow, "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -29,9 +29,9 @@
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.2;
-  font-size: 33.184px;
-  font-weight: 300; }
+  line-height: 1.1;
+  font-size: 44px;
+  font-weight: 600; }
   .esds-typography-sink--level-1-heading::before, .esds-typography-sink--level-1-heading::after {
     content: '';
     display: block;
@@ -42,9 +42,9 @@
   .esds-typography-sink--level-1-heading::after {
     margin-top: calc(-0.26951em + 0px); }
   .esds-container--white .esds-typography-sink--level-1-heading {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--light .esds-typography-sink--level-1-heading {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--dark .esds-typography-sink--level-1-heading {
     color: #FFFFFF; }
   .esds-container--black .esds-typography-sink--level-1-heading {
@@ -55,20 +55,20 @@
     color: #FFFFFF; }
   @media screen and (min-width: 480px) {
     .esds-typography-sink--level-1-heading {
-      font-size: 39.056px; } }
+      font-size: 48px; } }
   @media screen and (min-width: 768px) {
     .esds-typography-sink--level-1-heading {
-      font-size: 50.512px; } }
+      font-size: 64px; } }
   @media screen and (min-width: 1000px) {
     .esds-typography-sink--level-1-heading {
-      font-size: 63.968px; } }
+      font-size: 80px; } }
 
 .esds-typography-sink--level-2-heading {
   line-height: 1.3;
-  font-family: "Lato", sans-serif;
+  font-family: Barlow, "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -77,7 +77,7 @@
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.1;
   font-size: 27.648px;
   font-weight: 300; }
   .esds-typography-sink--level-2-heading::before, .esds-typography-sink--level-2-heading::after {
@@ -90,9 +90,9 @@
   .esds-typography-sink--level-2-heading::after {
     margin-top: calc(-0.26951em + 0px); }
   .esds-container--white .esds-typography-sink--level-2-heading {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--light .esds-typography-sink--level-2-heading {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--dark .esds-typography-sink--level-2-heading {
     color: #FFFFFF; }
   .esds-container--black .esds-typography-sink--level-2-heading {
@@ -113,10 +113,10 @@
 
 .esds-typography-sink--level-3-heading {
   line-height: 1.3;
-  font-family: "Lato", sans-serif;
+  font-family: Barlow, "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -125,7 +125,7 @@
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.1;
   font-size: 23.04px;
   font-weight: 300; }
   .esds-typography-sink--level-3-heading::before, .esds-typography-sink--level-3-heading::after {
@@ -138,9 +138,9 @@
   .esds-typography-sink--level-3-heading::after {
     margin-top: calc(-0.26951em + 0px); }
   .esds-container--white .esds-typography-sink--level-3-heading {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--light .esds-typography-sink--level-3-heading {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--dark .esds-typography-sink--level-3-heading {
     color: #FFFFFF; }
   .esds-container--black .esds-typography-sink--level-3-heading {
@@ -161,10 +161,10 @@
 
 .esds-typography-sink--level-4-heading {
   line-height: 1.3;
-  font-family: "Lato", sans-serif;
+  font-family: Barlow, "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -173,7 +173,7 @@
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.1;
   font-size: 19.2px;
   font-weight: 300; }
   .esds-typography-sink--level-4-heading::before, .esds-typography-sink--level-4-heading::after {
@@ -186,9 +186,9 @@
   .esds-typography-sink--level-4-heading::after {
     margin-top: calc(-0.26951em + 0px); }
   .esds-container--white .esds-typography-sink--level-4-heading {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--light .esds-typography-sink--level-4-heading {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--dark .esds-typography-sink--level-4-heading {
     color: #FFFFFF; }
   .esds-container--black .esds-typography-sink--level-4-heading {
@@ -209,10 +209,10 @@
 
 .esds-typography-sink--eyebrow-heading {
   line-height: 1.3;
-  font-family: "Lato", sans-serif;
+  font-family: Barlow, "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -221,11 +221,11 @@
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.1;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 1.67px;
-  line-height: 1.2;
+  line-height: 1.1;
   text-transform: uppercase; }
   .esds-typography-sink--eyebrow-heading::before, .esds-typography-sink--eyebrow-heading::after {
     content: '';
@@ -237,13 +237,13 @@
   .esds-typography-sink--eyebrow-heading::after {
     margin-top: calc(-0.26951em + 0px); }
   .esds-container--white .esds-typography-sink--eyebrow-heading {
-    color: #6B6B6B; }
+    color: #888888; }
   .esds-container--light .esds-typography-sink--eyebrow-heading {
-    color: #6B6B6B; }
+    color: #888888; }
   .esds-container--dark .esds-typography-sink--eyebrow-heading {
-    color: #CCCACA; }
+    color: #888888; }
   .esds-container--black .esds-typography-sink--eyebrow-heading {
-    color: #B3B1B1; }
+    color: #888888; }
   .esds-container--brand .esds-typography-sink--eyebrow-heading {
     color: #E6E3E3; }
   .esds-container--dark-photograph .esds-typography-sink--eyebrow-heading {
@@ -258,12 +258,12 @@
     .esds-typography-sink--eyebrow-heading {
       font-size: 12px; } }
 
-.esds-typography-sink--body-text-l {
+.esds-typography-sink--body-text-lead {
   line-height: 1.3;
-  font-family: "Lato", sans-serif;
+  font-family: Barlow, "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -273,6 +273,52 @@
   text-transform: none;
   font-size: 19.2px;
   font-weight: 300; }
+  .esds-typography-sink--body-text-lead::before, .esds-typography-sink--body-text-lead::after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 0; }
+  .esds-typography-sink--body-text-lead::before {
+    margin-bottom: calc(-0.31829em + 0px); }
+  .esds-typography-sink--body-text-lead::after {
+    margin-top: calc(-0.26951em + 0px); }
+  .esds-container--white .esds-typography-sink--body-text-lead {
+    color: #0D0D0D; }
+  .esds-container--light .esds-typography-sink--body-text-lead {
+    color: #0D0D0D; }
+  .esds-container--dark .esds-typography-sink--body-text-lead {
+    color: #FFFFFF; }
+  .esds-container--black .esds-typography-sink--body-text-lead {
+    color: #F3F1F1; }
+  .esds-container--brand .esds-typography-sink--body-text-lead {
+    color: #FFFFFF; }
+  .esds-container--dark-photograph .esds-typography-sink--body-text-lead {
+    color: #FFFFFF; }
+  @media screen and (min-width: 480px) {
+    .esds-typography-sink--body-text-lead {
+      font-size: 20px; } }
+  @media screen and (min-width: 768px) {
+    .esds-typography-sink--body-text-lead {
+      font-size: 21.328px; } }
+  @media screen and (min-width: 1000px) {
+    .esds-typography-sink--body-text-lead {
+      font-size: 22.624px; } }
+
+.esds-typography-sink--body-text-l {
+  line-height: 1.3;
+  font-family: Barlow, "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.3;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+  font-size: 19.2px;
+  font-weight: 400; }
   .esds-typography-sink--body-text-l::before, .esds-typography-sink--body-text-l::after {
     content: '';
     display: block;
@@ -283,9 +329,9 @@
   .esds-typography-sink--body-text-l::after {
     margin-top: calc(-0.26951em + 0px); }
   .esds-container--white .esds-typography-sink--body-text-l {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--light .esds-typography-sink--body-text-l {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--dark .esds-typography-sink--body-text-l {
     color: #FFFFFF; }
   .esds-container--black .esds-typography-sink--body-text-l {
@@ -306,10 +352,10 @@
 
 .esds-typography-sink--body-text-m {
   line-height: 1.3;
-  font-family: "Lato", sans-serif;
+  font-family: Barlow, "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -318,7 +364,7 @@
   text-shadow: none;
   text-transform: none;
   font-size: 16px;
-  font-weight: 300; }
+  font-weight: 400; }
   .esds-typography-sink--body-text-m::before, .esds-typography-sink--body-text-m::after {
     content: '';
     display: block;
@@ -329,9 +375,9 @@
   .esds-typography-sink--body-text-m::after {
     margin-top: calc(-0.26951em + 0px); }
   .esds-container--white .esds-typography-sink--body-text-m {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--light .esds-typography-sink--body-text-m {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--dark .esds-typography-sink--body-text-m {
     color: #FFFFFF; }
   .esds-container--black .esds-typography-sink--body-text-m {
@@ -352,10 +398,10 @@
 
 .esds-typography-sink--body-text-s {
   line-height: 1.3;
-  font-family: "Lato", sans-serif;
+  font-family: Barlow, "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -364,7 +410,7 @@
   text-shadow: none;
   text-transform: none;
   font-size: 12px;
-  font-weight: 300; }
+  font-weight: 400; }
   .esds-typography-sink--body-text-s::before, .esds-typography-sink--body-text-s::after {
     content: '';
     display: block;
@@ -375,13 +421,13 @@
   .esds-typography-sink--body-text-s::after {
     margin-top: calc(-0.26951em + 0px); }
   .esds-container--white .esds-typography-sink--body-text-s {
-    color: #6B6B6B; }
+    color: #888888; }
   .esds-container--light .esds-typography-sink--body-text-s {
-    color: #6B6B6B; }
+    color: #888888; }
   .esds-container--dark .esds-typography-sink--body-text-s {
-    color: #CCCACA; }
+    color: #888888; }
   .esds-container--black .esds-typography-sink--body-text-s {
-    color: #B3B1B1; }
+    color: #888888; }
   .esds-container--brand .esds-typography-sink--body-text-s {
     color: #E6E3E3; }
   .esds-container--dark-photograph .esds-typography-sink--body-text-s {
@@ -410,10 +456,10 @@
   width: 16px; }
 
 .esds-button {
-  font-family: "Lato", sans-serif;
+  font-family: Barlow, "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -451,13 +497,13 @@
     .esds-button {
       font-size: 17.6px; } }
   .esds-button:hover, .esds-button.esds-button--hover {
-    background-color: #E76822;
-    border-color: #E76822; }
+    background-color: #E85200;
+    border-color: #E85200; }
     .esds-container--brand .esds-button:hover, .esds-container--brand .esds-button.esds-button--hover {
       border-color: #FFFFFF; }
   .esds-button:active, .esds-button.esds-button--active {
-    background-color: #E76822;
-    border-color: #E76822;
+    background-color: #E85200;
+    border-color: #E85200;
     -webkit-box-shadow: 0 0 4px 4px rgba(10, 157, 179, 0.8);
             box-shadow: 0 0 4px 4px rgba(10, 157, 179, 0.8); }
     .esds-container--brand .esds-button:active, .esds-container--brand .esds-button.esds-button--active {
@@ -495,7 +541,7 @@
 
 .esds-button--small {
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 400;
   padding: 4px 8px; }
   @media screen and (min-width: 480px) {
     .esds-button--small {
@@ -617,10 +663,10 @@
 
 .esds-card__type,
 .esds-card__date {
-  font-family: "Lato", sans-serif;
+  font-family: Barlow, "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -629,26 +675,26 @@
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.1;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 1.67px;
-  line-height: 1.2;
+  line-height: 1.1;
   text-transform: uppercase;
   margin: 0 0 16px;
   padding: 0; }
   .esds-container--white .esds-card__type, .esds-container--white
   .esds-card__date {
-    color: #6B6B6B; }
+    color: #888888; }
   .esds-container--light .esds-card__type, .esds-container--light
   .esds-card__date {
-    color: #6B6B6B; }
+    color: #888888; }
   .esds-container--dark .esds-card__type, .esds-container--dark
   .esds-card__date {
-    color: #CCCACA; }
+    color: #888888; }
   .esds-container--black .esds-card__type, .esds-container--black
   .esds-card__date {
-    color: #B3B1B1; }
+    color: #888888; }
   .esds-container--brand .esds-card__type, .esds-container--brand
   .esds-card__date {
     color: #E6E3E3; }
@@ -673,10 +719,10 @@
 
 .esds-card__title {
   line-height: 1.3;
-  font-family: "Lato", sans-serif;
+  font-family: Barlow, "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -685,9 +731,10 @@
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.1;
   font-size: 19.2px;
   font-weight: 300;
+  font-weight: 600;
   line-height: 1.1;
   margin: 0 0 16px;
   padding: 0; }
@@ -701,9 +748,9 @@
   .esds-card__title::after {
     margin-top: calc(-0.26951em + 0px); }
   .esds-container--white .esds-card__title {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--light .esds-card__title {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--dark .esds-card__title {
     color: #FFFFFF; }
   .esds-container--black .esds-card__title {
@@ -723,10 +770,10 @@
       font-size: 22.624px; } }
 
 .esds-card__description {
-  font-family: "Lato", sans-serif;
+  font-family: Barlow, "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -735,13 +782,13 @@
   text-shadow: none;
   text-transform: none;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0 0 8px;
   padding: 0; }
   .esds-container--white .esds-card__description {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--light .esds-card__description {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--dark .esds-card__description {
     color: #FFFFFF; }
   .esds-container--black .esds-card__description {
@@ -761,10 +808,10 @@
       font-size: 17.6px; } }
 
 .esds-card__cta {
-  font-family: "Lato", sans-serif;
+  font-family: Barlow, "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -773,22 +820,22 @@
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.1;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 1.67px;
-  line-height: 1.2;
+  line-height: 1.1;
   text-transform: uppercase;
   margin: 0 0 8px;
   padding: 0; }
   .esds-container--white .esds-card__cta {
-    color: #6B6B6B; }
+    color: #888888; }
   .esds-container--light .esds-card__cta {
-    color: #6B6B6B; }
+    color: #888888; }
   .esds-container--dark .esds-card__cta {
-    color: #CCCACA; }
+    color: #888888; }
   .esds-container--black .esds-card__cta {
-    color: #B3B1B1; }
+    color: #888888; }
   .esds-container--brand .esds-card__cta {
     color: #E6E3E3; }
   .esds-container--dark-photograph .esds-card__cta {
@@ -838,7 +885,7 @@
 
 .esds-background--brand,
 .esds-container--brand {
-  background-color: #E76822; }
+  background-color: #E85200; }
 
 .esds-background--dark-photograph,
 .esds-container--dark-photograph {
@@ -861,7 +908,7 @@
             box-sizing: border-box; }
 
 .esds-row__inner {
-  font-family: "Lato", sans-serif;
+  font-family: Barlow, "Lato", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: 0;
@@ -873,9 +920,9 @@
   text-shadow: none;
   text-transform: none; }
   .esds-container--white .esds-row__inner {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--light .esds-row__inner {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--dark .esds-row__inner {
     color: #FFFFFF; }
   .esds-container--black .esds-row__inner {
@@ -930,10 +977,10 @@
   margin: 0; }
 
 .esds-breadcrumb {
-  font-family: "Lato", sans-serif;
+  font-family: Barlow, "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -951,9 +998,9 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
   .esds-container--white .esds-breadcrumb {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--light .esds-breadcrumb {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--dark .esds-breadcrumb {
     color: #FFFFFF; }
   .esds-container--black .esds-breadcrumb {
@@ -980,9 +1027,9 @@
   text-decoration: none;
   top: -6px; }
   .esds-container--white .esds-breadcrumb__link {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--light .esds-breadcrumb__link {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--dark .esds-breadcrumb__link {
     color: #FFFFFF; }
   .esds-container--black .esds-breadcrumb__link {
@@ -1098,10 +1145,10 @@
     background-color: #E7F4F6; }
 
 .esds-tiles__subheading {
-  font-family: "Lato", sans-serif;
+  font-family: Barlow, "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -1110,21 +1157,21 @@
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.1;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 1.67px;
-  line-height: 1.2;
+  line-height: 1.1;
   text-transform: uppercase;
   margin: 0 0 8px; }
   .esds-container--white .esds-tiles__subheading {
-    color: #6B6B6B; }
+    color: #888888; }
   .esds-container--light .esds-tiles__subheading {
-    color: #6B6B6B; }
+    color: #888888; }
   .esds-container--dark .esds-tiles__subheading {
-    color: #CCCACA; }
+    color: #888888; }
   .esds-container--black .esds-tiles__subheading {
-    color: #B3B1B1; }
+    color: #888888; }
   .esds-container--brand .esds-tiles__subheading {
     color: #E6E3E3; }
   .esds-container--dark-photograph .esds-tiles__subheading {
@@ -1139,23 +1186,23 @@
     .esds-tiles__subheading {
       font-size: 12px; } }
   .esds-container--white .esds-tiles__subheading {
-    color: #6B6B6B; }
+    color: #888888; }
   .esds-container--light .esds-tiles__subheading {
-    color: #6B6B6B; }
+    color: #888888; }
   .esds-container--dark .esds-tiles__subheading {
-    color: #CCCACA; }
+    color: #888888; }
   .esds-container--black .esds-tiles__subheading {
-    color: #B3B1B1; }
+    color: #888888; }
   .esds-container--brand .esds-tiles__subheading {
     color: #E6E3E3; }
   .esds-container--dark-photograph .esds-tiles__subheading {
     color: #E6E3E3; }
 
 .esds-tiles__heading {
-  font-family: "Lato", sans-serif;
+  font-family: Barlow, "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -1164,14 +1211,15 @@
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.1;
   font-size: 19.2px;
   font-weight: 300;
+  font-weight: 600;
   margin: 0 0 16px; }
   .esds-container--white .esds-tiles__heading {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--light .esds-tiles__heading {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--dark .esds-tiles__heading {
     color: #FFFFFF; }
   .esds-container--black .esds-tiles__heading {
@@ -1190,9 +1238,9 @@
     .esds-tiles__heading {
       font-size: 22.624px; } }
   .esds-container--white .esds-tiles__heading {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--light .esds-tiles__heading {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--dark .esds-tiles__heading {
     color: #FFFFFF; }
   .esds-container--black .esds-tiles__heading {
@@ -1203,10 +1251,10 @@
     color: #FFFFFF; }
 
 .esds-tiles__description {
-  font-family: "Lato", sans-serif;
+  font-family: Barlow, "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -1215,12 +1263,12 @@
   text-shadow: none;
   text-transform: none;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0 0 16px; }
   .esds-container--white .esds-tiles__description {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--light .esds-tiles__description {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--dark .esds-tiles__description {
     color: #FFFFFF; }
   .esds-container--black .esds-tiles__description {
@@ -1239,9 +1287,9 @@
     .esds-tiles__description {
       font-size: 17.6px; } }
   .esds-container--white .esds-tiles__description {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--light .esds-tiles__description {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--dark .esds-tiles__description {
     color: #FFFFFF; }
   .esds-container--black .esds-tiles__description {
@@ -1254,10 +1302,10 @@
     margin: 0; }
 
 .esds-tiles__property {
-  font-family: "Lato", sans-serif;
+  font-family: Barlow, "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -1266,22 +1314,22 @@
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.1;
   font-size: 12px;
-  font-weight: 300;
+  font-weight: 600;
   letter-spacing: 1.67px;
-  line-height: 1.2;
+  line-height: 1.1;
   text-transform: uppercase;
   margin: 0;
   text-transform: uppercase; }
   .esds-container--white .esds-tiles__property {
-    color: #6B6B6B; }
+    color: #888888; }
   .esds-container--light .esds-tiles__property {
-    color: #6B6B6B; }
+    color: #888888; }
   .esds-container--dark .esds-tiles__property {
-    color: #CCCACA; }
+    color: #888888; }
   .esds-container--black .esds-tiles__property {
-    color: #B3B1B1; }
+    color: #888888; }
   .esds-container--brand .esds-tiles__property {
     color: #E6E3E3; }
   .esds-container--dark-photograph .esds-tiles__property {
@@ -1314,10 +1362,10 @@
     margin: 0; }
 
 .esds-tiles__list-item {
-  font-family: "Lato", sans-serif;
+  font-family: Barlow, "Lato", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0;
   line-height: 1.3;
   text-align: left;
@@ -1326,12 +1374,12 @@
   text-shadow: none;
   text-transform: none;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0 0 16px; }
   .esds-container--white .esds-tiles__list-item {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--light .esds-tiles__list-item {
-    color: #262626; }
+    color: #0D0D0D; }
   .esds-container--dark .esds-tiles__list-item {
     color: #FFFFFF; }
   .esds-container--black .esds-tiles__list-item {
@@ -1350,13 +1398,13 @@
     .esds-tiles__list-item {
       font-size: 17.6px; } }
   .esds-container--white .esds-tiles__list-item {
-    color: #6B6B6B; }
+    color: #888888; }
   .esds-container--light .esds-tiles__list-item {
-    color: #6B6B6B; }
+    color: #888888; }
   .esds-container--dark .esds-tiles__list-item {
-    color: #CCCACA; }
+    color: #888888; }
   .esds-container--black .esds-tiles__list-item {
-    color: #B3B1B1; }
+    color: #888888; }
   .esds-container--brand .esds-tiles__list-item {
     color: #E6E3E3; }
   .esds-container--dark-photograph .esds-tiles__list-item {
