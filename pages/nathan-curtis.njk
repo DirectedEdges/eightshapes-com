@@ -36,12 +36,13 @@
                     }
                 ]) }}
             {% call escom.tab_pane(label='appearances', active=true) %}
+            {# 
                 {{ escom.timeline(
                     items = [
                         {
                             heading: "2019",
-                            topics: [
-                                escom.link_list(
+                            content_right: [
+                                esds.list(
                                     class = "escom-link-list--large",
                                     items = [
                                         {
@@ -55,8 +56,8 @@
                         },
                         {
                             heading: "2018",
-                            topics: [
-                                escom.link_list(
+                            content_right: [
+                                esds.list(
                                     class = "escom-link-list--large",
                                     items = [
                                         {
@@ -120,8 +121,8 @@
                         },
                         {
                             heading: "2017",
-                            topics: [
-                                escom.link_list(
+                            content_right: [
+                                esds.list(
                                     class = "escom-link-list--large",
                                     items = [
                                         {
@@ -175,8 +176,8 @@
                         },
                         {
                             heading: "2016",
-                            topics: [
-                                escom.link_list(
+                            content_right: [
+                                esds.list(
                                     class = "escom-link-list--large",
                                     items = [
                                         {
@@ -220,8 +221,8 @@
                         },
                         {
                             heading: "2015",
-                            topics: [
-                                escom.link_list(
+                            content_right: [
+                                esds.list(
                                     class = "escom-link-list--large",
                                     items = [
                                         {
@@ -245,6 +246,7 @@
                         }
                     ]
                 ) }}
+             #}
             {% endcall %}
 
             {% call escom.tab_pane(label='Webinars') %}

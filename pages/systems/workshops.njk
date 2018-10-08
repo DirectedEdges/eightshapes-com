@@ -50,61 +50,158 @@
                         For public venues and organizations learning fundamentals, we’ll follow this standard agenda:
                     </p>
                 </div>
-
                 {{ escom.timeline(
                     items = [
                         {
-                            time: "8:30AM - 9:00AM",
-                            heading: "Arrival & Setup"
+                            time: "8:30AM",
+                            heading: "Arrival"
                         },
                         {
                             time: "9:00AM - 10:45AM",
-                            heading: "Planning",
-                            list: [
-                                '<a href="http://bit.ly/8s-define-design-systems" target="_blank">Defining Design Systems</a>: What should <i>our</i> design system be?',
-                                '<a href="http://bit.ly/8s-starting-a-system" target="_blank">Starting a Design System</a>: How do we get to an initial release and go from there?',
-                                '<a href="http://bit.ly/8s-designing-systems-team" target="_blank">Designing a System Team</a>: How do we identify the right people to make the system'
+                            heading: "Plan",
+                            content_right: [
+                                esds.list(
+                                    items = [
+                                        {
+                                            title: "Welcome & Agenda"
+                                        },
+                                        {
+                                            title: "Defining Design Systems",
+                                            href: "http://bit.ly/8s-define-design-systems",
+                                            pill: "Activity",
+                                            description: "What should our system be?"
+                                        },
+                                        {
+                                            title: "Starting a Design System",
+                                            href: "8s-starting-a-system",
+                                            description: "How do we get to an initial release and go from there?"
+                                        },
+                                        {
+                                            title: "Designing a Systems Team",
+                                            href: "http://bit.ly/8s-designing-systems-team",
+                                            pill: "Activity",
+                                            description: "How do we identify the right people to make the system?"
+                                        }
+                                    ]
+                                )
                             ]
                         },
                         {
                             time: "11:00AM – 12:30pm",
-                            heading: "Designing & Building",
-                            list: [
-                                '<a href="http://bit.ly/8s-tokens-in-design-systems" target="_blank">Tokens</a>: How do we share a visual langauge across products and platforms?',
-                                '<a href="http://bit.ly/8s-color-in-design-systems" target="_blank">Color</a>: How do we generate an accessible, flexible, and themable color system for a complete UI component library?',
-                                '<a href="http://bit.ly/8s-component-cut-up" target="_blank">Inventories and Scoping</a>: What UI components does our system need?',
-                                '<a href="http://bit.ly/8s-buttons-in-design-systems" target="_blank">Buttons</a>: How do we design for myriad variation, states, and more?',
-                                '<a href="http://bit.ly/8s-component-quality" target="_blank">Component Quality</a>: How do others trust that our library is built with quality'
+                            heading: "Design & Build",
+                            content_right: [
+                                esds.list(
+                                    items = [
+                                        {
+                                            title: "Tokens",
+                                            href: "http://bit.ly/8s-tokens-in-design-systems",
+                                            description: "How do we share a visual langauge across products and platforms?"
+                                        },
+                                        {
+                                            title: "Color",
+                                            href: "http://bit.ly/8s-color-in-design-systems",
+                                            description: "How do we generate an accessible, flexible, and themable color system?"
+                                        },
+                                        {
+                                            title: "Inventories and Scoping",
+                                            href: "http://bit.ly/8s-component-cut-up",
+                                            pill: "Activity",
+                                            description: "What UI components does our system need?"
+                                        },
+                                        {
+                                            title: "Buttons",
+                                            href: "http://bit.ly/8s-buttons-in-design-systems",
+                                            description: "How do we design for myriad variation, states, and more?"
+                                        },
+                                        {
+                                            title: "Component Quality",
+                                            href: "http://bit.ly/8s-component-quality",
+                                            description: "How do others trust that our library is built with quality?"
+                                        }
+                                    ]
+                                )
                             ]
                         },
                         {
                             time: "12:30pm – 1:30pm",
-                            heading: "Lunch (provided by you)"
+                            heading: "Lunch"
                         },
                         {
                             time: "1:30pm – 3:00pm",
                             heading: "Documenting",
-                            list: [
-                                '<a target="_blank" href="http://bit.ly/8s-cards-composability">Cards & Composibility</a>: How do we decompose style, structure, and behavior?',
-                                '<a target="_blank" href="http://bit.ly/8s-documenting-components">Documenting Components</a>: Who is it for and what content do they need?',
-                                '<a target="_blank" href="http://bit.ly/8s-component-examples">Component Examples</a>: How we select and arrange examples across all features?',
-                                '<a target="_blank" href="http://bit.ly/8s-component-design-guidelines">Design Guidelines</a>: How do guide style, behavior, editorial, accessibility and use?',
-                                '<strong>Editing Documentation</strong>: How do we write and iterate quality documentation?'
+                            content_right: [
+                                esds.list(
+                                    items = [
+                                        {
+                                            title: "Cards & Composibility",
+                                            href: "http://bit.ly/8s-cards-composability",
+                                            description: "How do we decompose style, structure, and behavior?"
+                                        },
+                                        {
+                                            title: "Documenting Components",
+                                            href: "http://bit.ly/8s-documenting-components",
+                                            description: "Who is it for and what content do they need?"
+                                        },
+                                        {
+                                            title: "Component Examples",
+                                            href: "http://bit.ly/8s-component-examples",
+                                            pill: "Activity",
+                                            description: "How do we select and arrange examples across all features?"
+                                        },
+                                        {
+                                            title: "Design Guidelines",
+                                            href: "http://bit.ly/8s-component-design-guidelines",
+                                            pill: "Activity",
+                                            description: "How do guide style, behavior, editorial, accessibility and use?"
+                                        },
+                                        {
+                                            title: "Editing Component Documentation",
+                                            pill: "Activity",
+                                            description: "How do we write and iterate high-quality documentation?"
+                                        }
+                                    ]
+                                )
                             ]
                         },
                         {
-                            time: "3:30pm – 5:00pm",
+                            time: "11:00AM – 12:30pm",
                             heading: "Practicing",
-                            list: [
-                                '<a href="http://bit.ly/8s-adopting-systems" target="_blank">Adopting Design Systems</a>: Who uses our system, and how do we monitor their work?',
-                                '<a href="http://bit.ly/8s-system-practice-cards" target="_blank">How Do I...? Processes</a>: What workflows do the system team, users, and contributors need defined?',
-                                '<a href="http://bit.ly/8s-contributions-to-systems" target="_blank">Contributing</a>: How do we know what goes in, and what is the process to get it done?',
-                                '<a href="http://bit.ly/8s-measure-system-success" target="_blank">Measuring Success</a>: What are our objectives, and how do we track if we get there?'
+                            content_right: [
+                                esds.list(
+                                    items = [
+                                        {
+                                            title: "Adopting Design Systems",
+                                            href: "http://bit.ly/8s-adopting-systems",
+                                            description: "Who uses our system, and how do we monitor their work?"
+                                        },
+                                        {
+                                            title: "How Do I...? Processes",
+                                            href: "http://bit.ly/8s-system-practice-cards",
+                                            pill: "Activity",
+                                            description: "What workflows do the system team, users, and contributors need defined?"
+                                        },
+                                        {
+                                            title: "Contributing",
+                                            href: "http://bit.ly/8s-contributions-to-systems",
+                                            description: "How do we know what goes in, and what is the process to get it done?"
+                                        },
+                                        {
+                                            title: "Measuring Success",
+                                            href: "http://bit.ly/8s-measure-system-success",
+                                            pill: "Activity",
+                                            description: "What are our objectives, and how do we track if we get there?"
+                                        }
+                                    ]
+                                )
                             ]
+                        },
+                        {
+                            time: "5:00pm",
+                            heading: "End of Day"
                         }
                     ]
                 ) }}
-            {% endcall %}
+             {% endcall %}
 
             {% call escom.tab_pane(label='Custom Agendas') %}
                 <div class="escom-long-form-text">
@@ -118,6 +215,7 @@
                         Carmax paired a sponsored talk for the local Richmond, VA community with a customized half-day in-house workshop. They paired a segment to align in-house system efforts with topics covering how to serve system customers and contributors. As a result, they omitted topics of system design, code and documentation.
                     </p>
                 </div>
+{# 
 
                 {{ escom.timeline(
                     items = [
@@ -145,7 +243,8 @@
                         }
                     ]
                 ) }}
-            {% endcall %}
+ #}
+             {% endcall %}
 
             {% call escom.tab_pane(label='Available Topics') %}
                 <div class="escom-long-form-text">
@@ -307,7 +406,7 @@
         <div class="escom-long-form-text">
             <h2>Prepping for the Day</h2>
             <p class="escom-long-form-text__lead">
-                Once you're signed up, we’ll meet over 1 to 2 weeks to plan the event. If there are additional activities needed — deeper customization, interviews, other discovery tasks — preparation may take longer, but we'll define that upfront.
+                Once you're signed up, we’ll meet over 1 to 2 weeks to plan the event. For workshops requiring customization or additional consulting, we'll define upfront any additional activities needed — interviews, more tours, etc — that require more preparation.
             </p>
         </div>
         {{ esds.tiles(
@@ -399,7 +498,7 @@
         <div class="escom-long-form-text">
             <h2>Past Workshop Clients</h2>
             <p class="escom-long-form-text__lead">
-                EightShapes has conducted workshops at public events and for in-house teams across industries since 2007.
+                EightShapes has conducted design systems-oriented workshops at public events and for in-house teams across industries since 2007.
             </p>
         </div>
         {{ escom.table(
@@ -412,7 +511,7 @@
             },
             {
                 key: 'in_house_events',
-                label: 'In-House Events'
+                label: 'Private Events'
             },
             {
                 key: 'public_venues',

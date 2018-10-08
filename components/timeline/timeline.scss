@@ -35,7 +35,7 @@
         height: 21px;
         left: -12px;
         position: absolute;
-        top: -1px;
+        top: 0px;
         width: 21px;
 
         .escom-timeline--no-timeline & {
@@ -75,73 +75,16 @@
     }
 }
 
-.escom-timeline__row-cards {
-    margin: $esds-space-stack-2-x;
+.escom-timeline__content-left-right {
+    display: grid;
 
     @media screen and (min-width: $esds-breakpoints-width-768) {
-        display: grid;
         grid-gap: $esds-space-generic-2-x;
-        grid-template-areas:
-        'escom-timeline__cell-cards--bullets escom-timeline__cell-cards--bullets'
-        'escom-timeline__cell-cards--card-1 escom-timeline__cell-cards--card-2';
-    }
-
-    @media screen and (min-width: $esds-breakpoints-width-1200) {
-        grid-template-areas:
-        'escom-timeline__cell-cards--bullets escom-timeline__cell-cards--card-1 escom-timeline__cell-cards--card-2';
-    }
-
-    &:last-child {
-        margin: 0;
+        grid-template-columns: 25% 75%;
     }
 }
 
-.escom-timeline__cell-cards--bullets {
-    grid-area: escom-timeline__cell-cards--bullets;
+.escom-timeline__content-right,
+.escom-timeline__content-bottom {
+    display: block;
 }
-
-.escom-timeline__cell-cards--card-1 {
-    grid-area: escom-timeline__cell-cards--card-1;
-}
-
-.escom-timeline__cell-cards--card-2 {
-    grid-area: escom-timeline__cell-cards--card-2;
-}
-
-.escom-timeline__row-text {
-    @media screen and (min-width: $esds-breakpoints-width-768) {
-        display: grid;
-        grid-gap: $esds-space-generic-2-x;
-        grid-template-columns: 20% 80%;
-    }
-}
-
-.escom-timeline__list {
-    list-style: disc;
-    margin: $esds-space-stack-2-x;
-    padding-left: 20px;
-}
-
-.escom-timeline__list-item {
-    @include esds-body-text-m();
-    @include esds-text-color('secondary');
-    margin: $esds-space-stack-1-x;
-
-    &:last-child {
-        margin: 0;
-    }
-
-    a {
-        @include esds-link();
-        font-weight: $esds-font-weight-bold;
-    }
-}
-
-.escom-timeline__item-heading {
-    @include esds-font-reset();
-    color: $esds-text-color-secondary-on-white;
-    font-size: $esds-font-size-heading-eyebrow-default;
-    margin: $esds-space-stack-quarter-x;
-    text-transform: uppercase;
-}
-

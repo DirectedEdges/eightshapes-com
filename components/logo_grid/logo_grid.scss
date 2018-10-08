@@ -10,7 +10,7 @@
         margin: 0;
 
         @media screen and (min-width: $esds-breakpoints-width-768) {
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(6, 1fr);
         }
 
         @media screen and (min-width: $esds-breakpoints-width-1200) {

@@ -20,12 +20,6 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    &.escom-card-grid--four-columns {
-        @media screen and (min-width: $esds-breakpoints-width-1200) {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-    }
-
     .esds-card {
 
         @media screen and (min-width: $esds-breakpoints-width-500) {
