@@ -32,15 +32,14 @@
     ) }}
 
   <!-- Our Work -->
-  {% call esds.row(background="light") %}
+  {% call esds.row(background="light", class="esds-row--tall-inset") %}
     <div class="escom-long-form-text">
         <h2 id="our-work">Our Work</h2>
     </div>
-    {{ escom.casestudies() }}
   {% endcall %}
 
   <!-- What We Do -->
-  {% call esds.row(background="dark") %}
+  {% call esds.row(background="dark", class="esds-row--tall-inset") %}
     <div class="escom-long-form-text">
       <h2 id="services">What We Do</h2>
     </div>
@@ -48,97 +47,14 @@
   {% endcall %}
   
   <!-- People -->
-  {% call esds.row(background="light") %}
+  {% call esds.row(background="light", class="esds-row--tall-inset") %}
     <div class="escom-long-form-text">
       <h2 id="who-we-are">Who We Are</h2>
-      <p>
+      <p class="escom-long-form-text__lead">
         Though tenacious in solving complex experience design problems, we believe successful projects depend on transparency, cooperation, and Post-Its.
       </p>
     </div>
     {{ escom.bio_thumbnails() }}
-  {% endcall %}
-
-  <!-- Contributions -->
-  {% call esds.row(background="white", class="esds-row--tall-inset") %}
-      <div class="escom-long-form-text">
-          <h2 id="contributions">How we've contributed</h2>
-          <p>
-              EightShapes has contributed three books, a documentation templating, and a prototyping framework, not to mention countless workshops and articles.
-          </p>
-      </div>
-
-      <div class="escom-card-grid">
-        {{ esds.card(
-            container="dark",
-            type="Medium",
-            date="April 2016",
-            title="Buttons in Design Systems",
-            description="12 Tips for Setting Up a System That Endures",
-            href="https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.ej345veis",
-            cta="Learn More",
-            width="auto"
-        ) }}
-
-        {{ esds.card(
-            container="brand",
-            type="A List Apart Online Panel",
-            date="June 2015",
-            title="Pattern Language: Responsive Style Guides",
-            href="http://alistapart.com/event/responsive-style-guides",
-            cta="Watch",
-            width="auto"
-        ) }}
-
-        {{ esds.card(
-            container="dark",
-            type="Book by Nathan Curtis",
-            title="Modular Web Design",
-            description="Creating Reusable Components for User Experience Design and Documentation",
-            href="http://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351",
-            cta=false,
-            width="auto"
-        ) }}
-
-        {{ esds.card(
-            container="dark",
-            type="Book by Dan Brown",
-            title="Communicating Design",
-            description="Developing Website Documentation for Design and Planning",
-            href="http://www.amazon.com/Communicating-Design-Developing-Documentation-Planning/dp/0321712463",
-            cta=false,
-            width="auto"
-        ) }}
-
-        {{ esds.card(
-            container="light",
-            type="Medium",
-            title="Re-Discovering Product Discovery",
-            description="The time is right for we designers to look at Discovery, that squishy, early part of the design process.",
-            href="https://medium.com/eightshapes-llc/beyond-utility-re-discovering-product-discovery-5ae210a1399e#.iwpp5obw8",
-            cta="Read More",
-            width="auto"
-        ) }}
-
-        {{ esds.card(
-            container="dark",
-            type="Book by Dan Brown",
-            title="Designing Together",
-            description="The Collaboration and Conflict Management Handbook for Creative Professionals",
-            href="http://www.amazon.com/Designing-Together-collaboration-management-professionals/dp/0321918630",
-            cta=false,
-            width="auto"
-        ) }}
-
-        {{ esds.card(
-            container="light",
-            type="Medium",
-            title="The Component Cut-Up Workshop",
-            description="Nothing beats the energy of getting a team together to deconstruct an existing design system and arrive at a component library together.",
-            href="https://medium.com/eightshapes-llc/the-component-cut-up-workshop-1378ae110517#.5ibx9rqm8",
-            cta="Read More",
-            width="auto"
-        ) }}
-      </div>
   {% endcall %}
   
   <!-- Page CTA -->

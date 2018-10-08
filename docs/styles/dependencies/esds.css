@@ -622,7 +622,7 @@
   text-decoration: none; }
 
 .esds-card__thumbnail {
-  background-color: #262626;
+  background-color: #F3F1F1;
   border-radius: 8px 8px 0 0;
   display: block;
   height: 0;
@@ -1131,12 +1131,17 @@
       -ms-grid-columns: 1fr 1fr 1fr;
           grid-template-columns: 1fr 1fr 1fr; } }
   .esds-tiles:last-child {
-    margin: 0; }
+    margin-bottom: 0; }
+  .esds-tiles.esds-tiles--long-form-max-width {
+    margin: 0 auto 32px;
+    max-width: 800px; }
 
 .esds-tiles__tile {
   border-radius: 8px;
   list-style: none;
   padding: 32px; }
+  .esds-tiles--translucent-white .esds-tiles__tile {
+    background-color: rgba(255, 255, 255, 0.9); }
   .esds-tiles--no-padding .esds-tiles__tile {
     padding: 0; }
 
@@ -1250,6 +1255,18 @@
     color: #FFFFFF; }
   .esds-container--dark-photograph .esds-tiles__heading {
     color: #FFFFFF; }
+  .esds-container--white .esds-tiles__tile--link .esds-tiles__heading {
+    color: #068194; }
+  .esds-container--light .esds-tiles__tile--link .esds-tiles__heading {
+    color: #00798C; }
+  .esds-container--dark .esds-tiles__tile--link .esds-tiles__heading {
+    color: #0A9DB3; }
+  .esds-container--black .esds-tiles__tile--link .esds-tiles__heading {
+    color: #0A9DB3; }
+  .esds-container--brand .esds-tiles__tile--link .esds-tiles__heading {
+    color: #FFFFFF; }
+  .esds-container--dark-photograph .esds-tiles__tile--link .esds-tiles__heading {
+    color: #0A9DB3; }
 
 .esds-tiles__description {
   font-family: Barlow, "Lato", sans-serif;

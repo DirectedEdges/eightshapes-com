@@ -827,7 +827,7 @@ body {
   text-transform: none;
   color: #E85200;
   font-size: 23.04px;
-  margin: 0 0 32px; }
+  margin: 0 0 16px; }
   .escom-timeline__heading:first-child {
     margin-top: -6px; }
 
@@ -917,6 +917,23 @@ body {
     color: #E6E3E3; }
   .escom-timeline__list-item:last-child {
     margin: 0; }
+  .escom-timeline__list-item a {
+    text-decoration: none;
+    font-weight: 600; }
+    .esds-container--white .escom-timeline__list-item a {
+      color: #068194; }
+    .esds-container--light .escom-timeline__list-item a {
+      color: #00798C; }
+    .esds-container--dark .escom-timeline__list-item a {
+      color: #0A9DB3; }
+    .esds-container--black .escom-timeline__list-item a {
+      color: #0A9DB3; }
+    .esds-container--brand .escom-timeline__list-item a {
+      color: #FFFFFF; }
+    .esds-container--dark-photograph .escom-timeline__list-item a {
+      color: #0A9DB3; }
+    .escom-timeline__list-item a:hover {
+      text-decoration: underline; }
 
 .escom-timeline__item-heading {
   font-family: Barlow, "Lato", sans-serif;
@@ -1224,6 +1241,8 @@ body {
 
 .escom-long-form-text {
   margin: 0 auto 32px; }
+  .escom-long-form-text:last-child {
+    margin-bottom: 0; }
   .escom-long-form-text h1 {
     line-height: 1.3;
     font-family: Barlow, "Lato", sans-serif;
@@ -1328,9 +1347,12 @@ body {
       margin: 0; }
   .escom-page-type--marketing .escom-long-form-text {
     max-width: 800px; }
-    .escom-page-type--marketing .escom-long-form-text h2 {
-      color: #E85200;
+    .escom-page-type--marketing .escom-long-form-text h2,
+    .escom-page-type--marketing .escom-long-form-text h3 {
       text-align: center; }
+  .esds-container--white .escom-page-type--marketing .escom-long-form-text h2,
+  .esds-container--light .escom-page-type--marketing .escom-long-form-text h2 {
+    color: #E85200; }
   .escom-long-form-text * + h2 {
     margin-top: 64px; }
   .escom-long-form-text h3 {
@@ -1678,6 +1700,8 @@ body {
 
 .escom-long-form-text {
   margin: 0 auto 32px; }
+  .escom-long-form-text:last-child {
+    margin-bottom: 0; }
   .escom-long-form-text h1 {
     line-height: 1.3;
     font-family: Barlow, "Lato", sans-serif;
@@ -1782,9 +1806,12 @@ body {
       margin: 0; }
   .escom-page-type--marketing .escom-long-form-text {
     max-width: 800px; }
-    .escom-page-type--marketing .escom-long-form-text h2 {
-      color: #E85200;
+    .escom-page-type--marketing .escom-long-form-text h2,
+    .escom-page-type--marketing .escom-long-form-text h3 {
       text-align: center; }
+  .esds-container--white .escom-page-type--marketing .escom-long-form-text h2,
+  .esds-container--light .escom-page-type--marketing .escom-long-form-text h2 {
+    color: #E85200; }
   .escom-long-form-text * + h2 {
     margin-top: 64px; }
   .escom-long-form-text h3 {
@@ -2117,14 +2144,6 @@ body {
     .escom-long-form-text ol:last-child {
       margin: 0; }
 
-.escom-hero-profile {
-  background-color: #0D0D0D; }
-
-.escom-hero-profile__inner {
-  margin: 0 auto;
-  max-width: 1368px;
-  position: relative; }
-
 .escom-hero-profile__image {
   display: block;
   height: 200px;
@@ -2167,10 +2186,23 @@ body {
   font-weight: 300;
   line-height: 1.1;
   line-height: 1.3;
-  color: #FFFFFF;
-  font-size: 23.04px;
+  font-family: Barlow, "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.3;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+  font-weight: 300;
+  line-height: 1.1;
+  font-size: 44px;
   font-weight: 600;
-  margin: 0 0 16px; }
+  font-weight: 600;
+  margin: 0 0 32px; }
   .escom-hero-profile__heading::before, .escom-hero-profile__heading::after {
     content: '';
     display: block;
@@ -2180,6 +2212,21 @@ body {
     margin-bottom: calc(-0.31829em + 0px); }
   .escom-hero-profile__heading::after {
     margin-top: calc(-0.26951em + 0px); }
+  .esds-container--white .escom-hero-profile__heading {
+    color: #0D0D0D; }
+  .esds-container--light .escom-hero-profile__heading {
+    color: #0D0D0D; }
+  .esds-container--dark .escom-hero-profile__heading {
+    color: #FFFFFF; }
+  .esds-container--black .escom-hero-profile__heading {
+    color: #F3F1F1; }
+  .esds-container--brand .escom-hero-profile__heading {
+    color: #FFFFFF; }
+  .esds-container--dark-photograph .escom-hero-profile__heading {
+    color: #FFFFFF; }
+  @media screen and (min-width: 480px) {
+    .escom-hero-profile__heading {
+      font-size: 48px; } }
   @media screen and (min-width: 768px) {
     .escom-hero-profile__heading {
       font-size: 64px; } }
@@ -2201,14 +2248,40 @@ body {
   text-transform: none;
   font-weight: 300;
   line-height: 1.1;
+  font-family: Barlow, "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.3;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  text-shadow: none;
+  text-transform: none;
+  font-weight: 300;
+  line-height: 1.1;
+  font-size: 19.2px;
+  font-weight: 300;
   color: #888888;
-  font-size: 13.6px;
   font-weight: 600;
   margin: 0;
   text-transform: uppercase; }
+  .esds-container--white .escom-hero-profile__subhead {
+    color: #0D0D0D; }
+  .esds-container--light .escom-hero-profile__subhead {
+    color: #0D0D0D; }
+  .esds-container--dark .escom-hero-profile__subhead {
+    color: #FFFFFF; }
+  .esds-container--black .escom-hero-profile__subhead {
+    color: #F3F1F1; }
+  .esds-container--brand .escom-hero-profile__subhead {
+    color: #FFFFFF; }
+  .esds-container--dark-photograph .escom-hero-profile__subhead {
+    color: #FFFFFF; }
   @media screen and (min-width: 480px) {
     .escom-hero-profile__subhead {
-      font-size: 16px; } }
+      font-size: 20px; } }
   @media screen and (min-width: 768px) {
     .escom-hero-profile__subhead {
       font-size: 21.328px; } }
@@ -2735,14 +2808,16 @@ body {
   .escom-promo-text--center-all p {
     text-align: center; }
 
+.escom-card-grid:not(:last-child) {
+  margin: 0 0 64px; }
+
 @media screen and (min-width: 500px) {
   .escom-card-grid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: -8px; }
+        flex-wrap: wrap; }
     @supports (grid-column-gap: 0) {
       .escom-card-grid {
         display: -ms-grid;
@@ -2750,8 +2825,7 @@ body {
         grid-auto-rows: 1fr;
         grid-gap: 32px;
         -ms-grid-columns: 1fr 1fr;
-            grid-template-columns: 1fr 1fr;
-        margin: 0; } } }
+            grid-template-columns: 1fr 1fr; } } }
 
 @media screen and (min-width: 768px) {
   .escom-card-grid {
@@ -2866,7 +2940,7 @@ body {
     transition: opacity .5s;
     z-index: 1; }
   .escom-bio-thumbnail:hover .escom-bio-thumbnail__image-wrap:before {
-    opacity: 1; }
+    opacity: 0.4; }
 
 .escom-bio-thumbnail__image {
   display: block;

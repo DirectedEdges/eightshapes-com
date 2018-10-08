@@ -55,7 +55,7 @@
                     <ul class="escom-timeline__list">
                         {% for bullets in item.list %}
                         <li class="escom-timeline__list-item">
-                            {{ bullets }}
+                            {{ bullets | safe }}
                         </li>
                         {% endfor %}
                     </ul>

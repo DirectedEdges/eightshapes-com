@@ -8,6 +8,7 @@
 
     {{ escom.title_row(
         logo=false, 
+        class="esds-row--very-tall-inset",
         heading="Product Discovery", 
         decks=["“But are we designing the right thing?” We help teams answer this question by aligning them around a shared product vision through design priorities, user needs, and prototyped concepts."]) 
     }}
@@ -16,7 +17,7 @@
         {% call escom.fifty_fifty(image="/images/product-discovery-photo.jpg") %}
             <div class="escom-long-form-text">
                 <h2>What We Deliver</h2>
-                <p class="escom-long-form-text__p--l">
+                <p class="escom-long-form-text__lead">
                     Collaborating with your team, EightShapes defines the product’s experience grounded in user research and expressed through a prototype.
                 </p>
                 {{ escom.link_list(
@@ -42,7 +43,7 @@
     {% call esds.row(background="light", class="esds-row--tall-inset") %}
         <div class="escom-long-form-text">
             <h2>What We Do</h2>
-            <p>
+            <p class="escom-long-form-text__lead">
                 Drawing on time-tested design techniques, EightShapes runs a discovery phase that emphasizes exploration, iteration, and validation.
             </p>
         </div>
@@ -99,7 +100,7 @@
     {% call esds.row(background="light", class="esds-row--tall-inset") %}
         <div class="escom-long-form-text">
             <h2>Research &amp; Testing Techniques</h2>
-            <p>
+            <p class="escom-long-form-text__lead">
                 Discovery depends on research to inform and validate the product vision. These are some of the lightweight techniques we use to inject user insights into design.
             </p>
         </div>
@@ -139,13 +140,14 @@
     {% call esds.row(background_image="/images/workshop-cutup.png", class="esds-row--tall-inset esds-container--dark-photograph") %}
         <div class="escom-long-form-text">
             <h2>Discovery Training Workshop</h2>
-            <p>Crafting the Discovery Phase gives design teams the tools necessary for planning and executing discovery efforts. Geared toward designers and product managers, the workshop is appropriate for both mature teams and those just getting off the ground.</p>
+            <p class="escom-long-form-text__lead">Crafting the Discovery Phase gives design teams the tools necessary for planning and executing discovery efforts. Geared toward designers and product managers, the workshop is appropriate for both mature teams and those just getting off the ground.</p>
         </div>
     {% endcall %}
 
     {% call esds.row(background="white", class="esds-row--tall-inset") %}
         <div class="escom-long-form-text">
             <h2>How We’ve Contributed</h2>
+            <p class="escom-long-form-text__lead"
             <p>
                 EightShapes has contributed three books, a documentation templating system, and a prototyping framework, not to mention countless workshops and articles.
             </p>

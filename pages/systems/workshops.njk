@@ -1,5 +1,6 @@
-{% extends 'templates/base.njk' %}
+{% set title_tag = "EightShapes > Systems > Workshops" %}
 {% set body_classes = "escom-page-type--marketing" %}
+{% extends 'templates/base.njk' %}
 {% block body %}
 
     {# Breadcrumb #}
@@ -14,7 +15,7 @@
         logo=false, 
         heading="System Workshops",
         decks=[
-            "Looking to start or reinvigorate a design system? We’ll workshop with your group to teach individuals and align teams pursuing design systems."
+            "Looking to start or invigorate a design system? We’ll workshop with your team(s) to teach principles and methods so that you get the most out of your system."
         ]) }}
 
     {# What We Cover #}
@@ -46,7 +47,7 @@
             {% call escom.tab_pane(label='Standard Agenda', active=true) %}
                 <div class="escom-long-form-text">
                     <p>
-                        For public venues and organizations looking for learning fundamentals, we’ll follow a standard agenda that hits all the important topics.
+                        For public venues and organizations learning fundamentals, we’ll follow this standard agenda:
                     </p>
                 </div>
 
@@ -60,20 +61,20 @@
                             time: "9:00AM - 10:45AM",
                             heading: "Planning",
                             list: [
-                                "Defining Design Systems",
-                                "Starting a Design System",
-                                "Designing a System Team"
+                                '<a href="http://bit.ly/8s-define-design-systems" target="_blank">Defining Design Systems</a>: What should <i>our</i> design system be?',
+                                '<a href="http://bit.ly/8s-starting-a-system" target="_blank">Starting a Design System</a>: How do we get to an initial release and go from there?',
+                                '<a href="http://bit.ly/8s-designing-systems-team" target="_blank">Designing a System Team</a>: How do we identify the right people to make the system'
                             ]
                         },
                         {
                             time: "11:00AM – 12:30pm",
                             heading: "Designing & Building",
                             list: [
-                                "Color",
-                                "Tokens",
-                                "Inventories & Scoping",
-                                "Buttons",
-                                "Component Quality"
+                                '<a href="http://bit.ly/8s-tokens-in-design-systems" target="_blank">Tokens</a>: How do we share a visual langauge across products and platforms?',
+                                '<a href="http://bit.ly/8s-color-in-design-systems" target="_blank">Color</a>: How do we generate an accessible, flexible, and themable color system for a complete UI component library?',
+                                '<a href="http://bit.ly/8s-component-cut-up" target="_blank">Inventories and Scoping</a>: What UI components does our system need?',
+                                '<a href="http://bit.ly/8s-buttons-in-design-systems" target="_blank">Buttons</a>: How do we design for myriad variation, states, and more?',
+                                '<a href="http://bit.ly/8s-component-quality" target="_blank">Component Quality</a>: How do others trust that our library is built with quality'
                             ]
                         },
                         {
@@ -84,21 +85,21 @@
                             time: "1:30pm – 3:00pm",
                             heading: "Documenting",
                             list: [
-                                "Cards & Composibility",
-                                "Documenting Components",
-                                "Component Examples",
-                                "Design Guidelines",
-                                "Editing Component Documentation"
+                                '<a target="_blank" href="http://bit.ly/8s-cards-composability">Cards & Composibility</a>: How do we decompose style, structure, and behavior?',
+                                '<a target="_blank" href="http://bit.ly/8s-documenting-components">Documenting Components</a>: Who is it for and what content do they need?',
+                                '<a target="_blank" href="http://bit.ly/8s-component-examples">Component Examples</a>: How we select and arrange examples across all features?',
+                                '<a target="_blank" href="http://bit.ly/8s-component-design-guidelines">Design Guidelines</a>: How do guide style, behavior, editorial, accessibility and use?',
+                                '<strong>Editing Documentation</strong>: How do we write and iterate quality documentation?'
                             ]
                         },
                         {
                             time: "3:30pm – 5:00pm",
                             heading: "Practicing",
                             list: [
-                                "Adopting Design Systems",
-                                "How Do I...? Processes (*)",
-                                "Contributing",
-                                "Measuring Success"
+                                '<a href="http://bit.ly/8s-adopting-systems" target="_blank">Adopting Design Systems</a>: Who uses our system, and how do we monitor their work?',
+                                '<a href="http://bit.ly/8s-system-practice-cards" target="_blank">How Do I...? Processes</a>: What workflows do the system team, users, and contributors need defined?',
+                                '<a href="http://bit.ly/8s-contributions-to-systems" target="_blank">Contributing</a>: How do we know what goes in, and what is the process to get it done?',
+                                '<a href="http://bit.ly/8s-measure-system-success" target="_blank">Measuring Success</a>: What are our objectives, and how do we track if we get there?'
                             ]
                         }
                     ]
@@ -111,10 +112,10 @@
                         Most in-house teams choose to customize their agenda to tailor topics to their current needs. This may result in a workshop lengthened to two days or shortened a half day (usually paired with a sponsored talk for a larger group).
                     </p>
 
-                    <h3>Example 1: Half Day for Organization with Multiple Systems</h3>
+                    <h3>At Carmax, an Evening Talk and then Half–Day Workshop</h3>
 
                     <p>
-                        In one instance, a company paired an sponsored talk to the local community with a customized half-day in-house workshop. They chose to focus on aligning multiple in-house system efforts around a future strategy along topics covering how to practice systems. As a result, they omitted topics of system design, code and documentation.
+                        Carmax paired a sponsored talk for the local Richmond, VA community with a customized half-day in-house workshop. They paired a segment to align in-house system efforts with topics covering how to serve system customers and contributors. As a result, they omitted topics of system design, code and documentation.
                     </p>
                 </div>
 
@@ -343,25 +344,25 @@
             </div>
         </div>
         {{ esds.tiles(
-            class = "esds-tiles--2-column",
+            class = "esds-tiles--2-column esds-tiles--translucent-white esds-tiles--long-form-max-width",
             container = "white",
+            translucent = true,
             items = [
                 {
                     heading: "Essential Participants",
-                    description: "System workshops work best with:",
                     list: [
-                        "Assigned staff already making system(s)",
+                        "Teams making system(s)",
                         "UX and visual designers",
                         "Front-end engineers",
-                        "Design and engineering leaders"
+                        "Design and engineering leaders",
+                        "Design ops management"
                     ]
                 },
                 {
-                    heading: "Additional Participants",
-                    description: "Workshop content is also relevant for:",
+                    heading: "Additional Invites",
                     list: [
                         "Product managers",
-                        "Project managers",
+                        "Accessibility specialists",
                         "Content strategists",
                         "Researchers",
                         "Executive sponsors"
@@ -377,19 +378,18 @@
         <div class="escom-long-form-text">
             <h2>Why an EightShapes Workshop?</h2>
             <p class="escom-long-form-text__lead">
-                EightShapes’ seasoned experience and enthusiasm will inspire and challenge your teams, sparking new ideas and meaningful discussion. Use a workshop to:
+                EightShapes’ seasoned experience and enthusiasm will inspire and challenge your teams. Sessions will engage participants in hands-on activities, sparking new ideas and meaningful discussion to:
             </p>
-            <ul>
+            <ol>
                 <li>Kickoff or energize in-house systems efforts</li>
                 <li>Define your system and what it offers</li>
                 <li>Dive deep on workflows to make or contribute components</li>
                 <li>Frame how to form a system team and energize a community</li>
                 <li>Plan how to create and adopt a system</li>
                 <li>Refine how to design and code features like color, buttons, and space</li>
-                <li>Develop a shared vocabulary for dispersed teams</li>
+                <li>Develop a shared vocabulary across dispersed teams</li>
                 <li>Identify achievable outcomes you can measure</li>
-                <li>Engage stakeholders with hands-on activities</li>
-            </ul>
+            </ol>
         </div>
     {% endcall %}
 

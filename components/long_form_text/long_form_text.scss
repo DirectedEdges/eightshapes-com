@@ -1,5 +1,10 @@
 .escom-long-form-text {
+
     margin: 0 auto $esds-space-generic-2-x;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 
     h1 {
         @include esds-text-crop();
@@ -29,9 +34,16 @@
     .escom-page-type--marketing & {
         max-width: $esds-font-line-length-long-form;
 
+        h2,
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .esds-container--white .escom-page-type--marketing &,
+    .esds-container--light .escom-page-type--marketing & {
         h2 {
             color: $esds-text-color-brand;
-            text-align: center;
         }
     }
 

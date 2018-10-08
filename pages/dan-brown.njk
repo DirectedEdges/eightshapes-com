@@ -18,37 +18,29 @@
     <div class="esds-container--white">
         <div class="escom-layout__content--narrow">
             <div class="escom-tabs">
-                <div class="escom-tabs__tabs">
-                    <div class="escom-tabs__cell">
-                        <button class="escom-tabs__button escom-tabs__button--is-active" data-target="tab-appearances">
-                            Appearances
-                        </button>
-                    </div>
-
-                    <div class="escom-tabs__cell">
-                        <button class="escom-tabs__button" data-target="tab-books">
-                            Books
-                        </button>
-                    </div>
-
-                    <div class="escom-tabs__cell">
-                        <button class="escom-tabs__button" data-target="tab-webinars">
-                            Webinars
-                        </button>
-                    </div>
-
-                    <div class="escom-tabs__cell">
-                        <button class="escom-tabs__button" data-target="tab-podcasts">
-                            Podcasts
-                        </button>
-                    </div>
-
-                    <div class="escom-tabs__cell">
-                        <button class="escom-tabs__button" data-target="tab-games">
-                            Games
-                        </button>
-                    </div>
-                </div>
+            {{ escom.tabs(tabs=[
+                    {
+                        label: 'Appearances',
+                        content: appearances_tab_content,
+                        active: true
+                    },
+                    {
+                        label: 'Books',
+                        content: books_tab_content
+                    },
+                    {
+                        label: 'Webinars',
+                        content: webinars_tab_content
+                    },
+                    {
+                        label: 'Podcasts',
+                        content: podcasts_tab_content
+                    },
+                    {
+                        label: 'Games',
+                        content: games_tab_content
+                    }
+                ]) }}
 
                 <div id="tab-appearances" class="escom-tabs__content escom-tabs__content--is-active">
                     {% call esds.row(background="white", class="esds-row--narrow-inner") %}

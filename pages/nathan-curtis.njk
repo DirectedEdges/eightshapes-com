@@ -5,18 +5,18 @@
     
     {{ escom.hero_profile(bio=profiles[0]) }}
 
-    {% call esds.row(background="white", class="esds-row--tall-inset esds-row--narrow-inner") %}
+    {% call esds.row(background="dark", class="esds-row--narrow-inner") %}
         <div class="escom-layout__content--narrow">
             <div class="escom-long-form-text">
                 <p class="escom-long-form-text__p--l">
                     Nathan co-founded EightShapes in 2006 and is passionate about interaction design, information architecture, and front-end development. He specializes in design systems consulting for teams large and small, regularly writing about and speaking at events worldwide. Nathan conceived of EightShapes Unify (for UX documentation) and EightShapes Blocks (for HTML/CSS prototyping), toolkits downloaded by over 50,000 designers worldwide.
                 </p>
+                <p>
+                    Nathan has worked with teams designing systems for Google, REI, Fidelity, Marriott, Cisco, Capital One, Yahoo, Sprint, Sun Microsystems, Morningstar, Target, NetApp, USAC, Key Bank, Liberty Mutual, IDEXX, Discovery Education, Carmax, Citi, Hudl, Automattic, Fitbit, Wells Fargo, Wikia, and many more.
+                </p>
             </div>
-        </div>
     {% endcall %}
-
-    <div class="esds-container--white">
-        <div class="escom-layout__content--narrow">
+    {% call esds.row(background="white", class="esds-row--narrow-inner") %}
             {{ escom.tabs(tabs=[
                     {
                         label: 'Appearances',
@@ -352,4 +352,6 @@
             {% endcall %}
         </div>
     </div>
+    {% endcall %}
+
 {% endblock body %}
