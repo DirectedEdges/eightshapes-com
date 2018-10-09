@@ -35,6 +35,16 @@
     @media screen and (min-width: $esds-breakpoints-width-768) {
         height: 40px;
     }
+
+    @media screen and (min-width: $esds-breakpoints-width-768) {
+        height: 80px;
+    }
+}
+
+.escom-title-row__logo {
+    @media screen and (min-width: $esds-breakpoints-width-768) {
+        width: 320px;
+    }
 }
 
 .escom-title-row__page-anchor {

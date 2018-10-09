@@ -4,7 +4,7 @@
 
 {% block body %}
     {{ escom.title_row(
-        class="escom-title-row--centered-deck",
+        class="escom-title-row--centered-deck esds-row--very-tall-inset",
         logo=true,
         background="brand",
         decks=[
@@ -30,13 +30,6 @@
         ]
    
     ) }}
-
-  <!-- Our Work -->
-  {% call esds.row(background="light", class="esds-row--tall-inset") %}
-    <div class="escom-long-form-text">
-        <h2 id="our-work">Our Work</h2>
-    </div>
-  {% endcall %}
 
   <!-- What We Do -->
   {% call esds.row(background="white", class="esds-row--tall-inset") %}
@@ -66,9 +59,101 @@
         ]
     ) }}
   {% endcall %}
+
+  <!-- Our Work -->
+  {% call esds.row(background_only="dark", class="esds-row--tall-inset") %}
+    <div class="esds-container--dark">
+        <div class="escom-long-form-text">
+            <h2 id="our-work">Our Work</h2>
+            <br/>
+        </div>
+    </div>
+    <div class="escom-card-grid">
+        {{ esds.card(
+            container="white",
+            date="Design System",
+            thumbnail_image="/images/systems/casestudies/Morningstar.png",
+            title="Morningstar",
+            description="MDS, components and charts for digital products.",
+            href="http://designsystem.morningstar.com",
+            width="auto"
+        ) }}
+
+        {{ esds.card(
+            container="white",
+            type="Case Study",
+            title="NCARB Product Design",
+            href="/case-studies/ncarb.html",
+            thumbnail_image="/images/casestudies/case-study-thumbnail-ncarb.png",
+            width="auto"
+        ) }}
+
+        {{ esds.card(
+            container="white",
+            date="Design System",
+            thumbnail_image="/images/systems/casestudies/REI.png",
+            title="REI",
+            description="Cedar, a web-based system for rei.com apps and properties.",
+            width="auto"
+        ) }}       
+
+        {{ esds.card(
+            container="white",
+            type="Case Study",
+            title="Sonatype Product Design",
+            href="/case-studies/sonatype.html",
+            thumbnail_image="/images/casestudies/case-study-thumbnail-sonatype.png",
+            width="auto"
+        ) }}
+
+        {{ esds.card(
+            container="white",
+            date="Design System",
+            thumbnail_image="/images/systems/casestudies/Comet.png",
+            title="Discovery Education",
+            description="Comet, for educational digital apps and sites.",
+            href="http://comet.discoveryeducation.com",
+            width="auto"
+        ) }}
+
+        {{ esds.card(
+            container="white",
+            type="Case Study",
+            title="AACT Design Strategy",
+            href="/case-studies/aact.html",
+            thumbnail_image="/images/casestudies/case-study-thumbnail-aact.png",
+            width="auto"
+        ) }}
+    </div>
+  {% endcall %}
+
+{# Clients #}
+
+{% call esds.row(background="black", class="esds-row--tall-inset") %}
+    <div class="escom-logo-grid">
+        <img src="/images/client_brands/logos/Google.png" alt="Google" class="logo-grid__image">
+        <img src="/images/client_brands/logos/Target.png" alt="Target" class="logo-grid__image">
+        <img src="/images/client_brands/logos/REI.png" alt="REI" class="logo-grid__image">
+        <img src="/images/client_brands/logos/Marriott.png" alt="Marriott" class="logo-grid__image">
+        <img src="/images/client_brands/logos/Morningstar.png" alt="Morningstar" class="logo-grid__image">
+        <img src="/images/client_brands/logos/Fidelity.png" alt="Fidelity" class="logo-grid__image">
+        <img src="/images/client_brands/logos/CapitalOne.png" alt="Capital One" class="logo-grid__image">
+        <img src="/images/client_brands/logos/Cisco.png" alt="Cisco" class="logo-grid__image">
+        <img src="/images/client_brands/logos/DiscoveryEducation.png" alt="Discovery Education" class="logo-grid__image">
+        <img src="/images/client_brands/logos/eBay.png" alt="eBay" class="logo-grid__image">
+        <img src="/images/client_brands/logos/NetApp.png" alt="NetApp" class="logo-grid__image">
+        <img src="/images/client_brands/logos/Yahoo.png" alt="Yahoo" class="logo-grid__image">
+        <img src="/images/client_brands/logos/Hudl.png" alt="Hudl" class="logo-grid__image">
+        <img src="/images/client_brands/logos/3M.png" alt="3M" class="logo-grid__image">
+        <img src="/images/client_brands/logos/Wikia.png" alt="Wikia" class="logo-grid__image">
+        <img src="/images/client_brands/logos/Sprint.png" alt="Sprint" class="logo-grid__image">
+        <img src="/images/client_brands/logos/NationalGeographic.png" alt="National Geographic" class="logo-grid__image">
+        <img src="/images/client_brands/logos/Sun.png" alt="Sun Microsystems" class="logo-grid__image">
+    </div>
+{% endcall %}
   
   <!-- People -->
-  {% call esds.row(background="dark", class="esds-row--tall-inset") %}
+  {% call esds.row(background="light", class="esds-row--tall-inset") %}
     <div class="escom-long-form-text">
       <h2 id="who-we-are">Who We Are</h2>
       <p class="escom-long-form-text__lead">
@@ -77,6 +162,7 @@
     </div>
     {{ escom.bio_thumbnails() }}
   {% endcall %}
+
   
   <!-- Page CTA -->
   {{ escom.cta(heading="Ready?", deck="Working on a UX design? Crafting a product strategy? Starting a design system?", button_text="Email Us", href="mailto:info@eightshapes.com") }}
