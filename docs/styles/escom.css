@@ -2080,6 +2080,9 @@ body {
   max-width: 1000px;
   position: relative; }
 
+.escom-hero-profile__image-wrap {
+  position: relative; }
+
 .escom-hero-profile__image {
   border-radius: 8px;
   display: block;
@@ -2196,6 +2199,33 @@ body {
   @media screen and (min-width: 1000px) {
     .escom-hero-profile__subhead {
       font-size: 22.624px; } }
+
+.escom-hero-profile__nav {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 20; }
+  .escom-hero-profile__nav:hover {
+    background: #068194;
+    border-radius: 0 8px 8px 0; }
+  @media screen and (min-width: 768px) {
+    .escom-hero-profile__nav {
+      padding: 16px; } }
+
+.escom-hero-profile__nav--next {
+  right: 0; }
+  .escom-hero-profile__nav--next:hover {
+    border-radius: 8px 0 0 8px; }
+
+.escom-hero-profile__nav-icon {
+  fill: #068194; }
+  .escom-hero-profile__nav:hover .escom-hero-profile__nav-icon {
+    fill: #FFFFFF; }
+  @media screen and (min-width: 500px) {
+    .escom-hero-profile__nav-icon {
+      height: 30px;
+      width: 30px; } }
 
 .escom-site-footer {
   margin: 0 auto;

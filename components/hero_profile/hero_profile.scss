@@ -4,6 +4,10 @@
     position: relative;
 }
 
+.escom-hero-profile__image-wrap {
+    position: relative;
+}
+
 .escom-hero-profile__image {
     border-radius: $esds-border-radius-default;
     display: block;
@@ -51,4 +55,41 @@
     font-weight: $esds-font-weight-bold;
     margin: $esds-space-stack-quarter-x;
     text-transform: uppercase;
+}
+
+.escom-hero-profile__nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+
+    &:hover {
+        background: $esds-text-color-link-on-white;
+        border-radius: 0 $esds-border-radius-default $esds-border-radius-default 0;
+    }
+
+    @media screen and (min-width: $esds-breakpoints-width-768) {
+        padding: $esds-space-inset-1-x;
+    }
+}
+
+.escom-hero-profile__nav--next {
+    right: 0;
+
+    &:hover {
+        border-radius: $esds-border-radius-default 0 0 $esds-border-radius-default;
+    }
+}
+
+.escom-hero-profile__nav-icon {
+    fill: $esds-text-color-link-on-white;
+
+    .escom-hero-profile__nav:hover & {
+        fill: $esds-color-white;
+    }
+
+    @media screen and (min-width: $esds-breakpoints-width-500) {
+        height: 30px;
+        width: 30px;
+    }
 }
