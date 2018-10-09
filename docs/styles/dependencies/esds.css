@@ -1155,6 +1155,9 @@
     .esds-container--dark-photograph .esds-tiles__tile--link .esds-tiles__heading {
       color: #0A9DB3; }
 
+.esds-tiles__heading-icon {
+  fill: currentColor; }
+
 .esds-tiles__description {
   font-family: Barlow, "Lato", sans-serif;
   font-size: 16px;

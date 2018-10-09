@@ -18,24 +18,24 @@
         </div>
     {% endcall %}
     {% call esds.row(background="white", class="esds-row--tall-inset") %}
-            {{ escom.tabs(tabs=[
-                    {
-                        label: 'Appearances',
-                        active: true
-                    },
-                    {
-                        label: 'Webinars',
-                        content: webinars_tab_content
-                    },
-                    {
-                        label: 'Podcasts',
-                        content: podcasts_tab_content
-                    },
-                    {
-                        label: 'Posters',
-                        content: posters_tab_content
-                    }
-                ]) }}
+        {{ escom.tabs(tabs=[
+                {
+                    label: 'Appearances',
+                    active: true
+                },
+                {
+                    label: 'Webinars',
+                    content: webinars_tab_content
+                },
+                {
+                    label: 'Podcasts',
+                    content: podcasts_tab_content
+                },
+                {
+                    label: 'Posters',
+                    content: posters_tab_content
+                }
+            ]) }}
             {% call escom.tab_pane(label='appearances', active=true) %}
                 {{ escom.timeline(
                     class = "escom-timeline--years-only",

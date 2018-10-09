@@ -20,7 +20,7 @@
     display: flex;
     justify-content: flex-start;
     overflow-x: scroll;
-    padding: $esds-space-stack-1-x;
+    padding: $esds-space-stack-2-x;
     padding-bottom: 40px; // push scroll bar down
 
     @media screen and (min-width: 600px) {
@@ -63,7 +63,7 @@
     margin: 0;
     outline: 0;
     overflow: visible;
-    padding: $esds-space-generic-1-x 0;
+    padding: 0 0 $esds-space-generic-1-x;
     text-align: center;
     text-transform: uppercase;
 
