@@ -1,182 +1,25 @@
 {% set title_tag = "EightShapes > James Melzer" %}
+{% set body_classes = "escom-page-type--marketing" %}
 {% extends 'templates/base.njk' %}
 {% block body %}
     {{ esds.breadcrumb(href="/") }}
     
-    {{ escom.hero_profile(bio=profiles[3]) }}
 
-    {% call esds.row(background="white", class="esds-row--tall-inset esds-row--narrow-inner esds-row--no-inset-bottom") %}
-        <div class="escom-layout__content--narrow">
+    {% call esds.row(background_only="dark") %}
+        {{ escom.hero_profile(bio=profiles[3]) }}
+        <div class="esds-container--dark">
             <div class="escom-long-form-text">
                 <p class="escom-long-form-text__p--l">
-                    James' systematic approach spurs teams to understand and achieve their business goals. James has lead accounts and projects with diverse clients in industry, education, government, and civil society, on projects such as:
+                    As a UX designer and team lead, James connects business leaders, designers and developers to design the best solutions. James’ 15 years of experience includes large-scale information architecture, search, responsive design, and creating living style guides for design teams. 
                 </p>
-                <ul>
-                    <li><strong>Led a design system team</strong> that helped a financial institution realize its efficiency and quality goals.</li>
-                    <li><strong>Built and governed a design system</strong> to achieve brand cohesiveness across dozens of vendor and in-house teams with over a hundred native apps.</li>
-                    <li><strong>Facilitating c-suite ideation</strong> toward an app's MVP, then led the team to realize the concept via prototypes. </li>
-                    <li><strong>Led the research and design team</strong> to overhaul the federal government's assistance for victims of identity theft.</li>
-                </ul>
-                <p>
-                    James still calls himself information architect, with a Master’s Degree in Library/Information Science from the University of Maryland. He designed navigation schemes for several of the world's largest companies and organizations, and continues to relish thorny IA projects. 
-                </p>
+                <p>His previous clients include startups, Fortune 500 enterprises, non-profits, government agencies, and a university. James earned a Master’s Degree in Library/Information Science from the University of Maryland.</p>
             </div>
         </div>
     {% endcall %}
-
-    {% call esds.row(background="white", class="esds-row--narrow-inner") %}
-        <div class="escom-layout__content--narrow">
-
-                        {{ escom.link_list(
-                class = "escom-link-list--large",
-                items = [
-                    {
-                        heading: "Design Systems"
-                    },
-                    {
-                        title: "Cisco, Marriott, Discovery Education, World Bank, Wells Fargo, plus two more currently in progress."
-                    },
-                    {
-                        heading: "Projects"
-                    }
-                ]
-            ) }}
-
-            {{ escom.timeline (
-                    items = [
-                        {
-                            heading: "2017",
-                            topics: [
-                                escom.link_list(
-                                    class = "escom-link-list--large",
-                                    items = [
-                                        {
-                                            metadata: "System Lead of blended 8S/client team",
-                                            title: "**Discovery Education** design system"
-                                        },
-                                        {
-                                            metadata: "Information Architect",
-                                            title: "**Wells Fargo** navigation scheme"
-                                        },
-                                        {
-                                            metadata: "System Lead & Design Lead",
-                                            title: "**World Bank** design system &amp; product design (2)"
-                                        }
-                                    ]
-                                )
-                            ]
-                        },
-                        {
-                            heading: "2016",
-                            topics: [
-                                escom.link_list(
-                                    class = "escom-link-list--large",
-                                    items = [
-                                        {
-                                            metadata: "System Lead of blended 8S/client team",
-                                            title: "**Discovery Education**    design system"
-                                        },
-                                        {
-                                            metadata: "Information Architect",
-                                            title: "**NetApp** navigation scheme"
-                                        },
-                                        {
-                                            metadata: "Information Architect",
-                                            title: "**World Bank** navigation scheme"
-                                        }
-                                        
-                                    ]
-                                )
-                            ]
-                        },
-                        {
-                        heading: "2015",
-                            topics: [
-                                escom.link_list(
-                                    class = "escom-link-list--large",
-                                    items = [
-                                        {
-                                            metadata: "Design Lead",
-                                            title: "**HealthMine** product design"
-                                        },
-                                        {
-                                            metadata: "Design Lead of blended 8S/Vendor team",
-                                            title: "**Identitytheft.gov** product design"
-                                        },
-                                        {
-                                            metadata: "Design Lead",
-                                            title: "**Marriott** navigation scheme"
-                                        },
-                                        {
-                                            metadata: "Design Lead",
-                                            title: "**The Ritz-Carlton** responsive refresh"
-                                        }
-                                    ]
-                                )
-                            ]
-                        },
-                        {
-                        heading: "2014",
-                            topics: [
-                                escom.link_list(
-                                    class = "escom-link-list--large",
-                                    items = [
-                                        {
-                                            metadata: "System Lead of a blended 8S/client team & Design Lead",
-                                            title: "**Cisco** apps design system &amp; product design (8)"
-                                        },
-                                        {
-                                            metadata: "System Lead of Blended 8S/client team & Information Architect",
-                                            title: "**Marriott** design system &amp; product design (2)",
-                                            metadata: "System Lead of Blended 8S/client team & Information Architect"
-                                        }
-                                    ]
-                                )
-                            ]
-                        },
-                        {
-                        heading: "2013",
-                            topics: [
-                                escom.link_list(
-                                    class = "escom-link-list--large",
-                                    items = [
-                                        {
-                                            metadata: "System Lead of a blended 8S/client team,  Design Lead, & Information Architect",
-                                            title: "**Cisco** apps design system, product design (10), &amp; Site Search"
-                                        },
-                                        {
-                                            metadata: "System Lead of Blended 8S/client team",
-                                            title: "**Marriott** design system"
-                                        },
-                                        {
-                                            metadata: "Design Lead",
-                                            title: "**NetApp** navigation scheme"
-                                        }
-                                    ]
-                                )
-                            ]
-                        },
-                        {
-                        heading: "2012",
-                            topics: [
-                                escom.link_list(
-                                    class = "escom-link-list--large",
-                                    items = [
-                                        {
-                                            metadata: "System Lead of a blended 8S/client team,  Design Lead, & Information Architect",
-                                            title: "**Cisco** apps design system, component library, product design (10), &amp; Site Search"
-                                        }
-                                    ]
-                                )
-                            ]
-                        }
-                    ]
-                )
-            }}
-
-
-            {{ escom.link_list(
-                class = "escom-link-list--large",
+    {% call esds.row(background="white", class="esds-row--tall-inset") %}
+        {% call escom.tab_pane(active=true) %}
+            {{ esds.list(
+                class = "esds-list--large",
                 items = [
                     {
                         heading: "Writing"
@@ -209,6 +52,6 @@
                     }
                 ]
             ) }}
-        </div>
+        {% endcall %}
     {% endcall %}
 {% endblock body %}
