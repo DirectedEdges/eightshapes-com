@@ -5,7 +5,7 @@
 .escom-title-row__title {
     @include esds-text-crop();
     @include esds-level-1-heading();
-    margin: $esds-space-stack-4-x;
+    margin: $esds-space-stack-3-x;
     text-align: center;
 }
 

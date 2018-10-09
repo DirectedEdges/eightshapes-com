@@ -1,22 +1,23 @@
 {% set title_tag = "EightShapes > Nathan Curtis" %}
+{% set body_classes = "escom-page-type--marketing" %}
 {% extends 'templates/base.njk' %}
 {% block body %}
     {{ esds.breadcrumb(href="/") }}
     
-    {{ escom.hero_profile(bio=profiles[0]) }}
-
-    {% call esds.row(background="dark", class="esds-row--narrow-inner") %}
-        <div class="escom-layout__content--narrow">
+    {% call esds.row(background_only="dark") %}
+        {{ escom.hero_profile(bio=profiles[0]) }}
+        <div class="esds-container--dark">
             <div class="escom-long-form-text">
                 <p class="escom-long-form-text__p--l">
-                    Nathan co-founded EightShapes in 2006 and is passionate about interaction design, information architecture, and front-end development. He specializes in design systems consulting for teams large and small, regularly writing about and speaking at events worldwide. Nathan conceived of EightShapes Unify (for UX documentation) and EightShapes Blocks (for HTML/CSS prototyping), toolkits downloaded by over 50,000 designers worldwide.
+                    Nathan co-founded EightShapes with <a href="dan-brown.html">Dan Brown</a> in 2006. He's passionate about information architecture, UX design, front-end dev, and leads <a href="/design-systems.html">design systems</a> consulting at EightShapes. He wrote <a href="https://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351">Modular Web Design</a> in 2009, blogs frequently on <a href="https://medium.com/@nathanacurtis">Medium.com</a> today, and speaks regularly at events worldwide.
                 </p>
                 <p>
-                    Nathan has worked with teams designing systems for Google, REI, Fidelity, Marriott, Cisco, Capital One, Yahoo, Sprint, Sun Microsystems, Morningstar, Target, NetApp, USAC, Key Bank, Liberty Mutual, IDEXX, Discovery Education, Carmax, Citi, Hudl, Automattic, Fitbit, Wells Fargo, Wikia, and many more.
+                    Nathan has worked with design systems teams at Google, REI, Fidelity, Marriott, Cisco, Capital One, Yahoo, Sprint, Sun Microsystems, Morningstar, Target, NetApp, USAC, Key Bank, Liberty Mutual, IDEXX, Discovery Education, Carmax, Citi, Hudl, Automattic, Wells Fargo, Wikia, and more.
                 </p>
             </div>
+        </div>
     {% endcall %}
-    {% call esds.row(background="white", class="esds-row--narrow-inner") %}
+    {% call esds.row(background="white", class="esds-row--tall-inset") %}
             {{ escom.tabs(tabs=[
                     {
                         label: 'Appearances',
@@ -36,14 +37,14 @@
                     }
                 ]) }}
             {% call escom.tab_pane(label='appearances', active=true) %}
-            {# 
                 {{ escom.timeline(
+                    class = "escom-timeline--years-only",
                     items = [
                         {
                             heading: "2019",
                             content_right: [
                                 esds.list(
-                                    class = "escom-link-list--large",
+                                    class = "esds-list--large",
                                     items = [
                                         {
                                             eyebrow: "February, 2019 • WORKSHOP",
@@ -58,47 +59,44 @@
                             heading: "2018",
                             content_right: [
                                 esds.list(
-                                    class = "escom-link-list--large",
+                                    class = "esds-list--large",
                                     items = [
                                         {
                                             eyebrow: "December, 2018 • WORKSHOP",
-                                            title: "Clarity Conference, New York, NY",
-                                            href: ""
+                                            title: "Clarity Conference, New York, NY"
                                         },
                                         {
                                             eyebrow: "November, 2018 • WORKSHOP",
                                             title: "UI23, Boston, MA",
-                                            href: ""
+                                            href: "https://ui.uie.com/workshops/nathan-curtis"
                                         },
                                         {
                                             eyebrow: "November, 2018 • WORKSHOP",
-                                            title: "Invision Design Better, Munich, Germany",
-                                            href: ""
+                                            title: "Invision Design Better, Munich, Germany"
                                         },
                                         {
                                             eyebrow: "August, 2018 • TALK",
-                                            title: "RefreshDC, Washington, DC",
-                                            href: ""
+                                            title: "RefreshDC, Washington, DC"
                                         },
                                         {
                                             eyebrow: "August, 2018 • WORKSHOP",
                                             title: "Invision Design Better, Denver, CO",
-                                            href: ""
+                                            href: "https://designsystemsaug2018.splashthat.com/"
                                         },
                                         {
                                             eyebrow: "July, 2018 • TALK",
                                             title: "UX Meetup, Paris, France",
-                                            href: ""
+                                            href: "https://www.meetup.com/Meetups-Backelite-Paris/events/252226564/"
                                         },
                                         {
                                             eyebrow: "June, 2018 • WORKSHOP",
                                             title: "Enterprise UX, San Francisco, CA",
-                                            href: ""
+                                            href: "https://rosenfeldmedia.com/eux2018/sessions/scalable-design-systems/"
                                         },
                                         {
                                             eyebrow: "May, 2018 • WORKSHOP",
                                             title: "Invision Design Better, New York, NY",
-                                            href: ""
+                                            href: "https://designsystemsmay2018.splashthat.com/"
                                         },
                                         {
                                             eyebrow: "March, 2018 • WORKSHOP",
@@ -123,7 +121,7 @@
                             heading: "2017",
                             content_right: [
                                 esds.list(
-                                    class = "escom-link-list--large",
+                                    class = "esds-list--large",
                                     items = [
                                         {
                                             eyebrow: "November, 2017 • WORKSHOP",
@@ -178,7 +176,7 @@
                             heading: "2016",
                             content_right: [
                                 esds.list(
-                                    class = "escom-link-list--large",
+                                    class = "esds-list--large",
                                     items = [
                                         {
                                             eyebrow: "November 16, 2016 • TALK",
@@ -223,7 +221,7 @@
                             heading: "2015",
                             content_right: [
                                 esds.list(
-                                    class = "escom-link-list--large",
+                                    class = "esds-list--large",
                                     items = [
                                         {
                                             eyebrow: "DEC 2015 • TALK",
@@ -246,45 +244,44 @@
                         }
                     ]
                 ) }}
-             #}
             {% endcall %}
 
             {% call escom.tab_pane(label='Webinars') %}
-                {{ escom.link_list(
-                    class = "escom-link-list--large",
+                {{ esds.list(
+                    class = "esds-list--large",
                     items = [
                         {
-                            eyebrow: "DEC 2015 / UIE",
+                            eyebrow: "2015 • UIE",
                             title: "Design Systems: From Project Done to Product Sustained",
                             href: "https://aycl.uie.com/virtual_seminars/deeper_dive_design_systems"
                         },
                         {
-                            eyebrow: "JUN 2015 / A LIST APART",
+                            eyebrow: "2015 • A LIST APART",
                             title: "Pattern Language: Responsive Style Guides",
                             href: "http://alistapart.com/event/responsive-style-guides"
                         },
                         {
-                            eyebrow: "JAN 2015 / UIE",
+                            eyebrow: "2015 • UIE",
                             title: "Cohesive Design Systems for Enterprise",
                             href: "https://aycl.uie.com/virtual_seminars/design_systems"
                         },
                         {
-                            eyebrow: "2013 / UIE",
+                            eyebrow: "2013 • UIE",
                             title: "Sketching for Understanding",
                             href: "https://aycl.uie.com/virtual_seminars/vs96_sketching_understanding"
                         },
                         {
-                            eyebrow: "2012 / UIE",
+                            eyebrow: "2012 • UIE",
                             title: "Fearless Prototyping for Skeptics",
                             href: "https://aycl.uie.com/virtual_seminars/fearless_prototyping_for_skeptics"
                         },
                         {
-                            eyebrow: "2012 / UIE",
+                            eyebrow: "2012 • UIE",
                             title: "Start Full Screen: Organize, Communicate, & Annotate HTML Prototypes",
                             href: "https://aycl.uie.com/virtual_seminars/start_full_screen"
                         },
                         {
-                            eyebrow: "2011 / UIE",
+                            eyebrow: "2011 • UIE",
                             title: "From PDFs to HTML Prototypes",
                             href: "https://aycl.uie.com/virtual_seminars/from_pdfs_to_html_prototypes"
                         }
@@ -293,36 +290,41 @@
             {% endcall %}
 
             {% call escom.tab_pane(label='Podcasts') %}
-                {{ escom.link_list(
-                    class = "escom-link-list--large",
+                {{ esds.list(
+                    class = "esds-list--large",
                     items = [
                         {
-                            eyebrow: "AUGUST 2017 / NON BREAKING SPACE SHOW",
+                            eyebrow: "2017 • The Rosenfeld Review Podcast",
+                            title: "Scaling Design Systems",
+                            href: "https://soundcloud.com/rosenfeld-media/rmpod-curtis"
+                        },
+                        {
+                            eyebrow: "2017 • NON BREAKING SPACE SHOW",
                             title: "Deep Foundations of Design Systems",
                             href: "https://goodstuff.fm/nbsp/130"
                         },
                         {
-                            eyebrow: "MAY 2015 / STYLE GUIDES WITH BRAD FROST & ANNA DEBENHAM",
+                            eyebrow: "2015 • STYLE GUIDES WITH BRAD FROST & ANNA DEBENHAM",
                             title: "On Style Guides",
                             href: "http://styleguides.io/podcast/nathan-curtis/"
                         },
                         {
-                            eyebrow: "SEPT 2015 / UIE",
+                            eyebrow: "2015 • UIE",
                             title: "Building Scalable Design Systems and Style Guides",
                             href: "https://www.uie.com/brainsparks/2015/09/09/nathan-curtis-building-scalable-design-systems-and-style-guides/"
                         },
                         {
-                            eyebrow: "APR 2013 / UIE",
+                            eyebrow: "2013 • UIE",
                             title: "Sketching for Understanding",
                             href: "https://www.uie.com/brainsparks/2013/04/09/nathan-curtis-sketching-for-understanding/"
                         },
                         {
-                            eyebrow: "AUG 2012 / UIE",
+                            eyebrow: "2012 • UIE",
                             title: "Prototyping with HTML and CSS",
                             href: "https://www.uie.com/brainsparks/2012/08/30/nathan-curtis-prototyping-with-html-and-css/"
                         },
                         {
-                            eyebrow: "SEPT 2010 / UIE",
+                            eyebrow: "2010 • UIE",
                             title: "Reusable Components and Libraries",
                             href: "https://www.uie.com/brainsparks/2010/09/16/spoolcast-reusable-components-libraries-with-nathan-curtis/"
                         }
@@ -331,8 +333,8 @@
             {% endcall %}
 
             {% call escom.tab_pane(label='Posters') %}
-                {{ escom.link_list(
-                    class = "escom-link-list--large",
+                {{ esds.list(
+                    class = "esds-list--large",
                     items = [
                         {
                             eyebrow: "2010",
@@ -340,12 +342,12 @@
                             href: "http://eightshapesunify.s3.amazonaws.com/CreatingAUXDesignLibrary.Final.pdf"
                         },
                         {
-                            eyebrow: "2009 / IA SUMMIT",
+                            eyebrow: "2009 • IA SUMMIT",
                             title: "Reduce, Reuse, and Recycle",
                             href: "http://unify.eightshapes.com/concepts/reduce-reuse-recycle/"
                         },
                         {
-                            eyebrow: "2008 / IA SUMMIT",
+                            eyebrow: "2008 • IA SUMMIT",
                             title: "Instant Deliverable Mix",
                             href: "http://www.nathancurtis.com/2008/04/02/instant-deliverable-mix-2008-ia-summit-poster/"
                         }

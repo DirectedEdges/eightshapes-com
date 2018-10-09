@@ -27,7 +27,9 @@
         {% endif %}
         {% for item in items %}
         <li class="escom-timeline__item">
+            {% if item.content_right %}
             <div class="escom-timeline__content-left-right">
+            {% endif %}
                 <h3 class="escom-timeline__heading">
                     {{ item.heading }}
                     {% if item.time %}
@@ -42,8 +44,8 @@
                         {{ content }}
                     {% endfor %}
                 </div>
+            </div>
                 {% endif %}
-            </h3>
             <div class="escom-timeline__content-bottom">
                 {{ item.content_bottom }}
             </div>

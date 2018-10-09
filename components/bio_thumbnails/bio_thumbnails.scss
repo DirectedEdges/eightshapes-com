@@ -1,14 +1,21 @@
 $escom-bio-thumbnails-color-photo-overlay: rgba($esds-text-color-link-on-dark-photograph, .5);
 
 .escom-bio-thumbnails {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media screen and (min-width: 600px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media screen and (min-width: 1000px) {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
 }
 
 .escom-bio-thumbnail {
-    padding: $esds-space-inset-half-x;
+    padding: $esds-space-inset-1-x;
     text-align: center;
     text-decoration: none;
-    width: 20%;
+    width: 100%;
 }
 
 .escom-bio-thumbnail__image-wrap {
@@ -34,6 +41,7 @@ $escom-bio-thumbnails-color-photo-overlay: rgba($esds-text-color-link-on-dark-ph
 }
 
 .escom-bio-thumbnail__image {
+    border-radius: $esds-border-radius-default;
     display: block;
     max-width: 100%;
 }

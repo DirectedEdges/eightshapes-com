@@ -23,16 +23,15 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.1;
+  line-height: 1.2;
   color: #0D0D0D;
-  font-size: 44px;
+  font-size: 36px;
   font-weight: 600; }
   .esds-typography-sink--level-1-heading::before, .esds-typography-sink--level-1-heading::after {
     content: '';
@@ -57,13 +56,13 @@
     color: #FFFFFF; }
   @media screen and (min-width: 480px) {
     .esds-typography-sink--level-1-heading {
-      font-size: 48px; } }
+      font-size: 40px; } }
   @media screen and (min-width: 768px) {
     .esds-typography-sink--level-1-heading {
-      font-size: 64px; } }
+      font-size: 48px; } }
   @media screen and (min-width: 1000px) {
     .esds-typography-sink--level-1-heading {
-      font-size: 80px; } }
+      font-size: 64px; } }
 
 .esds-typography-sink--level-2-heading {
   line-height: 1.3;
@@ -72,14 +71,13 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.1;
+  line-height: 1.2;
   color: #0D0D0D;
   font-size: 27.648px;
   font-weight: 300; }
@@ -121,14 +119,13 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.1;
+  line-height: 1.2;
   color: #0D0D0D;
   font-size: 23.04px;
   font-weight: 300; }
@@ -170,14 +167,13 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.1;
+  line-height: 1.2;
   color: #0D0D0D;
   font-size: 19.2px;
   font-weight: 300; }
@@ -219,19 +215,18 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.1;
+  line-height: 1.2;
   color: #888888;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 1.67px;
-  line-height: 1.1;
+  line-height: 1.2;
   text-transform: uppercase; }
   .esds-typography-sink--eyebrow-heading::before, .esds-typography-sink--eyebrow-heading::after {
     content: '';
@@ -271,7 +266,6 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
@@ -279,7 +273,8 @@
   text-transform: none;
   color: #0D0D0D;
   font-size: 19.2px;
-  font-weight: 300; }
+  font-weight: 300;
+  line-height: 1.3; }
   .esds-typography-sink--body-text-lead::before, .esds-typography-sink--body-text-lead::after {
     content: '';
     display: block;
@@ -318,7 +313,6 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
@@ -327,7 +321,7 @@
   color: #0D0D0D;
   font-size: 19.2px;
   font-weight: 400;
-  line-height: 1.2; }
+  line-height: 1.3; }
   .esds-typography-sink--body-text-l::before, .esds-typography-sink--body-text-l::after {
     content: '';
     display: block;
@@ -366,7 +360,6 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
@@ -374,7 +367,8 @@
   text-transform: none;
   color: #0D0D0D;
   font-size: 16px;
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 1.3; }
   .esds-typography-sink--body-text-m::before, .esds-typography-sink--body-text-m::after {
     content: '';
     display: block;
@@ -413,7 +407,6 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
@@ -421,7 +414,8 @@
   text-transform: none;
   color: #888888;
   font-size: 12px;
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 1.3; }
   .esds-typography-sink--body-text-s::before, .esds-typography-sink--body-text-s::after {
     content: '';
     display: block;
@@ -472,7 +466,6 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
@@ -679,21 +672,20 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.1;
+  line-height: 1.2;
   color: #888888;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 1.67px;
-  line-height: 1.1;
+  line-height: 1.2;
   text-transform: uppercase;
-  margin: 0 0 8px;
+  margin: 0 0 12px;
   padding: 0; }
   .esds-container--white .esds-card__type, .esds-container--white
   .esds-card__date {
@@ -725,14 +717,6 @@
     .esds-card__type,
     .esds-card__date {
       font-size: 14.4px; } }
-  @media screen and (min-width: 768px) {
-    .esds-card__type,
-    .esds-card__date {
-      margin: 0 0 12px; } }
-  @media screen and (min-width: 1000px) {
-    .esds-card__type,
-    .esds-card__date {
-      margin: 0 0 16px; } }
 
 .esds-card__type + .esds-card__date {
   margin-top: -12px; }
@@ -744,20 +728,19 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.1;
+  line-height: 1.2;
   color: #0D0D0D;
   font-size: 19.2px;
   font-weight: 300;
-  margin: 0 0 8px;
   font-weight: 600;
-  line-height: 1.1;
+  line-height: 1.2;
+  margin: 0 0 16px;
   padding: 0; }
   .esds-card__title::before, .esds-card__title::after {
     content: '';
@@ -789,12 +772,6 @@
   @media screen and (min-width: 1000px) {
     .esds-card__title {
       font-size: 22.624px; } }
-  @media screen and (min-width: 768px) {
-    .esds-card__title {
-      margin: 0 0 12px; } }
-  @media screen and (min-width: 1000px) {
-    .esds-card__title {
-      margin: 0 0 16px; } }
 
 .esds-card__description {
   font-family: Barlow, "Lato", sans-serif;
@@ -802,7 +779,6 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
@@ -811,6 +787,7 @@
   color: #0D0D0D;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.3;
   margin: 0 0 16px;
   padding: 0; }
   .esds-container--white .esds-card__description {
@@ -841,7 +818,6 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
@@ -850,6 +826,7 @@
   color: #0D0D0D;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.3;
   color: #068194;
   margin: 0 0 8px;
   padding: 0; }
@@ -1056,19 +1033,18 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.1;
+  line-height: 1.2;
   color: #888888;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 1.67px;
-  line-height: 1.1;
+  line-height: 1.2;
   text-transform: uppercase;
   color: #888888;
   margin: 0 0 8px; }
@@ -1112,14 +1088,13 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.1;
+  line-height: 1.2;
   color: #0D0D0D;
   font-size: 19.2px;
   font-weight: 300;
@@ -1180,7 +1155,6 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
@@ -1189,6 +1163,7 @@
   color: #0D0D0D;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.3;
   color: #0D0D0D;
   margin: 0 0 16px; }
   .esds-container--white .esds-tiles__description {
@@ -1233,22 +1208,17 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
   text-shadow: none;
   text-transform: none;
-  font-weight: 300;
-  line-height: 1.1;
   color: #888888;
   font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1.67px;
-  line-height: 1.1;
-  text-transform: uppercase;
-  margin: 0;
-  text-transform: uppercase; }
+  font-weight: 400;
+  line-height: 1.3;
+  color: #888888;
+  margin: 0; }
   .esds-container--white .esds-tiles__property {
     color: #888888; }
   .esds-container--light .esds-tiles__property {
@@ -1270,8 +1240,20 @@
   @media screen and (min-width: 1000px) {
     .esds-tiles__property {
       font-size: 14.4px; } }
+  .esds-container--white .esds-tiles__property {
+    color: #888888; }
+  .esds-container--light .esds-tiles__property {
+    color: #888888; }
+  .esds-container--dark .esds-tiles__property {
+    color: #888888; }
+  .esds-container--black .esds-tiles__property {
+    color: #888888; }
+  .esds-container--brand .esds-tiles__property {
+    color: #E6E3E3; }
+  .esds-container--dark-photograph .esds-tiles__property {
+    color: #E6E3E3; }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   .esds-tiles--2-column {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr; } }
@@ -1294,7 +1276,6 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
@@ -1303,6 +1284,7 @@
   color: #0D0D0D;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.3;
   margin: 0 0 8px;
   padding: 0; }
   .esds-container--white .esds-tiles__list-item {
@@ -1336,7 +1318,6 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
@@ -1487,7 +1468,6 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
@@ -1505,7 +1485,6 @@
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0;
-    line-height: 1.3;
     text-align: left;
     text-decoration: none;
     text-indent: 0;
@@ -1514,7 +1493,7 @@
     color: #0D0D0D;
     font-size: 19.2px;
     font-weight: 400;
-    line-height: 1.2; }
+    line-height: 1.3; }
     .esds-container--white .esds-list--large .esds-list__group {
       color: #0D0D0D; }
     .esds-container--light .esds-list--large .esds-list__group {
@@ -1543,21 +1522,21 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
   text-shadow: none;
   text-transform: none;
   font-weight: 300;
-  line-height: 1.1;
+  line-height: 1.2;
   color: #888888;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 1.67px;
-  line-height: 1.1;
+  line-height: 1.2;
   text-transform: uppercase;
   color: #888888;
+  font-weight: 400;
   margin: 0 0 4px; }
   .esds-container--white .esds-list__eyebrow {
     color: #888888; }
@@ -1599,7 +1578,6 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
@@ -1608,6 +1586,7 @@
   color: #0D0D0D;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.3;
   color: #0D0D0D;
   font-weight: 400; }
   .esds-container--white .esds-list__title {
@@ -1649,7 +1628,6 @@
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0;
-    line-height: 1.3;
     text-align: left;
     text-decoration: none;
     text-indent: 0;
@@ -1658,7 +1636,7 @@
     color: #0D0D0D;
     font-size: 19.2px;
     font-weight: 400;
-    line-height: 1.2;
+    line-height: 1.3;
     font-weight: 300; }
     .esds-container--white .esds-list--large .esds-list__title {
       color: #0D0D0D; }
@@ -1707,7 +1685,6 @@
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.3;
   text-align: left;
   text-decoration: none;
   text-indent: 0;
@@ -1716,6 +1693,7 @@
   color: #0D0D0D;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.3;
   color: #888888;
   margin: 0; }
   .esds-container--white .esds-list__description {

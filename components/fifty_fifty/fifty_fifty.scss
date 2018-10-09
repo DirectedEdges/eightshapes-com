@@ -34,6 +34,10 @@
     max-width: 600px;
     padding: $esds-space-generic-2-x $esds-space-generic-1-x;
 
+    .escom-long-form-text h3 {
+        text-align: left;
+    }
+
     @media screen and (min-width: $esds-breakpoints-width-768) {
         padding: $esds-space-inset-2-x;
     }

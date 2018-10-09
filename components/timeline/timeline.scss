@@ -1,6 +1,6 @@
 .escom-timeline {
     list-style: none;
-    margin: $esds-space-generic-2-x auto;
+    margin: 0 auto $esds-space-generic-4-x;
     max-width: $esds-font-line-length-long-form;
     padding-left: $esds-space-generic-half-x;
 
@@ -35,7 +35,7 @@
         height: 21px;
         left: -12px;
         position: absolute;
-        top: 0px;
+        top: 0;
         width: 21px;
 
         .escom-timeline--no-timeline & {
@@ -68,6 +68,7 @@
     @include esds-font-reset();
     color: $esds-text-color-brand;
     font-size: $esds-font-size-heading-level-3-default;
+    line-height: $esds-font-line-height-normal;
     margin: $esds-space-stack-1-x;
 
     &:first-child {
@@ -80,7 +81,13 @@
 
     @media screen and (min-width: $esds-breakpoints-width-768) {
         grid-gap: $esds-space-generic-2-x;
-        grid-template-columns: 25% 75%;
+        grid-template-columns: 20% 80%;
+    }
+
+    .escom-timeline--years-only & {
+        @media screen and (min-width: $esds-breakpoints-width-768) {
+            grid-template-columns: 10% 90%;
+        }
     }
 }
 
