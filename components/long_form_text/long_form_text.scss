@@ -1,17 +1,21 @@
 .escom-long-form-text {
-    margin: $esds-space-stack-2-x;
+
+    margin: 0 auto $esds-space-generic-2-x;
+
+    * {
+        margin: 0;
+    }
 
     &:last-child {
-        margin: 0;
+        margin-bottom: 0;
     }
 
     h1 {
         @include esds-text-crop();
         @include esds-level-1-heading();
-        margin: $esds-space-stack-2-x;
 
-        &:last-child {
-            margin: 0;
+        &:not(:last-child) {
+            margin: $esds-space-stack-3-x;
         }
     }
 
@@ -22,10 +26,26 @@
     h2 {
         @include esds-text-crop();
         @include esds-level-2-heading();
-        margin: $esds-space-stack-2-x;
 
-        &:last-child {
-            margin: 0;
+        &:not(:last-child) {
+            margin: $esds-space-stack-2-x;
+        }
+
+    }
+
+    .escom-page-type--marketing & {
+        max-width: $esds-font-line-length-long-form;
+
+        h2,
+        h3 {
+            text-align: center;
+        }
+    }
+
+    .esds-container--white .escom-page-type--marketing &,
+    .esds-container--light .escom-page-type--marketing & {
+        h2 {
+            color: $esds-text-color-brand;
         }
     }
 
@@ -36,10 +56,9 @@
     h3 {
         @include esds-text-crop();
         @include esds-level-3-heading();
-        margin: $esds-space-stack-2-x;
 
-        &:last-child {
-            margin: 0;
+        &:not(:last-child) {
+            margin: $esds-space-stack-2-x;
         }
     }
 
@@ -50,10 +69,10 @@
     h4 {
         @include esds-text-crop();
         @include esds-level-4-heading();
-        margin: $esds-space-stack-2-x;
+        font-weight: $esds-font-weight-bold;
 
-        &:last-child {
-            margin: 0;
+        &:not(:last-child) {
+            margin: $esds-space-stack-2-x;
         }
     }
 
@@ -63,24 +82,34 @@
 
     p {
         @include esds-body-text-m();
-        margin: $esds-space-stack-1-x;
+        margin: 0;
 
-        &:last-child {
-            margin: 0;
+        &:not(:last-child) {
+            margin: $esds-space-stack-1-x;
+        }
+
+        &.escom-long-form-text__lead {
+            @include esds-body-text-lead();
+
+            :not(:last-child) {
+                margin: $esds-space-stack-2-x;
+            }
         }
 
         &.escom-long-form-text__p--l {
             @include esds-body-text-l();
-            margin: $esds-space-stack-2-x;
 
-            &:last-child {
-                margin: 0;
+            :not(:last-child) {
+                margin: $esds-space-stack-2-x;
             }
         }
 
         &.escom-long-form-text__p--s {
             @include esds-body-text-s();
-            margin: $esds-space-stack-half-x;
+
+            :not(:last-child) {
+                margin: $esds-space-stack-half-x;
+            }
         }
     }
 
@@ -91,11 +120,10 @@
     ul,
     ol {
         @include esds-text-crop();
-        @include esds-body-text-l();
-        margin: $esds-space-stack-2-x;
+        @include esds-body-text-m();
 
-        &:last-child {
-            margin: 0;
+        &:not(:last-child) {
+            margin: $esds-space-stack-2-x;
         }
     }
 }

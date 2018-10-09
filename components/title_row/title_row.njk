@@ -16,15 +16,15 @@
             </div>
         {% endif %}
         {% if heading %}
-            <div class="escom-promo-text">
-                <h1>{{heading}}</h1>
-            </div>
+            <h1 class="escom-title-row__title">{{heading}}</h1>
         {% endif %}
         {% if decks %}
             {% for deck in decks %}
             <p class="escom-title-row__lead">{{ deck | safe }}</p>
             {% endfor %}
         {% endif %}
+
+{# 
         {% if page_anchors.length > 0 %}
             <ul class="escom-title-row__page-anchor">
                 {% for page_anchor in page_anchors %}
@@ -34,5 +34,6 @@
                 {% endfor %}
             </ul>
         {% endif %}
+ #}
     {% endcall %}
 {% endmacro %}

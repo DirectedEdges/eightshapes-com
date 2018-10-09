@@ -1,27 +1,23 @@
 .escom-card-grid {
 
+    &:not(:last-child) {
+        margin: $esds-space-stack-4-x;
+    }
+
     @media screen and (min-width: $esds-breakpoints-width-500) {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 -$esds-space-generic-half-x;
 
         @supports (grid-column-gap: 0) {  
             display: grid;
             grid-auto-rows: 1fr;
-            grid-gap: $esds-space-generic-1-x;
+            grid-gap: $esds-space-generic-2-x;
             grid-template-columns: 1fr 1fr;
-            margin: 0;
         }
     }
 
     @media screen and (min-width: $esds-breakpoints-width-768) {
         grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    &.escom-card-grid--four-columns {
-        @media screen and (min-width: $esds-breakpoints-width-1200) {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
     }
 
     .esds-card {

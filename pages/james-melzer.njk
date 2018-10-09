@@ -1,23 +1,25 @@
+{% set title_tag = "EightShapes > James Melzer" %}
+{% set body_classes = "escom-page-type--marketing" %}
 {% extends 'templates/base.njk' %}
 {% block body %}
     {{ esds.breadcrumb(href="/") }}
     
-    {{ escom.hero_profile(bio=profiles[3]) }}
 
-    {% call esds.row(background="white", class="esds-row--tall-inset esds-row--narrow-inner esds-row--no-inset-bottom") %}
-        <div class="escom-layout__content--narrow">
+    {% call esds.row(background_only="dark") %}
+        {{ escom.hero_profile(bio=profiles[3]) }}
+        <div class="esds-container--dark">
             <div class="escom-long-form-text">
                 <p class="escom-long-form-text__p--l">
-                    As a UX designer and team lead, James connects business leaders, designers and developers to design the best solutions. James’ 15 years of experience includes large-scale information architecture, search, responsive design, and creating living style guides for design teams. His previous clients include startups, Fortune 500 enterprises, non-profits, government agencies, and a university. James earned a Master’s Degree in Library/Information Science from the University of Maryland.
+                    As a UX designer and team lead, James connects business leaders, designers and developers to design the best solutions. James’ 15 years of experience includes large-scale information architecture, search, responsive design, and creating living style guides for design teams. 
                 </p>
+                <p>His previous clients include startups, Fortune 500 enterprises, non-profits, government agencies, and a university. James earned a Master’s Degree in Library/Information Science from the University of Maryland.</p>
             </div>
         </div>
     {% endcall %}
-
-    {% call esds.row(background="white", class="esds-row--narrow-inner") %}
-        <div class="escom-layout__content--narrow">
-            {{ escom.link_list(
-                class = "escom-link-list--large",
+    {% call esds.row(background="white", class="esds-row--tall-inset") %}
+        {% call escom.tab_pane(active=true) %}
+            {{ esds.list(
+                class = "esds-list--large",
                 items = [
                     {
                         heading: "Writing"
@@ -50,6 +52,6 @@
                     }
                 ]
             ) }}
-        </div>
+        {% endcall %}
     {% endcall %}
 {% endblock body %}

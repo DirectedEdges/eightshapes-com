@@ -9,10 +9,10 @@
     {% set cta_class = "esds-row esds-row--tall-inset esds-container--brand escom-cta " + class %}
 
     {% call esds.row(class=cta_class) %}
-        <div class="escom-promo-text">
+        <div class="escom-long-form-text">
             <h2>{{heading}}</h2>
             {% if deck %}
-            <p>{{ deck }}</p>
+            <p class="escom-long-form-text__lead">{{ deck }}</p>
             {% endif %}
         </div>
         {% if button_text %}

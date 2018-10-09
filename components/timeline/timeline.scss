@@ -1,6 +1,6 @@
 .escom-timeline {
     list-style: none;
-    margin: $esds-space-generic-2-x auto;
+    margin: 0 auto $esds-space-generic-4-x;
     max-width: $esds-font-line-length-long-form;
     padding-left: $esds-space-generic-half-x;
 
@@ -35,7 +35,7 @@
         height: 21px;
         left: -12px;
         position: absolute;
-        top: -1px;
+        top: 0;
         width: 21px;
 
         .escom-timeline--no-timeline & {
@@ -68,75 +68,30 @@
     @include esds-font-reset();
     color: $esds-text-color-brand;
     font-size: $esds-font-size-heading-level-3-default;
-    margin: $esds-space-stack-2-x;
+    line-height: $esds-font-line-height-normal;
+    margin: $esds-space-stack-1-x;
 
     &:first-child {
         margin-top: -6px;
     }
 }
 
-.escom-timeline__row-cards {
-    margin: $esds-space-stack-2-x;
+.escom-timeline__content-left-right {
+    display: grid;
 
     @media screen and (min-width: $esds-breakpoints-width-768) {
-        display: grid;
-        grid-gap: $esds-space-generic-2-x;
-        grid-template-areas:
-        'escom-timeline__cell-cards--bullets escom-timeline__cell-cards--bullets'
-        'escom-timeline__cell-cards--card-1 escom-timeline__cell-cards--card-2';
-    }
-
-    @media screen and (min-width: $esds-breakpoints-width-1200) {
-        grid-template-areas:
-        'escom-timeline__cell-cards--bullets escom-timeline__cell-cards--card-1 escom-timeline__cell-cards--card-2';
-    }
-
-    &:last-child {
-        margin: 0;
-    }
-}
-
-.escom-timeline__cell-cards--bullets {
-    grid-area: escom-timeline__cell-cards--bullets;
-}
-
-.escom-timeline__cell-cards--card-1 {
-    grid-area: escom-timeline__cell-cards--card-1;
-}
-
-.escom-timeline__cell-cards--card-2 {
-    grid-area: escom-timeline__cell-cards--card-2;
-}
-
-.escom-timeline__row-text {
-    @media screen and (min-width: $esds-breakpoints-width-768) {
-        display: grid;
         grid-gap: $esds-space-generic-2-x;
         grid-template-columns: 20% 80%;
     }
-}
 
-.escom-timeline__list {
-    list-style: disc;
-    margin: $esds-space-stack-2-x;
-    padding-left: 20px;
-}
-
-.escom-timeline__list-item {
-    @include esds-body-text-m();
-    @include esds-text-color('secondary');
-    margin: $esds-space-stack-1-x;
-
-    &:last-child {
-        margin: 0;
+    .escom-timeline--years-only & {
+        @media screen and (min-width: $esds-breakpoints-width-768) {
+            grid-template-columns: 10% 90%;
+        }
     }
 }
 
-.escom-timeline__item-heading {
-    @include esds-font-reset();
-    color: $esds-text-color-secondary-on-white;
-    font-size: $esds-font-size-heading-eyebrow-default;
-    margin: $esds-space-stack-quarter-x;
-    text-transform: uppercase;
+.escom-timeline__content-right,
+.escom-timeline__content-bottom {
+    display: block;
 }
-

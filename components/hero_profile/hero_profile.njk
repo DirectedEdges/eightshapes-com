@@ -7,14 +7,14 @@
         "image": "http://via.placeholder.com/1368x560"
     }
   ) %}
-    <div class="escom-hero-profile{{ ' ' + class if class }}">
-        <div class="escom-hero-profile__inner">
-            <img alt="{{ bio.name }}" class="escom-hero-profile__image" src="{{ bio.image }}" />
-            <div class="hero-profile__body">
-                <h1 class="escom-hero-profile__heading">{{ bio.name }}</h1>
-                <div class="escom-hero-profile__subhead">{{ bio.title }}</div>
-                <div class="escom-hero-profile__subhead">Eightshapes since {{ bio.start_year }}</div>
-            </div>
+
+    <div class="escom-hero-profile">
+        <img alt="{{ bio.name }}" class="escom-hero-profile__image" src="{{ bio.image }}" />
+        <div class="hero-profile__body">
+            <h1 class="escom-hero-profile__heading">{{ bio.name }}</h1>
+            <div class="escom-hero-profile__subhead">{{ bio.title }}</div>
+            <div class="escom-hero-profile__subhead">Eightshapes since {{ bio.start_year }}</div>
         </div>
     </div>
+
 {% endmacro %}

@@ -2,6 +2,13 @@
     text-align: center;
 }
 
+.escom-title-row__title {
+    @include esds-text-crop();
+    @include esds-level-1-heading();
+    margin: $esds-space-stack-3-x;
+    text-align: center;
+}
+
 .escom-title-row__lead {
     @include esds-responsive-font-size($type: 'body-lead');
     @include esds-text-crop();

@@ -1,3 +1,5 @@
+{% set title_tag = "EightShapes > Design Discovery" %}
+{% set body_classes = "escom-page-type--marketing" %}
 {% extends 'templates/base.njk' %}
 
 {% block body %}
@@ -6,39 +8,42 @@
 
     {{ escom.title_row(
         logo=false, 
+        class="esds-row--very-tall-inset",
         heading="Product Discovery", 
         decks=["“But are we designing the right thing?” We help teams answer this question by aligning them around a shared product vision through design priorities, user needs, and prototyped concepts."]) 
     }}
 
-    {% call escom.fifty_fifty(image="/images/product-discovery-photo.jpg") %}
-        <div class="escom-long-form-text">
-            <h2>What We Deliver</h2>
-            <p class="escom-long-form-text__p--l">
-                Collaborating with your team, EightShapes defines the product’s experience grounded in user research and expressed through a prototype.
-            </p>
-            {{ escom.link_list(
-                items = [
-                    {
-                        title: "Application Design",
-                        description: "Define the overall experience and structure of your product."
-                    },
-                    {
-                        title: "User Research",
-                        description: "Capture insights about users and the implications for the product."
-                    },
-                    {
-                        title: "UI Prototypes",
-                        description: "Envision how users interact with your product."
-                    }
-                ]
-            ) }}
-        </div>
+    {% call esds.row(background="white", class="esds-row--tall-inset") %}
+        {% call escom.fifty_fifty(image="/images/product-discovery-photo.jpg") %}
+            <div class="escom-long-form-text">
+                <h2>What We Deliver</h2>
+                <p class="escom-long-form-text__lead">
+                    Collaborating with your team, EightShapes defines the product’s experience grounded in user research and expressed through a prototype.
+                </p>
+                {{ escom.link_list(
+                    items = [
+                        {
+                            title: "Application Design",
+                            description: "Define the overall experience and structure of your product."
+                        },
+                        {
+                            title: "User Research",
+                            description: "Capture insights about users and the implications for the product."
+                        },
+                        {
+                            title: "UI Prototypes",
+                            description: "Envision how users interact with your product."
+                        }
+                    ]
+                ) }}
+            </div>
+        {% endcall %}
     {% endcall %}
 
     {% call esds.row(background="light", class="esds-row--tall-inset") %}
-        <div class="escom-promo-text">
+        <div class="escom-long-form-text">
             <h2>What We Do</h2>
-            <p>
+            <p class="escom-long-form-text__lead">
                 Drawing on time-tested design techniques, EightShapes runs a discovery phase that emphasizes exploration, iteration, and validation.
             </p>
         </div>
@@ -68,7 +73,7 @@
     {% endcall %}
 
     {% call esds.row(background="white", class="esds-row--tall-inset") %}
-        <div class="escom-promo-text">
+        <div class="escom-long-form-text">
             <h2>Brainstorming &amp; Ideation Techniques</h2>
         </div>
 
@@ -93,9 +98,9 @@
     {% endcall %}
 
     {% call esds.row(background="light", class="esds-row--tall-inset") %}
-        <div class="escom-promo-text">
+        <div class="escom-long-form-text">
             <h2>Research &amp; Testing Techniques</h2>
-            <p>
+            <p class="escom-long-form-text__lead">
                 Discovery depends on research to inform and validate the product vision. These are some of the lightweight techniques we use to inject user insights into design.
             </p>
         </div>
@@ -120,26 +125,29 @@
         ) }}
     {% endcall %}
 
-    {% call escom.fifty_fifty(image="/images/discovery/practical-design-discovery-book.jpg", class="esds-container--dark") %}
-        <div class="escom-promo-text">
-            <h3>Practical Design Discovery:<br/>The Book</h3>
-            <p>
-                A handbook for planning discovery projects, Practical Design Discovery provides a framework for helping teams understand the why and how of discovery. It uses this framework to clarify the role of different activities and outputs, walking readers through planning a discovery phase.
-            </p>
-            <p><a href="https://abookapart.com/products/practical-design-discovery">Learn More</a></p>
-        </div>
+    {% call esds.row(background="black", class="esds-row--tall-inset") %}
+        {% call escom.fifty_fifty(image="/images/discovery/practical-design-discovery-book.jpg", class="esds-container--dark") %}
+            <div class="escom-long-form-text">
+                <h3>Practical Design Discovery:<br/>The Book</h3>
+                <p>
+                    A handbook for planning discovery projects, Practical Design Discovery provides a framework for helping teams understand the why and how of discovery. It uses this framework to clarify the role of different activities and outputs, walking readers through planning a discovery phase.
+                </p>
+                <p><a href="https://abookapart.com/products/practical-design-discovery">Learn More</a></p>
+            </div>
+        {% endcall %}
     {% endcall %}
 
     {% call esds.row(background_image="/images/workshop-cutup.png", class="esds-row--tall-inset esds-container--dark-photograph") %}
-        <div class="escom-promo-text">
+        <div class="escom-long-form-text">
             <h2>Discovery Training Workshop</h2>
-            <p>Crafting the Discovery Phase gives design teams the tools necessary for planning and executing discovery efforts. Geared toward designers and product managers, the workshop is appropriate for both mature teams and those just getting off the ground.</p>
+            <p class="escom-long-form-text__lead">Crafting the Discovery Phase gives design teams the tools necessary for planning and executing discovery efforts. Geared toward designers and product managers, the workshop is appropriate for both mature teams and those just getting off the ground.</p>
         </div>
     {% endcall %}
 
-    {% call esds.row(background="white", class="esds-row--tall-inset") %}
-        <div class="escom-promo-text">
+    {% call esds.row(background="light", class="esds-row--tall-inset") %}
+        <div class="escom-long-form-text">
             <h2>How We’ve Contributed</h2>
+            <p class="escom-long-form-text__lead"
             <p>
                 EightShapes has contributed three books, a documentation templating system, and a prototyping framework, not to mention countless workshops and articles.
             </p>
@@ -152,6 +160,7 @@
                 title="Behind the Wheel with Product and UX",
                 href="https://medium.com/eightshapes-llc/behind-the-wheel-with-product-and-ux-287dba3e6d64#.nyun4u4qd",
                 cta="Read More",
+                thumbnail_image="/images/components/content_card/BehindTheWheel.png",
                 width="auto"
             ) }}
 
@@ -162,16 +171,18 @@
                 description="Roles, tools, objectives, and project plans are crucial to team effectiveness",
                 href="https://medium.com/eightshapes-llc/13-principles-of-effective-design-teams-1d0815deefd6#.hm4e1wpw7",
                 cta="Read More",
+                thumbnail_image="/images/components/content_card/EffectiveTeams.png",
                 width="auto"
             ) }}
 
             {{ esds.card(
-                container="light",
+                container="white",
                 type="Book",
                 title="Communicating Design",
                 description="Developing Website Documentation for Design and Planning",
                 href="http://www.amazon.com/Communicating-Design-Developing-Documentation-Planning/dp/0321712463",
                 cta="Read More",
+                thumbnail_image="/images/components/content_card/CommunicatingDesign.png",
                 width="auto"
             ) }}
 
@@ -186,31 +197,31 @@
             ) }}
 
             {{ esds.card(
-                container="brand",
+                container="white",
                 type="Medium",
-                title="From Design Vision to Reality in 5 Steps",
-                href="https://medium.com/@detzi/from-design-vision-to-reality-in-5-steps-535124a0a96d#.m4j0w38zd",
+                title="The Secrets of Creating Great Design Workshops",
+                href="https://medium.com/eightshapes-llc/the-secrets-of-creating-great-design-workshops-1e3476b548bf",
+                thumbnail_image="/images/components/content_card/GreatDesignWorkshops.png",
                 cta="Read More",
                 width="auto"
             ) }}
 
             {{ esds.card(
-                container="light",
-                type="2016 Information Architecture Summit",
-                date="May 8, 2016",
-                title="Behind the Wheel with Product and IA",
-                description="Everything information architects want to know about product managers but are afraid to ask.",
-                href="http://2016.iasummit.org/schedule/1291/behind-wheel-product-and-ia",
-                cta="Learn More",
+                container="brand",
+                type="Medium",
+                title="From Design Vision to Reality in 5 Steps",
+                href="https://medium.com/@detzi/from-design-vision-to-reality-in-5-steps-535124a0a96d#.m4j0w38zd",
+                cta="Read More",
+                thumbnail_image="/images/components/content_card/DesignVisionToReality.png",
                 width="auto"
             ) }}
 
             {{ esds.card(
                 container="dark",
                 type="Medium",
-                title="Re-Discovering Product Discovery",
-                description="Just as we can’t offer a solution without understanding the problem, so too we can’t understand a problem until we try to solve it.",
-                href="https://medium.com/eightshapes-llc/beyond-utility-re-discovering-product-discovery-5ae210a1399e#.iwpp5obw8",
+                title="Stealing Time in User Research",
+                href="https://medium.com/eightshapes-llc/stealing-time-in-user-research-64a52866f7c0",
+                thumbnail_image="/images/components/content_card/StealingTime.png",
                 cta="Read More",
                 width="auto"
             ) }}

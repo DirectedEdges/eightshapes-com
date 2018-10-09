@@ -15,11 +15,11 @@
         
         <title>{{ title_tag | default(global.title_tag) }}</title>
         
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,300" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,600" rel="stylesheet">
         <link rel="stylesheet" href="/styles/dependencies/esds.css"> <!-- copied from esds-library dependency -->
         <link rel="stylesheet" href="/styles/escom.css">
     </head>
-    <body>
+    <body class="{{ body_classes }}">
         {% block body %}
         {% endblock %}
         {% call esds.row(background="dark", class="esds-row--narrow-inner") %}
