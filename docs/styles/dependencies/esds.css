@@ -664,6 +664,9 @@
 .esds-card__content {
   margin: 0;
   padding: 16px; }
+  @media screen and (min-width: 1000px) {
+    .esds-card__content {
+      padding: 24px; } }
 
 .esds-card__type,
 .esds-card__date {
@@ -1016,7 +1019,10 @@
 .esds-tiles__tile {
   border-radius: 8px;
   list-style: none;
-  padding: 32px; }
+  padding: 16px; }
+  @media screen and (min-width: 1000px) {
+    .esds-tiles__tile {
+      padding: 24px; } }
   .esds-tiles--translucent-white .esds-tiles__tile {
     background-color: rgba(255, 255, 255, 0.9); }
   .esds-tiles--no-padding .esds-tiles__tile {
