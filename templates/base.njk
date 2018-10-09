@@ -22,9 +22,7 @@
     <body class="{{ body_classes }}">
         {% block body %}
         {% endblock %}
-        {% call esds.row(background="dark", class="esds-row--narrow-inner") %}
-            {{ escom.site_footer() }}
-        {% endcall %}
+        {{ escom.site_footer() }}
         {# jQuery pulled in to support legacy code concatenated into escom.js #}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         {# Remove when legacy JS that depends on jquery is gone #}
