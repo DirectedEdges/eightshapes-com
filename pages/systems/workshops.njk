@@ -18,6 +18,42 @@
             "Looking to start or invigorate a design system? We’ll workshop with your team(s) to teach principles and methods so that you get the most out of your system."
         ]) }}
 
+    {# Why #}
+
+    {% call esds.row(background="light", class="esds-row--tall-inset") %}
+        <div class="escom-long-form-text">
+            <h2>Why EightShapes for a Workshop?</h2>
+            <p class="escom-long-form-text__lead">
+                EightShapes’ experience and enthusiasm will inspire and challenge your teams. Sessions will engage participants in hands-on activities, spark new ideas and moderate challenging conversations so your team can:
+            </p>
+            <div class="escom-long-form-text--two-column-at-768">
+                <ul>
+                    <li>Learn about design systems</li>
+                    <li>Kickoff or energize a program</li>
+                    <li>Define a system and what it offers</li>
+                    <li>Dive into topics like color and space</li>
+                </ul>
+                <ul>
+                    <li>Name a team &amp; energize a community</li>
+                    <li>Decide how contributions flow in</li>
+                    <li>Plan how other teams adopt over time</li>
+                    <li>Identify outcomes your can measure</li>
+                </ul>
+            </div>
+        </div>
+        <div class="escom-pull-quote">
+            <div class="escom-pull-quote__the-quote">
+                Even as an experienced design systems professional, I was able to pick up new techniques and concepts that I never knew about. Listening to Nathan and the discussions we had as a class also helped me get some perspective on issues I was facing at work.
+            </div>
+            <div class="escom-pull-quote__source">
+                 <a href="https://publication.design.systems/what-i-learned-about-leading-a-design-system-in-2017-46b85e9d7eab">"What I learned about leading a design system in 2017"</a>
+            </div>
+            <div class="escom-pull-quote__attribution">
+                <a href="https://medium.com/@jeffcrossman">Jeff Crossman</a>, Design System Lead, JPMorgan Chase & Co.
+            </div>
+        </div>
+    {% endcall %}
+
     {# What We Cover #}
 
     {% call esds.row(background="white", class="esds-row--tall-inset") %}
@@ -201,7 +237,7 @@
                         }
                     ]
                 ) }}
-             {% endcall %}
+            {% endcall %}
 
             {% call escom.tab_pane(label='Custom Agendas') %}
                 <div class="escom-long-form-text">
@@ -338,8 +374,7 @@
                         }
                     ]
                 ) }}                
-
-             {% endcall %}
+            {% endcall %}
 
             {% call escom.tab_pane(label='Available Topics') %}
                 <div class="escom-long-form-text">
@@ -481,27 +516,6 @@
                 }
             ]
         ) }}
-    {% endcall %}
-
-    {# Why #}
-
-    {% call esds.row(background="dark", class="esds-row--tall-inset") %}
-        <div class="escom-long-form-text">
-            <h2>Why an EightShapes Workshop?</h2>
-            <p class="escom-long-form-text__lead">
-                EightShapes’ seasoned experience and enthusiasm will inspire and challenge your teams. Sessions will engage participants in hands-on activities, sparking new ideas and meaningful discussion to:
-            </p>
-            <ol>
-                <li>Kickoff or energize in-house systems efforts</li>
-                <li>Define your system and what it offers</li>
-                <li>Dive deep on workflows to make or contribute components</li>
-                <li>Frame how to form a system team and energize a community</li>
-                <li>Plan how to create and adopt a system</li>
-                <li>Refine how to design and code features like color, buttons, and space</li>
-                <li>Develop a shared vocabulary across dispersed teams</li>
-                <li>Identify achievable outcomes you can measure</li>
-            </ol>
-        </div>
     {% endcall %}
 
     {# Our Clients #}
