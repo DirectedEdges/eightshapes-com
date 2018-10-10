@@ -1,3 +1,5 @@
+$escom-bio-thumbnails-color-photo-overlay: rgba($esds-text-color-link-on-dark-photograph, .5);
+
 .escom-link-list {
     list-style: none;
     margin: $esds-space-stack-1-x;
@@ -63,15 +65,14 @@
 }
 
 .escom-link-list__image {
+    border-radius: $esds-border-radius-default;
     max-width: 100%;
+    position: relative;
 }
 
 .escom-link-list__image-link {
-    border: 1px solid $esds-color-teal-71;
+    border: 2px solid $esds-color-teal-71;
+    border-radius: $esds-border-radius-default;
     display: inline-block;
     text-decoration: none;
-
-    &:hover {
-        box-shadow: 0 0 8px $esds-color-neutral-80;
-    }
 }

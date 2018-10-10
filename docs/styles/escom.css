@@ -1304,15 +1304,15 @@ body {
       grid-template-columns: 20% 80%; }
 
 .escom-link-list__image {
-  max-width: 100%; }
+  border-radius: 8px;
+  max-width: 100%;
+  position: relative; }
 
 .escom-link-list__image-link {
-  border: 1px solid #0A9DB3;
+  border: 2px solid #0A9DB3;
+  border-radius: 8px;
   display: inline-block;
   text-decoration: none; }
-  .escom-link-list__image-link:hover {
-    -webkit-box-shadow: 0 0 8px #CCCACA;
-            box-shadow: 0 0 8px #CCCACA; }
 
 .escom-long-form-text {
   margin: 0 auto 32px; }
