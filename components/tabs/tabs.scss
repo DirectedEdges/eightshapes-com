@@ -1,15 +1,51 @@
+.escom-tabs {
+    height: 56px; // fixed height to hide horizontal scrollbar
+    margin: $esds-space-stack-1-x;
+    overflow: hidden;
+
+    // On small screens within a row, stretch the tabs to go full width
+    .esds-row__inner & {
+        margin-left: -($esds-space-generic-2-x);
+        margin-right: -($esds-space-generic-2-x);
+    }
+
+    @media screen and (min-width: 600px) {
+        margin-left: 0;
+        margin-right: 0;    
+    }
+}
+
 .escom-tabs__tabs {
     align-items: flex-end;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    overflow-x: scroll;
     padding: $esds-space-stack-2-x;
+    padding-bottom: 40px; // push scroll bar down
+
+    @media screen and (min-width: 600px) {
+        justify-content: center;
+    }
 }
 
 .escom-tabs__tab {
     padding: 0 $esds-space-generic-half-x;
+    white-space: nowrap;
 
-    @media screen and (min-width: $esds-breakpoints-width-500) {
-        padding: 0 $esds-space-generic-1-and-half-x;
+    &:first-child {
+        padding-left: $esds-space-generic-2-x;
+    }
+
+    &:last-child {
+        padding-right: $esds-space-generic-2-x;
+    }
+
+    @media screen and (min-width: 600px) {
+        &,
+        &:first-child,
+        &:last-child {
+            padding: 0 $esds-space-generic-1-and-half-x;
+        }
     }
 }
 

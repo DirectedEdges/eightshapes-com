@@ -856,6 +856,18 @@ body {
 .escom-timeline__content-bottom {
   display: block; }
 
+.escom-tabs {
+  height: 56px;
+  margin: 0 0 16px;
+  overflow: hidden; }
+  .esds-row__inner .escom-tabs {
+    margin-left: -32px;
+    margin-right: -32px; }
+  @media screen and (min-width: 600px) {
+    .escom-tabs {
+      margin-left: 0;
+      margin-right: 0; } }
+
 .escom-tabs__tabs {
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -863,15 +875,27 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0 0 32px; }
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  overflow-x: scroll;
+  padding: 0 0 32px;
+  padding-bottom: 40px; }
+  @media screen and (min-width: 600px) {
+    .escom-tabs__tabs {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .escom-tabs__tab {
-  padding: 0 8px; }
-  @media screen and (min-width: 500px) {
-    .escom-tabs__tab {
+  padding: 0 8px;
+  white-space: nowrap; }
+  .escom-tabs__tab:first-child {
+    padding-left: 32px; }
+  .escom-tabs__tab:last-child {
+    padding-right: 32px; }
+  @media screen and (min-width: 600px) {
+    .escom-tabs__tab, .escom-tabs__tab:first-child, .escom-tabs__tab:last-child {
       padding: 0 24px; } }
 
 .escom-tabs__button {
