@@ -1,0 +1,23 @@
+.escom-pull-quote {
+    margin: 0 auto;
+    max-width: $esds-font-line-length-long-form;
+}
+
+.escom-pull-quote__the-quote {
+    @include esds-body-text-l();
+    background-color: $esds-background-color-white;
+    border-radius: $esds-border-radius-default;
+    margin: $esds-space-stack-2-x;
+    padding: $esds-space-inset-2-x;
+}
+
+.escom-pull-quote__source,
+.escom-pull-quote__attribution {
+    @include esds-body-text-m();
+    @include esds-text-color($type: 'secondary');
+}
+
+.escom-pull-quote__source a,
+.escom-pull-quote__attribution a {
+    @include esds-link();
+}

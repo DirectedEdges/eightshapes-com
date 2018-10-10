@@ -91,7 +91,7 @@
         &.escom-long-form-text__lead {
             @include esds-body-text-lead();
 
-            :not(:last-child) {
+            &:not(:last-child) {
                 margin: $esds-space-stack-2-x;
             }
         }
@@ -99,7 +99,7 @@
         &.escom-long-form-text__p--l {
             @include esds-body-text-l();
 
-            :not(:last-child) {
+            &:not(:last-child) {
                 margin: $esds-space-stack-2-x;
             }
         }
@@ -107,7 +107,7 @@
         &.escom-long-form-text__p--s {
             @include esds-body-text-s();
 
-            :not(:last-child) {
+            &:not(:last-child) {
                 margin: $esds-space-stack-half-x;
             }
         }
@@ -125,5 +125,19 @@
         &:not(:last-child) {
             margin: $esds-space-stack-2-x;
         }
+    }
+
+    li {
+        @include esds-body-text-m();
+        margin: $esds-space-stack-three-quarter-x;
+        padding: 0;
+    }
+}
+
+.escom-long-form-text--two-column-at-768 {
+    @media screen and (min-width: $esds-breakpoints-width-768) {
+        display: grid;
+        grid-gap: $esds-space-generic-2-x;
+        grid-template-columns: 1fr 1fr;
     }
 }
