@@ -58,14 +58,16 @@
 }
 
 .escom-hero-profile__nav {
+    border-radius: 0 $esds-border-radius-default $esds-border-radius-default 0;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    transition: 
+        background $esds-transition-interactive-hover-speed linear; // sass-lint:disable-line indentation
     z-index: 20;
 
     &:hover {
         background: $esds-text-color-link-on-white;
-        border-radius: 0 $esds-border-radius-default $esds-border-radius-default 0;
     }
 
     @media screen and (min-width: $esds-breakpoints-width-768) {
@@ -74,11 +76,8 @@
 }
 
 .escom-hero-profile__nav--next {
+    border-radius: $esds-border-radius-default 0 0 $esds-border-radius-default;
     right: 0;
-
-    &:hover {
-        border-radius: $esds-border-radius-default 0 0 $esds-border-radius-default;
-    }
 }
 
 .escom-hero-profile__nav-icon {

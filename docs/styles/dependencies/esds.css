@@ -642,8 +642,8 @@
     position: absolute;
     right: 0;
     top: 0;
-    -webkit-transition: background .5s;
-    transition: background .5s;
+    -webkit-transition: background 0.2s linear;
+    transition: background 0.2s linear;
     z-index: 1; }
     .esds-card__link:hover .esds-card__thumbnail:before {
       background-color: rgba(0, 121, 140, 0.3); }
@@ -1029,7 +1029,9 @@
     padding: 0; }
 
 .esds-tiles__tile--link {
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: background 0.2s linear;
+  transition: background 0.2s linear; }
   .esds-tiles__tile--link:hover {
     background-color: #E7F4F6; }
 
@@ -1389,6 +1391,12 @@
     outline: none; }
 
 .esds-breadcrumb__brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0;
   position: relative;
   top: 6px; }
@@ -1410,54 +1418,32 @@
   fill: #FFFFFF;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  height: 20px;
+  height: 30px;
   margin-right: 8px;
-  width: 20px; }
+  width: 200px; }
   @media screen and (min-width: 500px) {
     .esds-breadcrumb__brand-mark {
-      height: 30px;
-      width: 30px; } }
+      height: 40px; } }
 
-.esds-breadcrumb__brand-name {
-  line-height: 1.3;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  font-size: 19.2px;
-  font-weight: 300;
-  position: relative;
-  top: -2px; }
-  .esds-breadcrumb__brand-name::before, .esds-breadcrumb__brand-name::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0; }
-  .esds-breadcrumb__brand-name::before {
-    margin-bottom: calc(-0.31829em + 0px); }
-  .esds-breadcrumb__brand-name::after {
-    margin-top: calc(-0.26951em + 0px); }
-  @media screen and (min-width: 768px) {
-    .esds-breadcrumb__brand-name {
-      font-size: 28.432px; } }
-
-.esds-breadcrumb__crumb-text {
+.esds-breadcrumb__crumb-section {
   line-height: 1.3;
   font-size: 16px;
   font-weight: 300; }
-  .esds-breadcrumb__crumb-text::before, .esds-breadcrumb__crumb-text::after {
+  .esds-breadcrumb__crumb-section::before, .esds-breadcrumb__crumb-section::after {
     content: '';
     display: block;
     height: 0;
     width: 0; }
-  .esds-breadcrumb__crumb-text::before {
+  .esds-breadcrumb__crumb-section::before {
     margin-bottom: calc(-0.31829em + 0px); }
-  .esds-breadcrumb__crumb-text::after {
+  .esds-breadcrumb__crumb-section::after {
     margin-top: calc(-0.26951em + 0px); }
   @media screen and (min-width: 500px) {
-    .esds-breadcrumb__crumb-text {
+    .esds-breadcrumb__crumb-section {
       position: relative;
       top: 1px; } }
   @media screen and (min-width: 768px) {
-    .esds-breadcrumb__crumb-text {
+    .esds-breadcrumb__crumb-section {
       font-size: 20px; } }
 
 .esds-list {

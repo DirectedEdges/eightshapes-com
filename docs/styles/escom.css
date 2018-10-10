@@ -2201,22 +2201,23 @@ body {
       font-size: 22.624px; } }
 
 .escom-hero-profile__nav {
+  border-radius: 0 8px 8px 0;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-transition: background 0.2s linear;
+  transition: background 0.2s linear;
   z-index: 20; }
   .escom-hero-profile__nav:hover {
-    background: #068194;
-    border-radius: 0 8px 8px 0; }
+    background: #068194; }
   @media screen and (min-width: 768px) {
     .escom-hero-profile__nav {
       padding: 16px; } }
 
 .escom-hero-profile__nav--next {
+  border-radius: 8px 0 0 8px;
   right: 0; }
-  .escom-hero-profile__nav--next:hover {
-    border-radius: 8px 0 0 8px; }
 
 .escom-hero-profile__nav-icon {
   fill: #068194; }
