@@ -4,9 +4,13 @@
 
 {% block body %}
 
+    {{ esds.breadcrumb() }}
+
     {{ escom.title_row(
         background_image="/images/systems/systems-hero.png",
         heading="Design Systems", 
+        logo=false,
+        inset_class="esds-row--very-tall-inset",
         decks=[
             "Improve experience <strong>cohesion</strong> and quicken <strong>speed-to-market</strong> with a design system that serves your teams.",
             "It’s not <i>just</i> a style guide. Modern organizations invest in systems so they can deliver innovative and beautiful products, together. <a href='mailto:nathan@eightshapes.com' class='esds-link'>EightShapes can guide you</a>."
