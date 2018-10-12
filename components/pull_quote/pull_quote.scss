@@ -1,4 +1,4 @@
-$escom-pull-quote-tail-size: 20px;
+$escom-pull-quote-tail-size: 30px;
 
 .escom-pull-quote {
     margin: 0 auto;
@@ -18,11 +18,19 @@ $escom-pull-quote-tail-size: 20px;
         content: '';
         display: block;
         height: $escom-pull-quote-tail-size;
-        left: $esds-border-radius-default * 2;
+        left: $esds-border-radius-default * 3;
         position: absolute;
-        top: calc(100% - #{($escom-pull-quote-tail-size / 2) + 1px} );
+        top: calc(100% - #{($escom-pull-quote-tail-size / 2) + 1px});
         transform: rotate(45deg);
         width: $escom-pull-quote-tail-size;
+    }
+
+    .escom-pull-quote--light & {
+        background-color: $esds-background-color-light;
+
+        &:after {
+            background-color: $esds-background-color-light;
+        }
     }
 }
 

@@ -17,7 +17,7 @@
             </div>
         {% endif %}
         {% if heading %}
-            <h1 class="escom-title-row__title">{{heading}}</h1>
+            <h1 class="escom-title-row__title">{{heading | safe}}</h1>
         {% endif %}
         {% if decks %}
             {% for deck in decks %}
