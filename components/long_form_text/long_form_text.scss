@@ -139,5 +139,9 @@
         display: grid;
         grid-gap: $esds-space-generic-2-x;
         grid-template-columns: 1fr 1fr;
+
+        & ul:nth-last-child(2) {
+            margin: 0;
+        }
     }
 }
