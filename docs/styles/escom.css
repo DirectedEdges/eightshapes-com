@@ -1346,7 +1346,7 @@ body {
   text-decoration: none; }
 
 .escom-long-form-text {
-  margin: 0 auto 32px; }
+  margin: 0 auto 64px; }
   .escom-long-form-text * {
     margin: 0; }
   .escom-long-form-text:last-child {
@@ -1860,7 +1860,7 @@ body {
   color: #FFFFFF; }
 
 .escom-long-form-text {
-  margin: 0 auto 32px; }
+  margin: 0 auto 64px; }
   .escom-long-form-text * {
     margin: 0; }
   .escom-long-form-text:last-child {
@@ -2731,11 +2731,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   min-height: 200px; }
   @media screen and (min-width: 1000px) {
     .escom-fifty-fifty__image {
       -ms-grid-column: 1;
+      border-radius: 8px;
       min-height: 500px; } }
 
 @media screen and (min-width: 1000px) {

@@ -1,3 +1,5 @@
+$heuristics-highlight: rgba(255, 255, 255, .2);
+
 .escom-heuristics__heuristic {
     border: $esds-border-default;
     margin: $esds-space-stack-4-x;
@@ -13,5 +15,5 @@
 }
 
 .escom-heuristics--highlight {
-    background-color: rgba(255, 255, 255, .2);
+    background-color: $heuristics-highlight;
 }
