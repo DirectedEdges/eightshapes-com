@@ -13,7 +13,7 @@
 
         <div class="escom-pull-quote{% if class %} {{ class }}{% endif %}">
             <div class="escom-pull-quote__the-quote">
-                {{ quote }}
+                {{ quote | safe }}
             </div>
             {% if source_label %}
             <div class="escom-pull-quote__source">

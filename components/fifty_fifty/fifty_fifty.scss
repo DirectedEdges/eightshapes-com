@@ -49,3 +49,27 @@
         padding: $esds-space-generic-2-x $esds-space-generic-4-x;
     }
 }
+
+.escom-fifty-fifty:not(:last-child) {
+    @media screen and (min-width: 1000px) {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+
+        .escom-fifty-fifty__image {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+}
+
+.escom-fifty-fifty:not(:first-child) {
+    @media screen and (min-width: 1000px) {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        
+        .escom-fifty-fifty__image {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+    }
+}
