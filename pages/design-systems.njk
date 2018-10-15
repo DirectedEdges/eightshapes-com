@@ -107,7 +107,7 @@
 
     {# Recent Systems #}
 
-    {% call esds.row(background="light", class="esds-row--tall-inset") %}
+    {% call esds.row(background_only="light", class="esds-row--tall-inset") %}
         <div class="escom-long-form-text">
             <h2>Recent Systems</h2>
         </div>
@@ -130,6 +130,14 @@
                 description="LUCI, for NetApp digital marketing and products.",
                 href="http://luci.netapp.com",
                 cta="View the Library",
+                width="auto"
+            ) }}
+            {{ esds.card(
+                container="white",
+                date="2016–17",
+                thumbnail_image="/images/systems/casestudies/Target.png",
+                title="Discovery Education",
+                description="Nicollet, for .com experiences including ecommerce and registrty.",
                 width="auto"
             ) }}
             {{ esds.card(
