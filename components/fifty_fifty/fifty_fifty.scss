@@ -13,11 +13,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: $esds-border-radius-default;
+    border-top-left-radius: $esds-border-radius-default;
+    border-top-right-radius: $esds-border-radius-default;
     min-height: 200px;
 
     @media screen and (min-width: 1000px) {
         -ms-grid-column: 1;
+        border-radius: $esds-border-radius-default;
         min-height: 500px;
     }
 }

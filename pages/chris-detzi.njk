@@ -8,9 +8,15 @@
         {{ escom.hero_profile(profile_index=2) }}
         <div class="esds-container--dark">
             <div class="escom-long-form-text">
-                <p class="escom-long-form-text__p--l">
+                <p class="escom-long-form-text__lead">
                     Chris leads a wide range of design and research programs at Eightshapes, delivering results for clients across numerous industries. He balances strategic consultation with high quality execution and delivery.   
                 </p>
+            </div>
+        </div>
+    {% endcall %}
+
+    {% call esds.row(background_only="white") %}
+        <div class="escom-long-form-text">
                 <p>
                     He’s at ease working directly with an organization’s senior most staff or right alongside designers, developers, and management teams. Throughout his career, Chris has:
                 </p>
@@ -19,19 +25,14 @@
                     <li><b>Led cross-functional</b> project teams to complete complex design and development projects </li>
                     <li><b>Directed</b> large, multi-faceted <b>design programs</b> both in-house and as consultant</li>
                 </ul>
-                 <p class="escom-long-form-text__p--l">
+                 <p>
                     Prior to joining EightShapes, Chris worked at Sprint Communications, where he lead many large-scale customer facing and internal redesign programs, including several web self-service applications and customer care systems used by customers and support teams.
                 </p>
-                <p class="escom-long-form-text__p--l">
+                <p>
                     These experiences, along with Chris’ collaborative and diplomatic style, led him to facilitate the workshop Diffcult Conversations in Creative Environments with <a href="/dan-brown.html"> Dan Brown</a> at the 2009 IA Summit.
                 </p>               
 
-            </div>
         </div>
-    {% endcall %}
-
-    {% call esds.row(background_only="white") %}
-
         {{ escom.tabs(tabs=[
             {
                 label: 'Projects',
@@ -53,11 +54,11 @@
                                 class = "esds-list--large",
                                 items = [
                                     {
-                                        eyebrow: "Design Lead and Information Architect",
+                                        description: "Design Lead and Information Architect",
                                         title: "**Virtru** Control Center Application Design"
                                     },
                                     {
-                                        eyebrow: "System Lead of blended eightshapes/client team",
+                                        description: "System Lead of blended eightshapes/client team",
                                         title: "**NetApp** LUCI Design System",
                                         href: "http://luci.netapp.com"
                                     }
@@ -71,16 +72,16 @@
                                 class = "esds-list--large",
                                 items = [
                                     {
-                                        eyebrow: "Design Lead",
+                                        description: "Design Lead",
                                         title: "**NetApp** Dashboard Design"
                                     },
                                     {
-                                        eyebrow: "System Lead of blended eightshapes/client team",
+                                        description: "System Lead of blended eightshapes/client team",
                                         title: "**Universal Service** Indigo Design System",
                                         href: "https:indigo.universalservice.org"
                                     },
                                     {
-                                        eyebrow: "Information Architect",
+                                        description: "Information Architect",
                                         title: "**NetApp** Software Trials Redesign"
                                     }
                                 ]
@@ -94,15 +95,15 @@
                                 class = "esds-list--large",
                                 items = [
                                     {
-                                        eyebrow: "Design Lead of blended eighthapes/client team",
+                                        description: "Design Lead of blended eighthapes/client team",
                                         title: "**Netapp.com** Site Redesign"
                                     },
                                     {
-                                        eyebrow: "Design Lead, Information Architect",
+                                        description: "Design Lead, Information Architect",
                                         title: "**RingCentral** eCommerce Design"
                                     },
                                     {
-                                        eyebrow: "Design Lead, Information Architect",
+                                        description: "Design Lead, Information Architect",
                                         title: "**NetApp** eCommerce Concesign"
                                     }
                                 ]
@@ -116,15 +117,15 @@
                                 class = "esds-list--large",
                                 items = [
                                     {
-                                        eyebrow: "Information Architect",
+                                        description: "Information Architect",
                                         title: "**ACN** Digital Product Strategy"
                                     },
                                     {
-                                        eyebrow: "Information Architect",
+                                        description: "Information Architect",
                                         title: "**NetApp** Universal Information Architecture"
                                     },
                                     {
-                                        eyebrow: "Design Lead",
+                                        description: "Design Lead",
                                         title: "**Yahoo!** Hiring Portal Design"
                                     }
                                 ]
@@ -138,11 +139,11 @@
                                 class = "esds-list--large",
                                 items = [
                                     {
-                                        eyebrow: "Design Lead, Program Director",
+                                        description: "Design Lead, Program Director",
                                         title: "**Yahoo!** Corporate Tools* and web sites design"
                                     },
                                     {
-                                        eyebrow: "System Lead",
+                                        description: "System Lead",
                                         title: "**Yahoo!** Corporate Sites Design System"
                                     }
                                 ]
@@ -156,11 +157,11 @@
                                 class = "esds-list--large",
                                 items = [
                                     {
-                                        eyebrow: "Design Lead",
+                                        description: "Design Lead",
                                         title: "**Yahoo!** Company Intranet Redesign (Backyard)"
                                     },
                                     {
-                                        eyebrow: "System Lead",
+                                        description: "System Lead",
                                         title: "**Yahoo!** Goals Tracking Application Design"
                                     }
                                 ]
