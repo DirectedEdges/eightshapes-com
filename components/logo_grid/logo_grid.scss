@@ -6,7 +6,7 @@
     @supports (grid-column-gap: 0) {  
         display: grid;
         grid-row-gap: $esds-space-generic-1-x;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         margin: 0;
 
         @media screen and (min-width: $esds-breakpoints-width-768) {

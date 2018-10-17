@@ -45,7 +45,7 @@ $escom-bio-thumbnails-color-photo-overlay: rgba($esds-text-color-link-on-dark-ph
 }
 
 .escom-link-list__link {
-    color: $esds-color-teal-71;
+    @include esds-text-color('link');
     text-decoration: none;
 }
 
@@ -71,7 +71,7 @@ $escom-bio-thumbnails-color-photo-overlay: rgba($esds-text-color-link-on-dark-ph
 }
 
 .escom-link-list__image-link {
-    border: 2px solid $esds-color-teal-71;
+    border: $esds-border-interactive-image;
     border-radius: $esds-border-radius-default;
     display: inline-block;
     text-decoration: none;

@@ -55,7 +55,7 @@
     border: 0;
     border-bottom: 5px solid transparent;
     border-radius: 0;
-    color: $esds-color-teal-71;
+    color: $esds-text-color-link-on-white;
     cursor: pointer;
     display: block;
     font-size: $esds-font-size-body-m-default;
@@ -68,7 +68,7 @@
     text-transform: uppercase;
 
     &:hover {
-        border-bottom-color: $esds-color-teal-71;
+        border-bottom-color: $esds-color-teal-30;
     }
 }
 
