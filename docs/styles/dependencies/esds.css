@@ -1328,6 +1328,8 @@
   padding-left: 24px; }
   .esds-tiles__list:last-child {
     margin: 0; }
+  .esds-tiles--2-column .esds-tiles__list {
+    margin: 0 0 16px; }
 
 .esds-tiles__list-item {
   font-family: Barlow, "Lato", sans-serif;
