@@ -60,135 +60,141 @@
             <p class="escom-long-form-text__lead">
                 The first half of the workshop covers theory, the building blocks of what discovery is and why it’s important. The second half goes into the practicalities of determining a schedule and outputs for discovery.
             </p>
-            <p>
+            <p class="escom-long-form-text__lead">
                 Both halves include exercises throughout to reinforce the concepts and provide some experience with discovery techniques. We can customize the exercises to align with current projects or challenges facing your team.
             </p>
         </div>
 
         {{ escom.timeline(
+            class = "escom-timeline--bold-items",
             items = [
                 {
                     time: "9:00AM - 9:30AM",
-                    heading: "Discovery Defined",
+                    heading: "Definition",
                     content_right: [
                         esds.list(
                             items = [
                                 {
-                                    title: "Establish a working definition of discovery"
+                                    title: "Working Definition",
+                                    description: "How do you define discovery?"
                                 },
                                 {
-                                    title: "Identify the purpose of doing discovery"
+                                    title: "How Discovery Helps",
+                                    description: "Why do we do discovery anyway?"
                                 },
                                 {
-                                    title: "Clarify the relationship between discovery and design"
+                                    title: "What We Do in Discovery",
+                                    pill: "Activity",
+                                    description: "What are the main activities and outputs in discovery?"
                                 },
                                 {
-                                    title: "The role of discovery in design",
-                                    pill: "Deep Dive"
-                                },
-                                {
-                                    title: "List all the activities and outputs associated with discovery",
-                                    pill: "Hands On"
+                                    title: "Discovery and Design",
+                                    description: "What’s the relationship between discovery and design?"
                                 }
                             ]
                         )
                     ]
                 },
                 {
-                    time: "9:45AM - 10:45AM",
-                    heading: "The Discovery Activities Matrix",
+                    time: "9:30AM - 10:30AM",
+                    heading: "Intentions",
                     content_right: [
                         esds.list(
                             items = [
                                 {
-                                    title: "Describe the distinction between stating a problem and framing a solution"
+                                    title: "Framing Problem vs. Setting Direction",
+                                    description: "What are the two chief concerns of discovery?"
                                 },
                                 {
-                                    title: "Explain the opposing forces of divergence and convergence"
+                                    title: "The Central Tension",
+                                    description: "How do divergence and convergence factor into discovery?"
                                 },
                                 {
-                                    title: "Assigning intention to your discovery activities "
+                                    title: "Creativity and Discovery",
+                                    pill: "Activity",
+                                    description: "How does what we know about creativity bear on discovery?"
                                 },
                                 {
-                                    title: "Integrating the psychology of creativity into our process",
-                                    pill: "Deep Dive"
-                                },
-                                {
-                                    title: "Sort activities and outputs into groups",
-                                    pill: "Hands On"
+                                    title: "The Discovery Activities Matrix",
+                                    description: "What’s the right way to think of discovery activities?"
                                 }
                             ]
                         )
                     ]
                 },
                 {
-                    time: "12:00pm – 1:00pm",
+                    time: "9:30AM - 10:30AM",
+                    heading: "Assertions",
+                    content_right: [
+                        esds.list(
+                            items = [
+                                {
+                                    title: "Framing the Problem",
+                                    pill: "Activity",
+                                    description: "What are the essential assertions for framing the problem?"
+                                },
+                                {
+                                    title: "Setting the Direction",
+                                    description: "What are the essential assertions for setting the direction?"
+                                },
+                                {
+                                    title: "Big Concepts",
+                                    description: "What is the big idea behind your product? Should we care?"
+                                },
+                                {
+                                    title: "Assigning Intention",
+                                    description: "Do you know why you make the artifacts you make?"
+                                }
+                            ]
+                        )
+                    ]
+                },
+                {
+                    time: "Noon – 1:00pm",
                     heading: "Lunch"
                 },
                 {
-                    time: "1:30pm – 3:00pm",
+                    time: "1:00PM - 3:00PM",
+                    heading: "Planning",
+                    content_right: [
+                        esds.list(
+                            items = [
+                                {
+                                    title: "The Discovery Plan",
+                                    pill: "Activity",
+                                    description: "How would you structure a basic discovery phase?"
+                                },
+                                {
+                                    title: "Working with Stakeholders",
+                                    description: "How do you involve stakeholders in the discovery process?"
+                                },
+                                {
+                                    title: "Dealing with the Unexpected",
+                                    pill: "Activity",
+                                    description: "How do you pivot to deal with unexpected challenges?"
+                                }
+                            ]
+                        )
+                    ]
+                },
+                {
+                    time: "3:15PM - 4:45PM",
                     heading: "Documenting",
                     content_right: [
                         esds.list(
                             items = [
                                 {
-                                    title: "Cards & Composibility",
-                                    href: "http://bit.ly/8s-cards-composability",
-                                    description: "How do we decompose style, structure, and behavior?"
+                                    title: "Documents for Thinking",
+                                    description: "What artifacts can help you make sense of all the incoming information?"
                                 },
                                 {
-                                    title: "Documenting Components",
-                                    href: "http://bit.ly/8s-documenting-components",
-                                    description: "Who is it for and what content do they need?"
+                                    title: "Documents for Communicating",
+                                    description: "What artifacts can help you draw stakeholders into the process?"
                                 },
                                 {
-                                    title: "Component Examples",
-                                    href: "http://bit.ly/8s-component-examples",
+                                    title: "Meaningful Outputs",
                                     pill: "Activity",
-                                    description: "How do we select and arrange examples across all features?"
-                                },
-                                {
-                                    title: "Design Guidelines",
-                                    href: "http://bit.ly/8s-component-design-guidelines",
-                                    pill: "Activity",
-                                    description: "How do guide style, behavior, editorial, accessibility and use?"
-                                },
-                                {
-                                    title: "Editing Component Documentation",
-                                    pill: "Activity",
-                                    description: "How do we write and iterate high-quality documentation?"
-                                }
-                            ]
-                        )
-                    ]
-                },
-                {
-                    time: "11:00AM – 12:30pm",
-                    heading: "Practicing",
-                    content_right: [
-                        esds.list(
-                            items = [
-                                {
-                                    title: "Adopting Design Systems",
-                                    href: "http://bit.ly/8s-adopting-systems",
-                                    description: "Who uses our system, and how do we monitor their work?"
-                                },
-                                {
-                                    title: "How Do I...? Processes",
-                                    href: "http://bit.ly/8s-system-practice-cards",
-                                    pill: "Activity",
-                                    description: "What workflows do the system team, users, and contributors need defined?"
-                                },
-                                {
-                                    title: "Contributing",
-                                    href: "http://bit.ly/8s-contributions-to-systems",
-                                    description: "How do we know what goes in, and what is the process to get it done?"
-                                },
-                                {
-                                    title: "Measuring Success",
-                                    href: "http://bit.ly/8s-measure-system-success",
-                                    pill: "Activity",
-                                    description: "What are our objectives, and how do we track if we get there?"
+                                    description: "What are the three essential components of a final discovery document?"
                                 }
                             ]
                         )

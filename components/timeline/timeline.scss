@@ -95,3 +95,7 @@
 .escom-timeline__content-bottom {
     display: block;
 }
+
+.escom-timeline--bold-items .esds-list__title {
+    font-weight: $esds-font-weight-bold;
+}

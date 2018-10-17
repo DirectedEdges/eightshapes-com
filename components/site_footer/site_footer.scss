@@ -4,11 +4,10 @@
 }
 
 .escom-site-footer__row {
-    display: grid;
-    grid-column-gap: 16px;
-    grid-template-columns: 1fr;
 
     @media screen and (min-width: $esds-breakpoints-width-768) {
+        display: grid;
+        grid-column-gap: 16px;
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
@@ -17,8 +16,11 @@
     margin: $esds-space-stack-1-x;
     width: 100%;
 
-    &.escom-site-footer__column--offset {
-        padding-top: $esds-space-generic-1-x + 43px;
+
+    @media screen and (min-width: $esds-breakpoints-width-768) {
+        &.escom-site-footer__column--offset {
+            padding-top: $esds-space-generic-1-x + 43px;
+        }
     }
 }
 
@@ -54,13 +56,13 @@
 }
 
 .escom-site-footer__icon--twitter {
-    fill: $escom-color-blue-twitter;
+    fill: $esds-color-white;
 }
 
 .escom-site-footer__icon--linkedin {
-    fill: $escom-color-blue-linkedin;
+    fill: $esds-color-white;
 }
 
 .escom-site-footer__icon--medium {
-    fill: $escom-color-gray-medium;
+    fill: $esds-color-white;
 }
