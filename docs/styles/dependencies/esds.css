@@ -620,26 +620,11 @@
 
 .esds-card {
   border-radius: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin: 0 0 32px; }
   .esds-card.esds-container--white, .esds-card.esds-container--light, .esds-card.esds-container--dark, .esds-card.esds-container--black, .esds-card.esds-container--brand, .esds-card.esds-container--dark-photograph {
     background: transparent; }
 
 .esds-card__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
   text-decoration: none; }
 
 .esds-card__thumbnail {
@@ -677,10 +662,7 @@
 .esds-card__content {
   border-radius: 8px;
   margin: 0;
-  padding: 16px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto; }
+  padding: 16px; }
   @media screen and (min-width: 1000px) {
     .esds-card__content {
       padding: 24px; } }
@@ -1023,21 +1005,6 @@
     @media screen and (min-width: 768px) {
       .esds-row--no-inset .esds-row__inner {
         padding: 0; } }
-
-.esds-row--marketing-max-width .esds-row__inner {
-  max-width: 800px; }
-
-.esds-row--marketing-max-width.esds-row--tall-inset .esds-row__inner {
-  max-width: 928px; }
-
-.esds-row--marketing-max-width.esds-row--very-tall-inset .esds-row__inner {
-  max-width: 1056px; }
-
-.esds-row--marketing-max-width.esds-row--very-very-tall-inset .esds-row__inner {
-  max-width: 1056px; }
-
-.esds-row--marketing-max-width.esds-row--no-inset .esds-row__inner {
-  max-width: 800px; }
 
 .esds-row--background-image-dark:before {
   background-color: #0D0D0D;
@@ -1532,7 +1499,7 @@
 .esds-list {
   background-color: transparent;
   list-style: none;
-  margin: 0 0 32px;
+  margin: 0 0 16px;
   padding: 0; }
 
 .esds-list__item {
@@ -1555,7 +1522,7 @@
   text-transform: none;
   color: #E85200;
   font-size: 23.04px;
-  margin: 0 0 24px; }
+  margin: 0 0 32px; }
 
 .esds-list__group {
   margin: 0; }
