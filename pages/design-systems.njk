@@ -107,7 +107,7 @@
         <div class="escom-long-form-text">
             <h2>Recent Systems</h2>
         </div>
-        <div class="escom-card-grid">
+        {% call escom.card_grid() %}
             {{ esds.card(
                 container="white",
                 date="2017—18",
@@ -164,7 +164,7 @@
                 description="Cedar, a web-based system for rei.com apps and properties.",
                 width="auto"
             ) }}        
-        </div>
+        {% endcall %}
     {% endcall %}
 
     {# How We Help #}
@@ -177,7 +177,7 @@
             </p>
             <h3>Strategy</h3>
         </div>
-        <div class="escom-card-grid">
+        {% call escom.card_grid() %}
             {{ esds.card(
                 container="light",
                 type="Medium • October 2017",
@@ -207,11 +207,11 @@
                 thumbnail_image="/images/components/content_card/Intermediaries.png",
                 width="auto"
             ) }}
-        </div>
+        {% endcall %}
         <div class="escom-long-form-text">
             <h3>Visual Style and Component Design</h3>
         </div>
-        <div class="escom-card-grid">
+        {% call escom.card_grid() %}
             {{ esds.card(
                 container="light",
                 type="Medium • April 2016",
@@ -241,11 +241,11 @@
                 thumbnail_image="/images/components/content_card/Buttons.png",
                 width="auto"
             ) }}
-        </div>
+        {% endcall %}
         <div class="escom-long-form-text">
             <h3>Documentation</h3>
         </div>
-        <div class="escom-card-grid">
+        {% call escom.card_grid() %}
             {{ esds.card(
                 container="light",
                 type="Medium • April 2016",
@@ -275,11 +275,11 @@
                 thumbnail_image="/images/components/content_card/ComponentDesignGuidelines.png",
                 width="auto"
             ) }}
-        </div>
+        {% endcall %}
         <div class="escom-long-form-text">
             <h3>People, Teams and Community</h3>
         </div>
-        <div class="escom-card-grid">
+        {% call escom.card_grid() %}
             {{ esds.card(
                 container="light",
                 type="Medium • October 2015",
@@ -309,11 +309,11 @@
                 thumbnail_image="/images/components/content_card/Contributions.png",
                 width="auto"
             ) }}
-        </div>
+        {% endcall %}
         <div class="escom-long-form-text">
             <h3>Process &amp; Operations</h3>
         </div>
-        <div class="escom-card-grid">
+        {% call escom.card_grid() %}
             {{ esds.card(
                 container="light",
                 type="Medium • August 2018",
@@ -343,7 +343,7 @@
                 thumbnail_image="/images/components/content_card/DesignSystemFeaturesStepbyStep.png",
                 width="auto"
             ) }}
-        </div>
+        {% endcall %}
     {% endcall %}
 
     {{ escom.cta(heading="Ready?", deck="Want to kickstart a system? Need a partner to help? Ready to lift your system?", button_text="Email Us", href="mailto:info@eightshapes.com") }}

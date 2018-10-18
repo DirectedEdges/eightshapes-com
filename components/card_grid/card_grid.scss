@@ -1,50 +1,40 @@
 .escom-card-grid {
-
     &:not(:last-child) {
         margin: $esds-space-stack-4-x;
+    }
+
+    .escom-card-grid__placeholder {
+        height: 0;
+        overflow: hidden;
     }
 
     @media screen and (min-width: $esds-breakpoints-width-500) {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: -($esds-space-generic-2-x);
 
-        @supports (grid-column-gap: 0) {  
-            display: grid;
-            grid-auto-rows: 1fr;
-            grid-gap: $esds-space-generic-2-x;
-            grid-template-columns: 1fr 1fr;
+        .escom-card-grid__placeholder,
+        .esds-card {
+            flex: 1 1 40%;
+            margin-right: $esds-space-generic-2-x;
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
         }
     }
 
     @media screen and (min-width: $esds-breakpoints-width-768) {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+        .escom-card-grid__placeholder,
+        .esds-card {
+            flex: 1 1 30%;
 
-    .esds-card {
-
-        @media screen and (min-width: $esds-breakpoints-width-500) {
-            margin: 0 $esds-space-generic-half-x $esds-space-generic-1-x;
-            width: calc(50% - #{$esds-space-generic-1-x}) !important; // sass-lint:disable-line no-important
-
-            @supports (grid-column-gap: 0) {
-                margin: 0;
-                width: auto !important; // sass-lint:disable-line no-important
+            &:nth-child(2n) {
+                margin-right: $esds-space-generic-2-x;
             }
-        }
 
-        @media screen and (min-width: $esds-breakpoints-width-768) {
-            width: calc(33.333% - #{$esds-space-generic-1-x}) !important; // sass-lint:disable-line no-important
-
-            @supports (grid-column-gap: 0) {
-                width: auto !important; // sass-lint:disable-line no-important
-            }
-        }
-
-        @media screen and (min-width: $esds-breakpoints-width-1200) {
-            width: calc(25% - #{$esds-space-generic-1-x}) !important; // sass-lint:disable-line no-important
-
-            @supports (grid-column-gap: 0) {
-                width: auto !important; // sass-lint:disable-line no-important
+            &:nth-child(3n) {
+                margin-right: 0;
             }
         }
     }

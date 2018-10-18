@@ -67,7 +67,7 @@
             <h2 id="our-work">Our Work</h2>
         </div>
     </div>
-    <div class="escom-card-grid">
+    {% call escom.card_grid() %}
         {{ esds.card(
             container="white",
             type="Case Study",
@@ -123,8 +123,7 @@
             href="http://comet.discoveryeducation.com",
             width="auto"
         ) }}
-
-    </div>
+    {% endcall %}
   {% endcall %}
 
 {# Clients #}
