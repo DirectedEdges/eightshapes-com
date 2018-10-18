@@ -6,10 +6,6 @@
         margin: 0;
     }
 
-    &:last-child {
-        margin-bottom: 0;
-    }
-
     h1 {
         @include esds-text-crop();
         @include esds-level-1-heading();

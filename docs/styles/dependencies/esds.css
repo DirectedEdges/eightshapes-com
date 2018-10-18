@@ -6,13 +6,13 @@
   .esds-container--light .esds-link {
     color: #00798C; }
   .esds-container--dark .esds-link {
-    color: #0A9DB3; }
+    color: #20BDD5; }
   .esds-container--black .esds-link {
-    color: #0A9DB3; }
+    color: #20BDD5; }
   .esds-container--brand .esds-link {
     color: #FFFFFF; }
   .esds-container--dark-photograph .esds-link {
-    color: #0A9DB3; }
+    color: #20BDD5; }
   .esds-link:hover {
     text-decoration: underline; }
 
@@ -888,13 +888,13 @@
   .esds-container--light .esds-card__cta {
     color: #00798C; }
   .esds-container--dark .esds-card__cta {
-    color: #0A9DB3; }
+    color: #20BDD5; }
   .esds-container--black .esds-card__cta {
-    color: #0A9DB3; }
+    color: #20BDD5; }
   .esds-container--brand .esds-card__cta {
     color: #FFFFFF; }
   .esds-container--dark-photograph .esds-card__cta {
-    color: #0A9DB3; }
+    color: #20BDD5; }
   .esds-card__cta:not(:last-child) {
     margin: 0 0 16px; }
   .esds-card__link:hover .esds-card__cta {
@@ -1180,13 +1180,13 @@
     .esds-container--light .esds-tiles__tile--link .esds-tiles__heading {
       color: #00798C; }
     .esds-container--dark .esds-tiles__tile--link .esds-tiles__heading {
-      color: #0A9DB3; }
+      color: #20BDD5; }
     .esds-container--black .esds-tiles__tile--link .esds-tiles__heading {
-      color: #0A9DB3; }
+      color: #20BDD5; }
     .esds-container--brand .esds-tiles__tile--link .esds-tiles__heading {
       color: #FFFFFF; }
     .esds-container--dark-photograph .esds-tiles__tile--link .esds-tiles__heading {
-      color: #0A9DB3; }
+      color: #20BDD5; }
 
 .esds-tiles__heading-icon {
   fill: currentColor; }
@@ -1249,13 +1249,13 @@
     .esds-container--light .esds-tiles__description a {
       color: #00798C; }
     .esds-container--dark .esds-tiles__description a {
-      color: #0A9DB3; }
+      color: #20BDD5; }
     .esds-container--black .esds-tiles__description a {
-      color: #0A9DB3; }
+      color: #20BDD5; }
     .esds-container--brand .esds-tiles__description a {
       color: #FFFFFF; }
     .esds-container--dark-photograph .esds-tiles__description a {
-      color: #0A9DB3; }
+      color: #20BDD5; }
     .esds-tiles__description a:hover {
       text-decoration: underline; }
   .esds-tiles__description:last-child {
@@ -1741,13 +1741,13 @@
   .esds-container--light .esds-list__link {
     color: #00798C; }
   .esds-container--dark .esds-list__link {
-    color: #0A9DB3; }
+    color: #20BDD5; }
   .esds-container--black .esds-list__link {
-    color: #0A9DB3; }
+    color: #20BDD5; }
   .esds-container--brand .esds-list__link {
     color: #FFFFFF; }
   .esds-container--dark-photograph .esds-list__link {
-    color: #0A9DB3; }
+    color: #20BDD5; }
   .esds-list--large .esds-list__link {
     font-weight: 400; }
 
@@ -1813,7 +1813,7 @@
   max-width: 100%; }
 
 .esds-list__image-link {
-  border: 1px solid #0A9DB3;
+  border: solid 2px #068194;
   display: inline-block;
   text-decoration: none; }
   .esds-list__image-link:hover {

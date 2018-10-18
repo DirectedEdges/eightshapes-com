@@ -1367,8 +1367,6 @@ body {
   margin: 0 auto 32px; }
   .escom-long-form-text * {
     margin: 0; }
-  .escom-long-form-text:last-child {
-    margin-bottom: 0; }
   .escom-long-form-text h1 {
     line-height: 1.3;
     font-family: Barlow, "Lato", sans-serif;
@@ -1882,8 +1880,6 @@ body {
   margin: 0 auto 32px; }
   .escom-long-form-text * {
     margin: 0; }
-  .escom-long-form-text:last-child {
-    margin-bottom: 0; }
   .escom-long-form-text h1 {
     line-height: 1.3;
     font-family: Barlow, "Lato", sans-serif;
