@@ -32,7 +32,10 @@ jspm_packages/
 !/components/*/
 
 # Webroot
-docs
+/docs
+
+# Deploy build tmp directory
+/tmp
 
 # MacOS folder attributes
 *.DS_Store
