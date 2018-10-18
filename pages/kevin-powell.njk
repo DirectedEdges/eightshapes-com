@@ -14,8 +14,7 @@
             </div>
         </div>
     {% endcall %}
-    {% call esds.row(background="white", class="esds-row--tall-inset") %}
-        {% call escom.tab_pane(active=true) %}
+    {% call esds.row(background="white", class="esds-row--tall-inset esds-row--marketing-max-width") %}
             {{ esds.list(
                 class = "esds-list--large",
                 items = [
@@ -52,6 +51,5 @@
                     }
                 ]
             ) }}
-        {% endcall %}
     {% endcall %}
 {% endblock body %}

@@ -1006,6 +1006,21 @@
       .esds-row--no-inset .esds-row__inner {
         padding: 0; } }
 
+.esds-row--marketing-max-width .esds-row__inner {
+  max-width: 800px; }
+
+.esds-row--marketing-max-width.esds-row--tall-inset .esds-row__inner {
+  max-width: 928px; }
+
+.esds-row--marketing-max-width.esds-row--very-tall-inset .esds-row__inner {
+  max-width: 1056px; }
+
+.esds-row--marketing-max-width.esds-row--very-very-tall-inset .esds-row__inner {
+  max-width: 1056px; }
+
+.esds-row--marketing-max-width.esds-row--no-inset .esds-row__inner {
+  max-width: 800px; }
+
 .esds-row--background-image-dark:before {
   background-color: #0D0D0D;
   bottom: 0;
@@ -1499,7 +1514,7 @@
 .esds-list {
   background-color: transparent;
   list-style: none;
-  margin: 0 0 16px;
+  margin: 0 0 32px;
   padding: 0; }
 
 .esds-list__item {
@@ -1522,7 +1537,7 @@
   text-transform: none;
   color: #E85200;
   font-size: 23.04px;
-  margin: 0 0 32px; }
+  margin: 0 0 24px; }
 
 .esds-list__group {
   margin: 0; }
