@@ -133,9 +133,12 @@
 
 .escom-long-form-text--two-column-at-768 {
     @media screen and (min-width: $esds-breakpoints-width-768) {
-        display: grid;
-        grid-gap: $esds-space-generic-2-x;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+
+        > * {
+            flex: 1 1 45%;
+            margin-right: $esds-space-generic-2-x;
+        }
 
         & ul:nth-last-child(2) {
             margin: 0;
