@@ -1,17 +1,7 @@
-{% extends 'templates/case_studies.njk' %}
+{% set title = "AACT Design Strategy | EightShapes" %}
+{% extends 'templates/legacy/case_studies.njk' %}
 {% block body %}
   <main role="main" id="main">
-    <header>
-      <!-- # header.html -->
-      <div class="cs-header">
-        <nav>
-          <a href="/" class="cs-header_home">
-            <img class="cs-header_logo" src="../images/case_studies/cs-eightshapes-logo.png" alt="EightShapes" />
-          </a>
-        </nav>
-      </div>
-      <!-- / header.html -->
-    </header>
     <article>
       <header>
         <!-- # title.html -->
@@ -431,23 +421,5 @@
       </div>
       <!-- / cta.aact.html -->
     </aside>
-    <footer>
-      <nav>
-        <!-- # pagination.template.html -->
-        <div class="cs-pagination">
-          <div class="cs-pagination_bd">
-            <a class="cs-pagination_item cs-pagination_prev" href="ncarb.html">
-              <span class="cs-pagination_client">Product Design</span>
-              <span class="cs-pagination_project">NCARB</span>
-            </a>
-            <a class="cs-pagination_item cs-pagination_next" href="sonatype.html">
-              <span class="cs-pagination_client">Product Design</span>
-              <span class="cs-pagination_project">Sonatype</span>
-            </a>
-          </div>
-        </div>
-        <!-- / pagination.template.html -->
-      </nav>
-    </footer>
   </main>
 {% endblock %}

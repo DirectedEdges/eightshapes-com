@@ -1,121 +1,172 @@
-{% extends 'templates/default.njk' %}
+{% set title_tag = "EightShapes" %}
+{% set body_classes = "escom-page-type--marketing" %}
+{% extends 'templates/base.njk' %}
 
-{% block content %}
-  {{ components.header() }}
-
-  <!-- Our Work -->
-  {{ components.casestudies() }}
+{% block body %}
+    {{ escom.title_row(
+        class="escom-title-row--centered-deck esds-row--very-tall-inset",
+        logo=true,
+        background="brand",
+        decks=[
+            "EightShapes designs web-based products and systems that make for beautiful, usable, cohesive experiences."
+        ],
+        page_anchors=[
+          {    
+            href: "#our-work",
+            label: "Our Work"
+          },
+          {
+            href: "#services",
+            label: "What We Do"
+          },
+          {
+            href: "#who-we-are",
+            label: "Who We Are"
+          },
+          {
+            href: "#contributions",
+            label: "Contributions"
+          }
+        ]
+ 
+    ) }}
 
   <!-- What We Do -->
-
-  <div id="services" class="container-fluid color-charcoal">
-    <div class="container-fluid-inner">
-        {{ components.whatwedo() }}
+  {% call esds.row(background="white", class="esds-row--tall-inset") %}
+    <div class="escom-long-form-text">
+      <h2 id="services">What We Do</h2>
     </div>
-  </div>
+    {{ esds.tiles(
+        container="light",
+        items = [
+            {
+                heading: "Discovery",
+                description: "Align around a shared product vision through design principles, customer insights, prototyped concepts.",
+                property: "Includes brainstorming, workshops, prototyping, planning, and usability research",
+                href: "/design-discovery.html"
+            },
+            {
+                heading: "Design & Front End Dev",
+                description: "Deliver end-to-end UX, visual design, and front-end style guides so your team can build an experience.",
+                property: "Includes UX design, information architecture, visual design, front-end dev, and research"
+            },
+            {
+                heading: "Systems",
+                description: "Design, code, and document systems so your teams can make innovative, beautiful experiences together.",
+                property: "Includes strategy, design, code, doc, coaching, assessments, and workshops",
+                href: "/design-systems.html"
+            }
+        ]
+    ) }}
+  {% endcall %}
+
+  <!-- Our Work -->
+  {% call esds.row(background_only="dark", class="esds-row--tall-inset") %}
+    <div class="esds-container--dark">
+        <div class="escom-long-form-text">
+            <h2 id="our-work">Our Work</h2>
+        </div>
+    </div>
+    {% call escom.card_grid() %}
+        {{ esds.card(
+            container="white",
+            type="Case Study",
+            title="Sonatype Product Design",
+            href="/case-studies/sonatype.html",
+            thumbnail_image="/images/casestudies/case-study-thumbnail-sonatype.png",
+            width="auto"
+        ) }}
+
+        {{ esds.card(
+            container="white",
+            type="Case Study",
+            title="NCARB Product Design",
+            href="/case-studies/ncarb.html",
+            thumbnail_image="/images/casestudies/case-study-thumbnail-ncarb.png",
+            width="auto"
+        ) }}
+
+        {{ esds.card(
+            container="white",
+            type="Case Study",
+            title="AACT Design Strategy",
+            href="/case-studies/aact.html",
+            thumbnail_image="/images/casestudies/case-study-thumbnail-aact.png",
+            width="auto"
+        ) }}
+
+        {{ esds.card(
+            container="white",
+            date="Design System",
+            thumbnail_image="/images/systems/casestudies/Morningstar.png",
+            title="Morningstar, MDS",
+            description="Style, UI components and charts for digital products.",
+            href="http://designsystem.morningstar.com",
+            width="auto"
+        ) }}
+
+        {{ esds.card(
+            container="white",
+            date="Design System",
+            thumbnail_image="/images/systems/casestudies/REI.png",
+            title="REI's Cedar",
+            description="A web-based system for rei.com apps and properties.",
+            width="auto"
+        ) }}       
+
+        {{ esds.card(
+            container="white",
+            date="Design System",
+            thumbnail_image="/images/systems/casestudies/Comet.png",
+            title="Discovery Ed Comet",
+            description="A system for educational digital apps and sites.",
+            href="http://comet.discoveryeducation.com",
+            width="auto"
+        ) }}
+    {% endcall %}
+  {% endcall %}
+
+{# Clients #}
+
+{% call esds.row(background="black", class="esds-row--tall-inset") %}
+    <div class="escom-long-form-text">
+        <h2>Our Clients</h2>
+        <p class="escom-long-form-text__lead">Since 2006, EightShapes has served large enterprises, small startups, non-profit associations, and federal government clients.</p>
+    </div>
+    <div class="escom-logo-grid">
+        <img src="/images/client_brands/logos/Google.png" alt="Google" class="logo-grid__image">
+        <img src="/images/client_brands/logos/Target.png" alt="Target" class="logo-grid__image">
+        <img src="/images/client_brands/logos/REI.png" alt="REI" class="logo-grid__image">
+        <img src="/images/client_brands/logos/Marriott.png" alt="Marriott" class="logo-grid__image">
+        <img src="/images/client_brands/logos/Morningstar.png" alt="Morningstar" class="logo-grid__image">
+        <img src="/images/client_brands/logos/Fidelity.png" alt="Fidelity" class="logo-grid__image">
+        <img src="/images/client_brands/logos/CapitalOne.png" alt="Capital One" class="logo-grid__image">
+        <img src="/images/client_brands/logos/Cisco.png" alt="Cisco" class="logo-grid__image">
+        <img src="/images/client_brands/logos/DiscoveryEducation.png" alt="Discovery Education" class="logo-grid__image">
+        <img src="/images/client_brands/logos/eBay.png" alt="eBay" class="logo-grid__image">
+        <img src="/images/client_brands/logos/NetApp.png" alt="NetApp" class="logo-grid__image">
+        <img src="/images/client_brands/logos/Yahoo.png" alt="Yahoo" class="logo-grid__image">
+        <img src="/images/client_brands/logos/Hudl.png" alt="Hudl" class="logo-grid__image">
+        <img src="/images/client_brands/logos/3M.png" alt="3M" class="logo-grid__image">
+        <img src="/images/client_brands/logos/Wikia.png" alt="Wikia" class="logo-grid__image">
+        <img src="/images/client_brands/logos/Sprint.png" alt="Sprint" class="logo-grid__image">
+        <img src="/images/client_brands/logos/NationalGeographic.png" alt="National Geographic" class="logo-grid__image">
+        <img src="/images/client_brands/logos/Sun.png" alt="Sun Microsystems" class="logo-grid__image">
+    </div>
+{% endcall %}
   
   <!-- People -->
-  {{ components.xups({
-    "id": "who-we-are",
-    "background": "light-gray",
-    "up_responsiveness": "",
-    "type": "ups__bio-photos",
-    "h2": "Who We Are",
-    "lead": "Though tenacious in solving complex experience design problems, we believe successful projects depend on transparency, cooperation, and Post-Its.",
-    "ups" : [
-       {
-         "header": "Nathan Curtis",
-         "paragraph": "Principal & Founder",  
-         "thumbnail": "nathan-curtis"
-       },
-       {
-         "header": "Dan Brown",
-         "paragraph": "Principal & Founder",
-         "thumbnail": "dan-brown"
-       },
-       {
-         "header": "Chris Detzi",
-         "paragraph": "Sr. Director, UX",
-         "thumbnail": "chris-detzi"
-       },
-       {
-         "header": "James Melzer",
-         "paragraph": "Director, UX",
-         "thumbnail": "james-melzer"
-       },
-       {
-         "header": "Kevin Powell",
-         "paragraph": "Sr. Front End Developer",
-         "thumbnail": "kevin-powell"
-       }
-     ]
-  }) }}
-
-  <!-- Contributions -->
-   <div class="container-fluid" id="contributions">
-    <div class="container-fluid-inner">
-      <h2 class="homepage__heading">How We've Contributed</h2>
-      <p class="lead">EightShapes has contributed three books, a documentation templating, and a prototyping framework, not to mention countless workshops and articles.</p>
-      <div class="row content-card-wrap">
-        {{ components.content_card_double({
-          href: "https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.29y3lestl",
-          pre_heading: "Medium",
-          heading: "Buttons in Design Systems",
-          background_image: "images/components/content_card/buttons.png"
-        }) }}
-        {{ components.content_card({
-          href: "http://alistapart.com/event/responsive-style-guides",
-          class: "content-card--event",
-          pre_heading: "A List Apart Online Panel",
-          date: "June 16, 2015",
-          heading: "Pattern Language: Responsive Style Guides",
-          cta: "Watch"
-        }) }}
-        {{ components.content_card({
-          href: "http://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351",
-          class: "content-card--book",
-          pre_heading: "Book by Nathan Curtis",
-          heading: "Modular Web Design",
-          copy: "Creating Reusable Components for User Experience Design and Documentation",
-          background_image: "images/components/content_card/modular_web_design.jpg"
-        }) }}
-        {{ components.content_card({
-          href: "http://www.amazon.com/Communicating-Design-Developing-Documentation-Planning/dp/0321712463",
-          class: "content-card--book",
-          pre_heading: "Book by Dan Brown",
-          heading: "Communicating Design",
-          copy: "Developing Website Documentation for Design and Planning",
-          background_image: "images/components/content_card/communicating_design.jpg"
-        }) }}
-        {{ components.content_card({
-          href: "https://medium.com/eightshapes-llc/beyond-utility-re-discovering-product-discovery-5ae210a1399e#.iwpp5obw8",
-          pre_heading: "Medium",
-          heading: "Re-Discovering Product Discovery",
-          copy: "The time is right for we designers to look at Discovery, that squishy, early part of the design process.",
-          cta: "Read More"
-        }) }}
-        {{ components.content_card({
-          href: "http://www.amazon.com/Designing-Together-collaboration-management-professionals/dp/0321918630",
-          class: "content-card--book",
-          pre_heading: "Book by Dan Brown",
-          heading: "Designing Together",
-          copy: "The Collaboration and Conflict Management Handbook for Creative Professionals",
-          background_image: "images/components/content_card/designing_together.jpg"
-        }) }}
-        {{ components.content_card({
-          href: "https://medium.com/eightshapes-llc/the-component-cut-up-workshop-1378ae110517#.5ibx9rqm8",
-          pre_heading: "Medium",
-          heading: "The Component Cut-Up Workshop",
-          copy: "Nothing beats the energy of getting a team together to deconstruct an existing design system and arrive at a component library together.",
-          cta: "Read More"
-        }) }}
-      </div>
+  {% call esds.row(background="light", class="esds-row--tall-inset") %}
+    <div class="escom-long-form-text">
+      <h2 id="who-we-are">Who We Are</h2>
+      <p class="escom-long-form-text__lead">
+        Tenacious in solving complex design problems, we believe successful projects depend on transparency, discipline, cooperation, and Post-Its.
+      </p>
     </div>
-  </div>
+    {{ escom.bio_thumbnails() }}
+  {% endcall %}
+
   
   <!-- Page CTA -->
-  {{ components.page_cta({header:'Ready?', lead: 'Working on a UX design? Crafting a product strategy? Starting a design system?'}) }}
-
-  <!-- Footer -->
-  {{ components.footer() }}
+  {{ escom.cta(heading="Ready?", deck="Working on a UX design? Crafting a product strategy? Starting a design system?", button_text="Email Us", href="mailto:info@eightshapes.com") }}
 {% endblock %}

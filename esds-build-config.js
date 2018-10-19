@@ -32,6 +32,22 @@ module.exports = {
             name: 'github-pages-cname',
             sources: ['CNAME'],
             destination: 'docs'
+        },
+        {
+            name: 'style-dependencies',
+            sources: [`node_modules/esds-library/dist/esds.css`],
+            destination: `docs/styles/dependencies`,
+            watch: true
+        },
+        {
+            name: 'icon-dependencies',
+            sources: [`node_modules/esds-library/dist/esds.svg`],
+            destination: `docs/icons`
+        }
+    ],
+    dependencies: [
+        {
+            moduleName: 'esds-library'
         }
     ]
-}
+};

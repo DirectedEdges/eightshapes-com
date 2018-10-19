@@ -1,17 +1,7 @@
-{% extends 'templates/case_studies.njk' %}
+{% set title = "Sonatype Product Design | EightShapes" %}
+{% extends 'templates/legacy/case_studies.njk' %}
 {% block body %}
   <main role="main" id="main">
-    <header>
-      <!-- # header.html -->
-      <div class="cs-header">
-        <nav>
-          <a href="/" class="cs-header_home">
-            <img class="cs-header_logo" src="../images/case_studies/cs-eightshapes-logo.png" alt="EightShapes" />
-          </a>
-        </nav>
-      </div>
-      <!-- / header.html -->
-    </header>
     <article>
       <header>
         <!-- # title.html -->
@@ -372,23 +362,5 @@
       </div>
       <!-- / cta.sonatype.html -->
     </aside>
-    <footer>
-      <nav>
-        <!-- # pagination.template.html -->
-        <div class="cs-pagination">
-          <div class="cs-pagination_bd">
-            <a class="cs-pagination_item cs-pagination_prev" href="aact.html">
-              <span class="cs-pagination_client">Design Strategy</span>
-              <span class="cs-pagination_project">AACT</span>
-            </a>
-            <a class="cs-pagination_item cs-pagination_next" href="fireeye.html">
-              <span class="cs-pagination_client">Responsive Design</span>
-              <span class="cs-pagination_project">FireEye</span>
-            </a>
-          </div>
-        </div>
-        <!-- / pagination.template.html -->
-      </nav>
-    </footer>
   </main>
 {% endblock %}

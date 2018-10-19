@@ -18,9 +18,11 @@
   },
   "homepage": "http://eightshapes.com",
   "devDependencies": {
-    "esds-build": "^0.25.0"
+    "del": "^3.0.0",
+    "esds-build": "^0.28.1",
+    "fs": "0.0.1-security"
   },
   "dependencies": {
-    "esds-library": "^0.4.0-alpha.3"
+    "esds-library": "^0.8.0"
   }
 }

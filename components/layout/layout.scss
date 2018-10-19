@@ -1,0 +1,15 @@
+.escom-layout {
+    margin: 0 auto;
+    max-width: $esds-font-line-length-long-form;
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.escom-layout__column {
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        flex: 1 1 50%;
+    }
+}
