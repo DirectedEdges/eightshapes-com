@@ -1,4 +1,5 @@
-$escom-bio-thumbnails-color-photo-overlay: rgba($esds-text-color-link-on-dark-photograph, .5);
+
+// D9F2F7
 
 .escom-bio-thumbnails {
     display: flex;
@@ -26,11 +27,14 @@ $escom-bio-thumbnails-color-photo-overlay: rgba($esds-text-color-link-on-dark-ph
 }
 
 .escom-bio-thumbnail__image-wrap {
+    border-radius: $esds-border-radius-default;
     margin: $esds-space-stack-half-x;
+    overflow: hidden;
     position: relative;
 
     &:before {
-        background: $escom-bio-thumbnails-color-photo-overlay;
+        background: darken($esds-interactive-color-hover-on-light, 10);
+        border-radius: $esds-border-radius-default;
         bottom: 0;
         content: '';
         left: 0;
@@ -43,12 +47,11 @@ $escom-bio-thumbnails-color-photo-overlay: rgba($esds-text-color-link-on-dark-ph
     }
 
     .escom-bio-thumbnail:hover &:before {
-        opacity: .4;
+        opacity: .5;
     }
 }
 
 .escom-bio-thumbnail__image {
-    border-radius: $esds-border-radius-default;
     display: block;
     max-width: 100%;
 }
