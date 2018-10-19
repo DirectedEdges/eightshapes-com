@@ -1,21 +1,28 @@
 $escom-bio-thumbnails-color-photo-overlay: rgba($esds-text-color-link-on-dark-photograph, .5);
 
 .escom-bio-thumbnails {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    @media screen and (min-width: 600px) {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    @media screen and (min-width: 1000px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    }
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.escom-bio-thumbnails__placeholder,
 .escom-bio-thumbnail {
+    flex: 1 1 50%;
     padding: $esds-space-inset-1-x;
     text-align: center;
     text-decoration: none;
-    width: 100%;
+    
+    @media screen and (min-width: 600px) {
+        flex: 1 1 33.3333333333%;
+    }
+    @media screen and (min-width: 1000px) {
+        flex: 1 1 20%;
+    }
+}
+
+.escom-bio-thumbnails__placeholder {
+    height: 0;
+    overflow: hidden;
 }
 
 .escom-bio-thumbnail__image-wrap {

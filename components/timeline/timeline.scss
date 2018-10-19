@@ -64,20 +64,9 @@
     margin: 0;
 }
 
-.escom-timeline__heading {
-    @include esds-font-reset();
-    color: $esds-text-color-brand;
-    font-size: $esds-font-size-heading-level-3-default;
-    line-height: $esds-font-line-height-normal;
-    margin: $esds-space-stack-1-x;
-
-    &:first-child {
-        margin-top: -6px;
-    }
-}
 
 .escom-timeline__content-left-right {
-    display: grid;
+    display: flex;
 
     @media screen and (min-width: $esds-breakpoints-width-768) {
         grid-gap: $esds-space-generic-2-x;
@@ -88,6 +77,23 @@
         @media screen and (min-width: $esds-breakpoints-width-768) {
             grid-template-columns: 10% 90%;
         }
+    }
+}
+
+.escom-timeline__heading {
+    @include esds-font-reset();
+    color: $esds-text-color-brand;
+    font-size: $esds-font-size-heading-level-3-default;
+    line-height: $esds-font-line-height-normal;
+    margin: $esds-space-stack-1-x;
+
+    &:first-child {
+        margin-top: -6px;
+    }
+
+    @media screen and (min-width: $esds-breakpoints-width-768) {
+        flex: 0 0 20%;
+        margin-right: $esds-space-generic-2-x;
     }
 }
 
