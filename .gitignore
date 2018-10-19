@@ -31,6 +31,11 @@ jspm_packages/
 # keep files in subdirectories in /components
 !/components/*/
 
+# Webroot
+/docs
+
+# Deploy build tmp directory
+/tmp
 
 # MacOS folder attributes
 *.DS_Store
