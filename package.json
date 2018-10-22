@@ -23,6 +23,6 @@
     "fs": "0.0.1-security"
   },
   "dependencies": {
-    "esds-library": "^0.9.0"
+    "esds-library": "^0.10.0"
   }
 }
