@@ -19,7 +19,7 @@
   "homepage": "http://eightshapes.com",
   "devDependencies": {
     "del": "^3.0.0",
-    "esds-build": "^0.28.1",
+    "esds-build": "^0.39.1",
     "fs": "0.0.1-security"
   },
   "dependencies": {
