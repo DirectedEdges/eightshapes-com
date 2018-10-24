@@ -14,9 +14,13 @@
     p {
         @include esds-body-text-m();
         color: $esds-color-neutral-25;
-        font-family: 'Lustria', serif;
-        line-height: 1.75;
+        font-family: 'Lora', serif;
+        line-height: 1.85;
         margin: $esds-space-stack-2-x;
+
+        a {
+            @include esds-text-color('link');
+        }
     }
 
     :not(pre) code {
@@ -24,7 +28,7 @@
         border-radius: 4px;
         color: $esds-color-neutral-42;
         font-size: 90%;
-        padding: 6px;
+        padding: 4px 6px;
     }
 
     hr {
