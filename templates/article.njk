@@ -1,0 +1,57 @@
+{% set title = title | default("Article Title") %}
+{% set title_image_path = title_image_path | default(false) %}
+{% set deck = deck | default(false) %}
+{% set author = author | default(false) %}
+{% set author_role = author_role | default(false) %}
+{% set published_date = published_date | default(false) %}
+{% set read_duration = read_duration | default(false) %}
+{% set masthead = masthead | default(false) %}
+
+{% extends "templates/base.njk" %}
+
+{% block head_elements %}
+<link href="https://fonts.googleapis.com/css?family=Lustria" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    {{ esds.breadcrumb(href="/") }}
+    {% call esds.row(background="white", class="esds-row--tall-inset esds-row--article-max-width") %}
+        <div class="escom-article__author-row">
+            <div class="escom-article__author-avatar"
+                style="background-image: url(/images/bios/bio-thumb-nathan-curtis.png)">
+            </div>
+            <div class="escom-article__author-text">
+                <p class="escom-article__author">
+                    {{ author }}
+                </p>
+                <p class="escom-article__author-role">
+                    {{ author_role }}
+                </p>
+                <p>
+                    <span class="escom-article__published-date">
+                        {{ published_date }} •
+                    </span>
+                    <span class="escom-article__read-duration">
+                        {{ read_duration }}min
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="escom-article__title-row">
+            <h1 class="escom-article__title">{{ title }}</h1>
+            {% if deck %}
+            <h2 class="escom-article__deck">{{ deck }}</h2>
+            {% endif %}
+        </div>
+    {% endcall %}
+
+    {% if masthead %}
+    {% call esds.row(background="dark", class="esds-row--article-masthead", background_image="/images/articles/" + title_image_path + "/masthead.png") %}
+    {% endcall %}    
+    {% endif %}
+
+    {% call esds.row(background="white", class="esds-row--tall-inset esds-row--article-max-width escom-article") %}
+        {% block main_article %}
+        {% endblock %}
+    {% endcall %}
+{% endblock %}
