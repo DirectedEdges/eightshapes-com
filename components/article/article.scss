@@ -40,6 +40,13 @@
     }
 }
 
+.escom-article__masthead {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 .escom-article__title {
     @include esds-level-2-heading();
     font-weight: $esds-font-weight-bold;
