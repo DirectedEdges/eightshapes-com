@@ -35,7 +35,7 @@ article_template_pre = "{% set title = '' %}
 {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
 {% set published_date = '' %}
 {% set read_duration = '' %}
-{% set masthead = true %}
+{% set masthead = false %}
 
 {% set title_tag = 'EightShapes > Articles >'  + title %}
 {% extends 'templates/article.njk' %}
@@ -49,5 +49,17 @@ article_content = "#{article_template_pre}#{article_html.to_xhtml( indent:2, ind
 
 puts "Writing to file: /pages/articles/#{filename}"
 File.open("pages/articles/#{filename}.njk", 'w') { |file| file.write(article_content) }
+
+puts "Creating image directory: /images/articles/#{filename}"
+directory_name = "images/articles/#{filename}"
+Dir.mkdir(directory_name) unless File.exists?(directory_name)
+
+puts "Downloading images:"
+
+
+
+# File.open('pie.png', 'wb') do |fo|
+#   fo.write open("http://chart.googleapis.com/chart?#{failures_url}").read 
+# end
 
 puts "COMPLETE"
