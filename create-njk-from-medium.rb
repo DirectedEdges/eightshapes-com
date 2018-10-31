@@ -51,10 +51,26 @@ puts "Writing to file: /pages/articles/#{filename}"
 File.open("pages/articles/#{filename}.njk", 'w') { |file| file.write(article_content) }
 
 puts "Creating image directory: /images/articles/#{filename}"
-directory_name = "images/articles/#{filename}"
-Dir.mkdir(directory_name) unless File.exists?(directory_name)
+article_image_directory = "images/articles/#{filename}"
+Dir.mkdir(article_image_directory) unless File.exists?(article_image_directory)
 
 puts "Downloading images:"
+featured_image = article_html.css("img[data-is-featured='true']")
+images = article_html.css("img:not([data-is-featured='true'])")
+
+if featured_image
+  puts "Downloading Masthead image: #{featured_image.attr('src')}"
+  File.open("#{article_image_directory}/Masthead.png", 'wb') do |fo|
+    fo.write open(featured_image.attr('src')).read 
+  end
+end
+
+images.each_with_index do |i, index|
+  puts "Downloading Article image: #{i.attr('src')}"
+  File.open("#{article_image_directory}/#{index + 1}.png", 'wb') do |fo|
+    fo.write open(i.attr('src')).read 
+  end
+end
 
 
 
