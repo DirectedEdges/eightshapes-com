@@ -23,6 +23,10 @@ medium_attributes_to_remove.each do |a|
 end
 # End formatting medium HTML
 
+# Destination filename
+filename = medium_url.gsub(/https:\/\/medium.com\/eightshapes-llc\//, '')
+last_hypen_index = filename.rindex(/-/)
+filename.slice!(last_hypen_index, filename.length)
 
 article_template_pre = "{% set title = '' %}
 {% set title_image_path = title | lower | replace(' ','-') %}
@@ -43,7 +47,7 @@ article_template_post = "\n\n{% endblock %}"
 article_content = "#{article_template_pre}#{article_html.to_xhtml( indent:2, indent_text:" " )}#{article_template_post}"
 # article_content = "#{article_template_pre}#{article_html}#{article_template_post}"
 
-File.open('pages/articles/imported-from-medium.njk', 'w') { |file| file.write(article_content) }
+puts "Writing to file: /pages/articles/#{filename}"
+File.open("pages/articles/#{filename}.njk", 'w') { |file| file.write(article_content) }
 
-
-puts article_html
+puts "COMPLETE"
