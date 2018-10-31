@@ -1,0 +1,14 @@
+{% macro article_figure(
+    image_path = false,
+    image_number = 1,
+    image_alt = false,
+    caption = "",
+    class = false
+    ) %}
+
+    <figure class="escom-article-figure{% if class %} {{ class }}{% endif %}">
+        <img class="escom-article-figure__image" src="/images/articles/{{ image_path }}/{{ image_number }}.png" alt="{{ image_alt }}">
+        <figcaption class="escom-article-figure__caption">{{ caption | safe }}</figcaption>
+    </figure>
+
+{% endmacro %}

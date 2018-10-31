@@ -1,0 +1,25 @@
+.escom-article-figure {
+    margin: $esds-space-stack-2-x;
+    padding: 0;
+}
+
+.escom-article-figure--wide {
+    max-width: 970px;
+}
+
+.escom-article-figure__image {
+    margin: $esds-space-stack-1-x;
+    width: 100%;
+}
+
+.escom-article-figure__caption {
+    @include esds-body-text-s();
+    @include esds-text-color('secondary');
+    padding-left: $esds-space-generic-2-x;
+    padding-right: $esds-space-generic-2-x;
+    text-align: center;
+
+    a {
+        @include esds-text-color('link');
+    }
+}

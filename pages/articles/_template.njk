@@ -1,0 +1,99 @@
+{% set title = "" %}
+{% set title_image_path = title | lower | replace(" ","-") %}
+{% set deck = "" %}
+{% set author = "Nathan Curtis" %}
+{% set author_role = "Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad." %}
+{% set published_date = "" %}
+{% set read_duration = "" %}
+{% set masthead = true %}
+
+{% set title_tag = "EightShapes > Articles > " + title %}
+{% extends 'templates/article.njk' %}
+
+{% block main_article %}
+
+    {% filter markdown %}
+
+
+    {{ escom.article_figure(
+        image_path = title_image_path,
+        image_number = '1',
+        image_alt = '',
+        caption = ''
+    ) }}
+
+
+    {{ escom.article_figure(
+        image_path = title_image_path,
+        image_number = '2',
+        image_alt = '',
+        caption = ''
+    ) }}
+
+
+    {{ escom.article_figure(
+        image_path = title_image_path,
+        image_number = '3',
+        image_alt = '',
+        caption = ''
+    ) }}
+
+
+    {{ escom.article_figure(
+        image_path = title_image_path,
+        image_number = '4',
+        image_alt = '',
+        caption = ''
+    ) }}
+
+
+    {{ escom.article_figure(
+        image_path = title_image_path,
+        image_number = '5',
+        image_alt = '',
+        caption = ''
+    ) }}
+
+
+    {{ escom.article_figure(
+        image_path = title_image_path,
+        image_number = '6',
+        image_alt = '',
+        caption = ''
+    ) }}
+
+
+    {{ escom.article_figure(
+        image_path = title_image_path,
+        image_number = '7',
+        image_alt = '',
+        caption = ''
+    ) }}
+
+
+    {{ escom.article_figure(
+        image_path = title_image_path,
+        image_number = '8',
+        image_alt = '',
+        caption = ''
+    ) }}
+
+
+    {{ escom.article_figure(
+        image_path = title_image_path,
+        image_number = '9',
+        image_alt = '',
+        caption = ''
+    ) }}
+
+
+    {{ escom.article_figure(
+        image_path = title_image_path,
+        image_number = '10',
+        image_alt = '',
+        caption = ''
+    ) }}
+
+    {% endfilter %}
+
+{% endblock %}
