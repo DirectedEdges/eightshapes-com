@@ -1,0 +1,144 @@
+{% set title = '' %}
+{% set title_image_path = title | lower | replace(' ','-') %}
+{% set deck = '' %}
+{% set author = 'Nathan Curtis' %}
+{% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
+{% set published_date = '' %}
+{% set read_duration = '' %}
+{% set masthead = false %}
+
+{% set title_tag = 'EightShapes > Articles >'  + title %}
+{% extends 'templates/article.njk' %}
+
+{% block main_article %}
+<div>
+  <section>
+    <div>
+      <hr />
+    </div>
+    <div>
+      <div>
+        <h1>And You Thought Buttons Were Easy?</h1>
+        <h2>A Story for Selling a System that Scales</h2>
+        <p>Selling a design system into an enterprise usually involves a pitch to many audiences. Designers appreciate cohesiveness. Engineers value efficiencies. And, pivotally, executives appreciate value.</p>
+        <p>While a pitch covers a lot of ground — system composition, team &amp; community strategy, scope &amp; roadmaps — my narrative pivots from introductions to the ask using a story about Buttons. It’s simple yet reveals button’s complicated yet solvable glory, taking a few slides and lasting a minute or two.</p>
+        <p>Experience suggests the story is compelling enough to leave executives nodding heads, reacting with thoughtful questions, and admitting “You had me at buttons.”</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div>
+      <hr />
+    </div>
+    <div>
+      <div>
+        <h3>Part #1. The Setup: Button’s Are Simple, Right?</h3>
+        <p>Our trip towards cohesiveness starts with the most basic of components: the button. It’s a simple component, made of a label on a background shape.</p>
+        <figure>
+          <div>
+            <div></div>
+            <img data-image-id="1*rR4_67ndpWs7FCpnF81fqg.png" data-focus-x="50" data-focus-y="51" src="https://cdn-images-1.medium.com/max/1600/1*rR4_67ndpWs7FCpnF81fqg.png" />
+          </div>
+        </figure>
+        <p>However, even our simple button includes many properties that formalize important decisions about our visual language. Text color, case, weight, and size. Shape size and roundedness. Spatial density both within a component as well as it’s relationship with adjacent components.</p>
+        <figure>
+          <div>
+            <div></div>
+            <img data-image-id="1*u9EZmj7pC5SCmUD3T3bXsg.png" src="https://cdn-images-1.medium.com/max/1600/1*u9EZmj7pC5SCmUD3T3bXsg.png" />
+          </div>
+        </figure>
+        <p>These fundamental decisions spread across all products we make. Getting enterprise-wide agreement on them takes effort, coordination, and time.</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div>
+      <hr />
+    </div>
+    <div>
+      <div>
+        <h3>Part #2. The Switch: Layered Complexity</h3>
+        <p>Yet, there’s more to buttons than just a simple, default appearance. A button has arc of interaction including hover, active, and disabled states.</p>
+        <figure>
+          <div>
+            <div></div>
+            <img data-image-id="1*Zmu94ogoF2z2OsggAUKKQw.png" src="https://cdn-images-1.medium.com/max/1600/1*Zmu94ogoF2z2OsggAUKKQw.png" />
+          </div>
+        </figure>
+        <p>And, we’ll need more than one, primary button. We’ll need a range of buttons: secondary, tertiary, and perhaps even special buttons for scenarios like getting started or a red button for selling things, since online marketing proved that red sells best.</p>
+        <figure>
+          <div>
+            <div></div>
+            <img data-image-id="1*zJe_iESaQ5vLQd2dOHGlgg.png" src="https://cdn-images-1.medium.com/max/1600/1*zJe_iESaQ5vLQd2dOHGlgg.png" />
+          </div>
+        </figure>
+        <p>We’ll also incorporate icons and interactions like a menu to open a panel, or — my favorite — a split button that couples a primary action on the left with a menu-triggering caret on the right.</p>
+      </div>
+      <div>
+        <figure>
+          <div>
+            <div></div>
+            <img data-image-id="1*dXLLnsRNUi5nBSSzp83d-g.png" src="https://cdn-images-1.medium.com/max/2000/1*dXLLnsRNUi5nBSSzp83d-g.png" />
+          </div>
+        </figure>
+      </div>
+      <div>
+        <p>We must solve for how these variations appear on diverse backgrounds, whether light and dark settings or a range of themes.</p>
+      </div>
+      <div>
+        <figure>
+          <div>
+            <div></div>
+            <img data-image-id="1*ZHwGMIeJrbi9iLZQYHT43g.png" src="https://cdn-images-1.medium.com/max/2000/1*ZHwGMIeJrbi9iLZQYHT43g.png" />
+          </div>
+        </figure>
+      </div>
+      <div>
+        <p>All of these combinations must be considered to ensure that the system delivers on promised accessibility. It turns out, buttons are complicated.</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div>
+      <hr />
+    </div>
+    <div>
+      <div>
+        <h3>Part #3. Buttons Are Expensive, So Make a Library</h3>
+        <p>Let’s imagine you combine a designer, engineer and QA specialist to design, build, and test these buttons. If these staff cost $100/hr, and it takes this team of three 200 hours combined to design, build and test buttons at this level of quality, then buttons cost $20,000.</p>
+        <blockquote>200 hrs × $100/hr = $20,000 for Buttons</blockquote>
+        <p>If your enterprise has 25 teams each making buttons, then it costs your enterprise $1,000,000 to have good buttons.</p>
+        <blockquote>$20,000 × 50 teams = $1,000,000 for Buttons</blockquote>
+        <p>That’s a <em>million</em> dollars, for buttons. And since buttons were made by 50 <em>different</em> teams, expect quality and consistency to vary significantly.</p>
+        <p>If buttons cost a million dollars, how much do our complicated components like header, cards, data grids, and modals cost? It’s not hard to imagine that they could cost millions of dollars each.</p>
+        <p>This is why we need a system to spread a visual language and reusable UI components across our enterprise of product development teams. So, on to how we can make and adopt such a system…</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div>
+      <hr />
+    </div>
+    <div>
+      <div>
+        <p>
+          <em>About to embark on a design system, or need to dive deeper to discuss products and players? EightShapes conducts </em>
+          <a href="http://eightshapes.com/workshop-planning-parts-products-people.html" rel="nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener" target="_blank">
+            <em>systems planning workshops</em>
+          </a>
+          <em> and coaches clients on </em>
+          <a href="http://eightshapes.com/design-systems.html" rel="nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener" target="_blank">
+            <em>design systems</em>
+          </a>
+          <em>. </em>
+          <a href="https://twitter.com/nathanacurtis" rel="nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener nofollow noopener" target="_blank">
+            <em>Let’s talk</em>
+          </a>
+          <em>!</em>
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+
+{% endblock %}
