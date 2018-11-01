@@ -73,29 +73,30 @@ unless figures.empty?
   figures.each do |fig|
     img = fig.css("img")
 
-    if img.attr('data-is-featured')
-      masthead = true
-      puts "Downloading Masthead image: #{img.attr('src')}"
-      File.open("#{article_image_directory}/Masthead.png", 'wb') do |fo|
-        fo.write open(img.attr('src')).read 
-      end
+    unless img.empty?
+      if img.attr('data-is-featured')
+        masthead = true
+        puts "Downloading Masthead image: #{img.attr('src')}"
+        File.open("#{article_image_directory}/Masthead.png", 'wb') do |fo|
+          fo.write open(img.attr('src')).read 
+        end
 
-      # Remove the featured image figure from the article content
-      fig.remove
-    else
-      # Not the featured image
-      puts "Downloading Article image: #{img.attr('src')}"
-      File.open("#{article_image_directory}/#{numbered_image_index}.png", 'wb') do |fo|
-        fo.write open(img.attr('src')).read 
-      end
+        # Remove the featured image figure from the article content
+        fig.remove
+      else
+        # Not the featured image
+        puts "Downloading Article image: #{img.attr('src')}"
+        File.open("#{article_image_directory}/#{numbered_image_index}.png", 'wb') do |fo|
+          fo.write open(img.attr('src')).read 
+        end
 
-      caption = ""
-      figcaption = fig.css('figcaption')
-      if !figcaption.empty?
-        caption = figcaption.first.children.to_xhtml
-      end
+        caption = ""
+        figcaption = fig.css('figcaption')
+        if !figcaption.empty?
+          caption = figcaption.first.children.to_xhtml
+        end
 
-      fig.replace("<insulate>{% endfilter %}
+        fig.replace("<insulate>{% endfilter %}
 
 {{ escom.article_figure(
     image_path = title_image_path,
@@ -106,8 +107,9 @@ unless figures.empty?
 
 {% filter markdown %}</insulate>")
 
-      numbered_image_index = numbered_image_index + 1
-    end
+        numbered_image_index = numbered_image_index + 1
+      end
+    end # unless img.empty?
   end
 end
 
@@ -148,7 +150,7 @@ article_html = article_html.gsub(/<insulate>/, '').gsub(/<\/insulate>/, '')
 # End formatting medium HTML
 
 article_template_pre = "{% set title = '#{title}' %}
-{% set title_image_path = title | lower | replace(' ','-') %}
+{% set title_image_path = '#{filename}' %}
 {% set deck = '#{deck}' %}
 {% set author = 'Nathan Curtis' %}
 {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}

@@ -1,5 +1,5 @@
 {% set title = 'Team Models for Scaling a Design System' %}
-{% set title_image_path = title | lower | replace(' ','-') %}
+{% set title_image_path = 'team-models-for-scaling-a-design-system' %}
 {% set deck = 'Evolving Past Overlords to Centralize or Federate Design Decision-Making Across Platforms' %}
 {% set author = 'Nathan Curtis' %}
 {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
@@ -16,10 +16,16 @@ Back in the day, design systems were pretty easy to understand.
 
 My day was a cool afternoon in September 2006, and I’d just immersed myself as a designer using Sun.com’s living style guide (we called it a component library, for the record). Even by today’s standards, that system remains the most formidable, mind-blowing web-based component library I’ve ever seen: 1,000s of component variations, each comprised of modular HTML, CSS, and JavaScript goodness.
 
-<figure>
-    <img data-image-id="1*kmGiCCCuoRgi7nLXqKhK6w.png" src="https://cdn-images-1.medium.com/max/1600/1*kmGiCCCuoRgi7nLXqKhK6w.png">
-    <figcaption>sun.com/webdesign’s Component Library index, circa 2009</figcaption>
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '1',
+    image_alt = '',
+    caption = 'sun.com/webdesign’s Component Library index, circa 2009'
+) }}
+
+{% filter markdown %}
 ### The Overlord&nbsp;Rules
 
 The library was made by one unicorny overlord (before unicorns were a thing) with help from another front end dev. They supported code and people making two products: a marketing site and a sibling developer’s documentation site. The overlord monitored needs across web efforts (including more peripheral web apps using the library), chose what to design and build how he wanted it designed and built, and released it monthly. The library had a budget, and the program was predictable in cadence, resources and productivity.
@@ -48,10 +54,16 @@ The overlord — a solitary team model — exists frequently in practice
 
 > “I built a mini-Bootstrap for my team. You should totally use it for your product!”
 
-<figure>
-    <img data-image-id="1*O756kqOr3zm_DYdOI5f5Ww.png" src="https://cdn-images-1.medium.com/max/1600/1*O756kqOr3zm_DYdOI5f5Ww.png">
-    <figcaption>A solitary model sees a one team make a system available, but with efforts focused primarily on that team’s needs</figcaption>
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '2',
+    image_alt = '',
+    caption = 'A solitary model sees a one team make a system available, but with efforts focused primarily on that team’s needs'
+) }}
+
+{% filter markdown %}
 
 It’s a noble enterprise, making one’s library available. The value is obvious, right? A production-grade codebase, based on an approved visual language, maintained and grown at another team’s expense.
 
@@ -71,10 +83,16 @@ A centralized team supports the system with a dedicated group that makes and spr
 
 > We can help you learn and apply an established system, so let us know what you need. We’ll make more. We are here to serve you.
 
-<figure>
-    <img data-image-id="1*lAYjcxY7T4KUjLuYv-fV_g.png" src="https://cdn-images-1.medium.com/max/1600/1*lAYjcxY7T4KUjLuYv-fV_g.png">
-    <figcaption>A single, central design team produces and supports a system used by others as a part of their job</figcaption>
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '3',
+    image_alt = '',
+    caption = 'A single, central design team produces and supports a system used by others as a part of their job'
+) }}
+
+{% filter markdown %}
 
 The centralized system team can:
 
@@ -102,10 +120,16 @@ In recent years, systematic thinking of designers across platforms and product l
 
 Such a committee federates a system’s design direction to a representative, empowered subset of designers and leaders designated to collaborate on the system for a period of time.
 
-<figure>
-    <img data-image-id="1*rq8-36NRRsqK1eU5ZBsTLA.png" src="https://cdn-images-1.medium.com/max/1600/1*rq8-36NRRsqK1eU5ZBsTLA.png">
-    <figcaption>Designers from multiple product teams decide on the system together</figcaption>
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '4',
+    image_alt = '',
+    caption = 'Designers from multiple product teams decide on the system together'
+) }}
+
+{% filter markdown %}
 
 They make design decisions collectively, even if only a subset — or others — record, build upon and communicate those decisions through artifacts like a living style guide.
 
@@ -135,10 +159,16 @@ Over the past few years, my experiences suggest that considerations include a mi
 
 In a recent engagement for a small product software company, I was delighted to see sufficient UX and design involvement across web sites (for marketing and community engagement) and web-based app products. Responsibilities were well-understood, and a design language and key components had begun to stabilize.
 
-<figure>
-    <img data-image-id="1*DX5Xos08pbIGgTeDMNhkBQ.png" src="https://cdn-images-1.medium.com/max/1600/1*DX5Xos08pbIGgTeDMNhkBQ.png">
-    <figcaption>Designers across web site and app teams provided sufficient representation to legitimize the effort</figcaption>
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '5',
+    image_alt = '',
+    caption = 'Designers across web site and app teams provided sufficient representation to legitimize the effort'
+) }}
+
+{% filter markdown %}
 
 My time with them convened system contributors in a war room for an intense week to hash out details and launch the system company wide, by week’s end.
 
@@ -151,10 +181,16 @@ The breadth of a system team’s talent should mirror the system’s scope. Matu
 - **U** ser experience (and IA) concerns like navigation, flows, and tasks
 - **V** isual style like color, typography, and iconography
 - **I** nteraction with a particular focus on UI patterns, animation & motion
-<figure>
-    <img data-image-id="1*3bvasPfY4zF1ltpH70zwnw.png" src="https://cdn-images-1.medium.com/max/1600/1*3bvasPfY4zF1ltpH70zwnw.png">
-    <figcaption>Associate experts with disciplines: U for UX, I for interaction, and V for style</figcaption>
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '6',
+    image_alt = '',
+    caption = 'Associate experts with disciplines: U for UX, I for interaction, and V for style'
+) }}
+
+{% filter markdown %}
 
 This established a path of who to “Talk to..” for those outside system efforts. Internally, however, these individuals consistently blurred such boundaries when collaborating, encouraging each other to add whatever value they can, when they can.
 
@@ -164,10 +200,16 @@ The trio became known as the bizarre acronym **UVI**. Say it, out loud. It sound
 
 One large design organization intermingled directors (designers themselves, but managing the work of 10 to 30 other designers) with designers producing on flagship web and native products.
 
-<figure>
-    <img data-image-id="1*6qgecJI_ymhOKWdjsZ6e1g.png" src="https://cdn-images-1.medium.com/max/1600/1*6qgecJI_ymhOKWdjsZ6e1g.png">
-    <figcaption>Design system contributors across platforms, including engaged directors (D)</figcaption>
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '7',
+    image_alt = '',
+    caption = 'Design system contributors across platforms, including engaged directors (D)'
+) }}
+
+{% filter markdown %}
 
 The directors brought exposure to a wide range of emerging designs on their teams. Sure, they weren’t producing design artifacts on a daily basis. But they sweat design details, like course correcting usage of a blue tint that muddied a background in a product outside their purview.
 
@@ -181,10 +223,16 @@ Living style guides don’t build themselves. And all those (cheap) words and (e
 
 As a design system stabilizes, every team I’ve observed has designers that _do_ build, document and sustain it, and designers that _can’t_ or say they want to but _don’t_. As decisions — a primary button’s color, a modal’s close icon, a nav bar’s responsiveness —stabilize, teams need to figure out how to fluidly and continuously communicate that change.
 
-<figure>
-    <img data-image-id="1*UYh952YzbKQ-jcumQL-90Q.png" src="https://cdn-images-1.medium.com/max/1600/1*UYh952YzbKQ-jcumQL-90Q.png">
-    <figcaption>Identify who (in orange) can dependably build and document artifacts based upon the system</figcaption>
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '8',
+    image_alt = '',
+    caption = 'Identify who (in orange) can dependably build and document artifacts based upon the system'
+) }}
+
+{% filter markdown %}
 
 Good teams have a clear sense of who documents these decisions and how they are communicated. These contributors (depicted in orange) author guidelines, build components in code, update design tool templates, and do so much more keep the system alive.
 
@@ -206,10 +254,16 @@ Leaders create space for doers to get the job done. They ensure there’s staff 
 
 Federated teams strongly discourage exclusivity once the system starts to spread. Instead, they embrace peripheral designers willing (and able) to contribute.
 
-<figure>
-    <img data-image-id="1*l1YTCa1i3gi6_PD7Dn_Rxw.png" src="https://cdn-images-1.medium.com/max/1600/1*l1YTCa1i3gi6_PD7Dn_Rxw.png">
-    <figcaption>System contributors — including builders and authors (depicted in orange) — emerge from further out</figcaption>
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '9',
+    image_alt = '',
+    caption = 'System contributors — including builders and authors (depicted in orange) — emerge from further out'
+) }}
+
+{% filter markdown %}
 
 Such contributions can trigger a reciprocal incentive: autonomy. [Jon Wiley](https://twitter.com/jonwiley) claims that during Material Design’s formative period, the more that peripheral designers would engage and embrace the mission, the more the core team would be tolerant of and interested in divergent ideas.
 
