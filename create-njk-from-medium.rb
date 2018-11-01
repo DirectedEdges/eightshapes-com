@@ -113,34 +113,6 @@ unless figures.empty?
   end
 end
 
-# unless featured_image.empty?
-#   masthead = true
-#   puts "Downloading Masthead image: #{featured_image.attr('src')}"
-#   File.open("#{article_image_directory}/Masthead.png", 'wb') do |fo|
-#     fo.write open(featured_image.attr('src')).read 
-#   end
-#   # Remove the featured image from the article content, the nunjucks template will automatically include Masthead.png
-#   featured_image.each { |node| node.remove }
-# end
-
-# unless images.empty?
-#   images.each_with_index do |i, index|
-#     puts "Downloading Article image: #{i.attr('src')}"
-#     File.open("#{article_image_directory}/#{index + 1}.png", 'wb') do |fo|
-#       fo.write open(i.attr('src')).read 
-#     end
-
-#     # figure = i.parent
-
-#     i.replace("{{ escom.article_figure(
-#                   image_path = title_image_path,
-#                   image_number = '#{index + 1}',
-#                   image_alt = '',
-#                   caption = ''
-#               ) }}")
-#   end
-# end
-
 # CONVERT HTML TO MARKDOWN
 article_html = ReverseMarkdown.convert article_html.to_xhtml
 # After conversion strip <insulate> tags that protect nunjucks macros from gettin munged by the ReverseMarkdown gem
