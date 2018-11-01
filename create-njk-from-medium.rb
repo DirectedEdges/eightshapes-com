@@ -1,5 +1,6 @@
 require 'open-uri'
 require 'nokogiri'
+require 'reverse_markdown'
 
 unless ARGV.length == 1 && ARGV[0].include?('medium.com')
   puts "Please provide a valid medium url"
@@ -9,6 +10,11 @@ end
 
 medium_url = ARGV[0]
 puts "Retrieving markup from : #{medium_url}"
+
+# Destination filename
+filename = medium_url.gsub(/https:\/\/medium.com\/eightshapes-llc\//, '')
+last_hypen_index = filename.rindex(/-/)
+filename.slice!(last_hypen_index, filename.length)
 
 # doc = Nokogiri::XML(open(medium_url),&:noblanks)
 doc = Nokogiri::HTML(open(medium_url),&:noblanks)
@@ -42,37 +48,8 @@ article_html.css('section').each { |node| node.replace(node.children) }
 article_html.css('div > div').each { |node| node.replace(node.children) }
 article_html.css('div > img').each { |node| node.parent.replace(node.parent.children) }
 article_html.css('div > hr:first-child').remove
-# article_html.css('div hr').each { |node| node.parent.replace('<hr/>') }
-# End formatting medium HTML
 
-# Destination filename
-filename = medium_url.gsub(/https:\/\/medium.com\/eightshapes-llc\//, '')
-last_hypen_index = filename.rindex(/-/)
-filename.slice!(last_hypen_index, filename.length)
-
-article_template_pre = "{% set title = '#{title}' %}
-{% set title_image_path = title | lower | replace(' ','-') %}
-{% set deck = '#{deck}' %}
-{% set author = 'Nathan Curtis' %}
-{% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-{% set published_date = '#{published_date}' %}
-{% set read_duration = '#{read_duration}' %}
-{% set masthead = false %}
-
-{% set title_tag = 'EightShapes > Articles >'  + title %}
-{% extends 'templates/article.njk' %}
-
-{% block main_article %}
-  {% filter markdown %}\n"
-
-article_template_post = "\n\n  {% endfilter %}\n{% endblock %}"
-
-article_content = "#{article_template_pre}#{article_html.to_xhtml( indent:2, indent_text:" " )}#{article_template_post}"
-# article_content = "#{article_template_pre}#{article_html}#{article_template_post}"
-
-puts "Writing to file: /pages/articles/#{filename}"
-File.open("pages/articles/#{filename}.njk", 'w') { |file| file.write(article_content) }
-
+# SCRAPE IMAGES
 puts "Creating image directory: /images/articles/#{filename}"
 article_image_directory = "images/articles/#{filename}"
 Dir.mkdir(article_image_directory) unless File.exists?(article_image_directory)
@@ -98,6 +75,36 @@ unless images.empty?
     end
   end
 end
+
+# CONVERT HTML TO MARKDOWN
+article_html = ReverseMarkdown.convert article_html.to_xhtml
+puts article_html.inspect
+# End formatting medium HTML
+
+article_template_pre = "{% set title = '#{title}' %}
+{% set title_image_path = title | lower | replace(' ','-') %}
+{% set deck = '#{deck}' %}
+{% set author = 'Nathan Curtis' %}
+{% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
+{% set published_date = '#{published_date}' %}
+{% set read_duration = '#{read_duration}' %}
+{% set masthead = false %}
+
+{% set title_tag = 'EightShapes > Articles >'  + title %}
+{% extends 'templates/article.njk' %}
+
+{% block main_article %}
+  {% filter markdown %}\n"
+
+article_template_post = "\n\n  {% endfilter %}\n{% endblock %}"
+
+# article_content = "#{article_template_pre}#{article_html.to_xhtml( indent:2, indent_text:" " )}#{article_template_post}"
+article_content = "#{article_template_pre}#{article_html}#{article_template_post}"
+
+puts "Writing to file: /pages/articles/#{filename}"
+File.open("pages/articles/#{filename}.njk", 'w') { |file| file.write(article_content) }
+
+
 
 
 # File.open('pie.png', 'wb') do |fo|
