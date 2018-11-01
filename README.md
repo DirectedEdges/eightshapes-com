@@ -11,3 +11,26 @@ Public facing website. Master branch is automatically published to [eightshapes.
 - esds-library
     - [NPM](https://www.npmjs.com/package/esds-library)
     - [GitHub Repo](https://github.com/EightShapes/esds-library)
+
+
+## Publishing to eightshapes.com
+
+This repository uses Github Pages to publish to https://eightshapes.com
+The webroot for the site is the `gh-pages` branch.
+The local development environment includes a `gulp` task designed to publish everything in your current local dev environment (including any bugs!) to https://eightshapes.com
+
+### Steps to publish
+
+1. As a best practice, make sure you've committed all the changes you want to deploy and pushed or merged them into the `master` branch.  
+There's no code-level enforcement of this, the deploy task will simply deploy whatever state your current local environment is in.
+2. From your clean, local copy of the `master` branch run the local environment using the `gulp` command.
+3. Browse around in the local environment to ensure your intended changes are present and that there are no sass or nunjucks compilation errors in Terminal.
+4. Once satisfied that the local environment is ready to deploy `ctrl + C` to stop it from running.
+5. Finally run `gulp deploy-to-gh-pages` to deploy to eightshapes.com
+6. What a few minutes (usually less than 5) and verify your changes are present on [eightshapes.com](https://eightshapes.com)
+
+### Troubleshooting
+
+If you've run the `gulp deploy-to-gh-pages` command but still don't see your changes on eightshapes.com:
+1. Go to the site's [github repo](https://github.com/EightShapes/eightshapes-com) and switch to the `gh-pages` branch using the web UI. Confirm that your changes are present in that branch.
+2. Check [Github's status page](https://status.github.com/messages) and make sure there are no issues related to "Github Pages Builds"
