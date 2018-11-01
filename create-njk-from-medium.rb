@@ -49,6 +49,12 @@ article_html.css('div > div').each { |node| node.replace(node.children) }
 article_html.css('div > img').each { |node| node.parent.replace(node.parent.children) }
 article_html.css('div > hr:first-child').remove
 
+# h3's > h2's
+article_html.css('h3').each { |node| node.replace("<h2>#{node.children}</h2>") }
+
+# h4's > h3's
+article_html.css('h4').each { |node| node.replace("<h3>#{node.children}</h3>") }
+
 # SCRAPE IMAGES
 puts "Creating image directory: /images/articles/#{filename}"
 article_image_directory = "images/articles/#{filename}"
@@ -78,7 +84,6 @@ end
 
 # CONVERT HTML TO MARKDOWN
 article_html = ReverseMarkdown.convert article_html.to_xhtml
-puts article_html.inspect
 # End formatting medium HTML
 
 article_template_pre = "{% set title = '#{title}' %}
