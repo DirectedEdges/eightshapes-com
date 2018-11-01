@@ -35,6 +35,14 @@ medium_attributes_to_remove = ['data-post-id', 'data-source', 'data-collection-i
 medium_attributes_to_remove.each do |a|
   article_html.xpath("//@#{a}").remove
 end
+
+# Swap <div><hr></div> for just <hr>
+article_html.css('div > hr:first-child:last-child').each { |node| node.parent.replace('<hr/>') }
+article_html.css('section').each { |node| node.replace(node.children) }
+article_html.css('div > div').each { |node| node.replace(node.children) }
+article_html.css('div > img').each { |node| node.parent.replace(node.parent.children) }
+article_html.css('div > hr:first-child').remove
+# article_html.css('div hr').each { |node| node.parent.replace('<hr/>') }
 # End formatting medium HTML
 
 # Destination filename
