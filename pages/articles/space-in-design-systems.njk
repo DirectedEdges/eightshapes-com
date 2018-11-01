@@ -1,0 +1,287 @@
+{% set title = 'Space in Design Systems' %}
+{% set title_image_path = title | lower | replace(' ','-') %}
+{% set deck = 'From Basics to Expanded Concepts to Apply Space with Intent' %}
+{% set author = 'Nathan Curtis' %}
+{% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
+{% set published_date = 'Sep 25, 2016' %}
+{% set read_duration = '9 ' %}
+{% set masthead = false %}
+
+{% set title_tag = 'EightShapes > Articles >'  + title %}
+{% extends 'templates/article.njk' %}
+
+{% block main_article %}
+  {% filter markdown %}
+<figure>
+    <img data-image-id="1*1ScyY1iu_Z0nIc9lNQhoHg.png" src="https://cdn-images-1.medium.com/max/2000/1*1ScyY1iu_Z0nIc9lNQhoHg.png">
+  </figure>
+
+I’ve long referred to [Color](https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3), Type and Icons as the “Big 3” of a system’s visual language. All UI components — from [Buttons](https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23) on up — are built with them. But I left something out. Space, our final frontier.
+
+### Space Rivals&nbsp;Color
+
+Space is everywhere. CSS uses properties like _padding_, _margin_, and absolute positioning’s _left_, _right_, _top_ and _bottom_ to separate objects. Across five libraries (Bootstrap, Salesforce Lightning, Foundation, a previous project, and a current project), I compared occurrence of these _space_ properties relative to property groups of _color_, _size_, _type_, _layout_ and more.
+
+<figure>
+    <img data-image-id="1*Z_2bFUjxDV95Fv7UBj9SqA.png" src="https://cdn-images-1.medium.com/max/2000/1*Z_2bFUjxDV95Fv7UBj9SqA.png">
+    <figcaption>Space rivals color in frequency of use within a library’s style rules</figcaption>
+  </figure>
+
+After removing effects (“zeroed” values like&nbsp;_:0;_ and reserved terms like _transparent_ or _auto_) where CSS already offers us a system for decisions, _space_ rules appeared more than anything except _color_. Nothing else — not _type_, _size_, _layout_ — was even close. There’s so much spatial complexity built into our libraries, let alone our products!
+
+### Space Divides&nbsp;Us
+
+Space epitomizes the “I design this way, you build that way” gap between design and dev. We’ve long lamented the red-lined specs sprinkled over our designs. It never feels worth it. Yet they persist, uninformed by our product’s finished material: HTML’s box model.
+
+<figure>
+    <img data-image-id="1*jonaf7Gz3AKTcmixnJP1QA.png" src="https://cdn-images-1.medium.com/max/2000/1*jonaf7Gz3AKTcmixnJP1QA.png">
+  </figure>
+
+Costs are huge: annotating, translating, discussing, visually scrubbing during QA. All that work&nbsp;… for something still not good enough. Thus space exacts an emotional toll, too.
+
+### Space Concepts Are Primitive
+
+We could weave more intentional spatial concepts through design, code, and conversation. But we don’t. We just use T-shirt sizes and call it a day. We can do better. We can replace red-lined, red-faced rage to inset, squish, stretch, and stack our way towards a future of spatial clarity.
+
+With that in mind, here’s fundamentals, an expanded vocabulary, and further experiences I’ve had when applying space to systems work.
+
+* * *
+
+## Space Fundamentals
+
+### Grid ≠ Space. Grid is a Component, Using&nbsp;Space.
+
+Grids are rich with spatial decisions for columns, gutters, outer margins, and responsive nuance.Teams tackle grids early so users can easily make a page. Unfortunately, that’s often when spatial conversations stop.
+
+<figure>
+    <img data-image-id="1*SyfS2Ghm0k6ZMOZhahTPXg.png" src="https://cdn-images-1.medium.com/max/2000/1*SyfS2Ghm0k6ZMOZhahTPXg.png">
+    <figcaption>Grid conventions for margin (blue) and gutter (lime green)</figcaption>
+  </figure>
+
+A grid isn’t a complete spatial system. A grid is a component that _uses_ space, just like every other component. A grid feels different. It’s invisible, comes early, and only does space. But there’s more to space than grid.
+
+_Takeaway_: Introduce spatial convention with a grid, but don’t stop there. Align a grid’s margins, gutters, and column values with deeper spatial concepts woven through an entire component library.
+
+* * *
+
+### Set a Memorable Base Number & Expectations
+
+Teams setup a memorable, even magical base number to ground all other spatial values. Some teams prefer base 10, because of how we count (due to our ten fingers, by the way). I’ve even seen a team use a base 6 — with helpful factors of 2 and 3 — to make way for an uber-flexible array of 3s, 4s, 6s, 8s, 9s, 12s, 15s, 16s, 18s, 21s, 24s, 32s, and more. Stop the madness!
+
+<figure>
+    <img data-image-id="1*msyRBDQLz8vBYaTt1W0LdA.png" src="https://cdn-images-1.medium.com/max/2000/1*msyRBDQLz8vBYaTt1W0LdA.png">
+    <figcaption>A set of spacing options, based on 6 but supplying any multiple of 3s &amp; 2s. Really? All these options?</figcaption>
+  </figure>
+
+Most systems I’ve worked use 16. It’s a good default font size. It’s a factor of all screen resolutions (320, 768, 1024). And it provides memorable multiples greater (32, 64,&nbsp;…) and factors less (8, 4, 2) than where it starts.
+
+<figure>
+    <img data-image-id="1*I9Zt7Rch6pZl85wwem_Eig.png" src="https://cdn-images-1.medium.com/max/2000/1*I9Zt7Rch6pZl85wwem_Eig.png">
+    <figcaption>A set of more limited spatial options, based on 16</figcaption>
+  </figure>
+
+_Takeaway_: Ground your spatial system’s range with a memorable base number, and limit expectations on how it’s used.
+
+* * *
+
+### Scale Options Nonlinearly
+
+With an established base, teams can still slip into random steps (12, 14, 18, 22, 24, 28, 30, 32,&nbsp;…). To prevent that, others use a linear scale (4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44,&nbsp;…) where each step is a fixed increment. To me, either result is unpredictably used, offering too many choices too close together. When do I use 24 or 28? I dunno.
+
+<figure>
+    <img data-image-id="1*WryHV04OjCWUxAsOV-Sn9A.png" src="https://cdn-images-1.medium.com/max/1600/1*WryHV04OjCWUxAsOV-Sn9A.png">
+    <figcaption>Linear progression from 4 to 32. Really, you need all these options?</figcaption>
+  </figure>
+
+An alternative is non-linear. Options include the [golden ratio](https://en.wikipedia.org/wiki/Golden_ratio), [modular scale](http://zurb.com/word/modular-scale), or the similar [geometric progression](https://en.wikipedia.org/wiki/Geometric_progression) that could double each step. Starting from the base, we’ll go in both directions to stops smaller (16, 8, 4, 2) and larger (16, 32, 64, and… that’s about it) on the scale.
+
+<figure>
+    <img data-image-id="1*_A26sfIPUe1wx_I-pCzvgg.png" src="https://cdn-images-1.medium.com/max/1600/1*_A26sfIPUe1wx_I-pCzvgg.png">
+    <figcaption>Geometric progression, doubling each step. %s represent proportional use in our library.</figcaption>
+  </figure>
+
+_Takeaway_: Consider a geometric progression or something similarly nonlinear. You might experience occasional tensions to add a 24 between 16 and 32. However, in my experience, such moments are rare and rarely justify breaking the simple system.
+
+* * *
+
+### Name Each Step for Memorable, Accurate&nbsp;Reuse
+
+I love Gmail’s Compact, Cozy, Comfortable space toggle. So when we built our space system, I suggested we use those labels in our work. Immediately, a teammate challenged me: “What do we call other steps?” My spartan, teeny, and luxurious options didn’t pass muster.
+
+<figure>
+    <img data-image-id="1*SvJNWEZVCLSzk-Q4JwKZ5A.png" src="https://cdn-images-1.medium.com/max/1600/1*SvJNWEZVCLSzk-Q4JwKZ5A.png">
+    <figcaption>A descriptive label for each stop? Be careful.</figcaption>
+  </figure>
+
+So we did what we always do: use a t-shirt size scale. Medium corresponds to default and S, XS, L, XL and — if necessary — XXS and XXL are other options. It’s what most libraries (Bootstrap, Lightning, etc) do.
+
+_Takeaway_: Name space options simply, using a scale like t-shirt sizes to create a language people can remember and apply accurately. If you try more descriptive labels, be prepared for teammates to respond “Small, medium, large, please.”
+
+* * *
+
+I’ve reviewed many libraries and talked with many designers. Simple conventions of base numbers and a named scale are where conversations usually end. Even though these few options are simple, using space still felt so…random. I needed more.
+
+* * *
+
+## Extending a Vocabulary for&nbsp;Space
+
+In reviewing our emerging work, there aren’t many distinct intents for applying space. For example, let’s inspect my favorite component: the card.
+
+<figure>
+    <img data-image-id="1*O0UOyUAEmvmob6E4fCMv1Q.png" src="https://cdn-images-1.medium.com/max/1600/1*O0UOyUAEmvmob6E4fCMv1Q.png">
+  </figure>
+
+As a front-end developer, I envision all the boxes of elements that fit elements together.
+
+<figure>
+    <img data-image-id="1*hDLzFTGwsrrLHi0ACj74yA.png" src="https://cdn-images-1.medium.com/max/1600/1*hDLzFTGwsrrLHi0ACj74yA.png">
+  </figure>
+
+The card provides a useful illustration of many spatial concept we use: insetting content from an edge, varying an inset’s shape, spacing items inline, and stacking items _within_ and _between_ a component.
+
+<figure>
+    <img data-image-id="1*a7FPmDGJyCk1P-t6vgGrgA.png" src="https://cdn-images-1.medium.com/max/1600/1*a7FPmDGJyCk1P-t6vgGrgA.png">
+  </figure>
+
+These concepts — inset, inset squish, inset stretch, stack, inline, and grid — cover the vast majority of our library’s CSS rules for space: _padding_, _margin_, _left_, _right_, _top_, and _bottom_. These concepts also enhance how each atomic is self-contained, improving [composability](https://en.wikipedia.org/wiki/Composability).
+
+* * *
+
+### Concept 1: (Square)&nbsp;Inset
+
+An inset offers indents content on all four sides like the matte of the framed photo on a wall. It’s use is widespread, across many components at varying sizes, whether our 3-Up module and block messages medium feel, extra compact pills, or spacious footers and mastheads.
+
+<figure>
+    <img data-image-id="1*6Q5K1UrR1TL-xHm4WnpJzg.png" src="https://cdn-images-1.medium.com/max/1600/1*6Q5K1UrR1TL-xHm4WnpJzg.png">
+  </figure>
+
+The default is also a useful starting point for mobile first design, expanding to large at a relevant viewport width like 768px.
+
+<figure>
+    <img data-image-id="1*Y3SO8zYcpQfUAqCsft_XPQ.png" src="https://cdn-images-1.medium.com/max/1600/1*Y3SO8zYcpQfUAqCsft_XPQ.png">
+  </figure>
+* * *
+
+### Concept 2: Squish&nbsp;Inset
+
+A squished inset reduces space top and bottom, in our case by 50%. While less common than its squared counterpart, a squish occurred frequently in elements (like a button) and cell-like containers like a data table or list item.
+
+<figure>
+    <img data-image-id="1*wMygiAaKq9WuciqkXkfCpw.png" src="https://cdn-images-1.medium.com/max/1600/1*wMygiAaKq9WuciqkXkfCpw.png">
+    <figcaption>Squished inset in buttons, data table cells, and list group items</figcaption>
+  </figure>
+* * *
+
+### Concept 3: Stretch&nbsp;Inset
+
+Contrasted with a button or pill’s squish, we found ourselves vertically stretching the insets of textboxes, textareas, and other form elements.
+
+<figure>
+    <img data-image-id="1*D0mw2Q0J2rjD4CJM_26NnA.png" src="https://cdn-images-1.medium.com/max/1600/1*D0mw2Q0J2rjD4CJM_26NnA.png">
+  </figure>
+* * *
+
+### Concept 4:&nbsp;Stack
+
+With all due respect to horizontally scrolled UI, the overwhelming majority scroll vertically. And that means one thing: we stack things. We stack message on heading on data table. We stack modules in rails. We stack copy, pills & toolbars, all in a card, each in a grid. Heck, infinite scroll means infinite stack! We stack, stack, stack.
+
+<figure>
+    <img data-image-id="1*xZxKgMVG53XAMHrHR7B2og.png" src="https://cdn-images-1.medium.com/max/1600/1*xZxKgMVG53XAMHrHR7B2og.png">
+  </figure>
+* * *
+
+### Concept 5:&nbsp;Inline
+
+We also arrange objects inline, wrapping as they flow like text from the left or right. Such objects — pills, tags, breadcrumbs, and more — may stand alone or stack and mingle with other objects.
+
+<figure>
+    <img data-image-id="1*zddFJGnksQVRKeJOhkgDPg.png" src="https://cdn-images-1.medium.com/max/1600/1*zddFJGnksQVRKeJOhkgDPg.png">
+  </figure>
+* * *
+
+### Concept 6:&nbsp;Grid
+
+Ah, save the grid for last? As spacing stabilizes, we find ourselves revisiting grid margins and gutters, aligning these spaces with our magical starting point and other uses.
+
+* * *
+
+So, as applied to a Card component, your styled padding and margin may look something like:
+
+<figure>
+    <img data-image-id="1*90-tqn85wl2mcUvAs3hRdg.png" src="https://cdn-images-1.medium.com/max/2000/1*90-tqn85wl2mcUvAs3hRdg.png">
+    <figcaption>Notional application of insets, stacks, and inlines (or generic spacers — ack!) onto a Card</figcaption>
+  </figure>
+* * *
+
+## What We&nbsp;Learned
+
+Using space concepts requires us to adapt to something new. On my team, it took a day for light skepticism to give way to embracing the new model.
+
+### Teach a System of Space&nbsp;Visually
+
+Most collaborators can’t _see_ space, a primary reason it’s so arbitrarily applied. But now we’ve got a system: a limited number of concepts, each offering a limited range of options.
+
+<figure>
+    <img data-image-id="1*-c4UabSTLW9fnz9OGwrP5Q.png" src="https://cdn-images-1.medium.com/max/1600/1*-c4UabSTLW9fnz9OGwrP5Q.png">
+    <figcaption>A visual reference, akin to a cheatsheet, of spatial concepts</figcaption>
+  </figure>
+
+_Takeaway_: Teach your spatial concepts using a tight doc diagram or cheat sheet. Such references quicken how we grasp, apply, and sustain the concepts through design and code.
+
+* * *
+
+### Offer Simple Helpers, and Monitor&nbsp;Use
+
+Don’t be foolish. These six models don’t solve everything. We still adjusted a _margin-bottom_ here and _left_ there from time to time. So, there’s justification for following more intentional space options with more generic alternatives (like _$space-m_).
+
+<figure>
+    <div>
+      <iframe width="700" height="250" src="/media/c86b6cf6417b4cd4a7e982e085cdacee?postId=188bcbae0d62" data-media-id="c86b6cf6417b4cd4a7e982e085cdacee" allowfullscreen="" frameborder="0"></iframe>
+    </div>
+  </figure>
+
+_Takeaway_: Provide generic options, use them sparingly, and expect product teams to use them. When they arise in a critique or pull request, educate teammates on more specific concepts like _inset_ or _stack_.
+
+* * *
+
+### Avoid Variable Names with Padding or&nbsp;Margin
+
+When you introduce something more complicated, others justifiably advocate for something familiar, like “Why can’t we use _padding_ and _margin_ in our variable names?” In this case, 2+ space concepts using padding, and those concepts can be applied via _left_ and _right_ properties too. _margin_ is used to stack, grid, and space inline. Plus, how about non-web platforms that don’t use HTML?
+
+_Takeaway_: Tease apart concepts from property names. They are many to one and limit reuse to a single platform.
+
+* * *
+
+### Solve Collisions like Line Height Systematically
+
+Simple inset _padding_ and stack _margin_ rules collided with a long-known spatial adversary: _line-height_. This interaction increments space unpredictably, adding a pixel above and below our simpler _inset-default_ of 16px.
+
+<figure>
+    <img data-image-id="1*TREm58xRwMiMDTcXwRrR-w.png" src="https://cdn-images-1.medium.com/max/1600/1*TREm58xRwMiMDTcXwRrR-w.png">
+  </figure>
+
+However, we followed an idea’s spark (@kevinmpowell’s “Let’s negative margin space using pseudo elements! But how much?”) with some math (I can use my college degree!). The result was a [mixin formula combining type size and line-height to collapse space above and below colliding objects](https://medium.com/eightshapes-llc/cropping-away-negative-impacts-of-line-height-84d744e016ce).
+
+_Takeaway_: Don’t give up on systematic clarity because of exceptions. Try to solve them. If you can overcome such nuances, even with a bit of CSS trickery, you can persist a simpler concept everyone can stick to.
+
+* * *
+
+### Use Spatial Concepts to Dial&nbsp;Density
+
+With concepts like inset, stack, and grid, you can tune the dials of density with aplomb. Search a repository, find _inset_s and _stack_s of interest, and extend or override those rules to fine tune display density.
+
+<figure>
+    <img data-image-id="1*ij280eR_lnGFmSdfmNOsJA.png" src="https://cdn-images-1.medium.com/max/1600/1*ij280eR_lnGFmSdfmNOsJA.png">
+    <figcaption>On the left, default spacing. On the right, tuning by increasing just the inset by 50%.</figcaption>
+  </figure>
+
+_Takeaway_: You can tune spatial density even with a barely-beyond primitive set of options. Without them, density control is a dream. With them, you can gradually build towards a powerful engine to find, adjust, and tune space with great intent and less risk.
+
+* * *
+
+_About to embark on a design system, or need to dive deeper to discuss products and players? EightShapes conducts_ [_systems planning workshops_](http://eightshapes.com/workshop-planning-parts-products-people.html) _and coaches clients on_ [_design systems_](http://eightshapes.com/design-systems.html)_._ [_Let’s talk_](https://twitter.com/nathanacurtis)_!_
+
+
+
+  {% endfilter %}
+{% endblock %}
