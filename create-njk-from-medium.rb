@@ -47,6 +47,7 @@ article_html.css('div > hr:first-child:last-child').each { |node| node.parent.re
 article_html.css('section').each { |node| node.replace(node.children) }
 article_html.css('div > div').each { |node| node.replace(node.children) }
 article_html.css('div > img').each { |node| node.parent.replace(node.parent.children) }
+article_html.css('div > br:first-child').remove
 article_html.css('div > hr:first-child').remove
 
 # h3's > h2's
@@ -84,6 +85,7 @@ end
 
 # CONVERT HTML TO MARKDOWN
 article_html = ReverseMarkdown.convert article_html.to_xhtml
+# article_html = article_html.to_xhtml
 # End formatting medium HTML
 
 article_template_pre = "{% set title = '#{title}' %}
