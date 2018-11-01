@@ -60,8 +60,7 @@ article_html.css('h4').each { |node| node.replace("<h3>#{node.children}</h3>") }
 quotes = article_html.css('blockquote')
 unless quotes.empty?
   quotes.each do |q|
-    puts q.to_xhtml
-    quoteText = q.content
+    quoteText = q.inner_html
 
     q.replace("<insulate>{% endfilter %}
 
