@@ -1,16 +1,17 @@
-{% set title = '' %}
+{% set title = 'And You Thought Buttons Were Easy?' %}
 {% set title_image_path = title | lower | replace(' ','-') %}
-{% set deck = '' %}
+{% set deck = 'A Story for Selling a System that Scales' %}
 {% set author = 'Nathan Curtis' %}
 {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-{% set published_date = '' %}
-{% set read_duration = '' %}
+{% set published_date = 'Jul 26, 2017' %}
+{% set read_duration = '4 ' %}
 {% set masthead = false %}
 
 {% set title_tag = 'EightShapes > Articles >'  + title %}
 {% extends 'templates/article.njk' %}
 
 {% block main_article %}
+  {% filter markdown %}
 <div>
   <section>
     <div>
@@ -18,8 +19,6 @@
     </div>
     <div>
       <div>
-        <h1>And You Thought Buttons Were Easy?</h1>
-        <h2>A Story for Selling a System that Scales</h2>
         <p>Selling a design system into an enterprise usually involves a pitch to many audiences. Designers appreciate cohesiveness. Engineers value efficiencies. And, pivotally, executives appreciate value.</p>
         <p>While a pitch covers a lot of ground — system composition, team &amp; community strategy, scope &amp; roadmaps — my narrative pivots from introductions to the ask using a story about Buttons. It’s simple yet reveals button’s complicated yet solvable glory, taking a few slides and lasting a minute or two.</p>
         <p>Experience suggests the story is compelling enough to leave executives nodding heads, reacting with thoughtful questions, and admitting “You had me at buttons.”</p>
@@ -141,4 +140,5 @@
   </section>
 </div>
 
+  {% endfilter %}
 {% endblock %}
