@@ -56,6 +56,27 @@ article_html.css('h3').each { |node| node.replace("<h2>#{node.children}</h2>") }
 # h4's > h3's
 article_html.css('h4').each { |node| node.replace("<h3>#{node.children}</h3>") }
 
+# BLOCK QUTOES
+quotes = article_html.css('blockquote')
+unless quotes.empty?
+  quotes.each do |q|
+    puts q.to_xhtml
+    quoteText = q.content
+
+    q.replace("<insulate>{% endfilter %}
+
+{{ escom.pull_quote(
+    quote = '#{quoteText}',
+    class = 'escom-pull-quote--light'
+) }}
+
+{% filter markdown %}
+</insulate>")
+  end
+end
+
+
+
 # SCRAPE IMAGES
 puts "Creating image directory: /images/articles/#{filename}"
 article_image_directory = "images/articles/#{filename}"
@@ -105,7 +126,8 @@ unless figures.empty?
     caption = '#{caption}'
 ) }}
 
-{% filter markdown %}</insulate>")
+{% filter markdown %}
+</insulate>")
 
         numbered_image_index = numbered_image_index + 1
       end
