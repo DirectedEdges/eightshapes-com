@@ -65,26 +65,85 @@ puts "Downloading images:"
 featured_image = article_html.css("img[data-is-featured='true']")
 images = article_html.css("img:not([data-is-featured='true'])")
 
-puts featured_image
+figures = article_html.css("figure")
+masthead = false
 
-unless featured_image.empty?
-  puts "Downloading Masthead image: #{featured_image.attr('src')}"
-  File.open("#{article_image_directory}/Masthead.png", 'wb') do |fo|
-    fo.write open(featured_image.attr('src')).read 
-  end
-end
+unless figures.empty?
+  numbered_image_index = 1
+  figures.each do |fig|
+    img = fig.css("img")
 
-unless images.empty?
-  images.each_with_index do |i, index|
-    puts "Downloading Article image: #{i.attr('src')}"
-    File.open("#{article_image_directory}/#{index + 1}.png", 'wb') do |fo|
-      fo.write open(i.attr('src')).read 
+    if img.attr('data-is-featured')
+      masthead = true
+      puts "Downloading Masthead image: #{img.attr('src')}"
+      File.open("#{article_image_directory}/Masthead.png", 'wb') do |fo|
+        fo.write open(img.attr('src')).read 
+      end
+
+      # Remove the featured image figure from the article content
+      fig.remove
+    else
+      # Not the featured image
+      puts "Downloading Article image: #{img.attr('src')}"
+      File.open("#{article_image_directory}/#{numbered_image_index}.png", 'wb') do |fo|
+        fo.write open(img.attr('src')).read 
+      end
+
+      caption = ""
+      figcaption = fig.css('figcaption')
+      if !figcaption.empty?
+        caption = figcaption.first.children.to_xhtml
+      end
+
+      fig.replace("<insulate>{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '#{numbered_image_index}',
+    image_alt = '',
+    caption = '#{caption}'
+) }}
+
+{% filter markdown %}</insulate>")
+
+      numbered_image_index = numbered_image_index + 1
     end
   end
 end
 
+# unless featured_image.empty?
+#   masthead = true
+#   puts "Downloading Masthead image: #{featured_image.attr('src')}"
+#   File.open("#{article_image_directory}/Masthead.png", 'wb') do |fo|
+#     fo.write open(featured_image.attr('src')).read 
+#   end
+#   # Remove the featured image from the article content, the nunjucks template will automatically include Masthead.png
+#   featured_image.each { |node| node.remove }
+# end
+
+# unless images.empty?
+#   images.each_with_index do |i, index|
+#     puts "Downloading Article image: #{i.attr('src')}"
+#     File.open("#{article_image_directory}/#{index + 1}.png", 'wb') do |fo|
+#       fo.write open(i.attr('src')).read 
+#     end
+
+#     # figure = i.parent
+
+#     i.replace("{{ escom.article_figure(
+#                   image_path = title_image_path,
+#                   image_number = '#{index + 1}',
+#                   image_alt = '',
+#                   caption = ''
+#               ) }}")
+#   end
+# end
+
 # CONVERT HTML TO MARKDOWN
 article_html = ReverseMarkdown.convert article_html.to_xhtml
+# After conversion strip <insulate> tags that protect nunjucks macros from gettin munged by the ReverseMarkdown gem
+article_html = article_html.gsub(/<insulate>/, '').gsub(/<\/insulate>/, '')
+
 # article_html = article_html.to_xhtml
 # End formatting medium HTML
 
@@ -95,7 +154,7 @@ article_template_pre = "{% set title = '#{title}' %}
 {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
 {% set published_date = '#{published_date}' %}
 {% set read_duration = '#{read_duration}' %}
-{% set masthead = false %}
+{% set masthead = #{masthead} %}
 
 {% set title_tag = 'EightShapes > Articles >'  + title %}
 {% extends 'templates/article.njk' %}
