@@ -15,6 +15,7 @@ def create_njk_from_medium(medium_url)
   # Destination filename
   filename = medium_url.gsub(/https:\/\/medium.com\/eightshapes-llc\//, '')
   filename = filename.gsub(/https:\/\/medium.com\/@nathanacurtis\//, '')
+  filename = filename.gsub(/https:\/\/medium.com\/@kevinmpowell\//, '')
   last_hypen_index = filename.rindex(/-/)
   filename.slice!(last_hypen_index, filename.length)
 
