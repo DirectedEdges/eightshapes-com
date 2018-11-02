@@ -36,6 +36,94 @@ deck = deck.empty? ? '' : deck.text
 article_html.search('.graf--title').remove
 article_html.search('.graf--subtitle').remove
 
+
+# SCRAPE IMAGES
+puts "Creating image directory: /images/articles/#{filename}"
+article_image_directory = "images/articles/#{filename}"
+Dir.mkdir(article_image_directory) unless File.exists?(article_image_directory)
+
+puts "Downloading images:"
+featured_image = article_html.css("img[data-is-featured='true']")
+images = article_html.css("img:not([data-is-featured='true'])")
+
+figures = article_html.css("figure")
+masthead = false
+
+unless figures.empty?
+  numbered_image_index = 1
+  figures.each do |fig|
+    img = fig.css("img")
+
+    unless img.empty?
+
+      # Masthead Image figure
+      if img.attr('data-is-featured')
+        masthead = true
+        puts "Downloading Masthead image: #{img.attr('src')}"
+        File.open("#{article_image_directory}/Masthead.png", 'wb') do |fo|
+          fo.write open(img.attr('src')).read 
+        end
+
+        # Remove the featured image figure from the article content
+        fig.remove
+
+      # All other image figures
+      else
+        # Not the featured image
+        puts "Downloading Article image: #{img.attr('src')}"
+        File.open("#{article_image_directory}/#{numbered_image_index}.png", 'wb') do |fo|
+          fo.write open(img.attr('src')).read 
+        end
+
+        caption = ""
+        modifier_class = ""
+        figcaption = fig.css('figcaption')
+        if !figcaption.empty?
+          caption = figcaption.first.children.to_xhtml
+        end
+
+        fig.replace("<insulate>{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '#{numbered_image_index}',
+    image_alt = '',
+    caption = '#{caption}',
+    class = '#{modifier_class}'
+) }}
+
+{% filter markdown %}
+</insulate>")
+
+        numbered_image_index = numbered_image_index + 1
+      end
+    end # unless img.empty?
+  end
+end
+
+# Masthead from old template
+if masthead == false
+  old_template_background_image = article_html.css(".section-backgroundImage")
+  if !old_template_background_image.empty?
+    # Using the old template
+    inline_style = old_template_background_image.attr('style')
+    if inline_style
+      re = /background-image: url\("(.*)"\);/m
+
+      # Print the match result
+      inline_style.to_s.scan(re) do |match|
+          masthead = true
+          puts "Downloading Masthead image: #{match[0]}"
+          File.open("#{article_image_directory}/Masthead.png", 'wb') do |fo|
+            fo.write open(match[0]).read 
+          end
+      end
+    end
+  end
+end
+
+
+
 medium_attributes_to_remove = ['data-post-id', 'data-source', 'data-collection-id', 'data-tracking-context', 'name', 'data-height' 'data-image-id', 'data-height', 'data-width', 'data-action', 'data-action-value', 'class', 'id', 'data-href', 'style']
 
 medium_attributes_to_remove.each do |a|
@@ -75,69 +163,23 @@ unless quotes.empty?
 end
 
 
+# IFRAME EMBEDS (Github & Twitter)
+# Needs the full medium.com url in order to load
+# iframes = article_html.css("iframe[src^='/media']")
+# unless iframes.empty?
+#   iframes.each do |iframe|
+#     # new_src = "https://medium.com#{iframe.attr('src')}"
+#     # iframe['src'] = new_src
+#     iframe.replace('<iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" class="twitter-tweet twitter-tweet-rendered" data-tweet-id="641995273632247808" title="Twitter Tweet" style="position: static; visibility: visible; display: block; width: 500px; height: 199.171875px; padding: 0px; border: none; margin: 10px auto; max-width: 100%; min-width: 220px;"></iframe>')
+#   end
+# end
 
-# SCRAPE IMAGES
-puts "Creating image directory: /images/articles/#{filename}"
-article_image_directory = "images/articles/#{filename}"
-Dir.mkdir(article_image_directory) unless File.exists?(article_image_directory)
-
-puts "Downloading images:"
-featured_image = article_html.css("img[data-is-featured='true']")
-images = article_html.css("img:not([data-is-featured='true'])")
-
-figures = article_html.css("figure")
-masthead = false
-
-unless figures.empty?
-  numbered_image_index = 1
-  figures.each do |fig|
-    img = fig.css("img")
-
-    unless img.empty?
-      if img.attr('data-is-featured')
-        masthead = true
-        puts "Downloading Masthead image: #{img.attr('src')}"
-        File.open("#{article_image_directory}/Masthead.png", 'wb') do |fo|
-          fo.write open(img.attr('src')).read 
-        end
-
-        # Remove the featured image figure from the article content
-        fig.remove
-      else
-        # Not the featured image
-        puts "Downloading Article image: #{img.attr('src')}"
-        File.open("#{article_image_directory}/#{numbered_image_index}.png", 'wb') do |fo|
-          fo.write open(img.attr('src')).read 
-        end
-
-        caption = ""
-        figcaption = fig.css('figcaption')
-        if !figcaption.empty?
-          caption = figcaption.first.children.to_xhtml
-        end
-
-        fig.replace("<insulate>{% endfilter %}
-
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '#{numbered_image_index}',
-    image_alt = '',
-    caption = '#{caption}'
-) }}
-
-{% filter markdown %}
-</insulate>")
-
-        numbered_image_index = numbered_image_index + 1
-      end
-    end # unless img.empty?
-  end
-end
 
 # CONVERT HTML TO MARKDOWN
 article_html = ReverseMarkdown.convert article_html.to_xhtml
 # After conversion strip <insulate> tags that protect nunjucks macros from gettin munged by the ReverseMarkdown gem
 article_html = article_html.gsub(/<insulate>/, '').gsub(/<\/insulate>/, '')
+article_html = article_html.gsub(/_\._/, '*.*').gsub(/_\!_/, '*!*').gsub(/_\?_/, '*?*') # Markdown chokes on individually italicized punctutation marks using the underscore method, switching to the asterisk method instead
 
 # article_html = article_html.to_xhtml
 # End formatting medium HTML

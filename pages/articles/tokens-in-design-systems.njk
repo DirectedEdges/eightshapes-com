@@ -1,5 +1,5 @@
 {% set title = 'Tokens in Design Systems' %}
-{% set title_image_path = title | lower | replace(' ','-') %}
+{% set title_image_path = 'tokens-in-design-systems' %}
 {% set deck = '10 Tips to Architect & Implement Design Decisions for Everyone' %}
 {% set author = 'Nathan Curtis' %}
 {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
@@ -12,9 +12,18 @@
 
 {% block main_article %}
   {% filter markdown %}
-<figure>
-    <img data-image-id="1*yqbaekDfic5kIH-kZbT-UA.jpeg" src="https://cdn-images-1.medium.com/max/2000/1*yqbaekDfic5kIH-kZbT-UA.jpeg">
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '1',
+    image_alt = '',
+    caption = '',
+    class = ''
+) }}
+
+{% filter markdown %}
+
 
 In a recent code review, my passions stirred as I walked through a _Pill_ component’s style with a designer teammate.
 
@@ -162,10 +171,18 @@ It’s a distraction to divert brainpower to constantly think tokens, tokens, to
 
 However, my teammate Kevin Powell has a healthy habit of stockpiling variables at the top of a component style file. For example, a portion of variables in use in his _form_ component’s style identify many applications of text color to form elements like inline errors, input, labels, and placeholder text.
 
-<figure>
-    <img data-image-id="1*jz8KK16Iu3Q6Q6tAIYezpA.png" src="https://cdn-images-1.medium.com/max/2000/1*jz8KK16Iu3Q6Q6tAIYezpA.png">
-    <figcaption>Emerging component file on the left, with file-specific variables at the top easy to compare with and consider for the tokens file on the right.</figcaption>
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '2',
+    image_alt = '',
+    caption = 'Emerging component file on the left, with file-specific variables at the top easy to compare with and consider for the tokens file on the right.',
+    class = ''
+) }}
+
+{% filter markdown %}
+
 
 These component-specific variables offer a helpful inventory of candidates to graduate to the token library. Here, we can catch an opportunity to replace a less-specific disabled color of _$color-neutral-90_ with it’s more intentional _$background-color-disabled_ in the _form\_elements.styl_ file. On the other hand, the component’s _$border-color-input-hover_ is less likely for reuse beyond forms and thus a poor token candidate.
 
@@ -179,17 +196,33 @@ Tokens are a wonderful tool as you formulate a pristine system from scratch. But
 
 Tokens protect you from unpredictable, widespread change given their specificity and – as a result – more limited and intentional use.
 
-<figure>
-    <img data-image-id="1*4qwwzPf5EvFLrSOAz79XmQ.png" src="https://cdn-images-1.medium.com/max/1600/1*4qwwzPf5EvFLrSOAz79XmQ.png">
-    <figcaption>Searching for a generic variable</figcaption>
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '3',
+    image_alt = '',
+    caption = 'Searching for a generic variable',
+    class = ''
+) }}
+
+{% filter markdown %}
+
 
 Previously, you comb and assess a repository for a _#2B303B_ hex code or _$color-neutral-20_ variable applied to myriad different elements. Boo!
 
-<figure>
-    <img data-image-id="1*VZd0rW5BsRqAWqlcmnh5dw.png" src="https://cdn-images-1.medium.com/max/1600/1*VZd0rW5BsRqAWqlcmnh5dw.png">
-    <figcaption>Searching for a specific decision.</figcaption>
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '4',
+    image_alt = '',
+    caption = 'Searching for a specific decision.',
+    class = ''
+) }}
+
+{% filter markdown %}
+
 
 Now, you’re tracing the breadth of use of _$text-color-microcopy_ precisely and narrowing risk. Yes!
 
@@ -207,17 +240,35 @@ That leaves the promise of tokens unfulfilled. A first step in spreading tokens 
 
 [JSON](https://en.wikipedia.org/wiki/JSON) is an ideal open standard for encoding hierarchical name/value pairs for reuse across tools.
 
-<figure>
-    <img data-image-id="1*R2W5bZl0ew_ZhllTEmQSZw.png" src="https://cdn-images-1.medium.com/max/1600/1*R2W5bZl0ew_ZhllTEmQSZw.png">
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '5',
+    image_alt = '',
+    caption = '',
+    class = ''
+) }}
+
+{% filter markdown %}
+
 
 With tokens in JSON, you can transform decisions for multiple preprocessors — SASS, Stylus and LESS — as your community requires. This opens the door to products constrained to a preprocessor they can’t or won’t leave behind, even if it’s not the system’s “recommended” one.
 
 Similarly, JSON creates a bridge to other platforms, whether directly consumed in iOS work or transformed into XML for Android teams.
 
-<figure>
-    <img data-image-id="1*1v0BdXs4hKITJTuc4Lu1RA.png" src="https://cdn-images-1.medium.com/max/1600/1*1v0BdXs4hKITJTuc4Lu1RA.png">
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '6',
+    image_alt = '',
+    caption = '',
+    class = ''
+) }}
+
+{% filter markdown %}
+
 
 _Takeaway_: Encode tokens in a format reusable across platforms, exposing them in a form everyone can use.
 
@@ -231,9 +282,18 @@ Enter [YAML](https://en.wikipedia.org/wiki/YAML), a more human-readable language
 
 Our team uses [yamljs](https://www.npmjs.com/package/yamljs) to transform the YAML data we manage as a single-source-of-truth into a JavaScript object as a step of our build process.
 
-<figure>
-    <img data-image-id="1*kanvPTzOa4gii9TU1YLBJg.png" src="https://cdn-images-1.medium.com/max/2000/1*kanvPTzOa4gii9TU1YLBJg.png">
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '7',
+    image_alt = '',
+    caption = '',
+    class = ''
+) }}
+
+{% filter markdown %}
+
 
 _Takeaway_: Consider YAML to empower designers to engage with and _work in code_, drawing them closer to code and those that use code.
 
@@ -245,10 +305,18 @@ Embedding design decisions in code isn’t valuable if designers and developers 
 
 In our systems, we thread tokens as a data structure (think: JSON) into templates to show decisions in a tokens reference and other topics like space and themed buttons.
 
-<figure>
-    <img data-image-id="1*CkgQJ4oXhNzaUFE5ny6sEw.png" src="https://cdn-images-1.medium.com/max/1600/1*CkgQJ4oXhNzaUFE5ny6sEw.png">
-    <figcaption>Basic templates for documentation site, powered by token data</figcaption>
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '8',
+    image_alt = '',
+    caption = 'Basic templates for documentation site, powered by token data',
+    class = ''
+) }}
+
+{% filter markdown %}
+
 
 Other documentation is more customized, such as a color tint stack that includes names, accessibility scores, and more. While not a simple loop through token hierarchy, the documentation can still use tokens directly.
 
@@ -275,7 +343,7 @@ The more my teams use tokens, the more at home I feel discussing design. Threadi
   </figure>
 * * *
 
-_About to embark on a design system, or need to dive deeper to discuss products and players? EightShapes conducts_ [_systems planning workshops_](http://eightshapes.com/workshop-planning-parts-products-people.html) _and coaches clients on_ [_design systems_](http://eightshapes.com/design-systems.html)_._ [_Let’s talk_](https://twitter.com/nathanacurtis)_!_
+_About to embark on a design system, or need to dive deeper to discuss products and players? EightShapes conducts_ [_systems planning workshops_](http://eightshapes.com/workshop-planning-parts-products-people.html) _and coaches clients on_ [_design systems_](http://eightshapes.com/design-systems.html)*.* [_Let’s talk_](https://twitter.com/nathanacurtis)*!*
 
 
 

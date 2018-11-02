@@ -1,5 +1,5 @@
 {% set title = 'And You Thought Buttons Were Easy?' %}
-{% set title_image_path = title | lower | replace(' ','-') %}
+{% set title_image_path = 'and-you-thought-buttons-were-easy' %}
 {% set deck = 'A Story for Selling a System that Scales' %}
 {% set author = 'Nathan Curtis' %}
 {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
@@ -24,15 +24,33 @@ Experience suggests the story is compelling enough to leave executives nodding h
 
 Our trip towards cohesiveness starts with the most basic of components: the button. It’s a simple component, made of a label on a background shape.
 
-<figure>
-    <img data-image-id="1*rR4_67ndpWs7FCpnF81fqg.png" data-focus-x="50" data-focus-y="51" src="https://cdn-images-1.medium.com/max/1600/1*rR4_67ndpWs7FCpnF81fqg.png">
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '1',
+    image_alt = '',
+    caption = '',
+    class = ''
+) }}
+
+{% filter markdown %}
+
 
 However, even our simple button includes many properties that formalize important decisions about our visual language. Text color, case, weight, and size. Shape size and roundedness. Spatial density both within a component as well as it’s relationship with adjacent components.
 
-<figure>
-    <img data-image-id="1*u9EZmj7pC5SCmUD3T3bXsg.png" src="https://cdn-images-1.medium.com/max/1600/1*u9EZmj7pC5SCmUD3T3bXsg.png">
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '2',
+    image_alt = '',
+    caption = '',
+    class = ''
+) }}
+
+{% filter markdown %}
+
 
 These fundamental decisions spread across all products we make. Getting enterprise-wide agreement on them takes effort, coordination, and time.
 
@@ -42,27 +60,63 @@ These fundamental decisions spread across all products we make. Getting enterpri
 
 Yet, there’s more to buttons than just a simple, default appearance. A button has arc of interaction including hover, active, and disabled states.
 
-<figure>
-    <img data-image-id="1*Zmu94ogoF2z2OsggAUKKQw.png" src="https://cdn-images-1.medium.com/max/1600/1*Zmu94ogoF2z2OsggAUKKQw.png">
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '3',
+    image_alt = '',
+    caption = '',
+    class = ''
+) }}
+
+{% filter markdown %}
+
 
 And, we’ll need more than one, primary button. We’ll need a range of buttons: secondary, tertiary, and perhaps even special buttons for scenarios like getting started or a red button for selling things, since online marketing proved that red sells best.
 
-<figure>
-    <img data-image-id="1*zJe_iESaQ5vLQd2dOHGlgg.png" src="https://cdn-images-1.medium.com/max/1600/1*zJe_iESaQ5vLQd2dOHGlgg.png">
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '4',
+    image_alt = '',
+    caption = '',
+    class = ''
+) }}
+
+{% filter markdown %}
+
 
 We’ll also incorporate icons and interactions like a menu to open a panel, or — my favorite — a split button that couples a primary action on the left with a menu-triggering caret on the right.
 
-<figure>
-    <img data-image-id="1*dXLLnsRNUi5nBSSzp83d-g.png" src="https://cdn-images-1.medium.com/max/2000/1*dXLLnsRNUi5nBSSzp83d-g.png">
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '5',
+    image_alt = '',
+    caption = '',
+    class = ''
+) }}
+
+{% filter markdown %}
+
 
 We must solve for how these variations appear on diverse backgrounds, whether light and dark settings or a range of themes.
 
-<figure>
-    <img data-image-id="1*ZHwGMIeJrbi9iLZQYHT43g.png" src="https://cdn-images-1.medium.com/max/2000/1*ZHwGMIeJrbi9iLZQYHT43g.png">
-  </figure>
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '6',
+    image_alt = '',
+    caption = '',
+    class = ''
+) }}
+
+{% filter markdown %}
+
 
 All of these combinations must be considered to ensure that the system delivers on promised accessibility. It turns out, buttons are complicated.
 
@@ -72,11 +126,27 @@ All of these combinations must be considered to ensure that the system delivers 
 
 Let’s imagine you combine a designer, engineer and QA specialist to design, build, and test these buttons. If these staff cost $100/hr, and it takes this team of three 200 hours combined to design, build and test buttons at this level of quality, then buttons cost $20,000.
 
-> 200 hrs × $100/hr = $20,000 for&nbsp;Buttons
+{% endfilter %}
+
+{{ escom.pull_quote(
+    quote = '200 hrs × $100/hr = $20,000 for Buttons',
+    class = 'escom-pull-quote--light'
+) }}
+
+{% filter markdown %}
+
 
 If your enterprise has 25 teams each making buttons, then it costs your enterprise $1,000,000 to have good buttons.
 
-> $20,000 × 50 teams = $1,000,000 for&nbsp;Buttons
+{% endfilter %}
+
+{{ escom.pull_quote(
+    quote = '$20,000 × 50 teams = $1,000,000 for Buttons',
+    class = 'escom-pull-quote--light'
+) }}
+
+{% filter markdown %}
+
 
 That’s a _million_ dollars, for buttons. And since buttons were made by 50 _different_ teams, expect quality and consistency to vary significantly.
 
@@ -86,7 +156,7 @@ This is why we need a system to spread a visual language and reusable UI compone
 
 * * *
 
-_About to embark on a design system, or need to dive deeper to discuss products and players? EightShapes conducts_ [_systems planning workshops_](http://eightshapes.com/workshop-planning-parts-products-people.html) _and coaches clients on_ [_design systems_](http://eightshapes.com/design-systems.html)_._ [_Let’s talk_](https://twitter.com/nathanacurtis)_!_
+_About to embark on a design system, or need to dive deeper to discuss products and players? EightShapes conducts_ [_systems planning workshops_](http://eightshapes.com/workshop-planning-parts-products-people.html) _and coaches clients on_ [_design systems_](http://eightshapes.com/design-systems.html)*.* [_Let’s talk_](https://twitter.com/nathanacurtis)*!*
 
 
 
