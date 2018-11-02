@@ -1,0 +1,405 @@
+{% set title = 'This Project Rocked! That Project Sucked!' %}
+  {% set title_image_path = 'this-project-rocked-that-project-sucked' %}
+  {% set deck = 'What We Learned Measuring Designer Satisfaction To Keep Our Best Talent' %}
+  {% set author = 'Nathan Curtis' %}
+  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
+  {% set published_date = 'Oct 26, 2015' %}
+  {% set read_duration = '10 ' %}
+  {% set masthead = false %}
+
+  {% set title_tag = 'EightShapes > Articles >'  + title %}
+  {% extends 'templates/article.njk' %}
+
+  {% block main_article %}
+    {% filter markdown %}
+{% endfilter %}
+
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '1',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
+
+  {% filter markdown %}
+  
+* * *
+
+Admit it. Some projects are better than others.
+
+Sometimes, you get magic. Everything clicks, team chemistry is maxed, and you all —designers and stakeholders, together—make something you’ll reflect on nostalgically for years to come. This project rocked!
+
+And, sometimes, you don’t. You lament a friction-filled arc with a disengaged client assigning things that don’t challenge you or your unaligned team. You make things that are…bleh. Whatever. That project sucked!
+
+## Satisfying Work is Essential
+
+At EightShapes, [Dan](https://medium.com/@brownorama) and I are grateful for every client that trusts us to help them. But we try to avoid sucky projects and provide satisfying work for ourselves and our staff. In 2006, we set out to work with clients that valued and understand UX, which we believe correlates with satisfying projects.
+
+As we’ve hired a diverse legion of designers, we refined and hardened that belief to:
+
+{% endfilter %}
+
+  {{ escom.pull_quote(
+      quote = 'EightShapes must provide work that staff find enjoyable and intrinsically meaningful to serve clients best and retain the best talent.',
+      class = 'escom-pull-quote--light'
+  ) }}
+
+  {% filter markdown %}
+  
+
+In late 2012 and early 2013, I read Daniel Pink’s [Drive:The Surprising Truth About What Motivates Us](http://www.amazon.com/Drive-Surprising-Truth-About-Motivates/dp/1594484805) amid a period of challenging work. The book helped me understand satisfaction as it related to what I do every day. In the book, he states:
+
+{% endfilter %}
+
+  {{ escom.pull_quote(
+      quote = '“Human beings have an innate inner drive to be <strong>autonomous</strong>, <strong>self-determined</strong>, and <strong>connected</strong> to one another. And when that drive is liberated, people achieve more and live richer lives.”<br>Daniel Pink, Drive',
+      class = 'escom-pull-quote--light'
+  ) }}
+
+  {% filter markdown %}
+  
+
+Pink separates extrinsic rewards (such as compensation or punishment) from intrinsic satisfaction that leads to the autonomy, self-determination, and connectedness. The separation nudged me to consider the intrinsic satisfaction we pursued for own work, and extrinsic forces (beyond compensation, health insurance, and the basics) that influence satisfaction.
+
+What about our work makes it rock or suck? How do our projects, our clients, our team, and our own individual needs relate to whether we are satisfied with and rewarded by a project?
+
+## Setting Up a Project-by-Project Survey
+
+I designed and deployed a recurring, end-of-project questionnaire to connect satisfaction to the myriad of wants and needs we have as designers, such as an **engaged** client, **exciting** project, opportunity to **hone our craft** , and team with great **chemistry**.
+
+### Primary Response: Project Satisfaction
+
+The survey is grounded in a satisfaction score, with a first question inquiring “I found the project…” and a response scaled from 0 to 10.
+
+{% endfilter %}
+
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '2',
+      image_alt = '',
+      caption = 'Satisfaction scale (from 0 = Extremely Dissatisfying to 10 = Extremely Satisfying)',
+      class = ''
+  ) }}
+
+  {% filter markdown %}
+  
+
+As a business owner, manager, and project lead, I’m hoping for scores 6 and above, am curious if scores emerge in the 4 to 5 range, and am downright driven into action with anything lower.
+
+### Related Project, Client, Team and Individual Factors
+
+Additionally, I sought to understand what other factors are correlated with satisfaction, such as:
+
+- Did the _project_ stay **fresh**?
+- Was the _project_ **well-defined** with achievable goals?
+- Was the _client_ **adaptable** to the change our work triggered?
+- Did the _client_ **protect** us from “internal noise” in their organization?
+- Did _I_ create **quality** work I can share with people outside the company?
+- Did _I_ have **ample time** to explore the problem space?
+- Did our _team_ **lead trust** us to make decisions?
+- Did our _team_ provide mutual **feedback** and discuss decisions effectively?
+
+I brainstormed many factors like those above, got feedback, and organized a final set into four groups describing **project** , **client** , **team** , and **individual** pursuits. The initial 2013 survey, as well as 2014 and 2015 versions that followed, served ~30–40 factors for respondents to complete.
+
+Each factor was written to the positive sense (agreement corresponded to a positive outcome) and measured on a near-Likert scaled from 1 to 5.
+
+{% endfilter %}
+
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '3',
+      image_alt = '',
+      caption = 'Factor agreement, for one of ~40 questions on the survey',
+      class = ''
+  ) }}
+
+  {% filter markdown %}
+  
+* * *
+
+### The Complete&nbsp;Survey
+
+Initially, the survey felt somewhat daunting. Light introductory fields (client, project, name, satisfaction) and a couple open-ended responses were followed by a litany of project, client, individual and team factors.
+
+{% endfilter %}
+
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '4',
+      image_alt = '',
+      caption = 'Most recent complete survey design, managed as a Google Form',
+      class = ''
+  ) }}
+
+  {% filter markdown %}
+  
+
+However, staff grew adept at completing it fairly quickly, encouraged to do within 10 minutes or less after each project around 8 to 12 times annually.
+
+You can view the [survey as a Google Form](http://goo.gl/forms/WRRK3px5Gd).
+
+* * *
+
+### Distributing the&nbsp;Survey
+
+As each project concluded, I amended my end-of-project checklist (close Harvest timekeeping, archive github.com repo, etc) to include sending each team member an invitation to complete the survey by the Friday prior to the project’s retrospective.
+
+{% endfilter %}
+
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '5',
+      image_alt = '',
+      caption = 'Project satisfaction survey invitation template',
+      class = ''
+  ) }}
+
+  {% filter markdown %}
+  
+
+I collected data for over two years, collecting more than 50 responses in 2013 and over 100 more across most 2014 projects.
+
+* * *
+
+## Satisfaction Survey&nbsp;Says…
+
+### We’re Usually Satisfied, and It’s Improved Over&nbsp;Time
+
+Over a two year period, designers tended to be satisfied by most projects, with the a majority of projects scoring a 6 or above.
+
+Additionally, year-over-year, we found that:
+
+- average satisfaction improved year-over-year (though assuredly not because of the survey itself, but perhaps influenced by what the survey’s instantiation and data revealed),
+- somewhat dissatisfied experiences (4s and 5s) diminished, and
+- very dissatisfying projects were rare.
+{% endfilter %}
+
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '6',
+      image_alt = '',
+      caption = 'Satisfaction responses compared across 2013 &amp; 2014, with average score per year superimposed',
+      class = ''
+  ) }}
+
+  {% filter markdown %}
+  
+* * *
+
+### Some Clients Satisfy More Than Others, Let’s Pursue&nbsp;Those!
+
+Satisfaction scores across clients aren’t surprising, reflecting the mood we’d already sensed on a project team. However, designers don’t necessarily have visibility on what it’s like with other clients. So they observe how our leaders pursue and justify new & recurring business relative to what the survey makes clear.
+
+{% endfilter %}
+
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '7',
+      image_alt = '',
+      caption = 'Satisfaction by client and score, ordered by descending average satisfaction',
+      class = ''
+  ) }}
+
+  {% filter markdown %}
+  
+
+Additionally, individual responses varied within a client, especially larger clients served by many designers across many projects.
+
+Even in recurring clients, we watch for stinker assignments and establish reasonable boundaries for what projects would be good or not for our team.
+
+* * *
+
+### Individual Scores Merit Merit Management Attention
+
+Just as important as our clients, we take a look at how individual designers respond. We paid attention to two signals: low and highly variable scores.
+
+{% endfilter %}
+
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '8',
+      image_alt = '',
+      caption = 'Satisfaction scores by staff member',
+      class = ''
+  ) }}
+
+  {% filter markdown %}
+  
+
+As surveys rolled in over the year—and particularly at annual review time—we’d check in with people like #7 and #15 above. Some people are hard to satisfy, while others found themselves in a rut. The survey triggered useful discussions to ensure that they were OK and we weren’t losing them.
+
+More curiously, some staff (such as #7 and #10) were wildly all over the map. It can be challenging to manage designers on the extremes, with the severe distinction drawing attention to the negatives and also impairing their relationship with teammates on less satisfying projects. Others like myself (#14) might just be hard to please.
+
+* * *
+
+## Specific Factor Reveal How We Can&nbsp;Improve
+
+### Visualizations Reveal Patterns and Signals to&nbsp;Probe
+
+One of the favorite visualizations I prepared displayed factors (for example, strong client **vision** ) within groups ( **clients** ) as columns, individual clients as rows, and factor averages in each cell. The staff loved this visualization, rich with detail and highlighting such a range of good and bad.
+
+{% endfilter %}
+
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '9',
+      image_alt = '',
+      caption = 'Grouped factors (such as Values within Client as columns) by Client (rows), with Factor average per cell',
+      class = ''
+  ) }}
+
+  {% filter markdown %}
+  
+
+Big clients (#3, #5, #6) all indicate strong **individual** and **team** factor scores. Despite the variety afforded by small projects and shorter client engagements, our teams tend to find their best rhythm and individual opportunity in deeper client relationships.
+
+In contrast, lower scoring clients (#7, #8, #9, #11) were all newer clients. Notice lower, whiter **individual** and **team** scores and prevalent red in **client** and **project** categories.
+
+{% endfilter %}
+
+  {{ escom.pull_quote(
+      quote = 'Lesson: It takes time and patience to get to know each other, both between EightShapes and client as well as within the EightShapes team itself.',
+      class = 'escom-pull-quote--light'
+  ) }}
+
+  {% filter markdown %}
+  
+
+While these broader patterns are important, our staff quickly zoomed in on clients they’d worked and hunted for signals, like:
+
+- An extremely satisfying client engagement (#1) that nevertheless was poorly defined (by both parties) for an **indecisive** client that lacked **vision**.
+{% endfilter %}
+
+  {{ escom.pull_quote(
+      quote = 'Lesson: No client or project is ever perfect.',
+      class = 'escom-pull-quote--light'
+  ) }}
+
+  {% filter markdown %}
+  
+- A big, admired client with interesting projects (#5) served by a high-performing team that nevertheless was showing cracks by lacking individual **rotation** across clients (1.9).
+{% endfilter %}
+
+  {{ escom.pull_quote(
+      quote = 'Lesson: Beware complacency and openly discuss rotation even on high-performing teams.',
+      class = 'escom-pull-quote--light'
+  ) }}
+
+  {% filter markdown %}
+  
+- One of our senior leads notice a lower-than-expected score for team **routine.** Recognized during group discussion, the leader marked it as an area to improve via his personal development plan.
+{% endfilter %}
+
+  {{ escom.pull_quote(
+      quote = 'Lesson: Leaders aren’t perfect, and can lead by modeling how they can improve.',
+      class = 'escom-pull-quote--light'
+  ) }}
+
+  {% filter markdown %}
+  
+- A bottom client (#11) filled with low, red scores, reflecting a **disempowering, vision** -erratic, **absent** and **indecisive** client that was led by a revolving door of project owners. However, notice the contrast of strong individual and team scores.
+{% endfilter %}
+
+  {{ escom.pull_quote(
+      quote = 'Lesson: Despite chaos, a team can rally to achieve something they are proud of and then move on.',
+      class = 'escom-pull-quote--light'
+  ) }}
+
+  {% filter markdown %}
+  
+* * *
+
+## Do Well Where It&nbsp;Matters
+
+### Correlate Satisfaction with Factors To Know What Does or Doesn’t Need Attention
+
+After 2013's first year of data collection, compared satisfaction with the myriad factors that could influence. I calculated correlations, drilled into groups, and explored data deeply.
+
+One money visualization was plotting each factor’s agreement score (y-axis, “How Are We Doing?”) against its correlation with project satisfaction (x-axis, “How Much Does It Matter”). This relationship reveals how much a factor like team chemistry matters to how satisfying a project can be.
+
+{% endfilter %}
+
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '10',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
+
+  {% filter markdown %}
+  
+
+Two-by-two plots reveal quadrants where factors should be more or less of a concern.
+
+- The upper right revealed how EightShapes is _doing well on things that matter_. That year, we were especially strong at team **chemistry** and **feedback** , cultivating our individual **technique,** and working with **trusting** , **appreciative** clients.
+- The lower right quadrant is particularly important, highlighting _poorer performance on things that matter_. In 2013, we found ourselves in a rut of too-much design system work that some designers felt limited **freedom to innovate**.
+- In the lower left quadrant, we may be _performing poorly on things that don’t matter_ (as much). Sure, some didn’t work with **new clients** or use **new**  **activity types** (that they’d never done before), and no client was sponsoring **persistent research**. But none of those factors correlated with satisfaction strongly, so not areas we focused on changing.
+
+* * *
+
+## Foster Individual Relationships
+
+### Teammate Connections Are&nbsp;Critical
+
+An introductory, open-ended question “What were the aspects of working on this project that you found particularly satisfying or rewarding?” yielded countless comments citing teammate love.
+
+{% endfilter %}
+
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '11',
+      image_alt = '',
+      caption = 'Many personalized shout outs about satisfying projects with a teammate or two',
+      class = ''
+  ) }}
+
+  {% filter markdown %}
+  
+
+Our staff valued not just working on different projects but also different people. Furthermore, they reveled in the enjoyable moments and personal growth they experienced due to those connections.
+
+Over the years, status meetings and one-on-ones consistently yield comments like “When do I get to work with [so and so]?” and survey responses reinforced that staff rotation to maximize exposure to other good people was visible and desirable. In strong teams, satisfaction can originate not from the success but from working together to get there.
+
+* * *
+
+## Incorporate Satisfaction into Deeper Post-Project Routines
+
+### Early Survey Returns Led to Expanded Post-Project Practices
+
+Over the survey’s two years, we began to adjust and prune survey factors, routinely distribute results to lead(s) and manager(s), and enable staff to tie results to annual performance development plans.
+
+In particular, satisfaction data was influential for subsequent project retrospectives we’d began to conduct routinely. Prior to the retrospective, I’d extract project responses, transform and format them, and send the PDF to team members to prep for the meeting.
+
+{% endfilter %}
+
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '12',
+      image_alt = '',
+      caption = 'Project-specific satisfaction data (as PDF) extracted, transformed and highlighted as an input for retrospectives',
+      class = ''
+  ) }}
+
+  {% filter markdown %}
+  
+
+The artifact exposed open-ended responses and revealed where members experienced the project in different ways. Even the sample above exposes disagreement, with negative view (column 1), a neutral view (column 2), and a positive view (column 3). While the artifact wasn’t an agenda, the data improved project reflection and suggested discussion topics.
+
+* * *
+
+## My Big Takeaways
+
+### How I View Clients, Teammates, and Myself Differently
+
+There’s no doubt I look at projects and teams differently. I’ve softened my starker focus on delivering deep, promised quality to clients based on early project promises (such as a statement of work). And I’m now equipped to seek, launch, and run projects based on what I value most (the survey factors).
+
+I’m also more in tune with individuals I manage and team members I direct, yielding an unexpected reward. During our December 2014 year-end meeting, many EightShapes designers mentioned my influence as a project leader and mentor. They didn’t know it, but I was touched by something I’d not heard in such density before.
+
+Maybe, just maybe, my career isn’t about yearning to be a great designer. Instead, maybe it’s (also?) about helping craft a rich and rewarding environment for my company’s projects and clients in which our designers can thrive.
+
+
+
+  {% endfilter %}
+{% endblock %}
