@@ -33,8 +33,25 @@ title = title.empty? ? '' : title.text
 deck = article_html.css('.graf--subtitle')
 deck = deck.empty? ? '' : deck.text
 
+if deck.length == 0
+  # If no deck was found as a subtitle, look for the kicker instead
+  kicker = article_html.css('.graf--kicker')
+
+  unless kicker.empty?
+    deck = kicker.text
+    kicker.remove
+  end
+end
+
 article_html.search('.graf--title').remove
 article_html.search('.graf--subtitle').remove
+
+author = doc.css('.postMetaLockup--authorWithBio .ui-captionStrong')
+author = author.empty? ? '' : author.text
+
+author_role = doc.css('.postMetaLockup--authorWithBio .ui-xs-clamp2.postMetaInline')
+author_role = author_role.empty? ? '' : author_role.text
+
 
 
 # SCRAPE IMAGES
@@ -199,8 +216,8 @@ article_html = article_html.gsub(/_\._/, '*.*').gsub(/_\!_/, '*!*').gsub(/_\?_/,
 article_template_pre = "{% set title = '#{title}' %}
 {% set title_image_path = '#{filename}' %}
 {% set deck = '#{deck}' %}
-{% set author = 'Nathan Curtis' %}
-{% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
+{% set author = '#{author}' %}
+{% set author_role = '#{author_role}' %}
 {% set published_date = '#{published_date}' %}
 {% set read_duration = '#{read_duration}' %}
 {% set masthead = #{masthead} %}

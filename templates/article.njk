@@ -18,7 +18,7 @@
     {% call esds.row(background="white", class="esds-row--tall-inset esds-row--article-max-width") %}
         <div class="escom-article__author-row">
             <div class="escom-article__author-avatar"
-                style="background-image: url(/images/bios/bio-thumb-nathan-curtis.png)">
+                style="background-image: url('/images/bios/bio-thumb-{{ author | lower | replace(' ', '-') }}.png')">
             </div>
             <div class="escom-article__author-text">
                 <p class="escom-article__author">
