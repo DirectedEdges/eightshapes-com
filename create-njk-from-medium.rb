@@ -162,6 +162,18 @@ unless quotes.empty?
   end
 end
 
+# Rewrite Medium Links to be local to eightshapes.com
+medium_links = article_html.css("a[href^='https://medium.com/eightshapes-llc']")
+unless medium_links.empty?
+  medium_links.each do |l|
+    link_url = l.attr('href')
+    new_link_url = link_url.gsub(/https:\/\/medium.com\/eightshapes-llc\//, '')
+    last_hypen_index = new_link_url.rindex(/-/)
+    new_link_url.slice!(last_hypen_index, new_link_url.length)
+    l['href'] = "/articles/#{new_link_url}.html"
+  end
+end
+
 
 # IFRAME EMBEDS (Github & Twitter)
 # Needs the full medium.com url in order to load
