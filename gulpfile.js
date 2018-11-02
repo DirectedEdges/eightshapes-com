@@ -27,3 +27,38 @@ gulp.task('deploy-to-gh-pages', function(done){
   del.sync(['tmp'], {force: true});
   done();
 });
+
+
+
+function getArticleNamesManifest() {
+    const articlesDirectory = './pages/articles';
+    let articles = [];
+
+    if (fs.existsSync(articlesDirectory)) {
+        const articleFilenames = fs.readdirSync(articlesDirectory);
+        articleFilenames.sort().forEach(fn => {
+            if (fn.indexOf('.njk') !== -1 && fn.indexOf('_template') === -1 && fn.indexOf('index.njk') === -1) {
+                articles.push(fn.substring(0, fn.length - 4));
+            }
+        });
+    }
+
+    return articles;
+}
+
+function generateArticleNameManifestFile() {
+    const articleNames = getArticleNamesManifest(),
+            articleNamesJson = JSON.stringify(articleNames),
+            articleDataFilePath = './data/articles.json';
+
+    fs.writeFileSync(articleDataFilePath, articleNamesJson);
+}
+
+
+
+gulp.task('build-article-name-manifest', function(done){
+  generateArticleNameManifestFile();
+  done();
+});
+
+gulp.task('esds-hook:pre:build:all', gulp.series('build-article-name-manifest'));
