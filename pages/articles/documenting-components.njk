@@ -1,19 +1,19 @@
 {% set title = 'Documenting Components' %}
-{% set title_image_path = 'documenting-components' %}
-{% set deck = 'Serve a System’s Audiences with Well-Architected Content' %}
-{% set author = 'Nathan Curtis' %}
-{% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-{% set published_date = 'Mar 20' %}
-{% set read_duration = '10 ' %}
-{% set masthead = true %}
+  {% set title_image_path = 'documenting-components' %}
+  {% set deck = 'Serve a System’s Audiences with Well-Architected Content' %}
+  {% set author = 'Nathan Curtis' %}
+  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
+  {% set published_date = 'Mar 20' %}
+  {% set read_duration = '10 ' %}
+  {% set masthead = true %}
 
-{% set title_tag = 'EightShapes > Articles >'  + title %}
-{% extends 'templates/article.njk' %}
+  {% set title_tag = 'EightShapes > Articles >'  + title %}
+  {% extends 'templates/article.njk' %}
 
-{% block main_article %}
-  {% filter markdown %}
+  {% block main_article %}
+    {% filter markdown %}
 _#1 of 6 of the series Documenting Components:_  
-**Overview** | [Intros](https://medium.com/eightshapes-llc/documenting-component-introductions-fe5b04287284) | [Examples](https://medium.com/eightshapes-llc/component-examples-9c4b3bb3b308) | [Design](https://medium.com/eightshapes-llc/component-design-guidelines-eca706100e7c) | Code | Authoring
+**Overview** | [Intros](/articles/documenting-component-introductions.html) | [Examples](/articles/component-examples.html) | [Design](/articles/component-design-guidelines.html) | Code | Authoring
 
 * * *
 
@@ -39,16 +39,16 @@ Beyond that, is it for anyone else? Possibly, especially as a system entrenches 
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '1',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '1',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 Many system teams also publish a system as publicly visible to a community. While intrinsically they seek to share, extrinsically they justify a visible site as a recruiting tool. The system shall expose rigor and quality, craft and collaboration, practices elevated so that a talented recruit sees strength.
 
@@ -66,31 +66,31 @@ So, who’s most important? My experience suggests a clear starting point: syste
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '2',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '2',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 What about engineers versus designers? Every system I’ve worked recently serves both, guiding both design and code. Some doc I observe from other orgs reflects a strong bias towards one or the other, or separates destinations for each (more on that later). There are many dimensions to consider: your objectives, their frequency of use, content depth, quality, cost of content production, and relevance to their work.
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '3',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '3',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 I’m a designer. But I’m also a pragmatist. If I had to choose one, without any context, I’d favor engineers. Getting 50 engineers to code well-designed components is more likely to result in cohesive, efficiently built experiences compared to 50 designers reading tomes of guidance about decisions already built into that code.
 
@@ -104,27 +104,27 @@ Component doc connects the your audience with content you can provide. The conte
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '4',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '4',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-{% endfilter %}
+  {% filter markdown %}
+  {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '5',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '5',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 At a high level, component doc usually includes these four types:
 
@@ -141,16 +141,16 @@ The cost of each varies. An _Introduction_ should be quick and cheap, riffing of
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '6',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '6',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 But, take a deep breath. Effective _Design_ reference can be very costly, skimped to achieve only basics, or skipped altogether. Design narratives depend on a system’s goals, team capacity and talent, and a community’s appetite.
 
@@ -168,20 +168,20 @@ Google Material’s doc ecosystem illustrates fragmentation. [Material’s desig
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '7',
-    image_alt = '',
-    caption = 'Google Material propagates stories across <a href="https://material.io/guidelines/components/buttons.html" rel="noopener nofollow" target="_blank">
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '7',
+      image_alt = '',
+      caption = 'Google Material propagates stories across <a href="https://material.io/guidelines/components/buttons.html" rel="noopener nofollow" target="_blank">
   <strong>Material Design</strong>
 </a>, <a href="https://getmdl.io/components/index.html#buttons-section" rel="noopener nofollow" target="_blank">
   <strong>Material Design Lite</strong>
 </a>, and <strong>Material UI</strong>’s <a href="https://material-ui-next.com/demos/buttons/" rel="noopener nofollow" target="_blank">Demos</a> and <a href="https://material-ui-next.com/api/button/" rel="noopener nofollow" target="_blank">API</a>.',
-    class = ''
-) }}
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 This fragmentation isn’t just essential, it’s meaningful and justified. Material’s spread across frameworks, teams, platforms, and—let’s be honest—the world exceeds every other design system in practice today. Newsflash: we all aren’t aiming to be Google Material!
 
@@ -189,18 +189,18 @@ For the rest of us, a design goes here engineering goes there mentality is commo
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '8',
-    image_alt = '',
-    caption = 'Component design guidance and code &amp; API docs, loosely coupled via separate sites. Example: <a href="https://design.atlassian.com" rel="nofollow noopener" target="_blank">
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '8',
+      image_alt = '',
+      caption = 'Component design guidance and code &amp; API docs, loosely coupled via separate sites. Example: <a href="https://design.atlassian.com" rel="nofollow noopener" target="_blank">
   <strong>Atlassian</strong>
 </a>.',
-    class = ''
-) }}
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 A design/code separation carries risks, too. Over time, sites fall out of sync as:
 
@@ -221,33 +221,33 @@ In many systems programs I’ve led in recent years, such as the [Morningstar De
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '9',
-    image_alt = '',
-    caption = 'Component documentation page that threads design and code content together in one scrollable view, as shown in <a href="http://designsystem.morningstar.com/components/buttons.html" rel="noopener nofollow" target="_blank">
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '9',
+      image_alt = '',
+      caption = 'Component documentation page that threads design and code content together in one scrollable view, as shown in <a href="http://designsystem.morningstar.com/components/buttons.html" rel="noopener nofollow" target="_blank">
   <strong>Morningstar Design System</strong>
 </a>.',
-    class = ''
-) }}
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 A threaded page comes with tradeoffs: it runs longer with content varyingly relevant per discipline. As an alternative, other systems follow an introduction with content organized into tabs.
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '10',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '10',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 _Takeaway_: Blend design and code is possible, and a team can choose the UI—stacked, tabs, something else—that suits their interest.
 
@@ -266,38 +266,38 @@ Examples rule, and so long as deeper design and code reference is a click away, 
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '11',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '11',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-{% endfilter %}
+  {% filter markdown %}
+  {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '12',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '12',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-{% endfilter %}
+  {% filter markdown %}
+  {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '13',
-    image_alt = '',
-    caption = 'Distinct approaches varying what content is prioritized: Code (in Examples) first, Design first, or a sensitizing example <em>above</em> tabs altogether',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '13',
+      image_alt = '',
+      caption = 'Distinct approaches varying what content is prioritized: Code (in Examples) first, Design first, or a sensitizing example <em>above</em> tabs altogether',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 [IBM Carbon](http://carbondesignsystem.com/components/checkbox/code) values examples revealing _Code_ first and foremost, leaving design details for _Usage_ and _Style_ to subsequent tabs. [Hudl’s Uniform](http://uniform.hudl.com/components/forms/checkbox/design) system reverses priority, telling the _Design_ before _Code_, relegated to a second tab with a content taxonomy that’s similar but not exactly the same. Salesforce’s [Lightning Design System](https://www.lightningdesignsystem.com/components/cards/) presents a sensitizing example as a component explorer above a default _Developer Guidelines_ tab, yet _Implementation Notes_ and _Design Guidelines_ tabs remain curiously empty.
 
@@ -313,18 +313,18 @@ The longer your page, the more important it is to signal what’s there and wher
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '14',
-    image_alt = '',
-    caption = '<a href="http://designsystem.morningstar.com/" rel="nofollow noopener" target="_blank">
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '14',
+      image_alt = '',
+      caption = '<a href="http://designsystem.morningstar.com/" rel="nofollow noopener" target="_blank">
   <strong>Morningstar Design System</strong>
 </a> organizes local navigation along a page’s right rail with two levels of hierarchy.',
-    class = ''
-) }}
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 _Takeaway_: The UI — across tabs or in a single scrollable view — can be a matter of taste, although many sites trend towards a vertical navigation that sticks. Ask your audience, know your content, maximize usability, and no matter what: keep section names and order consistent across the library.
 
@@ -336,21 +336,21 @@ The more design and code thread together, the more audiences interested predomin
 
 {% endfilter %}
 
-{{ escom.pull_quote(
-    quote = '<em>A design manager asks…</em><br>Can I hide all the code samples and reference tables?',
-    class = 'escom-pull-quote--light'
-) }}
+  {{ escom.pull_quote(
+      quote = '<em>A design manager asks…</em><br>Can I hide all the code samples and reference tables?',
+      class = 'escom-pull-quote--light'
+  ) }}
 
-{% filter markdown %}
-{% endfilter %}
+  {% filter markdown %}
+  {% endfilter %}
 
-{{ escom.pull_quote(
-    quote = '<em>An engineer asks…</em><br>Can I get rid of all the lengthy design storytelling?',
-    class = 'escom-pull-quote--light'
-) }}
+  {{ escom.pull_quote(
+      quote = '<em>An engineer asks…</em><br>Can I get rid of all the lengthy design storytelling?',
+      class = 'escom-pull-quote--light'
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 Consider a toggle to hide design or code concerns. This requires classifying each content type as relevant to one, the other, or both audiences, such as:
 
@@ -362,29 +362,29 @@ In a similar vein, [Hudl’s Uniform](http://uniform.hudl.com/components/forms/c
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '15',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '15',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-{% endfilter %}
+  {% filter markdown %}
+  {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '16',
-    image_alt = '',
-    caption = '<a href="http://uniform.hudl.com/components/forms/checkbox/design" rel="nofollow noopener" target="_blank">
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '16',
+      image_alt = '',
+      caption = '<a href="http://uniform.hudl.com/components/forms/checkbox/design" rel="nofollow noopener" target="_blank">
   <strong>Hudl’s Uniform</strong>
 </a> design system distinguishes guidance for Design and Code via a page-level toggle (upper right).',
-    class = ''
-) }}
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 The implementation is smooth and yet comes with a cost: build the UI _and_ manage content effectively. Other clients I’ve served have sought a similar breakdown, finding my heart with acknowledging the separate yet open borders between design and engineering.
 
@@ -394,7 +394,7 @@ _Takeaway_: Filtering based on content types is a content management challenge m
 
 So, you have a strong sense of your audiences, know the kinds of content to produce, and agree on a high-level page structure. It’s time to get to work.
 
-Next → [**#2. Introductions**](https://medium.com/eightshapes-llc/documenting-component-introductions-fe5b04287284)
+Next → [**#2. Introductions**](/articles/documenting-component-introductions.html)
 
 
 

@@ -1,53 +1,53 @@
 {% set title = 'Stealing Time in User Research' %}
-{% set title_image_path = 'stealing-time-in-user-research' %}
-{% set deck = 'File Under: Collaboration in Design Discovery and Research' %}
-{% set author = 'Dan Brown' %}
-{% set author_role = 'Designer • Co-founder of @eightshapes • Author of 3 books on UX • http://bit.ly/danbooks • Board gamer • Family cook' %}
-{% set published_date = 'Aug 8' %}
-{% set read_duration = '6 ' %}
-{% set masthead = false %}
+  {% set title_image_path = 'stealing-time-in-user-research' %}
+  {% set deck = 'File Under: Collaboration in Design Discovery and Research' %}
+  {% set author = 'Dan Brown' %}
+  {% set author_role = 'Designer • Co-founder of @eightshapes • Author of 3 books on UX • http://bit.ly/danbooks • Board gamer • Family cook' %}
+  {% set published_date = 'Aug 8' %}
+  {% set read_duration = '6 ' %}
+  {% set masthead = false %}
 
-{% set title_tag = 'EightShapes > Articles >'  + title %}
-{% extends 'templates/article.njk' %}
+  {% set title_tag = 'EightShapes > Articles >'  + title %}
+  {% extends 'templates/article.njk' %}
 
-{% block main_article %}
+  {% block main_article %}
+    {% filter markdown %}
+{% endfilter %}
+
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '1',
+      image_alt = '',
+      caption = 'They’re coming for your script.',
+      class = ''
+  ) }}
+
   {% filter markdown %}
-{% endfilter %}
+  {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '1',
-    image_alt = '',
-    caption = 'They’re coming for your script.',
-    class = ''
-) }}
+  {{ escom.pull_quote(
+      quote = 'Dear Dan,',
+      class = 'escom-pull-quote--light'
+  ) }}
 
-{% filter markdown %}
-{% endfilter %}
+  {% filter markdown %}
+  {% endfilter %}
 
-{{ escom.pull_quote(
-    quote = 'Dear Dan,',
-    class = 'escom-pull-quote--light'
-) }}
+  {{ escom.pull_quote(
+      quote = 'Hey! I could use your advice. I’m running ongoing testing with users, and one of my stakeholders asked if we could take some time for ‘marketing questions’ at the end. How do I tell them no?',
+      class = 'escom-pull-quote--light'
+  ) }}
 
-{% filter markdown %}
-{% endfilter %}
+  {% filter markdown %}
+  {% endfilter %}
 
-{{ escom.pull_quote(
-    quote = 'Hey! I could use your advice. I’m running ongoing testing with users, and one of my stakeholders asked if we could take some time for ‘marketing questions’ at the end. How do I tell them no?',
-    class = 'escom-pull-quote--light'
-) }}
+  {{ escom.pull_quote(
+      quote = 'Signed,<br>User Researcher living in a marketing world',
+      class = 'escom-pull-quote--light'
+  ) }}
 
-{% filter markdown %}
-{% endfilter %}
-
-{{ escom.pull_quote(
-    quote = 'Signed,<br>User Researcher living in a marketing world',
-    class = 'escom-pull-quote--light'
-) }}
-
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 ## Dear User Researcher,
 
 Whew. A lot to parse here. Let’s make sure we’re talking about the same thing:
@@ -95,13 +95,13 @@ By running a pilot you can evaluate how the conversation flows and validate that
 
 {% endfilter %}
 
-{{ escom.pull_quote(
-    quote = 'Remember how we ran out of time? Remember how we couldn’t get to some of the most essential tasks? Remember how uncomfortable the participant was when we asked a leading question?',
-    class = 'escom-pull-quote--light'
-) }}
+  {{ escom.pull_quote(
+      quote = 'Remember how we ran out of time? Remember how we couldn’t get to some of the most essential tasks? Remember how uncomfortable the participant was when we asked a leading question?',
+      class = 'escom-pull-quote--light'
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 Through this shared experience you can build an argument for concentrating on certain types of questions.
 
@@ -149,13 +149,13 @@ So perhaps our first response is:
 
 {% endfilter %}
 
-{{ escom.pull_quote(
-    quote = '<strong>“Thanks for your interest in this research! I’m glad to hear you want to engage with our users.”</strong>',
-    class = 'escom-pull-quote--light'
-) }}
+  {{ escom.pull_quote(
+      quote = '<strong>“Thanks for your interest in this research! I’m glad to hear you want to engage with our users.”</strong>',
+      class = 'escom-pull-quote--light'
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 It’s easy to see this as an encroachment, a hijacking of your process and stealing your time, but ultimately it’s good: It’s an opportunity to teach others about engaging meaningfully with the people who will use your product.
 
@@ -165,16 +165,16 @@ _Thanks for reading! I wrote a whole book on the design discovery process._ [**_
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '2',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '2',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 _You can_ [_download a sample chapter_](https://abookapart.com/products/practical-design-discovery) _from A Book Apart. The book puts techniques like user research into context, explaining how an entire discovery phase comes together. If you pick up a copy, all my dreams will come true!_
 

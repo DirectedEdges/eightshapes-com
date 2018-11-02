@@ -1,31 +1,31 @@
 {% set title = 'Space in Design Systems' %}
-{% set title_image_path = 'space-in-design-systems' %}
-{% set deck = 'From Basics to Expanded Concepts to Apply Space with Intent' %}
-{% set author = 'Nathan Curtis' %}
-{% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-{% set published_date = 'Sep 25, 2016' %}
-{% set read_duration = '9 ' %}
-{% set masthead = false %}
+  {% set title_image_path = 'space-in-design-systems' %}
+  {% set deck = 'From Basics to Expanded Concepts to Apply Space with Intent' %}
+  {% set author = 'Nathan Curtis' %}
+  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
+  {% set published_date = 'Sep 25, 2016' %}
+  {% set read_duration = '9 ' %}
+  {% set masthead = false %}
 
-{% set title_tag = 'EightShapes > Articles >'  + title %}
-{% extends 'templates/article.njk' %}
+  {% set title_tag = 'EightShapes > Articles >'  + title %}
+  {% extends 'templates/article.njk' %}
 
-{% block main_article %}
-  {% filter markdown %}
+  {% block main_article %}
+    {% filter markdown %}
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '1',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '1',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
+  {% filter markdown %}
+  
 
-
-I’ve long referred to [Color](https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3), Type and Icons as the “Big 3” of a system’s visual language. All UI components — from [Buttons](https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23) on up — are built with them. But I left something out. Space, our final frontier.
+I’ve long referred to [Color](/articles/color-in-design-systems.html), Type and Icons as the “Big 3” of a system’s visual language. All UI components — from [Buttons](/articles/buttons-in-design-systems.html) on up — are built with them. But I left something out. Space, our final frontier.
 
 ### Space Rivals&nbsp;Color
 
@@ -33,16 +33,16 @@ Space is everywhere. CSS uses properties like _padding_, _margin_, and absolute 
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '2',
-    image_alt = '',
-    caption = 'Space rivals color in frequency of use within a library’s style rules',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '2',
+      image_alt = '',
+      caption = 'Space rivals color in frequency of use within a library’s style rules',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 After removing effects (“zeroed” values like&nbsp;_:0;_ and reserved terms like _transparent_ or _auto_) where CSS already offers us a system for decisions, _space_ rules appeared more than anything except _color_. Nothing else — not _type_, _size_, _layout_ — was even close. There’s so much spatial complexity built into our libraries, let alone our products!
 
@@ -52,16 +52,16 @@ Space epitomizes the “I design this way, you build that way” gap between des
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '3',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '3',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 Costs are huge: annotating, translating, discussing, visually scrubbing during QA. All that work&nbsp;… for something still not good enough. Thus space exacts an emotional toll, too.
 
@@ -81,16 +81,16 @@ Grids are rich with spatial decisions for columns, gutters, outer margins, and r
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '4',
-    image_alt = '',
-    caption = 'Grid conventions for margin (blue) and gutter (lime green)',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '4',
+      image_alt = '',
+      caption = 'Grid conventions for margin (blue) and gutter (lime green)',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 A grid isn’t a complete spatial system. A grid is a component that _uses_ space, just like every other component. A grid feels different. It’s invisible, comes early, and only does space. But there’s more to space than grid.
 
@@ -104,31 +104,31 @@ Teams setup a memorable, even magical base number to ground all other spatial va
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '5',
-    image_alt = '',
-    caption = 'A set of spacing options, based on 6 but supplying any multiple of 3s &amp; 2s. Really? All these options?',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '5',
+      image_alt = '',
+      caption = 'A set of spacing options, based on 6 but supplying any multiple of 3s &amp; 2s. Really? All these options?',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 Most systems I’ve worked use 16. It’s a good default font size. It’s a factor of all screen resolutions (320, 768, 1024). And it provides memorable multiples greater (32, 64,&nbsp;…) and factors less (8, 4, 2) than where it starts.
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '6',
-    image_alt = '',
-    caption = 'A set of more limited spatial options, based on 16',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '6',
+      image_alt = '',
+      caption = 'A set of more limited spatial options, based on 16',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 _Takeaway_: Ground your spatial system’s range with a memorable base number, and limit expectations on how it’s used.
 
@@ -140,31 +140,31 @@ With an established base, teams can still slip into random steps (12, 14, 18, 22
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '7',
-    image_alt = '',
-    caption = 'Linear progression from 4 to 32. Really, you need all these options?',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '7',
+      image_alt = '',
+      caption = 'Linear progression from 4 to 32. Really, you need all these options?',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 An alternative is non-linear. Options include the [golden ratio](https://en.wikipedia.org/wiki/Golden_ratio), [modular scale](http://zurb.com/word/modular-scale), or the similar [geometric progression](https://en.wikipedia.org/wiki/Geometric_progression) that could double each step. Starting from the base, we’ll go in both directions to stops smaller (16, 8, 4, 2) and larger (16, 32, 64, and… that’s about it) on the scale.
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '8',
-    image_alt = '',
-    caption = 'Geometric progression, doubling each step. %s represent proportional use in our library.',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '8',
+      image_alt = '',
+      caption = 'Geometric progression, doubling each step. %s represent proportional use in our library.',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 _Takeaway_: Consider a geometric progression or something similarly nonlinear. You might experience occasional tensions to add a 24 between 16 and 32. However, in my experience, such moments are rare and rarely justify breaking the simple system.
 
@@ -176,16 +176,16 @@ I love Gmail’s Compact, Cozy, Comfortable space toggle. So when we built our s
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '9',
-    image_alt = '',
-    caption = 'A descriptive label for each stop? Be careful.',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '9',
+      image_alt = '',
+      caption = 'A descriptive label for each stop? Be careful.',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 So we did what we always do: use a t-shirt size scale. Medium corresponds to default and S, XS, L, XL and — if necessary — XXS and XXL are other options. It’s what most libraries (Bootstrap, Lightning, etc) do.
 
@@ -203,46 +203,46 @@ In reviewing our emerging work, there aren’t many distinct intents for applyin
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '10',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '10',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 As a front-end developer, I envision all the boxes of elements that fit elements together.
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '11',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '11',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 The card provides a useful illustration of many spatial concept we use: insetting content from an edge, varying an inset’s shape, spacing items inline, and stacking items _within_ and _between_ a component.
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '12',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '12',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 These concepts — inset, inset squish, inset stretch, stack, inline, and grid — cover the vast majority of our library’s CSS rules for space: _padding_, _margin_, _left_, _right_, _top_, and _bottom_. These concepts also enhance how each atomic is self-contained, improving [composability](https://en.wikipedia.org/wiki/Composability).
 
@@ -254,31 +254,31 @@ An inset offers indents content on all four sides like the matte of the framed p
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '13',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '13',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 The default is also a useful starting point for mobile first design, expanding to large at a relevant viewport width like 768px.
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '14',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '14',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 * * *
 
 ### Concept 2: Squish&nbsp;Inset
@@ -287,16 +287,16 @@ A squished inset reduces space top and bottom, in our case by 50%. While less co
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '15',
-    image_alt = '',
-    caption = 'Squished inset in buttons, data table cells, and list group items',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '15',
+      image_alt = '',
+      caption = 'Squished inset in buttons, data table cells, and list group items',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 * * *
 
 ### Concept 3: Stretch&nbsp;Inset
@@ -305,16 +305,16 @@ Contrasted with a button or pill’s squish, we found ourselves vertically stret
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '16',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '16',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 * * *
 
 ### Concept 4:&nbsp;Stack
@@ -323,16 +323,16 @@ With all due respect to horizontally scrolled UI, the overwhelming majority scro
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '17',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '17',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 * * *
 
 ### Concept 5:&nbsp;Inline
@@ -341,16 +341,16 @@ We also arrange objects inline, wrapping as they flow like text from the left or
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '18',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '18',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 * * *
 
 ### Concept 6:&nbsp;Grid
@@ -363,16 +363,16 @@ So, as applied to a Card component, your styled padding and margin may look some
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '19',
-    image_alt = '',
-    caption = 'Notional application of insets, stacks, and inlines (or generic spacers — ack!) onto a Card',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '19',
+      image_alt = '',
+      caption = 'Notional application of insets, stacks, and inlines (or generic spacers — ack!) onto a Card',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 * * *
 
 ## What We&nbsp;Learned
@@ -385,16 +385,16 @@ Most collaborators can’t _see_ space, a primary reason it’s so arbitrarily a
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '20',
-    image_alt = '',
-    caption = 'A visual reference, akin to a cheatsheet, of spatial concepts',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '20',
+      image_alt = '',
+      caption = 'A visual reference, akin to a cheatsheet, of spatial concepts',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 _Takeaway_: Teach your spatial concepts using a tight doc diagram or cheat sheet. Such references quicken how we grasp, apply, and sustain the concepts through design and code.
 
@@ -428,18 +428,18 @@ Simple inset _padding_ and stack _margin_ rules collided with a long-known spati
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '21',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '21',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
+  {% filter markdown %}
+  
 
-
-However, we followed an idea’s spark (@kevinmpowell’s “Let’s negative margin space using pseudo elements! But how much?”) with some math (I can use my college degree!). The result was a [mixin formula combining type size and line-height to collapse space above and below colliding objects](https://medium.com/eightshapes-llc/cropping-away-negative-impacts-of-line-height-84d744e016ce).
+However, we followed an idea’s spark (@kevinmpowell’s “Let’s negative margin space using pseudo elements! But how much?”) with some math (I can use my college degree!). The result was a [mixin formula combining type size and line-height to collapse space above and below colliding objects](/articles/cropping-away-negative-impacts-of-line-height.html).
 
 _Takeaway_: Don’t give up on systematic clarity because of exceptions. Try to solve them. If you can overcome such nuances, even with a bit of CSS trickery, you can persist a simpler concept everyone can stick to.
 
@@ -451,16 +451,16 @@ With concepts like inset, stack, and grid, you can tune the dials of density wit
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '22',
-    image_alt = '',
-    caption = 'On the left, default spacing. On the right, tuning by increasing just the inset by 50%.',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '22',
+      image_alt = '',
+      caption = 'On the left, default spacing. On the right, tuning by increasing just the inset by 50%.',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 _Takeaway_: You can tune spatial density even with a barely-beyond primitive set of options. Without them, density control is a dream. With them, you can gradually build towards a powerful engine to find, adjust, and tune space with great intent and less risk.
 

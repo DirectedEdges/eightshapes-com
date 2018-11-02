@@ -1,17 +1,17 @@
 {% set title = 'And You Thought Buttons Were Easy?' %}
-{% set title_image_path = 'and-you-thought-buttons-were-easy' %}
-{% set deck = 'A Story for Selling a System that Scales' %}
-{% set author = 'Nathan Curtis' %}
-{% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-{% set published_date = 'Jul 26, 2017' %}
-{% set read_duration = '4 ' %}
-{% set masthead = false %}
+  {% set title_image_path = 'and-you-thought-buttons-were-easy' %}
+  {% set deck = 'A Story for Selling a System that Scales' %}
+  {% set author = 'Nathan Curtis' %}
+  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
+  {% set published_date = 'Jul 26, 2017' %}
+  {% set read_duration = '4 ' %}
+  {% set masthead = false %}
 
-{% set title_tag = 'EightShapes > Articles >'  + title %}
-{% extends 'templates/article.njk' %}
+  {% set title_tag = 'EightShapes > Articles >'  + title %}
+  {% extends 'templates/article.njk' %}
 
-{% block main_article %}
-  {% filter markdown %}
+  {% block main_article %}
+    {% filter markdown %}
 Selling a design system into an enterprise usually involves a pitch to many audiences. Designers appreciate cohesiveness. Engineers value efficiencies. And, pivotally, executives appreciate value.
 
 While a pitch covers a lot of ground — system composition, team & community strategy, scope & roadmaps — my narrative pivots from introductions to the ask using a story about Buttons. It’s simple yet reveals button’s complicated yet solvable glory, taking a few slides and lasting a minute or two.
@@ -26,31 +26,31 @@ Our trip towards cohesiveness starts with the most basic of components: the butt
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '1',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '1',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 However, even our simple button includes many properties that formalize important decisions about our visual language. Text color, case, weight, and size. Shape size and roundedness. Spatial density both within a component as well as it’s relationship with adjacent components.
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '2',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '2',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 These fundamental decisions spread across all products we make. Getting enterprise-wide agreement on them takes effort, coordination, and time.
 
@@ -62,61 +62,61 @@ Yet, there’s more to buttons than just a simple, default appearance. A button 
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '3',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '3',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 And, we’ll need more than one, primary button. We’ll need a range of buttons: secondary, tertiary, and perhaps even special buttons for scenarios like getting started or a red button for selling things, since online marketing proved that red sells best.
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '4',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '4',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 We’ll also incorporate icons and interactions like a menu to open a panel, or — my favorite — a split button that couples a primary action on the left with a menu-triggering caret on the right.
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '5',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '5',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 We must solve for how these variations appear on diverse backgrounds, whether light and dark settings or a range of themes.
 
 {% endfilter %}
 
-{{ escom.article_figure(
-    image_path = title_image_path,
-    image_number = '6',
-    image_alt = '',
-    caption = '',
-    class = ''
-) }}
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '6',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 All of these combinations must be considered to ensure that the system delivers on promised accessibility. It turns out, buttons are complicated.
 
@@ -128,25 +128,25 @@ Let’s imagine you combine a designer, engineer and QA specialist to design, bu
 
 {% endfilter %}
 
-{{ escom.pull_quote(
-    quote = '200 hrs × $100/hr = $20,000 for Buttons',
-    class = 'escom-pull-quote--light'
-) }}
+  {{ escom.pull_quote(
+      quote = '200 hrs × $100/hr = $20,000 for Buttons',
+      class = 'escom-pull-quote--light'
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 If your enterprise has 25 teams each making buttons, then it costs your enterprise $1,000,000 to have good buttons.
 
 {% endfilter %}
 
-{{ escom.pull_quote(
-    quote = '$20,000 × 50 teams = $1,000,000 for Buttons',
-    class = 'escom-pull-quote--light'
-) }}
+  {{ escom.pull_quote(
+      quote = '$20,000 × 50 teams = $1,000,000 for Buttons',
+      class = 'escom-pull-quote--light'
+  ) }}
 
-{% filter markdown %}
-
+  {% filter markdown %}
+  
 
 That’s a _million_ dollars, for buttons. And since buttons were made by 50 _different_ teams, expect quality and consistency to vary significantly.
 
