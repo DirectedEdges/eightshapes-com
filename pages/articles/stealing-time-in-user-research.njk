@@ -1,0 +1,190 @@
+{% set title = 'Stealing Time in User Research' %}
+{% set title_image_path = 'stealing-time-in-user-research' %}
+{% set deck = '' %}
+{% set author = 'Nathan Curtis' %}
+{% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
+{% set published_date = 'Aug 8' %}
+{% set read_duration = '6 ' %}
+{% set masthead = false %}
+
+{% set title_tag = 'EightShapes > Articles >'  + title %}
+{% extends 'templates/article.njk' %}
+
+{% block main_article %}
+  {% filter markdown %}
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '1',
+    image_alt = '',
+    caption = 'They’re coming for your script.',
+    class = ''
+) }}
+
+{% filter markdown %}
+
+### File Under: Collaboration in Design Discovery and&nbsp;Research
+{% endfilter %}
+
+{{ escom.pull_quote(
+    quote = 'Dear Dan,',
+    class = 'escom-pull-quote--light'
+) }}
+
+{% filter markdown %}
+{% endfilter %}
+
+{{ escom.pull_quote(
+    quote = 'Hey! I could use your advice. I’m running ongoing testing with users, and one of my stakeholders asked if we could take some time for ‘marketing questions’ at the end. How do I tell them no?',
+    class = 'escom-pull-quote--light'
+) }}
+
+{% filter markdown %}
+{% endfilter %}
+
+{{ escom.pull_quote(
+    quote = 'Signed,<br>User Researcher living in a marketing world',
+    class = 'escom-pull-quote--light'
+) }}
+
+{% filter markdown %}
+
+## Dear User Researcher,
+
+Whew. A lot to parse here. Let’s make sure we’re talking about the same thing:
+
+- “ **testing with users** ”: By this you mean evaluating the efficacy and usability of your product through qualitative interviews with users.
+- “ **marketing questions** ”: Your stakeholder wants to ask questions about preferences or perhaps wants to clarify the participant’s desires or needs.
+- “ **tell them no** ”: You perceive these questions to be either irrelevant or so grossly off-topic as to distract or confuse your participant. Also, you don’t like stakeholders messing with your script.
+
+I don’t like people messing with my script either.
+
+## How questions go&nbsp;wrong
+
+The two most common situations I’ve seen are when you’re asked to insert questions that either break the conventions of qualitative interviews or that expand the scope of the interview.
+
+### The questions defy good practices
+
+That is, you object to how the question is being asked. Stakeholders may request inserting questions that violate well-established conventions for qualitative interviews because they…
+
+- Ask users to select from a multiple choice
+- Employ arbitrary scales (like Likert)
+- Lead the witness
+- Presume familiarity with the product
+- Presume users experience a problem solved by the product
+- etc.
+
+Formatting, framing, and presuming produce a contrasting tone to the typical interview: it’s disconcerting. The mindset shifts from “I’m genuinely interested in you” to “I need to fit you into one of these boxes.” Because of that shift, as interviewer I’ve never been able to transition smoothly from my script to the stakeholder’s.
+
+### The questions defy&nbsp;scope
+
+Some stakeholders, starved for an opportunity to engage with customers, want to ask all the questions. All of them. These questions inquire about meaningless demographics, unrelated behaviors, or broad aesthetic tastes. These questions take users out of their own head and ask them to look at the world from the company’s perspective.
+
+Though the interviews I run tend to free-range a bit, I do try to stick with a relevant narrative arc. The participant is seeing the product for the first time, usually in some half-baked state, learning what it does and how it works at the same time as being questioned about it. To help them, I ground this visceral experience by first asking questions about what’s happened to them recently. That is, the scope remains entirely focused on their world.
+
+## How to circumvent
+
+With the right preparation you can avoid this situation, or at least give yourself a plausible “out”. There are a couple things I do to make sure everyone knows what we’re doing and why.
+
+### Embed objectives in the&nbsp;script
+
+The script and research plan are one and the same document. Anyone reviewing the script also sees the objectives and the format. By making the goals explicit I can use them to counter requests for expanding the script beyond its scope.
+
+### Run a&nbsp;pilot
+
+By running a pilot you can evaluate how the conversation flows and validate that you’re getting the right kind of information. When stakeholders see a pilot for themselves, you have a shared experience you can reference.
+
+{% endfilter %}
+
+{{ escom.pull_quote(
+    quote = 'Remember how we ran out of time? Remember how we couldn’t get to some of the most essential tasks? Remember how uncomfortable the participant was when we asked a leading question?',
+    class = 'escom-pull-quote--light'
+) }}
+
+{% filter markdown %}
+
+
+Through this shared experience you can build an argument for concentrating on certain types of questions.
+
+## How to&nbsp;respond
+
+If you could say no, you would, and you wouldn’t be asking for advice. So I’m going to assume that saying no is not an option, that you’re in some situation where you _have_ to agree. Blink twice if that’s true.
+
+So instead, let me give you a few “Yes, and…” responses that don’t decimate the script and perhaps build a better relationship with stakeholders.
+
+### Agree, and ask for&nbsp;help
+
+**You say: “The script is calibrated to the study’s objectives and I have a commitment to meet those goals. Can we take a look at the script and talk how to pare it back without compromising my commitment?”**
+
+Now, the stakeholder may not have the authority, expertise, or interest in helping you cull your script. But you’ve now planted the idea that the script has been crafted to address the goals of a study.
+
+### Agree, and reduce the&nbsp;scope
+
+**You say: “Yes, but I have limited time. I can’t ask all these questions. I’ll ask one. Which is most important to you?”**
+
+The stakeholder may be unwilling to prioritize the questions for you. In this case, I say that I’ll pick one, or that I’ll include them all in the script and ask whatever fits into the conversation. Now I’ve planted the idea that the interview is a conversation between humans, and not a checklist of questions.
+
+### Agree, and tell them the requirements
+
+**You say: “Yes, let’s ask about their preferences, but we need to align with the overall tone of the interview. Let me craft the questions to fit and we can review together.”**
+
+The stakeholder may be unwilling to give up control of the format of the questions, but this is another opportunity to frame the interview as a conversation. Your aim is to be respectful of the participant, and not treat them as merely a tome of knowledge.
+
+### Agree, and suggest a different channel
+
+**You say: “I can see why these questions are important to you. I’m worried that in the venue of the interview I won’t get the answers you need. Let’s instead send a follow-up survey. I’ll highlight in the interview that this is important to us.”**
+
+The stakeholder may express concern about response rate. In this case, you can strategize about ensuring we get good responses, and provide support in crafting the follow-up.
+
+### Agree, and evaluate after a&nbsp;pilot
+
+**You say: “I’ll include them in the next interview, and then we should talk about the outcome.”**
+
+Here, you’ve agreed in full to the stakeholder’s request, giving you more data to perhaps use one of the other responses. That is, you conduct the interview with the questions and learn that you ran short on time or that the participant became uncomfortable with the change in tone. If the stakeholder observes the interview in real-time you can share
+
+## How to respond, revisited
+
+Let’s not forget that many UX professionals are not afforded an opportunity to talk to users. That there’s no appetite for user research in some organizations is a reality many of our colleagues still deal with. Sure, too much interest is too much of a good thing, but it’s perhaps a better starting point than the alternative.
+
+So perhaps our first response is:
+
+{% endfilter %}
+
+{{ escom.pull_quote(
+    quote = '<strong>“Thanks for your interest in this research! I’m glad to hear you want to engage with our users.”</strong>',
+    class = 'escom-pull-quote--light'
+) }}
+
+{% filter markdown %}
+
+
+It’s easy to see this as an encroachment, a hijacking of your process and stealing your time, but ultimately it’s good: It’s an opportunity to teach others about engaging meaningfully with the people who will use your product.
+
+* * *
+
+_Thanks for reading! I wrote a whole book on the design discovery process._ [**_You should check it out_**](https://abookapart.com/products/practical-design-discovery)*!*
+
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '2',
+    image_alt = '',
+    caption = '',
+    class = ''
+) }}
+
+{% filter markdown %}
+
+
+_You can_ [_download a sample chapter_](https://abookapart.com/products/practical-design-discovery) _from A Book Apart. The book puts techniques like user research into context, explaining how an entire discovery phase comes together. If you pick up a copy, all my dreams will come true!_
+
+* * *
+
+**Need help doing discovery for your digital product**? EightShapes can advise or drive projects to get you to a [product definition and vision](http://eightshapes.com/product-discovery.html). Find out more at [eightshapes.com](http://www.eightshapes.com). Please [**get in touch**](mailto:info@eightshapes.com)!
+
+
+
+  {% endfilter %}
+{% endblock %}
