@@ -5,25 +5,13 @@
   {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
   {% set published_date = 'Sep 25, 2016' %}
   {% set read_duration = '9 ' %}
-  {% set masthead = false %}
+  {% set masthead = true %}
 
   {% set title_tag = 'EightShapes > Articles >'  + title %}
   {% extends 'templates/article.njk' %}
 
   {% block main_article %}
     {% filter markdown %}
-{% endfilter %}
-
-  {{ escom.article_figure(
-      image_path = title_image_path,
-      image_number = '1',
-      image_alt = '',
-      caption = '',
-      class = ''
-  ) }}
-
-  {% filter markdown %}
-  
 
 I’ve long referred to [Color](/articles/color-in-design-systems.html), Type and Icons as the “Big 3” of a system’s visual language. All UI components — from [Buttons](/articles/buttons-in-design-systems.html) on up — are built with them. But I left something out. Space, our final frontier.
 
@@ -404,12 +392,6 @@ _Takeaway_: Teach your spatial concepts using a tight doc diagram or cheat sheet
 
 Don’t be foolish. These six models don’t solve everything. We still adjusted a _margin-bottom_ here and _left_ there from time to time. So, there’s justification for following more intentional space options with more generic alternatives (like _$space-m_).
 
-<figure>
-    <div>
-      <iframe width="700" height="250" src="/media/c86b6cf6417b4cd4a7e982e085cdacee?postId=188bcbae0d62" data-media-id="c86b6cf6417b4cd4a7e982e085cdacee" allowfullscreen="" frameborder="0"></iframe>
-    </div>
-  </figure>
-
 _Takeaway_: Provide generic options, use them sparingly, and expect product teams to use them. When they arise in a critique or pull request, educate teammates on more specific concepts like _inset_ or _stack_.
 
 * * *
@@ -463,12 +445,6 @@ With concepts like inset, stack, and grid, you can tune the dials of density wit
   
 
 _Takeaway_: You can tune spatial density even with a barely-beyond primitive set of options. Without them, density control is a dream. With them, you can gradually build towards a powerful engine to find, adjust, and tune space with great intent and less risk.
-
-* * *
-
-_About to embark on a design system, or need to dive deeper to discuss products and players? EightShapes conducts_ [_systems planning workshops_](http://eightshapes.com/workshop-planning-parts-products-people.html) _and coaches clients on_ [_design systems_](http://eightshapes.com/design-systems.html)*.* [_Let’s talk_](https://twitter.com/nathanacurtis)*!*
-
-
 
   {% endfilter %}
 {% endblock %}

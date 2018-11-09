@@ -5,23 +5,12 @@
   {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
   {% set published_date = 'Feb 20, 2017' %}
   {% set read_duration = '8 ' %}
-  {% set masthead = false %}
+  {% set masthead = true %}
 
   {% set title_tag = 'EightShapes > Articles >'  + title %}
   {% extends 'templates/article.njk' %}
 
   {% block main_article %}
-    {% filter markdown %}
-{% endfilter %}
-
-  {{ escom.article_figure(
-      image_path = title_image_path,
-      image_number = '1',
-      image_alt = '',
-      caption = '',
-      class = ''
-  ) }}
-
   {% filter markdown %}
   
 
@@ -333,12 +322,6 @@ _Takeaway_: Add, adjust, and deprecate neutrals to ensure just enough options fu
 
 With all that structure, tooling should ease implementation. [Design tokens](/articles/tokens-in-design-systems.html) are a great way to catalog decisions and establish hooks for others — designers and developers alike — to align to.
 
-<figure>
-    <div>
-      <iframe width="700" height="250" src="/media/581483dbae25a0638a5aa06176c43be6?postId=9f8ea42c9081" data-media-id="581483dbae25a0638a5aa06176c43be6" allowfullscreen="" frameborder="0"></iframe>
-    </div>
-  </figure>
-
 _Takeaway_: Create a taxonomy of tokenized variables used by system adopters and your library’s components. The more predictably your model is catalogued, the easier it is to apply, maintain, and endure.
 
 * * *
@@ -362,12 +345,6 @@ Once UIs combine dark and light areas together on the same page, risky CSS confl
 So, should a system provide a `<body>` CSS class for toggling a page to light or dark? Definitely, if the entire page’s interface can be exclusively one or the other. But if mixing on the same page, it’s unclear how to contain CSS effects on components, and count on each component sensing it’s context to color correctly, without targeting each and every component. That’s a pain.
 
 _Takeaway_: We haven’t figured out a clean solution. Got advice?&nbsp;;)
-
-* * *
-
-_About to embark on a design system, or need to dive deeper to discuss products and players? EightShapes conducts_ [_systems planning workshops_](http://eightshapes.com/workshop-planning-parts-products-people.html) _and coaches clients on_ [_design systems_](http://eightshapes.com/design-systems.html)*.* [_Let’s talk_](https://twitter.com/nathanacurtis)*!*
-
-
 
   {% endfilter %}
 {% endblock %}

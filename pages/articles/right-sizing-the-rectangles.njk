@@ -5,64 +5,22 @@
   {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
   {% set published_date = 'Mar 14, 2016' %}
   {% set read_duration = '6 ' %}
-  {% set masthead = false %}
+  {% set masthead = true %}
 
   {% set title_tag = 'EightShapes > Articles >'  + title %}
   {% extends 'templates/article.njk' %}
 
   {% block main_article %}
-    {% filter markdown %}
-{% endfilter %}
-
-  {{ escom.article_figure(
-      image_path = title_image_path,
-      image_number = '1',
-      image_alt = '',
-      caption = '',
-      class = ''
-  ) }}
-
   {% filter markdown %}
   
 
 During early system activities like our [Component Cut Up workshop](/articles/the-component-cut-up-workshop.html), participants can get stuck on the “correct” way to chop up page into components. Staring at pages on offer, each person has their moment—scissors in hand—wondering:
 
-{% endfilter %}
+- Is this thing (like a <em>Card</em>) the component?
+- Or this smaller thing (like a <em>Button </em>or <em>Tag</em>) the component?
+- Actually, is this far bigger thing (like <em>Card Grid with Toolbar</em>) the component?
 
-  {{ escom.pull_quote(
-      quote = 'Is this thing (like a <em>Card</em>) the component?',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
-  {% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'Or this smaller thing (like a <em>Button </em>or <em>Tag</em>) the component?',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
-  {% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'Actually, is this far bigger thing (like <em>Card Grid with Toolbar</em>) the component?',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
-  
-
-After years working on libraries, my response is a straightforward:
-
-{% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'Yes.',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
+After years working on libraries, my response is a straightforward: Yes.
   
 * * *
 
@@ -124,16 +82,7 @@ Likewise, larger pieces are material to QA the library as tokenized decisions—
 
 The parts on a page are all composed in a the hierarchical journey, from the most atomic element all the way up to the body tag.
 
-The invisible scaffolding that holds a page together is often erroneously thought of as “The Grid.” Without it, some feel unable to build anything visually coherent:
-
-{% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'Get me the Grid! I need the Grid! I can’t build anything without the Grid!',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
+The invisible scaffolding that holds a page together is often erroneously thought of as “The Grid.” Without it, some feel unable to build anything visually coherent: Get me the Grid! I need the Grid! I can’t build anything without the Grid!
   
 ### A Grid is a Component
 
@@ -155,16 +104,7 @@ A _Layout_ provides empty page regions into which you can place components, such
 
 ## #5. Users Value Assembled Shells
 
-When library users approach a library, they can be overwhelmed by the vast ocean of atomic choices. A library’s breadth of parts is correlated with its perceived worth. However, another key question is:
-
-{% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'Can I compose my layout, arranging an array of prebuilt parts how I want to, bound within a shell of “global” components that I may configure but need not rebuild?',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
+When library users approach a library, they can be overwhelmed by the vast ocean of atomic choices. A library’s breadth of parts is correlated with its perceived worth. However, another key question is: Can I compose my layout, arranging an array of prebuilt parts how I want to, bound within a shell of “global” components that I may configure but need not rebuild?
   
 ### Offer Prebuilt Shells that Include Big Components
 

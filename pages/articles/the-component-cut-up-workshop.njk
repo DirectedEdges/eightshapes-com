@@ -5,33 +5,17 @@
   {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
   {% set published_date = 'Nov 3, 2015' %}
   {% set read_duration = '6 ' %}
-  {% set masthead = false %}
+  {% set masthead = true %}
 
   {% set title_tag = 'EightShapes > Articles >'  + title %}
   {% extends 'templates/article.njk' %}
 
   {% block main_article %}
     {% filter markdown %}
-{% endfilter %}
 
-  {{ escom.article_figure(
-      image_path = title_image_path,
-      image_number = '1',
-      image_alt = '',
-      caption = '',
-      class = ''
-  ) }}
+The following activity is an abridged and lightly updated excerpt from Chapter 8: Discover of <a href="http://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351" rel="nofollow noopener" target="_blank">Modular Web Design</a>, published in 2009 in the era of component and pattern libraries. The approach is just as relevant as today <a href="http://alistapart.com/article/from-pages-to-patterns-an-exercise-for-everyone" rel="nofollow noopener" target="_blank">designers such as Charlotte Jackson</a> formulate similar techniques to kickstart a library.
 
-  {% filter markdown %}
-  {% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'The following activity is an abridged and lightly updated excerpt from Chapter 8: Discover of <a href="http://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351" rel="nofollow noopener" target="_blank">Modular Web Design</a>, published in 2009 in the era of component and pattern libraries. The approach is just as relevant as today <a href="http://alistapart.com/article/from-pages-to-patterns-an-exercise-for-everyone" rel="nofollow noopener" target="_blank">designers such as Charlotte Jackson</a> formulate similar techniques to kickstart a library.',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
-  
+* * *
 
 Nothing beats the energy of getting a team together to deconstruct an existing design system and arrive at a component library together.
 

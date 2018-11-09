@@ -5,25 +5,13 @@
   {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
   {% set published_date = 'Mar 14, 2017' %}
   {% set read_duration = '6 ' %}
-  {% set masthead = false %}
+  {% set masthead = true %}
 
   {% set title_tag = 'EightShapes > Articles >'  + title %}
   {% extends 'templates/article.njk' %}
 
   {% block main_article %}
     {% filter markdown %}
-{% endfilter %}
-
-  {{ escom.article_figure(
-      image_path = title_image_path,
-      image_number = '1',
-      image_alt = '',
-      caption = '',
-      class = ''
-  ) }}
-
-  {% filter markdown %}
-  
 
 For a design system to thrive and scale within a larger product ecosystem, central system team members can’t make all the decisions, design all design, code all code. Instead, a system practice must [model and foster a federated community](/articles/team-models-for-scaling-a-design-system.html), opening the door to contributions far and wide. Don’t underestimate the effort to create and run these processes.
 
@@ -163,12 +151,6 @@ Whether it’s a new icon (easy!) or a complex combo box with hierarchical menus
 - Promotion to owning a “segment” concern, becoming the point person for a topical area.
 
 The system of the people, for the people, and by the people indeed!
-
-* * *
-
-_About to embark on a design system, or need to dive deeper to discuss products and players? EightShapes conducts_ [_systems planning workshops_](http://eightshapes.com/workshop-planning-parts-products-people.html) _and coaches clients on_ [_design systems_](http://eightshapes.com/design-systems.html)*.* [_Let’s talk_](https://twitter.com/nathanacurtis)*!*
-
-
 
   {% endfilter %}
 {% endblock %}

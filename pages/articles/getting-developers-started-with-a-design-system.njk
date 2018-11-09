@@ -5,22 +5,12 @@
   {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
   {% set published_date = 'May 25' %}
   {% set read_duration = '6 ' %}
-  {% set masthead = false %}
+  {% set masthead = true   %}
 
   {% set title_tag = 'EightShapes > Articles >'  + title %}
   {% extends 'templates/article.njk' %}
 
   {% block main_article %}
-    {% filter markdown %}
-{% endfilter %}
-
-  {{ escom.article_figure(
-      image_path = title_image_path,
-      image_number = '1',
-      image_alt = '',
-      caption = '',
-      class = ''
-  ) }}
 
   {% filter markdown %}
   
@@ -54,9 +44,6 @@ _Takeaway_: Don’t skimp on installation. If poorly described, you risk alienat
 ### #2. Inspect What’s&nbsp;Included
 
 Once installed, give the engineer a lay of the land. Components are here, fonts and icons there. Markup is invoked from these files, scripts are references in those folders. This can be as simple as a diagram of folder hierarchy (example: [IBM Carbon](http://carbondesignsystem.com/getting-started/developers)) or two-column table related assets to folder locations.
-
-    dist/├── components/ 
-    │ ├── component.js│ ├── component.sass│ └── component markup/import├── styles/│ ├── system.css│ └── system.min.css├── tokens/│ ├── system.tokens.json│ └── system.tokens.scss├── scripts/│ ├── system.js│ └── system.min.js├── icons/│ ├── system.svg│ ├── download.svg│ ├── check.svg│ └── ...├── fonts/│ └── display/└── ...
 
 _Takeaway_: Help an engineer see and find what they want while sensitizing them to what’s to come. This familiarity improves confidence and momentum towards the tasks that remain.
 
@@ -143,12 +130,6 @@ Hopefully, by the end of a getting started, they’ve started. They are now buil
 - **Contribute** their own feature.
 
 _Takeaway_: Conclude an onboarding process with calls-to-action that leave the a new adopter not stranded on an island but connected to a community. Encourage them to engage!
-
-* * *
-
-_About to embark on a design system, or need to dive deeper to discuss products and players? EightShapes conducts_ [_systems planning workshops_](http://eightshapes.com/workshop-planning-parts-products-people.html) _and coaches clients on_ [_design systems_](http://eightshapes.com/design-systems.html)*.* [_Let’s talk_](https://twitter.com/nathanacurtis)*!*
-
-
 
   {% endfilter %}
 {% endblock %}

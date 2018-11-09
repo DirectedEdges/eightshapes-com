@@ -1,26 +1,16 @@
 {% set title = 'Roadmaps for Design Systems' %}
-  {% set title_image_path = 'what-s-will-your-design-system-deliver' %}
+  {% set title_image_path = 'roadmaps-for-design-systems' %}
   {% set deck = 'Communicate What You’ll Do Next That Teams Can Depend On' %}
   {% set author = 'Nathan Curtis' %}
   {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
   {% set published_date = 'Oct 28, 2015' %}
   {% set read_duration = '3 ' %}
-  {% set masthead = false %}
+  {% set masthead = true %}
 
   {% set title_tag = 'EightShapes > Articles >'  + title %}
   {% extends 'templates/article.njk' %}
 
   {% block main_article %}
-    {% filter markdown %}
-{% endfilter %}
-
-  {{ escom.article_figure(
-      image_path = title_image_path,
-      image_number = '1',
-      image_alt = '',
-      caption = '',
-      class = ''
-  ) }}
 
   {% filter markdown %}
   

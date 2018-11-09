@@ -5,25 +5,13 @@
   {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
   {% set published_date = 'Apr 26, 2017' %}
   {% set read_duration = '11 ' %}
-  {% set masthead = false %}
+  {% set masthead = true %}
 
   {% set title_tag = 'EightShapes > Articles >'  + title %}
   {% extends 'templates/article.njk' %}
 
   {% block main_article %}
     {% filter markdown %}
-{% endfilter %}
-
-  {{ escom.article_figure(
-      image_path = title_image_path,
-      image_number = '1',
-      image_alt = '',
-      caption = '',
-      class = ''
-  ) }}
-
-  {% filter markdown %}
-  
 
 Most organizations are coming to understand systems and why they are important. However, how much does it cost? What team do we need?
 
@@ -36,7 +24,7 @@ Peter Merholz and Kristen Skinner’s excellent book [Org Design for Design Orgs
 {% endfilter %}
 
   {{ escom.pull_quote(
-      quote = '“UX researchers now have critical mass to be their own team… [with] A Head of Research … supporting the professional growth of the researchers, and maintaining a global understanding of research insights across all of a company’s products and services.”',
+      quote = 'UX researchers now have critical mass to be their own team… [with] A Head of Research … supporting the professional growth of the researchers, and maintaining a global understanding of research insights across all of a company’s products and services.',
       class = 'escom-pull-quote--light'
   ) }}
 

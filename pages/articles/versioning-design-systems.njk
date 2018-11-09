@@ -36,7 +36,8 @@ Are designers as sensitive to changes when working in a tool like Sketch? Not as
 {% endfilter %}
 
   {{ escom.pull_quote(
-      quote = '“I add a new system feature to my design. Yet the developer says we can’t use it.”<br>– <strong>Designer</strong> on a product team',
+      quote = 'I add a new system feature to my design. Yet the developer says we can’t use it.',
+      attribution = 'Designer on a proudct team',
       class = 'escom-pull-quote--light'
   ) }}
 
@@ -44,7 +45,8 @@ Are designers as sensitive to changes when working in a tool like Sketch? Not as
   {% endfilter %}
 
   {{ escom.pull_quote(
-      quote = '“The designer sprays style and component upgrades across a new feature, completely unaware of the upgrade costs it triggers across our whole app.”<br>– <strong>Developer</strong> on the same product team',
+      quote = 'The designer sprays style and component upgrades across a new feature, completely unaware of the upgrade costs it triggers across our whole app.',
+      attribution = 'Developer on the same product team',
       class = 'escom-pull-quote--light'
   ) }}
 
@@ -96,10 +98,12 @@ A design system team versions its library as a single, monolithic package or sep
 
 A design system versioning by library applies the same version number to all system assets simultaneously, such as `1.4.0` applies across all components.
 
+<pre>
     library 1.4.0
     ├─ visual style└─ components ├─ button
     ├─ button group ├─ card
     ├─ checkbox ├─ radio button └─ ...
+</pre>
 
 If _any_ component adds a backwards-compatible feature, then the entire library increments a minor version from `1.4.0` to `1.5.0`. Similarly, if _any_ component has a breaking change, the entire library increments the major number from `1.4.0` to `2.0.0`.
 
@@ -111,10 +115,12 @@ You can’t include a `core.css` from 2 or more versions without CSS conflicts. 
 
 Versioning “by component” enables adopting teams to mix and match button version `5.3.1` with form checkbox `3.1.0` and radio `1.1.0` in the same page.
 
+<pre>
     library
     ├─ visual style└─ components ├─ button 5.3.1
     ├─ button group 2.1.0 ├─ card 3.7.6
     ├─ checkbox 3.1.0 ├─ radio button 1.1.0 └─ ...
+</pre>
 
 Adopters need not worry about when each was released, since HTML markup, style and script is encapsulated and won’t conflict with other components types included in the the same page. This may or may not mean you can uses multiple versions of one component simultaneously. “Can I include button’s `1.7.0` in one part of the page along with button `1.2.0` and `2.5.0` elsewhere on the same page?" Depends on how the library works.
 
@@ -190,7 +196,8 @@ When deprecating a feature, consider current use:
 {% endfilter %}
 
   {{ escom.pull_quote(
-      quote = '“We’ll audit product code to find instances where it’s used. If used broadly, then we’ll communicate with those teams prior to making a decision to deprecate.” <br>— <a href="https://twitter.com/rowanmanning" rel="nofollow noopener" target="_blank">Rowan Manning</a>, <a href="https://origami.ft.com/" rel="nofollow noopener" target="_blank">Financial Times</a>',
+      quote = 'We’ll audit product code to find instances where it’s used. If used broadly, then we’ll communicate with those teams prior to making a decision to deprecate.',
+      attribution = '<a href="https://twitter.com/rowanmanning" rel="nofollow noopener" target="_blank">Rowan Manning</a>, <a href="https://origami.ft.com/" rel="nofollow noopener" target="_blank">Financial Times</a>',
       class = 'escom-pull-quote--light'
   ) }}
 
@@ -211,7 +218,8 @@ In deprecating, timing removal is critical. You can’t yank it without warning.
 {% endfilter %}
 
   {{ escom.pull_quote(
-      quote = 'On our platform, teams builds huge solutions costing millions of dollars and walk away. If we change and they don’t know, then they get really upset. Our message? We’ll give you 18 months to react.” <br>– <a href="https://github.com/brandonferrua" rel="nofollow noopener" target="_blank">Brandon Ferrua</a>, <a href="https://www.lightningdesignsystem.com/" rel="nofollow noopener" target="_blank">Salesforce Lightning</a>',
+      quote = 'On our platform, teams builds huge solutions costing millions of dollars and walk away. If we change and they don’t know, then they get really upset. Our message? We’ll give you 18 months to react.',
+      attribution = '<a href="https://github.com/brandonferrua" rel="nofollow noopener" target="_blank">Brandon Ferrua</a>, <a href="https://www.lightningdesignsystem.com/" rel="nofollow noopener" target="_blank">Salesforce Lightning</a>',
       class = 'escom-pull-quote--light'
   ) }}
 
@@ -240,7 +248,8 @@ Salesforce Lightning sustained two versions of a [Path component](https://www.li
 {% endfilter %}
 
   {{ escom.pull_quote(
-      quote = 'We built v1 Path, then…the whole design changed. Unsurprisingly, the existing API didn’t work with the new bells and whistles. So, we decided to deprecate and remove the old version eventually. No one will use it. They can’t find it, the code’s wrapped in a deprecate mixin, and retired selectors are described in metadata.<br>– Brandon Ferrua, Salesforce Lightning',
+      quote = 'We built v1 Path, then…the whole design changed. Unsurprisingly, the existing API didn’t work with the new bells and whistles. So, we decided to deprecate and remove the old version eventually. No one will use it. They can’t find it, the code’s wrapped in a deprecate mixin, and retired selectors are described in metadata.',
+      attribution = 'Brandon Ferrua, Salesforce Lightning',
       class = 'escom-pull-quote--light'
   ) }}
 
@@ -273,6 +282,7 @@ Should the library release for every little doc change? No. A UX pattern or work
 
 Systems teams I lead take the mindset that the “doc site” (and its content) is a product consuming the system library. We separate the two codebases.
 
+<pre>
     /doc-site
      /components ## Doc site-only components
      /code-example-pair
@@ -285,7 +295,8 @@ Systems teams I lead take the mindset that the “doc site” (and its content) 
      /getting-started
      /ux-patterns
      /visual-style
-
+</pre>
+<pre>
     /library
      /style ## Library core style
      /color
@@ -296,6 +307,7 @@ Systems teams I lead take the mindset that the “doc site” (and its content) 
      /button
      /icon
      /radio\_button
+</pre>
 
 I’m also unwilling to cede another tradeoff: diminished non-developer participation _and_ content serving wider audiences. The more doc is woven into complex code, the less flexible your content model and the less capable your other authors—designers, content strategists, accessibility specialists—are in editing or expanding it. A tight coupling of code and doc could also slow down how you publish a guideline in response to a community resolving a standard in critique.
 

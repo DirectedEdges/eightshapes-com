@@ -5,22 +5,12 @@
   {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
   {% set published_date = 'Aug 22, 2016' %}
   {% set read_duration = '6 ' %}
-  {% set masthead = false %}
+  {% set masthead = true %}
 
   {% set title_tag = 'EightShapes > Articles >'  + title %}
   {% extends 'templates/article.njk' %}
 
   {% block main_article %}
-    {% filter markdown %}
-{% endfilter %}
-
-  {{ escom.article_figure(
-      image_path = title_image_path,
-      image_number = '1',
-      image_alt = '',
-      caption = 'Early-stage reference designs for the Marriott.com 2012–2014 responsive redesign period.',
-      class = ''
-  ) }}
 
   {% filter markdown %}
   
@@ -179,13 +169,4 @@ As a system’s library matures towards a first release, building full pages bas
       class = ''
   ) }}
 
-  {% filter markdown %}
-  
-* * *
-
-_About to embark on a design system, or need to dive deeper to discuss products and players? EightShapes conducts_ [_systems planning workshops_](http://eightshapes.com/workshop-planning-parts-products-people.html) _and coaches clients on_ [_design systems_](http://eightshapes.com/design-systems.html)*.* [_Let’s talk_](https://twitter.com/nathanacurtis)*!*
-
-
-
-  {% endfilter %}
 {% endblock %}

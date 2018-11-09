@@ -145,27 +145,23 @@ _Takeaway_: Order what you build from small (like `tooltip`) to large (like `men
 
 You release `icon` first, and then other components that depend on it later. Then, `icon` adds minor features or suffers a [breaking change](http://View%20story). If you update `icon`, you can’t stop there. You must ripple that change through all of `icon`’s dependent in the library too.
 
-{% endfilter %}
 
+{% endfilter %}
   {{ escom.pull_quote(
-      quote = '“If we upgrade and break a component, we have to go through and fix all the dependent components.” — Jony Cheung, Software Engineering Manager, Atlassian’s Atlaskit',
+      quote = 'If we upgrade and break a component, we have to go through and fix all the dependent components.',
+      attribution = "Jony Cheung, Software Engineering Manager, Atlassian’s Atlaskit",
       class = 'escom-pull-quote--light'
   ) }}
-
-  {% filter markdown %}
-  
+{% filter markdown %}
 
 Developers and designers share this challenge. For code, some may start with a search through the `src` directory for instances. More sophisticated tooling enables teams to traces the repository in intelligent ways.
 
 {% endfilter %}
-
   {{ escom.pull_quote(
-      quote = '“We run a script to highlight where dependencies exist. That said, our team has been around long enough to be so familiar with the library to not need to use it.” — Rowan Manning, Developer of FT’s Origami',
+      quote = 'We run a script to highlight where dependencies exist. That said, our team has been around long enough to be so familiar with the library to not need to use it.',
+      attribution = 'Rowan Manning, Developer of FT’s Origami',
       class = 'escom-pull-quote--light'
   ) }}
-
-  {% filter markdown %}
-  {% endfilter %}
 
   {{ escom.article_figure(
       image_path = title_image_path,
@@ -189,7 +185,8 @@ As package management capabilities improve, teams improve how they cope and docu
 {% endfilter %}
 
   {{ escom.pull_quote(
-      quote = '“Our release wizard provides a prompt identifying dependent components, indicating that they too will increment a version.” — Jony Cheung, Software Engineering Manager, Atlassian’s Atlaskit',
+      quote = 'Our release wizard provides a prompt identifying dependent components, indicating that they too will increment a version.',
+      attribution = 'Jony Cheung, Software Engineering Manager, Atlassian’s Atlaskit',
       class = 'escom-pull-quote--light'
   ) }}
 
@@ -200,9 +197,7 @@ A team must decide version type for each impacted feature in the chain. Breaking
 
 Teams must also weed out inconsistent version dependencies within a catalog. Financial Time’s Origami errors when conflict occurs, like a [compilation resulting in multiple versions](https://www.ft.com/__origami/service/build/v2/#dependency-conflicts) of the same module being included.
 
-    // origami.ft.com example
-
-    Cannot complete build: conflicting dependencies exist.o-colors:- Required at version 1.7 by o-nav- Required at version 1.9 by o-cookiewarn
+`Cannot complete build: conflicting dependencies exist.o-colors:- Required at version 1.7 by o-nav- Required at version 1.9 by o-cookiewarn`
 
 Wouldn’t it be nice if tools like Sketch could automate detection of old and new text and layer styles across a catalog? Yes, yes it would.
 
@@ -261,7 +256,8 @@ This suggests releases must be coordinated across and published sequentially thr
 {% endfilter %}
 
   {{ escom.pull_quote(
-      quote = 'Tokens, then React, UI Kit, then Doc Site for changed links to those + release docs” — Kaelig Deloumeau-Prigent, Developer, Shopify’s Polaris',
+      quote = 'Tokens, then React, UI Kit, then Doc Site for changed links to those + release docs',
+      attribution = 'Kaelig Deloumeau-Prigent, Developer, Shopify’s Polaris',
       class = 'escom-pull-quote--light'
   ) }}
 

@@ -5,25 +5,13 @@
   {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
   {% set published_date = 'Apr 13, 2016' %}
   {% set read_duration = '9 ' %}
-  {% set masthead = false %}
+  {% set masthead = true %}
 
   {% set title_tag = 'EightShapes > Articles >'  + title %}
   {% extends 'templates/article.njk' %}
 
   {% block main_article %}
     {% filter markdown %}
-{% endfilter %}
-
-  {{ escom.article_figure(
-      image_path = title_image_path,
-      image_number = '1',
-      image_alt = '',
-      caption = '',
-      class = ''
-  ) }}
-
-  {% filter markdown %}
-  
 
 I’m no color expert. Far from, actually. Throughout my career, I’ve depended on visual designers better than myself to produce an engaging palette and apply it harmoniously across a UI.
 
@@ -141,9 +129,9 @@ _Takeaway_: Stack available colors in each hue, and treat the stack as a visuali
 
 ### #6. Name Tints & Shades by Lightness
 
-We’ve all been there. A month into the system, the neutrals $color-gray-1, $color-gray-2,&nbsp;…&nbsp;, $color-gray-7 — are stable. And then, in a stroke, you’ve got another tint to add stuck between -1 and -2. That numbering system stinks.
+We’ve all been there. A month into the system, the neutrals `$color-gray-1`, `$color-gray-2`, ... , `$color-gray-7` — are stable. And then, in a stroke, you’ve got another tint to add stuck between -1 and -2. That numbering system stinks.
 
-_Takeaway_: Scale color names between 0 and 100 based on HSL’s lightness, such as $color-gray-05 and $color-gray-92. The scale reflects a familiar range from dark to light, allows for injecting new options between, and heck if I won’t remember $color-gray- 93 until we retire it later.
+_Takeaway_: Scale color names between 0 and 100 based on HSL’s lightness, such as `$color-gray-05` and `$color-gray-92`. The scale reflects a familiar range from dark to light, allows for injecting new options between, and heck if I won’t remember `$color-gray-93` until we retire it later.
 
 {% endfilter %}
 
@@ -271,15 +259,8 @@ One of my favorite all time design system tools is [Google’s MDL Color Customi
 
 _Takeaway_: Avoid the rabbit hole of solving for a vast array of color combinations unless it’s a core system value. In most cases, system users will pair up their own combinations or benefit from a tool more dedicated to doing just that. Help them propagate their choice rather than solving for every combination they may consider. That experimentation is their job.
 
-{% endfilter %}
+Serve users of your system by making it efficient to <em>propagate </em>their choice through a product, rather than <em>making the choice</em> for them.
 
-  {{ escom.pull_quote(
-      quote = 'Serve users of your system by making it efficient to <em>propagate </em>their choice through a product, rather than <em>making the choice</em> for them.',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
-  
 * * *
 
 ## Contrast & Accessibility

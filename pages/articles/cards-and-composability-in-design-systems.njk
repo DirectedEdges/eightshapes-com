@@ -38,16 +38,8 @@ Libraries start with primitives—`input`, `heading`, `checkbox`, `radio-button`
 
 ### Identify Core&nbsp;Elements
 
-A composable component starts with essential core of required elements, so you’ll want to ask:
+A composable component starts with essential core of required elements, so you’ll want to ask: What elements are required of each and every display? What happens if a required element is missing?
 
-{% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'What elements are required of each and every display?<br>What happens if a required element is missing?',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
   {% endfilter %}
 
   {{ escom.article_figure(
@@ -73,14 +65,9 @@ A composable component starts with essential core of required elements, so you�
 
 Cast the discovery net wide across many products. Inventory each example. Analysis should yield a growing diversity of cases and elements should inform a design and guidance useful for later documentation.
 
-{% endfilter %}
+- What is a complete possible elements included?
+- What element combinations discouraged or forbidden? For example, a <code>card</code> may include <code>button</code>s or <code>icon</code>s for actions, but never both.
 
-  {{ escom.pull_quote(
-      quote = 'What is a complete possible elements included?<br>What element combinations discouraged or forbidden? For example, a <code><em>card</em></code> may include <code><em>button</em></code>s or <code><em>icon</em></code>s for actions, but never both.',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
   {% endfilter %}
 
   {{ escom.article_figure(
@@ -108,15 +95,11 @@ Cast the discovery net wide across many products. Inventory each example. Analys
 
 A composable component’s many elements raise questions of order, combinations, groups, and more:
 
-{% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'Are there named zones, such as <em>actions</em>?<br>Are there element subgroups? Can subgroups reordered or hidden?<br>What logic is needed to sort, combine, or separate combinations? <br>How many alternative arrangements should we test?<br>How many variations should be revealed and described in doc?',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
-  
+- Are there named zones, such as actions?
+- Are there element subgroups? Can subgroups reordered or hidden?
+- What logic is needed to sort, combine, or separate combinations? 
+- How many alternative arrangements should we test?
+- How many variations should be revealed and described in doc?
 
 For many `card`s, the stacked order is fixed: image then title then actions. In other systems, more flexible needs may suggest reordering elements. For example, [Morningstar Design System](http://designsystem.morningstar.com/components/cards.html)’s `card` enables users to place an image above or below a title.
 
@@ -153,15 +136,9 @@ Like a `modal` and `dialog`, `card` could identify zones for a _header_, _main_ 
 
 The bigger the component, the more likely it offers a region that welcomes, well, whatever an system user wants to put there. The region’s content can be as innocuous as a paragraph or bulleted list.
 
-{% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'Are there generic regions into which you can place flexible markup?<br>How do regions zones impact fluid and/or fixed displays?<br>Do you expect or recommend certain content types for such containers?',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
-  
+- Are there generic regions into which you can place flexible markup?
+- How do regions zones impact fluid and/or fixed displays?
+- Do you expect or recommend certain content types for such containers?
 
 But that region opens a dangerous door. Maybe an adopter adds a legend… under a chart… with an adjoining four column data table… in the content portion of a card. Hint: that’s not what a `card` is for.
 
@@ -236,14 +213,9 @@ While images dominate a display, copy also plays a critical role in headings, de
 
 Longer titles and descriptions are bound to wrap once or — if you can stomach it — twice. So design for margins _and_ line height. But if copy lengthens, `card` effectiveness diminishes fast.
 
-{% endfilter %}
+- What’s the max length of each copy element?
+- What’s the max and min character count we’re comfortable width?
 
-  {{ escom.pull_quote(
-      quote = 'What’s the max length of each copy element?<br>What’s the max and min character count we’re comfortable width?',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
   {% endfilter %}
 
   {{ escom.article_figure(
@@ -407,14 +379,11 @@ _Takeaway_: Composability challenges your tolerance for visual complexity. Power
 
 Separation, often via _margin_, also plays a role. A `card` layout can leverage a `layout_grid` or define its own to arrange many cards in a row or grid. While grid mechanics are straightforward, `card` layout raises more questions:
 
-{% endfilter %}
+- How many cards can we have in a single row?
+- Do cards rearrange based on responsive considerations?
+- Does card width flex fluidly within a fluid grid? If so, how wide or narrow can a card be? Are there responsive rules that adjust elements inside a card?
+- Should all cards in a row, or in an entire grid, always be the same height?
 
-  {{ escom.pull_quote(
-      quote = 'How many cards can we have in a single row?<br>Do cards rearrange based on responsive considerations?<br>Does card width flex fluidly within a fluid grid? If so, how wide or narrow can a card be? Are there responsive rules that adjust elements <em>inside</em> a card?<br>Should all cards in a row, or in an entire grid, always be the same height?',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
   {% endfilter %}
 
   {{ escom.article_figure(
@@ -449,12 +418,6 @@ As an entryway, a `card`’s navigation is simplest when the entire `card` is cl
   
 
 On the other hand, a composed component like `card` can include many interactive zones—_title_, _image_, `button`, `icon`, `link`— that impact both markup, style, and behavior. Do your engineer a favor and discuss these during design iteration and handoff, before changing the implementation becomes painful.
-
-* * *
-
-_About to embark on a design system, or need to dive deeper to discuss products and players? EightShapes conducts_ [_systems planning workshops_](http://eightshapes.com/workshop-planning-parts-products-people.html) _and coaches clients on_ [_design systems_](http://eightshapes.com/design-systems.html)*.* [_Let’s talk_](https://twitter.com/nathanacurtis)*!*
-
-
 
   {% endfilter %}
 {% endblock %}

@@ -5,23 +5,12 @@
   {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
   {% set published_date = 'Mar 22, 2016' %}
   {% set read_duration = '6 ' %}
-  {% set masthead = false %}
+  {% set masthead = true %}
 
   {% set title_tag = 'EightShapes > Articles >'  + title %}
   {% extends 'templates/article.njk' %}
 
   {% block main_article %}
-    {% filter markdown %}
-{% endfilter %}
-
-  {{ escom.article_figure(
-      image_path = title_image_path,
-      image_number = '1',
-      image_alt = '',
-      caption = '',
-      class = ''
-  ) }}
-
   {% filter markdown %}
   
 
@@ -47,6 +36,8 @@ The moderator — often, a design system lead — walks away with well-s
 Equally important, however, is how the activity effectively reveals a lack of alignment and personal biases across a team. By recognizing these gaps and discontinuities early, a team can draw boundaries around and break barriers of what the system can become sooner and later.
 
 Here’s how the activity works.
+
+* * *
 
 ## Stage 1: Pick the&nbsp;Parts
 
@@ -85,6 +76,8 @@ Foster conversation on:
 - **What Few / One Value** : Note categories that only one or two participants selected. It’s common to address _Branding_, _Editorial_ and _Patterns._ Stoke the conversation around such boundaries. In or out? Now or later? Contrast perspectives, and let the discussion flow. Also listen for passions that signal people who may make or coordinate integrating less universally required parts.
 - **Breadth vs Depth**? Most-oft selected parts (like _Color_, _Typography_, and _Buttons_) include deeper considerations as children (like _Contrast_, _Web Fonts_, and _Menu Buttons_). Use these to sensitize and trigger conversations on how much meticulous design, tooling, and variation is needed for certain parts.
 - **Things That Surprise Us** (including the Moderator): Every group has a peculiar focus on certain parts, such as Ritz Carlton’s laser focus on branding and logo use when amid a rebranding of such a classic mark. Draw upon these surprises to denote what could be special vs. wrote within your system.
+
+* * *
 
 ## Stage 2: Prioritize the&nbsp;System
 
@@ -163,12 +156,6 @@ After the activity, the moderator can:
 - Reach out to the **People** that matter: potential members of a central team, influential designers and devs that’ll contribute, brand management, and—if you haven’t already—sponsoring and endorsing execs. Schedule a coffee. Or lunch. Or 10.
 
 Best of luck getting your system off the ground!
-
-* * *
-
-_About to embark on a design system, or need to dive deeper to discuss products and players? EightShapes conducts_ [_systems planning workshops_](http://eightshapes.com/workshop-planning-parts-products-people.html) _and coaches clients on_ [_design systems_](http://eightshapes.com/design-systems.html)*.* [_Let’s talk_](https://twitter.com/nathanacurtis)*!*
-
-
 
   {% endfilter %}
 {% endblock %}

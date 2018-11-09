@@ -5,56 +5,22 @@
   {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
   {% set published_date = 'Mar 25, 2017' %}
   {% set read_duration = '4 ' %}
-  {% set masthead = false %}
+  {% set masthead = true %}
 
   {% set title_tag = 'EightShapes > Articles >'  + title %}
   {% extends 'templates/article.njk' %}
 
   {% block main_article %}
-    {% filter markdown %}
-{% endfilter %}
-
-  {{ escom.article_figure(
-      image_path = title_image_path,
-      image_number = '1',
-      image_alt = '',
-      caption = '',
-      class = ''
-  ) }}
-
-  {% filter markdown %}
-  
+    {% filter markdown %}  
 
 As systems evolve from loosely managed side project to a more disciplined practice, contributors may form a [central team](/articles/team-models-for-scaling-a-design-system.html) that treats the [system as a product](/articles/a-design-system-isn-t-a-project-it-s-a-product-serving-products.html).
 
 At this moment, questions of “Do we have a backlog?” (Yes) and “Shall we work in sprints?” (Yes) give way to more important questions like:
 
-{% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'Who owns design and technical strategy?',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
-  {% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'Who prioritizes what to make next?',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
-  {% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'Who sends meeting invites, runs stand-ups, and moderates sprint reviews?',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
+- Who owns design and technical strategy?
+- Who prioritizes what to make next?
+- Who sends meeting invites, runs stand-ups, and moderates sprint reviews?
   
-
 Initially, system teams are staffed by designers, developers, or a mix of the two. These practitioners may be disinterested or ineffective in leading and managing a system as a product.
 
 That’s an important reason teams hire me as a consultant and coach: I’ll serve in these capacities – system lead, product manager, and (untrained but good enough) scrum master – for system teams through a first release. I’ll spend from 8 to 12 hours per week to lead and manage a 5 to 7 person team, each ~1/2 time. For a system to thrive, it’s essential that in-house staff observe and eventually succeed me in each role, whether by adding team members and/or via me training them along the way.
@@ -129,12 +95,5 @@ The system lead need not necessarily perform daily design and development tasks.
 
 - 10+ years experience in one or more of: product management of web-based sites and/or applications, information architecture, interaction design, front end development, or business analysis.
 - 5+ years managing design and/or front-end development team(s).
-
-* * *
-
-_About to embark on a design system, or need to dive deeper to discuss products and players? EightShapes conducts_ [_systems planning workshops_](http://eightshapes.com/workshop-planning-parts-products-people.html) _and coaches clients on_ [_design systems_](http://eightshapes.com/design-systems.html)*.* [_Let’s talk_](https://twitter.com/nathanacurtis)*!*
-
-
-
   {% endfilter %}
 {% endblock %}

@@ -5,25 +5,13 @@
   {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
   {% set published_date = 'Oct 9, 2015' %}
   {% set read_duration = '5 ' %}
-  {% set masthead = false %}
+  {% set masthead = true %}
 
   {% set title_tag = 'EightShapes > Articles >'  + title %}
   {% extends 'templates/article.njk' %}
 
   {% block main_article %}
-    {% filter markdown %}
-{% endfilter %}
-
-  {{ escom.article_figure(
-      image_path = title_image_path,
-      image_number = '1',
-      image_alt = '',
-      caption = '',
-      class = ''
-  ) }}
-
-  {% filter markdown %}
-  
+    {% filter markdown %}  
 
 If you’ve worked on a design system spanning a portfolio, you may have experienced the genuine partnership formed across product teams. Except one. You know, _that_ product. The one that rules the rest. The big one (or two, or few). The favored child. The 800 pound gorilla.
 
@@ -39,17 +27,7 @@ Other platforms like iOS, Android, and Windows, that’s what!
 
 ## Platform Dominance Leads to an Ignorable Base
 
-I’ve seen it happen. A web designer releases a gorgeous living style guide, shares with an org, and is befuddled when everyone else shrugs. They forgot to address a simple question:
-
-{% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'What’s in it for us? Does it even work on our platform?',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
-  
+I’ve seen it happen. A web designer releases a gorgeous living style guide, shares with an org, and is befuddled when everyone else shrugs. They forgot to address a simple question: What’s in it for us? Does it even work on our platform?
 
 In that headlong rush to create a mini-[Bootstrap](http://www.getbootstrap.com)-for-me, it’s easy and right to focus on what’s most important to other product teams.
 

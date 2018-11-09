@@ -334,22 +334,8 @@ _Takeaway_: The UI — across tabs or in a single scrollable view — ca
 
 The more design and code thread together, the more audiences interested predominantly in one over the other will ask to refine the page’s interface to suit what they want to see.
 
-{% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = '<em>A design manager asks…</em><br>Can I hide all the code samples and reference tables?',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
-  {% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = '<em>An engineer asks…</em><br>Can I get rid of all the lengthy design storytelling?',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
+- A design manager asks…</em><br>Can I hide all the code samples and reference tables?
+- An engineer asks…</em><br>Can I get rid of all the lengthy design storytelling?
   
 
 Consider a toggle to hide design or code concerns. This requires classifying each content type as relevant to one, the other, or both audiences, such as:
@@ -369,9 +355,6 @@ In a similar vein, [Hudl’s Uniform](http://uniform.hudl.com/components/forms/c
       caption = '',
       class = ''
   ) }}
-
-  {% filter markdown %}
-  {% endfilter %}
 
   {{ escom.article_figure(
       image_path = title_image_path,

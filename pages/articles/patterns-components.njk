@@ -5,23 +5,12 @@
   {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
   {% set published_date = 'Jan 27, 2017' %}
   {% set read_duration = '8 ' %}
-  {% set masthead = false %}
+  {% set masthead = true %}
 
   {% set title_tag = 'EightShapes > Articles >'  + title %}
   {% extends 'templates/article.njk' %}
 
   {% block main_article %}
-    {% filter markdown %}
-{% endfilter %}
-
-  {{ escom.article_figure(
-      image_path = title_image_path,
-      image_number = '1',
-      image_alt = '',
-      caption = '2009’s <a href="https://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351" rel="nofollow noopener" target="_blank">Modular Web Design</a> figures of Yahoo’s Pattern Library (left) and Sun.com’s Component Library (right)',
-      class = ''
-  ) }}
-
   {% filter markdown %}
   
 

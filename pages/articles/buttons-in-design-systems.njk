@@ -5,29 +5,17 @@
   {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
   {% set published_date = 'Apr 26, 2016' %}
   {% set read_duration = '8 ' %}
-  {% set masthead = false %}
+  {% set masthead = true %}
 
   {% set title_tag = 'EightShapes > Articles >'  + title %}
   {% extends 'templates/article.njk' %}
 
   {% block main_article %}
-    {% filter markdown %}
-{% endfilter %}
+    {% filter markdown %}  
 
-  {{ escom.article_figure(
-      image_path = title_image_path,
-      image_number = '1',
-      image_alt = '',
-      caption = '',
-      class = ''
-  ) }}
+I love buttons. I can do things with buttons. Take a next step. Make a commitment. Get things done. With buttons, interaction springs to life.
 
-  {% filter markdown %}
-  
-
-I love buttons. I can _do_ things with buttons. Take a next step. Make a commitment. Get things done. With buttons, interaction springs to life.
-
-That’s why _Button_s are arguably a design system’s most important component. Devilishly simple, they offer a simple label in a defined region I can press. As such, buttons are where you apply a design language’s base attributes in ways that’ll ripple throughout more complex component later.
+That’s why buttons are arguably a design system’s most important component. Devilishly simple, they offer a simple label in a defined region I can press. As such, buttons are where you apply a design language’s base attributes in ways that’ll ripple throughout more complex component later.
 
 Here’s **12** lessons I’ve learned when working the **primary button** , **secondary buttons** , and a whole host of **other button types** in an emerging system.
 
@@ -281,22 +269,11 @@ _Takeaway_: When expanding button variety, explore and stress-test button sets i
 
 * * *
 
-## For Buttons, Use&nbsp;\<button\>
+## For Buttons, Use `<button>`
 
 There’s a treasure trove of good learning about coding buttons correctly. The CSS Tricks article [When to Use the Button Element](https://css-tricks.com/use-button-element/) (and it’s robust and lively discussion) is a great place to start.
 
-<figure>
-    <div>
-      <iframe width="700" height="250" src="/media/ae9e0206afbe9643426b5d635a749acc?postId=eac3acf7e23" data-media-id="ae9e0206afbe9643426b5d635a749acc" allowfullscreen="" frameborder="0"></iframe>
-    </div>
-  </figure>
-
 _Takeaway_: Study coding references to understand button conventions and accessibility. From articles like this, you can wind your way through excellent reads like Alex Lande’s [Anchors, Buttons, and Accessibility](http://formidable.com/blog/2014/05/08/anchors-buttons-and-accessibility/) and CSSKarma’s [Meet the Polybutton, An Accessibility Polyfill](http://csskarma.com/blog/polybutton/).
-
-* * *
-
-_About to embark on a design system, or need to dive deeper to discuss products and players? EightShapes conducts_ [_systems planning workshops_](http://eightshapes.com/workshop-planning-parts-products-people.html) _and coaches clients on_ [_design systems_](http://eightshapes.com/design-systems.html)*.* [_Let’s talk_](https://twitter.com/nathanacurtis)*!*
-
 
 
   {% endfilter %}

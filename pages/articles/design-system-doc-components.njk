@@ -5,39 +5,19 @@
   {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
   {% set published_date = 'Sep 13, 2016' %}
   {% set read_duration = '6 ' %}
-  {% set masthead = false %}
+  {% set masthead = true %}
 
   {% set title_tag = 'EightShapes > Articles >'  + title %}
   {% extends 'templates/article.njk' %}
 
   {% block main_article %}
     {% filter markdown %}
-{% endfilter %}
-
-  {{ escom.article_figure(
-      image_path = title_image_path,
-      image_number = '1',
-      image_alt = '',
-      caption = '',
-      class = ''
-  ) }}
-
-  {% filter markdown %}
-  
 
 Every time, we use our library’s toolkit to build web-based doc of the library. A bit meta, for sure. The documentation is just another product made and maintained with the kit, only made by the team that made the kit itself.
 
 Building an experience, even doc, sensitizes that team to what it feels like to use the kit, reinforcing the setup and build that their users have. During the process, a simple truth reveals itself, predictably:
 
-{% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'The system <em>never</em> provides all the parts for you.',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
-  
+The system <em>never</em> provides all the parts for you.
 
 The library gives you [_Colors_](/articles/color-in-design-systems.html) and [_Buttons_](/articles/buttons-in-design-systems.html). Maybe a _Nav Bar_. Certainly a _Footer_. However, a library serving online shopping doesn’t need a code viewer or color swatch. So some key components you need to document a library are in fact not in the library. So you build them, just for yourself, separate from and extending the library shared with everyone else.
 
@@ -68,6 +48,8 @@ _Special Features_:
 
 - Recursively cull through hierarchies to display objects with increasing levels of specificity, such as $space-s, $space-inset-s and $space-inset-squish-s.
 
+* * *
+
 ## #7. Release&nbsp;Details
 
 Let’s face it, you’re a product with users to reading release notes and keeping abreast of changes. While boringly administrative, release details summarize change and rout users to new additions.
@@ -83,7 +65,6 @@ Let’s face it, you’re a product with users to reading release notes and keep
   ) }}
 
   {% filter markdown %}
-  
 
 So design the content well and don’t skimp on details. Ease authoring, diminish drudgery, and publish a consistent summary per release.
 
@@ -256,12 +237,6 @@ _Special Features_:
 - Toggle across or simultaneously display responsive states across relevant device profiles, such as handset, tablet, desktop or small, medium, large.
 - Click-to-copy, often via a button nestled into the code block’s upper right.
 - Stack states (such as a \_Button\_’s default, active, hover, disabled, etc) so that you needn’t interact to see or guess what’s implemented.
-
-* * *
-
-_About to embark on a design system, or need to dive deeper to discuss products and players? EightShapes conducts_ [_systems planning workshops_](http://eightshapes.com/workshop-planning-parts-products-people.html) _and coaches clients on_ [_design systems_](http://eightshapes.com/design-systems.html)*.* [_Let’s talk_](https://twitter.com/nathanacurtis)*!*
-
-
 
   {% endfilter %}
 {% endblock %}

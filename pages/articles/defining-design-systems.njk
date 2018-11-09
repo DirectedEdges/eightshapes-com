@@ -58,15 +58,6 @@ If only 10 seconds, I’ll say:
   ) }}
 
   {% filter markdown %}
-  
-
-If only a tweet, well then there’s this:
-
-<figure>
-    <div>
-      <iframe width="500" height="185" src="/media/70e16205c25ab75f2d88f53a9a321323?postId=6dd4b03e0ff6" data-media-id="70e16205c25ab75f2d88f53a9a321323" data-thumbnail="https://i.embed.ly/1/image?url=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FDBPv9XeUQAITDMD.jpg%3Alarge&amp;key=a19fcc184b9711e1b4764040d3dc5c07" allowfullscreen="" frameborder="0"></iframe>
-    </div>
-  </figure>
 
 Formally, a [system](https://en.wikipedia.org/wiki/System) is a set of interconnected parts forming a unified whole. In the case of design systems, this definition actually alludes to not one but three interrelated systems you’ll need to solve for to be successful:
 
@@ -214,89 +205,21 @@ While not my intent, this writing returned me to the framework of a [Parts, Prod
 
 However, it’s reasonable to precede or replace this meticulous activity with a leaner, fill-in-the-blanks template to ground understanding:
 
-{% endfilter %}
+Our design system offers <strong>_______[kit scope]_______</strong> released as <strong>_______[kit outputs]_____</strong> and documented at <strong>_______[kit doc site]_____</strong> produced by <strong>_______[people]_________</strong> in order to serve <strong>_______[products]_______</strong> products and experiences.
 
-  {{ escom.pull_quote(
-      quote = 'Our design system offers <br><strong>_______[kit scope]_______</strong>',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
-  {% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'released as <br><strong>_______[kit outputs]_____</strong>',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
-  {% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'and documented at <br><strong>_______[kit doc site]_____</strong>',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
-  {% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'produced by <br><strong>_______[people]_________</strong>',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
-  {% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'in order to serve <br><strong>_______[products]_______</strong>',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
-  {% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'products and experiences.',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
   
 
 Over years of contributing to design systems, this statement would yield similar yet always unique answers. A system I’m working on now would fill these blanks as:
 
-{% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'Our design system offers <br><strong>visual style, accessible UI components, charts, editorial guidance, UX patterns, and branding</strong> <br>released as an <br><strong>HTML &amp; CSS framework via </strong><code><strong>npm</strong></code><strong>, Sketch, and other PDF &amp; AI templates</strong> <br>and documented at <br><strong>designsystem.companyname.com</strong> <br>produced by <br><strong>a systems team of 1 design director, 1 product manager, 2 designers, 3 engineers and a community of ~15 community contributors <br></strong>in order to serve <br><strong>~50 web apps, a few native app and limited branding</strong> <br>products and experiences.',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
-  
+Our design system offers <strong>visual style, accessible UI components, charts, editorial guidance, UX patterns, and branding</strong> released as an <strong>HTML &amp; CSS framework via </strong><code><strong>npm</strong></code><strong>, Sketch, and other PDF &amp; AI templates</strong> and documented at <strong>designsystem.companyname.com</strong> produced by <strong>a systems team of 1 design director, 1 product manager, 2 designers, 3 engineers and a community of ~15 community contributors </strong>in order to serve <strong>~50 web apps, a few native app and limited branding</strong> products and experiences.  
 
 A system I am starting now exhibits a different composition that necessitates a different approach to how it’s made & consumed:
 
-{% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'Our design system offers <br><strong>visual style, UI components, and accessibility procedures</strong><br>released as an <br><strong>React component library and Sketch assets via Lingo</strong> <br>and documented at <br><strong>designsystems.companyname.com</strong> <br>produced by <br><strong>a systems team of 1 systems lead, 1 product manager, 1 designer, and 2 front-end developers partnering with a React-based engineering team <br></strong>in order to serve <br><strong>~10 web-based and 2 native app</strong><br>products and experiences.',
-      class = 'escom-pull-quote--light'
-  ) }}
-
-  {% filter markdown %}
-  
+Our design system offers <strong>visual style, UI components, and accessibility procedures</strong>released as an <strong>React component library and Sketch assets via Lingo</strong> and documented at <strong>designsystems.companyname.com</strong> produced by <strong>a systems team of 1 systems lead, 1 product manager, 1 designer, and 2 front-end developers partnering with a React-based engineering team </strong>in order to serve <strong>~10 web-based and 2 native app</strong>products and experiences.
 
 What flummoxes our community is the variability of systems composition. The consistent objective — adopting products producing a cohesive experience more efficiently — is reached through many potential means by involving different kinds of groups with varying areas of focus.
 
 There’s no de-facto formula, no winning methodology (but we’re getting better). Instead, system success requires adapting how you define it to conditions and constraints of the enterprise it serves.
-
-* * *
-
-_About to embark on a design system, or need to dive deeper to discuss products and players? EightShapes conducts_ [_systems planning workshops_](http://eightshapes.com/workshop-planning-parts-products-people.html) _and coaches clients on_ [_design systems_](http://eightshapes.com/design-systems.html)*.* [_Let’s talk_](https://twitter.com/nathanacurtis)*!*
-
-
 
   {% endfilter %}
 {% endblock %}

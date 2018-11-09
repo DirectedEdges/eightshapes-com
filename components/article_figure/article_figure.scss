@@ -7,9 +7,13 @@
     max-width: 970px;
 }
 
+.escom-article-figure__image-container {
+    text-align: center;
+}
+
 .escom-article-figure__image {
     margin: $esds-space-stack-1-x;
-    width: 100%;
+    max-width: 100%;
 }
 
 .escom-article-figure__caption {
