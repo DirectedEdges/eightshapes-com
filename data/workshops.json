@@ -4,7 +4,11 @@
         "in_house_events": [
         ],
         "public_venues": [ 
-            "UXI Live, Tel Aviv"
+            "DCUX",
+            "DesignOps Summit",
+            "Enterprise UX",
+            "UXLX, Lisbon, Portugal",
+            "UXI Live, Tel Aviv, Israel"
         ]
     },
     {
@@ -19,6 +23,7 @@
             "Digital Arts Network (New Zealand)"
         ],
         "public_venues": [ 
+            "Clarity",
             "UIE's UI23",
             "Invision, Munich",
             "Invision, Denver",
