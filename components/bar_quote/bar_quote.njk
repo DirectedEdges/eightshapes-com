@@ -1,0 +1,15 @@
+{% macro bar_quote(
+    class=false,
+    quote = "",
+    quote_background = false
+) %}
+
+{% if quote_background %}
+    {% set class = class + " escom-bar-quote--" + quote_background %}
+{% endif %}
+
+        <div class="escom-bar-quote{% if class %} {{ class }}{% endif %}">
+            {{ quote | safe }}
+        </div>
+
+{% endmacro %}
