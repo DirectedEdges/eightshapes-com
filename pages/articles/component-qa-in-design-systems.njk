@@ -16,7 +16,7 @@ Months after our first release, productivity was strong. We’d reached 20 compo
 
 {% endfilter %}
 
-  {{ escom.pull_quote(
+  {{ escom.bar_quote(
       quote = '“Why don’t we have this variation?”<br>“It breaks with a reasonably long label.”<br>“Did you check for accessibility? It’s missing an attribute for…”',
       class = 'escom-pull-quote--light'
   ) }}
@@ -30,19 +30,18 @@ Ugh. We had documented neither what we check for nor how we QA. At all. We just 
 
 * * *
 
-## Systems Must Deliver on Promised&nbsp;Quality
+## Systems Must Deliver on Promised Quality
 
 In adopting a system, a product team must trust that the system saves time and reduces risk. The system’s quality must be no worse — heck, let’s be honest, _better_ — than what the product team would have done on their own. Therefore, incorporate quality into your messaging, but be ready to deliver the goods.
 
-### Promote Using&nbsp;Quality
+### Promote Using Quality
 
 System advocates highlight quality when marketing their library. For example, [Material Design Lite](https://getmdl.io/index.html) says that they…
 
 {% endfilter %}
 
-  {{ escom.pull_quote(
-      quote = '… aim to optimize for cross-device use, gracefully degrade in older browsers, and offer an experience that is immediately accessible.',
-      class = 'escom-pull-quote--light'
+  {{ escom.bar_quote(
+      quote = '… aim to optimize for cross-device use, gracefully degrade in older browsers, and offer an experience that is immediately accessible.'
   ) }}
 
   {% filter markdown %}
@@ -52,24 +51,22 @@ This isn’t whimsical aspiration. It’s a promise, promoting that library part
 
 {% endfilter %}
 
-  {{ escom.pull_quote(
-      quote = 'Demonstrate respect for people’s time and attention through thoughtful and elegant <strong>craftsmanship</strong>.',
-      class = 'escom-pull-quote--light'
+  {{ escom.bar_quote(
+      quote = 'Demonstrate respect for people’s time and attention through thoughtful and elegant <strong>craftsmanship</strong>.'
   ) }}
 
   {% filter markdown %}
 
 * * *  
 
-### Get Funded with&nbsp;Quality
+### Get Funded with Quality
 
 In fact, I’ve observed the tone of a system pitch completely shift based on _just one word_ that affords quality, like:
 
 {% endfilter %}
 
-  {{ escom.pull_quote(
-      quote = 'We guarantee the library includes only quality, <strong>accessible</strong> components.',
-      class = 'escom-pull-quote--light'
+  {{ escom.bar_quote(
+      quote = 'We guarantee the library includes only quality, <strong>accessible</strong> components.'
   ) }}
 
   {% filter markdown %}
@@ -79,7 +76,7 @@ Stakeholders–your director or VP–listen for those trigger words. To them, it
 
 * * *
 
-### Prove You Deliver the&nbsp;Quality
+### Prove You Deliver the Quality
 
 Therefore, you better be ready for the next questions: “What do you mean by _quality_?” and “How do you _assure_ that quality?” Your answer must be better than “We check stuff after we build it.”
 
@@ -89,7 +86,7 @@ Therefore, you better be ready for the next questions: “What do you mean by _q
 
 Here’s a quality checklist my most recent team established:
 
-### ✔ #1 Visual&nbsp;Quality
+### ✔ #1 Visual Quality
 
 Does the component apply visual style — color, typography, icons, space, borders, and more — using appropriate variable [tokens](/articles/tokens-in-design-systems.html)?
 
@@ -102,7 +99,7 @@ Does it cover all the necessary variations (primary, secondary, flat, menu butto
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '1',
-      image_alt = '',
+      image_alt = 'Demo of many different component states across variations',
       caption = 'A first pass may not comprehensively addressing states across <em>all</em> button types…',
       class = ''
   ) }}
@@ -118,7 +115,7 @@ Does it incorporate responsive display patterns and behaviors as needed?
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '2',
-      image_alt = '',
+      image_alt = 'Depiction of component in a wide viewport and narrow viewport',
       caption = 'Tab component, with options for responsive behavior',
       class = ''
   ) }}
@@ -134,7 +131,7 @@ Is each dynamic word or image element resilient to too much, too little, and no 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '3',
-      image_alt = '',
+      image_alt = 'Demo of content that breaks a tab display',
       caption = 'Tab component, automatically shifting to alternate display based on content length',
       class = ''
   ) }}
@@ -150,7 +147,7 @@ Does it fit well when placed next to or layered with other components to form a 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '4',
-      image_alt = '',
+      image_alt = 'Demo of a tab component displayed below and on top of an image',
       caption = 'Tabs in different settings, positioned stacked after or on top of a photograph',
       class = ''
   ) }}
@@ -171,7 +168,7 @@ Has the design and implementation accounted for accessible:
 - disabled CSS
 - `svg` and `img` attributes
 - descriptive headers
-- keyboard navigability,&nbsp;…
+- keyboard navigability, …
 
 The list goes on, and could be augmented by testing with a screen reader like [ChromeVox](http://www.chromevox.com/).
 
@@ -179,7 +176,7 @@ The list goes on, and could be augmented by testing with a screen reader like [C
 
 Has the component visual quality and accuracy been assessed across Safari, Chrome, Firefox, IE and other browsers across relevant devices?
 
-### ✔ Usability Testing EXTRA&nbsp;CREDIT
+### ✔ Usability Testing EXTRA CREDIT
 
 Has the component design been assessed via usability testing with our customers, whether conducted for a product team or by our system team?
 
@@ -187,7 +184,7 @@ We don’t gate releases of an component — particularly the smallest ones�
 
 * * *
 
-## How We Assure Quality: A QA&nbsp;Workflow
+## How We Assure Quality: A QA Workflow
 
 It might feel like a pain. Too much rigor. A threat to team momentum. That was my gut reaction to the realities of a QA-then-refactor step. Do this to the whole library, now that we’re behind? This could limit production for sprints! It didn’t, actually.
 
@@ -195,7 +192,7 @@ I credit my team with convincing us that the library is _nothing_ if the quality
 
 _Takeaway:_ Devise your QA checklist and process as you build your first components. You’ll justify the promise you make to your customers, and improve confidence and reputation as a result.
 
-### Where? Using a “Kitchen Sink”&nbsp;Page
+### Where? Using a “Kitchen Sink” Page
 
 It may be tempting to think you can test your variations using that doc page you’ve also started to build. Bad idea.
 
@@ -206,7 +203,7 @@ Documentation page structure tightly constrains component displays to fit in the
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '5',
-      image_alt = '',
+      image_alt = 'Display of a kitchen sink page',
       caption = 'Buttons documentation page (left) and all 92,000px of vertically scrolled Buttons “Kitchen Sink” page examples (right)',
       class = ''
   ) }}
@@ -229,7 +226,7 @@ QA begins when a developer signals they’re ready for a final review of their w
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '6',
-      image_alt = '',
+      image_alt = 'Diagram of a step by step flow, placing a QA step within Build',
       caption = 'For our team, QA is part of the Build task.',
       class = ''
   ) }}
@@ -239,7 +236,7 @@ QA begins when a developer signals they’re ready for a final review of their w
 
 _Takeaway_: Incorporate QA as a clear step or sub-step that’ll prevent an item’s release if tests aren’t passed.
 
-### Who? The Associated Designer _and_ Another&nbsp;Dev
+### Who? The Associated Designer _and_ Another Dev
 
 A dedicated QA resource is a luxury item for a systems team. Instead, systems teams I’ve been on blend designers and developers that wear other hats as needed, including QA. We hold a contributing developer accountable to submit components that they’ve already run through the checklist. Our process _then_ also requires a distinct person — a different developer, the component’s designer, or both — to run through the checklist too.
 

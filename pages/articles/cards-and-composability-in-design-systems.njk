@@ -18,7 +18,7 @@ Today’s digital `card` serves the same purpose. More than just a generic conta
 
 {% endfilter %}
 
-  {{ escom.pull_quote(
+  {{ escom.bar_quote(
       quote = 'A card is a sheet of material that serves as an entry point to more detailed information. Cards may contain a photo, text, and a link about a single subject. — <a href="https://material.io/guidelines/components/cards.html" rel="nofollow noopener" target="_blank">Google Material Design’s Card</a>',
       class = 'escom-pull-quote--light'
   ) }}
@@ -36,7 +36,7 @@ Hardening a composition like `card` forces a system to mature. Sometimes, a syst
 
 Libraries start with primitives—`input`, `heading`, `checkbox`, `radio-button`, `label`, `icon`—to serve as building blocks. A `button`’s composability is fairly mundane: an `icon` to the left or right of a label, maybe a split bar or animation. Then`button-group` combines `button`, forcing sibling relationships. These are low-level challenges. Things get more interesting when composing components like `card` with many elements.
 
-### Identify Core&nbsp;Elements
+### Identify Core Elements
 
 A composable component starts with essential core of required elements, so you’ll want to ask: What elements are required of each and every display? What happens if a required element is missing?
 
@@ -45,7 +45,7 @@ A composable component starts with essential core of required elements, so you�
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '1',
-      image_alt = '',
+      image_alt = 'Illustration of a card component anatomy',
       caption = '',
       class = ''
   ) }}
@@ -61,7 +61,7 @@ A composable component starts with essential core of required elements, so you�
 
 * * *
 
-### Identify All Possible Elements &&nbsp;Cases
+### Identify All Possible Elements &amp; Cases
 
 Cast the discovery net wide across many products. Inventory each example. Analysis should yield a growing diversity of cases and elements should inform a design and guidance useful for later documentation.
 
@@ -73,7 +73,7 @@ Cast the discovery net wide across many products. Inventory each example. Analys
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '2',
-      image_alt = '',
+      image_alt = 'Card annotation of content elements',
       caption = '',
       class = ''
   ) }}
@@ -108,7 +108,7 @@ For many `card`s, the stacked order is fixed: image then title then actions. In 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '3',
-      image_alt = '',
+      image_alt = 'Card displaying an image either on the top or bottom',
       caption = '',
       class = ''
   ) }}
@@ -123,7 +123,7 @@ Like a `modal` and `dialog`, `card` could identify zones for a _header_, _main_ 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '4',
-      image_alt = '',
+      image_alt = 'Card stacking the media image, then copy, then actions',
       caption = '',
       class = ''
   ) }}
@@ -132,7 +132,7 @@ Like a `modal` and `dialog`, `card` could identify zones for a _header_, _main_ 
   
 * * *
 
-### Cope with Regions Allowing Flexible&nbsp;Input
+### Cope with Regions Allowing Flexible Input
 
 The bigger the component, the more likely it offers a region that welcomes, well, whatever an system user wants to put there. The region’s content can be as innocuous as a paragraph or bulleted list.
 
@@ -147,7 +147,7 @@ But that region opens a dangerous door. Maybe an adopter adds a legend… under 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '5',
-      image_alt = '',
+      image_alt = 'Card offering flexible slots to inject custom content',
       caption = 'Flexible regions for a system user to inject their own content.',
       class = ''
   ) }}
@@ -165,7 +165,7 @@ _Takeaway:_ With [great container power comes great responsibility](https://yout
 
 Titles, prose, metadata, pricing. An image that packs a powerful punch. No matter the elements you include, a `card` requires thoughtful consideration of media and copy. Unlike primitives you handled yourself, composable components require collaboration with those that know content best.
 
-### Content Varies. Form Conventions Based on Real&nbsp;Content.
+### Content Varies. Form Conventions Based on Real Content.
 
 An image above text. It’s simple, right? Not always. The _image_’s aspect ratio is pivotal not just for visual harmony, but content production too.
 
@@ -176,9 +176,9 @@ At one client, we analyzed existing inconsistent cards across products. It was a
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '6',
-      image_alt = '',
+      image_alt = 'Illustration of card images of varying aspect ratios',
       caption = 'Variety of aspect ratios encountered in real images spread across existing products',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -193,7 +193,7 @@ As a result, `card` settled on a 16x9 landscape ratio, augmented by a square alt
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '7',
-      image_alt = '',
+      image_alt = 'Illustration of a fixed aspect ratio image with contain or cover properties',
       caption = '',
       class = ''
   ) }}
@@ -207,7 +207,7 @@ _Takeaway_: The more composable a component, the more vital that you incorporate
 
 * * *
 
-### Too Much Content? Address Wrapping & Truncation
+### Too Much Content? Address Wrapping &amp; Truncation
 
 While images dominate a display, copy also plays a critical role in headings, descriptions, and metadata. But it’s a card, not an opus, so copy can’t go wild.
 
@@ -221,7 +221,7 @@ Longer titles and descriptions are bound to wrap once or — if you can stom
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '8',
-      image_alt = '',
+      image_alt = 'Illustration of a card with too much descriptive content',
       caption = '',
       class = ''
   ) }}
@@ -236,7 +236,7 @@ Truncation provides an escape hatch, protecting against copy length that we can�
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '9',
-      image_alt = '',
+      image_alt = 'Illustration of a truncated card description',
       caption = 'Truncation results in a shorter, but potentially not preferable, description.',
       class = ''
   ) }}
@@ -251,7 +251,7 @@ It’s not just copy wrapping, either. Consider rows of actions like a horizonta
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '10',
-      image_alt = '',
+      image_alt = 'Illustration of a wrapping set of card icon actions',
       caption = 'Narrow card width causes a left-aligned button to collide with a right-aligned icon list.',
       class = ''
   ) }}
@@ -263,7 +263,7 @@ _Takeaway_: Copy length maximums and truncation appeal to our sense of control o
 
 * * *
 
-### Not Enough Content? When Image(s) and/or Copy Go&nbsp;Missing
+### Not Enough Content? When Image(s) and/or Copy Go Missing
 
 On the other hand, sometimes content is unavailable. Card content often reaches into the depths, plucking this related article or that legacy profile for display. Is your card ready for the absence of a _description_, _metadata_ or even _image_? No _image_, oh, the scandal! What do you do?
 
@@ -272,7 +272,7 @@ On the other hand, sometimes content is unavailable. Card content often reaches 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '11',
-      image_alt = '',
+      image_alt = 'Illustration of a card with no image',
       caption = '',
       class = ''
   ) }}
@@ -287,7 +287,7 @@ The most opinionated of us say: Never! Want to use a `card`? Include required el
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '12',
-      image_alt = '',
+      image_alt = 'Illustration of three cards, one without a description',
       caption = 'Instances with wrapping titles and missing descriptions.',
       class = ''
   ) }}
@@ -302,7 +302,7 @@ In the absence of copy, `card` composition relies upon solid stackable space, co
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '13',
-      image_alt = '',
+      image_alt = 'Illustration of cards, some with an icon and color display rather than an image',
       caption = 'Instances with missing images replaced by background fill &amp; icon to indicate asset type.',
       class = ''
   ) }}
@@ -318,7 +318,7 @@ In the absence of image, we’ve got options. You could attractively distinguish
 
 Styling atomic elements is easier (elements require fewer decisions) and harder (those decisions carry foundational impact). However, `card` raises challenges and expands our style choices as elements interact in tight spaces.
 
-### Expand a System’s Visual&nbsp;Language
+### Expand a System’s Visual Language
 
 My experience suggests that components like `card` trigger incremental conversation about system conventions of modular shape and layering. Conversations can steer towards _border-radius_, _shadow_, and subtleties of _background-color_ contrast between the object and canvas below.
 
@@ -327,7 +327,7 @@ My experience suggests that components like `card` trigger incremental conversat
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '14',
-      image_alt = '',
+      image_alt = 'Annotation of a card drop shadow and border radius',
       caption = '',
       class = ''
   ) }}
@@ -348,7 +348,7 @@ A `card` evokes color relationships, beginning with contrast against the canvas 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '15',
-      image_alt = '',
+      image_alt = 'Different colored cards on different color backgrounds',
       caption = '',
       class = ''
   ) }}
@@ -363,7 +363,7 @@ Richer visual environments solve for [foreground/background combos in light and 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '16',
-      image_alt = '',
+      image_alt = 'A card description on top of a dark background, annotated',
       caption = '',
       class = ''
   ) }}
@@ -375,7 +375,7 @@ _Takeaway_: Composability challenges your tolerance for visual complexity. Power
 
 * * *
 
-### Arranging in&nbsp;Layouts
+### Arranging in Layouts
 
 Separation, often via _margin_, also plays a role. A `card` layout can leverage a `layout_grid` or define its own to arrange many cards in a row or grid. While grid mechanics are straightforward, `card` layout raises more questions:
 
@@ -389,9 +389,9 @@ Separation, often via _margin_, also plays a role. A `card` layout can leverage 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '17',
-      image_alt = '',
+      image_alt = 'Cards in a row with an overlaid columnar grid',
       caption = '',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -402,14 +402,14 @@ Separation, often via _margin_, also plays a role. A `card` layout can leverage 
 
 The `card`’s primary purpose is as gateway to deeper detail somewhere else. A `card` also elevate subtle interactions, too. The former isn’t up for debate. The latter can lead to contentious discussions about “What’s clickable?”
 
-As an entryway, a `card`’s navigation is simplest when the entire `card` is clickable. In that case, the whole `card` can respond to cursor events like&nbsp;_:hover_ and&nbsp;_:focus_ to trigger an _image_ or block to zoom, _title_ to recolor, and shadow to darken. If a `card` won’t contain more specific interactions, making the entire block afford a single interaction simplifies these concerns.
+As an entryway, a `card`’s navigation is simplest when the entire `card` is clickable. In that case, the whole `card` can respond to cursor events like _:hover_ and _:focus_ to trigger an _image_ or block to zoom, _title_ to recolor, and shadow to darken. If a `card` won’t contain more specific interactions, making the entire block afford a single interaction simplifies these concerns.
 
 {% endfilter %}
 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '18',
-      image_alt = '',
+      image_alt = 'Cards annotated with a dashed border connoting the HTML box model',
       caption = 'Many elements that can potentially respond to events like click and hover',
       class = ''
   ) }}

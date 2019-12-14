@@ -10,44 +10,45 @@
 {% extends "templates/base.njk" %}
 
 {% block head_elements %}
-<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
 {% endblock %}
 
 {% block body %}
     {{ esds.breadcrumb(href="/") }}
+
     <div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
-    <div class="esds-row__inner">
-        <div class="escom-article__author-row">
-            <div class="escom-article__author-avatar"
-                style="background-image: url('/images/bios/bio-thumb-{{ author | lower | replace(' ', '-') }}.png')">
+        <div class="esds-row__inner">
+            <div class="escom-article__author-row">
+                <div class="escom-article__author-avatar"
+                    style="background-image: url('/images/bios/bio-thumb-{{ author | lower | replace(' ', '-') }}.png')">
+                </div>
+                <div class="escom-article__author-text">
+                    <p class="escom-article__author">
+                        {{ author }}
+                    </p>
+                    <p class="escom-article__author-role">
+                        {{ author_role }}
+                    </p>
+                    <p>
+                        <span class="escom-article__published-date">
+                            {{ published_date }} •
+                        </span>
+                        <span class="escom-article__read-duration">
+                            {{ read_duration }}min
+                        </span>
+                    </p>
+                </div>
             </div>
-            <div class="escom-article__author-text">
-                <p class="escom-article__author">
-                    {{ author }}
-                </p>
-                <p class="escom-article__author-role">
-                    {{ author_role }}
-                </p>
-                <p>
-                    <span class="escom-article__published-date">
-                        {{ published_date }} •
-                    </span>
-                    <span class="escom-article__read-duration">
-                        {{ read_duration }}min
-                    </span>
-                </p>
+            <div class="escom-article__title-row">
+                <h1 class="escom-article__title">{{ title }}</h1>
+                {% if deck %}
+                <h2 class="escom-article__deck">{{ deck }}</h2>
+                {% endif %}
             </div>
-        </div>
-        <div class="escom-article__title-row">
-            <h1 class="escom-article__title">{{ title }}</h1>
-            {% if deck %}
-            <h2 class="escom-article__deck">{{ deck }}</h2>
-            {% endif %}
-        </div>
 
     {% if masthead %}
         </div>
-    </div>
+    </div>    
     <div class="esds-row esds-container--dark esds-row--no-inset escom-article">
         <div class="esds-row__inner">
             <img src="/images/articles/{{ title_image_path }}/masthead.png" alt="Masthead" class="escom-article__masthead" >
@@ -62,4 +63,5 @@
 
         </div>
     </div>
+
 {% endblock %}

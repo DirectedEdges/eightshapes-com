@@ -5,7 +5,7 @@
   {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
   {% set published_date = 'Feb 27' %}
   {% set read_duration = '9 ' %}
-  {% set masthead = true %}
+  {% set masthead = false %}
 
   {% set title_tag = 'EightShapes > Articles >'  + title %}
   {% extends 'templates/article.njk' %}
@@ -18,9 +18,8 @@ Other times, systems keep experiences and teams apart. Unjustifiable inconsisten
 
 {% endfilter %}
 
-  {{ escom.pull_quote(
-      quote = 'Should we consolidate our design systems? If so, how?',
-      class = 'escom-pull-quote--light'
+  {{ escom.bar_quote(
+      quote = 'Should we consolidate our design systems? If so, how?'
   ) }}
 
   {% filter markdown %}
@@ -39,7 +38,7 @@ Products (here, a circle) adopt systems (here, a diamond) to efficiently and con
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '1',
-      image_alt = '',
+      image_alt = 'Diagram of product depends on system',
       caption = '',
       class = ''
   ) }}
@@ -65,7 +64,7 @@ Larger entities — think the size of Microsofts, Amazons, IBMs, GEs, or any
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '2',
-      image_alt = '',
+      image_alt = 'Complex diagram mapping systems to products',
       caption = 'System of systems for a large bank, in need of more consolidation',
       class = ''
   ) }}
@@ -79,7 +78,7 @@ Distinct systems can also emerge due to a fairly basic premise:
 
 {% endfilter %}
 
-  {{ escom.pull_quote(
+  {{ escom.bar_quote(
       quote = '“That system, over there, wasn’t made for us.”',
       class = 'escom-pull-quote--light'
   ) }}
@@ -97,7 +96,7 @@ Well-intentioned system teams serving distinct portfolios do try to “stay in t
 
 If you are considering consolidating, the first step is compare and rationalize differences. Your objective: help makers, customers, and sponsors get a sense of how things differ and could change as a result.
 
-### Compare Libraries &&nbsp;Outputs
+### Compare Libraries & Outputs
 
 To start, compare features of visual style, UI components, and other categories. Identify what features exist, how they are disseminated (as code and design assets), and depth of documentation of each part.
 
@@ -106,9 +105,9 @@ To start, compare features of visual style, UI components, and other categories.
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '3',
-      image_alt = '',
+      image_alt = 'Rationalization table of two different systems',
       caption = 'High-level system comparison that precedes a more thorough audit and report',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -116,15 +115,15 @@ To start, compare features of visual style, UI components, and other categories.
 
 For example, a Product group’s system may be more robustly featured and funded. On the other hand, Intranet’s system may be less mature, minimally funded. In that case, a high-level comparison would communicate:
 
-- **Visual style: Inconsistent**.&nbsp;  
+- **Visual style: Inconsistent**.   
 Hopes of existing alignment are dashed. The _logo_ and core brand _color_ match, but divergent neutral, interactive, and accent colors are in utter conflict. _Typography_ is a mess. _Icons_ are sourced from libraries with distinct tones.
-- **UI Components: Overlapping but Inconsistent**.&nbsp;  
+- **UI Components: Overlapping but Inconsistent**.   
 Both offer the same core set common components. But their design and variation taxonomy don’t at all match. Plus, each library _also_ offers up to 20 other components that the other does not.
-- **Additional Libraries: One vast, another empty**.&nbsp;  
+- **Additional Libraries: One vast, another empty**.   
 The Product catalog also strongly supports _UX Patterns_, _Accessibility_, _Layouts_, and _Motion_, while Internal Tools offers nothing beyond style and components. Where’s content strategy / _Editorial_? Both casually (or meekly) point to Brand’s PDF single page on tone.
-- **Outputs: Different code frameworks, different design software**.&nbsp;  
+- **Outputs: Different code frameworks, different design software**.   
 Product offers _React_ code and _Sketch_ assets, while Internal tools provides a dated _Angular_ codebase and an _Adobe Illustrator_ symbol set.
-- **Documentation: Different but both strong**.&nbsp;  
+- **Documentation: Different but both strong**.   
 Both teams invested heavily in quality code documenting and contain relevant design guidance. That’s rare, but if true, then shift conversation to content reconciliation and information architecture concerns.
 
 ### Evaluate System Practices, Too
@@ -140,11 +139,11 @@ _Reference_: [Adopting Design Systems](/articles/adopting-design-systems.html)
 
 * * *
 
-## How Do We Consolidate? Pick a&nbsp;Path.
+## How Do We Consolidate? Pick a Path.
 
 System histories and rationalization in hand, time to answer the big question: how do we consolidate and what — if any — systems survive it?
 
-### Option #1. Keep Both. Do&nbsp;Nothing.
+### Option #1. Keep Both. Do Nothing.
 
 Sometimes, teams walk away from the table. They aren’t ready to yield the autonomy, established norms, and distinct goals they don’t share. Another big threat? Resistance to change among their adopting customers.
 
@@ -153,7 +152,7 @@ Sometimes, teams walk away from the table. They aren’t ready to yield the auto
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '4',
-      image_alt = '',
+      image_alt = 'Diagram of two systems, remaining distinct',
       caption = '',
       class = ''
   ) }}
@@ -164,7 +163,7 @@ Sometimes, teams walk away from the table. They aren’t ready to yield the auto
 - For people and processes, **disconnected** practices remain.
 - For products, **nothing changes**. Adopters dodge a refactoring or redesign, yet users continue with lower quality, inconsistent experiences.
 
-_Takeaways_: If adoption of a consolidated system isn’t likely, why bother&nbsp;?Traditionally, slowly changing products (I’m looking at you, internal tools!) are less likely to prioritize what consolidation brings.
+_Takeaways_: If adoption of a consolidated system isn’t likely, why bother ?Traditionally, slowly changing products (I’m looking at you, internal tools!) are less likely to prioritize what consolidation brings.
 
 To avoid doing nothing, begin conversation with agreement that both portfolios intend to use a consolidated system, soon. Also, to push conversation past a “do nothing” impasse, leadership must care enough, mandate consolidation, and designate a system to serve — and expected to be used by — teams into the future.
 
@@ -179,7 +178,7 @@ Complete consolidation may be too ambitious, yet teams could start with subsyste
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '5',
-      image_alt = '',
+      image_alt = 'Diagram of two systems depending on an ascendant shared system',
       caption = '',
       class = ''
   ) }}
@@ -196,7 +195,7 @@ I’ve never seen a subsystem-only step occur, although I’ve discussed it with
 
 * * *
 
-### Option #3. Retire Both and Build a New System&nbsp;Together
+### Option #3. Retire Both and Build a New System Together
 
 Instead of sustaining existing features from one or both systems, you may retire both as a reboot to something new. Blowing up the old and starting fresh, bigger may be triggered by an external force — an executive mandate, brand refresh, or tech replatform. Maybe all of the above.
 
@@ -205,7 +204,7 @@ Instead of sustaining existing features from one or both systems, you may retire
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '6',
-      image_alt = '',
+      image_alt = 'Diagram of all products shifting to a shared, new third system',
       caption = '',
       class = ''
   ) }}
@@ -214,13 +213,13 @@ Instead of sustaining existing features from one or both systems, you may retire
   
 - For features, once a **new design language** is in play, so too will be UI components and code too. The “softer” libraries like UX patterns and editorial may avoid reimagination, but they won’t be in the spotlight.
 - For people and processes, a **larger team** may combines the capacity of both existing programs under a bigger umbrella, although maybe **efficiencies risk trimming system capacity**.
-- For products, every&nbsp;… single&nbsp;… experience faces **uncertain, potentially large change**. Existing adopters from all sides may wince at integrating a massive redesign while being subsumed by something intended for an even more diverse portfolio.
+- For products, every … single … experience faces **uncertain, potentially large change**. Existing adopters from all sides may wince at integrating a massive redesign while being subsumed by something intended for an even more diverse portfolio.
 
 _Takeaways_: Consolidation framed as a merger of equals raises complications. Decision-making is unclear. Everything is up for discussion. Without a considerable reboot leveling the playing field and _really_ starting fresh, rationalization could dilute the value of both and integration becomes time-consuming. It’s expensive to reinvent from the ground up. Worse, every product’s change will take a long time. This is a difficult path to tread.
 
 * * *
 
-### Option #4. Keep One and Inherit Features From the&nbsp;Other
+### Option #4. Keep One and Inherit Features From the Other
 
 Rationalization often indicates a predominant choice. A stronger system. As such, the mindset shifts to acquisition: what must we add from the weaker to the stronger system to best support all customers?
 
@@ -229,7 +228,7 @@ Rationalization often indicates a predominant choice. A stronger system. As such
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '7',
-      image_alt = '',
+      image_alt = 'Diagram of some products shifting to a new system',
       caption = '',
       class = ''
   ) }}

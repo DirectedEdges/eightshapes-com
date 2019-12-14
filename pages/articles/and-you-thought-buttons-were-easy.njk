@@ -29,7 +29,7 @@ Our trip towards cohesiveness starts with the most basic of components: the butt
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '1',
-      image_alt = '',
+      image_alt = 'Simple button',
       caption = '',
       class = ''
   ) }}
@@ -44,7 +44,7 @@ However, even our simple button includes many properties that formalize importan
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '2',
-      image_alt = '',
+      image_alt = 'Button annotated',
       caption = '',
       class = ''
   ) }}
@@ -65,7 +65,7 @@ Yet, there’s more to buttons than just a simple, default appearance. A button 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '3',
-      image_alt = '',
+      image_alt = 'Button states',
       caption = '',
       class = ''
   ) }}
@@ -80,7 +80,7 @@ And, we’ll need more than one, primary button. We’ll need a range of buttons
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '4',
-      image_alt = '',
+      image_alt = 'Button types',
       caption = '',
       class = ''
   ) }}
@@ -95,9 +95,9 @@ We’ll also incorporate icons and interactions like a menu to open a panel, or�
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '5',
-      image_alt = '',
+      image_alt = 'Button compositional variants',
       caption = '',
-      class = ''
+      class = 'escom-article-figure--break-bleed '
   ) }}
 
   {% filter markdown %}
@@ -110,9 +110,9 @@ We must solve for how these variations appear on diverse backgrounds, whether li
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '6',
-      image_alt = '',
+      image_alt = 'Buttons with states and variants across backgrounds',
       caption = '',
-      class = ''
+      class = 'escom-article-figure--full-width '
   ) }}
 
   {% filter markdown %}
@@ -128,9 +128,8 @@ Let’s imagine you combine a designer, engineer and QA specialist to design, bu
 
 {% endfilter %}
 
-  {{ escom.pull_quote(
-      quote = '200 hrs × $100/hr = $20,000 for Buttons',
-      class = 'escom-pull-quote--light'
+  {{ escom.bar_quote(
+      quote = '200 hrs × $100/hr = $20,000 for Buttons'
   ) }}
 
   {% filter markdown %}
@@ -140,9 +139,8 @@ If your enterprise has 25 teams each making buttons, then it costs your enterpri
 
 {% endfilter %}
 
-  {{ escom.pull_quote(
-      quote = '$20,000 × 50 teams = $1,000,000 for Buttons',
-      class = 'escom-pull-quote--light'
+  {{ escom.bar_quote(
+      quote = '$20,000 × 50 teams = $1,000,000 for Buttons'
   ) }}
 
   {% filter markdown %}
@@ -152,7 +150,7 @@ That’s a _million_ dollars, for buttons. And since buttons were made by 50 _di
 
 If buttons cost a million dollars, how much do our complicated components like header, cards, data grids, and modals cost? It’s not hard to imagine that they could cost millions of dollars each.
 
-This is why we need a system to spread a visual language and reusable UI components across our enterprise of product development teams. So, on to how we can make and adopt such a system…
+This is why we need a system to spread a visual language and reusable UI components across our enterprise of product development teams. So, on to how we can make and adopt such a system.
 
 
   {% endfilter %}

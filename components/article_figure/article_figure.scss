@@ -27,3 +27,13 @@
         @include esds-text-color('link');
     }
 }
+
+.escom-article-figure--break-bleed {
+    margin-left: -100px;
+    margin-right: -100px;
+}
+
+.escom-article-figure--full-width {
+    margin-left: -200px;
+    margin-right: -200px;
+}
