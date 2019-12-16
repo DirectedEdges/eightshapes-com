@@ -25,7 +25,7 @@ What do you build? Get ready to tool up! Here’s my eight favorite documentatio
 
 * * *
 
-## #8. Spec & Token&nbsp;Tables
+## #8. Spec & Token Tables
 
 Well documented libraries proliferate tabular spec tables throughout, whether a reference table of CSS modifiers, a [token set](/articles/tokens-in-design-systems.html), or something else. So make a component (or three) for those you repeat over and over.
 
@@ -34,7 +34,7 @@ Well documented libraries proliferate tabular spec tables throughout, whether a 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '2',
-      image_alt = '',
+      image_alt = 'Design token names and values in a table',
       caption = '<a href="/articles/tokens-in-design-systems.html" target="_blank">Token table</a>, with available variable and corresponding values, as displayed in a section describing the “squished inset” convention.',
       class = ''
   ) }}
@@ -46,11 +46,11 @@ Automating tabular displays helps authors use simpler syntax, promotes consisten
 
 _Special Features_:
 
-- Recursively cull through hierarchies to display objects with increasing levels of specificity, such as $space-s, $space-inset-s and $space-inset-squish-s.
+- Recursively cull through hierarchies to display objects with increasing levels of specificity, such as `$space-s`, `$space-inset-s` and `$space-inset-squish-s`.
 
 * * *
 
-## #7. Release&nbsp;Details
+## #7. Release Details
 
 Let’s face it, you’re a product with users to reading release notes and keeping abreast of changes. While boringly administrative, release details summarize change and rout users to new additions.
 
@@ -59,7 +59,7 @@ Let’s face it, you’re a product with users to reading release notes and keep
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '3',
-      image_alt = '',
+      image_alt = 'Sophisticated release history with types of changes per release',
       caption = 'Netapp.com LUCI Library release details',
       class = ''
   ) }}
@@ -75,7 +75,7 @@ _Special Features_:
 
 * * *
 
-## #6. Page-Level Table of&nbsp;Contents
+## #6. Page-Level Table of Contents
 
 Each component page needs a local table of contents to to scan available variations, specs and guidelines, and then navigate to each quickly. Wikipedia does it. So does Salesforce. Why can’t you?
 
@@ -84,7 +84,7 @@ Each component page needs a local table of contents to to scan available variati
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '4',
-      image_alt = '',
+      image_alt = 'Local navigation within a page',
       caption = 'Sticky local navigation, with variations (above line) and additional documentation (below line)',
       class = ''
   ) }}
@@ -101,7 +101,7 @@ _Special Features_:
 
 * * *
 
-## #5. Tint&nbsp;Stack
+## #5. Tint Stack
 
 A tint stack vertically arranges many colors in a group, such as a single color across brightness values or a relevant subsystem of colors like Feedback’s red, yellow and green.
 
@@ -110,7 +110,7 @@ A tint stack vertically arranges many colors in a group, such as a single color 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '5',
-      image_alt = '',
+      image_alt = 'Stack of colors',
       caption = '<a href="https://material.google.com/style/color.html" rel="nofollow noopener" target="_blank">Google Material Design Color</a> tint stack',
       class = ''
   ) }}
@@ -125,13 +125,13 @@ _Special Features_:
 - Identify the proper type color used on each background.
 - Overlay accessibility scores such as AA or AAA.
 - Mark a color that should never have text overlaid due to contrast.
-- Make the block clickable to copy a hex code or, better, a system variable like $color-neutral-95.
+- Make the block clickable to copy a hex code or, better, a system variable like `$color-neutral-95`.
 {% endfilter %}
 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '6',
-      image_alt = '',
+      image_alt = 'Stack of colors with values and accessibility scores',
       caption = 'Tint stack of neutrals with names (95), hex codes, and text/background accessibility contrast score',
       class = ''
   ) }}
@@ -140,7 +140,7 @@ _Special Features_:
   
 * * *
 
-## #4. Do &&nbsp;Don’t
+## #4. Do &amp; Don’t
 
 In libraries full of atomic bits, apply each in a full-page composition can take innumerable forms. So while systems must support a product’s autonomy, nothing beats sensitizing your users to intended and effective uses that comparative do’s and don’ts images.
 
@@ -149,7 +149,7 @@ In libraries full of atomic bits, apply each in a full-page composition can take
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '7',
-      image_alt = '',
+      image_alt = 'Do and don\'t contrasted side by side',
       caption = 'Gorgeous diagrams and well written content about <a href="https://material.google.com/components/cards.html#cards-usage" rel="nofollow noopener" target="_blank">Google Material Design’s Card</a> component.',
       class = ''
   ) }}
@@ -166,7 +166,7 @@ _Special Features_:
 
 * * *
 
-## #3. Framed Page&nbsp;Gallery
+## #3. Framed Page Gallery
 
 All of your system’s customers — designers, devs, product managers, execs — must believe it’s easy to build things that look great. Nothing does that quicker than showing a diverse gallery of built _pages_, embedded (via iframes) and scaled down to shown in a single, scrolled view. They get it: we use this stuff to build things like this.
 
@@ -175,7 +175,7 @@ All of your system’s customers — designers, devs, product managers, exec
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '8',
-      image_alt = '',
+      image_alt = 'Page types built in html',
       caption = 'Page gallery of embedded, fully composed page layouts, each displayed in an iFrame.',
       class = ''
   ) }}
@@ -187,11 +187,11 @@ A scannable gallery of built things quickly sensitizes and builds belief in syst
 
 _Special Features_:
 
-- Put users in control of page scaling (using the transform: scale() property, with a default of 0.2 or 0.25) and viewport width (to quickly toggle a gallery of page types across common device profiles).
+- Put users in control of page scaling (using the transform: `scale()` property, with a default of 0.2 or 0.25) and viewport width (to quickly toggle a gallery of page types across common device profiles).
 
 * * *
 
-## #2. Markdown&nbsp;Chunks
+## #2. Markdown Chunks
 
 It’s gotta be simple to do the basics of long form content — headings, paragraphs, lists, images, the basics. We use Markdown, cleanly integrated into Nunjucks templating mixed with calls to other components like the Do/Don’t, spec tables, and TOCs described above.
 
@@ -200,7 +200,7 @@ It’s gotta be simple to do the basics of long form content — headings, p
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '9',
-      image_alt = '',
+      image_alt = 'Code snippet',
       caption = 'Markdown interspersed with other content to form a documentation page.',
       class = ''
   ) }}
@@ -214,7 +214,7 @@ _Special Features_: Nah, who needs ‘em? At this point, keep the tool — a
 
 * * *
 
-## #1. Example — Code&nbsp;Pair
+## #1. Example — Code Pair
 
 Nothing beats the utility of a visible, rendered example paired with it’s coded counterpart. While bells and whistles abound, it’s here where _everyone_ can see it, and developers can take the thing and use it. Any self-respecting UI toolkit enables you to see the thing and use it effortlessly.
 
@@ -223,7 +223,7 @@ Nothing beats the utility of a visible, rendered example paired with it’s code
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '10',
-      image_alt = '',
+      image_alt = 'Example and code paired together',
       caption = 'Example for the <a href="https://www.lightningdesignsystem.com/components/feeds/" rel="nofollow noopener" target="_blank">Feed component in the Salesforce Lightning Design System</a>',
       class = ''
   ) }}
@@ -233,10 +233,10 @@ Nothing beats the utility of a visible, rendered example paired with it’s code
 
 _Special Features_:
 
-- Tabs for varying code concerns: markup, @extends tooling, macro usage.
+- Tabs for varying code concerns: markup, `@extend`s tooling, macro usage.
 - Toggle across or simultaneously display responsive states across relevant device profiles, such as handset, tablet, desktop or small, medium, large.
 - Click-to-copy, often via a button nestled into the code block’s upper right.
-- Stack states (such as a \_Button\_’s default, active, hover, disabled, etc) so that you needn’t interact to see or guess what’s implemented.
+- Stack states (such as a Button’s default, active, hover, disabled, etc) so that you needn’t interact to see or guess what’s implemented.
 
   {% endfilter %}
 {% endblock %}

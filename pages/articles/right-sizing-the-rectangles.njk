@@ -16,15 +16,15 @@
 
 During early system activities like our [Component Cut Up workshop](/articles/the-component-cut-up-workshop.html), participants can get stuck on the “correct” way to chop up page into components. Staring at pages on offer, each person has their moment—scissors in hand—wondering:
 
-- Is this thing (like a <em>Card</em>) the component?
-- Or this smaller thing (like a <em>Button </em>or <em>Tag</em>) the component?
-- Actually, is this far bigger thing (like <em>Card Grid with Toolbar</em>) the component?
+- Is this thing (like a `Card`) the component?
+- Or this smaller thing (like a `Button `or `Tag`) the component?
+- Actually, is this far bigger thing (like `Card Grid with Toolbar`) the component?
 
 After years working on libraries, my response is a straightforward: Yes.
   
 * * *
 
-When users start working with a library, instinct suggests that a page is just 10 to 20 reusable chunks: a top _Header_ here, a multi-level _Tab_ navigation below it, three _Sidebar Modules_ over there. Recent practices build understanding up from an atomic base: a _Button_ here, a _Menu_ there, perhaps a limited variety of _Cards_. Forever, all these parts have been assembled into _Layouts_.
+When users start working with a library, instinct suggests that a page is just 10 to 20 reusable chunks: a top `Header` here, a multi-level `Tab` navigation below it, three _Sidebar Modules_ over there. Recent practices build understanding up from an atomic base: a `Button` here, a `Menu` there, perhaps a limited variety of `Card`. Forever, all these parts have been assembled into `Layout`.
 
 Experience seasons the judgment and instincts of where the a component’s boundaries lie. Yet, over time, we begin to transcend the notion that there’s only one layer of lines to cut that arrange component simply as siblings on a page.
 
@@ -64,13 +64,19 @@ But encapsulation is a challenge for library makers. Where do properties go? Wil
 
 The more atomic a part, the more likely it’ll be broadly reused, correctly, at a small cost to the system. However, this doesn’t mean system can’t also offer big components like a “_Hero Carousel_” banner, a _Toolbar_ with varied menus, icons, and buttons, or—if you’re serious about bringing products together—a _Header_ system (possibly including panels like _Megamenus_ that may span products).
 
-### More Complex=More Expensive=More Likely to be Inconsistent. Some of These Matter. A&nbsp;lot.
+{% endfilter %}
 
-Big components — _Heroes_, _Toolbars_, and especially _Header Bars_ — are essential for making a broad experience cohesive. Yet these components are complex beasts, particularly responsively, as measured by overflowing lines of markup and style.
+{{ escom.bar_quote(
+    quote = 'More Complex=More Expensive=More Likely to be Inconsistent. Some of These Matter. A lot.'
+) }}
+
+{% filter markdown %}
+  
+Big components — `Heroes`, `Toolbar`, and especially `HeaderBar` — are essential for making a broad experience cohesive. Yet these components are complex beasts, particularly responsively, as measured by overflowing lines of markup and style.
 
 Is “Give ’em some atomic elements and hope for the best!” across 5+ products the right approach? For both cost and consistency, that’s bollocks. If a system is a centralized force to eliminate wasteful redundancy and deliver consistency, then build and propagate big ones that matter.
 
-### Big Components Reveal&nbsp;Seams
+### Big Components Reveal Seams
 
 A library lacking big components risks looking like a muddled mess when things are put together. Larger components provide inspectable examples of both visually and in code. You can see how small things fit in big things, learning how to apply spacing, color, variable names and themes along the way.
 
@@ -78,7 +84,7 @@ Likewise, larger pieces are material to QA the library as tokenized decisions—
 
 * * *
 
-## #4. Grids are Components, Not&nbsp;Layouts
+## #4. Grids are Components, Not Layouts
 
 The parts on a page are all composed in a the hierarchical journey, from the most atomic element all the way up to the body tag.
 
@@ -86,7 +92,7 @@ The invisible scaffolding that holds a page together is often erroneously though
   
 ### A Grid is a Component
 
-Most libraries offer a _Grid_ defined as (more often now) rows containing columns down a scrollable page. The _Grid_ has many hallmarks of a component, in that a grid is:
+Most libraries offer a `Grid` defined as (more often now) rows containing columns down a scrollable page. The _Grid_ has many hallmarks of a component, in that a grid is:
 
 - A fulcrum of a page’s responsiveness,
 - A predictable array of variations (1/4 wide, 2/3 wide, etc).
@@ -96,7 +102,7 @@ Most libraries offer a _Grid_ defined as (more often now) rows containing column
 
 A _Grid_ is a component.
 
-### Grid ≠ Overall&nbsp;Layout.
+### Grid ≠ Overall Layout.
 
 That said, a _Grid_ never the top-most component that contains everything else. It’s an intermediate component sandwiched between the smaller parts and often one of a few likely _Layouts_.
 
@@ -108,7 +114,7 @@ When library users approach a library, they can be overwhelmed by the vast ocean
   
 ### Offer Prebuilt Shells that Include Big Components
 
-That’s not “the grid” and it’s more complex than just a layout of empty regions. We’ll often offer a page _Shell_ as a prearranged layout that already contains a _Header_, _Global Navigation_, and possibly _Footer_ and other _Panel_ing*.*
+That’s not “the grid” and it’s more complex than just a layout of empty regions. We’ll often offer a page _Shell_ as a prearranged layout that already contains a `Header`, `GlobalNavigation`, and possibly `Footer` and other _Panel_ing*.*
 
 Shells ease the assembly process and revealing how things are organized. They help adopters not just see regions visually (in a browser) and in code (in their editor) into which they add, but get users a few steps ahead with the parts they should be skipping past anyway.
 

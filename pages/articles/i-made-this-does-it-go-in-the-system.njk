@@ -5,7 +5,7 @@
   {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
   {% set published_date = 'Sep 14, 2017' %}
   {% set read_duration = '7 ' %}
-  {% set masthead = true %}
+  {% set masthead = false %}
 
   {% set title_tag = 'EightShapes > Articles >'  + title %}
   {% extends 'templates/article.njk' %}
@@ -27,7 +27,7 @@ Where and how do we — collaborators chatting, a systems team reviewing pro
 
 * * *
 
-## Does It Belong in the&nbsp;System?
+## Does It Belong in the System?
 
 Systems are never the repository for every style, component, and feature designed and built for every product ever. Instead, a system should [include what’s shared across many products and omit what’s not](/articles/principles-of-designing-systems.html).
 
@@ -35,7 +35,7 @@ By asking a contributor a few simple questions, you can probe how realistic and 
 
 * * *
 
-### **#1. Is it relevant to any other product? If so, how&nbsp;many?**
+### **#1. Is it relevant to any other product? If so, how many?**
 
 For example, a _toast error_ _message_ could be relevant to an entire app ecosystem. On the other hand, a souped-up _data grid_ _with toolbars_ unique to their product may be irrelevant to everyone else. I’ll use a scale:
 
@@ -48,7 +48,7 @@ If relevance isn’t clear yet contributor passions persist, direct them to thei
 
 * * *
 
-### **#2. Is it consistent with the system’s&nbsp;vision?**
+### **#2. Is it consistent with the system’s vision?**
 
 If your system already sports _page-_, _inline-_, and _toast messages,_ a “_top hat”_ for system outages and other announcements could fit nicely into the set of messaging components*.*
 
@@ -57,7 +57,7 @@ If your system already sports _page-_, _inline-_, and _toast messages,_ a “_to
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '1',
-      image_alt = '',
+      image_alt = 'Illustration of alert components, such as page level message, inline error, toast, and a proposed addition of a top hat',
       caption = '',
       class = ''
   ) }}
@@ -80,7 +80,7 @@ Got a primitive _pill_ that needs a few varied colors? Easy. Proposing a complex
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '2',
-      image_alt = '',
+      image_alt = 'Comparison of a pil component and a date picker component',
       caption = 'Basic pill vs Very Complicated Date Picker (Source: <a href="http://bootstrap-datepicker.readthedocs.io/en/latest/" rel="noopener nofollow" target="_blank">readthedocs.io</a>)',
       class = ''
   ) }}
@@ -101,7 +101,7 @@ A system team can’t take a burgeoning library in every direction at once. If y
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '3',
-      image_alt = '',
+      image_alt = 'Illustration of a tooltip that begets a popover that begets a menu component',
       caption = '',
       class = ''
   ) }}
@@ -113,15 +113,14 @@ Solving for _Tooltips_ includes `z-index` layering and shadows, JavaScript event
 
 * * *
 
-### **#5. How deeply can _YOU_ guide its&nbsp;use?**
+### **#5. How deeply can _YOU_ guide its use?**
 
 [Adam Rowe](https://www.linkedin.com/in/admrwe/), a recent system collaborator, came up with this productive and reasonable challenge question:
 
 {% endfilter %}
 
-  {{ escom.pull_quote(
-      quote = 'What guidance can you document now? Use…when? Configure…how? Alter content…in what ways? How does this work, for everybody?',
-      class = 'escom-pull-quote--light'
+  {{ escom.bar_quote(
+      quote = 'What guidance can you document now? Use…when? Configure…how? Alter content…in what ways? How does this work, for everybody?'
   ) }}
 
   {% filter markdown %}
@@ -131,7 +130,7 @@ If your contributor struggles to articulate ideas and you don’t know either, m
 
 * * *
 
-### **#6. Is the timing right for contributor AND&nbsp;system?**
+### **#6. Is the timing right for contributor AND system?**
 
 Ultimately, a contribution conversation must zero in on timing. Does your system team’s release cycle and roadmap have space for this now or later? Does this feature pair well with other current developments?
 
@@ -139,7 +138,7 @@ Just as important, does your contributor have enough time to complete the work t
 
 * * *
 
-## What’s Left to Be&nbsp;Done?
+## What’s Left to Be Done?
 
 In my 10+ years of system work, I’ve never seen a contribution complete enough to be immediately merged into the system. Instead, there’s work to fine tune the contribution to:
 
@@ -149,7 +148,7 @@ In my 10+ years of system work, I’ve never seen a contribution complete enough
 
 * * *
 
-### #1. Expand to Cover a Minimally Relevant Feature&nbsp;Set
+### #1. Expand to Cover a Minimally Relevant Feature Set
 
 You can’t add half-baked features to a library. Premature and simplistic solutions risk inconsistent interpretations per product that you meant to eradicate. Even worse, adding features later risks triggers breaking changes that can alienate adopters.
 
@@ -160,9 +159,9 @@ For example, a proposed _Card_ may appear simple: image and title. Done, right? 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '4',
-      image_alt = '',
+      image_alt = 'Different additional elements added to a card design',
       caption = '',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -183,9 +182,9 @@ The contribution may also need to **reduce scope to a relevant essence** useful 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '5',
-      image_alt = '',
+      image_alt = 'Three alternative card designs',
       caption = 'Three alternative Card designs',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -198,9 +197,9 @@ _Headings_, _descriptions_, and _images_ are fairly similar, and we quickly achi
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '6',
-      image_alt = '',
+      image_alt = 'Reconciled features of a card added to a system',
       caption = 'Card design added to the system',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -214,7 +213,7 @@ _Who does the work?_ Reduction is often driven by a system expert acting as conn
 
 * * *
 
-### #3. Normalize! Align with System Composition and&nbsp;Quality
+### #3. Normalize! Align with System Composition and Quality
 
 Perhaps a design include myriad non-system colors, wacky spatial choices, and product-specific icons. Or, maybe contributed HTML markup is crude, CSS is unorganized across files, and — gasp! — uses [Stylus](http://stylus-lang.com) instead of the system’s [Sass](http://sass-lang.com/). Without a doubt, contributions always lack every text / background combo, size option and theming construct the system offers.
 

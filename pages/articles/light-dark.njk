@@ -20,7 +20,7 @@ With systems, you can encode predictable **background** , **text** , **border** 
 
 * * *
 
-## Prepping for a Light & Dark&nbsp;System
+## Prepping for a Light & Dark System
 
 ### Inventory Neutrals Use Across Components
 
@@ -31,7 +31,7 @@ Before selecting new colors, inventory the neutrals you already use. Some librar
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '2',
-      image_alt = '',
+      image_alt = 'Color grid of some and then many neutral grays included in a design system',
       caption = '',
       class = ''
   ) }}
@@ -52,7 +52,7 @@ Whether on a Sketch canvas or lengthy kitchen sink HTML page, stacked your libra
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '3',
-      image_alt = '',
+      image_alt = 'Sketch artboards of component designs across light and dark color themes',
       caption = 'Sketch artboards exploring <a href="http://comet.discoveryeducation.com/" rel="nofollow noopener" target="_blank">Discovery Education Comet System</a> components, used with permission',
       class = ''
   ) }}
@@ -68,7 +68,7 @@ With this setup, you can experiment with and demonstrate effectively designed co
 
 To create a system for light & dark, you must model the range of CSS properties you’ll control, from backgrounds and text to borders, layers, and more.
 
-### Background Color: Just Light and Dark Settings, or More&nbsp;Options?
+### Background Color: Just Light and Dark Settings, or More Options?
 
 How many different light & dark settings do you need? Most teams opt for a simple toggle: a “light”, often pure white `#FFFFFF` canvas and “dark”, near black canvas such as`#222222`.
 
@@ -77,7 +77,7 @@ How many different light & dark settings do you need? Most teams opt for a simpl
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '4',
-      image_alt = '',
+      image_alt = 'Two tone color: black and white',
       caption = '',
       class = ''
   ) }}
@@ -92,7 +92,7 @@ Other teams endorse a wider range of neutral backgrounds. For example, a system 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '5',
-      image_alt = '',
+      image_alt = 'Four tones of color, adding a light and dark gray',
       caption = '',
       class = ''
   ) }}
@@ -107,7 +107,7 @@ A very sophisticated collection of layered backgrounds could start with white an
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '6',
-      image_alt = '',
+      image_alt = 'Eight tones of gray, with four dark and four light grays',
       caption = '',
       class = ''
   ) }}
@@ -121,7 +121,7 @@ _Takeaway_: Even if you target just two settings (“light” and “dark”), e
 
 * * *
 
-### Text Color: Type Your&nbsp;Types
+### Text Color: Type Your Types
 
 In a library, you may find there was no simple model of text colors. Instead, _card_ titles, labels in _pills_ and _forms_, and other component text may be arbitrarily colored.
 
@@ -142,7 +142,7 @@ With established types, choosing and applying text color per background becomes 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '7',
-      image_alt = '',
+      image_alt = 'Table of background colors across which different text colors are applied',
       caption = 'Modeling text color decisions across backgrounds making applying to components far easier',
       class = ''
   ) }}
@@ -157,7 +157,7 @@ One things for sure: finding link and error text color in dark settings that’s
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '8',
-      image_alt = '',
+      image_alt = 'Grid of accessibility contrast scores for combinations of text and background colors',
       caption = 'Using blue and red on dark backgrounds results in accessibility failures.',
       class = ''
   ) }}
@@ -169,16 +169,16 @@ _Takeaway_: Identify a simple classification of type color that includes _at lea
 
 * * *
 
-### Borders of Controls: Keep Strokes Strong&nbsp;Enough
+### Borders of Controls: Keep Strokes Strong Enough
 
-Input controls — `textbox`, `textarea`, `radio-button` — require strong contrast for visibility and usability. The control’s border color can play a big role, and may or may not shift across backgrounds. Other features – a&nbsp;`:focus` halo, a red border for field in error, and more – may also need attention.
+Input controls — `textbox`, `textarea`, `radio-button` — require strong contrast for visibility and usability. The control’s border color can play a big role, and may or may not shift across backgrounds. Other features – a `:focus` halo, a red border for field in error, and more – may also need attention.
 
 {% endfilter %}
 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '9',
-      image_alt = '',
+      image_alt = 'Solving for text and border colors of inputs across background colors',
       caption = '',
       class = ''
   ) }}
@@ -199,7 +199,7 @@ Designers can scaffold a UI using thin rules — or _hairlines_ — to d
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '10',
-      image_alt = '',
+      image_alt = 'Varying border colors across background colors',
       caption = '',
       class = ''
   ) }}
@@ -211,7 +211,7 @@ Adjusting hairlines — even light and heavy variants — can benefit fr
 
 _Takeaway_: Catalog a hairline or two (heavy vs light) across each background. Be wary of more. Choices beyond heavy get obese.
 
-### States: Adjust by Shifting&nbsp;Opacity
+### States: Adjust by Shifting Opacity
 
 Don’t forget interactive states like the `hover`, `active`, and `selected` states of _buttons_, _tabs_, _list groups_ and _links_.
 
@@ -220,7 +220,7 @@ Don’t forget interactive states like the `hover`, `active`, and `selected` sta
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '11',
-      image_alt = '',
+      image_alt = 'Varying button state colors across backgrounds',
       caption = '',
       class = ''
   ) }}
@@ -236,14 +236,14 @@ _Takeaway_: Fine tune colors for each state using a consistent method, whether f
 
 ### Backgrounds on Backgrounds: Prevent Undesirable Layering
 
-Things get more interesting when a component block — like a _card_ — has a neutral background that itself rests on a different neutral. Suddenly, you are solving for text on a background&nbsp;… on a background. System users will be curious about what background-on-background combinations work well and are consistently used.
+Things get more interesting when a component block — like a _card_ — has a neutral background that itself rests on a different neutral. Suddenly, you are solving for text on a background … on a background. System users will be curious about what background-on-background combinations work well and are consistently used.
 
 {% endfilter %}
 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '12',
-      image_alt = '',
+      image_alt = 'Varying card colors across backgrounds',
       caption = '',
       class = ''
   ) }}
@@ -257,9 +257,9 @@ _Takeaway_: Explore how chunkier components of various backgrounds rest on broad
 
 * * *
 
-## Further Considerations When Implementing Light & Dark Color in a&nbsp;Library
+## Further Considerations When Implementing Light & Dark Color in a Library
 
-### Accessibility: Stay Tuned in Real&nbsp;Time
+### Accessibility: Stay Tuned in Real Time
 
 As you select color combinations, keep an eye on accessibility. You’ll tune this neutral. You’ll adjust that neutral. All the while, stay in bounds with accessible contrast that passes muster. At EightShapes, we built a **Contrast Grid** tool to quickly visualize and score many text and background color combos at once.
 
@@ -268,7 +268,7 @@ As you select color combinations, keep an eye on accessibility. You’ll tune th
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '13',
-      image_alt = '',
+      image_alt = 'Default display of accessibility contrast scores in a grid',
       caption = 'contrast-grid.eightshapes.com',
       class = ''
   ) }}
@@ -282,7 +282,7 @@ To use the tool, visit [**contrast-grid.eightshapes.com**](http://contrast-grid.
 
 * * *
 
-### Refine the Neutral&nbsp;Palette
+### Refine the Neutral Palette
 
 To optimize a color system, expect change. Some teams can’t avoid revisiting the entire palette altogether, cooling a blander grayscale towards blueish gray “slates” or “charcoals.”
 
@@ -291,7 +291,7 @@ To optimize a color system, expect change. Some teams can’t avoid revisiting t
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '14',
-      image_alt = '',
+      image_alt = 'Comparative tint stacks of grayscale versus a cooler blue gray',
       caption = 'Google’s Material Design <a href="https://material.io/guidelines/style/color.html#color-color-palette" rel="nofollow noopener" target="_blank">palettes of Neutral Grays vs Blue Grays</a>',
       class = ''
   ) }}
@@ -306,7 +306,7 @@ Other times, you need add just one more neutral or to replace a moderate choice 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '15',
-      image_alt = '',
+      image_alt = 'Illustration of removing and deprecating one color in favor of a new color',
       caption = '',
       class = ''
   ) }}
@@ -344,7 +344,7 @@ Once UIs combine dark and light areas together on the same page, risky CSS confl
 
 So, should a system provide a `<body>` CSS class for toggling a page to light or dark? Definitely, if the entire page’s interface can be exclusively one or the other. But if mixing on the same page, it’s unclear how to contain CSS effects on components, and count on each component sensing it’s context to color correctly, without targeting each and every component. That’s a pain.
 
-_Takeaway_: We haven’t figured out a clean solution. Got advice?&nbsp;;)
+_Takeaway_: We haven’t figured out a clean solution. Got advice? ;)
 
   {% endfilter %}
 {% endblock %}

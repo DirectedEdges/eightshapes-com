@@ -19,9 +19,8 @@ When it comes to selling a design system, you’ve gotta have a pitch. And by pi
 
 {% endfilter %}
 
-  {{ escom.pull_quote(
-      quote = '“Here’s what you look like, today, without a system” vs. “Here’s you look like, tomorrow, cohesive using a system.”',
-      class = 'escom-pull-quote--light'
+  {{ escom.bar_quote(
+      quote = '“Here’s what you look like, today, without a system” vs. “Here’s you look like, tomorrow, cohesive using a system.”'
   ) }}
 
   {% filter markdown %}
@@ -59,22 +58,22 @@ _Takeaway_: Don’t just launch into designing some cool pages. Thoughtfully con
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '2',
-      image_alt = '',
+      image_alt = 'Marriott.com planning doc, describing the rationale to design each page, back when we made such docs. 2012',
       caption = 'Marriott.com planning doc, describing the rationale to design each page, back when we made such docs. 2012.',
       class = ''
   ) }}
 
   {% filter markdown %}
   
-### How Many? At Least 5, Ideally&nbsp;10+
+### How Many? At Least 5, Ideally 10+
 
 Rendering two or three layouts representing a couple flagship products doesn’t convince anyone of a design that scales. That’s too limited a product reach and insufficiently diverse. So reach for more. While some teams succeed with 5 to 10 for more limited portfolio, an enterprise-wide set often warrants 10 to 20.
 
-### When? Early On, in a Quick&nbsp;Burst
+### When? Early On, in a Quick Burst
 
 A burst of reference designs usually takes place in sprint 2 or 3 of a system’s formative period, after planning and strategy solidify. With sufficient focus, a reference designer (or up to three or four) can crank through a first pass within a week, and iterate for one to three weeks depending the depth and range of feedback required.
 
-### Who? Ideally, System & Product Designers Working&nbsp;Together
+### Who? Ideally, System & Product Designers Working Together
 
 It’s hard to divert leading product designers from their product teams for a sprint’s worth of collaboration in a war room. That doesn’t mean you shouldn’t try. If you can’t assemble your all-star team, at least assertively seek feedback from [designers on those flagship and secondary products](http://alistapart.com/article/promoting-a-design-system-across-your-products).
 
@@ -84,7 +83,7 @@ _Takeaway:_ Minimize black-boxedness of conceptual exercises. This will bode wel
 
 ## Presenting Reference Designs
 
-### Before & After, Side by&nbsp;Side
+### Before & After, Side by Side
 
 When presenting reference designs, start with the old, reveal the new, and follow with key points of visual style (like color, typography, and space) and components (like buttons and global navigation). Once complete, rest your presenter’s display on a side-by-side view of old vs new to open discussion.
 
@@ -93,7 +92,7 @@ When presenting reference designs, start with the old, reveal the new, and follo
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '3',
-      image_alt = '',
+      image_alt = 'Google products before and after reference designs',
       caption = '<em>A comparison of current Google products to design explorations that led to Material Design, by </em><a href="http://www.behance.net/gallery/Google-Product-Redesign/4315369" rel="nofollow noopener" target="_blank">
   <em>Andy Gugel, Jesse Kaczmarek, and Google Creative lab</em>
 </a><em>, as described in the Verge.com article </em><a href="http://www.theverge.com/2013/1/24/3904134/google-redesign-how-larry-page-engineered-beautiful-revolution" rel="nofollow noopener" target="_blank">Redesigning Google: how Larry Page engineered a beautiful revolution</a>',
@@ -112,14 +111,14 @@ _Takeaway_: Sell your audience on the before and after, side-by-side. Revel in i
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '4',
-      image_alt = '',
+      image_alt = 'Red Gate Software designs on wall, comparing before and after',
       caption = '<a href="http://red-gate.com" rel="nofollow noopener" target="_blank">Red-gate.com</a> site and product reference designs in a hallway. August 2015.',
       class = ''
   ) }}
 
   {% filter markdown %}
   
-### Soliciting Input from Product&nbsp;Teams
+### Soliciting Input from Product Teams
 
 Some teams post reference designs on walls of a conference room or hallway. This exposes the target state in a space where others can stop by and thoughtfully consider the designs themselves.
 
@@ -133,7 +132,7 @@ The [hudl.com system](http://www.hudl.com/) team led by Kyle Murphy and John Hen
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '5',
-      image_alt = '',
+      image_alt = 'Hudl designs on wall, annotated with love, nope, and opportunities',
       caption = '<a href="http://www.hudl.com" rel="nofollow noopener" target="_blank">Hudl.com</a> early system artifacts in conference room, layered with feedback in notes and dots. Spring 2016.',
       class = ''
   ) }}
@@ -147,7 +146,7 @@ _Takeaway_: Don’t bury reference designs in some InVision prototype or Keynote
 
 * * *
 
-## Using Reference Designs&nbsp;Later
+## Using Reference Designs Later
 
 As early reference concepts give way to painstaking design and build of each part, I’ll revisit reference designs for:
 
@@ -155,7 +154,7 @@ As early reference concepts give way to painstaking design and build of each par
 
 In my experience, I pull out reference designs as I build individual components to look for inspiration: additional states I haven’t considered, alternative layouts I’d not expected, and variations that help us build more flexible pieces.
 
-### **Composing Page&nbsp;Examples**
+### **Composing Page Examples**
 
 As a system’s library matures towards a first release, building full pages based on components you’ve built is essential. These pages showcase examples of what’s possible and stress test your build by fitting all the pieces together. More often than not, we’ll build our initial reference design concepts using the parts we’ve subsequently built.
 
@@ -164,9 +163,9 @@ As a system’s library matures towards a first release, building full pages bas
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '6',
-      image_alt = '',
+      image_alt = 'NetApp page types built in code',
       caption = 'Fully built pages showcased in the NetApp LUCI library (<a href="http://luci.netapp.com/page-types.html" rel="nofollow noopener" target="_blank">http://luci.netapp.com/page-types.html</a>)',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
 {% endblock %}

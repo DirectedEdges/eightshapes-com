@@ -29,7 +29,7 @@ And so I begin by asking the question: what **audiences** is this doc for, what 
 
 First things first: who it is this for? And since the answer usually spans more than one discipline, who’s more important?
 
-### Engineers, Designers, and Everyone&nbsp;Else!
+### Engineers, Designers, and Everyone Else!
 
 When a library offers code, _engineers_ are an audience. Obviously. If a library is only code, should doc serve _designers_ too? If doc only offers design guidance without code (e.g., [Google Material](http://material.google.com/)), do engineers care?
 
@@ -42,7 +42,7 @@ Beyond that, is it for anyone else? Possibly, especially as a system entrenches 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '1',
-      image_alt = '',
+      image_alt = 'Diagram of different disciplines',
       caption = '',
       class = ''
   ) }}
@@ -58,7 +58,7 @@ _Takeaway_: The arc of design systems bends towards collaboration across discipl
 
 * * *
 
-### Engineers, _then_ Designers, _then_ Everyone&nbsp;Else
+### Engineers, _then_ Designers, _then_ Everyone Else
 
 Serving everyone doesn’t mean serving each equally. Engineers may visit doc 5, 10, or even more times daily. It may even be an open window adjacent to their code editor! A designer may visit less frequently, comparing this to that and occasionally absorbing details. A content strategist or researcher may visit rarely to support a decision.
 
@@ -69,7 +69,7 @@ So, who’s most important? My experience suggests a clear starting point: syste
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '2',
-      image_alt = '',
+      image_alt = 'Diagram prioritizing disciplines',
       caption = '',
       class = ''
   ) }}
@@ -84,7 +84,7 @@ What about engineers versus designers? Every system I’ve worked recently serve
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '3',
-      image_alt = '',
+      image_alt = 'Diagram of design versus engineering discipline',
       caption = '',
       class = ''
   ) }}
@@ -107,7 +107,7 @@ Component doc connects the your audience with content you can provide. The conte
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '4',
-      image_alt = '',
+      image_alt = 'Diagram of introduction and example content',
       caption = '',
       class = ''
   ) }}
@@ -118,7 +118,7 @@ Component doc connects the your audience with content you can provide. The conte
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '5',
-      image_alt = '',
+      image_alt = 'Diagram of design reference and code reference content',
       caption = '',
       class = ''
   ) }}
@@ -135,7 +135,7 @@ At a high level, component doc usually includes these four types:
 
 * * *
 
-### Content Production Cost Varies by&nbsp;Type
+### Content Production Cost Varies by Type
 
 The cost of each varies. An _Introduction_ should be quick and cheap, riffing off an example to write a sentence or two. Well-organized _Examples_ are an essential investment, over time becoming predictably produced. _Code_ references should emerge via straightforward if tedious templates that engineers use to fill in the blanks.
 
@@ -144,7 +144,7 @@ The cost of each varies. An _Introduction_ should be quick and cheap, riffing of
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '6',
-      image_alt = '',
+      image_alt = 'Chart indicating the cost versus level of detail of content types, with design reference having greatest cost.',
       caption = '',
       class = ''
   ) }}
@@ -160,7 +160,7 @@ _Takeaway_: Component doc can include a wide variety of content. So start discus
 
 ## Architecting the Component Page
 
-### Design & Code: To Fragment or&nbsp;Combine?
+### Design & Code: To Fragment or Combine?
 
 In practice, component doc can emerge from both deliberate choices and unfavorable constraints (“get it out there!”). Often, component doc ends up a split story: designers publish for designers here, engineers publish for engineers there. This fragmentation can occur by accident, design, or both. As a result, discuss a component page’s information architecture early.
 
@@ -171,13 +171,13 @@ Google Material’s doc ecosystem illustrates fragmentation. [Material’s desig
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '7',
-      image_alt = '',
+      image_alt = 'Diagram of many code sites referring to one design site',
       caption = 'Google Material propagates stories across <a href="https://material.io/guidelines/components/buttons.html" rel="noopener nofollow" target="_blank">
   <strong>Material Design</strong>
 </a>, <a href="https://getmdl.io/components/index.html#buttons-section" rel="noopener nofollow" target="_blank">
   <strong>Material Design Lite</strong>
 </a>, and <strong>Material UI</strong>’s <a href="https://material-ui-next.com/demos/buttons/" rel="noopener nofollow" target="_blank">Demos</a> and <a href="https://material-ui-next.com/api/button/" rel="noopener nofollow" target="_blank">API</a>.',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -192,11 +192,11 @@ For the rest of us, a design goes here engineering goes there mentality is commo
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '8',
-      image_alt = '',
+      image_alt = 'Diagram of a code site and design site separate but paired together',
       caption = 'Component design guidance and code &amp; API docs, loosely coupled via separate sites. Example: <a href="https://design.atlassian.com" rel="nofollow noopener" target="_blank">
   <strong>Atlassian</strong>
 </a>.',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -215,7 +215,7 @@ _Takeaway:_ Be wary of a design & code split. While convenient to author and pub
 
 * * *
 
-### For Threaded Content, Stack or&nbsp;Tab?
+### For Threaded Content, Stack or Tab?
 
 In many systems programs I’ve led in recent years, such as the [Morningstar Design System](http://designsystem.morningstar.com/), we’ve thread design and code together. Adopters find unified names, guidance, and narratives on how to use variations and features.
 
@@ -224,7 +224,7 @@ In many systems programs I’ve led in recent years, such as the [Morningstar De
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '9',
-      image_alt = '',
+      image_alt = 'Diagram of single page content stacked together',
       caption = 'Component documentation page that threads design and code content together in one scrollable view, as shown in <a href="http://designsystem.morningstar.com/components/buttons.html" rel="noopener nofollow" target="_blank">
   <strong>Morningstar Design System</strong>
 </a>.',
@@ -241,7 +241,7 @@ A threaded page comes with tradeoffs: it runs longer with content varyingly rele
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '10',
-      image_alt = '',
+      image_alt = 'Diagram of a component page with tabs for examples, design and code',
       caption = '',
       class = ''
   ) }}
@@ -253,7 +253,7 @@ _Takeaway_: Blend design and code is possible, and a team can choose the UI—st
 
 * * *
 
-### Grouping and Ordering Content by&nbsp;Type
+### Grouping and Ordering Content by Type
 
 Whether stacked or tabbed, I’ve come to advocate for a consistent content order and priority of:
 
@@ -269,7 +269,7 @@ Examples rule, and so long as deeper design and code reference is a click away, 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '11',
-      image_alt = '',
+      image_alt = 'Diagram of tab order, with code first',
       caption = '',
       class = ''
   ) }}
@@ -280,7 +280,7 @@ Examples rule, and so long as deeper design and code reference is a click away, 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '12',
-      image_alt = '',
+      image_alt = 'Diagram of tab order, with design first',
       caption = '',
       class = ''
   ) }}
@@ -291,7 +291,7 @@ Examples rule, and so long as deeper design and code reference is a click away, 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '13',
-      image_alt = '',
+      image_alt = 'Diagram of tab order, with design content as placeholder?',
       caption = 'Distinct approaches varying what content is prioritized: Code (in Examples) first, Design first, or a sensitizing example <em>above</em> tabs altogether',
       class = ''
   ) }}
@@ -316,7 +316,7 @@ The longer your page, the more important it is to signal what’s there and wher
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '14',
-      image_alt = '',
+      image_alt = 'Screenshot of Morningstar component page content',
       caption = '<a href="http://designsystem.morningstar.com/" rel="nofollow noopener" target="_blank">
   <strong>Morningstar Design System</strong>
 </a> organizes local navigation along a page’s right rail with two levels of hierarchy.',
@@ -330,7 +330,7 @@ _Takeaway_: The UI — across tabs or in a single scrollable view — ca
 
 * * *
 
-### Showing Design OR Code Or&nbsp;Both?
+### Showing Design OR Code Or Both?
 
 The more design and code thread together, the more audiences interested predominantly in one over the other will ask to refine the page’s interface to suit what they want to see.
 
@@ -351,7 +351,7 @@ In a similar vein, [Hudl’s Uniform](http://uniform.hudl.com/components/forms/c
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '15',
-      image_alt = '',
+      image_alt = 'Hudl Uniform screenshot of design page',
       caption = '',
       class = ''
   ) }}
@@ -359,7 +359,7 @@ In a similar vein, [Hudl’s Uniform](http://uniform.hudl.com/components/forms/c
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '16',
-      image_alt = '',
+      image_alt = 'Hudl Uniform screenshot of code page',
       caption = '<a href="http://uniform.hudl.com/components/forms/checkbox/design" rel="nofollow noopener" target="_blank">
   <strong>Hudl’s Uniform</strong>
 </a> design system distinguishes guidance for Design and Code via a page-level toggle (upper right).',

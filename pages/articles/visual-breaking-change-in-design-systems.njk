@@ -46,9 +46,9 @@ Most system teams feel safe in tuning a primary button’s background color. May
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '1',
-      image_alt = '',
+      image_alt = 'Adjusting background color of a primary button',
       caption = 'Adjusting background color of a primary button',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -67,7 +67,7 @@ Imagine a system team fine-tuning interactive blue to improve color contrast. Th
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '2',
-      image_alt = '',
+      image_alt = 'Grid of accessibility contrast scores',
       caption = 'Color contrast checking via <a href="http://contrast-grid.eightshapes.com/?background-colors=%23FFFFFF%2C%20White%0D%0A%23DDDDDD%2C%20Light%20Gray%0D%0A%23404040%2C%20Charcoal&amp;foreground-colors=%230F60B6%2C%20v1.4.0%0D%0A%23398EEA%2C%20v1.5.0&amp;es-color-form__tile-size=compact" rel="noopener nofollow" target="_blank">contrast-grid.eightshapes.com</a>',
       class = ''
   ) }}
@@ -82,9 +82,9 @@ So, for `v1.5.0`, the team adjusted `interactive-blue` to a lighter, more satura
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '3',
-      image_alt = '',
+      image_alt = 'Adjusting text color of a ghost button label on unpredictable backgrounds',
       caption = 'Adjusting text color of a ghost button label on unpredictable backgrounds',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -92,7 +92,7 @@ So, for `v1.5.0`, the team adjusted `interactive-blue` to a lighter, more satura
 
 However, an adopter had used the Ghost button dependent on that color on a light gray background. After the system change, the label's text color contrast is inaccessible. _Your system broke their product_.
 
-### Example: System Backgrounds with Custom Overlaid&nbsp;Text
+### Example: System Backgrounds with Custom Overlaid Text
 
 Similarly, imagine a system darkens the Card component’s`background-color`. The Card’s content area includes a "safe" `content-container` zone where adopters insert whatever content and markup they want.
 
@@ -101,9 +101,9 @@ Similarly, imagine a system darkens the Card component’s`background-color`. Th
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '4',
-      image_alt = '',
+      image_alt = 'Adjusting background color of a Card that allows contained custom content',
       caption = 'Adjusting background color of a Card that allows contained custom content',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -133,7 +133,7 @@ Not all experiences risk breaking if a system adjusts typography. For content-he
 
 For denser interfaces, typography must be precise. Designers grind for hours fine-tuning typography, arranging labels to fit in compact areas. If you adjust system typography, their elements may wrap or crop in unexpected ways.
 
-### Example: Wrapping Tabs Are&nbsp;Awful
+### Example: Wrapping Tabs Are Awful
 
 Imagine your system adjusts tab label`font-weight` from normal to bold.
 
@@ -142,9 +142,9 @@ Imagine your system adjusts tab label`font-weight` from normal to bold.
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '5',
-      image_alt = '',
+      image_alt = 'Display of wrapping text after a minor upgrade',
       caption = 'After a minor version upgrade, unresponsive tabs wrap. Not good.',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -152,7 +152,7 @@ Imagine your system adjusts tab label`font-weight` from normal to bold.
 
 An adopter upgrades. Their existing unresponsive tabs exceed allocated space, so they wrap. Ghastly! _Your system broke their product._
 
-### Example: Letter Spacing&nbsp;Mayhem
+### Example: Letter Spacing Mayhem
 
 Brand guidelines evolve, yielding new heading hierarchy and style. Thus, your system adapts by increasing each heading’s `letter-spacing`.
 
@@ -164,13 +164,13 @@ _Takeaway_: Prior to `1.0.0`, work diligently to to experiment, refine, and fina
 
 * * *
 
-## Breaking Space and&nbsp;Size
+## Breaking Space and Size
 
 At least you can see color and typography. [Space](/articles/space-in-design-systems.html) and size? Those are harder to define as concretely reusable, let alone monitor for breaking change.
 
 In HTML, when you change a component’s box model properties — `padding`, `margin`, `width`, `height`, `display`, `box-sizing`, `position`, `left`, `right`, `top`, `bottom` — you risk impacting layout composition that arranges that component with other page elements.
 
-### Example 1: Removing Vertical&nbsp;Spacing
+### Example 1: Removing Vertical Spacing
 
 Your system team decides to remove vertical spacing applied form controls in the form of `margin-bottom`. This impacts `<input>`, `<select>`, `<label>`, microcopy and other elements.
 
@@ -179,9 +179,9 @@ Your system team decides to remove vertical spacing applied form controls in the
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '6',
-      image_alt = '',
+      image_alt = 'Display of form controls no longer including space between inputs and labels',
       caption = 'Originally set with vertical spacing built in, a system removes margins. And so forms look smooshed.',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -189,7 +189,7 @@ Your system team decides to remove vertical spacing applied form controls in the
 
 An adopter had laid out 38 different forms relying upon that spacing. After the system change, all their forms no longer vertically separate elements. _Your system broke their product_.
 
-### Example 2: Custom Sizing Based on Assumed&nbsp;Spacing
+### Example 2: Custom Sizing Based on Assumed Spacing
 
 After extensive design community debate, your system concedes to expand a Card’s content block’s `padding`.
 
@@ -198,9 +198,9 @@ After extensive design community debate, your system concedes to expand a Card�
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '7',
-      image_alt = '',
+      image_alt = 'Display of a card with wrapping icon toolbar',
       caption = 'A custom icon toolbar wraps after a padding change. Ewww.',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -212,13 +212,13 @@ _Takeaway_: First, avoid spatial rules (usually `margin`) outside a component’
 
 * * *
 
-### Contained, Non-Breaking Spatial&nbsp;Change
+### Contained, Non-Breaking Spatial Change
 
 Some spatial change doesn’t impact adjacent elements or page composition. For example, tightening or expanding the inset `padding` or stacked `margin` between items in a Menu would not be a breaking change because these adjustments are contained within a block that's completely specified by the system, includes no other customizable elements, and is layered in a manner that doesn’t otherwise impact page layout when opened and closed.
 
 * * *
 
-## What Else Can Break Visual&nbsp;Style?
+## What Else Can Break Visual Style?
 
 In general, changes in visual style could be specified as changes to a bevy of CSS properties, the range of which is exemplified by [design token](/articles/tokens-in-design-systems.html) collections in [Salesforce Lightning](https://www.lightningdesignsystem.com/design-tokens/), [Morningstar](http://designsystem.morningstar.com/visual-language/constants.html), [REI](https://github.com/rei/rei-cedar-tokens/tree/master/tokens/foundations), and [Open Table](https://github.com/opentable/design-tokens#otkit).
 
@@ -229,9 +229,9 @@ What other properties could you monitor beyond those of color, typography, space
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '8',
-      image_alt = '',
+      image_alt = 'Display of a table and subsequent component no longer visually distinct',
       caption = 'Adjusting border colors of a component arranged near other components',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -245,7 +245,7 @@ _Takeaway_: Review the vast collection of possible CSS properties and discuss th
 
 * * *
 
-## So, What’s a Visual Breaking&nbsp;Change?
+## So, What’s a Visual Breaking Change?
 
 At this point, are you thinking: does this really matter? Shouldn’t we use our system to control our visual language? Are adopters really going to care?
 
@@ -255,9 +255,8 @@ In conversations with design system colleagues, sentiments are:
 
 {% endfilter %}
 
-  {{ escom.pull_quote(
-      quote = '“We kinda sorta know what’s a visual breaking change.”<br>“We discuss visual breaking changes when someone’s instinct suggests too.”<br>“I agree this is a thing, we’d don’t do it rigorously, and it’s important.”',
-      class = 'escom-pull-quote--light'
+  {{ escom.bar_quote(
+      quote = '“We kinda sorta know what’s a visual breaking change.”<br>“We discuss visual breaking changes when someone’s instinct suggests too.”<br>“I agree this is a thing, we’d don’t do it rigorously, and it’s important.”'
   ) }}
 
   {% filter markdown %}

@@ -21,9 +21,8 @@ As a system changes, adopters will want to take advantage of what’s new.
 
 {% endfilter %}
 
-  {{ escom.pull_quote(
-      quote = '“Let’s update the old Card with a new, shiny Card,” they say. Or, dangerously, “Let’s<strong> </strong>put this newer Button in the page with all those older ones.”',
-      class = 'escom-pull-quote--light'
+  {{ escom.bar_quote(
+      quote = '“Let’s update the old Card with a new, shiny Card,” they say. Or, dangerously, “Let’s<strong> </strong>put this newer Button in the page with all those older ones.”'
   ) }}
 
   {% filter markdown %}
@@ -59,7 +58,7 @@ Identifying **how to version** is simple (use SemVer!). However, identifying wha
 
 * * *
 
-## How to Version? Start with&nbsp;SemVer
+## How to Version? Start with SemVer
 
 Every discussion about versioning design system outputs begins and ends with the industry standard [Semantic Versioning](https://semver.org/) (SemVer).
 
@@ -68,7 +67,7 @@ Every discussion about versioning design system outputs begins and ends with the
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '1',
-      image_alt = '',
+      image_alt = 'Semver diagram of major, minor and patch version numbers',
       caption = '',
       class = ''
   ) }}
@@ -90,11 +89,11 @@ _Takeaway_: Strongly encourage designers to learn SemVer. Not only will it help 
 
 * * *
 
-## What to Version? A Library or Features&nbsp;Within
+## What to Version? A Library or Features Within
 
 A design system team versions its library as a single, monolithic package or separately per feature, such as component by component.
 
-### Versioning the&nbsp;Library
+### Versioning the Library
 
 A design system versioning by library applies the same version number to all system assets simultaneously, such as `1.4.0` applies across all components.
 
@@ -128,7 +127,7 @@ Versioning by component is consistent for teams using a [continuous release mode
 
 * * *
 
-## System Versions Over&nbsp;Time
+## System Versions Over Time
 
 SemVer enables adopters to recognize key moments in a system’s life cycle.
 
@@ -137,16 +136,16 @@ SemVer enables adopters to recognize key moments in a system’s life cycle.
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '2',
-      image_alt = '',
+      image_alt = 'System versions over months, as major minor and patch',
       caption = 'Rate of system change by version type, over a year and a half',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
   
-- **Pre-Version 1.0.0** releases (`0.1.0`, `0.2.0`, `0.3.0`,&nbsp;…) reveal an unstable system architecture and feature set. Over the past few years, this period lasts three to six months before a first major release for most teams.
+- **Pre-Version 1.0.0** releases (`0.1.0`, `0.2.0`, `0.3.0`, …) reveal an unstable system architecture and feature set. Over the past few years, this period lasts three to six months before a first major release for most teams.
 - **First major release.** A launch designated `1.0.0` is hailed stable and dependable. It’s delivered with fanfare, signaling readiness for mass adoption. The `1.x.x` period that follows can last a year or more for systems versioned as libraries, and is shorter when versioning by individual components.
-- **Subsequent major releases** increment version to `2.0.0`, `3.0.0`,&nbsp;…. This signals the system's interface broke. Attention and adjustment is needed as a team upgrades.
+- **Subsequent major releases** increment version to `2.0.0`, `3.0.0`, …. This signals the system's interface broke. Attention and adjustment is needed as a team upgrades.
 
 _Takeaway_: When planning a system, set expectations what version numbers mean. `1.0.0` should be a clear commitment to stable and predictable change.
 
@@ -166,7 +165,7 @@ _Takeaway_: A major version is neither a marketing ploy nor a guarantee that maj
 
 * * *
 
-## **Bucketing Breaking&nbsp;Changes**
+## **Bucketing Breaking Changes**
 
 Once a major version like `2.0.0` is released, we'll classify new feature ideas and customer requests as `3.0.0` or `Breaking Change` using JIRA’s Version attribute. As we commit and plan for a `3.0.0` release, we’ll then deprioritize changes that didn’t make the cut to a new`4.0.0` JIRA version.
 
@@ -175,9 +174,9 @@ Once a major version like `2.0.0` is released, we'll classify new feature ideas 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '3',
-      image_alt = '',
+      image_alt = 'JIRA’s Scrum Version panel, mocked up with typical version collections',
       caption = 'JIRA’s Scrum Version panel, mocked up with typical version collections',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -187,7 +186,7 @@ _Takeaway_: Establish a routine for recording and funneling breaking changes tri
 
 * * *
 
-## Deprecation & Ending&nbsp;Life
+## Deprecation & Ending Life
 
 Deprecation warns that feature use should be discontinued and support will be removed in the future. The system may offer a preferred alternative, or the feature is no longer necessary or in demand.
 
@@ -235,9 +234,9 @@ A new feature can exist alongside old. Morningstar expanded the Notification com
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '4',
-      image_alt = '',
+      image_alt = 'Morningstar Notification pages',
       caption = 'During the 1.x.x period, Morningstar added <a href="http://designsystem.morningstar.com/v/1.14.0/components/notifications.html" rel="nofollow noopener" target="_blank">new Notification</a> favored over a <a href="http://designsystem.morningstar.com/v/1.14.0/components/notifications-deprecated.html" rel="nofollow noopener" target="_blank">deprecated original</a>. Both remained in code and doc until the deprecated version was removed in 2.0.0.',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -264,11 +263,11 @@ _Takeaway_: Once you leap past `1.0.0`, establish a predicable time period for d
 
 * * *
 
-## Aligning Versions of Code, Doc, Design, and&nbsp;Tokens
+## Aligning Versions of Code, Doc, Design, and Tokens
 
 A system’s code is it’s truth. A code’s versions takes their rightful role as the hub against which all other outputs—doc, design, tokens—align.
 
-### ✔︎ Version Doc Separate from Library, But Keep ’em In&nbsp;Sync
+### ✔︎ Version Doc Separate from Library, But Keep ’em In Sync
 
 Many systems weave code and (code-only) doc into the same files, producing navigable documentation from library’s core style and components. This coupling offers clear efficiencies yet triggers challenges like:
 
@@ -315,7 +314,7 @@ _Takeaway_: Consider decoupling documentation versions from library code. This s
 
 * * *
 
-### ✔︎ Sustain Doc of Past Versions, By&nbsp;Version
+### ✔︎ Sustain Doc of Past Versions, By Version
 
 Most teams adopting a systems don’t upgrade with every system release. Some may upgrade no more often than every six months or a year alongside so much other “value generating” work.
 
@@ -326,7 +325,7 @@ Most system site document just “the latest.” But for a system describing but
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '5',
-      image_alt = '',
+      image_alt = 'Morningstar version history page',
       caption = 'Morningstar Design System access to past versions via highlighted “View Docs” link',
       class = ''
   ) }}
@@ -334,13 +333,13 @@ Most system site document just “the latest.” But for a system describing but
   {% filter markdown %}
   
 
-The Morningstar Design System publishes “the latest” at&nbsp;`.com/` [root](http://designsystem.morningstar.com/) and _also_ offers access to every [past doc site version](http://designsystem.morningstar.com/v/1.13.0/) at predictable subfolders such as&nbsp;`.com/v1.13.0/`. Each version is accessed via a “View Docs” link per entry in the Release History. Just as important: doc links are relative, so that once in docs for `v1.13.0`, you stay within docs for `v1.13.0`.
+The Morningstar Design System publishes “the latest” at `.com/` [root](http://designsystem.morningstar.com/) and _also_ offers access to every [past doc site version](http://designsystem.morningstar.com/v/1.13.0/) at predictable subfolders such as `.com/v1.13.0/`. Each version is accessed via a “View Docs” link per entry in the Release History. Just as important: doc links are relative, so that once in docs for `v1.13.0`, you stay within docs for `v1.13.0`.
 
 _Takeaway_: When your system serves a wide audience upgrading irregularly, ensure they have doc of what _they_ use for as long as _they_ see fit.
 
 * * *
 
-### ✔︎ Align Design Assets Versions with&nbsp;Code
+### ✔︎ Align Design Assets Versions with Code
 
 Sketch libraries and other design resources are designer territory. “How should we version these?” a system designer asks. “We’ll put the latest in the Google Drive folder location that everyone else refers to.” they often answer. Not bad, but not enough.
 
@@ -361,7 +360,7 @@ That means _not_ indicating a version (“Use this latest!”) or using last upd
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '6',
-      image_alt = '',
+      image_alt = 'Screenshot of a Sketch linked library',
       caption = 'Linked library name',
       class = ''
   ) }}
@@ -376,7 +375,7 @@ That means _not_ indicating a version (“Use this latest!”) or using last upd
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '7',
-      image_alt = '',
+      image_alt = 'Screenshot of Sketch symbol in layers panel',
       caption = 'Component-specific version in symbol name',
       class = ''
   ) }}
@@ -391,7 +390,7 @@ That means _not_ indicating a version (“Use this latest!”) or using last upd
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '8',
-      image_alt = '',
+      image_alt = 'Screenshot of a version number within a visible annotation',
       caption = 'Component version annotation, in orange',
       class = ''
   ) }}
@@ -407,7 +406,7 @@ _Takeaway_: “Use the latest” isn’t good enough, so establish a versioning 
 
 * * *
 
-### ✔︎ Consider Versioning Tokens Separate from Code,&nbsp;Too
+### ✔︎ Consider Versioning Tokens Separate from Code, Too
 
 [Design tokens](/articles/tokens-in-design-systems.html) codify style. At their core, they’re a component dependency. Many teams embed tokens in the versioned library of web-based components. Yet, tokens could serve other teams, whether more web products making their own components or teams building for iOS & Android.
 

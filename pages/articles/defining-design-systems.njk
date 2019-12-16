@@ -12,37 +12,27 @@
 
   {% block main_article %}
     {% filter markdown %}
+
 Defining design systems seems a daunting challenge. It’s not as if our community hasn’t made [many](https://css-tricks.com/design-systems-building-future/), [many](https://medium.com/ge-design/ges-predix-design-system-8236d47b0891), [many](https://the-pastry-box-project.net/jina-bolton/2015-march-28), [many](https://www.webdesignerdepot.com/2016/11/creating-a-design-system-language/), [many](https://medium.com/buildit/design-systems-wtf-42956f673250), [many](https://medium.freecodecamp.org/how-to-construct-a-design-system-864adbf2a117), [many](https://uxdesign.cc/selling-a-design-system-before-asking-for-buy-in-eeb45e88f66a), [many](https://medium.com/@amiltonpaglia/design-systems-na-pr%C3%A1tica-preparando-o-terreno-cfd5c29d2ae), [many](https://medium.com/hello-group/design-systems-faq-cvi-and-styleguides-ef85736e83cd), [many](https://medium.com/initialized-capital/instacarts-lead-product-designer-on-creating-design-systems-4cffefdfca00), [many](https://www.uxpin.com/studio/blog/design-systems-vs-pattern-libraries-vs-style-guides-whats-difference/), [many](https://uxcellence.com/2017/design-systems-style-guides-pattern-libraries), [many](https://medium.com/@sturobson/styleguides-pattern-libraries-and-design-languages-84746902c51c) attempts. Recently, [Sarah Federman](https://medium.com/@Sarah_federman) wrote about [distilling it into its essence](https://medium.com/design-systems/distilling-how-we-think-about-design-systems-b26432eefef9) and warns us to avoid getting trapped defining things and being dogmatic about what it is and isn’t.
 
 Design systems is a growing [field](https://en.wikipedia.org/wiki/Discipline_%28academia%29) formed by vibrant, collaborative voices. It is important to posit what a system is and how it fits, or we risk undermining its value due to incoherent understanding. We shouldn’t suffer challenges, and there’s common ground to gain. My livelihood depends on it, selling ~15–25 design systems engagements a year to clients understanding the outcomes and outputs (hint: not just UI kits, code, and doc) and why they matter.
 
 * * *
 
-## “What is a Design&nbsp;System?”
+## “What is a Design System?”
 
 If I have ~30 seconds in an elevator or over animated slides, I’ll lead with:
 
 {% endfilter %}
 
-  {{ escom.pull_quote(
-      quote = 'Almost always, a design system offers a library of visual style and components documented and released as reusable code for developers and/or tool(s) for designers. A system may also offer guidance on accessibility, page layout, and editorial and less often branding, data viz, <a href="/articles/patterns-components.html" target="_blank">UX patterns</a>, and other tools.',
-      class = 'escom-pull-quote--light'
+  {{ escom.bar_quote(
+      quote = 'Almost always, a design system offers a library of visual style and components documented and released as reusable code for developers and/or tool(s) for designers. A system may also offer guidance on accessibility, page layout, and editorial and less often branding, data viz, <a href="/articles/patterns-components.html" target="_blank">UX patterns</a>, and other tools.'
   ) }}
-
-  {% filter markdown %}
-  {% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'A design system is <a href="/articles/adopting-design-systems.html" target="_blank">adopted</a> by and supported for other teams making experiences. These teams use it to develop and ship features more efficiently to form a more cohesive customer journey.',
-      class = 'escom-pull-quote--light'
+  {{ escom.bar_quote(
+      quote = 'A design system is <a href="/articles/adopting-design-systems.html" target="_blank">adopted</a> by and supported for other teams making experiences. These teams use it to develop and ship features more efficiently to form a more cohesive customer journey.'
   ) }}
-
-  {% filter markdown %}
-  {% endfilter %}
-
-  {{ escom.pull_quote(
-      quote = 'A design system is made by an <a href="/articles/team-models-for-scaling-a-design-system.html" target="_blank">individual, team, and/or community</a>. While some arise less formally, organizations now dedicate <a href="/articles/designing-a-systems-team.html" target="_blank">small to large squad</a>(s) to develop and release system versions and processes over time.',
-      class = 'escom-pull-quote--light'
+  {{ escom.bar_quote(
+      quote = 'A design system is made by an <a href="/articles/team-models-for-scaling-a-design-system.html" target="_blank">individual, team, and/or community</a>. While some arise less formally, organizations now dedicate <a href="/articles/designing-a-systems-team.html" target="_blank">small to large squad</a>(s) to develop and release system versions and processes over time.'
   ) }}
 
   {% filter markdown %}
@@ -52,9 +42,8 @@ If only 10 seconds, I’ll say:
 
 {% endfilter %}
 
-  {{ escom.pull_quote(
-      quote = 'A design system offers a library of visual style, components, and other concerns documented and released by an individual, team or community as code and design tools so that adopting products can be more efficient and cohesive.',
-      class = 'escom-pull-quote--light'
+  {{ escom.bar_quote(
+      quote = 'A design system offers a library of visual style, components, and other concerns documented and released by an individual, team or community as code and design tools so that adopting products can be more efficient and cohesive.'
   ) }}
 
   {% filter markdown %}
@@ -73,9 +62,8 @@ To its primary customers, the system is a set of tangible outputs that they enco
 
 {% endfilter %}
 
-  {{ escom.pull_quote(
-      quote = 'Almost always, a design system offers a library of visual style and components documented and released as reusable code for developers and/or tool(s) for designers.',
-      class = 'escom-pull-quote--light'
+  {{ escom.bar_quote(
+      quote = 'Almost always, a design system offers a library of visual style and components documented and released as reusable code for developers and/or tool(s) for designers.'
   ) }}
 
   {% filter markdown %}
@@ -88,9 +76,9 @@ These days, a system of parts connects a codifed visual style (e.g., color, spac
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '1',
-      image_alt = '',
+      image_alt = 'Relationship of color, a variable, a function, and many components',
       caption = '',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -100,9 +88,8 @@ This starting point packs a punch of intention, revealing beliefs: A system serv
 
 {% endfilter %}
 
-  {{ escom.pull_quote(
-      quote = 'A system may also offer guidance on accessibility, page layout, and editorial and less often branding, data viz, UX patterns, and other tools.',
-      class = 'escom-pull-quote--light'
+  {{ escom.bar_quote(
+      quote = 'A system may also offer guidance on accessibility, page layout, and editorial and less often branding, data viz, UX patterns, and other tools.'
   ) }}
 
   {% filter markdown %}
@@ -120,9 +107,8 @@ Invoking product concepts trigger a cascade of concepts useful for those familia
 
 {% endfilter %}
 
-  {{ escom.pull_quote(
-      quote = 'A design system is adopted by and supported for other teams making experiences. These teams use it to develop and ship features more efficiently to form a more cohesive customer journey.',
-      class = 'escom-pull-quote--light'
+  {{ escom.bar_quote(
+      quote = 'A design system is adopted by and supported for other teams making experiences. These teams use it to develop and ship features more efficiently to form a more cohesive customer journey.'
   ) }}
 
   {% filter markdown %}
@@ -135,9 +121,9 @@ Design systems invest in **marketing** to product teams to consume the kit of pa
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '2',
-      image_alt = '',
+      image_alt = 'Diagram of dependency versions varying across different adopters',
       caption = '',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -157,9 +143,8 @@ To help stakeholders understand the impacts of a system, I also route conversati
 
 {% endfilter %}
 
-  {{ escom.pull_quote(
-      quote = 'A design system is made by an individual, team, and/or community. While some arise less formally, organizations now dedicate <a href="/articles/designing-a-systems-team.html" target="_blank">small to large squad</a>(s) to develop and release system versions and processes over time.',
-      class = 'escom-pull-quote--light'
+  {{ escom.bar_quote(
+      quote = 'A design system is made by an individual, team, and/or community. While some arise less formally, organizations now dedicate <a href="/articles/designing-a-systems-team.html" target="_blank">small to large squad</a>(s) to develop and release system versions and processes over time.'
   ) }}
 
   {% filter markdown %}
@@ -174,9 +159,9 @@ In cases I’ve observed, this team is responsible for the workflows, connection
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '3',
-      image_alt = '',
+      image_alt = 'Diagram relating the inputs and outputs between a system team and teams that adopt that system',
       caption = '',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -195,9 +180,9 @@ While not my intent, this writing returned me to the framework of a [Parts, Prod
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '4',
-      image_alt = '',
+      image_alt = 'Photograph of a worksheet',
       caption = 'Parts, Products &amp; People <a href="/articles/picking-parts-products-people.html" target="_blank">Worksheet Activity</a>',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}

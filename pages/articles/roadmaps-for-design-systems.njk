@@ -19,12 +19,11 @@ Whenever I chat with a new design system team, I ask:
 
 {% endfilter %}
 
-  {{ escom.pull_quote(
-      quote = 'So, what are you working on?',
-      class = 'escom-pull-quote--light'
-  ) }}
+{{ escom.bar_quote(
+    quote = 'So, what are you working on?'
+) }}
 
-  {% filter markdown %}
+{% filter markdown %}
   
 
 Some teams muster only an incoherent rambling of scattered tasks. Others confidently articulate discrete areas of focus, and when they plan to deliver each one. I view the latter — a team’s collective understanding that they are evolving a product with a roadmap — as a signal that that the system is operating well.
@@ -52,9 +51,9 @@ In fact, getting all those aspirational parts on stickies \_and then\_ arranging
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '2',
-      image_alt = '',
+      image_alt = 'Roadmap as post it notes on the wall, before and after prioritizing',
       caption = 'Roadmapping exercise leading up to system launch, organizing parts into columns for what to deliver now, sooner, later, and wait',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -70,9 +69,9 @@ Once a design system is smoothly operating across releases, roadmaps tend to rev
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '3',
-      image_alt = '',
+      image_alt = 'Roadmap organized into months',
       caption = 'Roadmap of an operating design system, delivering on a monthly cadence',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -80,13 +79,13 @@ Once a design system is smoothly operating across releases, roadmaps tend to rev
 
 Leave out the detail. Less relevant parts and a long tail of fixes and burgeoning documentation drown a roadmap, robbing it of its simple and focused appeal.
 
-### Roadmaps Expose What a System&nbsp;Values
+### Roadmaps Expose What a System Values
 
 Roadmaps also expose what a system team — and by extension, an enterprise — values at any given time. Our system roadmap across years of a responsive redesign always seemed to position responsive images in the third, “coming soon” column. During every monthly (sprint) planning meeting, we’d try to nudge it into next.
 
 But there was no organization traction, and thus no will on the system team to drive an initiative that they didn’t own. Responsive images stayed on the far right month after month after month, until one of us had the guts to finally remove it until products got their act together. The roadmap worked well: the system’s priorities aligned with the portfolio it served.
 
-### Does Your System Have a&nbsp;Roadmap?
+### Does Your System Have a Roadmap?
 
 Your team need not display a glossy roadmap visualization on your homepage or rendered dynamically from a Jira backlog (although, either would be awesome).
 

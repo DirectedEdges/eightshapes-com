@@ -13,8 +13,14 @@
   {% block main_article %}
     {% filter markdown %}
 
-The following activity is an abridged and lightly updated excerpt from Chapter 8: Discover of <a href="http://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351" rel="nofollow noopener" target="_blank">Modular Web Design</a>, published in 2009 in the era of component and pattern libraries. The approach is just as relevant as today <a href="http://alistapart.com/article/from-pages-to-patterns-an-exercise-for-everyone" rel="nofollow noopener" target="_blank">designers such as Charlotte Jackson</a> formulate similar techniques to kickstart a library.
+{% endfilter %}
 
+{{ escom.bar_quote(
+    quote = 'The following activity is an abridged and lightly updated excerpt from Chapter 8: Discover of <a href="http://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351" rel="nofollow noopener" target="_blank">Modular Web Design</a>, published in 2009 in the era of component and pattern libraries. The approach is just as relevant as today <a href="http://alistapart.com/article/from-pages-to-patterns-an-exercise-for-everyone" rel="nofollow noopener" target="_blank">designers such as Charlotte Jackson</a> formulate similar techniques to kickstart a library.'
+) }}
+
+{% filter markdown %}
+  
 * * *
 
 Nothing beats the energy of getting a team together to deconstruct an existing design system and arrive at a component library together.
@@ -42,7 +48,7 @@ To prepare for the workshop, organize and print out screenshots from the existin
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '2',
-      image_alt = '',
+      image_alt = 'Page screenshots laid out across a table so participants can familiarize themselves with the collection',
       caption = 'Page screenshots laid out across a table so participants can familiarize themselves with the collection',
       class = ''
   ) }}
@@ -61,14 +67,14 @@ Once participants cut up pages into components, it’s painstaking and impractic
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '3',
-      image_alt = '',
+      image_alt = 'Each page screenshot is printed with a unique ID repeated across the flip side.',
       caption = 'Each page screenshot is printed with a unique ID repeated across the flip side.',
       class = ''
   ) }}
 
   {% filter markdown %}
   
-### Provide Tools-of-the-Trade, Especially Post-It&nbsp;Notes!
+### Provide Tools-of-the-Trade, Especially Post-It Notes!
 
 You’ll need to stock up for the workshop by purchasing scissors, Post-It® Notes, Post-It® Small Flags, sharpies large and small, scotch tape, and blank paper. Be sure to buy more than one item per team, so that participants **don’t sit idly as a single person cuts** everything with the only pair of scissors. Usually at least one item for every two participants is sufficient (such as three pairs of scissors for a team of six).
 
@@ -77,7 +83,7 @@ You’ll need to stock up for the workshop by purchasing scissors, Post-It® Not
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '4',
-      image_alt = '',
+      image_alt = 'A bevy of materials, including pens, papers, Post-It Flags, Post-It Notes, and – of course – scissors',
       caption = 'A bevy of materials, including pens, papers, Post-It Flags, Post-It Notes, and – of course – scissors',
       class = ''
   ) }}
@@ -93,7 +99,7 @@ Encourage teams to review the pages to become comfortable with the scope of thei
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '5',
-      image_alt = '',
+      image_alt = 'Array the pages across the table to get a birds-eye view',
       caption = 'Array the pages across the table to get a birds-eye view',
       class = ''
   ) }}
@@ -109,7 +115,7 @@ Participants cut up each and every page into components, separating each compone
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '6',
-      image_alt = '',
+      image_alt = 'Identify components by cutting apart a page screenshot into chunks',
       caption = 'Identify components by cutting apart a page screenshot into chunks',
       class = ''
   ) }}
@@ -119,7 +125,7 @@ Participants cut up each and every page into components, separating each compone
 
 As duplicate and undesirable components arise (such as a common header on every page), crumple them up and throw them on the floor. Participants enjoy this the most, removing from contention examples of what not to do. Just plan to clean up the mess on the floor after the workshop is over.
 
-## Step 2: Arrange Into&nbsp;Groups
+## Step 2: Arrange Into Groups
 
 As pages are cut up, group components on the table. For example, header and footer components congregate in one area, all navigation components in another, and sidebar components separate too. Once all pages are cut out, teams should focus on grouping all components into meaningful categories before proceeding to archive and prioritize items.
 
@@ -128,14 +134,14 @@ As pages are cut up, group components on the table. For example, header and foot
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '7',
-      image_alt = '',
+      image_alt = 'Organize components by moving cut outs into groups on the table',
       caption = 'Organize components by moving cut outs into groups on the table',
       class = ''
   ) }}
 
   {% filter markdown %}
   
-## Step 3: Label&nbsp;Groups
+## Step 3: Label Groups
 
 Use Post-It® Notes with big labels to name each of the groups you’ve formed, such as Header and Footer, Content, Navigation, Promos, and Sidebar.
 
@@ -144,14 +150,14 @@ Use Post-It® Notes with big labels to name each of the groups you’ve formed, 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '8',
-      image_alt = '',
+      image_alt = 'Label groups using a very visible Post-It Note and/or heavy-weighted Sharpie pen',
       caption = 'Label groups using a very visible Post-It Note and/or heavy-weighted Sharpie pen',
       class = ''
   ) }}
 
   {% filter markdown %}
   
-## Step 4: Tape&nbsp;Groups
+## Step 4: Tape Groups
 
 Teams often then tape components to plain pieces of white paper (ideally, tabloid size) so that library leads can walk out of the workshop with tangible, organized results.
 
@@ -160,7 +166,7 @@ Teams often then tape components to plain pieces of white paper (ideally, tabloi
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '9',
-      image_alt = '',
+      image_alt = 'Tape components to Tabloid sheets of paper.',
       caption = 'Tape components to Tabloid sheets of paper.',
       class = ''
   ) }}
@@ -176,7 +182,7 @@ Using Post-It® Small Flags, teams can also prioritize each component by importa
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '10',
-      image_alt = '',
+      image_alt = 'Prioritize components by applying a color-coded flag next to each one.',
       caption = 'Prioritize components by applying a color-coded flag next to each one.',
       class = ''
   ) }}
@@ -192,7 +198,7 @@ Teams can use their remaining time to write common names used to refer to each c
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '11',
-      image_alt = '',
+      image_alt = 'Label individual components to record internal nomenclature.',
       caption = 'Label individual components to record internal nomenclature.',
       class = ''
   ) }}

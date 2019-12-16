@@ -29,7 +29,7 @@ These stories reflect what I’ve learned releasing systems working with teams l
 
 Design systems programs release many types of outputs, not just code. As a result, a system should differentiate and communicate this range of versioned outputs to developers, designers, and other customers.
 
-### Code, the Source of&nbsp;Truth
+### Code, the Source of Truth
 
 Most systems offers a single source of truth of presentation layer code as:
 
@@ -38,9 +38,9 @@ Most systems offers a single source of truth of presentation layer code as:
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '1',
-      image_alt = '',
+      image_alt = 'Diagram of code tokens, components, and doc site',
       caption = '',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -49,7 +49,7 @@ Most systems offers a single source of truth of presentation layer code as:
 
 and/or…
 
-- **UI Components Library as Javascript** : Many systems wrap HTML & CSS with JavaScript to fortify logic, encapsulate style, and ease integration and maintenance more directly in a framework of choice. While most libraries target a _specific_ framework (React, Vue, Ember, Angular,&nbsp;…), industry signals suggest a shift to making web components for _all_ frameworks. My last six system efforts? Later 2017: Vanilla HTML, Vanilla HTML. Early 2018: React, Vue. Later 2018: [Web Components](https://www.smashingmagazine.com/2018/07/reusable-components-custom-elements-shadow-dom-npm/), [Web Components](https://www.smashingmagazine.com/2018/07/reusable-components-custom-elements-shadow-dom-npm/).
+- **UI Components Library as Javascript** : Many systems wrap HTML & CSS with JavaScript to fortify logic, encapsulate style, and ease integration and maintenance more directly in a framework of choice. While most libraries target a _specific_ framework (React, Vue, Ember, Angular, …), industry signals suggest a shift to making web components for _all_ frameworks. My last six system efforts? Later 2017: Vanilla HTML, Vanilla HTML. Early 2018: React, Vue. Later 2018: [Web Components](https://www.smashingmagazine.com/2018/07/reusable-components-custom-elements-shadow-dom-npm/), [Web Components](https://www.smashingmagazine.com/2018/07/reusable-components-custom-elements-shadow-dom-npm/).
 
 In addition, other prominent outputs may be released separately:
 
@@ -68,9 +68,9 @@ Most teams limit understanding of what they release to simple “we release code
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '2',
-      image_alt = '',
+      image_alt = 'Diagram of design assets, fonts, icons and other resources',
       caption = '',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -90,9 +90,9 @@ Design systems need a home, a place everyone knows they can find a path to every
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '3',
-      image_alt = '',
+      image_alt = 'Diagram of documentation in code and on site',
       caption = '',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -102,7 +102,7 @@ Design systems need a home, a place everyone knows they can find a path to every
 
 * * *
 
-## Destinations: Where Does It&nbsp;Go?
+## Destinations: Where Does It Go?
 
 When distributing code and design assets, it’s vital to offer the code in manners most easily consumed by your adopting engineers. This means that some systems must offer choice across a many options, while others can rely upon a single choice as organizational standard.
 
@@ -111,9 +111,9 @@ When distributing code and design assets, it’s vital to offer the code in mann
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '4',
-      image_alt = '',
+      image_alt = 'Diagram of doc site, registry and hosted assets',
       caption = '',
-      class = ''
+      class = 'escom-article-figure--break-bleed'
   ) }}
 
   {% filter markdown %}
@@ -127,19 +127,13 @@ When distributing code and design assets, it’s vital to offer the code in mann
 
 [Bootstrap](http://getbootstrap.com/) and [Material Design Lite](https://getmdl.io/started/index.html) are examples releasing to 2+ destinations.
 
-### **For Design&nbsp;Toolkits**
+### **For Design Toolkits**
 
 - BEST: **Create New** as a synced, embedded path in a design tool’s menu to create a new instance from a template.
 - BETTER: Versioned and distributed using permission-based **design asset management** software such as [Abstract](https://www.goabstract.com/) or [Lingo](https://www.lingoapp.com/).
 - GOOD: **Direct toolkit download** from a documentation site, with clear version indicated and associated Getting Started doc nearby.
 - JUST OK: **Shared drive** , via well publicized and possibly simplified internal URL (such as `http://system.uitoolkit`).
 - NOT GOOD ENOUGH: **Buried** on some fourth level page on a barely organized wiki site many people can’t find.
-
-* * *
-
-Next → **#2.** [**Cadence**](/articles/design-system-release-cadence.html)
-
-
 
   {% endfilter %}
 {% endblock %}
