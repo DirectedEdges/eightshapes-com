@@ -31,7 +31,7 @@
                     </p>
                     <p>
                         <span class="escom-article__published-date">
-                            {{ published_date }} •
+                            Originally published {{ published_date }} •
                         </span>
                         <span class="escom-article__read-duration">
                             {{ read_duration }}min
@@ -39,7 +39,7 @@
                     </p>
                 </div>
             </div>
-            <div class="escom-article__title-row">
+            <div class="escom-article__title-row{% if not masthead %} escom-article__title-row--no-masthead-next{% endif %}">
                 <h1 class="escom-article__title">{{ title }}</h1>
                 {% if deck %}
                 <h2 class="escom-article__deck">{{ deck }}</h2>
@@ -63,5 +63,6 @@
 
         </div>
     </div>
+    {{ escom.footer_systems() }}
 
 {% endblock %}

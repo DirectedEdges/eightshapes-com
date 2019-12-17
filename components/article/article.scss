@@ -69,6 +69,10 @@
         position: relative;
     }
 
+    .escom-article__title-row--no-masthead-next {
+        margin: $esds-space-stack-2-x;
+    }
+
     .escom-article__author-avatar {
         background-color: $esds-color-neutral-90;
         background-position: center center;
