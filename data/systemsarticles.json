@@ -84,6 +84,30 @@
         "masthead" : "true"
     },
     {
+        "category" : "Visual Style",
+        "id" : "hostile-styles",
+        "title" : "Hostile Styles",
+        "deck" : "",
+        "title_abbreviation" : "Hostile Styles",
+        "author_id" : "nathan",
+        "date_published" : "",
+        "date_updated" : "",
+        "read_duration" : "",
+        "masthead" : "true"
+    },
+    {
+        "category" : "Visual Style",
+        "id" : "cropping-away-negative-impacts-of-line-height",
+        "title" : "Cropping Away Negative Impacts of Line Height",
+        "deck" : "",
+        "title_abbreviation" : "Cropping Line Height",
+        "author_id" : "nathan",
+        "date_published" : "",
+        "date_updated" : "",
+        "read_duration" : "",
+        "masthead" : "true"
+    },
+    {
         "category" : "UI Components",
         "id" : "buttons-in-design-systems",
         "title" : "Buttons in Design Systems",

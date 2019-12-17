@@ -1,4 +1,16 @@
-.escom-footer-systems__row {
+.escom-footer-systems__title {
+    @include esds-level-2-heading();
+    font-weight: $esds-font-weight-bold;
+    margin: 0;
+    margin: $esds-space-stack-quarter-x;
+}
+
+.escom-footer-systems__deck {
+    @include esds-body-text-l();
+    margin: $esds-space-stack-2-x;
+}
+
+.escom-footer-systems__columnset {
     display: flex;
     flex-wrap: wrap;
 }
@@ -22,6 +34,7 @@
         &:nth-child(2n) {
             padding-right: $esds-space-generic-1-x;
         }
+
         &:nth-child(4n) {
             padding-right: 0;
         }
@@ -38,12 +51,13 @@
 }
 
 .escom-footer-systems__list-item {
-    @include esds-body-text-m();
+    @include esds-font-reset;
     font-size: 16px;
+    font-weight: $esds-font-weight-regular;
+    line-height: $esds-font-line-height-normal;
     margin: $esds-space-stack-quarter-x;
 }
 
 .escom-footer-systems__list-item-link {
     @include esds-link();
 }
-

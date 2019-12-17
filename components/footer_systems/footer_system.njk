@@ -20,22 +20,26 @@
 
 <div class="esds-row esds-container--light esds-row--tall-inset">
     <div class="esds-row__inner escom-footer-systems__row">
-        <div class="escom-footer-systems__column">
-            {% call footer_systems_link_list(category_id="Visual Style") %}{% endcall %}
-            {% call footer_systems_link_list(category_id="UI Components") %}{% endcall %}
-        </div>
-        <div class="escom-footer-systems__column">
-            {% call footer_systems_link_list(category_id="Documentation") %}{% endcall %}
-            {% call footer_systems_link_list(category_id="Releases") %}{% endcall %}
-        </div>
-        <div class="escom-footer-systems__column">
-            {% call footer_systems_link_list(category_id="Strategy") %}{% endcall %}
-            {% call footer_systems_link_list(category_id="Systems of Systems") %}{% endcall %}
-            {% call footer_systems_link_list(category_id="Workshop Activities") %}{% endcall %}
-        </div>
-        <div class="escom-footer-systems__column">
-            {% call footer_systems_link_list(category_id="People") %}{% endcall %}
-            {% call footer_systems_link_list(category_id="Process") %}{% endcall %}
+        <h2 class="escom-footer-systems__title">@components</h2>
+        <h4 class="escom-footer-systems__deck">The complete collection of EightShapes writing on design systems</h4>
+        <div class="escom-footer-systems__columnset">
+            <div class="escom-footer-systems__column">
+                {% call footer_systems_link_list(category_id="Visual Style") %}{% endcall %}
+                {% call footer_systems_link_list(category_id="Documentation") %}{% endcall %}
+            </div>
+            <div class="escom-footer-systems__column">
+                {% call footer_systems_link_list(category_id="UI Components") %}{% endcall %}
+                {% call footer_systems_link_list(category_id="Releases") %}{% endcall %}
+            </div>
+            <div class="escom-footer-systems__column">
+                {% call footer_systems_link_list(category_id="Strategy") %}{% endcall %}
+                {% call footer_systems_link_list(category_id="Systems of Systems") %}{% endcall %}
+                {% call footer_systems_link_list(category_id="Workshop Activities") %}{% endcall %}
+            </div>
+            <div class="escom-footer-systems__column">
+                {% call footer_systems_link_list(category_id="People") %}{% endcall %}
+                {% call footer_systems_link_list(category_id="Process") %}{% endcall %}
+            </div>
         </div>
     </div>
 </div>
