@@ -1,17 +1,19 @@
-{% set title = 'Color in Design Systems' %}
-  {% set title_image_path = 'color-in-design-systems' %}
-  {% set deck = '16 Tips for Setting Up a System That Endures' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Apr 13, 2016' %}
-  {% set read_duration = '9 ' %}
-  {% set masthead = true %}
+{% set article = systemsarticles[0] %}
+{% set title = article.title %}
+{% set title_image_path = article.id %}
+{% set deck = article.deck %}
+{% set author = article.author_id %}
+{% set published_date = article.date_published %}
+{% set read_duration = '9 ' %}
 
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
+{% set masthead = true %}
 
-  {% block main_article %}
-    {% filter markdown %}
+{% set title_tag = 'EightShapes > Articles >'  + title %}
+{% extends 'templates/article.njk' %}
+
+{% block main_article %}
+  {% filter markdown %}
 
 I’m no color expert. Far from, actually. Throughout my career, I’ve depended on visual designers better than myself to produce an engaging palette and apply it harmoniously across a UI.
 
@@ -317,7 +319,7 @@ When creating a system, it’s up to the systems designer to be mindful of and s
 
 This is especially true for reverse color treatments. It’s very common for a system to default to dark text on a light background. However, most find themselves reversing color treatments, whether a black and white on light and dark neutrals or tints of another primary or secondary color.
 
-_Takeaway:_Solve for and recommend reversed pairings to adopt or avoid.
+_Takeaway:_ Solve for and recommend reversed pairings to adopt or avoid.
 
 {% endfilter %}
 
