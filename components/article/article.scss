@@ -6,6 +6,7 @@
 
     h3 {
         @include esds-level-4-heading();
+        margin: $esds-space-stack-quarter-x;
         font-weight: $esds-font-weight-bold;
     }
 

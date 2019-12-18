@@ -1,12 +1,11 @@
 .escom-footer-systems__title {
-    @include esds-level-2-heading();
+    @include esds-level-3-heading();
     font-weight: $esds-font-weight-bold;
-    margin: 0;
     margin: $esds-space-stack-quarter-x;
 }
 
 .escom-footer-systems__deck {
-    @include esds-body-text-l();
+    @include esds-body-text-m();
     margin: $esds-space-stack-2-x;
 }
 
@@ -14,7 +13,7 @@
     display: flex;
     flex-wrap: wrap;
 }
-
+    
 .escom-footer-systems__column {
     flex: 0 0 100%;
     
