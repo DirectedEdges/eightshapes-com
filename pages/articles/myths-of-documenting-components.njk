@@ -1,14 +1,5 @@
-{% set title = 'Myths of Documenting Components' %}
-{% set title_image_path = 'myths-of-documenting-components' %}
-{% set deck = 'How to Pivot Misguided Perceptions Towards Reality' %}
-{% set author = 'Nathan Curtis' %}
-{% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-{% set published_date = 'Dec 19, 2018' %}
-{% set read_duration = '4' %}
-{% set masthead = true %}
-
-{% set title_tag = 'EightShapes > Articles >'  + title %}
-{% extends 'templates/article.njk' %}
+{% set post = systemsposts["myths-of-documenting-components"] %}
+{% extends 'templates/article_data.njk' %}
 
 {% block main_article %}
   {% filter markdown %}

@@ -1,14 +1,5 @@
-{% set title = 'Size in Design Systems' %}
-{% set title_image_path = 'size-in-design-systems' %}
-{% set deck = 'Tuning Type & Space With an Eye on Height Per Component' %}
-{% set author = 'Nathan Curtis' %}
-{% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-{% set published_date = 'Apr 25, 2019' %}
-{% set read_duration = '11' %}
-{% set masthead = true %}
-
-{% set title_tag = 'EightShapes > Articles >'  + title %}
-{% extends 'templates/article.njk' %}
+{% set post = systemsposts["size-in-design-systems"] %}
+{% extends 'templates/article_data.njk' %}
 
 {% block main_article %}
   {% filter markdown %}

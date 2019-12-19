@@ -1,14 +1,5 @@
-{% set title = 'Releasing Design Systems' %}
-  {% set title_image_path = 'releasing-design-systems' %}
-  {% set deck = 'Delivering Interconnected Outputs to Adopters Over Time' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Aug 28' %}
-  {% set read_duration = '5 ' %}
-  {% set masthead = true %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["releasing-design-systems"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}

@@ -1,14 +1,5 @@
-{% set title = 'Component Testing Plans' %}
-{% set title_image_path = 'component-testing-plans' %}
-{% set deck = 'Building a Quality Base, One Criteria at a Time' %}
-{% set author = 'Nathan Curtis' %}
-{% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-{% set published_date = 'Apr 3, 2019' %}
-{% set read_duration = '7' %}
-{% set masthead = true %}
-
-{% set title_tag = 'EightShapes > Articles >'  + title %}
-{% extends 'templates/article.njk' %}
+{% set post = systemsposts["component-testing-plans"] %}
+{% extends 'templates/article_data.njk' %}
 
 {% block main_article %}
   {% filter markdown %}

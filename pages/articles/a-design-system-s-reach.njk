@@ -1,14 +1,5 @@
-{% set title = 'A Design System’s Reach' %}
-  {% set title_image_path = 'a-design-system-s-reach' %}
-  {% set deck = 'Practical Levels to Discuss How Broadly Your System Applies' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Feb 3, 2016' %}
-  {% set read_duration = '3 ' %}
-  {% set masthead = false %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["a-design-system-s-reach"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}

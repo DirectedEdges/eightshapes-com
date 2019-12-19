@@ -1,14 +1,5 @@
-{% set title = 'Documenting Components' %}
-  {% set title_image_path = 'documenting-components' %}
-  {% set deck = 'Serve a System’s Audiences with Well-Architected Content' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Mar 20' %}
-  {% set read_duration = '10 ' %}
-  {% set masthead = true %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["documenting-components"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}

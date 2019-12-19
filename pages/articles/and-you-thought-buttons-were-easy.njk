@@ -1,16 +1,7 @@
-{% set title = 'And You Thought Buttons Were Easy?' %}
-  {% set title_image_path = 'and-you-thought-buttons-were-easy' %}
-  {% set deck = 'A Story for Selling a System that Scales' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Jul 26, 2017' %}
-  {% set read_duration = '4 ' %}
-  {% set masthead = false %}
+{% set post = systemsposts["and-you-thought-buttons-were-easy"] %}
+{% extends 'templates/article_data.njk' %}
 
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
-
-  {% block main_article %}
+{% block main_article %}
     {% filter markdown %}
 Selling a design system into an enterprise usually involves a pitch to many audiences. Designers appreciate cohesiveness. Engineers value efficiencies. And, pivotally, executives appreciate value.
 

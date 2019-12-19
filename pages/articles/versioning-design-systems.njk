@@ -1,21 +1,8 @@
-{% set title = 'Versioning Design Systems' %}
-  {% set title_image_path = 'versioning-design-systems' %}
-  {% set deck = 'Communicating Change Clearly to People Using Systems' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Sep 17' %}
-  {% set read_duration = '12 ' %}
-  {% set masthead = true %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["versioning-design-systems"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}
-_#3 of 6 of the series Releasing Design Systems:_  
-[Outputs](/articles/releasing-design-systems.html) | [Cadence](/articles/design-system-release-cadence.html) | **Versions** | [Breaking](https://medium.com/@nathanacurtis/visual-breaking-change-in-design-systems-1e9109fac9c4) | [Dependencies](/articles/dealing-with-dependencies-inside-design-systems.html) | Process
-
-* * *
 
 As a system changes, adopters will want to take advantage of what’s new.
 

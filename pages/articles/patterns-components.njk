@@ -1,18 +1,8 @@
-{% set title = 'Patterns ≠ Components' %}
-  {% set title_image_path = 'patterns-components' %}
-  {% set deck = 'Our Community, not Companies, Should Build Pattern Libraries' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Jan 27, 2017' %}
-  {% set read_duration = '8 ' %}
-  {% set masthead = true %}
+{% set post = systemsposts["patterns-components"] %}
+{% extends 'templates/article_data.njk' %}
 
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
-
-  {% block main_article %}
+{% block main_article %}
   {% filter markdown %}
-  
 
 In “[Pattern patter.](https://ethanmarcotte.com/wrote/pattern-patter/)”, Ethan Marcotte writes yearningly for more design patterns in our practice. For now, many teams build libraries reusable components. However, these libraries usually lack thoughtful guidance to resolve myriad forces at play to compose interfaces effectively. Today’s libraries are (just) a kit of interface parts.
 

@@ -1,14 +1,5 @@
-{% set title = 'Designing a Systems Team' %}
-  {% set title_image_path = 'designing-a-systems-team' %}
-  {% set deck = 'Models and Lessons Learned to Scale a Team for an Enterprise' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Apr 26, 2017' %}
-  {% set read_duration = '11 ' %}
-  {% set masthead = true %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["designing-a-systems-team"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}

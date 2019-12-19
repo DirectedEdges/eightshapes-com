@@ -1,14 +1,5 @@
-{% set title = 'Balancing Platforms in a Design System' %}
-  {% set title_image_path = 'finding-platform-balance-in-a-design-system' %}
-  {% set deck = '' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Oct 9, 2015' %}
-  {% set read_duration = '5 ' %}
-  {% set masthead = true %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["finding-platform-balance-in-a-design-system"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}  

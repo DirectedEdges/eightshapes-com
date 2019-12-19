@@ -1,14 +1,5 @@
-{% set title = 'Team Models for Scaling a Design System' %}
-  {% set title_image_path = 'team-models-for-scaling-a-design-system' %}
-  {% set deck = 'Evolving Past Overlords to Centralize or Federate Design Decision-Making Across Platforms' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Sep 17, 2015' %}
-  {% set read_duration = '10 ' %}
-  {% set masthead = true %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["team-models-for-scaling-a-design-system"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}

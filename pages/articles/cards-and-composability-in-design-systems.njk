@@ -1,16 +1,7 @@
-{% set title = 'Cards and Composability in Design Systems' %}
-  {% set title_image_path = 'cards-and-composability-in-design-systems' %}
-  {% set deck = 'Structure, Content, Style & Behavior of Composed Components' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Apr 20' %}
-  {% set read_duration = '10 ' %}
-  {% set masthead = true %}
+{% set post = systemsposts["cards-and-composability-in-design-systems"] %}
+{% extends 'templates/article_data.njk' %}
 
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
-
-  {% block main_article %}
+{% block main_article %}
     {% filter markdown %}
 I’m a sucker for a `card` component. It takes me back nostalgically to my adolescence when baseball cards introduced me to information design. I collected and organized thousands, each exhibiting a hero’s photo, team as theme, positions as identity. My brain engaged with the design, data, and in-depth inquiry they fostered.
 

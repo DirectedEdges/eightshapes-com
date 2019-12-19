@@ -1,14 +1,5 @@
-{% set title = 'Practicing Design Systems' %}
-  {% set title_image_path = 'practicing-design-systems' %}
-  {% set deck = 'Address “How Do I…?” Questions to Form Processes That Matter' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Oct 17, 2017' %}
-  {% set read_duration = '8 ' %}
-  {% set masthead = true %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["practicing-design-systems"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}

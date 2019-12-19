@@ -1,21 +1,8 @@
-{% set title = 'Component Examples' %}
-  {% set title_image_path = 'component-examples' %}
-  {% set deck = 'Showcase your component’s quality, depth and versatility' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Mar 24' %}
-  {% set read_duration = '12 ' %}
-  {% set masthead = true %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["component-examples"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}
-_#3 of 6 of the Documenting Components series:_  
-[Overview](/articles/documenting-components.html) | [Intros](/articles/documenting-component-introductions.html) | **Examples** | [Design](/articles/component-design-guidelines.html) | Code | Authoring
-
-* * *
 
 Visual examples are the most essential element of effective component doc. How do you best render, arrange, label, and order each one to with effective content (but not embedded guidelines!) to enable quick use and experimentation? There are many questions to answer as you set about composing examples spread widely across a library. What follows are 15 tips of how to best showcase components in your system documentation.
 

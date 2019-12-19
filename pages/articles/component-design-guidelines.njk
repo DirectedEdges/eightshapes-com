@@ -1,14 +1,5 @@
-{% set title = 'Component Design Guidelines' %}
-  {% set title_image_path = 'component-design-guidelines' %}
-  {% set deck = 'Write the Words and Add the Pictures to Empower Designers' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Jun 15' %}
-  {% set read_duration = '9 ' %}
-  {% set masthead = true %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["component-design-guidelines"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}

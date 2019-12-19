@@ -1,16 +1,7 @@
-{% set title = 'Light & Dark Color Systems' %}
-  {% set title_image_path = 'light-dark' %}
-  {% set deck = 'Model Decisions Across Backgrounds, Borders, Text, and More' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Feb 20, 2017' %}
-  {% set read_duration = '8 ' %}
-  {% set masthead = true %}
+{% set post = systemsposts["light-dark"] %}
+{% extends 'templates/article_data.njk' %}
 
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
-
-  {% block main_article %}
+{% block main_article %}
   {% filter markdown %}
   
 

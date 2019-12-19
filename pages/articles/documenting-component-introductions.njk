@@ -1,14 +1,5 @@
-{% set title = 'Component Introductions' %}
-  {% set title_image_path = 'documenting-component-introductions' %}
-  {% set deck = 'Pithy Names and Descriptions That Go a Long Way' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Mar 22' %}
-  {% set read_duration = '6 ' %}
-  {% set masthead = true %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["documenting-component-introductions"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}

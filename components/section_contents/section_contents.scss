@@ -1,0 +1,41 @@
+.escom-section-contents {
+    display: block;
+
+    @media screen and (min-width: $esds-breakpoints-width-768) {
+        display: inline-block;
+        padding-right: $esds-space-generic-1-x;
+        vertical-align: top;
+        width: 49%;
+    }
+}
+
+.escom-section-contents__container {
+    margin: 0 auto;
+    max-width: $esds-font-line-length-long-form;
+}
+
+.escom-section-contents__header {
+    @include esds-font-reset();
+    @include esds-text-color('primary');
+    @include esds-responsive-font-size('heading-level-4');
+}
+
+.escom-section-contents__list {
+    list-style: none;
+    padding: 0;
+}
+
+.escom-section-contents__item-title {
+    @include esds-body-text-l();
+    margin: 0;
+}
+
+.escom-section-contents__item-title-link {
+    @include esds-link();
+}
+
+.escom-section-contents__item-deck {
+    @include esds-body-text-s();
+    @include esds-text-color('secondary');
+    margin: $esds-space-stack-three-quarter-x;
+}

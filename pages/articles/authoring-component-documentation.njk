@@ -1,14 +1,5 @@
-{% set title = 'Authoring Component Documentation' %}
-{% set title_image_path = '/authoring-component-documentation' %}
-{% set deck = 'Model the Content, People, and Steps Involved' %}
-{% set author = 'Nathan Curtis' %}
-{% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-{% set published_date = 'Dec 19, 2018' %}
-{% set read_duration = '4' %}
-{% set masthead = true %}
-
-{% set title_tag = 'EightShapes > Articles >'  + title %}
-{% extends 'templates/article.njk' %}
+{% set post = systemsposts["authoring-component-documentation"] %}
+{% extends 'templates/article_data.njk' %}
 
 {% block main_article %}
   {% filter markdown %}

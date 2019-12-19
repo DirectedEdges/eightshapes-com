@@ -1,14 +1,5 @@
-{% set title = 'The Component Cut-Up Workshop' %}
-  {% set title_image_path = 'the-component-cut-up-workshop' %}
-  {% set deck = 'Kickoff a Design Library Effort by Engaging the Whole Team' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Nov 3, 2015' %}
-  {% set read_duration = '6 ' %}
-  {% set masthead = true %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["the-component-cut-up-workshop"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}

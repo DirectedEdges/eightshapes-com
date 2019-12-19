@@ -1,15 +1,5 @@
-{% set title = 'Design System Communications' %}
-{% set title_image_path = 'design-system-communications' %}
-{% set deck = 'Leveling up a design system’s multi-channel approach to messaging designers, developers and everyone else' %}
-{% set author = 'Nathan Curtis' %}
-{% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-{% set published_date = 'Oct 15, 2019' %}
-{% set read_duration = '11' %}
-{% set masthead = true %}
-
-{% set title_tag = 'EightShapes > Articles >'  + title %}
-{% extends 'templates/article.njk' %}
-
+{% set post = systemsposts["design-system-communications"] %}
+{% extends 'templates/article_data.njk' %}
 {% block main_article %}
   {% filter markdown %}
 

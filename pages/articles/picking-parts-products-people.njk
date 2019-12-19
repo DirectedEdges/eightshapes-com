@@ -1,14 +1,5 @@
-{% set title = 'Picking Parts, Products & People' %}
-  {% set title_image_path = 'picking-parts-products-people' %}
-  {% set deck = 'A Team Activity to Start a Design System' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Mar 22, 2016' %}
-  {% set read_duration = '6 ' %}
-  {% set masthead = true %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["picking-parts-products-people"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
   {% filter markdown %}

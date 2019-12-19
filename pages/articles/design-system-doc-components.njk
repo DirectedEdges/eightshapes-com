@@ -1,14 +1,5 @@
-{% set title = 'Design System Doc Components' %}
-  {% set title_image_path = 'design-system-doc-components' %}
-  {% set deck = 'The Top 8 Reusable Components to Document a Library' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Sep 13, 2016' %}
-  {% set read_duration = '6 ' %}
-  {% set masthead = true %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["design-system-doc-components"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}

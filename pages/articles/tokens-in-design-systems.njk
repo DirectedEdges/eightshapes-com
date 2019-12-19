@@ -1,16 +1,7 @@
-{% set title = 'Tokens in Design Systems' %}
-  {% set title_image_path = 'tokens-in-design-systems' %}
-  {% set deck = '10 Tips to Architect & Implement Design Decisions for Everyone' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Jun 24, 2016' %}
-  {% set read_duration = '9 ' %}
-  {% set masthead = true %}
+{% set post = systemsposts["tokens-in-design-systems"] %}
+{% extends 'templates/article_data.njk' %}
 
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
-
-  {% block main_article %}
+{% block main_article %}
     {% filter markdown %}
 
 In a recent code review, my passions stirred as I walked through a _Pill_ component’s style with a designer teammate. I could hardly contain my excitement:

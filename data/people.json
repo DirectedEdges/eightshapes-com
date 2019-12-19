@@ -1,5 +1,5 @@
-[
-    {
+{
+    "nathan" : {
         "name": "Nathan Curtis",
         "href": "/nathan-curtis.html",
         "title": "Founder and Principal",
@@ -11,7 +11,7 @@
         "image": "/images/components/bio_hero/bio-nathan-curtis-2018.png",
         "role" : "Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad."
     },
-    {
+    "dan" : {
         "name": "Dan Brown",
         "href": "/dan-brown.html",
         "title": "Founder and Principal",
@@ -23,7 +23,7 @@
         "role" : "Designer • Co-founder of @eightshapes • Author of 3 books on UX • http://bit.ly/danbooks • Board gamer • Family cook",
         "image": "/images/components/bio_hero/bio-dan-brown-2018.png"
     },
-    {
+    "chris" : {
         "name": "Chris Detzi",
         "href": "/chris-detzi.html",
         "title": "Sr. Director, UX",
@@ -35,7 +35,7 @@
         "role" : "",
         "image": "/images/components/bio_hero/bio-chris-detzi-2018.png"
     },
-    {
+    "james" : {
         "name": "James Melzer",
         "href": "/james-melzer.html",
         "title": "Sr. Director, UX",
@@ -47,7 +47,7 @@
         "role" : "",
         "image": "/images/components/bio_hero/bio-james-melzer-2018.png"
     },
-    {
+    "kevin" : {
         "name": "Kevin Powell",
         "href": "/kevin-powell.html",
         "title": "Sr. Front End Developer",
@@ -59,4 +59,4 @@
         "role" : "Husband & Father, Builder of Design Systems @eightshapes.",
         "image": "/images/components/bio_hero/bio-kevin-powell-2018.png"
     }
-]
+}

@@ -1,14 +1,5 @@
-{% set title = '“How Do I…” Design System Practice Cards' %}
-  {% set title_image_path = 'how-do-i-practice-cards-activity' %}
-  {% set deck = 'Prioritize Processes Your Design System Needs' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Oct 17, 2017' %}
-  {% set read_duration = '5 ' %}
-  {% set masthead = true %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["how-do-i-practice-cards-activity"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}

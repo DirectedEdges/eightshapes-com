@@ -1,16 +1,7 @@
-{% set title = 'Buttons in Design Systems' %}
-  {% set title_image_path = 'buttons-in-design-systems' %}
-  {% set deck = '12 Tips for Setting Up a System That Endures' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Apr 26, 2016' %}
-  {% set read_duration = '8 ' %}
-  {% set masthead = true %}
+{% set post = systemsposts["buttons-in-design-systems"] %}
+{% extends 'templates/article_data.njk' %}
 
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
-
-  {% block main_article %}
+ {% block main_article %}
     {% filter markdown %}  
 
 I love buttons. I can do things with buttons. Take a next step. Make a commitment. Get things done. With buttons, interaction springs to life.

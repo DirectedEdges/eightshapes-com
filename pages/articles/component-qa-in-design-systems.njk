@@ -1,16 +1,7 @@
-{% set title = 'Component QA in Design Systems' %}
-  {% set title_image_path = 'component-qa-in-design-systems' %}
-  {% set deck = 'Establish a process to deliver on the quality you promise' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Jan 6, 2017' %}
-  {% set read_duration = '6 ' %}
-  {% set masthead = true %}
+{% set post = systemsposts["component-qa-in-design-systems"] %}
+{% extends 'templates/article_data.njk' %}
 
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
-
-  {% block main_article %}
+{% block main_article %}
     {% filter markdown %}
 Months after our first release, productivity was strong. We’d reached 20 components. Buttons and forms were behind us. We cranked through cards, tables, and nav bars. As another component went to review, comments unexpectedly overwhelmed the pull request:
 

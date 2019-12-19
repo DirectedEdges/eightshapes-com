@@ -1,17 +1,8 @@
-{% set title = 'Space in Design Systems' %}
-  {% set title_image_path = 'space-in-design-systems' %}
-  {% set deck = 'From Basics to Expanded Concepts to Apply Space with Intent' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Sep 25, 2016' %}
-  {% set read_duration = '9 ' %}
-  {% set masthead = true %}
+{% set post = systemsposts["space-in-design-systems"] %}
+{% extends 'templates/article_data.njk' %}
 
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
-
-  {% block main_article %}
-    {% filter markdown %}
+{% block main_article %}
+  {% filter markdown %}
 
 I’ve long referred to [Color](/articles/color-in-design-systems.html), Type and Icons as the “Big 3” of a system’s visual language. All UI components — from [Buttons](/articles/buttons-in-design-systems.html) on up — are built with them. But I left something out. Space, our final frontier.
 

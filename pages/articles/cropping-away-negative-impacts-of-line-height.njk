@@ -1,17 +1,8 @@
-{% set title = 'Cropping Away Negative Impacts of Line Height' %}
-  {% set title_image_path = 'cropping-away-negative-impacts-of-line-height' %}
-  {% set deck = 'Getting rid of pesky space above and below HTML text' %}
-  {% set author = 'Kevin Powell' %}
-  {% set author_role = 'Husband & Father, Builder of Design Systems @eightshapes.' %}
-  {% set published_date = 'Mar 22' %}
-  {% set read_duration = '5 ' %}
-  {% set masthead = true %}
+{% set post = systemsposts["cropping-away-negative-impacts-of-line-height"] %}
+{% extends 'templates/article_data.njk' %}
 
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
-
-  {% block main_article %}
-    {% filter markdown %}
+{% block main_article %}
+  {% filter markdown %}
 Every web font includes whitespace above and below the text, making it difficult to render space in UI components systematically. I created the [Text Crop Tool](http://text-crop.eightshapes.com) to empower designers and developers to remove this whitespace and more accurately render their components. This is how I did it.
 
 ## How it&nbsp;works

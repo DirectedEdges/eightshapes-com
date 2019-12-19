@@ -1,19 +1,8 @@
-{% set title = 'Dealing with Dependencies Inside Design Systems' %}
-  {% set title_image_path = 'dealing-with-dependencies-inside-design-systems' %}
-  {% set deck = 'Decomposing Features to Master Change Up the Chain' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Oct 3' %}
-  {% set read_duration = '9 ' %}
-  {% set masthead = true %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["dealing-with-dependencies-inside-design-systems"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}
-_#5 of 6 of the series Releasing Design Systems:_  
-[Outputs](/articles/releasing-design-systems.html) | [Cadence](/articles/design-system-release-cadence.html) | [Versions](/articles/versioning-design-systems.html) | [Breaking](https://medium.com/@nathanacurtis/visual-breaking-change-in-design-systems-1e9109fac9c4) | **Dependencies** | Process
 
 Within a component library, what component has the most dependents (other components in the library that include it)?
 

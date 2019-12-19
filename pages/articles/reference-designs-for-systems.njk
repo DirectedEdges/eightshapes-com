@@ -1,29 +1,18 @@
-{% set title = 'Reference Designs for Systems' %}
-  {% set title_image_path = 'reference-designs-for-systems' %}
-  {% set deck = 'Page Concepts Comparing Before & After, with a System Twist' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Aug 22, 2016' %}
-  {% set read_duration = '6 ' %}
-  {% set masthead = true %}
+{% set post = systemsposts["reference-designs-for-systems"] %}
+{% extends 'templates/article_data.njk' %}
 
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
-
-  {% block main_article %}
-
+{% block main_article %}
   {% filter markdown %}
   
-
 When it comes to selling a design system, you’ve gotta have a pitch. And by pitch, I mean a compelling, infomercial-like comparison of
 
 {% endfilter %}
 
-  {{ escom.bar_quote(
-      quote = '“Here’s what you look like, today, without a system” vs. “Here’s you look like, tomorrow, cohesive using a system.”'
-  ) }}
+{{ escom.bar_quote(
+    quote = '“Here’s what you look like, today, without a system” vs. “Here’s you look like, tomorrow, cohesive using a system.”'
+) }}
 
-  {% filter markdown %}
+{% filter markdown %}
   
 
 Early on, nothing — not a library, not a sticker sheet, nothing! — demonstrates a beautiful future more than **reference designs**.

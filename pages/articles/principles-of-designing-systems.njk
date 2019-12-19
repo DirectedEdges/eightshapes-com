@@ -1,14 +1,5 @@
-{% set title = 'Principles of Designing Systems' %}
-  {% set title_image_path = 'principles-of-designing-systems' %}
-  {% set deck = 'Core Beliefs to Guide System Strategy and Tactics' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Mar 24, 2017' %}
-  {% set read_duration = '5 ' %}
-  {% set masthead = false %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["principles-of-designing-systems"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}

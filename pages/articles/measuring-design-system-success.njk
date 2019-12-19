@@ -1,14 +1,5 @@
-{% set title = 'Measuring Design System Success' %}
-  {% set title_image_path = 'measuring-design-system-success' %}
-  {% set deck = 'Use OKRs to Set Goals & Track Progress' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Jun 8, 2017' %}
-  {% set read_duration = '4 ' %}
-  {% set masthead = false %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["measuring-design-system-success"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}

@@ -1,14 +1,5 @@
-{% set title = 'Contributions to Design Systems' %}
-  {% set title_image_path = 'contributions-to-design-systems' %}
-  {% set deck = 'Opening a Library to a Community’s Code, Design, and More' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Mar 14, 2017' %}
-  {% set read_duration = '6 ' %}
-  {% set masthead = true %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["contributions-to-design-systems"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}

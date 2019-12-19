@@ -1,19 +1,8 @@
-{% set title = 'Visual Breaking Change in Design Systems' %}
-  {% set title_image_path = 'visual-breaking-change-in-design-systems' %}
-  {% set deck = 'We Respect Code APIs. But What About Color, Type and Space?' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Aug 24' %}
-  {% set read_duration = '8 ' %}
-  {% set masthead = true %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["visual-breaking-change-in-design-systems"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}
-_#4 of 6 of the series Releasing Design Systems:_  
-[Outputs](/articles/releasing-design-systems.html) | [Cadence](/articles/design-system-release-cadence.html) | [Versions](/articles/versioning-design-systems.html) | **Breaking** | [Dependencies](/articles/dealing-with-dependencies-inside-design-systems.html) | Process
 
 Design systems establish a baseline visual style that’s an essential dependency. These choices — color, typography, space and more — are robustly specified and expected to stably, predictably change release by release. When an adopter upgrades, a design system shouldn’t break their stuff unexpectedly.
 

@@ -1,14 +1,5 @@
-{% set title = 'Right-Sizing the Rectangles' %}
-  {% set title_image_path = 'right-sizing-the-rectangles' %}
-  {% set deck = 'Grappling with Hierarchy for a More Effective Design System' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Mar 14, 2016' %}
-  {% set read_duration = '6 ' %}
-  {% set masthead = true %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["right-sizing-the-rectangles"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
   {% filter markdown %}

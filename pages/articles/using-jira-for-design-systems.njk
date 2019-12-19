@@ -1,14 +1,5 @@
-{% set title = 'Using Jira for Design Systems' %}
-{% set title_image_path = 'using-jira-for-design-systems' %}
-{% set deck = 'Iterate Work with Stories, Epics, Versions, Tasks and More' %}
-{% set author = 'Nathan Curtis' %}
-{% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-{% set published_date = '' %}
-{% set read_duration = ' ' %}
-{% set masthead = true %}
-
-{% set title_tag = 'EightShapes > Articles >'  + title %}
-{% extends 'templates/article.njk' %}
+{% set post = systemsposts["using-jira-for-design-systems"] %}
+{% extends 'templates/article_data.njk' %}
 
 {% block main_article %}
   {% filter markdown %}

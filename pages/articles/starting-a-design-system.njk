@@ -1,14 +1,5 @@
-{% set title = 'Starting a Design System' %}
-  {% set title_image_path = 'starting-a-design-system' %}
-  {% set deck = 'From Pitching a Strategy to Launching 1.0 and Beyond' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Aug 7, 2017' %}
-  {% set read_duration = '8 ' %}
-  {% set masthead = true %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["starting-a-design-system"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}

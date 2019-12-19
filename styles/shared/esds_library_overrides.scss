@@ -1,1 +1,7 @@
 //ESDS Token overrides
+
+.esds-breadcrumb__crumb-section {
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+    }
+}

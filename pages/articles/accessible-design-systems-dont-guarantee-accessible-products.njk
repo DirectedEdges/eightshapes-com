@@ -1,14 +1,5 @@
-{% set title = '“Accessible” Design Systems Don’t Guarantee Accessible Products' %}
-{% set title_image_path = 'accessible-design-systems-dont-guarantee-accessible-products' %}
-{% set deck = 'Accessibility is an Adopter’s Job Too, and They’ve Got Work To Do' %}
-{% set author = 'Nathan Curtis' %}
-{% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-{% set published_date = 'Nov 29, 2018' %}
-{% set read_duration = '6' %}
-{% set masthead = true %}
-
-{% set title_tag = 'EightShapes > Articles >'  + title %}
-{% extends 'templates/article.njk' %}
+{% set post = systemsposts["accessible-design-systems-dont-guarantee-accessible-products"] %}
+{% extends 'templates/article_data.njk' %}
 
 {% block main_article %}
   {% filter markdown %}

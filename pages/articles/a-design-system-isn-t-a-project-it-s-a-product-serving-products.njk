@@ -1,14 +1,5 @@
-{% set title = 'A Design System isn’t a Project. It’s a Product, Serving Products.' %}
-  {% set title_image_path = 'a-design-system-isn-t-a-project-it-s-a-product-serving-products' %}
-  {% set deck = 'Shifting Focus from Design and Development to Managing and Marketing a System' %}
-  {% set author = 'Nathan Curtis' %}
-  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
-  {% set published_date = 'Feb 26, 2016' %}
-  {% set read_duration = '4 ' %}
-  {% set masthead = false %}
-
-  {% set title_tag = 'EightShapes > Articles >'  + title %}
-  {% extends 'templates/article.njk' %}
+{% set post = systemsposts["a-design-system-isn-t-a-project-it-s-a-product-serving-products"] %}
+{% extends 'templates/article_data.njk' %}
 
   {% block main_article %}
     {% filter markdown %}
