@@ -1,0 +1,65 @@
+{% set title = 'Backing The Right Horse: 5 strategies for learning new front-end development skills' %}
+  {% set title_image_path = 'backing-the-right-horse-5-strategies-for-learning-new-front-end-development-skills' %}
+  {% set deck = '' %}
+  {% set author = 'Kevin Powell' %}
+  {% set author_role = 'Husband & Father, Builder of Design Systems @eightshapes.' %}
+  {% set published_date = 'Feb 5, 2016' %}
+  {% set read_duration = '4 ' %}
+  {% set masthead = false %}
+
+  {% set title_tag = 'EightShapes > Articles >'  + title %}
+  {% extends 'templates/article.njk' %}
+
+  {% block main_article %}
+    {% filter markdown %}
+{% endfilter %}
+
+  {{ escom.article_figure(
+      image_path = title_image_path,
+      image_number = '1',
+      image_alt = '',
+      caption = '',
+      class = ''
+  ) }}
+
+  {% filter markdown %}
+  
+
+In the field of web design there are technological horse races every day. Some of these races have been going on for years: Macs vs. PCs, IE vs. Netscape vs. Firefox vs. Chrome vs. etc., even tabs vs. spaces. New horses jump in the race all the time. In fact, in the time it’s taken you to read this paragraph, I’m sure a new Javascript framework has entered the race.
+
+I’m not a betting man. I’ve never bet on an actual horse, yet I’m forced to gamble every day with my most precious currency: time.
+
+I have to choose carefully which new skills, tools, and programming languages are worth the investment. There aren’t enough hours to learn them all. I know from experience I won’t always make the right selection, but here are some strategies I use to back the right horse as often as possible.
+
+## Strategy 1: Don’t bet on the race: know what you need to&nbsp;know.
+
+I just learned flexbox last week. It’s 2016 and I’m a front-end developer. Browsers have supported flexbox for years. But honestly, flexbox didn’t matter to me: I could layout pages with floats, inline-block, and even display: table if necessary. I knew what I needed to get the job done and there wasn’t a need to change until recently. There are dozens of horse races going on every day in the web business, don’t bet on all of them. Invest in learning a new technology when the time is right for you.
+
+## **Strategy 2: Dip your toe in the&nbsp;water.**
+
+I got to know flexbox via [flexboxfroggy.com](http://flexboxfroggy.com). It’s a short set of exercises you complete right in the browser. A few weeks later I realized I needed to go deeper and I moved on to Wes Bos’s more comprehensive [“What The Flexbox?”](http://flexbox.io) course. Don’t sign up for a six week course on the latest new technology without sampling it first. Find a short tutorial and learn all you can in an hour. Then decide if you need to go deeper, pick a different horse, or get out of that race altogether.
+
+## Strategy 3: Wait it&nbsp;out.
+
+Offline First. Application Cache. That line of thinking was getting a lot of buzz a couple years ago. Now? [Application Cache is deprecated](http://caniuse.com/#feat=offline-apps). Service Workers appear to be the successor. I wanted to learn Application Cache but I didn’t have a need. If it’s a two or three horse race and you don’t need to pick a winner for a while, don’t. Watch for trends, look at conference topics. Wait long enough, and your decision might be made for you. Remember, bleeding edge technologies make for risky bets.
+
+## Strategy 4: Learn from other people’s experience.
+
+Start by talking to those you work with. Your peers, mentors, and supervisors know you best and may have insights to help you make a wise decision. Once you’ve selected a particular technology check StackOverflow and Github to get a sense of how “alive” it is. If the last commit was over a year ago and there are over fifty open issues on Github, it’s probably best to look elsewhere. Finally, read about others who have bet on the same race. Make sure you keep _your_ needs in mind as you read. One developer’s gripe is another developer’s feature request.
+
+## **Strategy 5: Hold your own horse&nbsp;race**
+
+In 2012 I had to select a CSS precompiler for an entire team of developers. I needed to prove to fifty other people that we were collectively backing the right horse. I narrowed the field down to LESS and SCSS and built the same single page site using each precompiler. Building the same thing twice reduced the number of variables and made the decision clear. By the end of the evaluation I was so confident in my decision that I presented [my findings](http://www.slideshare.net/utbkevin/less-vs-sass-css-precompiler-showdown-14068991) at a local conference. This is time-consuming but if the situation dictates that risk must be minimized, then this strategy is the way to go.
+
+## Homestretch
+
+There are different kinds of bettors. Some always put their money on the same horse, and try to convince you to do the same. Others are afraid to commit to anything. Neither extreme works in keeping your chops up. It’s easy to get caught up in the heat of the twitter feed or Slack channel or RSS reader and worry you’re getting left behind. I encourage you to unplug from the flow, evaluate what is most important for you, and be strategic about where you invest your time.
+
+The good news is this: Technologies come and go and investing in one that eventually disappears isn’t like losing your life savings. In fact, even when you “lose” one of these races, you’ve still gained exposure to new ideas, new patterns, new communities and you’re more informed for your next decision. There are technological horse races every day. Choose wisely.
+
+Got other tips for backing the right horse? Let me know! Happy racing.
+
+
+
+  {% endfilter %}
+{% endblock %}

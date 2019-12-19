@@ -7,7 +7,9 @@
     ) %}
 
     <figure class="escom-article-figure{% if class %} {{ class }}{% endif %}">
-        <img class="escom-article-figure__image" src="/images/articles/{{ image_path }}/{{ image_number }}.png" alt="{{ image_alt }}">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/{{ image_path }}/{{ image_number }}.png" alt="{{ image_alt }}">
+        </div>
         <figcaption class="escom-article-figure__caption">{{ caption | safe }}</figcaption>
     </figure>
 

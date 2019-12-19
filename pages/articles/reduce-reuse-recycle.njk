@@ -1,0 +1,43 @@
+{% set title = 'Reduce, Reuse, & Recycle' %}
+  {% set title_image_path = 'reduce-reuse-recycle' %}
+  {% set deck = '' %}
+  {% set author = 'Nathan Curtis' %}
+  {% set author_role = 'Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad.' %}
+  {% set published_date = 'Feb 15, 2016' %}
+  {% set read_duration = '2 ' %}
+  {% set masthead = false %}
+
+  {% set title_tag = 'EightShapes > Articles >'  + title %}
+  {% extends 'templates/article.njk' %}
+
+  {% block main_article %}
+    {% filter markdown %}
+{% endfilter %}
+
+
+  {% filter markdown %}
+  
+
+The [“Reduce, Reuse, & Recycle” poster](http://unify.eightshapes.com/uploads/documents/IASummit2009.ModularityPoster.NathanCurtis.pdf) was created for the IA Summit 2009 in Memphis, TN. The poster’s primary theme is the reuse of page and component design artwork across numerous deliverable types, including a draft wireframe review, usability test report, clickable prototype (in SWF), and wireframe specification.
+
+
+{% endfilter %}
+
+{{ escom.article_figure(
+    image_path = title_image_path,
+    image_number = '1',
+    image_alt = 'Screenshot of large poster',
+    caption = '',
+    class = ''
+) }}
+
+{% filter markdown %}
+
+Reuse is achieved via linked files in Adobe InDesign CS4, which was used to produce all artwork in the poster except for one table that had been previously created in Adobe Illustrator CS4. In fact, the poster itself is a linked masterpiece, reusing nearly 50 files across 400+ links in a single page InDesign document measuring 4′x6′. The poster used not just simple links, but also linked pages of multipage INDD files, cropped linked files, and nearly every other of it’s 13 key link types.
+
+Yup, zoom in, you’ll see all the detail you like of each and every page included; in particular, the design specification contains real content across its 27 pages.
+
+The poster also features a comparison of reuse features across software tools. Notably, each tool is examined for capabilities of reusing design artwork via panels (also referred to as stencils or palettes) and files, both of which could result in either linked or embedded artwork.
+
+  {% endfilter %}
+{% endblock %}

@@ -36,8 +36,9 @@ $escom-pull-quote-tail-size: 30px;
 
 .escom-pull-quote__source,
 .escom-pull-quote__attribution {
-    @include esds-body-text-m();
+    @include esds-body-text-s();
     @include esds-text-color($type: 'secondary');
+    margin: $esds-space-stack-2-x;
 
     .escom-pull-quote--stacked & {
         margin: 0 auto $esds-space-generic-2-x;

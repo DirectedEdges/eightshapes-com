@@ -12,6 +12,7 @@
 @import 'components/tabs/tabs';
 @import 'components/heuristics/heuristics';
 @import 'components/pull_quote/pull_quote';
+@import 'components/bar_quote/bar_quote';
 @import 'components/article/article';
 @import 'components/article_figure/article_figure';
 @import 'components/layout/layout';
@@ -29,6 +30,8 @@
 @import 'components/cta/cta';
 @import 'components/logo_grid/logo_grid';
 @import 'components/bio_thumbnails/bio_thumbnails';
+@import 'components/footer_systems/footer_systems';
+@import 'components/section_contents/section_contents';
 
 // Include SOME legacy components for now
 @import 'components/legacy/whatwedo/whatwedo';

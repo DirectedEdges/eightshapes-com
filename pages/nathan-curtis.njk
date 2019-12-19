@@ -9,7 +9,7 @@
         <div class="esds-container--dark">
             <div class="escom-long-form-text">
                 <p class="escom-long-form-text__p--l">
-                    Nathan co-founded EightShapes with <a href="dan-brown.html">Dan Brown</a> in 2006. He's passionate about information architecture, UX, front-end dev, and leads <a href="/design-systems.html">design systems</a> consulting at EightShapes. He wrote <a href="https://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351">Modular Web Design</a> in 2009, blogs frequently on <a href="https://medium.com/@nathanacurtis">Medium.com</a> today, and speaks regularly at events worldwide.
+                    Nathan co-founded EightShapes with <a href="dan-brown.html">Dan Brown</a> in 2006. He's passionate about information architecture, UX, front-end dev, and leads <a href="/design-systems.html">design systems</a> consulting at EightShapes. He wrote <a href="https://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351">Modular Web Design</a> in 2009, writes regularly on EightShapes' <a href="/components/">@components</a> publication (republished on <a href="https://medium.com/@nathanacurtis">Medium.com</a>), and speaks regularly at events worldwide.
                 </p>
             </div>
         </div>
@@ -17,7 +17,7 @@
     {% call esds.row(background="white", class="esds-row--tall-inset") %}
         <div class="escom-long-form-text">
             <p>
-                Nathan has worked with design systems teams at Morningstar, Google, REI, Atlassian, Target, Fidelity, Marriott, Cisco, Capital One, Yahoo, Sprint, Sun Microsystems, NetApp, USAC, Key Bank, Liberty Mutual, IDEXX, Discovery Education, Carmax, Citi, Hudl, Automattic, Wells Fargo, and Wikia.
+                Nathan has led design systems teams at Morningstar, REI, Target, IDEXX, Discovery Education, Fidelity, Marriott, Cisco, and Capital One. He's also workshopped with, assessed or coached design systems teams at Google, Atlassian, Yahoo, Verizon, Salesforce, Sprint, Sun Microsystems, NetApp, USAC, Key Bank, Liberty Mutual, Carmax, Citi, Hudl, Automattic, Wells Fargo, Paylocity, Progressive Leasing, Farm Credit Services and Wikia.
             </p>
             
         </div>
@@ -43,6 +43,21 @@
                 {{ escom.timeline(
                     class = "escom-timeline--years-only",
                     items = [
+                        {
+                            heading: "2020",
+                            content_right: [
+                                esds.list(
+                                    class = "esds-list--large",
+                                    items = [
+                                        {
+                                            description: "April 2019 • Talk+Workshop",
+                                            title: "Smashing Conference, San Francisco, CA",
+                                            href: "https://smashingconf.com/sf-2020/workshops/nathan-curtis-kevin-powell"
+                                        }
+                                    ]
+                                )
+                            ]
+                        },
                         {
                             heading: "2019",
                             content_right: [
@@ -397,6 +412,8 @@
         </div>
     </div>
     {% endcall %}
+
+    {{ escom.footer_systems() }}
 
     {% call esds.row(background_only="brand", class="esds-row--tall-inset") %}
         {% call escom.fifty_fifty(image="/images/modular-web-design-cover-photo.jpg", class="esds-container--light") %}

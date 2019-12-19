@@ -8,7 +8,8 @@
         "twitter": "https://twitter.com/nathanacurtis",
         "linkedin": "https://www.linkedin.com/in/nathancurtis",
         "eightshapes_com": "nathan-curtis.html",
-        "image": "/images/components/bio_hero/bio-nathan-curtis-2018.png"
+        "image": "/images/components/bio_hero/bio-nathan-curtis-2018.png",
+        "role" : "Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad."
     },
     {
         "name": "Dan Brown",
@@ -19,6 +20,7 @@
         "twitter": "https://twitter.com/brownorama",
         "linkedin": "https://www.linkedin.com/in/danmbrown",
         "eightshapes_com": "dan-brown.html",
+        "role" : "Designer • Co-founder of @eightshapes • Author of 3 books on UX • http://bit.ly/danbooks • Board gamer • Family cook",
         "image": "/images/components/bio_hero/bio-dan-brown-2018.png"
     },
     {
@@ -30,6 +32,7 @@
         "twitter": "https://twitter.com/detzi",
         "linkedin": "https://www.linkedin.com/in/chrisdetzi",
         "eightshapes_com": "chris-detzi.html",
+        "role" : "",
         "image": "/images/components/bio_hero/bio-chris-detzi-2018.png"
     },
     {
@@ -41,6 +44,7 @@
         "twitter": "https://twitter.com/jamesmelzer",
         "linkedin": "https://www.linkedin.com/in/jamesmelzer",
         "eightshapes_com": "james-melzer.html",
+        "role" : "",
         "image": "/images/components/bio_hero/bio-james-melzer-2018.png"
     },
     {
@@ -52,6 +56,7 @@
         "twitter": "https://twitter.com/kevinmpowell",
         "linkedin": "https://www.linkedin.com/in/kevinmpowell",
         "eightshapes_com": "kevin-powell.html",
+        "role" : "Husband & Father, Builder of Design Systems @eightshapes.",
         "image": "/images/components/bio_hero/bio-kevin-powell-2018.png"
     }
 ]
