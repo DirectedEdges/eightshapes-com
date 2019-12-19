@@ -8,7 +8,7 @@
         "author_id" : "nathan",
         "date_published" : "4/13/2016",
         "date_updated" : "",
-        "read_duration" : 0,
+        "read_duration" : 10,
         "masthead" : true
     },
     "typography-in-design-systems" : {
@@ -89,7 +89,7 @@
         "title" : "Cropping Away Negative Impacts of Line Height",
         "deck" : "Getting rid of pesky space above and below HTML text",
         "title_abbreviation" : "Cropping Line Height",
-        "author_id" : "nathan",
+        "author_id" : "kevin",
         "date_published" : "5/22/2018",
         "date_updated" : "",
         "read_duration" : 5,
@@ -117,7 +117,7 @@
         "date_published" : "7/26/2017",
         "date_updated" : "",
         "read_duration" : 4,
-        "masthead" : true
+        "masthead" : false
     },
     "cards-and-composability-in-design-systems" : {
         "category" : "UI Components",
@@ -141,7 +141,7 @@
         "date_published" : "2/26/2016",
         "date_updated" : "",
         "read_duration" : 3,
-        "masthead" : true
+        "masthead" : false
     },
     "patterns-components" : {
         "category" : "UI Components",
@@ -381,7 +381,7 @@
         "date_published" : "5/24/2017",
         "date_updated" : "",
         "read_duration" : 5,
-        "masthead" : true
+        "masthead" : false
     },
     "adopting-design-systems" : {
         "category" : "Strategy",
@@ -429,7 +429,7 @@
         "date_published" : "6/8/2017",
         "date_updated" : "",
         "read_duration" : 4,
-        "masthead" : true
+        "masthead" : false
     },
     "team-models-for-scaling-a-design-system" : {
         "category" : "People",
@@ -621,7 +621,7 @@
         "date_published" : "2/3/20167",
         "date_updated" : "",
         "read_duration" : 3,
-        "masthead" : true
+        "masthead" : false
     },
     "the-component-cut-up-workshop" : {
         "category" : "Workshop Activities",

@@ -6,10 +6,6 @@
 {% set read_duration = post.read_duration | default(false) %}
 {% set masthead = post.masthead | default(false) %}
 
-{% set author_name = people[post.author_id].name | default(false) %}
-{% set author_role = people[post.author_id].role | default(false) %}
-
-
 {% extends "templates/base.njk" %}
 
 {% block head_elements %}
@@ -18,21 +14,20 @@
 {% endblock %}
 
 {% block body %}
-    {{ escom.footer_systems() }}
     {{ esds.breadcrumb(section_href="/articles/systems.html", section="@components Blog") }}
 
     <div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
         <div class="esds-row__inner">
             <div class="escom-article__author-row">
                 <div class="escom-article__author-avatar"
-                    style="background-image: url('/images/bios/bio-thumb-{{ author_name | lower | replace(' ', '-') }}.png')">
+                    style="background-image: url('/images/bios/bio-thumb-{{ people[post.author_id].name | lower | replace(' ', '-') }}.png')">
                 </div>
                 <div class="escom-article__author-text">
                     <p class="escom-article__author">
-                        {{ author_name }}
+                        <a href="{{ people[post.author_id].href }}">{{ people[post.author_id].name }}</a>
                     </p>
                     <p class="escom-article__author-role">
-                        {{ author_role }}
+                        {{ people[post.author_id].role }}
                     </p>
                     <p>
                         <span class="escom-article__published-date">
@@ -68,5 +63,6 @@
 
         </div>
     </div>
+    {{ escom.footer_systems() }}
 
 {% endblock %}
