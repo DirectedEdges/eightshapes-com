@@ -7,3 +7,11 @@
 .escom-cta__action-button {
     text-transform: uppercase;
 }
+
+.escom-cta--components-publication {
+    .esds-row__inner {
+        max-width: $esds-font-line-length-long-form;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
