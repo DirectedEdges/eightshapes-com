@@ -552,7 +552,7 @@
         "masthead" : true
     },
     "contributions-to-design-systems" : {
-        "category" : "Process",
+        "category" : "Contributions",
         "id" : "contributions-to-design-systems",
         "title" : "Contributions to Design Systems",
         "deck" : "Opening a Library to a Community’s Code, Design, and More",
@@ -563,8 +563,20 @@
         "read_duration" : 6,
         "masthead" : true
     },
+    "why-contributions-matter" : {
+        "category" : "Contributions",
+        "id" : "why-contributions-matter",
+        "title" : "Why Contributions Matter",
+        "deck" : "8 Reasons Design Systems Invest in Contributions",
+        "title_abbreviation" : "Why Contributions Matter",
+        "author_id" : "nathan",
+        "date_published" : "1/6/2017",
+        "date_updated" : "",
+        "read_duration" : 10,
+        "masthead" : false
+    },
     "i-made-this-does-it-go-in-the-system" : {
-        "category" : "Process",
+        "category" : "Contributions",
         "id" : "i-made-this-does-it-go-in-the-system",
         "title" : "I Made This, Does It Go In The System?",
         "deck" : "How to Decide What Belongs & Convey Work That Remains",
