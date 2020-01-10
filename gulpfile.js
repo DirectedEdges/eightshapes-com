@@ -18,13 +18,13 @@ gulp.task('deploy-to-gh-pages', function(done){
   execSync('gulp build:all');
 
   // Rsync /docs into /tmp
-  execSync('rsync -a docs/ tmp/');
+  execSync('rsync -a --delete docs/ tmp/');
 
-  // Commit the changes to the gh-pages repo in tmp
-  execSync('cd tmp && git add --all && git commit -m "Deploy release to gh-pages branch" && git push');
-
-  // Remove /tmp directory
-  del.sync(['tmp'], {force: true});
+  // // Commit the changes to the gh-pages repo in tmp
+  // execSync('cd tmp && git add --all && git commit -m "Deploy release to gh-pages branch" && git push');
+  //
+  // // Remove /tmp directory
+  // del.sync(['tmp'], {force: true});
   done();
 });
 
