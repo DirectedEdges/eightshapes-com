@@ -563,6 +563,18 @@
         "read_duration" : 6,
         "masthead" : true
     },
+    "defining-contributions" : {
+        "category" : "Contributions",
+        "id" : "defining-contributions",
+        "title" : "Defining Design System Contributions",
+        "deck" : "Time to Separate the Small-and-Quick from Larger Things",
+        "title_abbreviation" : "Defining Contributions",
+        "author_id" : "nathan",
+        "date_published" : "1/14/2020",
+        "date_updated" : "",
+        "read_duration" : 10,
+        "masthead" : true
+    },
     "why-contributions-matter" : {
         "category" : "Contributions",
         "id" : "why-contributions-matter",
