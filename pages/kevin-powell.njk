@@ -2,24 +2,47 @@
 {% set body_classes = "escom-page-type--marketing" %}
 {% extends 'templates/base.njk' %}
 {% block body %}
-    {{ esds.breadcrumb(href="/") }}    
+    {{ esds.breadcrumb(href="/") }}
 
     {% call esds.row(background_only="dark") %}
         {{ escom.hero_profile(profile_index=4) }}
         <div class="esds-container--dark">
             <div class="escom-long-form-text">
                 <p class="escom-long-form-text__p--l">
-                    Kevin is an interaction designer with a passion for rendering modern designs through the latest production techniques. Kevin consults with in-house dev teams to implement design systems and fine-tune their prototyping and production environments. His presentations on User Experience and CSS precompilers garnered enough views in 2013 to place him in the top 5% of most-viewed presentations on slideshare.net.
+                  Kevin knows how to build design systems (and the tooling required to build them) across all major front end platforms. He has done so for huge companies, brands and teams for over half a decade. His experience with clients has taken him through React, Vue, Angular and vanilla Web Components.  He's also built popular open-source tooling for <a href="http://text-crop.eightshapes.com">text cropping</a> and <a href="https://contrast-grid.eightshapes.com">checking color contrast</a> for accessibilty.
                 </p>
             </div>
         </div>
     {% endcall %}
     {% call esds.row(background="white", class="esds-row--tall-inset esds-row--marketing-max-width") %}
+    <div class="escom-long-form-text">
+        <p>
+            Kevin has architected and/or worked on design systems at <a href="https://designsystem.morningstar.com">Morningstar</a> (2017-2018), REI, Target, Amgen, IDEXX, Discovery Education, Fidelity, Marriott, Yahoo, NetApp, Liberty Mutual, JDRF and USAC.
+        </p>
+    </div>
+            {{ esds.list(
+                class = "esds-list--large",
+                items = [
+                    {
+                        heading: "Appearances"
+                    },
+                    {
+                        description: "April 2020 • Talk+Workshop",
+                        title: "Smashing Conference, San Francisco, CA",
+                        href: "https://smashingconf.com/sf-2020/workshops/nathan-curtis-kevin-powell"
+                    }
+                ]
+            ) }}
             {{ esds.list(
                 class = "esds-list--large",
                 items = [
                     {
                         heading: "Writing"
+                    },
+                    {
+                        eyebrow: "Medium, November 2019",
+                        title: "Hostile CSS: Fortifying System Styles Against Inherited Properties",
+                        href: "https://medium.com/@kevinmpowell/hostile-css-fortifying-system-styles-against-inherited-properties-8aa2e9f0fa3d"
                     },
                     {
                         eyebrow: "Medium, March 2018",
@@ -33,6 +56,11 @@
                 items = [
                     {
                         heading: "Tools"
+                    },
+                    {
+                        eyebrow: "2019 • Github",
+                        title: "EightShapes Hostile CSS",
+                        href: "https://github.com/EightShapes/esds-hostile-css"
                     },
                     {
                         eyebrow: "2017–2018 • Github",
