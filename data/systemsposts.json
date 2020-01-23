@@ -587,6 +587,18 @@
         "read_duration" : 10,
         "masthead" : false
     },
+    "stewarding-design-system-contributions" : {
+        "category" : "Contributions",
+        "id" : "stewarding-design-system-contributions",
+        "title" : "Stewarding Design System Contributions",
+        "deck" : "Keep 'em on track with what they need, when they need it",
+        "title_abbreviation" : "Stewarding",
+        "author_id" : "nathan",
+        "date_published" : "1/23/2017",
+        "date_updated" : "",
+        "read_duration" : 10,
+        "masthead" : true
+    },
     "i-made-this-does-it-go-in-the-system" : {
         "category" : "Contributions",
         "id" : "i-made-this-does-it-go-in-the-system",
