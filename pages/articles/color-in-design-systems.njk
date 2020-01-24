@@ -282,24 +282,36 @@ _Takeaway_: Any system designer responsible for color must be familiar with WCAG
 
 ### #14. Explore Accessible Color Choices Across Ranges
 
-A drawback of WCAG guidelines is its stark threshold: a color pair passes or fails. This leaves designers yearning for more, but worse leaves stakeholders flummoxed at _how bad_ the color pair fails and _how much_ it needs to change.
+A drawback of WCAG guidelines is its stark threshold: a color pair passes or fails. This leaves designers yearning for more, but worse leaves stakeholders flummoxed at how bad the color pair fails and how much it needs to change. 
 
-Conversation quickens when we reveal a spectrum of choices, with the pass/fail line fairly evident. This transforms the process from trial and error to tuning a dial. Before, it was “That pair failed. Let’s try again.” Now, it’s an enlightening “Oh, so that’s how dark the blue needs to be” followed by a rational discussion to balance visual tone, brand identity, and accessibility sensitivities.
+Conversation quickens when we reveal a spectrum of choices. There are a bevy of tools in the design community for visualizing the contrast between foreground and background colors, including:
 
-_Takeaway_: When exploring accessible color contrast, show a range of choices to help a team select a color that passes the test.
+- <a href="webaim.org/resources/contrastchecker/">webaim.org/resources/contrastchecker/</a>
+- <a href="contrast-finder.tanaguru.com/">contrast-finder.tanaguru.com/</a>
+- <a href="snook.ca/technical/colour_contrast/colour.html">snook.ca/technical/colour_contrast/- colour.html</a>
+- <a href="www.checkmycolours.com/">www.checkmycolours.com/</a>
+- <a href="https://usecontrast.com/">usecontrast.com/</a> (Mac app)
+- <a href="http://www.brandwood.com/a11y/">www.brandwood.com/a11y/</a> (Text on images)
+- <a href="http://www.webaxe.org/color-contrast-tools/">www.webaxe.org/color-contrast-tools/</a > (Comprehensive list of many tools)
+
+We even built our own tool at EightShapes called the <a href="http://contrast-grid.eightshapes.com/">Contrast Grid</a>. This tool enables you to easily input a range of HEX codes, name them, and contrast every combination (even distinct colors for foreground and background). 
 
 {% endfilter %}
 
   {{ escom.article_figure(
       image_path = title_image_path,
       image_number = '14',
-      image_alt = 'Neutral and link colors displayed across a range of neutral backgrounds',
-      caption = 'Exploring neutral and interactive colors by showing multiple choices across a range',
+      image_alt = 'Interactive colors displayed across a range of neutral backgrounds',
+      caption = 'Explore foreground and background color contrast across ranges using <a href="http://contrast-grid.eightshapes.com/">Contrast Grid</a>',
       class = ''
   ) }}
 
   {% filter markdown %}
   
+This quick visualization isn't just efficient for experimenting and choosing the right color, but also communicating contrast ranges to those less familiar with contrast subtleties. Recently, we're really encouraged about how such exploratory tools are being integrated directly into design tools, too.
+
+_Takeaway_: When exploring accessible color contrast, show a range of choices to help a team select a color that passes the test.
+
 * * *
 
 ### #15. Solve the Reverse Light on Dark and Dark on Light
@@ -330,7 +342,11 @@ Color is fundamental to a system, and accessible color contrast is fundamental t
 
 _Takeaway_: Seize the opportunity to advocate for accessibility. Always be probing a collaborator’s knowledge of accessibility (or lack thereof) and educate and advocate all you can.
 
+* * *
 
+## Revision History
+
+**2020-01-24**: Revised color contrast section to highlight EightShapes contrast grid (including image), list other relevant contrast tools.
 
   {% endfilter %}
 {% endblock %}
