@@ -3,7 +3,6 @@
 
   {% block main_article %}
     {% filter markdown %}
-
 As a system changes, adopters will want to take advantage of what’s new.
 
 {% endfilter %}
@@ -13,7 +12,7 @@ As a system changes, adopters will want to take advantage of what’s new.
   ) }}
 
   {% filter markdown %}
-  
+
 
 Trouble arises when change is poorly communicated or its impacts ill-defined. Developers compare a proposed design to system code, identify what needs swapped or added, and carefully install or upgrade what’s needed. They are also usually mindful of [breaking change](/articles/visual-breaking-change-in-design-systems.html) in dependencies.
 
@@ -37,7 +36,7 @@ Are designers as sensitive to changes when working in a tool like Sketch? Not as
   ) }}
 
   {% filter markdown %}
-  
+
 
 Designers want the latest. Developers balance tradeoffs of new quality with scale and maintenance. Systems should clean up that conversation.
 
@@ -60,7 +59,7 @@ Every discussion about versioning design system outputs begins and ends with the
   ) }}
 
   {% filter markdown %}
-  
+
 
 SemVer versions in a `MAJOR.MINOR.PATCH` format, incrementing each as a:
 
@@ -84,13 +83,22 @@ A design system team versions its library as a single, monolithic package or sep
 
 A design system versioning by library applies the same version number to all system assets simultaneously, such as `1.4.0` applies across all components.
 
-<pre>
-    library 1.4.0
-    ├─ visual style└─ components ├─ button
-    ├─ button group ├─ card
-    ├─ checkbox ├─ radio button └─ ...
-</pre>
+{% endfilter %}
 
+<esds-code-snippet copyable="false" preformatted>
+  library 1.4.0
+  ├─ visual style
+  └─ components
+      ├─ button
+      ├─ button group
+      ├─ card
+      ├─ checkbox
+      ├─ radio button
+      └─ ...
+</esds-code-snippet>
+
+
+{% filter markdown %}
 If _any_ component adds a backwards-compatible feature, then the entire library increments a minor version from `1.4.0` to `1.5.0`. Similarly, if _any_ component has a breaking change, the entire library increments the major number from `1.4.0` to `2.0.0`.
 
 Versioning “by library” is the comment choice for teams delivering vanilla HTML & CSS. Adopters typically integrate markup and style into their app and refer to a library’s collectively compiled CSS, such as `core.css`.
@@ -100,14 +108,20 @@ You can’t include a `core.css` from 2 or more versions without CSS conflicts. 
 ### Versioning By Component
 
 Versioning “by component” enables adopting teams to mix and match button version `5.3.1` with form checkbox `3.1.0` and radio `1.1.0` in the same page.
+{% endfilter %}
+<esds-code-snippet copyable="false" preformatted>
+  library
+    ├─ visual style
+    └─ components
+        ├─ button 5.3.1
+        ├─ button group 2.1.0
+        ├─ card 3.7.6
+        ├─ checkbox 3.1.0
+        ├─ radio button 1.1.0
+        └─ ...
+</esds-code-snippet>
 
-<pre>
-    library
-    ├─ visual style└─ components ├─ button 5.3.1
-    ├─ button group 2.1.0 ├─ card 3.7.6
-    ├─ checkbox 3.1.0 ├─ radio button 1.1.0 └─ ...
-</pre>
-
+{% filter markdown %}
 Adopters need not worry about when each was released, since HTML markup, style and script is encapsulated and won’t conflict with other components types included in the the same page. This may or may not mean you can uses multiple versions of one component simultaneously. “Can I include button’s `1.7.0` in one part of the page along with button `1.2.0` and `2.5.0` elsewhere on the same page?" Depends on how the library works.
 
 Versioning by component is consistent for teams using a [continuous release model](/articles/design-system-release-cadence.html) and using a JavaScript framework (React, Vue, etc) or delivering web components. They’ll make much smaller changes more modularly more often.
@@ -129,7 +143,7 @@ SemVer enables adopters to recognize key moments in a system’s life cycle.
   ) }}
 
   {% filter markdown %}
-  
+
 - **Pre-Version 1.0.0** releases (`0.1.0`, `0.2.0`, `0.3.0`, …) reveal an unstable system architecture and feature set. Over the past few years, this period lasts three to six months before a first major release for most teams.
 - **First major release.** A launch designated `1.0.0` is hailed stable and dependable. It’s delivered with fanfare, signaling readiness for mass adoption. The `1.x.x` period that follows can last a year or more for systems versioned as libraries, and is shorter when versioning by individual components.
 - **Subsequent major releases** increment version to `2.0.0`, `3.0.0`, …. This signals the system's interface broke. Attention and adjustment is needed as a team upgrades.
@@ -167,7 +181,7 @@ Once a major version like `2.0.0` is released, we'll classify new feature ideas 
   ) }}
 
   {% filter markdown %}
-  
+
 
 _Takeaway_: Establish a routine for recording and funneling breaking changes trigger a major version. Isolating these items removes distraction from current work and provides a collection to review as you plan for what’s next.
 
@@ -188,7 +202,7 @@ When deprecating a feature, consider current use:
   ) }}
 
   {% filter markdown %}
-  
+
 
 Once a feature is ready for deprecation, follow a well-defined process. [Atlaskit’s versioning doc](https://atlaskit.atlassian.com/docs/guides/versioning#deprecate) outlines a simple process:
 
@@ -210,7 +224,7 @@ In deprecating, timing removal is critical. You can’t yank it without warning.
   ) }}
 
   {% filter markdown %}
-  
+
 
 How long is long enough? Salesforce supports a wide base of disconnected teams, so timing is clear and long: 18 months. Origami by Financial Times operates with a tighter developer community, allowing for a compressed period of 3 to 6 months.
 
@@ -227,7 +241,7 @@ A new feature can exist alongside old. Morningstar expanded the Notification com
   ) }}
 
   {% filter markdown %}
-  
+
 
 Salesforce Lightning sustained two versions of a [Path component](https://www.lightningdesignsystem.com/components/path/).
 
@@ -240,7 +254,7 @@ Salesforce Lightning sustained two versions of a [Path component](https://www.li
   ) }}
 
   {% filter markdown %}
-  
+
 
 Code practices can also provide notice. The browser console and terminal can issue deprecation warnings, such as Salesforce UX’s [Sass Deprecate](https://github.com/salesforce-ux/sass-deprecate) feature.
 
@@ -267,34 +281,35 @@ Should doc update every time the code releases? Absolutely. It must always refle
 Should the library release for every little doc change? No. A UX pattern or workflow description may be pages-long, yet have no code. Why block publishing until the next code drop and/or increment a library’s version to make a content change?
 
 Systems teams I lead take the mindset that the “doc site” (and its content) is a product consuming the system library. We separate the two codebases.
-
-<pre>
-    /doc-site
-     /components ## Doc site-only components
+{% endfilter %}
+<esds-code-snippet copyable="false" preformatted>
+  /doc-site
+   /components ## Doc site-only components
      /code-example-pair
      /do-dont
      /tint-stack
-     /docs ## Doc site content
+   /docs ## Doc site content
      /about
      /components
      /contribute
      /getting-started
      /ux-patterns
      /visual-style
-</pre>
-<pre>
-    /library
-     /style ## Library core style
+</esds-code-snippet>
+<esds-code-snippet copyable="false" preformatted max-height="none">
+  /library
+   /style ## Library core style
      /color
      /space
      /typography
-     /components ## Library & testing HTML, CSS, & JS
+   /components ## Library & testing HTML, CSS, & JS
      /card
      /button
      /icon
      /radio\_button
-</pre>
+</esds-code-snippet>
 
+{% filter markdown %}
 I’m also unwilling to cede another tradeoff: diminished non-developer participation _and_ content serving wider audiences. The more doc is woven into complex code, the less flexible your content model and the less capable your other authors—designers, content strategists, accessibility specialists—are in editing or expanding it. A tight coupling of code and doc could also slow down how you publish a guideline in response to a community resolving a standard in critique.
 
 _Takeaway_: Consider decoupling documentation versions from library code. This separation can trigger useful yet indistinct workflows for each.
@@ -318,7 +333,7 @@ Most system site document just “the latest.” But for a system describing but
   ) }}
 
   {% filter markdown %}
-  
+
 
 The Morningstar Design System publishes “the latest” at `.com/` [root](http://designsystem.morningstar.com/) and _also_ offers access to every [past doc site version](http://designsystem.morningstar.com/v/1.13.0/) at predictable subfolders such as `.com/v1.13.0/`. Each version is accessed via a “View Docs” link per entry in the Release History. Just as important: doc links are relative, so that once in docs for `v1.13.0`, you stay within docs for `v1.13.0`.
 
@@ -353,7 +368,7 @@ That means _not_ indicating a version (“Use this latest!”) or using last upd
   ) }}
 
   {% filter markdown %}
-  
+
 
 …symbol library name (or last updated if versioning by feature)…
 
@@ -368,7 +383,7 @@ That means _not_ indicating a version (“Use this latest!”) or using last upd
   ) }}
 
   {% filter markdown %}
-  
+
 
 …symbol name, particular if within a folder-based hierarchy…
 
@@ -383,7 +398,7 @@ That means _not_ indicating a version (“Use this latest!”) or using last upd
   ) }}
 
   {% filter markdown %}
-  
+
 
 …or an annotation layer, particularly if toggled on/off in artwork.
 
