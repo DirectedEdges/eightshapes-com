@@ -43,6 +43,14 @@ module.exports = {
             name: 'icon-dependencies',
             sources: [`node_modules/esds-library/dist/esds.svg`],
             destination: `docs/icons`
+        },
+        {
+            name: 'esds-doc-web-component-scripts',
+            sources: [
+                `node_modules/@webcomponents/custom-elements/custom-elements.min.js`,
+                `node_modules/@eightshapes/esds-code-snippet/dist/esds-code-snippet-web-component.js`,
+                `node_modules/@eightshapes/esds-code-snippet/dist/esds-code-snippet-legacy.js`],
+            destination: `docs/scripts/dependencies`
         }
     ],
     dependencies: [

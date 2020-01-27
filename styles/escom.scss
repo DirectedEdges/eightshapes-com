@@ -1,4 +1,4 @@
-// New ESDS-based system 
+// New ESDS-based system
 @import 'shared/esds_library_overrides';
 @import 'esds-library/tokens/tokens';
 @import 'esds-library/styles/shared/util';
@@ -35,3 +35,9 @@
 
 // Include SOME legacy components for now
 @import 'components/legacy/whatwedo/whatwedo';
+
+// ESDS Doc Web Components
+
+// Dependencies, and optional extensions and overrides
+@import 'dependencies/esds-code-snippet';
+@import '../node_modules/@eightshapes/esds-code-snippet/src/esds-code-snippet';
