@@ -93,6 +93,12 @@
             flex: 0 0 10%;
         }
     }
+
+    .escom-timeline--agenda-sections & {
+        @media screen and (min-width: $esds-breakpoints-width-768) {
+            flex: 0 0 40%; 
+        }
+    }
 }
 
 .escom-timeline__content-right,
