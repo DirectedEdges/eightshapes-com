@@ -1,7 +1,23 @@
 [
     {
+        "year": "2020",
+        "in_house_events": [
+            "Truist"
+        ],
+        "public_venues": [ 
+            "SmashingConf San Francisco"
+        ]
+    },
+    {
         "year": "2019",
         "in_house_events": [
+            "Nationwide",
+            "Paylocity",
+            "Federal Reserve Board",
+            "Farm Credit Services",
+            "Strata Decision",
+            "ModaOperandi",
+            "Progressive Leasing"
         ],
         "public_venues": [ 
             "DCUX",
