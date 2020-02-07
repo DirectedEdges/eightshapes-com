@@ -551,6 +551,18 @@
         "read_duration" : 8,
         "masthead" : true
     },
+    "design-system-subtasks-by-step" : {
+        "category" : "Process",
+        "id" : "design-system-subtasks-by-step",
+        "title" : "Design System Subtasks, by Step",
+        "deck" : "Decompose Your Workflow into Checklists",
+        "title_abbreviation" : "Subtasks, by Step",
+        "author_id" : "nathan",
+        "date_published" : "2/6/2020",
+        "date_updated" : "",
+        "read_duration" : 11,
+        "masthead" : true
+    },
     "contributions-to-design-systems" : {
         "category" : "Contributions",
         "id" : "contributions-to-design-systems",
