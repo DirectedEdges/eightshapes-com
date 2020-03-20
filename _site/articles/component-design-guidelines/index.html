@@ -1,0 +1,578 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+        <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+        <meta http-equiv="cleartype" content="on">
+
+        <title>EightShapes &gt; @components &gt; undefined</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="/dependencies/esds.css"> <!-- copied from esds-library dependency -->
+        <link rel="stylesheet" href="/dist/escom.css">
+
+        
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700&display=swap" rel="stylesheet">
+  <!-— facebook open graph tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.eightshapes.com/articles/.html" />
+  <meta property="og:title" content="post Title" />
+  <meta property="og:description" content="false" />
+  
+
+  <!-— twitter card tags additive with the og: tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:domain" value="eightshapes.com" />
+  <meta name="twitter:title" value="post Title" />
+  <meta name="twitter:description" value="false" />
+  
+  <meta name="twitter:url" value="https://www.eightshapes.com/articles/.html" />
+
+  <!-- No Shadow DOM, so link directly to styles -->
+  <link rel="stylesheet" href="/styles/dependencies/esds-code-snippet.css"/>
+
+  <!-- Separate webcomponents polyfill bundle for Edge, IE11, etc. -->
+  <script type="text/javascript" src="/scripts/dependencies/custom-elements.min.js"></script>
+
+  <!-- ESDS Doc components -->
+  <!-- The ESM "vanilla" version of the component for FF, Safari, Chrome and Edge -->
+  <script type="module" src="/scripts/dependencies/esds-code-snippet-web-component.js"></script>
+
+  <!-- A babel-compiled version of the component for IE11 -->
+  <script nomodule type="text/javascript" src="/scripts/dependencies/esds-code-snippet-legacy.js"></script>
+
+    </head>
+    <body class="">
+        
+    
+    
+    
+
+    
+    <div class="esds-row esds-container--brand esds-breadcrumb esds-row--no-inset">
+        <div class="esds-row__inner">
+            <h1 class="esds-breadcrumb__brand">
+                <a href="/" class="esds-breadcrumb__link">
+                    
+    
+
+    <svg class="esds-icon esds-breadcrumb__brand-mark" >
+        
+        <use xlink:href="/icons/esds.svg#eightshapes-logo"></use>
+    </svg>
+
+                </a>
+                
+                <a href="/components/" class="esds-breadcrumb__link">
+                    
+    
+
+    <svg class="esds-icon esds-breadcrumb__delimiter" >
+        
+        <use xlink:href="/icons/esds.svg#angle-right"></use>
+    </svg>
+
+                    <span class="esds-breadcrumb__crumb-section">@components</span>
+                </a>
+                
+            </h1>
+        </div>
+    </div>
+
+
+    <div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
+        <div class="esds-row__inner">
+            <div class="escom-article__author-row">
+                <div class="escom-article__author-avatar"
+                    style="background-image: url('/images/bios/bio-thumb-.png')">
+                </div>
+                <div class="escom-article__author-text">
+                    <p class="escom-article__author">
+                        <a href=""></a>
+                    </p>
+                    <p class="escom-article__author-role">
+                        
+                    </p>
+                    <p>
+                        <span class="escom-article__published-date">
+                            Originally published false •
+                        </span>
+                        <span class="escom-article__read-duration">
+                            falsemin
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="escom-article__title-row escom-article__title-row--no-masthead-next">
+                <h1 class="escom-article__title">post Title</h1>
+                
+            </div>
+
+    
+
+    
+    &lt;p&gt;&lt;em&gt;#4 of 6 of the Documenting Components series:&lt;/em&gt;&lt;br&gt;&lt;a href=&quot;/articles/documenting-components.html&quot;&gt;Overview&lt;/a&gt; | &lt;a href=&quot;/articles/documenting-component-introductions.html&quot;&gt;Intros&lt;/a&gt; | &lt;a href=&quot;/articles/component-examples.html&quot;&gt;Examples&lt;/a&gt; | &lt;strong&gt;Design&lt;/strong&gt; | Code | Authoring&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;I remember that morning. September 2014. McLean, Virginia. I arrive for work around 7:30am. I open &lt;a href=&quot;https://material.io/design/foundation-overview/#addition&quot;&gt;Google’s Material Design&lt;/a&gt; guidelines for the first time. I remember &lt;em&gt;exactly&lt;/em&gt; where I stood, for 90 minutes, soaking it all in. It was so, so good. By the end, I didn’t just know Material better. I was a &lt;em&gt;better designer&lt;/em&gt;, and my mind was awash with how to document better.&lt;/p&gt;
+&lt;p&gt;During that immersive experience, I found guidelines &lt;em&gt;pleasurable&lt;/em&gt;. However, component guidelines aren’t pleasure reading. They are a reference, orienting designers towards good decisions. Guidelines should afford quick learning and fast lookup, all while designers go about their business.&lt;/p&gt;
+&lt;p&gt;Thus, guidelines can’t be scribbled jottings by an uninformed soloist cranking a tedious writing task. Guidelines must be clear. Guidelines must be organized. Guidelines must articulate decisions forged by the inclusive dialogue of a participating design community. Guidelines must empower readers, not laden them with dense, shoddy prose they won’t read.&lt;/p&gt;
+&lt;p&gt;To produce quality component guidelines, you’ll need a content architecture, writing conventions, and approach to images and demos that work best for your audience. May this guide provides inspiration to get you started.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;start-with-the-words&quot;&gt;Start with the Words&lt;/h2&gt;
+&lt;p&gt;Design guidelines begin as a writing exercise, even if eventually they aren’t just words (more on that later). Well written words matter. With a predictable structure organizing advice, any reader — especially designers — can make better choices when using a component.&lt;/p&gt;
+&lt;h3 id=&quot;organize-guidelines-per-section-by-discipline&quot;&gt;Organize Guidelines Per Section by Discipline&lt;/h3&gt;
+&lt;p&gt;Some guidelines are better than none. However, a massive list of unorganized bullet points discourages readers. Consistent headings, organized by type of design concern, establishes a familiar pattern for readers &lt;em&gt;and&lt;/em&gt; encourages authors to consider implications across concerns.&lt;/p&gt;
+&lt;p&gt;As a writing plan forms and composition begins, I recommend the following categories (in order):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Use When&lt;/strong&gt; , often including a countering &lt;strong&gt;Don’t Use When&lt;/strong&gt; as a subheading (alternative if discouraged heading: When to Use).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Visual Style&lt;/strong&gt; to inform judgment about color, type, space, and more (alternative headings: Visual Language, Design Language, Foundations).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Behavior&lt;/strong&gt; to cover how to cope with events, outcomes, and transitions (alternative headings: Interaction).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Editorial&lt;/strong&gt; advice covering copy and images flowing into each element (alternative headings: Voice &amp;amp; Tone, Content).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Accessibility&lt;/strong&gt; checklist(s) that inform design decisions like color contrast.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Not every component offers guidelines in each category, so omit headings that lack content.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/2.png" alt="Illustration of design guidelines of varying sections">
+        </div>
+        <figcaption class="escom-article-figure__caption">Different components can result in different available guidelines. Hide headers of empty sections.</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;With a common structure, a component page’s local navigation (such as a sticky right link list) signals what’s there and anchors to each section.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;use-when&quot;&gt;Use When&lt;/h3&gt;
+&lt;p&gt;While a component introduction may hint at relevant use, rely on a Use When section to illustrate the many cases when to use or not use a component.&lt;/p&gt;
+&lt;p&gt;While some systems opt for “When to Use” as a heading, that’s not my style. “Use When” affords a consistent and more succinct structure by beginning with a gerund (verb ending in “…ing”) like &lt;em&gt;Displaying…&lt;/em&gt;, &lt;em&gt;Requiring…&lt;/em&gt;, &lt;em&gt;Grouping…&lt;/em&gt;, or &lt;em&gt;Loading…&lt;/em&gt;. Examples include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Displaying options within a Menu.&lt;em&gt; (Morningstar’s &lt;/em&gt;&lt;a href=&quot;http://designsystem.morningstar.com/components/list-groups.html#use-when-1&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;List Group&lt;/em&gt;&lt;/a&gt;&lt;em&gt;)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Highlighting an item’s status for quick recognition.&lt;em&gt; (Atlassian’s &lt;/em&gt;&lt;a href=&quot;https://atlassian.design/guidelines/product/components/lozenges&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Lozenges&lt;/em&gt;&lt;/a&gt;&lt;em&gt;)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Making an image fill the available space while not exceeding the actual image dimensions.&lt;em&gt; (Australian Government Design System’s &lt;/em&gt;&lt;a href=&quot;https://designsystem.gov.au/components/responsive-media/&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Responsive Media&lt;/em&gt;&lt;/a&gt;&lt;em&gt;)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Highlighting short, indeterminate activities (between 2–5 seconds). Longer activities may require alternate methods of communication, such as snackbars or notifications. &lt;em&gt;(Google Material &lt;/em&gt;&lt;a href=&quot;https://material.io/design/components/progress-indicators.html#circular-progress-indicators&quot; rel=&quot;noopener nofollow&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Progress Indicator&lt;/em&gt;&lt;/a&gt;&lt;em&gt;)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As contrasting examples arise, clarify what not to do. These &lt;strong&gt;Don’t Use When&lt;/strong&gt; items are written in the same voice within a sibling or descendant group.&lt;/p&gt;
+&lt;h3 id=&quot;visual-style&quot;&gt;Visual Style&lt;/h3&gt;
+&lt;p&gt;Visual style guidelines help designers tailor style given their conditions. Topics include color, typography, iconography, borders, space, size, and other visual properties. Just as common, this section elaborates on how to arrange multiple instances (example: aligning primary and multiple secondary buttons) and relate the component to adjacent elements.&lt;/p&gt;
+&lt;p&gt;Examples include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Place a primary button rightmost in a group of buttons.&lt;em&gt; (USAC Indigo’s &lt;/em&gt;&lt;a href=&quot;https://indigo.universalservice.org/latest/components/buttons.html#use-guidelines&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Button&lt;/em&gt;&lt;/a&gt;&lt;em&gt;)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Adjust opacity across interactive states to suit [the Button’s] background color.&lt;/li&gt;
+&lt;li&gt;Always center a stepper above content.&lt;em&gt; (Morningstar’s &lt;/em&gt;&lt;a href=&quot;http://designsystem.morningstar.com/components/steppers.html#visual-style-1&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Stepper&lt;/em&gt;&lt;/a&gt;&lt;em&gt;)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Visual style guidelines are &lt;em&gt;not&lt;/em&gt; specs. Avoid the temptation to make this section the final destination of excessive redlines. Specs are for important for an engineer building the component. However, by the time readers encounter this documentation, such visual details are &lt;em&gt;already built into the available feature&lt;/em&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;behavior&quot;&gt;Behavior&lt;/h3&gt;
+&lt;p&gt;Whether or not your built component offers heavy logic built in, a Behavior section offers you the opportunity to elaborate on all the interactive details useful for a designer crafting an experience. Examples include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Close the popover when the trigger UI element is clicked again, when the user clicks outside the popover panel, when the user opens a different popover, or when the user presses the ESC key.&lt;em&gt; (NetApp LUCI’s &lt;/em&gt;&lt;a href=&quot;http://luci.netapp.com/components/popovers.html&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Popover&lt;/em&gt;&lt;/a&gt;&lt;em&gt;)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If a library is only offering HTML &amp;amp; CSS without logic built-in, a Behavior section may balloon to offer guidance for designers and engineers alike. Content may take a more structured tone, such as tables offering potential events and associated outcomes.&lt;/p&gt;
+&lt;h3 id=&quot;editorial&quot;&gt;Editorial&lt;/h3&gt;
+&lt;p&gt;Whether atomic (like a &lt;em&gt;Button&lt;/em&gt; or &lt;em&gt;Input&lt;/em&gt;) or composable (like a &lt;em&gt;Card&lt;/em&gt; or &lt;em&gt;Menu&lt;/em&gt;), components almost always have words or images. The Editorial section can offer advice on labels, tone, length, punctuation, and writing samples. Examples include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use placeholder text to provide additional context around the data being searched.&lt;em&gt; (Morningstar’s &lt;/em&gt;&lt;a href=&quot;http://designsystem.morningstar.com/components/search-fields.html#visual-language-1&quot; rel=&quot;noopener nofollow&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Search Fields&lt;/em&gt;&lt;/a&gt;&lt;em&gt;)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Use sentence case, with only the first word in a phrase and any proper nouns capitalized.&lt;em&gt; (IBM Carbon’s &lt;/em&gt;&lt;a href=&quot;http://carbondesignsystem.com/components/checkbox/style&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;&lt;em&gt;Checkbox&lt;/em&gt;&lt;/a&gt;&lt;em&gt;)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Editorial guidelines in particular benefit from do and don’t samples a reader can compare and against which model their own writing.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;top-tips-for-writing-effective-design-guidelines&quot;&gt;Top Tips for Writing Effective Design Guidelines&lt;/h3&gt;
+&lt;p&gt;Voice and tone guidelines vary by design system. As a team begins authoring, I’ll propose the following conventions as a starting point:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Write imperatives&lt;/strong&gt; that begin with words like &lt;em&gt;Hide…&lt;/em&gt;, &lt;em&gt;Include…&lt;/em&gt;, &lt;em&gt;Prevent…&lt;/em&gt;, &lt;em&gt;Limit…&lt;/em&gt;, and &lt;em&gt;Enable…&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Omit needless words&lt;/strong&gt;. If you can say something with fewer words, do so.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Assert non-negotiables&lt;/strong&gt; with &lt;em&gt;Always…&lt;/em&gt; or &lt;em&gt;Never…&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Encourage a reader’s judgment&lt;/strong&gt; with &lt;em&gt;Consider…&lt;/em&gt; or &lt;em&gt;Avoid…&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Succinctly redirect&lt;/strong&gt; to an appropriate alternative with a subsequent sentence beginning with “Instead, use Tooltip.”&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Favor positives over negatives&lt;/strong&gt; , such as “Always include a logo in global navigation” over “Never omit a logo from global navigation.”&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Favor lists over paragraphs&lt;/strong&gt;. Readers want to learn quickly or find an item. So don’t bury advice in dense prose unless absolutely necessary.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Limit guidelines length&lt;/strong&gt; to two sentences or less.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Favor specific advice&lt;/strong&gt; that’s objective, concise and often quantitative over subjective, qualitative, and laborious explanations.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Early on, good habits elude writers. Initial editorial passes across &lt;em&gt;Button&lt;/em&gt;, &lt;em&gt;Input&lt;/em&gt;, and &lt;em&gt;Tooltip&lt;/em&gt; can result in a bloody mess of Google Doc suggestions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Before&lt;/strong&gt;: Really wide logos and site labels can result in degraded displays, hindering usability and being inconsistent with other presentations by causing unnecessary wrapping or taking up too much space. Therefore, try to keep logos less than 100 pixels wide and don’t let labels get too long.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;After&lt;/strong&gt;: Limit product identity to a logo &amp;lt; 100px wide or a text label ≤ 15 characters long.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Stay earnest, my editing friends. Authors adjust by accepting edits, iterating, and adapting to conventions as they author the next component. These writing patterns will take hold, sometimes gradually for authors but quickly for readers.&lt;/p&gt;
+&lt;hr&gt;
+
+
+  
+
+    <figure class="escom-article-figure escom-article-figure--full-width">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/3.png" alt="Illustration">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;h2 id=&quot;enhance-with-the-pictures&quot;&gt;Enhance with the Pictures&lt;/h2&gt;
+&lt;p&gt;A picture is worth 1,000 words. Or, at least it’s often over the many, many words it replaces, especially for the most important advice you impart.&lt;/p&gt;
+&lt;p&gt;As you write or edit design guidelines, your inner voice should consistently challenge each bullet point, paragraph, or heading with:&lt;/p&gt;
+
+
+  
+
+
+
+        <div class="escom-bar-quote">
+            “Would a picture work better here? If so, is it worth it?”
+        </div>
+
+
+
+  &lt;p&gt;Make no mistake, pictures are more expensive to compose, adjust, and content manage than jotting down a few words. Too many images can create an overwhelming scrolled experience down a documentation page. Images get out of date too, creating maintenance headaches.&lt;/p&gt;
+&lt;p&gt;So find the right balance of words and pictures, such as 1 picture for every 5 to 10 copy-only guidelines. As you author, always be mindful of how you can enhance storytelling with captioned images, Do’s and Don’ts, and other custom options at your disposal.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;do-use-dos-and-donts-especially-comparatively&quot;&gt;Do Use Do’s and Don’ts, Especially Comparatively&lt;/h3&gt;
+&lt;p&gt;As I edit, vital or wordy guideline bullets often trigger a comment of &amp;quot;Consider a Do/Don’t.”&lt;/p&gt;
+&lt;p&gt;Do/Don’ts provide a welcome break from tomes of text. The blocks are definitive, concise, focused, and scannable. Each pairs an image with a succinct guideline prepended with a Do or Don’t imperative and accented green or red. Clarity isn’t difficult, and the pattern is eminently reusable in any section.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/4.png" alt="Two examples, contrasting a do with a don&#39;t">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;As the name implies, optimal Do/Don’ts pair one next to the other. Sure, any number of Do’s followed by any number of Don’ts can work. But enabling the reader to ping pong visually left and right reinforces a memorable teaching point. As a result, consider limiting Do/Don’ts to two per row.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/5.png" alt="Do and don&#39;t presented as checklists">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;Authoring Do’s and Don’ts benefits from a standard height and width just under 50% of the content well, suggesting a design template (like a Sketch file with premade artboards) for asset creation. Sometimes that 4x3ish image ratio is an unwelcome constraint for larger or horizontally oriented images. Therefore, consider a full-width Do/Don’t variant as an alternative.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/6.png" alt="A Do presented without a don&#39;t">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;Do/Don’t work great for words and code snippets, too. The usual suspect triggering my system teams to extend the Do/Don’t display to accommodate words? Error messages, often as a stack of sensitizing examples, as seen on sites like &lt;a href=&quot;https://polaris.shopify.com/content/grammar-and-mechanics#section-punctuation&quot;&gt;Shopify Polaris&lt;/a&gt; and &lt;a href=&quot;http://designsystem.morningstar.com/ux-patterns/errors.html#editorial-1&quot;&gt;Morningstar&lt;/a&gt;.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/7.png" alt="Do and don&#39;t examples presented as words">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;Even Do/Don’t hedging is appearing in the form of cautionary stories accented with yellow or orange, as seen on &lt;a href=&quot;https://material.io/design/components/buttons.html#text-button&quot;&gt;Google Material&lt;/a&gt;.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/8.png" alt="A caution contrasted with a don&#39;t">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;hr&gt;
+&lt;h3 id=&quot;enrich-storytelling-with-compelling-if-expensive-custom-demos&quot;&gt;Enrich Storytelling with Compelling if Expensive Custom Demos&lt;/h3&gt;
+&lt;p&gt;As an investment in design guidelines deepens, so to does a team’s willingness to invest in more custom exhibits, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Low-fidelity diagrams&lt;/strong&gt; of component examples (example: &lt;a href=&quot;http://www.lightningdesignsystem.com/guidelines/loading/&quot;&gt;Salesforce Lightning Loading&lt;/a&gt;), flows or states. As a supplement to coded, full-fidelity examples nearby, such storytelling can be less expensive to produce and focus a reader on elements relevant to the story.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Videos&lt;/strong&gt; , &lt;strong&gt;animated GIFs&lt;/strong&gt; , and other &lt;strong&gt;custom demos&lt;/strong&gt; that capture an arc of interaction, animation, or quick looping sample. (Example: &lt;a href=&quot;https://material.io/design/motion/speed.html#duration&quot;&gt;Google Material Motion&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Additional &lt;strong&gt;live code examples&lt;/strong&gt; , enriching understanding beyond the list of variations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Admittedly, custom demos are rare across most component pages across most design systems. It’s usually more expensive, may slow down authoring, and usually requires tools and assets less familiar or available to authors. Therefore, pick your moments, but don’t hesitate when the teachable moment warrants investment.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;avoid-redundancy-with-coded-examples&quot;&gt;Avoid Redundancy with Coded Examples&lt;/h3&gt;
+&lt;p&gt;If readers have already encountered a list of rendered examples with code equivalents (as suggested in &lt;a href=&quot;/articles/component-examples.html&quot;&gt;Component Examples&lt;/a&gt;), strongly avoid repeating the examples in design guidelines to tell the same story. Such examples — effectively labeled and ideally coupled with succinct “Use When”-style statements — have already exhibited the range of relevant cases.&lt;/p&gt;
+&lt;p&gt;Therefore, reserve the Design Guidelines for deeper storytelling that elaborates on rather than repeats what the examples have already taught.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&quot;/articles/component-examples.html&quot;&gt;&lt;strong&gt;#3. Examples&lt;/strong&gt;&lt;/a&gt; ← Previous | Next → &lt;strong&gt;#5. Code Guidelines&lt;/strong&gt;&lt;/p&gt;
+
+
+
+        </div>
+    </div>
+    
+
+<div class="esds-row esds-container--light esds-row--tall-inset">
+    <div class="esds-row__inner escom-footer-systems__row">
+        <div class="escom-long-form-text">
+            <h2>@components</h2>
+            <p class="escom-long-form-text__lead">The complete collection of EightShapes writings on design systems, here for free. Follow <a href="https://twitter.com/components">@components</a> on Twitter for updates and new articles.</p>
+        </div>
+        <div class="escom-footer-systems__columnset">
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Visual Style</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Documentation</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">UI Components</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Releases</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Strategy</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Contributions</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Systems of Systems</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Process</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">People</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Workshop Activities</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+    
+
+    
+
+<div class="esds-row esds-row esds-row--tall-inset esds-container--brand escom-cta escom-cta--components-publication escom-page-type--marketing"
+    
+    >
+    <div class="esds-row__inner">
+        
+            
+        <div class="escom-long-form-text">
+            <h2>Need help with your system?</h2>
+            
+            <p class="escom-long-form-text__lead">EightShapes can energize your efforts to coach, workshop, assess or partner with you to design, code, document and manage a system.</p>
+            
+        </div>
+        
+        <div class="escom-cta__action">
+        
+    
+
+    <a class="esds-button esds-button--secondary esds-button--large escom-cta__action-button"  href=/design-systems.html>
+        
+        
+            Learn More
+        
+        
+    </a>
+
+        </div>
+        
+    
+        
+    </div>
+</div>
+
+
+
+
+
+        
+
+    
+
+<div class="esds-row esds-container--dark escom-site-footer esds-row--tall-inset"
+    
+    >
+    <div class="esds-row__inner">
+        
+            
+    
+        <div class="escom-site-footer__row">
+            <div class="escom-site-footer__column">
+                
+    
+
+    <svg class="esds-icon escom-site-footer__logo" >
+        
+        <use xlink:href="/icons/esds.svg#eightshapes-logo"></use>
+    </svg>
+
+                <div class"escom-site-footer__address-row">12805 Misty Creek Lane</div> 
+                <div class"escom-site-footer__address-row">Fairfax, VA 22033</div>
+            </div>
+            <div class="escom-site-footer__column escom-site-footer__column--offset">
+                <a class="escom-site-footer__link" tel="703.296.8831"> (703) 296-8831</a>
+                <a class="escom-site-footer__link" href="mailto:info@eightshapes.com">info@eightshapes.com</a>
+            </div>
+            <div class="escom-site-footer__column escom-site-footer__column--offset">
+                <a class="escom-site-footer__social-link" href="https://twitter.com/eightshapes">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--twitter" >
+        
+        <use xlink:href="/icons/esds.svg#twitter"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@eightshapes</span>
+                </a>
+                <a class="escom-site-footer__social-link" href="https://www.linkedin.com/company/eightshapes-llc">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--linkedin" >
+        
+        <use xlink:href="/icons/esds.svg#linkedin"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@EightShapes</span>
+                </a>
+                <a class="escom-site-footer__social-link" href="https://medium.com/eightshapes-llc">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--medium" >
+        
+        <use xlink:href="/icons/esds.svg#medium"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@eightshapes</span>
+                </a>
+            </div>
+        </div>
+
+    
+        
+    </div>
+</div>
+
+
+
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        
+        <script src="/dist/escom.js"></script>
+          <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-1201194-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+  </script>
+
+    </body>
+</html>

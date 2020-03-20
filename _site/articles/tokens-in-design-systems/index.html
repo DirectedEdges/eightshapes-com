@@ -1,0 +1,561 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+        <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+        <meta http-equiv="cleartype" content="on">
+
+        <title>EightShapes &gt; @components &gt; undefined</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="/dependencies/esds.css"> <!-- copied from esds-library dependency -->
+        <link rel="stylesheet" href="/dist/escom.css">
+
+        
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700&display=swap" rel="stylesheet">
+  <!-— facebook open graph tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.eightshapes.com/articles/.html" />
+  <meta property="og:title" content="post Title" />
+  <meta property="og:description" content="false" />
+  
+
+  <!-— twitter card tags additive with the og: tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:domain" value="eightshapes.com" />
+  <meta name="twitter:title" value="post Title" />
+  <meta name="twitter:description" value="false" />
+  
+  <meta name="twitter:url" value="https://www.eightshapes.com/articles/.html" />
+
+  <!-- No Shadow DOM, so link directly to styles -->
+  <link rel="stylesheet" href="/styles/dependencies/esds-code-snippet.css"/>
+
+  <!-- Separate webcomponents polyfill bundle for Edge, IE11, etc. -->
+  <script type="text/javascript" src="/scripts/dependencies/custom-elements.min.js"></script>
+
+  <!-- ESDS Doc components -->
+  <!-- The ESM "vanilla" version of the component for FF, Safari, Chrome and Edge -->
+  <script type="module" src="/scripts/dependencies/esds-code-snippet-web-component.js"></script>
+
+  <!-- A babel-compiled version of the component for IE11 -->
+  <script nomodule type="text/javascript" src="/scripts/dependencies/esds-code-snippet-legacy.js"></script>
+
+    </head>
+    <body class="">
+        
+    
+    
+    
+
+    
+    <div class="esds-row esds-container--brand esds-breadcrumb esds-row--no-inset">
+        <div class="esds-row__inner">
+            <h1 class="esds-breadcrumb__brand">
+                <a href="/" class="esds-breadcrumb__link">
+                    
+    
+
+    <svg class="esds-icon esds-breadcrumb__brand-mark" >
+        
+        <use xlink:href="/icons/esds.svg#eightshapes-logo"></use>
+    </svg>
+
+                </a>
+                
+                <a href="/components/" class="esds-breadcrumb__link">
+                    
+    
+
+    <svg class="esds-icon esds-breadcrumb__delimiter" >
+        
+        <use xlink:href="/icons/esds.svg#angle-right"></use>
+    </svg>
+
+                    <span class="esds-breadcrumb__crumb-section">@components</span>
+                </a>
+                
+            </h1>
+        </div>
+    </div>
+
+
+    <div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
+        <div class="esds-row__inner">
+            <div class="escom-article__author-row">
+                <div class="escom-article__author-avatar"
+                    style="background-image: url('/images/bios/bio-thumb-.png')">
+                </div>
+                <div class="escom-article__author-text">
+                    <p class="escom-article__author">
+                        <a href=""></a>
+                    </p>
+                    <p class="escom-article__author-role">
+                        
+                    </p>
+                    <p>
+                        <span class="escom-article__published-date">
+                            Originally published false •
+                        </span>
+                        <span class="escom-article__read-duration">
+                            falsemin
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="escom-article__title-row escom-article__title-row--no-masthead-next">
+                <h1 class="escom-article__title">post Title</h1>
+                
+            </div>
+
+    
+
+    
+    &lt;p&gt;In a recent code review, my passions stirred as I walked through a &lt;em&gt;Pill&lt;/em&gt; component’s style with a designer teammate. I could hardly contain my excitement:&lt;/p&gt;
+&lt;script src=&quot;https://gist.github.com/nathanacurtis/2ec08026c75e280d558d65e472f6b465.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;“Look. Yes, it’s code, but look closely at those tokens. You know what this looks like? Like specs! So what? I can read this, as can you. And we can thread these everywhere: doc, designs, and convos too. &lt;em&gt;Everywhere&lt;/em&gt;!“&lt;/p&gt;
+&lt;p&gt;My teammate’s reaction hinted curiosity, even if didn’t match my outburst’s emotional punch. He’s not a system’s geek like me. Not yet, at least. But he got what mattered: there’s a visible path for decisions we make to where they are implemented.&lt;/p&gt;
+&lt;p&gt;We’ve spent so much effort trying to get design &lt;em&gt;out&lt;/em&gt; of our variables — those most atomic of reusable code bits — I felt instantaneously attracted to the idea of putting design back in.&lt;/p&gt;
+&lt;p&gt;Here’s how we evolved, architected, and implemented tokens throughout design, code and collaboration.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;from-variables-to-tokens&quot;&gt;From Variables to Tokens&lt;/h2&gt;
+&lt;p&gt;Every design system offers &lt;strong&gt;&lt;em&gt;options&lt;/em&gt;&lt;/strong&gt;. For example, colors can scale from black through neutrals to white. Each neutral — identified via a HEX code like &lt;code&gt;#2B303B&lt;/code&gt; — can be stored and made available in a variable &lt;code&gt;$color-neutral-20&lt;/code&gt;, for use in a preprocessor like Sass.&lt;/p&gt;
+&lt;script src=&quot;https://gist.github.com/nathanacurtis/001acf3297a30179ced491349ba6de1c.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Variables take the mystery out of obscure values. But they don’t bridge the gap between naming and use. They answer “What options do I have?” yet leave “What choice do I make?” unclear.&lt;/p&gt;
+&lt;p&gt;Options aren’t good enough.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;design-decisions-an-option-applied-to-a-context&quot;&gt;Design Decisions, an Option Applied to a Context&lt;/h3&gt;
+&lt;p&gt;A system’s strength comes from knowing how to apply options (like &lt;code&gt;$color-neutral-20&lt;/code&gt;) to contexts (like a conventional dark background color). This grounds the option as a &lt;strong&gt;&lt;em&gt;decision&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Those are decisions I can use with confidence!&lt;/p&gt;
+&lt;p&gt;However, such decisions are usually still buried in some file in some repo used by &lt;em&gt;developers&lt;/em&gt; working on the &lt;em&gt;web-based&lt;/em&gt; product they own. What about &lt;em&gt;designers&lt;/em&gt;? Other web &lt;em&gt;products&lt;/em&gt;? Across to other platforms like &lt;em&gt;iOS&lt;/em&gt; and &lt;em&gt;Android&lt;/em&gt;? We’ve encoded decisions meant for everyone, but they owned in some dungeon of a repo nobody else can find.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;design-tokens-decisions-propagated-through-a-system&quot;&gt;Design Tokens, Decisions Propagated Through a System&lt;/h3&gt;
+&lt;p&gt;Salesforce UX provides a glimpse. Their ideas captivate me, most of all their &lt;a href=&quot;https://medium.com/salesforce-ux/living-design-system-3ab1f2280ef7#.r26jko9u3&quot;&gt;Living Style Guide&lt;/a&gt; concept that applies &lt;a href=&quot;https://www.lightningdesignsystem.com/tokens/&quot;&gt;Design Tokens&lt;/a&gt; across products using their open source &lt;a href=&quot;https://github.com/salesforce-ux/theo&quot;&gt;Theo&lt;/a&gt; tool.&lt;/p&gt;
+&lt;p&gt;Here, options and decisions aren’t buried in Sass files. Instead, they are centralized and propagated as &lt;strong&gt;&lt;em&gt;tokens&lt;/em&gt;&lt;/strong&gt; to any product, designer or developer adopting the system, in easy-to-use, predictable formats.&lt;/p&gt;
+&lt;p&gt;Hundreds of tokens can become readable, intentional, and traceable decisions woven into a portfolio’s or enterprise’s products.&lt;/p&gt;
+&lt;p&gt;See the decisions as a big spec sheet? I can. Designers can too. With such visibility and tooling, they recognize the impact of their decisions. Before, we decided on &lt;code&gt;$color-neutral-80&lt;/code&gt; for a border or background with a bit of whimsy. Now, we’re applying &lt;code&gt;$border-hairline&lt;/code&gt; or a &lt;code&gt;$background-color-light&lt;/code&gt; in a thoughtful, conventional manner.&lt;/p&gt;
+&lt;p&gt;Designers start to collaborate. They make decisions with more deliberation and confidence, organized their thoughts in a structure they share. Developers follow suit.&lt;/p&gt;
+&lt;p&gt;This can transform painstaking activities like redlines and pixel measuring into collaboration rich with token talk. Across our work — critiquing design concepts, writing acceptance criteria, reviewing pull requests — the &lt;strong&gt;architecture&lt;/strong&gt; and &lt;strong&gt;implementation&lt;/strong&gt; of tokens is ever-present.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;architecting-tokens&quot;&gt;Architecting Tokens&lt;/h2&gt;
+&lt;p&gt;A successful, enduring token architecture depends on straightforward grouping, ordering, classification and decision-making.&lt;/p&gt;
+&lt;h3 id=&quot;1-show-options-first-then-decisions-next&quot;&gt;#1. Show Options First, Then Decisions Next&lt;/h3&gt;
+&lt;p&gt;You can’t make decisions without options. Tokens are an effective instrument for illustrating the path from one to the other.&lt;/p&gt;
+&lt;script src=&quot;https://gist.github.com/nathanacurtis/0e02631e1e47c0c5c1d061e5462cb557.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;In our token files, we begin with options like available colors. After that, we apply options to contexts like &lt;code&gt;text-color&lt;/code&gt; and &lt;code&gt;background-color&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Organize your decisions to suggest their atomic basis: building from options to decisions and simple to complex.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;2-start-with-color--font-and-dont-stop-there&quot;&gt;#2. Start with Color &amp;amp; Font, and Don’t Stop There!&lt;/h3&gt;
+&lt;p&gt;I often talk of a design language’s big three: color, typography, and iconography. So it’s no surprise that our token file begins with color and type options and decisions (icons are automated elsewhere). However, visual style is composed of so much more, and so could tokens.&lt;/p&gt;
+&lt;p&gt;While we’ll start with applying color to background and text, we’ll expand to many other types of decisions, including things like:&lt;/p&gt;
+&lt;script src=&quot;https://gist.github.com/nathanacurtis/39c9a3bcc5cbf25f3c236be5f620ed9b.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Start with but don’t stall with just color &amp;amp; type. Expand your decisions to cover the myriad concerns of a design language.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;3-vary-options-across-meaningful-scales&quot;&gt;#3. Vary Options Across Meaningful Scales&lt;/h3&gt;
+&lt;p&gt;Many tokenized concepts include scales to choose from, such as t-shirt sizing (&lt;code&gt;XS&lt;/code&gt;, &lt;code&gt;S&lt;/code&gt;, &lt;code&gt;M&lt;/code&gt;, &lt;code&gt;L&lt;/code&gt;, &lt;code&gt;XL&lt;/code&gt;, &lt;code&gt;XXL&lt;/code&gt;), progressions (like a geometric &lt;code&gt;2&lt;/code&gt;, &lt;code&gt;4&lt;/code&gt;, &lt;code&gt;8&lt;/code&gt;, &lt;code&gt;16&lt;/code&gt;, &lt;code&gt;32&lt;/code&gt;, &lt;code&gt;64&lt;/code&gt;), or custom terminology (like &lt;code&gt;compact&lt;/code&gt;, &lt;code&gt;cozy&lt;/code&gt;, and &lt;code&gt;comfortable&lt;/code&gt;). Scales can also start with a few options (only &lt;code&gt;S&lt;/code&gt; &amp;amp; &lt;code&gt;M&lt;/code&gt;) and grow to include more as warranted.&lt;/p&gt;
+&lt;script src=&quot;https://gist.github.com/nathanacurtis/d2d2984de8a56700154024df1d3e1f45.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Scales afford branching a token hierarchy to similar yet distinct variants, such as enriching &lt;code&gt;space-inset&lt;/code&gt; (from &lt;code&gt;XS&lt;/code&gt; to &lt;code&gt;XL&lt;/code&gt;) to variants of &lt;code&gt;space-inset-squish&lt;/code&gt; and &lt;code&gt;space-inset-stretch&lt;/code&gt; (both of which also offer &lt;code&gt;XS&lt;/code&gt; to &lt;code&gt;XL&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Agreeing on a scaling model — t-shirts or progressions, you decide! — for ranges like these is a team-specific endeavor. Even tougher, you’ll need to avoid hardened scales not resilient to inserting a step in between later.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Adopt and tokenize scales and demonstrate how they apply across different scenarios.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;4-invite-contribution-but-curate-the-collection&quot;&gt;#4. Invite Contribution, but Curate the Collection&lt;/h3&gt;
+&lt;p&gt;When does a choice warrant becoming a token? A single use: nope, not enough. A second may lack conviction. But three? If it shows up that much, it’s usually token-worthy. Exceptions exist, but “Used 3 times?” criteria grounds discussion.&lt;/p&gt;
+&lt;p&gt;So who’s the token gatekeeper? Nobody, if we employ healthy processes for design and dev reviews. Anyone can propose tokens, surfacing candidates in a concept or pull requests. Our Slack channel has much token talk, too.&lt;/p&gt;
+&lt;p&gt;Nevertheless, I serve as a token &lt;em&gt;curator&lt;/em&gt;, scanning work with an eye for token candidates. I may skim a request’s markup and skip the JavaScript. However, I thoroughly scan style and token files to finesse names, reclassify wayward nominees, and challenge excessive expansion. Everyone has a token voice. But not everyone cares enough or has time to keep tokens clean.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Make tokens a team endeavor, and (even if implicitly) designate a structured architectural mind to curate the collection.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;5-graduate-decisions-from-components-to-tokens&quot;&gt;#5. Graduate Decisions from Components to Tokens&lt;/h3&gt;
+&lt;p&gt;It’s a distraction to divert brainpower to constantly think tokens, tokens, tokens. “Should this be a new token? Is that a token? I’m not using a token? Oh no!” Nobody needs this friction.&lt;/p&gt;
+&lt;p&gt;However, my teammate Kevin Powell has a healthy habit of stockpiling variables at the top of a component style file. For example, a portion of variables in use in his &lt;em&gt;form&lt;/em&gt; component’s style identify many applications of text color to form elements like inline errors, input, labels, and placeholder text.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure escom-article-figure--break-bleed">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/2.png" alt="Comparative code display showing variables and a hierarchy of yaml code">
+        </div>
+        <figcaption class="escom-article-figure__caption">Emerging component file on the left, with file-specific variables at the top easy to compare with and consider for the tokens file on the right.</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;These component-specific variables offer a helpful inventory of candidates to graduate to the token library. Here, we can catch an opportunity to replace a less-specific disabled color of &lt;em&gt;$color-neutral-90&lt;/em&gt; with it’s more intentional &lt;em&gt;$background-color-disabled&lt;/em&gt; in the &lt;em&gt;form_elements.styl&lt;/em&gt; file. On the other hand, the component’s &lt;em&gt;$border-color-input-hover&lt;/em&gt; is less likely for reuse beyond forms and thus a poor token candidate.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Encourage habits in design and development that park reusable decisions — token &lt;em&gt;candidates&lt;/em&gt; — in a predictable place such as the top of a text file or corner of design art.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;6-cope-with-systemic-change-predictably&quot;&gt;#6. Cope with Systemic Change Predictably&lt;/h3&gt;
+&lt;p&gt;Tokens are a wonderful tool as you formulate a pristine system from scratch. But what about 18 months from now, when design decisions evolve? How does a token change cascade? What are the risks, and how do you mitigate them?&lt;/p&gt;
+&lt;p&gt;Tokens protect you from unpredictable, widespread change given their specificity and – as a result – more limited and intentional use.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/3.png" alt="Screenshot of a UI dialog searching for a variable">
+        </div>
+        <figcaption class="escom-article-figure__caption">Searching for a generic variable</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;Previously, you comb and assess a repository for a &lt;em&gt;#2B303B&lt;/em&gt; hex code or &lt;em&gt;$color-neutral-20&lt;/em&gt; variable applied to myriad different elements. Boo!&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/4.png" alt="Screenshot of searching for a specific term">
+        </div>
+        <figcaption class="escom-article-figure__caption">Searching for a specific decision.</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;Now, you’re tracing the breadth of use of &lt;em&gt;$text-color-microcopy&lt;/em&gt; precisely and narrowing risk. Yes!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Take advantage of a token’s maintenance benefits, and use that as a selling point to your adopting team.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;implementing-tokens&quot;&gt;Implementing Tokens&lt;/h2&gt;
+&lt;p&gt;Most teams start consolidating decisions as a huge stack of predictable, hierarchical variables names in a SASS or Stylus file. But that file buries decisions in one place, limiting use to that technology.&lt;/p&gt;
+&lt;p&gt;That leaves the promise of tokens unfulfilled. A first step in spreading tokens throughout a system is freeing them with an open format like JSON.&lt;/p&gt;
+&lt;h3 id=&quot;7-make-token-data-reusable-via-json&quot;&gt;#7. Make Token Data Reusable, via JSON&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/JSON&quot;&gt;JSON&lt;/a&gt; is an ideal open standard for encoding hierarchical name/value pairs for reuse across tools.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/5.png" alt="Diagram of JSON data converted into SASS, LESS, and Stylus">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;With tokens in JSON, you can transform decisions for multiple preprocessors — SASS, Stylus and LESS — as your community requires. This opens the door to products constrained to a preprocessor they can’t or won’t leave behind, even if it’s not the system’s “recommended” one.&lt;/p&gt;
+&lt;p&gt;Similarly, JSON creates a bridge to other platforms, whether directly consumed in iOS work or transformed into XML for Android teams.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/6.png" alt="Diagram of JSON data being converted to formats relevant to platforms like web, iOS and Android">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Encode tokens in a format reusable across platforms, exposing them in a form everyone can use.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;8-manage--read-token-data-easily-via-yaml&quot;&gt;#8. Manage &amp;amp; Read Token Data Easily, via YAML&lt;/h3&gt;
+&lt;p&gt;JSON is powerful, hierarchical, and flexible. However, it’s imperfect as a place to &lt;em&gt;manage&lt;/em&gt; data. Syntax is verbose, prone to error when manually curated, lacks comment support, and lacks variables.&lt;/p&gt;
+&lt;p&gt;Enter &lt;a href=&quot;https://en.wikipedia.org/wiki/YAML&quot;&gt;YAML&lt;/a&gt;, a more human-readable language for recording hierarchical property/value pairs. YAML adds variables and comments to JSON’s hierarchical capability in a more readable format. YAML helps quickly &lt;em&gt;show&lt;/em&gt; tokens readably to any audience and its simplicity opens a border for designers to suggest new values and even submit pull request themselves.&lt;/p&gt;
+&lt;p&gt;Our team uses &lt;a href=&quot;https://www.npmjs.com/package/yamljs&quot;&gt;yamljs&lt;/a&gt; to transform the YAML data we manage as a single-source-of-truth into a JavaScript object as a step of our build process.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/7.png" alt="Diagram illustrating how design decisions stored in YAML are propagated to other formats">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Consider YAML to empower designers to engage with and &lt;em&gt;work in code&lt;/em&gt;, drawing them closer to code and those that use code.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;9-automate-documentation-with-token-data&quot;&gt;#9. Automate Documentation with Token Data&lt;/h3&gt;
+&lt;p&gt;Embedding design decisions in code isn’t valuable if designers and developers don’t know what the decisions are and how to access them. That’s why we use tokens as &lt;em&gt;content&lt;/em&gt; as much as we do &lt;em&gt;code&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In our systems, we thread tokens as a data structure (think: JSON) into templates to show decisions in a tokens reference and other topics like space and themed buttons.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/8.png" alt="Screenshot of a macros in nunjucks that reuse collections of tokens">
+        </div>
+        <figcaption class="escom-article-figure__caption">Basic templates for documentation site, powered by token data</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;Other documentation is more customized, such as a color tint stack that includes names, accessibility scores, and more. While not a simple loop through token hierarchy, the documentation can still use tokens directly.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Use tokens to enrich how living your living guide can be.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;10-embed-token-data-in-design-tools-too&quot;&gt;#10. Embed Token Data in Design Tools, Too&lt;/h3&gt;
+&lt;p&gt;Token data can inspire ideas for tools for not just developers, but designers too. We talk about building custom tools for our portfolio’s designer community in tools like &lt;strong&gt;Sketch&lt;/strong&gt; , &lt;strong&gt;Photoshop&lt;/strong&gt; , or (back in the day) &lt;strong&gt;InDesign&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Such software offers varyingly robust hooks to use JSON data to your advantage. For example, &lt;a href=&quot;https://www.invisionapp.com/&quot;&gt;InVision&lt;/a&gt;’s &lt;a href=&quot;https://www.invisionapp.com/craft&quot;&gt;Craft&lt;/a&gt; relies upon JSON objects stored as text in subfolders, suggesting a possible integration with outputs of our system’s build process. Such connections were effortful and siloed enough in the past that they’d be ignored. Today, they feel more realistic as a system matures.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Identify opportunities to extend the system into designer tools, especially design software. Consider costs — both setup and maintenance — relative to the benefits to your _system user_’s experience.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;The more my teams use tokens, the more at home I feel discussing design. Threading smart decisions encoded with meaningful names helps me trust the output of my team is arcing towards the aspiration of a more cohesive, maintainable system.&lt;/p&gt;
+
+
+
+        </div>
+    </div>
+    
+
+<div class="esds-row esds-container--light esds-row--tall-inset">
+    <div class="esds-row__inner escom-footer-systems__row">
+        <div class="escom-long-form-text">
+            <h2>@components</h2>
+            <p class="escom-long-form-text__lead">The complete collection of EightShapes writings on design systems, here for free. Follow <a href="https://twitter.com/components">@components</a> on Twitter for updates and new articles.</p>
+        </div>
+        <div class="escom-footer-systems__columnset">
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Visual Style</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Documentation</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">UI Components</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Releases</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Strategy</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Contributions</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Systems of Systems</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Process</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">People</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Workshop Activities</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+    
+
+    
+
+<div class="esds-row esds-row esds-row--tall-inset esds-container--brand escom-cta escom-cta--components-publication escom-page-type--marketing"
+    
+    >
+    <div class="esds-row__inner">
+        
+            
+        <div class="escom-long-form-text">
+            <h2>Need help with your system?</h2>
+            
+            <p class="escom-long-form-text__lead">EightShapes can energize your efforts to coach, workshop, assess or partner with you to design, code, document and manage a system.</p>
+            
+        </div>
+        
+        <div class="escom-cta__action">
+        
+    
+
+    <a class="esds-button esds-button--secondary esds-button--large escom-cta__action-button"  href=/design-systems.html>
+        
+        
+            Learn More
+        
+        
+    </a>
+
+        </div>
+        
+    
+        
+    </div>
+</div>
+
+
+
+
+
+        
+
+    
+
+<div class="esds-row esds-container--dark escom-site-footer esds-row--tall-inset"
+    
+    >
+    <div class="esds-row__inner">
+        
+            
+    
+        <div class="escom-site-footer__row">
+            <div class="escom-site-footer__column">
+                
+    
+
+    <svg class="esds-icon escom-site-footer__logo" >
+        
+        <use xlink:href="/icons/esds.svg#eightshapes-logo"></use>
+    </svg>
+
+                <div class"escom-site-footer__address-row">12805 Misty Creek Lane</div> 
+                <div class"escom-site-footer__address-row">Fairfax, VA 22033</div>
+            </div>
+            <div class="escom-site-footer__column escom-site-footer__column--offset">
+                <a class="escom-site-footer__link" tel="703.296.8831"> (703) 296-8831</a>
+                <a class="escom-site-footer__link" href="mailto:info@eightshapes.com">info@eightshapes.com</a>
+            </div>
+            <div class="escom-site-footer__column escom-site-footer__column--offset">
+                <a class="escom-site-footer__social-link" href="https://twitter.com/eightshapes">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--twitter" >
+        
+        <use xlink:href="/icons/esds.svg#twitter"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@eightshapes</span>
+                </a>
+                <a class="escom-site-footer__social-link" href="https://www.linkedin.com/company/eightshapes-llc">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--linkedin" >
+        
+        <use xlink:href="/icons/esds.svg#linkedin"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@EightShapes</span>
+                </a>
+                <a class="escom-site-footer__social-link" href="https://medium.com/eightshapes-llc">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--medium" >
+        
+        <use xlink:href="/icons/esds.svg#medium"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@eightshapes</span>
+                </a>
+            </div>
+        </div>
+
+    
+        
+    </div>
+</div>
+
+
+
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        
+        <script src="/dist/escom.js"></script>
+          <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-1201194-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+  </script>
+
+    </body>
+</html>

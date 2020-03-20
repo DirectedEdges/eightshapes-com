@@ -1,0 +1,538 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+        <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+        <meta http-equiv="cleartype" content="on">
+
+        <title>EightShapes &gt; @components &gt; undefined</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="/dependencies/esds.css"> <!-- copied from esds-library dependency -->
+        <link rel="stylesheet" href="/dist/escom.css">
+
+        
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700&display=swap" rel="stylesheet">
+  <!-— facebook open graph tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.eightshapes.com/articles/.html" />
+  <meta property="og:title" content="post Title" />
+  <meta property="og:description" content="false" />
+  
+
+  <!-— twitter card tags additive with the og: tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:domain" value="eightshapes.com" />
+  <meta name="twitter:title" value="post Title" />
+  <meta name="twitter:description" value="false" />
+  
+  <meta name="twitter:url" value="https://www.eightshapes.com/articles/.html" />
+
+  <!-- No Shadow DOM, so link directly to styles -->
+  <link rel="stylesheet" href="/styles/dependencies/esds-code-snippet.css"/>
+
+  <!-- Separate webcomponents polyfill bundle for Edge, IE11, etc. -->
+  <script type="text/javascript" src="/scripts/dependencies/custom-elements.min.js"></script>
+
+  <!-- ESDS Doc components -->
+  <!-- The ESM "vanilla" version of the component for FF, Safari, Chrome and Edge -->
+  <script type="module" src="/scripts/dependencies/esds-code-snippet-web-component.js"></script>
+
+  <!-- A babel-compiled version of the component for IE11 -->
+  <script nomodule type="text/javascript" src="/scripts/dependencies/esds-code-snippet-legacy.js"></script>
+
+    </head>
+    <body class="">
+        
+    
+    
+    
+
+    
+    <div class="esds-row esds-container--brand esds-breadcrumb esds-row--no-inset">
+        <div class="esds-row__inner">
+            <h1 class="esds-breadcrumb__brand">
+                <a href="/" class="esds-breadcrumb__link">
+                    
+    
+
+    <svg class="esds-icon esds-breadcrumb__brand-mark" >
+        
+        <use xlink:href="/icons/esds.svg#eightshapes-logo"></use>
+    </svg>
+
+                </a>
+                
+                <a href="/components/" class="esds-breadcrumb__link">
+                    
+    
+
+    <svg class="esds-icon esds-breadcrumb__delimiter" >
+        
+        <use xlink:href="/icons/esds.svg#angle-right"></use>
+    </svg>
+
+                    <span class="esds-breadcrumb__crumb-section">@components</span>
+                </a>
+                
+            </h1>
+        </div>
+    </div>
+
+
+    <div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
+        <div class="esds-row__inner">
+            <div class="escom-article__author-row">
+                <div class="escom-article__author-avatar"
+                    style="background-image: url('/images/bios/bio-thumb-.png')">
+                </div>
+                <div class="escom-article__author-text">
+                    <p class="escom-article__author">
+                        <a href=""></a>
+                    </p>
+                    <p class="escom-article__author-role">
+                        
+                    </p>
+                    <p>
+                        <span class="escom-article__published-date">
+                            Originally published false •
+                        </span>
+                        <span class="escom-article__read-duration">
+                            falsemin
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="escom-article__title-row escom-article__title-row--no-masthead-next">
+                <h1 class="escom-article__title">post Title</h1>
+                
+            </div>
+
+    
+
+    
+    &lt;p&gt;&lt;em&gt;#2 of 6 of the series Documenting Components:&lt;/em&gt;&lt;br&gt;&lt;a href=&quot;/articles/documenting-components.html&quot;&gt;Overview&lt;/a&gt; | &lt;strong&gt;Intros&lt;/strong&gt; | &lt;a href=&quot;/articles/component-examples.html&quot;&gt;Examples&lt;/a&gt; | &lt;a href=&quot;/articles/component-design-guidelines.html&quot;&gt;Design&lt;/a&gt; | Code | Authoring&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;component-names-my-name-is&quot;&gt;Component Names: “My name is…”&lt;/h2&gt;
+&lt;p&gt;Naming a thing well is essential, and sometimes hard.&lt;/p&gt;
+&lt;p&gt;A component’s name (&lt;em&gt;Buttons&lt;/em&gt;) appears as the page’s title, a label in site’s navigation (Buttons), and a code identifier of a CSS class (&lt;code&gt;-button&lt;/code&gt;) or HTML element name (&lt;code&gt;&amp;lt;Button&amp;gt;&lt;/code&gt;). &lt;em&gt;Button&lt;/em&gt; is easy. It’s a name we refer to easily and consistently, together, everywhere in our work.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure escom-article-figure--break-bleed">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/1.png" alt="Illustration of a component name appearing in different artifacts">
+        </div>
+        <figcaption class="escom-article-figure__caption">Persist the <em>same component name throughout design, code and conversation</em></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;&lt;em&gt;Drawer&lt;/em&gt; or &lt;em&gt;Accordion&lt;/em&gt; or &lt;em&gt;Collapsible&lt;/em&gt; is hard. Even harder? &lt;em&gt;Grid&lt;/em&gt; or &lt;em&gt;Layout&lt;/em&gt; or &lt;em&gt;Layout Grid&lt;/em&gt; or &lt;em&gt;Rows&lt;/em&gt; &amp;amp; &lt;em&gt;Columns&lt;/em&gt; or &lt;em&gt;Box&lt;/em&gt; or &lt;em&gt;Proportional Grid&lt;/em&gt; or whatever you call invisible scaffolding visually ordering a page. Even &lt;em&gt;Card&lt;/em&gt; isn’t universally defined: is it a generic container or the defined composite of all it contains? Making a library forces the choice.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/2.png" alt="Bar chart indicating the popularity of the simple term grid">
+        </div>
+        <figcaption class="escom-article-figure__caption">Name of component used to “Establish visual order on a page using rows and columns,” across 21 libraries.</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;For most doc sites, navigation relies on label alone. With a little effort, nav could be enhanced with a &lt;em&gt;thumbnail&lt;/em&gt;, maybe only via a &lt;em&gt;tooltip&lt;/em&gt; on hover. That same snapshot—or fully rendered components—could also be arranged in a gallery introducing the Components section. We can do more.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/3.png" alt="">
+        </div>
+        <figcaption class="escom-article-figure__caption">Diagram of thumbnails appearing in navigation</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;If demystifying synonyms is your game, sprinkle in a little “also known as” subtlety to sensitize rather than confuse.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/4.png" alt="Diagram of a preferred term and alternate terms displayed adjacently">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: A optimally clear title can be a challenge, so sweat the decision only just enough. Always pair it with a sensitizing example, and sprinkle hints elsewhere in the UI.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;button-or-buttons-deciding-singular-vs-plural-form&quot;&gt;Button or Buttons? Deciding Singular vs Plural Form&lt;/h3&gt;
+&lt;p&gt;Names in code uniformly refer to a singular instance (&lt;code&gt;-button&lt;/code&gt;, &lt;code&gt;-input&lt;/code&gt;, &lt;code&gt;-card&lt;/code&gt;). For components used many times on a page, whether primitive (&lt;em&gt;Buttons&lt;/em&gt;, &lt;em&gt;Inputs&lt;/em&gt;) or composed (&lt;em&gt;Cards&lt;/em&gt;), an industry sample suggests most libraries prefer the plural form for page titles and site navigation labels.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/5.png" alt="Illustration of whether to include component names as plural">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;However, the singular form is common for components used once on a page. &lt;em&gt;Global Navigation&lt;/em&gt;, &lt;em&gt;Footer&lt;/em&gt;, and &lt;em&gt;Grid&lt;/em&gt; are thought to frame the page (although &lt;em&gt;Grids&lt;/em&gt; do repeat within a page). Similarly, a &lt;em&gt;Masthead&lt;/em&gt;, &lt;em&gt;Hero&lt;/em&gt;, or &lt;em&gt;Billboard&lt;/em&gt; can set the page’s tone, but aren’t repeated further down. When we verbalize these, the singular form sounds more natural.&lt;/p&gt;
+&lt;p&gt;Now, navigation is tricky. As a component label, it’s the most vague, so consider avoiding it altogether. Yet for the remaining examples, plural variants — &lt;em&gt;Footers&lt;/em&gt;, &lt;em&gt;Grids&lt;/em&gt;, and &lt;em&gt;Mastheads&lt;/em&gt; — work just fine.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Most teams favor plurals, and it’s up to your team to form a convention. Perfect consistency may not be worth the stirring the passions, but if you mix both, have a rationale.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;component-intros-and-what-i-do-is&quot;&gt;Component Intros: “…and what I do is…”&lt;/h2&gt;
+&lt;p&gt;Names offer an imperfect, incomplete component explanation. Therefore, many libraries elaborate with a description to capture a component’s essence.&lt;/p&gt;
+&lt;h3 id=&quot;tantalizing-with-a-deck&quot;&gt;Tantalizing with a Deck&lt;/h3&gt;
+&lt;p&gt;The description can be short:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Buttons can be used to show the user’s choice of options for actions and assign these to a clear hierarchy. (&lt;a href=&quot;http://www.audi.com/ci/en/guides/user-interface/components/buttons.html&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;Audi&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Grid systems are used for creating page layouts through a series of rows and columns that house your content. (&lt;a href=&quot;http://carbondesignsystem.com/style/grid/design&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;IBM Carbon&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each elaborates with details that sensitize: a _Button_’s action and hierarchy, a _Grid_’s rows, columns, and purpose to create page layout.&lt;/p&gt;
+&lt;p&gt;As a typographic tradition, the description—known as a &lt;a href=&quot;https://www.thoughtco.com/what-is-an-article-deck-1078014&quot;&gt;Deck&lt;/a&gt;—should be paired visually with the component’s title and separate from remaining content. The deck’s font size should notably larger than paragraphs that follow. Tantalize the reader onward.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;keep-the-deck-to-a-tweet&quot;&gt;Keep the Deck to a Tweet&lt;/h3&gt;
+&lt;p&gt;How long’s too long? I encourage teammates to embrace “Tweet length” (and by tweet, I mean original the length of 144 characters). Is two sentences OK? Perhaps, although my peer reviewing history is littered with suggestions trimming from two sentences to one.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/6.png" alt="Illustation of what to do: keep an intro short">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/7.png" alt="Illustration of what not to do: go long with an intro">
+        </div>
+        <figcaption class="escom-article-figure__caption"><strong>DO</strong> Keep the deck short. <strong>DON’T</strong> explain everything before Examples do a better job explaining everything.</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;When writing an introduction, capture the essence, not the whole story. That means clarifying component structure and purpose instead of implementation details. For a &lt;em&gt;Grid&lt;/em&gt;, “rows and columns” for “responsive layout” are favored over “12 columns” or “breakpoints at 768 and 1024.” For &lt;em&gt;Buttons&lt;/em&gt;, keep it very short. Like 10 words or less short! Everyone knows what a button is.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Set essential context and tone, avoid packing in every feature, and above all else: keep it short.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;industry-examples-to-inspire&quot;&gt;Industry Examples to Inspire&lt;/h3&gt;
+&lt;p&gt;For &lt;strong&gt;Buttons&lt;/strong&gt; :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Predix UI Buttons module is a simple, robust, extensible baseline for building entire suites of buttons on. (&lt;a href=&quot;http://designsystem.morningstar.com/components/buttons.html&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;GE Predix&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Buttons make common actions immediately visible and easy to perform with one click or tap. They can be used for any type of action, including navigation.(&lt;a href=&quot;https://polaris.shopify.com/components/actions/button#navigation&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;Shopify&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Buttons are used for actions, like in forms, while textual hyperlinks are used for destinations, or moving from one page to another. (&lt;a href=&quot;https://github.com/primer/primer/tree/master/modules/primer-buttons&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;Github Primer&lt;/a&gt;) %}&lt;/li&gt;
+&lt;li&gt;Buttons are used to invoke an event. (&lt;a href=&quot;http://Buttons%20are%20used%20to%20invoke%20an%20event&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;Salesforce Lightning&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For &lt;strong&gt;Cards&lt;/strong&gt; :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Provide entry into detailed content via an image, text, and related information. (&lt;a href=&quot;https://comet.discoveryeducation.com/components/cards.html&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;Discovery Comet&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;A card is a sheet of material that serves as an entry point to more detailed information. (&lt;a href=&quot;https://material-ui-next.com/demos/cards/&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;Material UI&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Cards contain elements and functions on a single topic and can be used as teasers for further content. (&lt;a href=&quot;http://www.audi.com/ci/en/guides/user-interface/components/card.html&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;Audi&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For &lt;strong&gt;(Layout) Grids&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;This 12-column, responsive grid provides structure for website content. (&lt;a href=&quot;https://designsystem.digital.gov/components/grids/&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;USDS&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;The grid provides the foundation for harmoniously positioning elements, while maintaining a consistent and coherent look to the screen. (&lt;a href=&quot;https://atlassian.design/guidelines/product/foundations/grid&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;Atlassian&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Box component provides an easy way to apply standardized size &amp;amp; space to your layout. (&lt;a href=&quot;http://mineral-ui.com/components/box/&quot; rel=&quot;nofollow noopener&quot; target=&quot;_blank&quot;&gt;Mineral&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;a-too-detailed-introduction-get-to-the-goods&quot;&gt;A Too-Detailed Introduction? “Get to the Goods!”&lt;/h2&gt;
+&lt;p&gt;Sometimes components require introductions that elaborate on concepts, complexity, or library-specific points of view that aren’t self evident.&lt;/p&gt;
+&lt;p&gt;This is very evident in &lt;em&gt;Layout Grid&lt;/em&gt; documentation. Rows, columns, breakpoints, alignment, shifting, stacking, offsetting. Oh my, there’s so much to understand. I’m exhausted just thinking about it.&lt;/p&gt;
+&lt;p&gt;So the instinct is to introduce in detail. An introductory paragraph becomes a section. Code examples to explain each concept only crop up later, mirror the introduction’s subheads. The repetition is unnecessary, bogging a reader down in details before they even get started.&lt;/p&gt;
+&lt;p&gt;Component recognition relies as much or more on what a reader sees (the picture) rather than read (the name), even if recall and conversation depend on the name. Therefore, position the name as the page’s title close to the item’s picture. Usability testing of component doc affirms:&lt;/p&gt;
+
+
+  
+
+
+
+        <div class="escom-bar-quote">
+            “I don’t want to read all this.”<br>“Show me stuff I can immediately use.”<br>“Get me to the goods.”<br>“Where are the tools?”
+        </div>
+
+
+
+  &lt;p&gt;In a introduction, avoid deep context setting and lengthy overviews. Save the feature details and expansive design and code guidelines for the examples.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Spare the gory details; instead, get to examples adopters can immediately apply! If you have long story to tell, save it for later.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Component introductions must be powerful yet short. The objective is to tantalize enough to ensure the reader is in the right place. As a result, minimize the distance from component title to a first glimpse of the “goods” that follow. Get to the examples you can to use.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/articles/documenting-components.html&quot;&gt;&lt;strong&gt;#1. Overview&lt;/strong&gt;&lt;/a&gt; ← Previous | Next → &lt;a href=&quot;/articles/component-examples.html&quot;&gt;&lt;strong&gt;#3. Examples&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+
+        </div>
+    </div>
+    
+
+<div class="esds-row esds-container--light esds-row--tall-inset">
+    <div class="esds-row__inner escom-footer-systems__row">
+        <div class="escom-long-form-text">
+            <h2>@components</h2>
+            <p class="escom-long-form-text__lead">The complete collection of EightShapes writings on design systems, here for free. Follow <a href="https://twitter.com/components">@components</a> on Twitter for updates and new articles.</p>
+        </div>
+        <div class="escom-footer-systems__columnset">
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Visual Style</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Documentation</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">UI Components</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Releases</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Strategy</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Contributions</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Systems of Systems</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Process</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">People</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Workshop Activities</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+    
+
+    
+
+<div class="esds-row esds-row esds-row--tall-inset esds-container--brand escom-cta escom-cta--components-publication escom-page-type--marketing"
+    
+    >
+    <div class="esds-row__inner">
+        
+            
+        <div class="escom-long-form-text">
+            <h2>Need help with your system?</h2>
+            
+            <p class="escom-long-form-text__lead">EightShapes can energize your efforts to coach, workshop, assess or partner with you to design, code, document and manage a system.</p>
+            
+        </div>
+        
+        <div class="escom-cta__action">
+        
+    
+
+    <a class="esds-button esds-button--secondary esds-button--large escom-cta__action-button"  href=/design-systems.html>
+        
+        
+            Learn More
+        
+        
+    </a>
+
+        </div>
+        
+    
+        
+    </div>
+</div>
+
+
+
+
+
+        
+
+    
+
+<div class="esds-row esds-container--dark escom-site-footer esds-row--tall-inset"
+    
+    >
+    <div class="esds-row__inner">
+        
+            
+    
+        <div class="escom-site-footer__row">
+            <div class="escom-site-footer__column">
+                
+    
+
+    <svg class="esds-icon escom-site-footer__logo" >
+        
+        <use xlink:href="/icons/esds.svg#eightshapes-logo"></use>
+    </svg>
+
+                <div class"escom-site-footer__address-row">12805 Misty Creek Lane</div> 
+                <div class"escom-site-footer__address-row">Fairfax, VA 22033</div>
+            </div>
+            <div class="escom-site-footer__column escom-site-footer__column--offset">
+                <a class="escom-site-footer__link" tel="703.296.8831"> (703) 296-8831</a>
+                <a class="escom-site-footer__link" href="mailto:info@eightshapes.com">info@eightshapes.com</a>
+            </div>
+            <div class="escom-site-footer__column escom-site-footer__column--offset">
+                <a class="escom-site-footer__social-link" href="https://twitter.com/eightshapes">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--twitter" >
+        
+        <use xlink:href="/icons/esds.svg#twitter"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@eightshapes</span>
+                </a>
+                <a class="escom-site-footer__social-link" href="https://www.linkedin.com/company/eightshapes-llc">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--linkedin" >
+        
+        <use xlink:href="/icons/esds.svg#linkedin"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@EightShapes</span>
+                </a>
+                <a class="escom-site-footer__social-link" href="https://medium.com/eightshapes-llc">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--medium" >
+        
+        <use xlink:href="/icons/esds.svg#medium"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@eightshapes</span>
+                </a>
+            </div>
+        </div>
+
+    
+        
+    </div>
+</div>
+
+
+
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        
+        <script src="/dist/escom.js"></script>
+          <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-1201194-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+  </script>
+
+    </body>
+</html>

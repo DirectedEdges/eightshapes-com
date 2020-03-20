@@ -1,0 +1,440 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+        <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+        <meta http-equiv="cleartype" content="on">
+
+        <title>EightShapes &gt; @components &gt; undefined</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="/dependencies/esds.css"> <!-- copied from esds-library dependency -->
+        <link rel="stylesheet" href="/dist/escom.css">
+
+        
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700&display=swap" rel="stylesheet">
+  <!-— facebook open graph tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.eightshapes.com/articles/.html" />
+  <meta property="og:title" content="post Title" />
+  <meta property="og:description" content="false" />
+  
+
+  <!-— twitter card tags additive with the og: tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:domain" value="eightshapes.com" />
+  <meta name="twitter:title" value="post Title" />
+  <meta name="twitter:description" value="false" />
+  
+  <meta name="twitter:url" value="https://www.eightshapes.com/articles/.html" />
+
+  <!-- No Shadow DOM, so link directly to styles -->
+  <link rel="stylesheet" href="/styles/dependencies/esds-code-snippet.css"/>
+
+  <!-- Separate webcomponents polyfill bundle for Edge, IE11, etc. -->
+  <script type="text/javascript" src="/scripts/dependencies/custom-elements.min.js"></script>
+
+  <!-- ESDS Doc components -->
+  <!-- The ESM "vanilla" version of the component for FF, Safari, Chrome and Edge -->
+  <script type="module" src="/scripts/dependencies/esds-code-snippet-web-component.js"></script>
+
+  <!-- A babel-compiled version of the component for IE11 -->
+  <script nomodule type="text/javascript" src="/scripts/dependencies/esds-code-snippet-legacy.js"></script>
+
+    </head>
+    <body class="">
+        
+    
+    
+    
+
+    
+    <div class="esds-row esds-container--brand esds-breadcrumb esds-row--no-inset">
+        <div class="esds-row__inner">
+            <h1 class="esds-breadcrumb__brand">
+                <a href="/" class="esds-breadcrumb__link">
+                    
+    
+
+    <svg class="esds-icon esds-breadcrumb__brand-mark" >
+        
+        <use xlink:href="/icons/esds.svg#eightshapes-logo"></use>
+    </svg>
+
+                </a>
+                
+                <a href="/components/" class="esds-breadcrumb__link">
+                    
+    
+
+    <svg class="esds-icon esds-breadcrumb__delimiter" >
+        
+        <use xlink:href="/icons/esds.svg#angle-right"></use>
+    </svg>
+
+                    <span class="esds-breadcrumb__crumb-section">@components</span>
+                </a>
+                
+            </h1>
+        </div>
+    </div>
+
+
+    <div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
+        <div class="esds-row__inner">
+            <div class="escom-article__author-row">
+                <div class="escom-article__author-avatar"
+                    style="background-image: url('/images/bios/bio-thumb-.png')">
+                </div>
+                <div class="escom-article__author-text">
+                    <p class="escom-article__author">
+                        <a href=""></a>
+                    </p>
+                    <p class="escom-article__author-role">
+                        
+                    </p>
+                    <p>
+                        <span class="escom-article__published-date">
+                            Originally published false •
+                        </span>
+                        <span class="escom-article__read-duration">
+                            falsemin
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="escom-article__title-row escom-article__title-row--no-masthead-next">
+                <h1 class="escom-article__title">post Title</h1>
+                
+            </div>
+
+    
+
+    
+  &lt;p&gt;During early system activities like our &lt;a href=&quot;/articles/the-component-cut-up-workshop.html&quot;&gt;Component Cut Up workshop&lt;/a&gt;, participants can get stuck on the “correct” way to chop up page into components. Staring at pages on offer, each person has their moment—scissors in hand—wondering:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Is this thing (like a &lt;code&gt;Card&lt;/code&gt;) the component?&lt;/li&gt;
+&lt;li&gt;Or this smaller thing (like a &lt;code&gt;Button&lt;/code&gt;or &lt;code&gt;Tag&lt;/code&gt;) the component?&lt;/li&gt;
+&lt;li&gt;Actually, is this far bigger thing (like &lt;code&gt;Card Grid with Toolbar&lt;/code&gt;) the component?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After years working on libraries, my response is a straightforward: Yes.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;When users start working with a library, instinct suggests that a page is just 10 to 20 reusable chunks: a top &lt;code&gt;Header&lt;/code&gt; here, a multi-level &lt;code&gt;Tab&lt;/code&gt; navigation below it, three &lt;em&gt;Sidebar Modules&lt;/em&gt; over there. Recent practices build understanding up from an atomic base: a &lt;code&gt;Button&lt;/code&gt; here, a &lt;code&gt;Menu&lt;/code&gt; there, perhaps a limited variety of &lt;code&gt;Card&lt;/code&gt;. Forever, all these parts have been assembled into &lt;code&gt;Layout&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Experience seasons the judgment and instincts of where the a component’s boundaries lie. Yet, over time, we begin to transcend the notion that there’s only one layer of lines to cut that arrange component simply as siblings on a page.&lt;/p&gt;
+&lt;p&gt;Instead, modular component libraries embrace the reality of the material in which they are built: a rich hierarchical tapestry of interrelated things, small and large, ultimately assembled into a full page composition.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;1-components-are-hierarchical-containing-other-components&quot;&gt;#1. Components Are Hierarchical, Containing Other Components&lt;/h2&gt;
+&lt;p&gt;Beginners see pages as a two-dimensional construct displayed on screen. That’s why the activities like the Component Cut-Up are so effective. Soon, designers (using a light source) and developers (via z-index) develop a more nuanced appreciation for depth, unflattening elements into a third dimension.&lt;/p&gt;
+&lt;p&gt;But make no mistake, web pages are &lt;em&gt;built&lt;/em&gt; hierarchically. The impact on how we manage and relate modular components hierarchically is profound. I find myself injecting subtle reminders that every component in a library need not be a sibling, components can contain other components, and smaller doesn’t always mean more valuable or broadly relevant.&lt;/p&gt;
+&lt;p&gt;Considering the impact of hierarchy frees the minds of library makers and influencers to have more nuanced discussions around what matters, how parts relate to one another, and how we’ll build for reuse.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;2-build--encapsulate-small-components&quot;&gt;#2. Build &amp;amp; Encapsulate Small Components&lt;/h2&gt;
+&lt;p&gt;A library must have a sufficient quantity of bite-sized components — &lt;em&gt;Button&lt;/em&gt;, &lt;em&gt;Textbox&lt;/em&gt;, &lt;em&gt;Tag&lt;/em&gt;, &lt;em&gt;Checkbox&lt;/em&gt;, &lt;em&gt;Breadcrumb&lt;/em&gt;, &lt;em&gt;Modal&lt;/em&gt;, even &lt;em&gt;Cards&lt;/em&gt; — to be minimally useful and adoptable. Let’s say you need ~10 to 20, including at least &lt;em&gt;Button&lt;/em&gt; (with lots of variations), &lt;em&gt;Forms&lt;/em&gt;, and a few others depending on the system’s context.&lt;/p&gt;
+&lt;p&gt;But it’s not long before a system team starts addressing more sophisticated arrangements, such as a &lt;em&gt;Card Grid&lt;/em&gt; that contains &lt;em&gt;Cards&lt;/em&gt; that contains &lt;em&gt;Primary Button&lt;/em&gt; and &lt;em&gt;Icon Button&lt;/em&gt; and &lt;em&gt;Tag&lt;/em&gt;.&lt;/p&gt;
+&lt;h3 id=&quot;encapsulate-the-small-components&quot;&gt;Encapsulate the Small Components&lt;/h3&gt;
+&lt;p&gt;Modern front-end tooling—like CSS preprocessor mixins and template partials and macros—help us &lt;a href=&quot;https://en.wikipedia.org/wiki/Encapsulation_%28computer_programming%29&quot;&gt;encapsulate&lt;/a&gt; the definition of and interface to small components.&lt;/p&gt;
+&lt;p&gt;Library users don’t care about &lt;em&gt;how&lt;/em&gt; things are encapsulated. To them, it’s just compiled CSS classes applied to markup so that a button looks right, behaves right, and fits right when used in something bigger. They are shielded from and comfortably depend on component relationships being resolved.&lt;/p&gt;
+&lt;h3 id=&quot;encapsulation-makes-things-complicated&quot;&gt;Encapsulation Makes Things Complicated&lt;/h3&gt;
+&lt;p&gt;But encapsulation is a challenge for library makers. Where do properties go? Will CSS classes of smaller components be integrated into or encapsulated within the classes of larger ones containing them? How can ensure larger components are resilient to changes in their reusable smaller parts? My emotions are mixed: Encapsulation is required to scale a library, but increases complexity, lengthens conversations, and requires thoughtful planning. Practicing effective encapsulation is far from free.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;3-offer-important-big-components-too&quot;&gt;#3. Offer Important Big Components, Too&lt;/h2&gt;
+&lt;p&gt;The more atomic a part, the more likely it’ll be broadly reused, correctly, at a small cost to the system. However, this doesn’t mean system can’t also offer big components like a “&lt;em&gt;Hero Carousel_” banner, a _Toolbar&lt;/em&gt; with varied menus, icons, and buttons, or—if you’re serious about bringing products together—a &lt;em&gt;Header&lt;/em&gt; system (possibly including panels like &lt;em&gt;Megamenus&lt;/em&gt; that may span products).&lt;/p&gt;
+
+
+
+
+
+
+        <div class="escom-bar-quote">
+            More Complex=More Expensive=More Likely to be Inconsistent. Some of These Matter. A lot.
+        </div>
+
+
+
+&lt;p&gt;Big components — &lt;code&gt;Heroes&lt;/code&gt;, &lt;code&gt;Toolbar&lt;/code&gt;, and especially &lt;code&gt;HeaderBar&lt;/code&gt; — are essential for making a broad experience cohesive. Yet these components are complex beasts, particularly responsively, as measured by overflowing lines of markup and style.&lt;/p&gt;
+&lt;p&gt;Is “Give ’em some atomic elements and hope for the best!” across 5+ products the right approach? For both cost and consistency, that’s bollocks. If a system is a centralized force to eliminate wasteful redundancy and deliver consistency, then build and propagate big ones that matter.&lt;/p&gt;
+&lt;h3 id=&quot;big-components-reveal-seams&quot;&gt;Big Components Reveal Seams&lt;/h3&gt;
+&lt;p&gt;A library lacking big components risks looking like a muddled mess when things are put together. Larger components provide inspectable examples of both visually and in code. You can see how small things fit in big things, learning how to apply spacing, color, variable names and themes along the way.&lt;/p&gt;
+&lt;p&gt;Likewise, larger pieces are material to QA the library as tokenized decisions—a &lt;em&gt;border-radius&lt;/em&gt; here, a &lt;em&gt;bottom-margin&lt;/em&gt; there—are adjusted centrally yet impact broadly.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;4-grids-are-components-not-layouts&quot;&gt;#4. Grids are Components, Not Layouts&lt;/h2&gt;
+&lt;p&gt;The parts on a page are all composed in a the hierarchical journey, from the most atomic element all the way up to the body tag.&lt;/p&gt;
+&lt;p&gt;The invisible scaffolding that holds a page together is often erroneously thought of as “The Grid.” Without it, some feel unable to build anything visually coherent: Get me the Grid! I need the Grid! I can’t build anything without the Grid!&lt;/p&gt;
+&lt;h3 id=&quot;a-grid-is-a-component&quot;&gt;A Grid is a Component&lt;/h3&gt;
+&lt;p&gt;Most libraries offer a &lt;code&gt;Grid&lt;/code&gt; defined as (more often now) rows containing columns down a scrollable page. The &lt;em&gt;Grid&lt;/em&gt; has many hallmarks of a component, in that a grid is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A fulcrum of a page’s responsiveness,&lt;/li&gt;
+&lt;li&gt;A predictable array of variations (1/4 wide, 2/3 wide, etc).&lt;/li&gt;
+&lt;li&gt;Hierarchical, with a row contains column contains row contains column.&lt;/li&gt;
+&lt;li&gt;Markup encoded with styles, managed and adjusted over time.&lt;/li&gt;
+&lt;li&gt;A container of while also often contained in other components.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A &lt;em&gt;Grid&lt;/em&gt; is a component.&lt;/p&gt;
+&lt;h3 id=&quot;grid-≠-overall-layout&quot;&gt;Grid ≠ Overall Layout.&lt;/h3&gt;
+&lt;p&gt;That said, a &lt;em&gt;Grid&lt;/em&gt; never the top-most component that contains everything else. It’s an intermediate component sandwiched between the smaller parts and often one of a few likely &lt;em&gt;Layouts&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;A &lt;em&gt;Layout&lt;/em&gt; provides empty page regions into which you can place components, such as a website’s header, footer, and sidebar that envelop the main content well or a web app’s header, toolbar(s), and panels evoked from viewport edges and corners.&lt;/p&gt;
+&lt;h2 id=&quot;5-users-value-assembled-shells&quot;&gt;#5. Users Value Assembled Shells&lt;/h2&gt;
+&lt;p&gt;When library users approach a library, they can be overwhelmed by the vast ocean of atomic choices. A library’s breadth of parts is correlated with its perceived worth. However, another key question is: Can I compose my layout, arranging an array of prebuilt parts how I want to, bound within a shell of “global” components that I may configure but need not rebuild?&lt;/p&gt;
+&lt;h3 id=&quot;offer-prebuilt-shells-that-include-big-components&quot;&gt;Offer Prebuilt Shells that Include Big Components&lt;/h3&gt;
+&lt;p&gt;That’s not “the grid” and it’s more complex than just a layout of empty regions. We’ll often offer a page &lt;em&gt;Shell&lt;/em&gt; as a prearranged layout that already contains a &lt;code&gt;Header&lt;/code&gt;, &lt;code&gt;GlobalNavigation&lt;/code&gt;, and possibly &lt;code&gt;Footer&lt;/code&gt; and other _Panel_ing&lt;em&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Shells ease the assembly process and revealing how things are organized. They help adopters not just see regions visually (in a browser) and in code (in their editor) into which they add, but get users a few steps ahead with the parts they should be skipping past anyway.&lt;/p&gt;
+&lt;p&gt;While our libraries begin as bottom-up collections of atomic elements, library users often begin composition top-down. Like the code we share and designs we converge, the conversation always meets and heats up in the middle.&lt;/p&gt;
+
+
+
+        </div>
+    </div>
+    
+
+<div class="esds-row esds-container--light esds-row--tall-inset">
+    <div class="esds-row__inner escom-footer-systems__row">
+        <div class="escom-long-form-text">
+            <h2>@components</h2>
+            <p class="escom-long-form-text__lead">The complete collection of EightShapes writings on design systems, here for free. Follow <a href="https://twitter.com/components">@components</a> on Twitter for updates and new articles.</p>
+        </div>
+        <div class="escom-footer-systems__columnset">
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Visual Style</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Documentation</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">UI Components</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Releases</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Strategy</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Contributions</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Systems of Systems</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Process</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">People</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Workshop Activities</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+    
+
+    
+
+<div class="esds-row esds-row esds-row--tall-inset esds-container--brand escom-cta escom-cta--components-publication escom-page-type--marketing"
+    
+    >
+    <div class="esds-row__inner">
+        
+            
+        <div class="escom-long-form-text">
+            <h2>Need help with your system?</h2>
+            
+            <p class="escom-long-form-text__lead">EightShapes can energize your efforts to coach, workshop, assess or partner with you to design, code, document and manage a system.</p>
+            
+        </div>
+        
+        <div class="escom-cta__action">
+        
+    
+
+    <a class="esds-button esds-button--secondary esds-button--large escom-cta__action-button"  href=/design-systems.html>
+        
+        
+            Learn More
+        
+        
+    </a>
+
+        </div>
+        
+    
+        
+    </div>
+</div>
+
+
+
+
+
+        
+
+    
+
+<div class="esds-row esds-container--dark escom-site-footer esds-row--tall-inset"
+    
+    >
+    <div class="esds-row__inner">
+        
+            
+    
+        <div class="escom-site-footer__row">
+            <div class="escom-site-footer__column">
+                
+    
+
+    <svg class="esds-icon escom-site-footer__logo" >
+        
+        <use xlink:href="/icons/esds.svg#eightshapes-logo"></use>
+    </svg>
+
+                <div class"escom-site-footer__address-row">12805 Misty Creek Lane</div> 
+                <div class"escom-site-footer__address-row">Fairfax, VA 22033</div>
+            </div>
+            <div class="escom-site-footer__column escom-site-footer__column--offset">
+                <a class="escom-site-footer__link" tel="703.296.8831"> (703) 296-8831</a>
+                <a class="escom-site-footer__link" href="mailto:info@eightshapes.com">info@eightshapes.com</a>
+            </div>
+            <div class="escom-site-footer__column escom-site-footer__column--offset">
+                <a class="escom-site-footer__social-link" href="https://twitter.com/eightshapes">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--twitter" >
+        
+        <use xlink:href="/icons/esds.svg#twitter"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@eightshapes</span>
+                </a>
+                <a class="escom-site-footer__social-link" href="https://www.linkedin.com/company/eightshapes-llc">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--linkedin" >
+        
+        <use xlink:href="/icons/esds.svg#linkedin"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@EightShapes</span>
+                </a>
+                <a class="escom-site-footer__social-link" href="https://medium.com/eightshapes-llc">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--medium" >
+        
+        <use xlink:href="/icons/esds.svg#medium"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@eightshapes</span>
+                </a>
+            </div>
+        </div>
+
+    
+        
+    </div>
+</div>
+
+
+
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        
+        <script src="/dist/escom.js"></script>
+          <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-1201194-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+  </script>
+
+    </body>
+</html>

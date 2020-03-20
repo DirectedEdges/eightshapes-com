@@ -1,0 +1,721 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+        <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+        <meta http-equiv="cleartype" content="on">
+
+        <title>EightShapes &gt; @components &gt; undefined</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="/dependencies/esds.css"> <!-- copied from esds-library dependency -->
+        <link rel="stylesheet" href="/dist/escom.css">
+
+        
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700&display=swap" rel="stylesheet">
+  <!-— facebook open graph tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.eightshapes.com/articles/.html" />
+  <meta property="og:title" content="post Title" />
+  <meta property="og:description" content="false" />
+  
+
+  <!-— twitter card tags additive with the og: tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:domain" value="eightshapes.com" />
+  <meta name="twitter:title" value="post Title" />
+  <meta name="twitter:description" value="false" />
+  
+  <meta name="twitter:url" value="https://www.eightshapes.com/articles/.html" />
+
+  <!-- No Shadow DOM, so link directly to styles -->
+  <link rel="stylesheet" href="/styles/dependencies/esds-code-snippet.css"/>
+
+  <!-- Separate webcomponents polyfill bundle for Edge, IE11, etc. -->
+  <script type="text/javascript" src="/scripts/dependencies/custom-elements.min.js"></script>
+
+  <!-- ESDS Doc components -->
+  <!-- The ESM "vanilla" version of the component for FF, Safari, Chrome and Edge -->
+  <script type="module" src="/scripts/dependencies/esds-code-snippet-web-component.js"></script>
+
+  <!-- A babel-compiled version of the component for IE11 -->
+  <script nomodule type="text/javascript" src="/scripts/dependencies/esds-code-snippet-legacy.js"></script>
+
+    </head>
+    <body class="">
+        
+    
+    
+    
+
+    
+    <div class="esds-row esds-container--brand esds-breadcrumb esds-row--no-inset">
+        <div class="esds-row__inner">
+            <h1 class="esds-breadcrumb__brand">
+                <a href="/" class="esds-breadcrumb__link">
+                    
+    
+
+    <svg class="esds-icon esds-breadcrumb__brand-mark" >
+        
+        <use xlink:href="/icons/esds.svg#eightshapes-logo"></use>
+    </svg>
+
+                </a>
+                
+                <a href="/components/" class="esds-breadcrumb__link">
+                    
+    
+
+    <svg class="esds-icon esds-breadcrumb__delimiter" >
+        
+        <use xlink:href="/icons/esds.svg#angle-right"></use>
+    </svg>
+
+                    <span class="esds-breadcrumb__crumb-section">@components</span>
+                </a>
+                
+            </h1>
+        </div>
+    </div>
+
+
+    <div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
+        <div class="esds-row__inner">
+            <div class="escom-article__author-row">
+                <div class="escom-article__author-avatar"
+                    style="background-image: url('/images/bios/bio-thumb-.png')">
+                </div>
+                <div class="escom-article__author-text">
+                    <p class="escom-article__author">
+                        <a href=""></a>
+                    </p>
+                    <p class="escom-article__author-role">
+                        
+                    </p>
+                    <p>
+                        <span class="escom-article__published-date">
+                            Originally published false •
+                        </span>
+                        <span class="escom-article__read-duration">
+                            falsemin
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="escom-article__title-row escom-article__title-row--no-masthead-next">
+                <h1 class="escom-article__title">post Title</h1>
+                
+            </div>
+
+    
+
+    
+  &lt;p&gt;Top-level steps to develop a system feature-from &lt;code&gt;Propose&lt;/code&gt; and &lt;code&gt;Design&lt;/code&gt; to &lt;code&gt;Code&lt;/code&gt; and &lt;code&gt;Doc&lt;/code&gt;-are valuable but not enough. Teammates made different assumptions about what&amp;#39;s needed to complete a step. High-level definitions-of-done were helpful. Yet, outputs lacked robustness when smaller substeps were completed inconsistently. Team members called for checklists to identify everything expected along the way.&lt;/p&gt;
+&lt;p&gt;This post introduces &lt;strong&gt;Subtasks&lt;/strong&gt; per &lt;strong&gt;Step&lt;/strong&gt; organized in &lt;strong&gt;Phases&lt;/strong&gt;. Each of four major steps - &lt;code&gt;Propose&lt;/code&gt;, &lt;code&gt;Design&lt;/code&gt;, &lt;code&gt;Code&lt;/code&gt; and &lt;code&gt;Document&lt;/code&gt;-are expanded to include detailed subtasks with examples revealing what subtasks are needed when. The post concludes with advice on &lt;strong&gt;assignments&lt;/strong&gt;, &lt;strong&gt;tracking&lt;/strong&gt; and the &lt;strong&gt;balance&lt;/strong&gt; between not enough and too much&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;breaking-down-step-into-phases-per-step&quot;&gt;Breaking Down Step into Phases, Per Step&lt;/h2&gt;
+&lt;p&gt;Delivering a feature like a component or visual style upgrade progresses through top-level steps like Propose, Design, Code, Doc and Release.&lt;/p&gt;
+
+
+
+
+    <figure class="escom-article-figure escom-article-figure--break-bleed">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/1.png" alt="A typical five-step process for delivering a system feature">
+        </div>
+        <figcaption class="escom-article-figure__caption">A typical five-step process for delivering a system feature</figcaption>
+    </figure>
+
+
+
+&lt;p&gt;There are many activities in each step. So many that they feel unwieldy. So, when creating a process for a team, I&amp;#39;ll encourage them to consider subtasks across phases of work, including: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;START&lt;/code&gt;&lt;/strong&gt; sets  up files (usually templates) and audits for reusable things&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;COMPOSE&lt;/code&gt;&lt;/strong&gt; involves what most perceive as &amp;quot;the work&amp;quot; to create something&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;TEST&lt;/code&gt;&lt;/strong&gt; involves assessing that work against standards of quality&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;PRESENT&lt;/code&gt;&lt;/strong&gt; involves the broader community for face-to-face discussion&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;REVIEW&lt;/code&gt;&lt;/strong&gt; involves peer inspection, with  comments and corrections&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;DELIVER&lt;/code&gt;&lt;/strong&gt; involves the final edits, readying work for the next step&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+    <figure class="escom-article-figure escom-article-figure--break-bleed">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/2.png" alt="Each step can be broken down into six phases in a typical sequence">
+        </div>
+        <figcaption class="escom-article-figure__caption">Each step can be broken down into six phases in a typical sequence</figcaption>
+    </figure>
+
+
+
+&lt;p&gt;Different phases require different lengths of time. Phases like &lt;code&gt;START&lt;/code&gt; and &lt;code&gt;DELIVER&lt;/code&gt; move swiftly. &lt;code&gt;COMPOSE&lt;/code&gt; requires many steps, the most work and the most time. &lt;code&gt;TEST&lt;/code&gt;, &lt;code&gt;PRESENT&lt;/code&gt;, and &lt;code&gt;REVIEW&lt;/code&gt; include checks to ensure quality, involve the community, and trigger  iteration to ensure things are made well.&lt;/p&gt;
+
+
+
+
+    <figure class="escom-article-figure escom-article-figure--break-bleed">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/3.png" alt="Phases aren&#39;t all the same duration; START is quick and COMPOSE can be longer">
+        </div>
+        <figcaption class="escom-article-figure__caption">Phases aren't all the same duration; START is quick and COMPOSE can be longer</figcaption>
+    </figure>
+
+
+
+&lt;p&gt;Each major process step - &lt;code&gt;Propose&lt;/code&gt;, &lt;code&gt;Design&lt;/code&gt;, &lt;code&gt;Code&lt;/code&gt;, &lt;code&gt;Documentation&lt;/code&gt;-shares these common phases from start to finish, even if the subtasks vary for each. &lt;/p&gt;
+
+
+
+
+    <figure class="escom-article-figure escom-article-figure--break-bleed">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/4.png" alt="All steps have `START`, Compose, Review, and Deliver phases">
+        </div>
+        <figcaption class="escom-article-figure__caption">All steps have `START`, Compose, Review, and Deliver phases</figcaption>
+    </figure>
+
+
+
+&lt;p&gt;For example, all steps start from a template, even though a Design template is far different than a Documentation authoring template (or is it?). A Design step tests some accessibility and possibly usability, whereas Code delves into more accessibility along with unit, regression, and functional tests.&lt;/p&gt;
+
+
+
+
+    <figure class="escom-article-figure escom-article-figure--break-bleed">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/5.png" alt="Substeps per phase per step">
+        </div>
+        <figcaption class="escom-article-figure__caption">Substeps per phase per step</figcaption>
+    </figure>
+
+
+
+&lt;p&gt;Organizing work with phases, a teams can identify subtasks needed to deliver a robust, high quality feature predictably. The following sections illustrate common subtasks included in Propose, Design, Code and Doc steps.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;propose&quot;&gt;Propose&lt;/h2&gt;
+&lt;p&gt;The Propose step requires a system to consider not a quick component for themselves, but a robust components for everyone. The step is done when a team decides whether to pursue a feature, scopes requirements, and plans the work. As a result, it demands auditing and collaborating with many people.&lt;/p&gt;
+
+
+
+
+    <figure class="escom-article-figure escom-article-figure--full-width">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/6.png" alt="Propose process">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+&lt;h3 id=&quot;common-propose-subtasks&quot;&gt;Common Propose Subtasks&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;START&lt;/code&gt;&lt;/strong&gt;: A proposal starts with basics (a template like: What? Why? For Who/How Many? By When?) whether by system team or contributor. An audit across experiences follows to assess needs and current patterns.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;COMPOSE&lt;/code&gt;&lt;/strong&gt;: The proposer articulates feature direction, scope, and related ideas. For simple UI components, lists of &amp;quot;Must&amp;quot;, &amp;quot;Should&amp;quot;, &amp;quot;Could&amp;quot;, &amp;quot;Nice to…&amp;quot;, and &amp;quot;Won&amp;#39;t&amp;quot; Haves may suffice (see List Group below). Proposing a complex layout grids with rows, columns, offsets, breakpoints, and more may take pages and include proposed values and code demos. These details lead to feature prioritization during reviews and presentations.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+<esds-code-snippet max-height="none">
+  List Group Proposal
+
+  MUST HAVE
+  Item names, vertically stacked
+  Linked (Linked or unlinked items)
+  Size (Large, medium or small)
+  Microcopy (above OR below but not both?)
+  Pill (trails title as span element)
+  Icon (on left)
+
+  COULD HAVE
+  Sublist (indented, L2 small text within L1 medium text, L2 medium text with L1 large text)
+  Sublist expand/collapse
+  Sublist expanded (default false)
+  Selected / active item(s)
+  Microcopy location (above or below?)
+  Eyebrow heading (included or separate component? If so, include ARIA connection between header and list below it.)
+  Badge (for count of items)
+  Checkbox (for interactively toggling an item)
+
+  DEPENDENCIES
+  heading
+  icon
+  link?
+  checkbox?
+  pill? (for badge)
+  accordion? (for sublist expand/collapse)
+</esds-code-snippet>
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;TEST&lt;/code&gt;&lt;/strong&gt;: N/A for Propose.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;REVIEW&lt;/code&gt;&lt;/strong&gt;: System team members, product owner, and a community should have the opportunity to read, comment and make suggestions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;PRESENT&lt;/code&gt;&lt;/strong&gt;: The proposer typically  presents proposed ideas to a system team and then to design and developer communities and leaders, if necessary.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;DELIVER&lt;/code&gt;&lt;/strong&gt;: If the feature is approved, finishing a Propose task involves finalizing scope and planning next steps. This can include making and assigning Jira tickets for &lt;code&gt;Design&lt;/code&gt;, &lt;code&gt;Code&lt;/code&gt;, and &lt;code&gt;Doc&lt;/code&gt; steps.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;other-propose-considerations&quot;&gt;Other Propose Considerations&lt;/h3&gt;
+&lt;p&gt;In contrast to &lt;code&gt;Design&lt;/code&gt;, &lt;code&gt;Code&lt;/code&gt;, and &lt;code&gt;Doc&lt;/code&gt; steps that follow, &lt;code&gt;REVIEW&lt;/code&gt; typically precedes &lt;code&gt;PRESENT&lt;/code&gt; during the &lt;code&gt;Propose&lt;/code&gt; step.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;design&quot;&gt;Design&lt;/h2&gt;
+&lt;p&gt;The Design step solves for interface and visual design. It&amp;#39;s considered done when a designer delivers a complete design to a developer to code the feature.&lt;/p&gt;
+
+
+
+
+    <figure class="escom-article-figure escom-article-figure--full-width">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/7.png" alt="Design process">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+&lt;h3 id=&quot;common-design-subtasks&quot;&gt;Common Design Subtasks&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;START&lt;/code&gt;&lt;/strong&gt;: Start quickly from a symbol-loaded template (Teresa Aguilera of Gap Inc suggests structuring templates as a &amp;quot;Mad Libs&amp;quot; for component design), and aggregate and normalize art from any other sources.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;COMPOSE&lt;/code&gt;&lt;/strong&gt;: Design the feature-variations, states, responsiveness, content samples, the works-while ensuring it&amp;#39;s fully integrated design tokens and annotated for presentation and a developer&amp;#39;s coding.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;TEST&lt;/code&gt;&lt;/strong&gt;: For designers, testing accessibility is a must while feature usability is often considered optional at best.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;PRESENT&lt;/code&gt;&lt;/strong&gt;: The design makes the rounds: system designers, system team overall, system leaders, and the design community. Presentation priority varies by organization. That said, healthy and regular system discussion within design community critique is correlated with good system health. &lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;REVIEW&lt;/code&gt;&lt;/strong&gt;: The developer assigned to &lt;code&gt;Code&lt;/code&gt; the feature should engage  no later than late in &lt;code&gt;Design&lt;/code&gt;. Accessibility review during Design is smart. Engaging content strategy for review is a bonus for many teams!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;DELIVER&lt;/code&gt;&lt;/strong&gt;: A designer ensures artwork and annotations are complete, tokens integrated, and details expanded on prior to developer handoff.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;outside-participants&quot;&gt;Outside Participants&lt;/h3&gt;
+&lt;p&gt;Design may require participation others, here from high-to-low priority:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Design community&lt;/strong&gt;, engaged via critique, communication (such as Slack posts in #system-design) and ad-hoc working sessions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Accessibility specialist&lt;/strong&gt;, for a thorough review later in the process.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content strategist&lt;/strong&gt;, to address content in design ? If you can, it&amp;#39;s vital.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Researchers&lt;/strong&gt; seem quite rare in most design system tasks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;other-design-considerations&quot;&gt;Other Design Considerations&lt;/h3&gt;
+&lt;p&gt;What of &lt;code&gt;Design Assets&lt;/code&gt; built into design software like Sketch or Figma? These may require adjustments as &lt;code&gt;Code&lt;/code&gt; progresses and be completed later along with &lt;code&gt;Doc&lt;/code&gt;. Therefore, some teams separate a &lt;code&gt;Design Assets&lt;/code&gt; from the &lt;code&gt;Design&lt;/code&gt; step concluding earlier.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;Code&lt;/code&gt; step includes setting up an environment, composing and testing thoroughly, and engaging the system team and developer community before merging an approved solution. Community engagement via presentations is rarer but recommended. However, testing and reviews are quite thorough.&lt;/p&gt;
+
+
+
+
+    <figure class="escom-article-figure escom-article-figure--full-width">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/8.png" alt="Code process">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+&lt;h3 id=&quot;common-code-subtasks&quot;&gt;Common Code Subtasks&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;START&lt;/code&gt;&lt;/strong&gt;: Create code branch, generate file(s), and source reusable code (to acclimate to tools, similar components, and visual tooling available).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;COMPOSE&lt;/code&gt;&lt;/strong&gt;: Draft an API and review it with the dev community. Code the HTML, CSS and JavaScript. Create robust  visual tests. Document the API. Don&amp;#39;t forget: update dependent components that are impacted, too!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;TEST&lt;/code&gt;&lt;/strong&gt;: What&amp;#39;s your &lt;a href=&quot;/articles/component-testing-plans.html&quot;&gt;testing plan&lt;/a&gt;? Mine includes functionality, browsers and devices, unit tests, visual regression, and accessibility (both automated with &lt;a href=&quot;https://developers.google.com/web/tools/lighthouse&quot;&gt;Google Lighthouse&lt;/a&gt; or &lt;a href=&quot;https://wave.webaim.org/&quot;&gt;Wave&lt;/a&gt; and manually via &lt;a href=&quot;https://en.wikipedia.org/wiki/JAWS_(screen_reader)&quot;&gt;JAWS&lt;/a&gt; or &lt;a href=&quot;https://www.chromevox.com/&quot;&gt;Chromevox&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;PRESENT&lt;/code&gt;&lt;/strong&gt;: Presenting to the assigned designer and system team presumed and sometimes simultaneous. A developer community presentation is rare; a quick demo during a system&amp;#39;s sprint review may suffice.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;REVIEW&lt;/code&gt;&lt;/strong&gt;: Many can engage during a pull request:  designer (inspects features visually, combing for &lt;a href=&quot;/articles/tokens-in-design-systems.html&quot;&gt;design tokens&lt;/a&gt;), developers (inspecting and running tests),  accessibility specialist (engaged from outside the team).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;DELIVER&lt;/code&gt;&lt;/strong&gt;: Ultimately, &lt;code&gt;Code&lt;/code&gt; finishes with a merged pull request, often including a changelog and patches rippling across dependents.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;outside-participants&quot;&gt;Outside Participants&lt;/h3&gt;
+&lt;p&gt;Code may require participation others, here from high-to-low priority:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Accessibility specialist&lt;/strong&gt;, for a thorough review later in the process.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Developer community&lt;/strong&gt;, engaged via communication (such as a Slack post in a #system-developers thread) or face-to-face working group meeting.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Quality assurance&lt;/strong&gt; (QA) are quite rare in design systems I&amp;#39;ve come across.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content strategist&lt;/strong&gt;, to inspect coded visual test cases? What a luxury.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;other-code-considerations&quot;&gt;Other Code Considerations&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Teams end up with many, many &lt;code&gt;Code&lt;/code&gt; subtasks. As such, don&amp;#39;t overwhelm a developer with all of them. Instead, add a phase or two&amp;#39;s worth (such as &lt;code&gt;START&lt;/code&gt; and &lt;code&gt;COMPOSE&lt;/code&gt;) to the ticket, saving other subtasks for later.&lt;/li&gt;
+&lt;li&gt;Disciplined teams invest heavily in testing capabilities. Therefore, &lt;code&gt;TEST&lt;/code&gt; subtasks can exceed &lt;code&gt;COMPOSE&lt;/code&gt;, and the two phases could actually reverse (in &lt;a href=&quot;https://en.wikipedia.org/wiki/Test-driven_development&quot;&gt;test driven development&lt;/a&gt;), overlap or iterate back and forth.&lt;/li&gt;
+&lt;li&gt;When doing small things (fix a defect, enhance a feature), exclude subtasks for things that already exist (&lt;code&gt;Generating file(s)&lt;/code&gt;, &lt;code&gt;Create visual testing page&lt;/code&gt;) or won&amp;#39;t change (&lt;code&gt;Document API&lt;/code&gt;). Also limit &lt;code&gt;TEST&lt;/code&gt;, &lt;code&gt;PRESENT&lt;/code&gt;, and &lt;code&gt;REVIEW&lt;/code&gt; subtasks to what&amp;#39;s needed. As a result, Code for fixing a defect should have far fewer subtasks (see diagram below).&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+    <figure class="escom-article-figure escom-article-figure--full-width">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/9.png" alt="For defects, minimize needed subtasks commensurate with TEST, PRESENT, and REVIEW needed">
+        </div>
+        <figcaption class="escom-article-figure__caption">For defects, minimize needed subtasks commensurate with TEST, PRESENT, and REVIEW needed</figcaption>
+    </figure>
+
+
+
+&lt;p&gt;Coordinate community engagement in a timely way. If &lt;code&gt;Review API with Dev Community&lt;/code&gt; blocks getting started, then move it backward into &lt;code&gt;INTIATE&lt;/code&gt;. If feedback is expected to be light, move it forward (into &lt;code&gt;TEST&lt;/code&gt;, &lt;code&gt;PRESENT&lt;/code&gt; or… just &lt;code&gt;REVIEW&lt;/code&gt; it).&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;documentation-doc&quot;&gt;Documentation (&amp;quot;Doc&amp;quot;)&lt;/h3&gt;
+&lt;p&gt;There&amp;#39;s more to documentation than just code&amp;#39;s Props, Methods, and Events (which may be completed during &lt;code&gt;Code&lt;/code&gt;). There&amp;#39;s &lt;a href=&quot;/articles/component-design-guidelines.html&quot;&gt;design guidelines&lt;/a&gt;. There&amp;#39;s copious &lt;a href=&quot;/articles/component-examples.html&quot;&gt;examples with meaningful content&lt;/a&gt;. There&amp;#39;s accessibility notes, for both designers and developers. Producing a robust feature with rigor? For design systems, that means subtasks for documentation too.&lt;/p&gt;
+
+
+
+
+    <figure class="escom-article-figure escom-article-figure--full-width">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/10.png" alt="Doc process">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+&lt;h3 id=&quot;common-documentation-subtasks&quot;&gt;Common Documentation Subtasks&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;START&lt;/code&gt;&lt;/strong&gt;: Set up a documentation file from a template, such as a Microsoft Word, Google Doc, or a generated code file.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;COMPOSE&lt;/code&gt;&lt;/strong&gt;: Author varying content types, from &lt;a href=&quot;/articles/component-introductions.html&quot;&gt;component introductions&lt;/a&gt; to &lt;a href=&quot;/articles/component-examples.html&quot;&gt;examples with real content&lt;/a&gt;, from &lt;a href=&quot;/articles/component-design-guidelines.html&quot;&gt;design guidelines&lt;/a&gt; to accessibility notes for design and code.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;TEST&lt;/code&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;code&gt;PRESENT&lt;/code&gt;&lt;/strong&gt;: N/A for Doc, or at least optional depending on the scale of material.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;REVIEW&lt;/code&gt;&lt;/strong&gt;: For &lt;code&gt;Doc&lt;/code&gt;, reviews  feel more contained within the system core team. Both disciplines-designer, developer-should review all content types. Additionally, I value when teams engage a content strategist as a &amp;quot;System Editor&amp;quot; for quick reviews queued ad-hoc over time.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;DELIVER&lt;/code&gt;&lt;/strong&gt;: Depending on your process, migrating (to Markdown?) and publishing may be a subtask within &lt;em&gt;this&lt;/em&gt; &lt;code&gt;Doc&lt;/code&gt; step or a &lt;code&gt;Publish&lt;/code&gt; step.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;outside-participants&quot;&gt;Outside Participants&lt;/h3&gt;
+&lt;p&gt;Doc may require participation of those outside the system team including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Design and developer community&lt;/strong&gt; members, less formally but valuable to review emerging work, often notified in messaging or email apps.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content strategist&lt;/strong&gt; as &amp;quot;System Editor&amp;quot; to review queued materials.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Accessibility specialist&lt;/strong&gt; to compose or review accessibility guidelines.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;assignments-integration--tracking&quot;&gt;Assignments, Integration &amp;amp; Tracking&lt;/h2&gt;
+&lt;p&gt;Woah! That&amp;#39;s a ton of substeps! So much work is required to be meticulous and robust. How do teams stay on top of it all?&lt;/p&gt;
+&lt;h3 id=&quot;per-step-assign-a-main-owner-and-integrate-others&quot;&gt;Per Step, Assign a &amp;quot;Main Owner&amp;quot; and Integrate Others&lt;/h3&gt;
+&lt;p&gt;By breaking down steps into subtasks, we can assign different subtasks to different people.&lt;/p&gt;
+
+
+
+
+    <figure class="escom-article-figure escom-article-figure--break-bleed">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/11.png" alt="Per Step, Assign a &quot;Main Owner&quot; and Integrate Others">
+        </div>
+        <figcaption class="escom-article-figure__caption">Per Step, Assign a "Main Owner" and Integrate Others</figcaption>
+    </figure>
+
+
+
+&lt;p&gt;When a new feature &lt;code&gt;Code&lt;/code&gt; step is assigned to a system team developer, they&amp;#39;ll complete nearly all tasks except reviews. On the other hand, a less seasoned contributing developer outside the system team may complete &lt;code&gt;START&lt;/code&gt; and &lt;code&gt;COMPOSE&lt;/code&gt; tasks, partner with a system team developer to &lt;code&gt;TEST&lt;/code&gt; and &lt;code&gt;PRESENT&lt;/code&gt;, and gradually cede &lt;code&gt;REVIEW&lt;/code&gt; and &lt;code&gt;DELIVER&lt;/code&gt; tasks.&lt;/p&gt;
+&lt;h3 id=&quot;best-integrate-tasks-in-tools&quot;&gt;Best: Integrate Tasks in Tools!&lt;/h3&gt;
+&lt;p&gt;I&amp;#39;m really encouraged by teams and tools like Storybook that build many substeps into directly into tools. For example, &lt;a href=&quot;https://twitter.com/domyen/status/1225110323625123844&quot;&gt;Dominic Nguyen exposed tooling&lt;/a&gt; that blocks merging code until sufficient reviewers, outstanding comments, and other workflows have been completed.&lt;/p&gt;
+
+
+
+
+    <figure class="escom-article-figure escom-article-figure--break-bleed">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/12.gif" alt="UI checklist for Storybook in Chromatic.com">
+        </div>
+        <figcaption class="escom-article-figure__caption">UI checklist for Storybook in <a href="http://chromatic.com">Chromatic.com</a></figcaption>
+    </figure>
+
+
+
+&lt;p&gt;The more designer and developer tools integrate these substeps into tools naturally, bringing the workflow into the work, the better. While I may spend considerable time orchestrating data in Jira, my teammates don&amp;#39;t. They&amp;#39;d much rather spend time in their own tools, collaborating and running commands to get work done.&lt;/p&gt;
+&lt;h3 id=&quot;better-task-management-details&quot;&gt;Better: Task Management Details&lt;/h3&gt;
+&lt;p&gt;Nevertheless, tools like Jira and Asana exist for a reason. We&amp;#39;re currently far from tracking every subtask across every step for every feature. While we can optimize the heaviest step (&lt;code&gt;Code&lt;/code&gt;) for things we make the most (UI Components), tooling &lt;code&gt;Propose&lt;/code&gt;, &lt;code&gt;Design&lt;/code&gt;, and &lt;code&gt;Doc&lt;/code&gt; for things like UX patterns, visual style, and others is reach too far for tools today.&lt;/p&gt;
+
+
+
+
+    <figure class="escom-article-figure escom-article-figure--break-bleed">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/13.png" alt="Propose story, with subtasks generated and assigned">
+        </div>
+        <figcaption class="escom-article-figure__caption">Propose story, with subtasks generated and assigned</figcaption>
+    </figure>
+
+
+
+&lt;p&gt;Therefore, teams integrate common, repeatable checklists as subtasks per step into how they use Asana or &lt;a href=&quot;/articles/jira-for-design-systems.html&quot;&gt;Jira for design systems&lt;/a&gt;. For example, one team I worked with created checklists consistent with their workflow, easily copied into Jira&amp;#39;s Create Multiple Subtasks dialog when the time is right (below, for a &lt;code&gt;Propose&lt;/code&gt; task).&lt;/p&gt;
+
+
+<esds-code-snippet max-height="none">
+- Discover requirements, including audits / assignee:"@current"
+- Obtain input on scope from communities / assignee:"@current"
+- Document scope and plan / assignee:"@current"
+- Present in system team critique / assignee:"@current"
+- Present in design critique / assignee:"@current"
+- Review by system product owner
+- Review by system designer
+- Review by system eveloper
+- Approve or decline proposal, including feature name / assignee:"@current"
+- Add, prioritize and assign Jira tasks / assignee:"@current"
+</esds-code-snippet>
+
+&lt;hr&gt;
+&lt;h3 id=&quot;split-subtasks-across-iterations-to-not-overwhelm&quot;&gt;Split Subtasks Across Iterations to Not Overwhelm&lt;/h3&gt;
+&lt;p&gt;Kevin Powell and I work together often across different client engagements. He&amp;#39;s experienced workflows like these many times, and bristles at a Code step with so many substeps obviously unrealistic to complete in an iteration.&lt;/p&gt;
+
+
+
+
+    <figure class="escom-article-figure escom-article-figure--break-bleed">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/14.png" alt="Process phases split across two sprints">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+&lt;p&gt;Instead, he prefers breaking down all the substeps into smaller chunks. This model directly suggests how to do so, such as &lt;code&gt;START&lt;/code&gt; and &lt;code&gt;COMPOSE&lt;/code&gt; in one sprint followed by &lt;code&gt;TEST&lt;/code&gt;, &lt;code&gt;PRESENT&lt;/code&gt;, &lt;code&gt;REVIEW&lt;/code&gt;, and &lt;code&gt;DELIVER&lt;/code&gt; in the next sprint.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Subtasks per step offer robustness, lead to quality, and generate confidence and trust that the system is a disciplined, focused effort. However, with rigor comes complexity, wider coordination, and overhead. Things can slow down.&lt;/p&gt;
+&lt;p&gt;As I work with teams, I encourage two things: balance and gradual, incremental growth. It&amp;#39;s hard for a team to adapt to all these steps all at once. It&amp;#39;s a lot. So take it one step at a time. Use these categories, examples, and practices to norm operations on a practice that suits you best. You&amp;#39;ll get there!&lt;/p&gt;
+
+
+
+        </div>
+    </div>
+    
+
+<div class="esds-row esds-container--light esds-row--tall-inset">
+    <div class="esds-row__inner escom-footer-systems__row">
+        <div class="escom-long-form-text">
+            <h2>@components</h2>
+            <p class="escom-long-form-text__lead">The complete collection of EightShapes writings on design systems, here for free. Follow <a href="https://twitter.com/components">@components</a> on Twitter for updates and new articles.</p>
+        </div>
+        <div class="escom-footer-systems__columnset">
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Visual Style</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Documentation</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">UI Components</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Releases</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Strategy</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Contributions</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Systems of Systems</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Process</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">People</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Workshop Activities</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+    
+
+    
+
+<div class="esds-row esds-row esds-row--tall-inset esds-container--brand escom-cta escom-cta--components-publication escom-page-type--marketing"
+    
+    >
+    <div class="esds-row__inner">
+        
+            
+        <div class="escom-long-form-text">
+            <h2>Need help with your system?</h2>
+            
+            <p class="escom-long-form-text__lead">EightShapes can energize your efforts to coach, workshop, assess or partner with you to design, code, document and manage a system.</p>
+            
+        </div>
+        
+        <div class="escom-cta__action">
+        
+    
+
+    <a class="esds-button esds-button--secondary esds-button--large escom-cta__action-button"  href=/design-systems.html>
+        
+        
+            Learn More
+        
+        
+    </a>
+
+        </div>
+        
+    
+        
+    </div>
+</div>
+
+
+
+
+
+        
+
+    
+
+<div class="esds-row esds-container--dark escom-site-footer esds-row--tall-inset"
+    
+    >
+    <div class="esds-row__inner">
+        
+            
+    
+        <div class="escom-site-footer__row">
+            <div class="escom-site-footer__column">
+                
+    
+
+    <svg class="esds-icon escom-site-footer__logo" >
+        
+        <use xlink:href="/icons/esds.svg#eightshapes-logo"></use>
+    </svg>
+
+                <div class"escom-site-footer__address-row">12805 Misty Creek Lane</div> 
+                <div class"escom-site-footer__address-row">Fairfax, VA 22033</div>
+            </div>
+            <div class="escom-site-footer__column escom-site-footer__column--offset">
+                <a class="escom-site-footer__link" tel="703.296.8831"> (703) 296-8831</a>
+                <a class="escom-site-footer__link" href="mailto:info@eightshapes.com">info@eightshapes.com</a>
+            </div>
+            <div class="escom-site-footer__column escom-site-footer__column--offset">
+                <a class="escom-site-footer__social-link" href="https://twitter.com/eightshapes">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--twitter" >
+        
+        <use xlink:href="/icons/esds.svg#twitter"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@eightshapes</span>
+                </a>
+                <a class="escom-site-footer__social-link" href="https://www.linkedin.com/company/eightshapes-llc">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--linkedin" >
+        
+        <use xlink:href="/icons/esds.svg#linkedin"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@EightShapes</span>
+                </a>
+                <a class="escom-site-footer__social-link" href="https://medium.com/eightshapes-llc">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--medium" >
+        
+        <use xlink:href="/icons/esds.svg#medium"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@eightshapes</span>
+                </a>
+            </div>
+        </div>
+
+    
+        
+    </div>
+</div>
+
+
+
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        
+        <script src="/dist/escom.js"></script>
+          <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-1201194-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+  </script>
+
+    </body>
+</html>

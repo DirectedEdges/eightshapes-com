@@ -1,0 +1,532 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+        <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+        <meta http-equiv="cleartype" content="on">
+
+        <title>EightShapes &gt; @components &gt; undefined</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="/dependencies/esds.css"> <!-- copied from esds-library dependency -->
+        <link rel="stylesheet" href="/dist/escom.css">
+
+        
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700&display=swap" rel="stylesheet">
+  <!-— facebook open graph tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.eightshapes.com/articles/.html" />
+  <meta property="og:title" content="post Title" />
+  <meta property="og:description" content="false" />
+  
+
+  <!-— twitter card tags additive with the og: tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:domain" value="eightshapes.com" />
+  <meta name="twitter:title" value="post Title" />
+  <meta name="twitter:description" value="false" />
+  
+  <meta name="twitter:url" value="https://www.eightshapes.com/articles/.html" />
+
+  <!-- No Shadow DOM, so link directly to styles -->
+  <link rel="stylesheet" href="/styles/dependencies/esds-code-snippet.css"/>
+
+  <!-- Separate webcomponents polyfill bundle for Edge, IE11, etc. -->
+  <script type="text/javascript" src="/scripts/dependencies/custom-elements.min.js"></script>
+
+  <!-- ESDS Doc components -->
+  <!-- The ESM "vanilla" version of the component for FF, Safari, Chrome and Edge -->
+  <script type="module" src="/scripts/dependencies/esds-code-snippet-web-component.js"></script>
+
+  <!-- A babel-compiled version of the component for IE11 -->
+  <script nomodule type="text/javascript" src="/scripts/dependencies/esds-code-snippet-legacy.js"></script>
+
+    </head>
+    <body class="">
+        
+    
+    
+    
+
+    
+    <div class="esds-row esds-container--brand esds-breadcrumb esds-row--no-inset">
+        <div class="esds-row__inner">
+            <h1 class="esds-breadcrumb__brand">
+                <a href="/" class="esds-breadcrumb__link">
+                    
+    
+
+    <svg class="esds-icon esds-breadcrumb__brand-mark" >
+        
+        <use xlink:href="/icons/esds.svg#eightshapes-logo"></use>
+    </svg>
+
+                </a>
+                
+                <a href="/components/" class="esds-breadcrumb__link">
+                    
+    
+
+    <svg class="esds-icon esds-breadcrumb__delimiter" >
+        
+        <use xlink:href="/icons/esds.svg#angle-right"></use>
+    </svg>
+
+                    <span class="esds-breadcrumb__crumb-section">@components</span>
+                </a>
+                
+            </h1>
+        </div>
+    </div>
+
+
+    <div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
+        <div class="esds-row__inner">
+            <div class="escom-article__author-row">
+                <div class="escom-article__author-avatar"
+                    style="background-image: url('/images/bios/bio-thumb-.png')">
+                </div>
+                <div class="escom-article__author-text">
+                    <p class="escom-article__author">
+                        <a href=""></a>
+                    </p>
+                    <p class="escom-article__author-role">
+                        
+                    </p>
+                    <p>
+                        <span class="escom-article__published-date">
+                            Originally published false •
+                        </span>
+                        <span class="escom-article__read-duration">
+                            falsemin
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="escom-article__title-row escom-article__title-row--no-masthead-next">
+                <h1 class="escom-article__title">post Title</h1>
+                
+            </div>
+
+    
+
+    
+    &lt;p&gt;Every system needs &lt;em&gt;button&lt;/em&gt;, &lt;em&gt;checkbox&lt;/em&gt;, and typographic &lt;em&gt;headings&lt;/em&gt;. But beyond an obvious core, curating a system’s scope requires balancing disparate features, tradeoffs, and an uncertain boundary of how much is too much.&lt;/p&gt;
+&lt;p&gt;Upon a &lt;code&gt;1.0&lt;/code&gt; &lt;a href=&quot;/articles/starting-a-design-system.html&quot;&gt;release&lt;/a&gt;, a system can be inundated with contribution inquiries:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Can I add my awesome &lt;em&gt;Card&lt;/em&gt; design to the library?&lt;/li&gt;
+&lt;li&gt;Should we publish my Chart colors in system doc?&lt;/li&gt;
+&lt;li&gt;Shall I merge my Layout Grid CSS into the system repo?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Designers and engineers always confront challenges the system doesn’t solve. And then, they’ll solve it. Through blood, sweat and tears, they’ll develop fervent belief about the solution’s value. The system is their path to amplify that value. But is the system the right place for it?&lt;/p&gt;
+&lt;p&gt;Where and how do we — collaborators chatting, a systems team reviewing proposals, squads planning a release, or a community of practice charting a path — decide &lt;strong&gt;what belongs in the system&lt;/strong&gt; and convey &lt;strong&gt;what work remains&lt;/strong&gt;?&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;does-it-belong-in-the-system&quot;&gt;Does It Belong in the System?&lt;/h2&gt;
+&lt;p&gt;Systems are never the repository for every style, component, and feature designed and built for every product ever. Instead, a system should &lt;a href=&quot;/articles/principles-of-designing-systems.html&quot;&gt;include what’s shared across many products and omit what’s not&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;By asking a contributor a few simple questions, you can probe how realistic and valuable a contribution can be. Each question need not elicit an emphatic “Yes!” (except the first one). However, they frame discussion between contributors and system representatives to decide whether or not to move forward.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;1-is-it-relevant-to-any-other-product-if-so-how-many&quot;&gt;&lt;strong&gt;#1. Is it relevant to any other product? If so, how many?&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;For example, a &lt;em&gt;toast error&lt;/em&gt; &lt;em&gt;message&lt;/em&gt; could be relevant to an entire app ecosystem. On the other hand, a souped-up &lt;em&gt;data grid&lt;/em&gt; &lt;em&gt;with toolbars&lt;/em&gt; unique to their product may be irrelevant to everyone else. I’ll use a scale:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Useful only to your product? Not good enough.&lt;/li&gt;
+&lt;li&gt;Useful to another product? Let’s &lt;em&gt;at least&lt;/em&gt; chat about how useful.&lt;/li&gt;
+&lt;li&gt;Useful to 3 products? Got it, let’s a_t least_ discuss this with the community.&lt;/li&gt;
+&lt;li&gt;Useful to 5 products? It probably belongs.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If relevance isn’t clear yet contributor passions persist, direct them to their community to validate assumptions and strengthen their case.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;2-is-it-consistent-with-the-systems-vision&quot;&gt;&lt;strong&gt;#2. Is it consistent with the system’s vision?&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;If your system already sports &lt;em&gt;page-&lt;/em&gt;, &lt;em&gt;inline-&lt;/em&gt;, and &lt;em&gt;toast messages,&lt;/em&gt; a “&lt;em&gt;top hat”&lt;/em&gt; for system outages and other announcements could fit nicely into the set of messaging components&lt;em&gt;.&lt;/em&gt;&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/1.png" alt="Illustration of alert components, such as page level message, inline error, toast, and a proposed addition of a top hat">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;On the other hand, imagine a library of framework-independent HTML and CSS. Then, a contributor proposes a complex, React-based component. That would trigger a repository refactor, implies a framework commitment, and expands the practice to an entirely new testing workflow. The system isn’t meant for that.&lt;/p&gt;
+&lt;p&gt;Few want or even tolerate a bunch of random parts bolted onto edges of a system. Instead, grow a collection deliberately and expand into concerns like editorial, brand, and accessibility when it makes sense.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;3-how-much-will-it-cost-to-make-and-maintain&quot;&gt;&lt;strong&gt;#3. How much will it cost to make and maintain?&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Got a primitive &lt;em&gt;pill&lt;/em&gt; that needs a few varied colors? Easy. Proposing a complex, multi-panel &lt;em&gt;calendar date picker&lt;/em&gt;? Let’s take a breath.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/2.png" alt="Comparison of a pil component and a date picker component">
+        </div>
+        <figcaption class="escom-article-figure__caption">Basic pill vs Very Complicated Date Picker (Source: <a href="http://bootstrap-datepicker.readthedocs.io/en/latest/" rel="noopener nofollow" target="_blank">readthedocs.io</a>)</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;&lt;em&gt;Date Pickers&lt;/em&gt; are a wonderful example. Many products use a &lt;em&gt;Date Picker&lt;/em&gt;. However, most need &lt;em&gt;their specific version&lt;/em&gt; of a Date Picker. Not only is it complex and expensive, but it’s nearly impossible to build one that meets every product’s nuanced needs and contexts. Instead, adopters gripe about all the overrides and extensions they have to do, effortfully stripping out the features you built thinking they worked for everyone. Avoid complex things made for everyone but fit no one.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;4-does-it-trigger-momentum-in-a-new-direction&quot;&gt;&lt;strong&gt;#4. Does it trigger momentum in a new direction?&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;A system team can’t take a burgeoning library in every direction at once. If your team is focused on areas like error messaging and notifications, a &lt;em&gt;Tooltip&lt;/em&gt; contribution could trigger growth elsewhere.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/3.png" alt="Illustration of a tooltip that begets a popover that begets a menu component">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;Solving for &lt;em&gt;Tooltips&lt;/em&gt; includes &lt;code&gt;z-index&lt;/code&gt; layering and shadows, JavaScript events, and aligning notches to all sides. Compositionally, such properties extend to &lt;em&gt;Popover&lt;/em&gt; and &lt;em&gt;Menus&lt;/em&gt; that follow. I’ll bias towards contributions that spur development in directions useful to everyone.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;5-how-deeply-can-you-guide-its-use&quot;&gt;&lt;strong&gt;#5. How deeply can &lt;em&gt;YOU&lt;/em&gt; guide its use?&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.linkedin.com/in/admrwe/&quot;&gt;Adam Rowe&lt;/a&gt;, a recent system collaborator, came up with this productive and reasonable challenge question:&lt;/p&gt;
+
+
+  
+
+
+
+        <div class="escom-bar-quote">
+            What guidance can you document now? Use…when? Configure…how? Alter content…in what ways? How does this work, for everybody?
+        </div>
+
+
+
+  &lt;p&gt;If your contributor struggles to articulate ideas and you don’t know either, maybe the feature isn’t mature or ready for broad distribution. However, what if your contributor quickly cites scenarios of use, rattles off do and don’ts, and itemizes editorial and style considerations? Now we’re talking!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;6-is-the-timing-right-for-contributor-and-system&quot;&gt;&lt;strong&gt;#6. Is the timing right for contributor AND system?&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;Ultimately, a contribution conversation must zero in on timing. Does your system team’s release cycle and roadmap have space for this now or later? Does this feature pair well with other current developments?&lt;/p&gt;
+&lt;p&gt;Just as important, does your contributor have enough time to complete the work to be done? It’s often tough for a contributor to answer. First, they may not control their time and would need to get space from their manager or product owner. Plus, they may not have a grasp of the work that remains.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;whats-left-to-be-done&quot;&gt;What’s Left to Be Done?&lt;/h2&gt;
+&lt;p&gt;In my 10+ years of system work, I’ve never seen a contribution complete enough to be immediately merged into the system. Instead, there’s work to fine tune the contribution to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Expand&lt;/strong&gt; to a minimally sufficient feature set,&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reduce&lt;/strong&gt; scope to omit contentious features, and&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Always, always&lt;/em&gt; &lt;strong&gt;normalize&lt;/strong&gt; to how system features are designed and built.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;1-expand-to-cover-a-minimally-relevant-feature-set&quot;&gt;#1. Expand to Cover a Minimally Relevant Feature Set&lt;/h3&gt;
+&lt;p&gt;You can’t add half-baked features to a library. Premature and simplistic solutions risk inconsistent interpretations per product that you meant to eradicate. Even worse, adding features later risks triggers breaking changes that can alienate adopters.&lt;/p&gt;
+&lt;p&gt;For example, a proposed &lt;em&gt;Card&lt;/em&gt; may appear simple: image and title. Done, right? Not so fast! A system-worthy grid may require opinions on card description, type, photo aspect ratio, interactions, and more.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure escom-article-figure--break-bleed">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/4.png" alt="Different additional elements added to a card design">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;&lt;em&gt;What’s left to be done?&lt;/em&gt; Resolve &lt;strong&gt;what features to have&lt;/strong&gt;  — Description or not? Tall photo or not? Photo optional? — and verify the solution with across the product community that’ll adopt it.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Who does the work?&lt;/em&gt; This is a tough one. A contributor’s passion may diffuse into apathy when forced to engage a large community to define requirements and finalize design. Be upfront on the time commitment and discern if the contributor is up to the task.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;2-reduce-scope-to-broaden-relevance&quot;&gt;#2. Reduce Scope to Broaden Relevance&lt;/h3&gt;
+&lt;p&gt;The contribution may also need to &lt;strong&gt;reduce scope to a relevant essence&lt;/strong&gt; useful across products. Consider an already arduous collaboration across three flagship products to unify a &lt;em&gt;Card&lt;/em&gt; component design.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure escom-article-figure--break-bleed">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/5.png" alt="Three alternative card designs">
+        </div>
+        <figcaption class="escom-article-figure__caption">Three alternative Card designs</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;&lt;em&gt;Headings&lt;/em&gt;, &lt;em&gt;descriptions&lt;/em&gt;, and &lt;em&gt;images&lt;/em&gt; are fairly similar, and we quickly achieved consensus on &lt;em&gt;thumbnail&lt;/em&gt; aspect ratio. But interactions are all over the place! Conversations on button and icon arrangements swirled into oblivion. Argh, c’mon, can’t we all get along?&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure escom-article-figure--break-bleed">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/6.png" alt="Reconciled features of a card added to a system">
+        </div>
+        <figcaption class="escom-article-figure__caption">Card design added to the system</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;Actually, you already get along! A system’s &lt;em&gt;Card&lt;/em&gt; can include agreed features — &lt;em&gt;thumbnail&lt;/em&gt;, copy &lt;em&gt;heading&lt;/em&gt; styles, &lt;em&gt;descriptions&lt;/em&gt; — and omit contentious items. This is especially true if a library also offers other primitives—here, &lt;em&gt;button&lt;/em&gt; and _icons — _so that product teams can customize the contentious stuff themselves. Problem solved, move on.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;What’s left to be done?&lt;/em&gt; Review proposed features and prune unessential items lacking consensus. This may also yield other components (here, &lt;em&gt;thumbnail&lt;/em&gt;) reusable in future components too (like &lt;em&gt;media object&lt;/em&gt; and &lt;em&gt;content tiles&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Who does the work?&lt;/em&gt; Reduction is often driven by a system expert acting as connector and negotiator across a community, probing and challenging designs effectively, and biasing collaboration towards consensus.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;3-normalize-align-with-system-composition-and-quality&quot;&gt;#3. Normalize! Align with System Composition and Quality&lt;/h3&gt;
+&lt;p&gt;Perhaps a design include myriad non-system colors, wacky spatial choices, and product-specific icons. Or, maybe contributed HTML markup is crude, CSS is unorganized across files, and — gasp! — uses &lt;a href=&quot;http://stylus-lang.com&quot;&gt;Stylus&lt;/a&gt; instead of the system’s &lt;a href=&quot;http://sass-lang.com/&quot;&gt;Sass&lt;/a&gt;. Without a doubt, contributions always lack every text / background combo, size option and theming construct the system offers.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;What’s left to be done?&lt;/em&gt; Each contribution must be normalized into system standards. The system promises &lt;a href=&quot;/articles/component-qa-in-design-systems.html&quot;&gt;robust and accessible features of high visual quality and resilient to varied content&lt;/a&gt;, dependent on a shared — and perhaps &lt;a href=&quot;/articles/tokens-in-design-systems.html&quot;&gt;tokenized&lt;/a&gt; — visual language. The system’s code aligns with repository standards to ease per-item and cross-library maintenance. So, the contribution has to get there.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Who does the work?&lt;/em&gt; For seasoned contributors, this step is familiar and completed with relative ease. However, the system rep must balance the time needed to deeply educate a contributor, suffer exhausting iterative reviews, and risk still having to complete the task themselves anyway. More often than not, a system rep volunteers for this production.&lt;/p&gt;
+
+
+
+        </div>
+    </div>
+    
+
+<div class="esds-row esds-container--light esds-row--tall-inset">
+    <div class="esds-row__inner escom-footer-systems__row">
+        <div class="escom-long-form-text">
+            <h2>@components</h2>
+            <p class="escom-long-form-text__lead">The complete collection of EightShapes writings on design systems, here for free. Follow <a href="https://twitter.com/components">@components</a> on Twitter for updates and new articles.</p>
+        </div>
+        <div class="escom-footer-systems__columnset">
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Visual Style</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Documentation</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">UI Components</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Releases</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Strategy</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Contributions</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Systems of Systems</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Process</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">People</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Workshop Activities</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+    
+
+    
+
+<div class="esds-row esds-row esds-row--tall-inset esds-container--brand escom-cta escom-cta--components-publication escom-page-type--marketing"
+    
+    >
+    <div class="esds-row__inner">
+        
+            
+        <div class="escom-long-form-text">
+            <h2>Need help with your system?</h2>
+            
+            <p class="escom-long-form-text__lead">EightShapes can energize your efforts to coach, workshop, assess or partner with you to design, code, document and manage a system.</p>
+            
+        </div>
+        
+        <div class="escom-cta__action">
+        
+    
+
+    <a class="esds-button esds-button--secondary esds-button--large escom-cta__action-button"  href=/design-systems.html>
+        
+        
+            Learn More
+        
+        
+    </a>
+
+        </div>
+        
+    
+        
+    </div>
+</div>
+
+
+
+
+
+        
+
+    
+
+<div class="esds-row esds-container--dark escom-site-footer esds-row--tall-inset"
+    
+    >
+    <div class="esds-row__inner">
+        
+            
+    
+        <div class="escom-site-footer__row">
+            <div class="escom-site-footer__column">
+                
+    
+
+    <svg class="esds-icon escom-site-footer__logo" >
+        
+        <use xlink:href="/icons/esds.svg#eightshapes-logo"></use>
+    </svg>
+
+                <div class"escom-site-footer__address-row">12805 Misty Creek Lane</div> 
+                <div class"escom-site-footer__address-row">Fairfax, VA 22033</div>
+            </div>
+            <div class="escom-site-footer__column escom-site-footer__column--offset">
+                <a class="escom-site-footer__link" tel="703.296.8831"> (703) 296-8831</a>
+                <a class="escom-site-footer__link" href="mailto:info@eightshapes.com">info@eightshapes.com</a>
+            </div>
+            <div class="escom-site-footer__column escom-site-footer__column--offset">
+                <a class="escom-site-footer__social-link" href="https://twitter.com/eightshapes">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--twitter" >
+        
+        <use xlink:href="/icons/esds.svg#twitter"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@eightshapes</span>
+                </a>
+                <a class="escom-site-footer__social-link" href="https://www.linkedin.com/company/eightshapes-llc">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--linkedin" >
+        
+        <use xlink:href="/icons/esds.svg#linkedin"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@EightShapes</span>
+                </a>
+                <a class="escom-site-footer__social-link" href="https://medium.com/eightshapes-llc">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--medium" >
+        
+        <use xlink:href="/icons/esds.svg#medium"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@eightshapes</span>
+                </a>
+            </div>
+        </div>
+
+    
+        
+    </div>
+</div>
+
+
+
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        
+        <script src="/dist/escom.js"></script>
+          <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-1201194-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+  </script>
+
+    </body>
+</html>

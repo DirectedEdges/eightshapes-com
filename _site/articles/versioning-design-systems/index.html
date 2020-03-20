@@ -1,0 +1,762 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+        <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+        <meta http-equiv="cleartype" content="on">
+
+        <title>EightShapes &gt; @components &gt; undefined</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="/dependencies/esds.css"> <!-- copied from esds-library dependency -->
+        <link rel="stylesheet" href="/dist/escom.css">
+
+        
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700&display=swap" rel="stylesheet">
+  <!-— facebook open graph tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.eightshapes.com/articles/.html" />
+  <meta property="og:title" content="post Title" />
+  <meta property="og:description" content="false" />
+  
+
+  <!-— twitter card tags additive with the og: tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:domain" value="eightshapes.com" />
+  <meta name="twitter:title" value="post Title" />
+  <meta name="twitter:description" value="false" />
+  
+  <meta name="twitter:url" value="https://www.eightshapes.com/articles/.html" />
+
+  <!-- No Shadow DOM, so link directly to styles -->
+  <link rel="stylesheet" href="/styles/dependencies/esds-code-snippet.css"/>
+
+  <!-- Separate webcomponents polyfill bundle for Edge, IE11, etc. -->
+  <script type="text/javascript" src="/scripts/dependencies/custom-elements.min.js"></script>
+
+  <!-- ESDS Doc components -->
+  <!-- The ESM "vanilla" version of the component for FF, Safari, Chrome and Edge -->
+  <script type="module" src="/scripts/dependencies/esds-code-snippet-web-component.js"></script>
+
+  <!-- A babel-compiled version of the component for IE11 -->
+  <script nomodule type="text/javascript" src="/scripts/dependencies/esds-code-snippet-legacy.js"></script>
+
+    </head>
+    <body class="">
+        
+    
+    
+    
+
+    
+    <div class="esds-row esds-container--brand esds-breadcrumb esds-row--no-inset">
+        <div class="esds-row__inner">
+            <h1 class="esds-breadcrumb__brand">
+                <a href="/" class="esds-breadcrumb__link">
+                    
+    
+
+    <svg class="esds-icon esds-breadcrumb__brand-mark" >
+        
+        <use xlink:href="/icons/esds.svg#eightshapes-logo"></use>
+    </svg>
+
+                </a>
+                
+                <a href="/components/" class="esds-breadcrumb__link">
+                    
+    
+
+    <svg class="esds-icon esds-breadcrumb__delimiter" >
+        
+        <use xlink:href="/icons/esds.svg#angle-right"></use>
+    </svg>
+
+                    <span class="esds-breadcrumb__crumb-section">@components</span>
+                </a>
+                
+            </h1>
+        </div>
+    </div>
+
+
+    <div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
+        <div class="esds-row__inner">
+            <div class="escom-article__author-row">
+                <div class="escom-article__author-avatar"
+                    style="background-image: url('/images/bios/bio-thumb-.png')">
+                </div>
+                <div class="escom-article__author-text">
+                    <p class="escom-article__author">
+                        <a href=""></a>
+                    </p>
+                    <p class="escom-article__author-role">
+                        
+                    </p>
+                    <p>
+                        <span class="escom-article__published-date">
+                            Originally published false •
+                        </span>
+                        <span class="escom-article__read-duration">
+                            falsemin
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="escom-article__title-row escom-article__title-row--no-masthead-next">
+                <h1 class="escom-article__title">post Title</h1>
+                
+            </div>
+
+    
+
+    
+    &lt;p&gt;As a system changes, adopters will want to take advantage of what’s new.&lt;/p&gt;
+
+
+  
+
+
+
+        <div class="escom-bar-quote">
+            “Let’s update the old Card with a new, shiny Card,” they say. Or, dangerously, “Let’s<strong> </strong>put this newer Button in the page with all those older ones.”
+        </div>
+
+
+
+  &lt;p&gt;Trouble arises when change is poorly communicated or its impacts ill-defined. Developers compare a proposed design to system code, identify what needs swapped or added, and carefully install or upgrade what’s needed. They are also usually mindful of &lt;a href=&quot;/articles/visual-breaking-change-in-design-systems.html&quot;&gt;breaking change&lt;/a&gt; in dependencies.&lt;/p&gt;
+&lt;p&gt;Are designers as sensitive to changes when working in a tool like Sketch? Not as much. They replace this with that. A new Button goes here, unaware that older buttons are used elsewhere in that or other pages. Designers flow updates swiftly, indicating neither the component’s version nor annotating an upgrade compared to what’s coded today. Friction ensues:&lt;/p&gt;
+
+
+  
+
+
+
+        <div class="escom-pull-quote escom-pull-quote--light">
+            <div class="escom-pull-quote__the-quote">
+                I add a new system feature to my design. Yet the developer says we can’t use it.
+            </div>
+            
+            
+            <div class="escom-pull-quote__attribution">
+                Designer on a proudct team
+            </div>
+            
+        </div>
+
+
+
+  
+
+  
+
+
+
+        <div class="escom-pull-quote escom-pull-quote--light">
+            <div class="escom-pull-quote__the-quote">
+                The designer sprays style and component upgrades across a new feature, completely unaware of the upgrade costs it triggers across our whole app.
+            </div>
+            
+            
+            <div class="escom-pull-quote__attribution">
+                Developer on the same product team
+            </div>
+            
+        </div>
+
+
+
+  &lt;p&gt;Designers want the latest. Developers balance tradeoffs of new quality with scale and maintenance. Systems should clean up that conversation.&lt;/p&gt;
+&lt;p&gt;Identifying &lt;strong&gt;how to version&lt;/strong&gt; is simple (use SemVer!). However, identifying what’s versioned —  &lt;strong&gt;by library or by component&lt;/strong&gt; —is more challenging. Versioning communicates how things change from launch through &lt;strong&gt;deprecation&lt;/strong&gt; and &lt;strong&gt;end-of-life&lt;/strong&gt;. This article takes us through that cycle of change across &lt;a href=&quot;/articles/releasing-design-systems.html&quot;&gt;system outputs&lt;/a&gt;: code, tokens, design assets, and doc.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;how-to-version-start-with-semver&quot;&gt;How to Version? Start with SemVer&lt;/h2&gt;
+&lt;p&gt;Every discussion about versioning design system outputs begins and ends with the industry standard &lt;a href=&quot;https://semver.org/&quot;&gt;Semantic Versioning&lt;/a&gt; (SemVer).&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/1.png" alt="Semver diagram of major, minor and patch version numbers">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;SemVer versions in a &lt;code&gt;MAJOR.MINOR.PATCH&lt;/code&gt; format, incrementing each as a:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;MAJOR&lt;/code&gt; version for incompatible API changes (that is, something &lt;a href=&quot;/articles/visual-breaking-change-in-design-systems.html&quot;&gt;&amp;quot;breaks&amp;quot;&lt;/a&gt;),&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MINOR&lt;/code&gt; version for adding features that are backwards-compatible, and&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PATCH&lt;/code&gt; version for backwards-compatible bug fixes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/design-optimizely/how-to-version-your-ui-library-1c7a1b7ee23a&quot;&gt;Daniel O’Connor&lt;/a&gt;, Atlassian’s &lt;a href=&quot;https://atlaskit.atlassian.com/docs/guides/versioning&quot;&gt;AtlasKit&lt;/a&gt;, and &lt;a href=&quot;http://designsystem.morningstar.com/about/versioning.html&quot;&gt;Morningstar’s Design System&lt;/a&gt; offer helpful deeper examples describing SemVer’s application to system features.&lt;/p&gt;
+&lt;p&gt;Long an industry standard in versioning code, versioning is increasingly relevant in design tools too. Many system teams apply SemVer to Sketch symbol libraries in software tools like &lt;a href=&quot;https://www.goabstract.com/&quot;&gt;Abstract&lt;/a&gt; and &lt;a href=&quot;https://www.invisionapp.com/design-system-manager/&quot;&gt;Invision DSM&lt;/a&gt;. You can learn the methodology at &lt;a href=&quot;https://semver.org/&quot;&gt;http://www.semver.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Strongly encourage designers to learn SemVer. Not only will it help them communicate with engineers more effectively, but it is increasingly meaningful in designer-to-designer collaboration too. It &lt;a href=&quot;https://uxplanet.org/how-version-control-changed-my-everyday-life-cc67b0009e3d&quot;&gt;changes lives&lt;/a&gt;!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;what-to-version-a-library-or-features-within&quot;&gt;What to Version? A Library or Features Within&lt;/h2&gt;
+&lt;p&gt;A design system team versions its library as a single, monolithic package or separately per feature, such as component by component.&lt;/p&gt;
+&lt;h3 id=&quot;versioning-the-library&quot;&gt;Versioning the Library&lt;/h3&gt;
+&lt;p&gt;A design system versioning by library applies the same version number to all system assets simultaneously, such as &lt;code&gt;1.4.0&lt;/code&gt; applies across all components.&lt;/p&gt;
+
+
+<esds-code-snippet copyable="false" preformatted max-height="none">
+  library 1.4.0
+  ├─ visual style
+  └─ components
+      ├─ button
+      ├─ button group
+      ├─ card
+      ├─ checkbox
+      ├─ radio button
+      └─ ...
+</esds-code-snippet>
+
+
+&lt;p&gt;If &lt;em&gt;any&lt;/em&gt; component adds a backwards-compatible feature, then the entire library increments a minor version from &lt;code&gt;1.4.0&lt;/code&gt; to &lt;code&gt;1.5.0&lt;/code&gt;. Similarly, if &lt;em&gt;any&lt;/em&gt; component has a breaking change, the entire library increments the major number from &lt;code&gt;1.4.0&lt;/code&gt; to &lt;code&gt;2.0.0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Versioning “by library” is the comment choice for teams delivering vanilla HTML &amp;amp; CSS. Adopters typically integrate markup and style into their app and refer to a library’s collectively compiled CSS, such as &lt;code&gt;core.css&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can’t include a &lt;code&gt;core.css&lt;/code&gt; from 2 or more versions without CSS conflicts. The only way to do so is if the system supports namespacing CSS files &lt;em&gt;and&lt;/em&gt; classes across versions. I’ve not seen a system do that. Instead, they all operate like this: Want button from library version &lt;code&gt;1.4.0&lt;/code&gt;? Then &lt;em&gt;every&lt;/em&gt; component on that page must use library version&lt;code&gt;1.4.0&lt;/code&gt;. Otherwise, things may break.&lt;/p&gt;
+&lt;h3 id=&quot;versioning-by-component&quot;&gt;Versioning By Component&lt;/h3&gt;
+&lt;p&gt;Versioning “by component” enables adopting teams to mix and match button version &lt;code&gt;5.3.1&lt;/code&gt; with form checkbox &lt;code&gt;3.1.0&lt;/code&gt; and radio &lt;code&gt;1.1.0&lt;/code&gt; in the same page.&lt;/p&gt;
+
+<esds-code-snippet copyable="false" preformatted max-height="none">
+  library
+    ├─ visual style
+    └─ components
+        ├─ button 5.3.1
+        ├─ button group 2.1.0
+        ├─ card 3.7.6
+        ├─ checkbox 3.1.0
+        ├─ radio button 1.1.0
+        └─ ...
+</esds-code-snippet>
+
+&lt;p&gt;Adopters need not worry about when each was released, since HTML markup, style and script is encapsulated and won’t conflict with other components types included in the the same page. This may or may not mean you can uses multiple versions of one component simultaneously. “Can I include button’s &lt;code&gt;1.7.0&lt;/code&gt; in one part of the page along with button &lt;code&gt;1.2.0&lt;/code&gt; and &lt;code&gt;2.5.0&lt;/code&gt; elsewhere on the same page?&amp;quot; Depends on how the library works.&lt;/p&gt;
+&lt;p&gt;Versioning by component is consistent for teams using a &lt;a href=&quot;/articles/design-system-release-cadence.html&quot;&gt;continuous release model&lt;/a&gt; and using a JavaScript framework (React, Vue, etc) or delivering web components. They’ll make much smaller changes more modularly more often.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;system-versions-over-time&quot;&gt;System Versions Over Time&lt;/h2&gt;
+&lt;p&gt;SemVer enables adopters to recognize key moments in a system’s life cycle.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure escom-article-figure--break-bleed">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/2.png" alt="System versions over months, as major minor and patch">
+        </div>
+        <figcaption class="escom-article-figure__caption">Rate of system change by version type, over a year and a half</figcaption>
+    </figure>
+
+
+
+  &lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Pre-Version 1.0.0&lt;/strong&gt; releases (&lt;code&gt;0.1.0&lt;/code&gt;, &lt;code&gt;0.2.0&lt;/code&gt;, &lt;code&gt;0.3.0&lt;/code&gt;, …) reveal an unstable system architecture and feature set. Over the past few years, this period lasts three to six months before a first major release for most teams.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;First major release.&lt;/strong&gt; A launch designated &lt;code&gt;1.0.0&lt;/code&gt; is hailed stable and dependable. It’s delivered with fanfare, signaling readiness for mass adoption. The &lt;code&gt;1.x.x&lt;/code&gt; period that follows can last a year or more for systems versioned as libraries, and is shorter when versioning by individual components.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Subsequent major releases&lt;/strong&gt; increment version to &lt;code&gt;2.0.0&lt;/code&gt;, &lt;code&gt;3.0.0&lt;/code&gt;, …. This signals the system&amp;#39;s interface broke. Attention and adjustment is needed as a team upgrades.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: When planning a system, set expectations what version numbers mean. &lt;code&gt;1.0.0&lt;/code&gt; should be a clear commitment to stable and predictable change.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;the-peril-of-majors-perception&quot;&gt;The Peril of Major’s Perception&lt;/h3&gt;
+&lt;p&gt;A &lt;code&gt;1.0.0&lt;/code&gt; designation comes with commitment. Freewheeling days of unstable early foundations are behind you.&lt;/p&gt;
+&lt;p&gt;Unfortunately, those unfamiliar with SemVer misinterpret what it means to go from &lt;code&gt;1.13.0&lt;/code&gt; to &lt;code&gt;2.0.0&lt;/code&gt;. There’s a breaking change, but not &lt;em&gt;necessarily&lt;/em&gt; new features and/or a costly upgrade afoot. It’s definitely not a marketing ploy to gain attention. But that’s how many perceive it.&lt;/p&gt;
+&lt;p&gt;A breaking change triggering &lt;code&gt;2.0.0&lt;/code&gt; could be as simple as changing the &lt;code&gt;system-btn--primary&lt;/code&gt; class to &lt;code&gt;system-button--primary&lt;/code&gt;. Or retiring how Modals open using &lt;code&gt;toggleModal&lt;/code&gt; in favor of &lt;code&gt;openModal&lt;/code&gt; and &lt;code&gt;closeModal&lt;/code&gt; instead. Small API changes, spread piecemeal through an adopter&amp;#39;s code, could be straightforward to audit and cheap to correct.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@_ericelliott&quot;&gt;Eric Elliott&lt;/a&gt; describes a &lt;a href=&quot;https://medium.com/javascript-scene/software-versions-are-broken-3d2dc0da0783&quot;&gt;more precise approach&lt;/a&gt; to describe changes using SemVer with &lt;code&gt;breaking.feature.fix&lt;/code&gt; labels. I agree, those labels clarify level of change. Neverthless, I’ll stick with a system that works well despite suboptimal labels.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: A major version is neither a marketing ploy nor a guarantee that major effort awaits. Instead, it’s a signal that a stable architecture has shifted in ways large or small, and adopters should pay attention as they upgrade.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;bucketing-breaking-changes&quot;&gt;&lt;strong&gt;Bucketing Breaking Changes&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Once a major version like &lt;code&gt;2.0.0&lt;/code&gt; is released, we&amp;#39;ll classify new feature ideas and customer requests as &lt;code&gt;3.0.0&lt;/code&gt; or &lt;code&gt;Breaking Change&lt;/code&gt; using JIRA’s Version attribute. As we commit and plan for a &lt;code&gt;3.0.0&lt;/code&gt; release, we’ll then deprioritize changes that didn’t make the cut to a new&lt;code&gt;4.0.0&lt;/code&gt; JIRA version.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure escom-article-figure--break-bleed">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/3.png" alt="JIRA’s Scrum Version panel, mocked up with typical version collections">
+        </div>
+        <figcaption class="escom-article-figure__caption">JIRA’s Scrum Version panel, mocked up with typical version collections</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Establish a routine for recording and funneling breaking changes trigger a major version. Isolating these items removes distraction from current work and provides a collection to review as you plan for what’s next.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;deprecation--ending-life&quot;&gt;Deprecation &amp;amp; Ending Life&lt;/h2&gt;
+&lt;p&gt;Deprecation warns that feature use should be discontinued and support will be removed in the future. The system may offer a preferred alternative, or the feature is no longer necessary or in demand.&lt;/p&gt;
+&lt;p&gt;When deprecating a feature, consider current use:&lt;/p&gt;
+
+
+  
+
+
+
+        <div class="escom-pull-quote escom-pull-quote--light">
+            <div class="escom-pull-quote__the-quote">
+                We’ll audit product code to find instances where it’s used. If used broadly, then we’ll communicate with those teams prior to making a decision to deprecate.
+            </div>
+            
+            
+            <div class="escom-pull-quote__attribution">
+                <a href="https://twitter.com/rowanmanning" rel="nofollow noopener" target="_blank">Rowan Manning</a>, <a href="https://origami.ft.com/" rel="nofollow noopener" target="_blank">Financial Times</a>
+            </div>
+            
+        </div>
+
+
+
+  &lt;p&gt;Once a feature is ready for deprecation, follow a well-defined process. &lt;a href=&quot;https://atlaskit.atlassian.com/docs/guides/versioning#deprecate&quot;&gt;Atlaskit’s versioning doc&lt;/a&gt; outlines a simple process:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Communicate&lt;/strong&gt; intent via regular channels. Consider a blog post.&lt;/li&gt;
+&lt;li&gt;Decide on a &lt;strong&gt;timeline&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Add a &lt;strong&gt;notice&lt;/strong&gt; to docs.&lt;/li&gt;
+&lt;li&gt;Run &lt;strong&gt;commands&lt;/strong&gt; on the repository per package.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Communicate&lt;/strong&gt; &lt;em&gt;one last time&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Delete&lt;/strong&gt; it from the repository!&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In deprecating, timing removal is critical. You can’t yank it without warning.&lt;/p&gt;
+
+
+  
+
+
+
+        <div class="escom-pull-quote escom-pull-quote--light">
+            <div class="escom-pull-quote__the-quote">
+                On our platform, teams builds huge solutions costing millions of dollars and walk away. If we change and they don’t know, then they get really upset. Our message? We’ll give you 18 months to react.
+            </div>
+            
+            
+            <div class="escom-pull-quote__attribution">
+                <a href="https://github.com/brandonferrua" rel="nofollow noopener" target="_blank">Brandon Ferrua</a>, <a href="https://www.lightningdesignsystem.com/" rel="nofollow noopener" target="_blank">Salesforce Lightning</a>
+            </div>
+            
+        </div>
+
+
+
+  &lt;p&gt;How long is long enough? Salesforce supports a wide base of disconnected teams, so timing is clear and long: 18 months. Origami by Financial Times operates with a tighter developer community, allowing for a compressed period of 3 to 6 months.&lt;/p&gt;
+&lt;p&gt;A new feature can exist alongside old. Morningstar expanded the Notification component in &lt;code&gt;1.9.0&lt;/code&gt; with new features, breaking the API in the process. For six months until &lt;code&gt;2.0.0&lt;/code&gt;, the system offered both a new &amp;quot;enhanced&amp;quot; notification (the default doc page) and a deprecated notification (on a separate page), linking both via an introductory message.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure escom-article-figure--break-bleed">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/4.png" alt="Morningstar Notification pages">
+        </div>
+        <figcaption class="escom-article-figure__caption">During the 1.x.x period, Morningstar added <a href="http://designsystem.morningstar.com/v/1.14.0/components/notifications.html" rel="nofollow noopener" target="_blank">new Notification</a> favored over a <a href="http://designsystem.morningstar.com/v/1.14.0/components/notifications-deprecated.html" rel="nofollow noopener" target="_blank">deprecated original</a>. Both remained in code and doc until the deprecated version was removed in 2.0.0.</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;Salesforce Lightning sustained two versions of a &lt;a href=&quot;https://www.lightningdesignsystem.com/components/path/&quot;&gt;Path component&lt;/a&gt;.&lt;/p&gt;
+
+
+  
+
+
+
+        <div class="escom-pull-quote escom-pull-quote--light">
+            <div class="escom-pull-quote__the-quote">
+                We built v1 Path, then…the whole design changed. Unsurprisingly, the existing API didn’t work with the new bells and whistles. So, we decided to deprecate and remove the old version eventually. No one will use it. They can’t find it, the code’s wrapped in a deprecate mixin, and retired selectors are described in metadata.
+            </div>
+            
+            
+            <div class="escom-pull-quote__attribution">
+                Brandon Ferrua, Salesforce Lightning
+            </div>
+            
+        </div>
+
+
+
+  &lt;p&gt;Code practices can also provide notice. The browser console and terminal can issue deprecation warnings, such as Salesforce UX’s &lt;a href=&quot;https://github.com/salesforce-ux/sass-deprecate&quot;&gt;Sass Deprecate&lt;/a&gt; feature.&lt;/p&gt;
+&lt;p&gt;As a deprecation period concludes, a system can either remove it or leave it in unsupported. “At no point does the deprecated feature become unavailable. Instead, our commitment to maintain it stops,” Origami’s &lt;a href=&quot;https://twitter.com/rowanmanning?lang=en&quot;&gt;Rowan&lt;/a&gt; explained.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Once you leap past &lt;code&gt;1.0.0&lt;/code&gt;, establish a predicable time period for deprecating features. Communicate upcoming deprecation across channels (code, doc, design assets, announcements) to your community.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;aligning-versions-of-code-doc-design-and-tokens&quot;&gt;Aligning Versions of Code, Doc, Design, and Tokens&lt;/h2&gt;
+&lt;p&gt;A system’s code is it’s truth. A code’s versions takes their rightful role as the hub against which all other outputs—doc, design, tokens—align.&lt;/p&gt;
+&lt;h3 id=&quot;✔︎-version-doc-separate-from-library-but-keep-em-in-sync&quot;&gt;✔︎ Version Doc Separate from Library, But Keep ’em In Sync&lt;/h3&gt;
+&lt;p&gt;Many systems weave code and (code-only) doc into the same files, producing navigable documentation from library’s core style and components. This coupling offers clear efficiencies yet triggers challenges like:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Code doc&lt;/strong&gt; (props, CSS classes, etc) is embedded in code files. Changing a doc typo requires releasing (and incrementing a version of) library code.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Release process&lt;/strong&gt; treats everything as a monolith. For bigger, more complex systems, it takes longer and thus happens less often.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Doc tooling&lt;/strong&gt; (usually, a static site generator) weaves with testing pages, complicating how to identify if a defect is doc’s or library’s fault.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Should doc update every time the code releases? Absolutely. It must always reflect up-to-date examples and reference tables.&lt;/p&gt;
+&lt;p&gt;Should the library release for every little doc change? No. A UX pattern or workflow description may be pages-long, yet have no code. Why block publishing until the next code drop and/or increment a library’s version to make a content change?&lt;/p&gt;
+&lt;p&gt;Systems teams I lead take the mindset that the “doc site” (and its content) is a product consuming the system library. We separate the two codebases.&lt;/p&gt;
+
+<esds-code-snippet copyable="false" preformatted max-height="none">
+  /doc-site
+   /components ## Doc site-only components
+     /code-example-pair
+     /do-dont
+     /tint-stack
+   /docs ## Doc site content
+     /about
+     /components
+     /contribute
+     /getting-started
+     /ux-patterns
+     /visual-style
+</esds-code-snippet>
+<esds-code-snippet copyable="false" preformatted max-height="none">
+  /library
+   /style ## Library core style
+     /color
+     /space
+     /typography
+   /components ## Library & testing HTML, CSS, & JS
+     /card
+     /button
+     /icon
+     /radio\_button
+</esds-code-snippet>
+
+&lt;p&gt;I’m also unwilling to cede another tradeoff: diminished non-developer participation &lt;em&gt;and&lt;/em&gt; content serving wider audiences. The more doc is woven into complex code, the less flexible your content model and the less capable your other authors—designers, content strategists, accessibility specialists—are in editing or expanding it. A tight coupling of code and doc could also slow down how you publish a guideline in response to a community resolving a standard in critique.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Consider decoupling documentation versions from library code. This separation can trigger useful yet indistinct workflows for each.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;✔︎-sustain-doc-of-past-versions-by-version&quot;&gt;✔︎ Sustain Doc of Past Versions, By Version&lt;/h3&gt;
+&lt;p&gt;Most teams adopting a systems don’t upgrade with every system release. Some may upgrade no more often than every six months or a year alongside so much other “value generating” work.&lt;/p&gt;
+&lt;p&gt;Most system site document just “the latest.” But for a system describing button &lt;code&gt;v5.2.1&lt;/code&gt;, how does a a team maintain their use of &lt;code&gt;v2.11.0&lt;/code&gt;?&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/5.png" alt="Morningstar version history page">
+        </div>
+        <figcaption class="escom-article-figure__caption">Morningstar Design System access to past versions via highlighted “View Docs” link</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;The Morningstar Design System publishes “the latest” at &lt;code&gt;.com/&lt;/code&gt; &lt;a href=&quot;http://designsystem.morningstar.com/&quot;&gt;root&lt;/a&gt; and &lt;em&gt;also&lt;/em&gt; offers access to every &lt;a href=&quot;http://designsystem.morningstar.com/v/1.13.0/&quot;&gt;past doc site version&lt;/a&gt; at predictable subfolders such as &lt;code&gt;.com/v1.13.0/&lt;/code&gt;. Each version is accessed via a “View Docs” link per entry in the Release History. Just as important: doc links are relative, so that once in docs for &lt;code&gt;v1.13.0&lt;/code&gt;, you stay within docs for &lt;code&gt;v1.13.0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: When your system serves a wide audience upgrading irregularly, ensure they have doc of what &lt;em&gt;they&lt;/em&gt; use for as long as &lt;em&gt;they&lt;/em&gt; see fit.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;✔︎-align-design-assets-versions-with-code&quot;&gt;✔︎ Align Design Assets Versions with Code&lt;/h3&gt;
+&lt;p&gt;Sketch libraries and other design resources are designer territory. “How should we version these?” a system designer asks. “We’ll put the latest in the Google Drive folder location that everyone else refers to.” they often answer. Not bad, but not enough.&lt;/p&gt;
+&lt;p&gt;Using a linked library, designers can be completely unaware how assets changed since they’ve used it a day, week or month ago. They dynamically integrate “the latest” symbols en masse into art. Away they go! It’s magical! Until it’s not magical, at all, for engineers building.&lt;/p&gt;
+&lt;p&gt;What version(s) of what component(s) are these? Technically, it may be that &lt;em&gt;everything on the page must be from the same system version&lt;/em&gt;. Designers mixing and matching versions drive developers bonkers. It’s not just inconsistent but technically expensive or impossible.&lt;/p&gt;
+&lt;p&gt;A design system could do better to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Version assets in a manner &lt;strong&gt;evident&lt;/strong&gt; to designers applying them.&lt;/li&gt;
+&lt;li&gt;Reveal versions in a manner &lt;strong&gt;evident&lt;/strong&gt; to developers building with them.&lt;/li&gt;
+&lt;li&gt;Align asset versions with versions of their code counterparts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That means &lt;em&gt;not&lt;/em&gt; indicating a version (“Use this latest!”) or using last updated date (like &lt;code&gt;System_Sketch_2016_10_31.sketch&lt;/code&gt;) should be behind us. In design assets, you can communicate version number in…&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/6.png" alt="Screenshot of a Sketch linked library">
+        </div>
+        <figcaption class="escom-article-figure__caption">Linked library name</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;…symbol library name (or last updated if versioning by feature)…&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/7.png" alt="Screenshot of Sketch symbol in layers panel">
+        </div>
+        <figcaption class="escom-article-figure__caption">Component-specific version in symbol name</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;…symbol name, particular if within a folder-based hierarchy…&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/8.png" alt="Screenshot of a version number within a visible annotation">
+        </div>
+        <figcaption class="escom-article-figure__caption">Component version annotation, in orange</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;…or an annotation layer, particularly if toggled on/off in artwork.&lt;/p&gt;
+&lt;p&gt;Even for “design-only” libraries lacking code, communicating design and doc changed to teams making features themselves has significant value.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: “Use the latest” isn’t good enough, so establish a versioning scheme for design assets. The scheme should maximize how design assets relate to system code and enable designers and developers to communicate and consider version impacts as they make their product.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;✔︎-consider-versioning-tokens-separate-from-code-too&quot;&gt;✔︎ Consider Versioning Tokens Separate from Code, Too&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;/articles/tokens-in-design-systems.html&quot;&gt;Design tokens&lt;/a&gt; codify style. At their core, they’re a component dependency. Many teams embed tokens in the versioned library of web-based components. Yet, tokens could serve other teams, whether more web products making their own components or teams building for iOS &amp;amp; Android.&lt;/p&gt;
+&lt;p&gt;A new tokens version could include new colors (such as a data visualization palette) or fine tune an interactive blue to improve accessibility. When embedded in a web-based component library, such changes could block release since you’d have to update all components too.&lt;/p&gt;
+&lt;p&gt;It doesn’t have to be this way. If you separate tokens as a packaged dependency of UI component library, then:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;All adopters–not just the design system team–get unfettered access to the most up-to-date definition of visual style.&lt;/li&gt;
+&lt;li&gt;Communications can focus better on updates to style fundamentals.&lt;/li&gt;
+&lt;li&gt;Style can evolve separately from UI component code, upgrading the token dependency when the effort makes sense.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Separating tokens from UI components could improve tool flexibility and signal improved support for more and more adopters.&lt;/p&gt;
+
+
+
+        </div>
+    </div>
+    
+
+<div class="esds-row esds-container--light esds-row--tall-inset">
+    <div class="esds-row__inner escom-footer-systems__row">
+        <div class="escom-long-form-text">
+            <h2>@components</h2>
+            <p class="escom-long-form-text__lead">The complete collection of EightShapes writings on design systems, here for free. Follow <a href="https://twitter.com/components">@components</a> on Twitter for updates and new articles.</p>
+        </div>
+        <div class="escom-footer-systems__columnset">
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Visual Style</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Documentation</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">UI Components</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Releases</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Strategy</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Contributions</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Systems of Systems</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Process</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">People</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Workshop Activities</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+    
+
+    
+
+<div class="esds-row esds-row esds-row--tall-inset esds-container--brand escom-cta escom-cta--components-publication escom-page-type--marketing"
+    
+    >
+    <div class="esds-row__inner">
+        
+            
+        <div class="escom-long-form-text">
+            <h2>Need help with your system?</h2>
+            
+            <p class="escom-long-form-text__lead">EightShapes can energize your efforts to coach, workshop, assess or partner with you to design, code, document and manage a system.</p>
+            
+        </div>
+        
+        <div class="escom-cta__action">
+        
+    
+
+    <a class="esds-button esds-button--secondary esds-button--large escom-cta__action-button"  href=/design-systems.html>
+        
+        
+            Learn More
+        
+        
+    </a>
+
+        </div>
+        
+    
+        
+    </div>
+</div>
+
+
+
+
+
+        
+
+    
+
+<div class="esds-row esds-container--dark escom-site-footer esds-row--tall-inset"
+    
+    >
+    <div class="esds-row__inner">
+        
+            
+    
+        <div class="escom-site-footer__row">
+            <div class="escom-site-footer__column">
+                
+    
+
+    <svg class="esds-icon escom-site-footer__logo" >
+        
+        <use xlink:href="/icons/esds.svg#eightshapes-logo"></use>
+    </svg>
+
+                <div class"escom-site-footer__address-row">12805 Misty Creek Lane</div> 
+                <div class"escom-site-footer__address-row">Fairfax, VA 22033</div>
+            </div>
+            <div class="escom-site-footer__column escom-site-footer__column--offset">
+                <a class="escom-site-footer__link" tel="703.296.8831"> (703) 296-8831</a>
+                <a class="escom-site-footer__link" href="mailto:info@eightshapes.com">info@eightshapes.com</a>
+            </div>
+            <div class="escom-site-footer__column escom-site-footer__column--offset">
+                <a class="escom-site-footer__social-link" href="https://twitter.com/eightshapes">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--twitter" >
+        
+        <use xlink:href="/icons/esds.svg#twitter"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@eightshapes</span>
+                </a>
+                <a class="escom-site-footer__social-link" href="https://www.linkedin.com/company/eightshapes-llc">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--linkedin" >
+        
+        <use xlink:href="/icons/esds.svg#linkedin"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@EightShapes</span>
+                </a>
+                <a class="escom-site-footer__social-link" href="https://medium.com/eightshapes-llc">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--medium" >
+        
+        <use xlink:href="/icons/esds.svg#medium"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@eightshapes</span>
+                </a>
+            </div>
+        </div>
+
+    
+        
+    </div>
+</div>
+
+
+
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        
+        <script src="/dist/escom.js"></script>
+          <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-1201194-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+  </script>
+
+    </body>
+</html>

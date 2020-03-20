@@ -1,0 +1,723 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+        <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+        <meta http-equiv="cleartype" content="on">
+
+        <title>EightShapes &gt; @components &gt; undefined</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="/dependencies/esds.css"> <!-- copied from esds-library dependency -->
+        <link rel="stylesheet" href="/dist/escom.css">
+
+        
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700&display=swap" rel="stylesheet">
+  <!-— facebook open graph tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.eightshapes.com/articles/.html" />
+  <meta property="og:title" content="post Title" />
+  <meta property="og:description" content="false" />
+  
+
+  <!-— twitter card tags additive with the og: tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:domain" value="eightshapes.com" />
+  <meta name="twitter:title" value="post Title" />
+  <meta name="twitter:description" value="false" />
+  
+  <meta name="twitter:url" value="https://www.eightshapes.com/articles/.html" />
+
+  <!-- No Shadow DOM, so link directly to styles -->
+  <link rel="stylesheet" href="/styles/dependencies/esds-code-snippet.css"/>
+
+  <!-- Separate webcomponents polyfill bundle for Edge, IE11, etc. -->
+  <script type="text/javascript" src="/scripts/dependencies/custom-elements.min.js"></script>
+
+  <!-- ESDS Doc components -->
+  <!-- The ESM "vanilla" version of the component for FF, Safari, Chrome and Edge -->
+  <script type="module" src="/scripts/dependencies/esds-code-snippet-web-component.js"></script>
+
+  <!-- A babel-compiled version of the component for IE11 -->
+  <script nomodule type="text/javascript" src="/scripts/dependencies/esds-code-snippet-legacy.js"></script>
+
+    </head>
+    <body class="">
+        
+    
+    
+    
+
+    
+    <div class="esds-row esds-container--brand esds-breadcrumb esds-row--no-inset">
+        <div class="esds-row__inner">
+            <h1 class="esds-breadcrumb__brand">
+                <a href="/" class="esds-breadcrumb__link">
+                    
+    
+
+    <svg class="esds-icon esds-breadcrumb__brand-mark" >
+        
+        <use xlink:href="/icons/esds.svg#eightshapes-logo"></use>
+    </svg>
+
+                </a>
+                
+                <a href="/components/" class="esds-breadcrumb__link">
+                    
+    
+
+    <svg class="esds-icon esds-breadcrumb__delimiter" >
+        
+        <use xlink:href="/icons/esds.svg#angle-right"></use>
+    </svg>
+
+                    <span class="esds-breadcrumb__crumb-section">@components</span>
+                </a>
+                
+            </h1>
+        </div>
+    </div>
+
+
+    <div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
+        <div class="esds-row__inner">
+            <div class="escom-article__author-row">
+                <div class="escom-article__author-avatar"
+                    style="background-image: url('/images/bios/bio-thumb-.png')">
+                </div>
+                <div class="escom-article__author-text">
+                    <p class="escom-article__author">
+                        <a href=""></a>
+                    </p>
+                    <p class="escom-article__author-role">
+                        
+                    </p>
+                    <p>
+                        <span class="escom-article__published-date">
+                            Originally published false •
+                        </span>
+                        <span class="escom-article__read-duration">
+                            falsemin
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="escom-article__title-row escom-article__title-row--no-masthead-next">
+                <h1 class="escom-article__title">post Title</h1>
+                
+            </div>
+
+    
+
+    
+    &lt;p&gt;I’m a sucker for a &lt;code&gt;card&lt;/code&gt; component. It takes me back nostalgically to my adolescence when baseball cards introduced me to information design. I collected and organized thousands, each exhibiting a hero’s photo, team as theme, positions as identity. My brain engaged with the design, data, and in-depth inquiry they fostered.&lt;/p&gt;
+&lt;p&gt;Today’s digital &lt;code&gt;card&lt;/code&gt; serves the same purpose. More than just a generic container, a card is a scannable snapshot of an object’s vitals. It previews enough to identify. It invites us to learn more and interact, in that order.&lt;/p&gt;
+
+
+  
+
+
+
+        <div class="escom-bar-quote escom-pull-quote--light">
+            A card is a sheet of material that serves as an entry point to more detailed information. Cards may contain a photo, text, and a link about a single subject. — <a href="https://material.io/guidelines/components/cards.html" rel="nofollow noopener" target="_blank">Google Material Design’s Card</a>
+        </div>
+
+
+
+  &lt;p&gt;Often, the &lt;code&gt;card&lt;/code&gt; also signals a pivot in the growth of a component library. Unlike primitives like &lt;code&gt;button&lt;/code&gt; and &lt;code&gt;input&lt;/code&gt;, a &lt;code&gt;card&lt;/code&gt; requires composition. It relates many elements (some already in our library) and as content flows into each. Also, &lt;code&gt;card&lt;/code&gt;s are almost always shown as a set, siblings side by side. Composition triggers higher-order thinking critical to system design.&lt;/p&gt;
+&lt;p&gt;Hardening a composition like &lt;code&gt;card&lt;/code&gt; forces a system to mature. Sometimes, a system solves the challenges, increasing library complexity. Other times, a system’s burgeoning maturity steers away from complexity, keeping things simple. These challenges take the form of &lt;strong&gt;structure&lt;/strong&gt; , &lt;strong&gt;content&lt;/strong&gt; , &lt;strong&gt;style&lt;/strong&gt; and &lt;strong&gt;behavior&lt;/strong&gt;. May the lessons here inspire your system compositions to come.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;composing-structure&quot;&gt;Composing Structure&lt;/h2&gt;
+&lt;p&gt;Libraries start with primitives—&lt;code&gt;input&lt;/code&gt;, &lt;code&gt;heading&lt;/code&gt;, &lt;code&gt;checkbox&lt;/code&gt;, &lt;code&gt;radio-button&lt;/code&gt;, &lt;code&gt;label&lt;/code&gt;, &lt;code&gt;icon&lt;/code&gt;—to serve as building blocks. A &lt;code&gt;button&lt;/code&gt;’s composability is fairly mundane: an &lt;code&gt;icon&lt;/code&gt; to the left or right of a label, maybe a split bar or animation. Then&lt;code&gt;button-group&lt;/code&gt; combines &lt;code&gt;button&lt;/code&gt;, forcing sibling relationships. These are low-level challenges. Things get more interesting when composing components like &lt;code&gt;card&lt;/code&gt; with many elements.&lt;/p&gt;
+&lt;h3 id=&quot;identify-core-elements&quot;&gt;Identify Core Elements&lt;/h3&gt;
+&lt;p&gt;A composable component starts with essential core of required elements, so you’ll want to ask: What elements are required of each and every display? What happens if a required element is missing?&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/1.png" alt="Illustration of a card component anatomy">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;&lt;code&gt;card&lt;/code&gt; often requires:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;image&lt;/em&gt;, paired with a…&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;title&lt;/em&gt; (usually a styled &lt;code&gt;heading&lt;/code&gt;), maybe supplemented with a…&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;description&lt;/em&gt; (or “_deck_” or other elaborating content).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;identify-all-possible-elements--cases&quot;&gt;Identify All Possible Elements &amp;amp; Cases&lt;/h3&gt;
+&lt;p&gt;Cast the discovery net wide across many products. Inventory each example. Analysis should yield a growing diversity of cases and elements should inform a design and guidance useful for later documentation.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What is a complete possible elements included?&lt;/li&gt;
+&lt;li&gt;What element combinations discouraged or forbidden? For example, a &lt;code&gt;card&lt;/code&gt; may include &lt;code&gt;button&lt;/code&gt;s or &lt;code&gt;icon&lt;/code&gt;s for actions, but never both.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/2.png" alt="Card annotation of content elements">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;&lt;code&gt;card&lt;/code&gt;s serve varying needs across many moments of an experiences, and can include a range of other content types:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;label&lt;/em&gt; or &lt;em&gt;type&lt;/em&gt;, often signaling a group to which the object belongs and possibly displayed as a &lt;code&gt;tag&lt;/code&gt; or an &lt;code&gt;icon&lt;/code&gt;/label pair.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;action(s)&lt;/em&gt; offered as &lt;code&gt;button&lt;/code&gt;(s), &lt;code&gt;icon&lt;/code&gt;(s), or both.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;price&lt;/em&gt; and &lt;em&gt;ratings&lt;/em&gt; for products&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;metadata&lt;/em&gt;, distinct from a description to highlight key properties&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;related list(s)&lt;/em&gt; as a set of items related to the object&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;solidify-element-relationships&quot;&gt;Solidify Element Relationships&lt;/h3&gt;
+&lt;p&gt;A composable component’s many elements raise questions of order, combinations, groups, and more:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Are there named zones, such as actions?&lt;/li&gt;
+&lt;li&gt;Are there element subgroups? Can subgroups reordered or hidden?&lt;/li&gt;
+&lt;li&gt;What logic is needed to sort, combine, or separate combinations? &lt;/li&gt;
+&lt;li&gt;How many alternative arrangements should we test?&lt;/li&gt;
+&lt;li&gt;How many variations should be revealed and described in doc?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For many &lt;code&gt;card&lt;/code&gt;s, the stacked order is fixed: image then title then actions. In other systems, more flexible needs may suggest reordering elements. For example, &lt;a href=&quot;http://designsystem.morningstar.com/components/cards.html&quot;&gt;Morningstar Design System&lt;/a&gt;’s &lt;code&gt;card&lt;/code&gt; enables users to place an image above or below a title.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/3.png" alt="Card displaying an image either on the top or bottom">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;Like a &lt;code&gt;modal&lt;/code&gt; and &lt;code&gt;dialog&lt;/code&gt;, &lt;code&gt;card&lt;/code&gt; could identify zones for a &lt;em&gt;header&lt;/em&gt;, &lt;em&gt;main&lt;/em&gt; and &lt;em&gt;footer&lt;/em&gt; or &lt;em&gt;media&lt;/em&gt;, &lt;em&gt;copy&lt;/em&gt;, and &lt;em&gt;actions&lt;/em&gt; to firmly identify content relationships.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/4.png" alt="Card stacking the media image, then copy, then actions">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;hr&gt;
+&lt;h3 id=&quot;cope-with-regions-allowing-flexible-input&quot;&gt;Cope with Regions Allowing Flexible Input&lt;/h3&gt;
+&lt;p&gt;The bigger the component, the more likely it offers a region that welcomes, well, whatever an system user wants to put there. The region’s content can be as innocuous as a paragraph or bulleted list.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Are there generic regions into which you can place flexible markup?&lt;/li&gt;
+&lt;li&gt;How do regions zones impact fluid and/or fixed displays?&lt;/li&gt;
+&lt;li&gt;Do you expect or recommend certain content types for such containers?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But that region opens a dangerous door. Maybe an adopter adds a legend… under a chart… with an adjoining four column data table… in the content portion of a card. Hint: that’s not what a &lt;code&gt;card&lt;/code&gt; is for.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/5.png" alt="Card offering flexible slots to inject custom content">
+        </div>
+        <figcaption class="escom-article-figure__caption">Flexible regions for a system user to inject their own content.</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;Regions offer flexibility but invite abuse. Nobody argues opening up a &lt;code&gt;modal&lt;/code&gt;’s main content area to uncertain markup. For a &lt;code&gt;card&lt;/code&gt;, an &lt;em&gt;action bar&lt;/em&gt; zone could include &lt;code&gt;button&lt;/code&gt;, &lt;code&gt;icon&lt;/code&gt;, and &lt;code&gt;menu.&lt;/code&gt; However, it’s not up to &lt;code&gt;card&lt;/code&gt; to hard wire every case. Some components may need to offer regions and relinquish control of and responsibility for what’s goes inside.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Takeaway:&lt;/em&gt; With &lt;a href=&quot;https://youtu.be/_5d6rTQcU2U?t=1m28s&quot;&gt;great container power comes great responsibility&lt;/a&gt; of adopting teams. Don’t fool yourself to believe you can predict, build, test, or doc every possible case. If a region is intended for a few expected variants, do adopters a favor and create examples exhibiting each one.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;composing-content&quot;&gt;Composing Content&lt;/h2&gt;
+&lt;p&gt;Titles, prose, metadata, pricing. An image that packs a powerful punch. No matter the elements you include, a &lt;code&gt;card&lt;/code&gt; requires thoughtful consideration of media and copy. Unlike primitives you handled yourself, composable components require collaboration with those that know content best.&lt;/p&gt;
+&lt;h3 id=&quot;content-varies-form-conventions-based-on-real-content&quot;&gt;Content Varies. Form Conventions Based on Real Content.&lt;/h3&gt;
+&lt;p&gt;An image above text. It’s simple, right? Not always. The _image_’s aspect ratio is pivotal not just for visual harmony, but content production too.&lt;/p&gt;
+&lt;p&gt;At one client, we analyzed existing inconsistent cards across products. It was a treasure trove of real content. Except: yikes, the aspect ratios of images varied wildly! Some products rocked a 16x9 or 3x2 ratio. Others only squared images. Search presented the gamut, including exceedingly tall portraits.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure escom-article-figure--break-bleed">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/6.png" alt="Illustration of card images of varying aspect ratios">
+        </div>
+        <figcaption class="escom-article-figure__caption">Variety of aspect ratios encountered in real images spread across existing products</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;Content experts were understandably fatigued by years of design flip flop. To them, the system was an opportunity to end image size conversation. A standard aspect ratio would not just improve display consistency, but also vastly simplify their vendor requirements and image delivery.&lt;/p&gt;
+&lt;p&gt;As a result, &lt;code&gt;card&lt;/code&gt; settled on a 16x9 landscape ratio, augmented by a square alternative. This process also yielded code to solve ratio-specific display on the front-end. As a result, composability led to a &lt;code&gt;thumbnail&lt;/code&gt;&lt;a href=&quot;https://comet.discoveryeducation.com/components/thumbnails.html&quot;&gt;component&lt;/a&gt; useful for other components too.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/7.png" alt="Illustration of a fixed aspect ratio image with contain or cover properties">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;To address legacy content, &lt;code&gt;card&lt;/code&gt; offered a prop to &lt;em&gt;contain&lt;/em&gt; images (using the background-size CSS property) within the 16x9 space. Designers achieved visual grid harmony in search results, while producers adjusted displays per card to address undesirable photograph crops.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: The more composable a component, the more vital that you incorporate content considerations. Stress test design and builds with real content. Engage those that cope with the content that flows into your components every day. You may become their new best friend.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;too-much-content-address-wrapping--truncation&quot;&gt;Too Much Content? Address Wrapping &amp;amp; Truncation&lt;/h3&gt;
+&lt;p&gt;While images dominate a display, copy also plays a critical role in headings, descriptions, and metadata. But it’s a card, not an opus, so copy can’t go wild.&lt;/p&gt;
+&lt;p&gt;Longer titles and descriptions are bound to wrap once or — if you can stomach it — twice. So design for margins &lt;em&gt;and&lt;/em&gt; line height. But if copy lengthens, &lt;code&gt;card&lt;/code&gt; effectiveness diminishes fast.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What’s the max length of each copy element?&lt;/li&gt;
+&lt;li&gt;What’s the max and min character count we’re comfortable width?&lt;/li&gt;
+&lt;/ul&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/8.png" alt="Illustration of a card with too much descriptive content">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;Truncation provides an escape hatch, protecting against copy length that we can’t predict. Truncation divides opinion: some clients loathe truncation, while others release a &lt;code&gt;truncate&lt;/code&gt; utility in a first component batch. Truncate a &lt;code&gt;card&lt;/code&gt; &lt;em&gt;title&lt;/em&gt; or even &lt;em&gt;subtitle&lt;/em&gt; or &lt;em&gt;description&lt;/em&gt;, and you risk damaging context and understanding. In composable components, defer to priorities: truncate a &lt;em&gt;description&lt;/em&gt; before &lt;em&gt;title&lt;/em&gt;, or after three lines instead of two, amid an appearance that sufficiently flexes.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/9.png" alt="Illustration of a truncated card description">
+        </div>
+        <figcaption class="escom-article-figure__caption">Truncation results in a shorter, but potentially not preferable, description.</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;It’s not just copy wrapping, either. Consider rows of actions like a horizontal button and icon list that could collide when settings get narrow.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/10.png" alt="Illustration of a wrapping set of card icon actions">
+        </div>
+        <figcaption class="escom-article-figure__caption">Narrow card width causes a left-aligned button to collide with a right-aligned icon list.</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Copy length maximums and truncation appeal to our sense of control over flowed content. As components complexity grows, strengthen editorial opinion and code control on copy length, line measure, and impacts of fluid card width. If you offer utilities, do so as moderation not a crutch.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;not-enough-content-when-images-andor-copy-go-missing&quot;&gt;Not Enough Content? When Image(s) and/or Copy Go Missing&lt;/h3&gt;
+&lt;p&gt;On the other hand, sometimes content is unavailable. Card content often reaches into the depths, plucking this related article or that legacy profile for display. Is your card ready for the absence of a &lt;em&gt;description&lt;/em&gt;, &lt;em&gt;metadata&lt;/em&gt; or even &lt;em&gt;image&lt;/em&gt;? No &lt;em&gt;image&lt;/em&gt;, oh, the scandal! What do you do?&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/11.png" alt="Illustration of a card with no image">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;The most opinionated of us say: Never! Want to use a &lt;code&gt;card&lt;/code&gt;? Include required elements or don’t bother. Yet, that’s harsh. Often unrealistic. Elegant composable components should bend but not break as the content flows.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/12.png" alt="Illustration of three cards, one without a description">
+        </div>
+        <figcaption class="escom-article-figure__caption">Instances with wrapping titles and missing descriptions.</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;In the absence of copy, &lt;code&gt;card&lt;/code&gt; composition relies upon solid stackable space, considerate of the many combinations you may or may not expect.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/13.png" alt="Illustration of cards, some with an icon and color display rather than an image">
+        </div>
+        <figcaption class="escom-article-figure__caption">Instances with missing images replaced by background fill &amp; icon to indicate asset type.</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;In the absence of image, we’ve got options. You could attractively distinguish types via a flat color, a site’s overlaid identity mark, or even an icon/color combo for type (asset format? activity type? content channel?).&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;composing-style&quot;&gt;Composing Style&lt;/h2&gt;
+&lt;p&gt;Styling atomic elements is easier (elements require fewer decisions) and harder (those decisions carry foundational impact). However, &lt;code&gt;card&lt;/code&gt; raises challenges and expands our style choices as elements interact in tight spaces.&lt;/p&gt;
+&lt;h3 id=&quot;expand-a-systems-visual-language&quot;&gt;Expand a System’s Visual Language&lt;/h3&gt;
+&lt;p&gt;My experience suggests that components like &lt;code&gt;card&lt;/code&gt; trigger incremental conversation about system conventions of modular shape and layering. Conversations can steer towards &lt;em&gt;border-radius&lt;/em&gt;, &lt;em&gt;shadow&lt;/em&gt;, and subtleties of &lt;em&gt;background-color&lt;/em&gt; contrast between the object and canvas below.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/14.png" alt="Annotation of a card drop shadow and border radius">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: A composed component sets a tone for the shape of many designs to come, both in a library and for those working projects. Such decisions bleed into the experience in unimaginable ways both dangerous and delightful.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;style-within-and-across-components&quot;&gt;Style Within and Across Components&lt;/h3&gt;
+&lt;p&gt;A &lt;code&gt;card&lt;/code&gt; evokes color relationships, beginning with contrast against the canvas below. Some opt for simplicity: only white &lt;code&gt;card&lt;/code&gt; on a white canvas, no alternative backgrounds, and use other properties like &lt;code&gt;shadow&lt;/code&gt; for contrast.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/15.png" alt="Different colored cards on different color backgrounds">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;Richer visual environments solve for &lt;a href=&quot;/articles/light-dark.html&quot;&gt;foreground/background combos in light and dark settings&lt;/a&gt;. &lt;a href=&quot;https://comet.discoveryeducation.com/components/cards.html&quot;&gt;Discovery Education’s Comet&lt;/a&gt; system offers many backgrounds, often displayed in concert in a single page. Therefore, the system offered light and dark cards across each by way of mixins and tokens. Such cards create another level of hierarchy: text on component background on canvas background.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/16.png" alt="A card description on top of a dark background, annotated">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Composability challenges your tolerance for visual complexity. Powerful, opinionated components tempt a system team to solve every combination in hopes of saving collaborator time. But complex, well modeled solutions invoke a higher cost of creation and maintenance. “Just enough” complexity is not always clear cut.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;arranging-in-layouts&quot;&gt;Arranging in Layouts&lt;/h3&gt;
+&lt;p&gt;Separation, often via &lt;em&gt;margin&lt;/em&gt;, also plays a role. A &lt;code&gt;card&lt;/code&gt; layout can leverage a &lt;code&gt;layout_grid&lt;/code&gt; or define its own to arrange many cards in a row or grid. While grid mechanics are straightforward, &lt;code&gt;card&lt;/code&gt; layout raises more questions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How many cards can we have in a single row?&lt;/li&gt;
+&lt;li&gt;Do cards rearrange based on responsive considerations?&lt;/li&gt;
+&lt;li&gt;Does card width flex fluidly within a fluid grid? If so, how wide or narrow can a card be? Are there responsive rules that adjust elements inside a card?&lt;/li&gt;
+&lt;li&gt;Should all cards in a row, or in an entire grid, always be the same height?&lt;/li&gt;
+&lt;/ul&gt;
+
+
+  
+
+    <figure class="escom-article-figure escom-article-figure--break-bleed">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/17.png" alt="Cards in a row with an overlaid columnar grid">
+        </div>
+        <figcaption class="escom-article-figure__caption"></figcaption>
+    </figure>
+
+
+
+  &lt;hr&gt;
+&lt;h2 id=&quot;composing-behavior&quot;&gt;Composing Behavior&lt;/h2&gt;
+&lt;p&gt;The &lt;code&gt;card&lt;/code&gt;’s primary purpose is as gateway to deeper detail somewhere else. A &lt;code&gt;card&lt;/code&gt; also elevate subtle interactions, too. The former isn’t up for debate. The latter can lead to contentious discussions about “What’s clickable?”&lt;/p&gt;
+&lt;p&gt;As an entryway, a &lt;code&gt;card&lt;/code&gt;’s navigation is simplest when the entire &lt;code&gt;card&lt;/code&gt; is clickable. In that case, the whole &lt;code&gt;card&lt;/code&gt; can respond to cursor events like &lt;em&gt;:hover&lt;/em&gt; and &lt;em&gt;:focus&lt;/em&gt; to trigger an &lt;em&gt;image&lt;/em&gt; or block to zoom, &lt;em&gt;title&lt;/em&gt; to recolor, and shadow to darken. If a &lt;code&gt;card&lt;/code&gt; won’t contain more specific interactions, making the entire block afford a single interaction simplifies these concerns.&lt;/p&gt;
+
+
+  
+
+    <figure class="escom-article-figure">
+        <div class="escom-article-figure__image-container">
+            <img class="escom-article-figure__image" src="/images/articles/false/18.png" alt="Cards annotated with a dashed border connoting the HTML box model">
+        </div>
+        <figcaption class="escom-article-figure__caption">Many elements that can potentially respond to events like click and hover</figcaption>
+    </figure>
+
+
+
+  &lt;p&gt;On the other hand, a composed component like &lt;code&gt;card&lt;/code&gt; can include many interactive zones—&lt;em&gt;title&lt;/em&gt;, &lt;em&gt;image&lt;/em&gt;, &lt;code&gt;button&lt;/code&gt;, &lt;code&gt;icon&lt;/code&gt;, &lt;code&gt;link&lt;/code&gt;— that impact both markup, style, and behavior. Do your engineer a favor and discuss these during design iteration and handoff, before changing the implementation becomes painful.&lt;/p&gt;
+
+
+
+        </div>
+    </div>
+    
+
+<div class="esds-row esds-container--light esds-row--tall-inset">
+    <div class="esds-row__inner escom-footer-systems__row">
+        <div class="escom-long-form-text">
+            <h2>@components</h2>
+            <p class="escom-long-form-text__lead">The complete collection of EightShapes writings on design systems, here for free. Follow <a href="https://twitter.com/components">@components</a> on Twitter for updates and new articles.</p>
+        </div>
+        <div class="escom-footer-systems__columnset">
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Visual Style</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Documentation</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">UI Components</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Releases</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Strategy</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Contributions</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Systems of Systems</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+            <div class="escom-footer-systems__column">
+                
+    
+
+<h4 class="escom-footer-systems__header">Process</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">People</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+                
+    
+
+<h4 class="escom-footer-systems__header">Workshop Activities</h4>
+<ul class="escom-footer-systems__list">
+    
+</ul>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+    
+
+    
+
+<div class="esds-row esds-row esds-row--tall-inset esds-container--brand escom-cta escom-cta--components-publication escom-page-type--marketing"
+    
+    >
+    <div class="esds-row__inner">
+        
+            
+        <div class="escom-long-form-text">
+            <h2>Need help with your system?</h2>
+            
+            <p class="escom-long-form-text__lead">EightShapes can energize your efforts to coach, workshop, assess or partner with you to design, code, document and manage a system.</p>
+            
+        </div>
+        
+        <div class="escom-cta__action">
+        
+    
+
+    <a class="esds-button esds-button--secondary esds-button--large escom-cta__action-button"  href=/design-systems.html>
+        
+        
+            Learn More
+        
+        
+    </a>
+
+        </div>
+        
+    
+        
+    </div>
+</div>
+
+
+
+
+
+        
+
+    
+
+<div class="esds-row esds-container--dark escom-site-footer esds-row--tall-inset"
+    
+    >
+    <div class="esds-row__inner">
+        
+            
+    
+        <div class="escom-site-footer__row">
+            <div class="escom-site-footer__column">
+                
+    
+
+    <svg class="esds-icon escom-site-footer__logo" >
+        
+        <use xlink:href="/icons/esds.svg#eightshapes-logo"></use>
+    </svg>
+
+                <div class"escom-site-footer__address-row">12805 Misty Creek Lane</div> 
+                <div class"escom-site-footer__address-row">Fairfax, VA 22033</div>
+            </div>
+            <div class="escom-site-footer__column escom-site-footer__column--offset">
+                <a class="escom-site-footer__link" tel="703.296.8831"> (703) 296-8831</a>
+                <a class="escom-site-footer__link" href="mailto:info@eightshapes.com">info@eightshapes.com</a>
+            </div>
+            <div class="escom-site-footer__column escom-site-footer__column--offset">
+                <a class="escom-site-footer__social-link" href="https://twitter.com/eightshapes">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--twitter" >
+        
+        <use xlink:href="/icons/esds.svg#twitter"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@eightshapes</span>
+                </a>
+                <a class="escom-site-footer__social-link" href="https://www.linkedin.com/company/eightshapes-llc">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--linkedin" >
+        
+        <use xlink:href="/icons/esds.svg#linkedin"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@EightShapes</span>
+                </a>
+                <a class="escom-site-footer__social-link" href="https://medium.com/eightshapes-llc">
+                    
+    
+
+    <svg class="esds-icon escom-site-footer__icon escom-site-footer__icon--medium" >
+        
+        <use xlink:href="/icons/esds.svg#medium"></use>
+    </svg>
+ 
+                    <span class="escom-site-footer__social-name">@eightshapes</span>
+                </a>
+            </div>
+        </div>
+
+    
+        
+    </div>
+</div>
+
+
+
+
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        
+        <script src="/dist/escom.js"></script>
+          <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-1201194-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+  </script>
+
+    </body>
+</html>
