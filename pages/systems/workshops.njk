@@ -11,7 +11,7 @@
 <ul class="esds-list">
     {% for post_id, post_object in posts %}
         {% if post_object.category === category_id %}
-    <li class="esds-list__item esds-list__item--tight"><a  class="esds-list__link" href="/articles/{{ post_object.id }}.html">{{ post_object.title_abbreviation }}</a></li>
+    <li class="esds-list__item esds-list__item--tight"><a  class="esds-list__link" href="/articles/{{ post_object.id }}">{{ post_object.title_abbreviation }}</a></li>
         {% endif %}
     {% endfor %}
 </ul>
@@ -22,14 +22,14 @@
 
     {# Breadcrumb #}
 
-    {{ esds.breadcrumb(section_href="/design-systems.html", section="Design Systems") }}
+    {{ esds.breadcrumb(section_href="/design-systems", section="Design Systems") }}
 
     {# Title #}
 
     {{ escom.title_row(
         class="esds-row--very-tall-inset",
         background_image="/images/systems/workshops-hero.png",
-        logo=false, 
+        logo=false,
         heading="Design Systems Workshops",
         decks=[
             "Looking to jump start a design system program? We workshop with team(s) to teach methods, conduct actvities, and plan a future to get the most out of a system."
@@ -92,24 +92,24 @@
                                         },
                                         {
                                             title: "Color",
-                                            href: "/articles/color-in-design-systems.html"
+                                            href: "/articles/color-in-design-systems"
                                         },
                                         {
                                             title: "Typography",
-                                            href: "/articles/typography-in-design-systems.html"
+                                            href: "/articles/typography-in-design-systems"
                                         },
                                         {
                                             title: "Space",
-                                            href: "/articles/space-in-design-systems.html"
+                                            href: "/articles/space-in-design-systems"
                                         },
                                         {
                                             title: "Size",
-                                            href: "/articles/size-in-design-systems.html"
+                                            href: "/articles/size-in-design-systems"
                                         },
                                         {
                                             title: "Tokens",
                                             pill: "Activity",
-                                            href: "/articles/tokens-in-design-systems.html"
+                                            href: "/articles/tokens-in-design-systems"
                                         }
                                     ]
                                 )
@@ -128,23 +128,23 @@
                                         },
                                         {
                                             title: "Buttons",
-                                            href: "/articles/buttons-in-design-systems.html"
+                                            href: "/articles/buttons-in-design-systems"
                                         },
                                         {
                                             title: "Classification",
-                                            href: "/articles/on-classification-in-design-systems.html"
+                                            href: "/articles/on-classification-in-design-systems"
                                         },
                                         {
                                             title: "Decomposition & Hierarchy",
-                                            href: "/articles/right-sizing-the-rectangles.html"
+                                            href: "/articles/right-sizing-the-rectangles"
                                         },
                                         {
                                             title: "UX Patterns",
-                                            href: "/articles/patterns-components.html"
+                                            href: "/articles/patterns-components"
                                         },
                                         {
                                             title: "Workflow: Designing a Component",
-                                            href: "/articles/design-system-features-step-by-step.html",
+                                            href: "/articles/design-system-features-step-by-step",
                                             pill: "Activity"
                                         }
                                     ]
@@ -163,23 +163,23 @@
                                     items = [
                                         {
                                             title: "Getting Started with a Design System",
-                                            href: "/articles/getting-developers-started-with-a-design-system.html"
+                                            href: "/articles/getting-developers-started-with-a-design-system"
                                         },
                                         {
                                             title: "Techincal Architecture: Tools and Templates"
                                         },
                                         {
                                             title: "Component Quality",
-                                            href: "/articles/component-qa-in-design-systems.html"
+                                            href: "/articles/component-qa-in-design-systems"
                                         },
                                         {
                                             title: "Component Testing Plans",
                                             pill: "Activity",
-                                            href: "/articles/component-testing-plans.html"
+                                            href: "/articles/component-testing-plans"
                                         },
                                         {
                                             title: "Workflow: Coding a Component",
-                                            href: "/articles/design-system-features-step-by-step.html",
+                                            href: "/articles/design-system-features-step-by-step",
                                             pill: "Activity"
                                         }
                                     ]
@@ -194,20 +194,20 @@
                                     items = [
                                         {
                                             title: "Cards & Composibility",
-                                            href: "/articles/cards-and-composability-in-design-systems.html"
+                                            href: "/articles/cards-and-composability-in-design-systems"
                                         },
                                         {
                                             title: "Documenting Components",
-                                            href: "/articles/documenting-components.html"
+                                            href: "/articles/documenting-components"
                                         },
                                         {
                                             title: "Component Examples",
-                                            href: "/articles/component-examples.html",
+                                            href: "/articles/component-examples",
                                             pill: "Activity"
                                         },
                                         {
                                             title: "Design Guidelines",
-                                            href: "/articles/component-design-guidelines.html",
+                                            href: "/articles/component-design-guidelines",
                                             pill: "Activity"
                                         },
                                         {
@@ -216,7 +216,7 @@
                                         },
                                         {
                                             title: "Workflow: Documenting a Component",
-                                            href: "/articles/design-system-features-step-by-step.html",
+                                            href: "/articles/design-system-features-step-by-step",
                                             pill: "Activity"
                                         }
                                     ]
@@ -256,24 +256,24 @@
                                         {
                                             title: "Defining Your System",
                                             pill: "Activity",
-                                            href: "http://localhost:3000/articles/defining-design-systems.html"
+                                            href: "/articles/defining-design-systems"
                                         },
                                         {
                                             title: "Coordinating Adoption",
-                                            href: "http://localhost:3000/articles/adopting-design-systems.html"
+                                            href: "/articles/adopting-design-systems"
                                         },
                                         {
                                             title: "System Hierarchy",
-                                            href: "http://localhost:3000/articles/design-system-tiers.html"
+                                            href: "/articles/design-system-tiers"
                                         },
                                         {
                                             title: "System Competition and Consolidation",
-                                            href: "http://localhost:3000/articles/consolidating-design-systems.html"
+                                            href: "/articles/consolidating-design-systems"
                                         },
                                         {
                                             title: "Diagramming System Architectures",
                                             pill: "Activity",
-                                            href: "http://localhost:3000/articles/design-systems-architecture-diagrams.html"
+                                            href: "/articles/design-systems-architecture-diagrams"
                                         }
                                     ]
                                 )
@@ -287,7 +287,7 @@
                                     items = [
                                         {
                                             title: "Team Models",
-                                            href: "\/articles/team-models-for-scaling-a-design-system.html"
+                                            href: "\/articles/team-models-for-scaling-a-design-system"
                                         },
                                         {
                                             title: "Core Team",
@@ -322,25 +322,25 @@
                                     items = [
                                         {
                                             title: "Starting a System",
-                                            href: "http://localhost:3000/articles/starting-a-design-system.html"
+                                            href: "/articles/starting-a-design-system.html"
                                         },
                                         {
                                             title: "Releases",
-                                            href: "http://localhost:3000/articles/releasing-design-systems.html"
+                                            href: "/articles/releasing-design-systems.html"
                                         },
                                         {
                                             title: "Versions",
-                                            href: "http://localhost:3000/articles/versioning-design-systems.html"
+                                            href: "/articles/versioning-design-systems.html"
                                         },
                                         {
                                             title: "Roadmapping a Release Cycle",
                                             pill: "Activity",
-                                            href: "http://localhost:3000/articles/roadmaps-for-design-systems.html"
+                                            href: "/articles/roadmaps-for-design-systems.html"
                                         },
                                         {
                                             title: "Visual Breaking Changes",
                                             pill: "Activity",
-                                            href: "http://localhost:3000/articles/visual-breaking-change-in-design-systems.html"
+                                            href: "/articles/visual-breaking-change-in-design-systems.html"
                                         }
                                     ]
                                 )
@@ -354,15 +354,15 @@
                                     items = [
                                         {
                                             title: "Iterations, Task Management & Ceremonies",
-                                            href: "http://localhost:3000/articles/using-jira-for-design-systems.html"
+                                            href: "/articles/using-jira-for-design-systems"
                                         },
                                         {
                                             title: "Communications",
-                                            href: "http://localhost:3000/articles/design-system-communications.html"
+                                            href: "/articles/design-system-communications"
                                         },
                                         {
                                             title: "Measuring Success",
-                                            href: "http://localhost:3000/articles/measuring-design-system-success.html"
+                                            href: "/articles/measuring-design-system-success"
                                         },
                                         {
                                             title: "Closing Discussion"
@@ -513,7 +513,7 @@
                             heading: "End of Day"
                         }
                     ]
-                ) }}                
+                ) }}
             {% endcall %}
 
             {% call escom.tab_pane(label='Available Topics') %}
@@ -681,8 +681,8 @@
     {# CTA #}
 
     {{ escom.cta(
-        heading="Let's Get Started!", 
-        deck="We’re ready to energize your design system efforts, whether you’re just getting started or rebooting to 2.0. Are you ready?", 
+        heading="Let's Get Started!",
+        deck="We’re ready to energize your design system efforts, whether you’re just getting started or rebooting to 2.0. Are you ready?",
         button_text="Email Us",
         button_href="mailto:nathan@eightshapes.com"
     ) }}
