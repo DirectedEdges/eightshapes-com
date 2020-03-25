@@ -1,6 +1,5 @@
 ---
   category : Visual Style
-  id : color-in-design-systems
   title : Color in Design Systems
   deck : 16 Tips for Setting Up a System That Endures
   title_abbreviation : Color
@@ -10,6 +9,7 @@
   read_duration : 10
   masthead : true
   layout: article.njk
+  tags: ['color', 'design systems', 'visual style']
 ---
 {% import '../_includes/escom.njk' as escom with context %}
 
