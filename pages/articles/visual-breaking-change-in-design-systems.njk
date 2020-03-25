@@ -16,7 +16,7 @@ So, ask yourself…
   ) }}
 
   {% filter markdown %}
-  
+
 
 [Semantic Versioning](https://semver.org/) (SemVer) offers clear criteria to communicate change across releases using major, minor and patch designations. Every design system I encounter uses SemVer and monitoring change in their package’s application programming interface, or [API](about:invalid#zSoyz). This is familiar territory for developers coding JavaScript props and HTML markup. Break your API, and your next version _must_ increment the version to a next major release, such as from `1.4.0` to `2.0.0`.
 
@@ -41,7 +41,7 @@ Most system teams feel safe in tuning a primary button’s background color. May
   ) }}
 
   {% filter markdown %}
-  
+
 
 Certainly, adopting teams shouldn’t override a standard primary button’s color set. Overriding a system choice severs the connection with a system. At that point, an adopter is on their own. Therefore, adjusting the shade of primary button’s background color is safe and is not a breaking change.
 
@@ -62,7 +62,7 @@ Imagine a system team fine-tuning interactive blue to improve color contrast. Th
   ) }}
 
   {% filter markdown %}
-  
+
 
 So, for `v1.5.0`, the team adjusted `interactive-blue` to a lighter, more saturated tone that worked on both `white` and `charcoal`.
 
@@ -77,7 +77,7 @@ So, for `v1.5.0`, the team adjusted `interactive-blue` to a lighter, more satura
   ) }}
 
   {% filter markdown %}
-  
+
 
 However, an adopter had used the Ghost button dependent on that color on a light gray background. After the system change, the label's text color contrast is inaccessible. _Your system broke their product_.
 
@@ -96,7 +96,7 @@ Similarly, imagine a system darkens the Card component’s`background-color`. Th
   ) }}
 
   {% filter markdown %}
-  
+
 
 In that presumably safe zone, an adopter added secondary text that, while subtle moderate gray, passed a color contrast test. After the system change, the color contrast is no longer accessible. _Your system broke their product_.
 
@@ -137,7 +137,7 @@ Imagine your system adjusts tab label`font-weight` from normal to bold.
   ) }}
 
   {% filter markdown %}
-  
+
 
 An adopter upgrades. Their existing unresponsive tabs exceed allocated space, so they wrap. Ghastly! _Your system broke their product._
 
@@ -155,7 +155,7 @@ _Takeaway_: Prior to `1.0.0`, work diligently to to experiment, refine, and fina
 
 ## Breaking Space and Size
 
-At least you can see color and typography. [Space](/articles/space-in-design-systems.html) and size? Those are harder to define as concretely reusable, let alone monitor for breaking change.
+At least you can see color and typography. [Space](/articles/space-in-design-systems) and size? Those are harder to define as concretely reusable, let alone monitor for breaking change.
 
 In HTML, when you change a component’s box model properties — `padding`, `margin`, `width`, `height`, `display`, `box-sizing`, `position`, `left`, `right`, `top`, `bottom` — you risk impacting layout composition that arranges that component with other page elements.
 
@@ -174,7 +174,7 @@ Your system team decides to remove vertical spacing applied form controls in the
   ) }}
 
   {% filter markdown %}
-  
+
 
 An adopter had laid out 38 different forms relying upon that spacing. After the system change, all their forms no longer vertically separate elements. _Your system broke their product_.
 
@@ -193,7 +193,7 @@ After extensive design community debate, your system concedes to expand a Card�
   ) }}
 
   {% filter markdown %}
-  
+
 
 An adopter had arranged and sized Cards based on their customer’s hardware settings. They’d also added an icon-only toolbar in the bottom row. After the system change, the icons wrap to two rows. _Your system broke their product_.
 
@@ -209,7 +209,7 @@ Some spatial change doesn’t impact adjacent elements or page composition. For 
 
 ## What Else Can Break Visual Style?
 
-In general, changes in visual style could be specified as changes to a bevy of CSS properties, the range of which is exemplified by [design token](/articles/tokens-in-design-systems.html) collections in [Salesforce Lightning](https://www.lightningdesignsystem.com/design-tokens/), [Morningstar](https://designsystem.morningstar.com/visual-language/constants.html), [REI](https://github.com/rei/rei-cedar-tokens/tree/master/tokens/foundations), and [Open Table](https://github.com/opentable/design-tokens#otkit).
+In general, changes in visual style could be specified as changes to a bevy of CSS properties, the range of which is exemplified by [design token](/articles/tokens-in-design-systems) collections in [Salesforce Lightning](https://www.lightningdesignsystem.com/design-tokens/), [Morningstar](https://designsystem.morningstar.com/visual-language/constants.html), [REI](https://github.com/rei/rei-cedar-tokens/tree/master/tokens/foundations), and [Open Table](https://github.com/opentable/design-tokens#otkit).
 
 What other properties could you monitor beyond those of color, typography, space, and size described above? `z-index` applied across components like Popovers, Dialogs, Modals, and Tooltips is central to composition in the third, layered dimension of a layout. `opacity` applied widely to semi-transparent layers (such as under a Modal) also seem a strong candidate. Even subtle changes like a `border-bottom` have an impact.
 
@@ -224,8 +224,8 @@ What other properties could you monitor beyond those of color, typography, space
   ) }}
 
   {% filter markdown %}
-  
-- Your system makes the `border-bottom` of a vertical list's last item transparent. An adopter had positioned that list snugly above another block, relying on the line to create contrast. After the system change, the block's header blends with the label of the list's last item in a manner not obvious to distinguish.  
+
+- Your system makes the `border-bottom` of a vertical list's last item transparent. An adopter had positioned that list snugly above another block, relying on the line to create contrast. After the system change, the block's header blends with the label of the list's last item in a manner not obvious to distinguish.
 If so, _your system broke their product_.
 
 But what of adjusting `box-shadow`? Or fine tuning `border-radius`? Cue designer ambivalence. It'd be hard to convince that those adjustments would break an adopter's experience.
@@ -249,7 +249,7 @@ In conversations with design system colleagues, sentiments are:
   ) }}
 
   {% filter markdown %}
-  
+
 
 In our work on the [Morningstar Design System](https://designsystem.morningstar.com/about/versioning.html), we’ve documented what changes are considered major, minor, and patch. Our team asserts opinions confidently in critique discussions, comments on pull requests, and in our discussions with adopting and upgrading teams.
 
@@ -257,7 +257,7 @@ Our field will adapt to versioning as it deeply engrains in our practice. We’l
 
 * * *
 
-**#3.** [**Versioning**](/articles/versioning-design-systems.html) ← Previous | Next → **#5.** [**Dependencies**](/articles/dealing-with-dependencies-inside-design-systems.html)
+**#3.** [**Versioning**](/articles/versioning-design-systems) ← Previous | Next → **#5.** [**Dependencies**](/articles/dealing-with-dependencies-inside-design-systems)
 
 
 

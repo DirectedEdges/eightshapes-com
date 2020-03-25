@@ -3,16 +3,16 @@
 
   {% block main_article %}
   {% filter markdown %}
-  
 
-During early system activities like our [Component Cut Up workshop](/articles/the-component-cut-up-workshop.html), participants can get stuck on the “correct” way to chop up page into components. Staring at pages on offer, each person has their moment—scissors in hand—wondering:
+
+During early system activities like our [Component Cut Up workshop](/articles/the-component-cut-up-workshop), participants can get stuck on the “correct” way to chop up page into components. Staring at pages on offer, each person has their moment—scissors in hand—wondering:
 
 - Is this thing (like a `Card`) the component?
 - Or this smaller thing (like a `Button `or `Tag`) the component?
 - Actually, is this far bigger thing (like `Card Grid with Toolbar`) the component?
 
 After years working on libraries, my response is a straightforward: Yes.
-  
+
 * * *
 
 When users start working with a library, instinct suggests that a page is just 10 to 20 reusable chunks: a top `Header` here, a multi-level `Tab` navigation below it, three _Sidebar Modules_ over there. Recent practices build understanding up from an atomic base: a `Button` here, a `Menu` there, perhaps a limited variety of `Card`. Forever, all these parts have been assembled into `Layout`.
@@ -62,7 +62,7 @@ The more atomic a part, the more likely it’ll be broadly reused, correctly, at
 ) }}
 
 {% filter markdown %}
-  
+
 Big components — `Heroes`, `Toolbar`, and especially `HeaderBar` — are essential for making a broad experience cohesive. Yet these components are complex beasts, particularly responsively, as measured by overflowing lines of markup and style.
 
 Is “Give ’em some atomic elements and hope for the best!” across 5+ products the right approach? For both cost and consistency, that’s bollocks. If a system is a centralized force to eliminate wasteful redundancy and deliver consistency, then build and propagate big ones that matter.
@@ -80,7 +80,7 @@ Likewise, larger pieces are material to QA the library as tokenized decisions—
 The parts on a page are all composed in a the hierarchical journey, from the most atomic element all the way up to the body tag.
 
 The invisible scaffolding that holds a page together is often erroneously thought of as “The Grid.” Without it, some feel unable to build anything visually coherent: Get me the Grid! I need the Grid! I can’t build anything without the Grid!
-  
+
 ### A Grid is a Component
 
 Most libraries offer a `Grid` defined as (more often now) rows containing columns down a scrollable page. The _Grid_ has many hallmarks of a component, in that a grid is:
@@ -102,7 +102,7 @@ A _Layout_ provides empty page regions into which you can place components, such
 ## #5. Users Value Assembled Shells
 
 When library users approach a library, they can be overwhelmed by the vast ocean of atomic choices. A library’s breadth of parts is correlated with its perceived worth. However, another key question is: Can I compose my layout, arranging an array of prebuilt parts how I want to, bound within a shell of “global” components that I may configure but need not rebuild?
-  
+
 ### Offer Prebuilt Shells that Include Big Components
 
 That’s not “the grid” and it’s more complex than just a layout of empty regions. We’ll often offer a page _Shell_ as a prearranged layout that already contains a `Header`, `GlobalNavigation`, and possibly `Footer` and other _Panel_ing*.*

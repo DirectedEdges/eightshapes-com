@@ -3,8 +3,8 @@
 
   {% block main_article %}
     {% filter markdown %}
-_#1 of 6 of the series Releasing Design Systems:_  
-**Outputs** | [Cadence](/articles/design-system-release-cadence.html) | [Versions](/articles/versioning-design-systems.html) | [Breaking](https://medium.com/@nathanacurtis/visual-breaking-change-in-design-systems-1e9109fac9c4) | [Dependencies](/articles/dealing-with-dependencies-inside-design-systems.html) | Process
+_#1 of 6 of the series Releasing Design Systems:_
+**Outputs** | [Cadence](/articles/design-system-release-cadence) | [Versions](/articles/versioning-design-systems) | [Breaking](https://medium.com/@nathanacurtis/visual-breaking-change-in-design-systems-1e9109fac9c4) | [Dependencies](/articles/dealing-with-dependencies-inside-design-systems) | Process
 
 Companies realize a design system’s value when adopting products use a system to make and ship experiences that _their_ customers use. As a part of that value chain, the system releases features over time. This puts the system into the hands of _its_ customer: designers and engineers doing their job.
 
@@ -35,7 +35,7 @@ Most systems offers a single source of truth of presentation layer code as:
   ) }}
 
   {% filter markdown %}
-  
+
 - **UI Component Library as HTML Markup & CSS**. Often referred to as “the CSS,” this package’s consumption rests upon using or compiling CSS as a consistent visual style baseline coupled with reusing HTML snippets.
 
 and/or…
@@ -65,7 +65,7 @@ Most teams limit understanding of what they release to simple “we release code
   ) }}
 
   {% filter markdown %}
-  
+
 - **Design Toolkits** as template files and symbol libraries offered in design software. Today, almost always Sketch. Tomorrow, Figma, Invision Studio, and other emerging competitors?
 - **Fonts, Icons** , and even [Origami’s Image Sets](https://registry.origami.ft.com/components?search=&module=&imageset=true&service=&active=true&maintained=&experimental=&deprecated=&dead=) due to a system’s often expected role in distributing and versioning such libraries.
 - **Other Design Resources** like illustration and color swatch ASE/CLR files as a springboard for bespoke artwork. These collections change slowly, less formally, and via contributions by community members not a part of a system core team. Yet, from the customer’s perspective and system’s communications, it’s part of the system.
@@ -87,9 +87,9 @@ Design systems need a home, a place everyone knows they can find a path to every
   ) }}
 
   {% filter markdown %}
-  
+
 - **Documentation Sites** describe features (like a button), onboard new users, and trigger processes like getting help or contributing. Teams build sites more often using a static site generator or less often with a content management system.
-- [**Documentation Components**](/articles/design-system-doc-components.html) – `code-example-pair`, `do-dont`, `hex-code`, `component-explorer` – depend on the UI component library and serve usually only the doc site. Such components may be versioned with the documentation site or as a third, separately versioned library relative to doc and the UI components they rest between.
+- [**Documentation Components**](/articles/design-system-doc-components) – `code-example-pair`, `do-dont`, `hex-code`, `component-explorer` – depend on the UI component library and serve usually only the doc site. Such components may be versioned with the documentation site or as a third, separately versioned library relative to doc and the UI components they rest between.
 
 * * *
 
@@ -108,7 +108,7 @@ When distributing code and design assets, it’s vital to offer the code in mann
   ) }}
 
   {% filter markdown %}
-  
+
 ### For Code
 
 - BEST: **Registries** like `npmjs` (or an internal counterpart like Sonatype's `nexus`) that provide access and management of released code packages. Developers then use tools like `bower`, `npm`, `yarn`, `webpack`, and `babel` to integrate and upgrade that code smoothly in their environments.

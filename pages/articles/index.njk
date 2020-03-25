@@ -8,7 +8,7 @@
       <h2 id="services">Articles</h2>
       <ul>
           {% for article in articles %}
-            <li><a href="/articles/{{ article }}.html">{{ article | replace('-', ' ') | title }}</a></li>            
+            <li><a href="/articles/{{ article }}">{{ article | replace('-', ' ') | title }}</a></li>
           {% endfor %}
       </ul>
     </div>

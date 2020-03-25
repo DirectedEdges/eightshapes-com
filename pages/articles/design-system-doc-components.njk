@@ -10,7 +10,7 @@ Building an experience, even doc, sensitizes that team to what it feels like to 
 
 The system <em>never</em> provides all the parts for you.
 
-The library gives you [_Colors_](/articles/color-in-design-systems.html) and [_Buttons_](/articles/buttons-in-design-systems.html). Maybe a _Nav Bar_. Certainly a _Footer_. However, a library serving online shopping doesn’t need a code viewer or color swatch. So some key components you need to document a library are in fact not in the library. So you build them, just for yourself, separate from and extending the library shared with everyone else.
+The library gives you [_Colors_](/articles/color-in-design-systems) and [_Buttons_](/articles/buttons-in-design-systems). Maybe a _Nav Bar_. Certainly a _Footer_. However, a library serving online shopping doesn’t need a code viewer or color swatch. So some key components you need to document a library are in fact not in the library. So you build them, just for yourself, separate from and extending the library shared with everyone else.
 
 What do you build? Get ready to tool up! Here’s my eight favorite documentation components, why to build each, and special ingredients you can add to make each even more useful.
 
@@ -18,7 +18,7 @@ What do you build? Get ready to tool up! Here’s my eight favorite documentatio
 
 ## #8. Spec & Token Tables
 
-Well documented libraries proliferate tabular spec tables throughout, whether a reference table of CSS modifiers, a [token set](/articles/tokens-in-design-systems.html), or something else. So make a component (or three) for those you repeat over and over.
+Well documented libraries proliferate tabular spec tables throughout, whether a reference table of CSS modifiers, a [token set](/articles/tokens-in-design-systems), or something else. So make a component (or three) for those you repeat over and over.
 
 {% endfilter %}
 
@@ -26,12 +26,12 @@ Well documented libraries proliferate tabular spec tables throughout, whether a 
       image_path = title_image_path,
       image_number = '2',
       image_alt = 'Design token names and values in a table',
-      caption = '<a href="/articles/tokens-in-design-systems.html" target="_blank">Token table</a>, with available variable and corresponding values, as displayed in a section describing the “squished inset” convention.',
+      caption = '<a href="/articles/tokens-in-design-systems" target="_blank">Token table</a>, with available variable and corresponding values, as displayed in a section describing the “squished inset” convention.',
       class = ''
   ) }}
 
   {% filter markdown %}
-  
+
 
 Automating tabular displays helps authors use simpler syntax, promotes consistent table structure and headings, and eases maintenance for embedded data like tokens.
 
@@ -81,7 +81,7 @@ Each component page needs a local table of contents to to scan available variati
   ) }}
 
   {% filter markdown %}
-  
+
 
 System users need to know what’s there, and some components — even simple ones like _Buttons_ — have many variants. Local navigation improves awareness of and navigation to what’s available below the fold.
 
@@ -107,7 +107,7 @@ A tint stack vertically arranges many colors in a group, such as a single color 
   ) }}
 
   {% filter markdown %}
-  
+
 
 Tint stacks display many colors compactly, offering a playground to visualize additional properties of each color.
 
@@ -128,7 +128,7 @@ _Special Features_:
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ## #4. Do &amp; Don’t
@@ -146,7 +146,7 @@ In libraries full of atomic bits, apply each in a full-page composition can take
   ) }}
 
   {% filter markdown %}
-  
+
 
 Pictures — especially comparative pictures — are far easier to scan, learn from, and recall than verbose textual guidelines. While more expensive to produce, having a do & don’t component memorably reinforces the value of this display to system authors digging in to compose doc.
 
@@ -172,7 +172,7 @@ All of your system’s customers — designers, devs, product managers, exec
   ) }}
 
   {% filter markdown %}
-  
+
 
 A scannable gallery of built things quickly sensitizes and builds belief in system validity. While a page rarely used, it’s powerful and easy to setup.
 
@@ -197,7 +197,7 @@ It’s gotta be simple to do the basics of long form content — headings, p
   ) }}
 
   {% filter markdown %}
-  
+
 
 Even if you don’t use a templating system like Nunjucks, is your long form content as cleanly input and stored? A clean approach for building doc can make or break easing in contributors and migrating copy from where it’s planned, composed & edited (for my teams, Google Docs).
 
@@ -220,7 +220,7 @@ Nothing beats the utility of a visible, rendered example paired with it’s code
   ) }}
 
   {% filter markdown %}
-  
+
 
 _Special Features_:
 

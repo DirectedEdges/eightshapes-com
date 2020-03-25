@@ -20,7 +20,7 @@ I’ve added a red border around this paragraph to illustrate the white space I 
   ) }}
 
   {% filter markdown %}
-  
+
 
 To remove the space, add pseudo&nbsp;:before and&nbsp;:after elements to the text element, each with negative margins.
 
@@ -41,7 +41,7 @@ The key benefit of this technique is that it removes top and bottom whitespace w
   ) }}
 
   {% filter markdown %}
-  
+
 ## Finding the&nbsp;formula
 
 By experimenting at multiple font sizes and noting the offsets needed to crop the text at each size, a formula started to emerge:
@@ -71,7 +71,7 @@ But my confidence was dashed when I applied the mixin to a different font face.
   ) }}
 
   {% filter markdown %}
-  
+
 ## Making it work for any&nbsp;font
 
 The mixin didn’t work when applied to different typefaces and I couldn’t figure out why. After months of head scratching and experimentation, I ran across this excellent article explaining [Font Metrics on the web](http://iamvdo.me/en/blog/css-font-metrics-line-height-and-vertical-align). In the article, Vincent De Oliveira describes the [Em Square](http://designwithfontforge.com/en-US/The_EM_Square.html).
@@ -87,7 +87,7 @@ The mixin didn’t work when applied to different typefaces and I couldn’t fig
   ) }}
 
   {% filter markdown %}
-  
+
 
 I could now articulate in proper typographic terms what I aimed to do: crop the Em Square to the baseline and cap height of the font face.
 
@@ -110,12 +110,12 @@ Select a Google font from within the tool or load a Custom Font, and then use th
   ) }}
 
   {% filter markdown %}
-  
+
 ## Cropping Caveats
 
 Cropping the em square with this technique isn’t a silver bullet. Turns out typefaces (and em squares) render differently across operating systems. Cropping the em square to perfection on a Mac may be too much cropping or not enough on a Windows browser. Even on my local computer I’ve seen the crop be off by a pixel or two depending on whether I’m viewing on a regular resolution or retina display.
 
-Despite these shortcomings the text crop tool has allowed me to fix many issues related to vertical alignment that previously required bespoke CSS pixel pushing. The versatility of this tool is especially useful alongside [space tokens](/articles/space-in-design-systems.html) in a design system.
+Despite these shortcomings the text crop tool has allowed me to fix many issues related to vertical alignment that previously required bespoke CSS pixel pushing. The versatility of this tool is especially useful alongside [space tokens](/articles/space-in-design-systems) in a design system.
 
 Here are some common use cases for cropping the text:
 
@@ -141,12 +141,12 @@ Here are some common use cases for cropping the text:
   ) }}
 
   {% filter markdown %}
-  
+
 ## Three tips for text&nbsp;cropping
 
 Here are some tips for using any typeface-specfic mixin you generate from the [Text Crop Tool](http://text-crop.eightshapes.com)
 
-**1. Use it only when it’s beneficial.**   
+**1. Use it only when it’s beneficial.**
 Only apply the text crop in situations that need it. Don’t do this:
 
     \* {
@@ -155,11 +155,11 @@ Only apply the text crop in situations that need it. Don’t do this:
 
 This will affect any existing&nbsp;:before and&nbsp;:after pseudo elements you’re using and create undesirable effects on non-text elements.
 
-**2. Create text-only HTML elements to reduce the scope.**  
-In most cases it’s best to apply text-crop to an element that contains only text content, not an element that contains child elements.  
+**2. Create text-only HTML elements to reduce the scope.**
+In most cases it’s best to apply text-crop to an element that contains only text content, not an element that contains child elements.
 If you have a parent element that contains text and other content, try wrapping a \<span\> around the text you want to crop and apply the mixin to only that \<span\>.
 
-**3. Test everywhere!** &nbsp;  
+**3. Test everywhere!** &nbsp;
 Be sure to test on all the browsers you need to support. Test across operating systems. Through this testing you’ll gain confidence that the cropping is having the effect you desire.
 
 ## Better solutions?

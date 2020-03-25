@@ -14,7 +14,7 @@ As a system changes, adopters will want to take advantage of what’s new.
   {% filter markdown %}
 
 
-Trouble arises when change is poorly communicated or its impacts ill-defined. Developers compare a proposed design to system code, identify what needs swapped or added, and carefully install or upgrade what’s needed. They are also usually mindful of [breaking change](/articles/visual-breaking-change-in-design-systems.html) in dependencies.
+Trouble arises when change is poorly communicated or its impacts ill-defined. Developers compare a proposed design to system code, identify what needs swapped or added, and carefully install or upgrade what’s needed. They are also usually mindful of [breaking change](/articles/visual-breaking-change-in-design-systems) in dependencies.
 
 Are designers as sensitive to changes when working in a tool like Sketch? Not as much. They replace this with that. A new Button goes here, unaware that older buttons are used elsewhere in that or other pages. Designers flow updates swiftly, indicating neither the component’s version nor annotating an upgrade compared to what’s coded today. Friction ensues:
 
@@ -40,7 +40,7 @@ Are designers as sensitive to changes when working in a tool like Sketch? Not as
 
 Designers want the latest. Developers balance tradeoffs of new quality with scale and maintenance. Systems should clean up that conversation.
 
-Identifying **how to version** is simple (use SemVer!). However, identifying what’s versioned —  **by library or by component** —is more challenging. Versioning communicates how things change from launch through **deprecation** and **end-of-life**. This article takes us through that cycle of change across [system outputs](/articles/releasing-design-systems.html): code, tokens, design assets, and doc.
+Identifying **how to version** is simple (use SemVer!). However, identifying what’s versioned —  **by library or by component** —is more challenging. Versioning communicates how things change from launch through **deprecation** and **end-of-life**. This article takes us through that cycle of change across [system outputs](/articles/releasing-design-systems): code, tokens, design assets, and doc.
 
 * * *
 
@@ -63,7 +63,7 @@ Every discussion about versioning design system outputs begins and ends with the
 
 SemVer versions in a `MAJOR.MINOR.PATCH` format, incrementing each as a:
 
-- `MAJOR` version for incompatible API changes (that is, something ["breaks"](/articles/visual-breaking-change-in-design-systems.html)),
+- `MAJOR` version for incompatible API changes (that is, something ["breaks"](/articles/visual-breaking-change-in-design-systems)),
 - `MINOR` version for adding features that are backwards-compatible, and
 - `PATCH` version for backwards-compatible bug fixes.
 
@@ -124,7 +124,7 @@ Versioning “by component” enables adopting teams to mix and match button ver
 {% filter markdown %}
 Adopters need not worry about when each was released, since HTML markup, style and script is encapsulated and won’t conflict with other components types included in the the same page. This may or may not mean you can uses multiple versions of one component simultaneously. “Can I include button’s `1.7.0` in one part of the page along with button `1.2.0` and `2.5.0` elsewhere on the same page?" Depends on how the library works.
 
-Versioning by component is consistent for teams using a [continuous release model](/articles/design-system-release-cadence.html) and using a JavaScript framework (React, Vue, etc) or delivering web components. They’ll make much smaller changes more modularly more often.
+Versioning by component is consistent for teams using a [continuous release model](/articles/design-system-release-cadence) and using a JavaScript framework (React, Vue, etc) or delivering web components. They’ll make much smaller changes more modularly more often.
 
 * * *
 
@@ -410,7 +410,7 @@ _Takeaway_: “Use the latest” isn’t good enough, so establish a versioning 
 
 ### ✔︎ Consider Versioning Tokens Separate from Code, Too
 
-[Design tokens](/articles/tokens-in-design-systems.html) codify style. At their core, they’re a component dependency. Many teams embed tokens in the versioned library of web-based components. Yet, tokens could serve other teams, whether more web products making their own components or teams building for iOS & Android.
+[Design tokens](/articles/tokens-in-design-systems) codify style. At their core, they’re a component dependency. Many teams embed tokens in the versioned library of web-based components. Yet, tokens could serve other teams, whether more web products making their own components or teams building for iOS & Android.
 
 A new tokens version could include new colors (such as a data visualization palette) or fine tune an interactive blue to improve accessibility. When embedded in a web-based component library, such changes could block release since you’d have to update all components too.
 

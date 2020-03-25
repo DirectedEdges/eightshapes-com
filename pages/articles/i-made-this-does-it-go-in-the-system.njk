@@ -5,12 +5,12 @@
     {% filter markdown %}
 Every system needs _button_, _checkbox_, and typographic _headings_. But beyond an obvious core, curating a system’s scope requires balancing disparate features, tradeoffs, and an uncertain boundary of how much is too much.
 
-Upon a `1.0` [release](/articles/starting-a-design-system.html), a system can be inundated with contribution inquiries:
+Upon a `1.0` [release](/articles/starting-a-design-system), a system can be inundated with contribution inquiries:
 
 - Can I add my awesome <em>Card</em> design to the library?
 - Should we publish my Chart colors in system doc?
 - Shall I merge my Layout Grid CSS into the system repo?
-  
+
 
 Designers and engineers always confront challenges the system doesn’t solve. And then, they’ll solve it. Through blood, sweat and tears, they’ll develop fervent belief about the solution’s value. The system is their path to amplify that value. But is the system the right place for it?
 
@@ -20,7 +20,7 @@ Where and how do we — collaborators chatting, a systems team reviewing pro
 
 ## Does It Belong in the System?
 
-Systems are never the repository for every style, component, and feature designed and built for every product ever. Instead, a system should [include what’s shared across many products and omit what’s not](/articles/principles-of-designing-systems.html).
+Systems are never the repository for every style, component, and feature designed and built for every product ever. Instead, a system should [include what’s shared across many products and omit what’s not](/articles/principles-of-designing-systems).
 
 By asking a contributor a few simple questions, you can probe how realistic and valuable a contribution can be. Each question need not elicit an emphatic “Yes!” (except the first one). However, they frame discussion between contributors and system representatives to decide whether or not to move forward.
 
@@ -54,7 +54,7 @@ If your system already sports _page-_, _inline-_, and _toast messages,_ a “_to
   ) }}
 
   {% filter markdown %}
-  
+
 
 On the other hand, imagine a library of framework-independent HTML and CSS. Then, a contributor proposes a complex, React-based component. That would trigger a repository refactor, implies a framework commitment, and expands the practice to an entirely new testing workflow. The system isn’t meant for that.
 
@@ -77,7 +77,7 @@ Got a primitive _pill_ that needs a few varied colors? Easy. Proposing a complex
   ) }}
 
   {% filter markdown %}
-  
+
 
 _Date Pickers_ are a wonderful example. Many products use a _Date Picker_. However, most need _their specific version_ of a Date Picker. Not only is it complex and expensive, but it’s nearly impossible to build one that meets every product’s nuanced needs and contexts. Instead, adopters gripe about all the overrides and extensions they have to do, effortfully stripping out the features you built thinking they worked for everyone. Avoid complex things made for everyone but fit no one.
 
@@ -98,7 +98,7 @@ A system team can’t take a burgeoning library in every direction at once. If y
   ) }}
 
   {% filter markdown %}
-  
+
 
 Solving for _Tooltips_ includes `z-index` layering and shadows, JavaScript events, and aligning notches to all sides. Compositionally, such properties extend to _Popover_ and _Menus_ that follow. I’ll bias towards contributions that spur development in directions useful to everyone.
 
@@ -115,7 +115,7 @@ Solving for _Tooltips_ includes `z-index` layering and shadows, JavaScript event
   ) }}
 
   {% filter markdown %}
-  
+
 
 If your contributor struggles to articulate ideas and you don’t know either, maybe the feature isn’t mature or ready for broad distribution. However, what if your contributor quickly cites scenarios of use, rattles off do and don’ts, and itemizes editorial and style considerations? Now we’re talking!
 
@@ -156,7 +156,7 @@ For example, a proposed _Card_ may appear simple: image and title. Done, right? 
   ) }}
 
   {% filter markdown %}
-  
+
 
 _What’s left to be done?_ Resolve **what features to have**  — Description or not? Tall photo or not? Photo optional? — and verify the solution with across the product community that’ll adopt it.
 
@@ -179,7 +179,7 @@ The contribution may also need to **reduce scope to a relevant essence** useful 
   ) }}
 
   {% filter markdown %}
-  
+
 
 _Headings_, _descriptions_, and _images_ are fairly similar, and we quickly achieved consensus on _thumbnail_ aspect ratio. But interactions are all over the place! Conversations on button and icon arrangements swirled into oblivion. Argh, c’mon, can’t we all get along?
 
@@ -194,7 +194,7 @@ _Headings_, _descriptions_, and _images_ are fairly similar, and we quickly achi
   ) }}
 
   {% filter markdown %}
-  
+
 
 Actually, you already get along! A system’s _Card_ can include agreed features — _thumbnail_, copy _heading_ styles, _descriptions_ — and omit contentious items. This is especially true if a library also offers other primitives—here, _button_ and _icons — _so that product teams can customize the contentious stuff themselves. Problem solved, move on.
 
@@ -208,7 +208,7 @@ _Who does the work?_ Reduction is often driven by a system expert acting as conn
 
 Perhaps a design include myriad non-system colors, wacky spatial choices, and product-specific icons. Or, maybe contributed HTML markup is crude, CSS is unorganized across files, and — gasp! — uses [Stylus](http://stylus-lang.com) instead of the system’s [Sass](http://sass-lang.com/). Without a doubt, contributions always lack every text / background combo, size option and theming construct the system offers.
 
-_What’s left to be done?_ Each contribution must be normalized into system standards. The system promises [robust and accessible features of high visual quality and resilient to varied content](/articles/component-qa-in-design-systems.html), dependent on a shared — and perhaps [tokenized](/articles/tokens-in-design-systems.html) — visual language. The system’s code aligns with repository standards to ease per-item and cross-library maintenance. So, the contribution has to get there.
+_What’s left to be done?_ Each contribution must be normalized into system standards. The system promises [robust and accessible features of high visual quality and resilient to varied content](/articles/component-qa-in-design-systems), dependent on a shared — and perhaps [tokenized](/articles/tokens-in-design-systems) — visual language. The system’s code aligns with repository standards to ease per-item and cross-library maintenance. So, the contribution has to get there.
 
 _Who does the work?_ For seasoned contributors, this step is familiar and completed with relative ease. However, the system rep must balance the time needed to deeply educate a contributor, suffer exhausting iterative reviews, and risk still having to complete the task themselves anyway. More often than not, a system rep volunteers for this production.
 

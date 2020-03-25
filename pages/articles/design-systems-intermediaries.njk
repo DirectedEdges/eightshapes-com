@@ -28,7 +28,7 @@ A team building shared features often manage shared dependencies, too. Want to u
   ) }}
 
   {% filter markdown %}
-  
+
 
 Sound familiar? Yup, that’s _exactly_ how I position a system code dependency. What I thought would be five independent adopters are actually accessed via a platform squad serving the other four. Triggering adoption by _any_ team means distributing it solely via the platform team.
 
@@ -51,7 +51,7 @@ _Challenges_:
   ) }}
 
   {% filter markdown %}
-  
+
 - **Distributors Inhibit Upgrade Frequency**. After a distributor installs a system, the system will continue to evolve. However, a distributor’s teams (1) _can’t_ upgrade the system until the distributor upgrades it and (2) often _must_ upgrade when distributor chooses too. A distributor likely upgrades the design system less often (certainly not every minor release), since upgrades involve enhancements and retesting across all features. Even more threatening, this lower upgrade frequency means more effort per upgrade since more system change has occurred. This diminished upgrade frequency inhibits timely access to shiny new system features.
 
 _Takeaways_: Distributors, can’t adopt without ’em, so get used to living with them. Important products require many people and teams to make them special. These practices exist for a reason. So, I’ll work both angles.
@@ -63,7 +63,7 @@ _Takeaways_: Distributors, can’t adopt without ’em, so get used to living wi
 
 ## Translators
 
-Some engineering cultures mandate a tool, going through extensive migrations to adopt a stack dependent on one framework, such as React. If there’s a dominant framework in play, then you bet we’ll build our HTML & CSS system in that framework too. That leaves teams on [Angular](https://angularjs.org/), [Vue](https://vuejs.org/), and [Adobe Experience Manager](https://www.adobe.com/marketing-cloud/experience-manager.html) (AEM) to fend for themselves using [design tokens](/articles/tokens-in-design-systems.html) as their system [gateway drug](https://en.wikipedia.org/wiki/Gateway_drug_theory).
+Some engineering cultures mandate a tool, going through extensive migrations to adopt a stack dependent on one framework, such as React. If there’s a dominant framework in play, then you bet we’ll build our HTML & CSS system in that framework too. That leaves teams on [Angular](https://angularjs.org/), [Vue](https://vuejs.org/), and [Adobe Experience Manager](https://www.adobe.com/marketing-cloud/experience-manager.html) (AEM) to fend for themselves using [design tokens](/articles/tokens-in-design-systems) as their system [gateway drug](https://en.wikipedia.org/wiki/Gateway_drug_theory).
 
 {% endfilter %}
 
@@ -76,7 +76,7 @@ Some engineering cultures mandate a tool, going through extensive migrations to 
   ) }}
 
   {% filter markdown %}
-  
+
 
 Other cultures advocate autonomy. Teams get to choose, and they do: 10 on React or Vue, a smattering of Angular, maybe a few on AEM. In those cases, we’ll offer a “vanilla” library of HTML, (S)CSS, and “light Javascript” not embedded in any framework, leaving translation up to each adopting team.
 
@@ -91,7 +91,7 @@ Other cultures advocate autonomy. Teams get to choose, and they do: 10 on React 
   ) }}
 
   {% filter markdown %}
-  
+
 
 Framework-specific sub-communities of engineers emerge. It’s plausible — even expected — that an adopting team or single engineer takes the initiative to translate a design system’s vanilla HTML & CSS into their framework. They separate the concern in a distinct repo. And they tell their framework friends about it. “Look, here! I’ve translated the system into React in a new `system-react` repo. Anyone can use it. I hope you find it valuable!”
 
@@ -106,7 +106,7 @@ Framework-specific sub-communities of engineers emerge. It’s plausible —�
   ) }}
 
   {% filter markdown %}
-  
+
 
 Other engineers salivate: ohhh, yes, so much saved time! They eagerly adopt it as a translated packaged dependency better suited to their needs. Suddenly, you find your system’s features — at least partially — intermediated by a framework **translation**.
 
@@ -125,7 +125,7 @@ _Opportunities_: That this is an opportunity for growth should be the initial pe
   ) }}
 
   {% filter markdown %}
-  
+
 
 _Challenges_: I’ve yet to see a faithful, complete, dependable translation of a design system. While it bears a system’s brand name, it may be riddled with:
 
@@ -161,7 +161,7 @@ Some may want to use a system as a foundation for _their_ experiences too. Howev
   ) }}
 
   {% filter markdown %}
-  
+
 
 In one case, there were _four_ layer of teams making customized “partner experiences” that integrated a company’s UI into other company’s experience. Each client team relied on an theme (made by Team 3) that applied custom visual styles to sophisticated analysis components (made by Team 2) that depended on UI components and charting components (made by Team 1, the “Design System” team). From the outside, it’s as if levels 1 to 3 is actually the “design system.”
 
@@ -175,7 +175,7 @@ Themeability isn’t a built-in capability for systems that don’t need it. But
 
 _Opportunities_: While effortful and more complex, optimizing for themability strengthens how you can maintain and extend your default visual language, too. To help your themers, organize your code for optimal extensibility and overrides.
 
-- Apply a core visual language using global variables, separate from where you style each component. Even better, embed the visual language into [design tokens](/articles/tokens-in-design-systems.html) useful _across_ platforms, and demonstrate how overriding this taxonomy as theming’s starting point.
+- Apply a core visual language using global variables, separate from where you style each component. Even better, embed the visual language into [design tokens](/articles/tokens-in-design-systems) useful _across_ platforms, and demonstrate how overriding this taxonomy as theming’s starting point.
 - Isolate component-specific variables (possibly in one file, such as `/components/button/variables.scss`) from component CSS selectors and their rules (such as in `/components/button/button.scss`) in a more predictable and useful location.
 - Leverage feature like Sass’&nbsp;`!default`. If a variable has already been assigned a value by a theme’s override, it won't be re-assigned by a rule marked&nbsp;`!default`, which is otherwise applied.
 

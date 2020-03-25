@@ -15,7 +15,7 @@ Today’s digital `card` serves the same purpose. More than just a generic conta
   ) }}
 
   {% filter markdown %}
-  
+
 
 Often, the `card` also signals a pivot in the growth of a component library. Unlike primitives like `button` and `input`, a `card` requires composition. It relates many elements (some already in our library) and as content flows into each. Also, `card`s are almost always shown as a set, siblings side by side. Composition triggers higher-order thinking critical to system design.
 
@@ -42,7 +42,7 @@ A composable component starts with essential core of required elements, so you�
   ) }}
 
   {% filter markdown %}
-  
+
 
 `card` often requires:
 
@@ -70,7 +70,7 @@ Cast the discovery net wide across many products. Inventory each example. Analys
   ) }}
 
   {% filter markdown %}
-  
+
 
 `card`s serve varying needs across many moments of an experiences, and can include a range of other content types:
 
@@ -105,7 +105,7 @@ For many `card`s, the stacked order is fixed: image then title then actions. In 
   ) }}
 
   {% filter markdown %}
-  
+
 
 Like a `modal` and `dialog`, `card` could identify zones for a _header_, _main_ and _footer_ or _media_, _copy_, and _actions_ to firmly identify content relationships.
 
@@ -120,7 +120,7 @@ Like a `modal` and `dialog`, `card` could identify zones for a _header_, _main_ 
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ### Cope with Regions Allowing Flexible Input
@@ -144,7 +144,7 @@ But that region opens a dangerous door. Maybe an adopter adds a legend… under 
   ) }}
 
   {% filter markdown %}
-  
+
 
 Regions offer flexibility but invite abuse. Nobody argues opening up a `modal`’s main content area to uncertain markup. For a `card`, an _action bar_ zone could include `button`, `icon`, and `menu.` However, it’s not up to `card` to hard wire every case. Some components may need to offer regions and relinquish control of and responsibility for what’s goes inside.
 
@@ -173,7 +173,7 @@ At one client, we analyzed existing inconsistent cards across products. It was a
   ) }}
 
   {% filter markdown %}
-  
+
 
 Content experts were understandably fatigued by years of design flip flop. To them, the system was an opportunity to end image size conversation. A standard aspect ratio would not just improve display consistency, but also vastly simplify their vendor requirements and image delivery.
 
@@ -190,7 +190,7 @@ As a result, `card` settled on a 16x9 landscape ratio, augmented by a square alt
   ) }}
 
   {% filter markdown %}
-  
+
 
 To address legacy content, `card` offered a prop to _contain_ images (using the background-size CSS property) within the 16x9 space. Designers achieved visual grid harmony in search results, while producers adjusted displays per card to address undesirable photograph crops.
 
@@ -218,7 +218,7 @@ Longer titles and descriptions are bound to wrap once or — if you can stom
   ) }}
 
   {% filter markdown %}
-  
+
 
 Truncation provides an escape hatch, protecting against copy length that we can’t predict. Truncation divides opinion: some clients loathe truncation, while others release a `truncate` utility in a first component batch. Truncate a `card` _title_ or even _subtitle_ or _description_, and you risk damaging context and understanding. In composable components, defer to priorities: truncate a _description_ before _title_, or after three lines instead of two, amid an appearance that sufficiently flexes.
 
@@ -233,7 +233,7 @@ Truncation provides an escape hatch, protecting against copy length that we can�
   ) }}
 
   {% filter markdown %}
-  
+
 
 It’s not just copy wrapping, either. Consider rows of actions like a horizontal button and icon list that could collide when settings get narrow.
 
@@ -248,7 +248,7 @@ It’s not just copy wrapping, either. Consider rows of actions like a horizonta
   ) }}
 
   {% filter markdown %}
-  
+
 
 _Takeaway_: Copy length maximums and truncation appeal to our sense of control over flowed content. As components complexity grows, strengthen editorial opinion and code control on copy length, line measure, and impacts of fluid card width. If you offer utilities, do so as moderation not a crutch.
 
@@ -269,7 +269,7 @@ On the other hand, sometimes content is unavailable. Card content often reaches 
   ) }}
 
   {% filter markdown %}
-  
+
 
 The most opinionated of us say: Never! Want to use a `card`? Include required elements or don’t bother. Yet, that’s harsh. Often unrealistic. Elegant composable components should bend but not break as the content flows.
 
@@ -284,7 +284,7 @@ The most opinionated of us say: Never! Want to use a `card`? Include required el
   ) }}
 
   {% filter markdown %}
-  
+
 
 In the absence of copy, `card` composition relies upon solid stackable space, considerate of the many combinations you may or may not expect.
 
@@ -299,7 +299,7 @@ In the absence of copy, `card` composition relies upon solid stackable space, co
   ) }}
 
   {% filter markdown %}
-  
+
 
 In the absence of image, we’ve got options. You could attractively distinguish types via a flat color, a site’s overlaid identity mark, or even an icon/color combo for type (asset format? activity type? content channel?).
 
@@ -324,7 +324,7 @@ My experience suggests that components like `card` trigger incremental conversat
   ) }}
 
   {% filter markdown %}
-  
+
 
 _Takeaway_: A composed component sets a tone for the shape of many designs to come, both in a library and for those working projects. Such decisions bleed into the experience in unimaginable ways both dangerous and delightful.
 
@@ -345,9 +345,9 @@ A `card` evokes color relationships, beginning with contrast against the canvas 
   ) }}
 
   {% filter markdown %}
-  
 
-Richer visual environments solve for [foreground/background combos in light and dark settings](/articles/light-dark.html). [Discovery Education’s Comet](https://comet.discoveryeducation.com/components/cards.html) system offers many backgrounds, often displayed in concert in a single page. Therefore, the system offered light and dark cards across each by way of mixins and tokens. Such cards create another level of hierarchy: text on component background on canvas background.
+
+Richer visual environments solve for [foreground/background combos in light and dark settings](/articles/light-dark). [Discovery Education’s Comet](https://comet.discoveryeducation.com/components/cards.html) system offers many backgrounds, often displayed in concert in a single page. Therefore, the system offered light and dark cards across each by way of mixins and tokens. Such cards create another level of hierarchy: text on component background on canvas background.
 
 {% endfilter %}
 
@@ -360,7 +360,7 @@ Richer visual environments solve for [foreground/background combos in light and 
   ) }}
 
   {% filter markdown %}
-  
+
 
 _Takeaway_: Composability challenges your tolerance for visual complexity. Powerful, opinionated components tempt a system team to solve every combination in hopes of saving collaborator time. But complex, well modeled solutions invoke a higher cost of creation and maintenance. “Just enough” complexity is not always clear cut.
 
@@ -386,7 +386,7 @@ Separation, often via _margin_, also plays a role. A `card` layout can leverage 
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ## Composing Behavior
@@ -406,7 +406,7 @@ As an entryway, a `card`’s navigation is simplest when the entire `card` is cl
   ) }}
 
   {% filter markdown %}
-  
+
 
 On the other hand, a composed component like `card` can include many interactive zones—_title_, _image_, `button`, `icon`, `link`— that impact both markup, style, and behavior. Do your engineer a favor and discuss these during design iteration and handoff, before changing the implementation becomes painful.
 

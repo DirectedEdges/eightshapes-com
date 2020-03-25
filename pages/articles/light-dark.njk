@@ -3,9 +3,9 @@
 
 {% block main_article %}
   {% filter markdown %}
-  
 
-As described in [Color in Design Systems](/articles/color-in-design-systems.html), systems codify color decisions and palettes for brand identity, interactive affordances, neutrals, feedback, and theming. However, having a deep library of harmonious colors doesn’t mean that you’ve sufficiently modeled how to color each component on a white, various grays, or a near black canvas.
+
+As described in [Color in Design Systems](/articles/color-in-design-systems), systems codify color decisions and palettes for brand identity, interactive affordances, neutrals, feedback, and theming. However, having a deep library of harmonious colors doesn’t mean that you’ve sufficiently modeled how to color each component on a white, various grays, or a near black canvas.
 
 With systems, you can encode predictable **background** , **text** , **border** , interactive **state** , and **layered** color property combinations so that your components display well diverse background colors. This article tours lessons you can apply to prepare, codify, and implement accessible color choices across light and dark interface settings.
 
@@ -28,7 +28,7 @@ Before selecting new colors, inventory the neutrals you already use. Some librar
   ) }}
 
   {% filter markdown %}
-  
+
 
 Catalog the distinct HEX values, order them from light to dark, and prepare to prune to a reasonably-sized, non-duplicative, harmonious set.
 
@@ -49,7 +49,7 @@ Whether on a Sketch canvas or lengthy kitchen sink HTML page, stacked your libra
   ) }}
 
   {% filter markdown %}
-  
+
 
 With this setup, you can experiment with and demonstrate effectively designed components across backgrounds while describing the models.
 
@@ -74,7 +74,7 @@ How many different light & dark settings do you need? Most teams opt for a simpl
   ) }}
 
   {% filter markdown %}
-  
+
 
 Other teams endorse a wider range of neutral backgrounds. For example, a system may overlay light gray modules on a white canvas (or vice versa, or both). In a dark setting, there may be a “pure black” alternative for a video player and photo gallery distinct from the default charcoal dark background. Therefore, having a pair of colors for each of light and dark is helpful.
 
@@ -89,7 +89,7 @@ Other teams endorse a wider range of neutral backgrounds. For example, a system 
   ) }}
 
   {% filter markdown %}
-  
+
 
 A very sophisticated collection of layered backgrounds could start with white and near black and add successive layers of darkening light grays and lightening charcoals, respectively.
 
@@ -104,7 +104,7 @@ A very sophisticated collection of layered backgrounds could start with white an
   ) }}
 
   {% filter markdown %}
-  
+
 
 So much choice to optimize and maintain! I prefer things a bit simpler. That’s why at this point I’ll avoid solving for other thematic background colors (orange, blue, green and purple!) and photography, preferring to solve the core light & dark first.
 
@@ -139,7 +139,7 @@ With established types, choosing and applying text color per background becomes 
   ) }}
 
   {% filter markdown %}
-  
+
 
 One things for sure: finding link and error text color in dark settings that’s both accessible and harmonious is difficult. Efforts of my teams sometimes yields “use white” for those types on dark.
 
@@ -154,7 +154,7 @@ One things for sure: finding link and error text color in dark settings that’s
   ) }}
 
   {% filter markdown %}
-  
+
 
 _Takeaway_: Identify a simple classification of type color that includes _at least_ primary, secondary, interactive, and error text. More cautiously consider additional types such as tertiary and distinct icon fill colors.
 
@@ -175,7 +175,7 @@ Input controls — `textbox`, `textarea`, `radio-button` — require str
   ) }}
 
   {% filter markdown %}
-  
+
 
 _Takeaway_: Consider the borders and focused states of UI controls, and see if a moderate neutral and identical halo is usable across all settings.
 
@@ -196,7 +196,7 @@ Designers can scaffold a UI using thin rules — or _hairlines_ — to d
   ) }}
 
   {% filter markdown %}
-  
+
 
 Adjusting hairlines — even light and heavy variants — can benefit from a similar structure of simple property definitions across backgrounds.
 
@@ -217,7 +217,7 @@ Don’t forget interactive states like the `hover`, `active`, and `selected` sta
   ) }}
 
   {% filter markdown %}
-  
+
 
 As with color in general, states are a place where functional transformations (think: `darken(5%)`) or adjusted opacity (think: `background-color: rgba(x,x,x,80%)`) can work well. Other teams handpick even these colors, optimizing appearances per background.
 
@@ -240,7 +240,7 @@ Things get more interesting when a component block — like a _card_ —�
   ) }}
 
   {% filter markdown %}
-  
+
 
 I’ve never seen such combinatorial madness woven into a system via variables or functions. Nevertheless, some explorations and a few Do’s and Don’ts in documentation can help and suggest when a bit more ornamentation — like a `box-shadow` – can help when contrast is a bit too subtle.
 
@@ -265,7 +265,7 @@ As you select color combinations, keep an eye on accessibility. You’ll tune th
   ) }}
 
   {% filter markdown %}
-  
+
 
 The tool visualizes each combination in a grid, enabling us to experiment with, discard, adjust, and converge on the right neutrals. We’ll also screenshot and paste the grid into a Slack convo, or copy and embed the HTML/CSS for it into web-based doc to educate collaborators.
 
@@ -288,7 +288,7 @@ To optimize a color system, expect change. Some teams can’t avoid revisiting t
   ) }}
 
   {% filter markdown %}
-  
+
 
 Other times, you need add just one more neutral or to replace a moderate choice to pass a barely failing accessibility test.
 
@@ -303,7 +303,7 @@ Other times, you need add just one more neutral or to replace a moderate choice 
   ) }}
 
   {% filter markdown %}
-  
+
 
 _Takeaway_: Add, adjust, and deprecate neutrals to ensure just enough options fulfill your pursuit of reversible color system.
 
@@ -311,7 +311,7 @@ _Takeaway_: Add, adjust, and deprecate neutrals to ensure just enough options fu
 
 ### Tokenize Choices
 
-With all that structure, tooling should ease implementation. [Design tokens](/articles/tokens-in-design-systems.html) are a great way to catalog decisions and establish hooks for others — designers and developers alike — to align to.
+With all that structure, tooling should ease implementation. [Design tokens](/articles/tokens-in-design-systems) are a great way to catalog decisions and establish hooks for others — designers and developers alike — to align to.
 
 _Takeaway_: Create a taxonomy of tokenized variables used by system adopters and your library’s components. The more predictably your model is catalogued, the easier it is to apply, maintain, and endure.
 

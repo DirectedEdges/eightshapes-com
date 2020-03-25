@@ -15,7 +15,7 @@
         {% if post_object.category === category %}
         <li class="escom-section-contents__item">
             <h5 class="escom-section-contents__item-title">
-                <a  class="escom-section-contents__item-title-link" href="/articles/{{ post_object.id }}.html">
+                <a  class="escom-section-contents__item-title-link" href="/articles/{{ post_object.id }}">
                     {{ post_object.title_abbreviation }}
                 </a>
             </h5>
@@ -57,10 +57,10 @@
     {% endcall %}
 
     {{ escom.cta(
-        heading="Need help with your system?", 
-        deck="EightShapes can energize your efforts to coach, workshop, assess or partner with you to design, code, document and manage a system.", 
+        heading="Need help with your system?",
+        deck="EightShapes can energize your efforts to coach, workshop, assess or partner with you to design, code, document and manage a system.",
         button_text="Learn More",
-        button_href="/design-systems.html",
+        button_href="/design-systems",
         class="escom-cta--components-publication"
     ) }}
 

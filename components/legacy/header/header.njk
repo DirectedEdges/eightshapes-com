@@ -31,7 +31,7 @@
 
 {% macro header_workshop(args) %}
   {% if args.back_href == undefined %}
-    {% set args = args|updateobj('back_href', '/design-systems.html') %}
+    {% set args = args|updateobj('back_href', '/design-systems') %}
   {% endif %}
   {% if args.section == undefined %}
     {% set args = args|updateobj('section', 'Design Systems') %}

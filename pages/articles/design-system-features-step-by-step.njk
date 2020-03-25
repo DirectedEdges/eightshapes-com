@@ -20,7 +20,7 @@ On the other hand, a defined workflow helps a team mutually understand the scope
   ) }}
 
   {% filter markdown %}
-  
+
 
 My system teams make most features — visual style, UI components, documentation tooling, UX patterns, and more — by following simple, identified steps of **discover** , **design** , **build** , **documentation** , and **publish**. I can’t imagine building a design system without it.
 
@@ -32,7 +32,7 @@ Discovery clarifies the potential and the relevance of a new feature and decides
 
 _Assigned To_: Anyone on the team, although usually a designer, front-end developer or product manager.
 
-_Activities_: Triaging requests, interviews, products and system analysis, discussions with influential partners in the community, and even formal proposal processes like a [contributor’s Request for Comment](/articles/contributions-to-design-systems.html).
+_Activities_: Triaging requests, interviews, products and system analysis, discussions with influential partners in the community, and even formal proposal processes like a [contributor’s Request for Comment](/articles/contributions-to-design-systems).
 
 _Definition of Done_:
 
@@ -65,14 +65,14 @@ Build results in the codification of HTML, CSS, JavaScript, and other code.
 
 _Assigned To_: Usually a front-end developer, although at times a designer.
 
-_Activities_: Front end development and [testing, often in the context of a “kitchen sink” pages](/articles/component-qa-in-design-systems.html) (not documentation site pages) that demonstrates the range of the feature’s capabilities isolated from other system concerns.
+_Activities_: Front end development and [testing, often in the context of a “kitchen sink” pages](/articles/component-qa-in-design-systems) (not documentation site pages) that demonstrates the range of the feature’s capabilities isolated from other system concerns.
 
 _Tools_: Code and assets, git to manage within prescribed branches, and pull requests to comment and task corrections.
 
 _Definition of Done_: To merge the feature into a release…
 
 - As the assigned system designer, I’ve reviewed the build’s quality and confirmed it properly implemented scoped features.
-- As a peer system engineer (or QA specialist), I’ve reviewed that the build functions properly, meets all [quality criteria](/articles/component-qa-in-design-systems.html) (accessibility, browser support, etc), and adheres to system’s code styles and conventions.
+- As a peer system engineer (or QA specialist), I’ve reviewed that the build functions properly, meets all [quality criteria](/articles/component-qa-in-design-systems) (accessibility, browser support, etc), and adheres to system’s code styles and conventions.
 
 * * *
 
@@ -101,7 +101,7 @@ _Tools_: **Author in Google Docs, NOT Pull Requests!** This collaboration includ
   ) }}
 
   {% filter markdown %}
-  
+
 
 Google Docs is made for collaborative authoring in which you can comment on any word or image as well as suggest and manage changes inline.
 
@@ -118,7 +118,7 @@ Once documentation is complete, it must be migrated to the publishing platform f
 
 _Assigned To_: Front-end developer or designer capable of working in code.
 
-_Tools:_ Most system teams I’ve come across use some form of HTML templating (ours: [Nunjucks](https://mozilla.github.io/nunjucks/templating.html) weaving [Markdown](https://daringfireball.net/projects/markdown/syntax) and homegrown [Documentation Components](/articles/design-system-doc-components.html) together), while others hand-code HTML page-by-page (Ack!) or have a more formal CMS (Wordpress or Drupal, anyone?).
+_Tools:_ Most system teams I’ve come across use some form of HTML templating (ours: [Nunjucks](https://mozilla.github.io/nunjucks/templating.html) weaving [Markdown](https://daringfireball.net/projects/markdown/syntax) and homegrown [Documentation Components](/articles/design-system-doc-components) together), while others hand-code HTML page-by-page (Ack!) or have a more formal CMS (Wordpress or Drupal, anyone?).
 
 _Activities_:
 
@@ -151,7 +151,7 @@ While the workflow suggests a strict sequence, that doesn’t necessarily imply 
   ) }}
 
   {% filter markdown %}
-  
+
 
 For example, as design solidifies, we’ll start our Google Doc to itemize requirements and collaborate on naming and also start to build prototype HTML and CSS to validate the design. Later on, we’ll review of draft of fully coded designs and shortly thereafter close the design step as a result.
 
@@ -176,7 +176,7 @@ Discovery is unnecessary for many features of any self-respecting design system 
   ) }}
 
   {% filter markdown %}
-  
+
 
 However, many other tasks use a subset of the workflow to make things. A helpful Getting Started page or description of a Contribution process requires only documentation and thus omits Design and Build:
 
@@ -191,7 +191,7 @@ However, many other tasks use a subset of the workflow to make things. A helpful
   ) }}
 
   {% filter markdown %}
-  
+
 
 Similarly, UX patterns don’t result in reusable code, but can require discovery to assess cross-product relevance and needs and iterate through design ideas before being formally documented and published on a system site.
 
@@ -206,7 +206,7 @@ Similarly, UX patterns don’t result in reusable code, but can require discover
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ## For Trivial Tasks, Combine Steps
@@ -224,7 +224,7 @@ Our team will also classify Sketch symbol library development as a Design task t
   ) }}
 
   {% filter markdown %}
-  
+
 
 In another case where a feature — like a disabled state — is documented sufficiently by a coded example and requires no further elaboration, we’ll skip the Doc step and combine Build / Publish step.
 
@@ -239,7 +239,7 @@ In another case where a feature — like a disabled state — is documen
   ) }}
 
   {% filter markdown %}
-  
+
 
 In any case where steps are combined into a single task, the completion criteria for all steps still apply to the task.
 
@@ -262,7 +262,7 @@ As I’ve instituted this workflow across many teams over the past few years, ou
   ) }}
 
   {% filter markdown %}
-  
+
 
 We’ll use the ticket’s title to reflect a feature’s name and workflow step, and leave the acceptance criteria and deeper descriptions to the details.
 
@@ -283,7 +283,7 @@ Using a well-modeled workflow, the system team can report on progress across fea
   ) }}
 
   {% filter markdown %}
-  
+
 
 At the beginning of every sprint leading up to a first release, I’ll include this table of visual style and UI component features progressing across steps. This gives stakeholders a sense of progress, both item-by-item as well as for the overall release scope.
 

@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700&display=swap" rel="stylesheet">
   <!-— facebook open graph tags -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.eightshapes.com/articles/{{ post.id }}.html" />
+  <meta property="og:url" content="https://www.eightshapes.com/articles/{{ post.id }}" />
   <meta property="og:title" content="{{ title }}" />
   <meta property="og:description" content="{{ deck }}" />
   {% if masthead %}
@@ -28,7 +28,7 @@
   {% if masthead %}
   <meta name="twitter:image" content="https://eightshapes.com//images/articles/{{ title_image_path }}/masthead.png" />
   {% endif %}
-  <meta name="twitter:url" value="https://www.eightshapes.com/articles/{{ post.id }}.html" />
+  <meta name="twitter:url" value="https://www.eightshapes.com/articles/{{ post.id }}" />
 
   <!-- No Shadow DOM, so link directly to styles -->
   <link rel="stylesheet" href="/styles/dependencies/esds-code-snippet.css"/>
@@ -100,7 +100,7 @@
         heading="Need help with your system?",
         deck="EightShapes can energize your efforts to coach, workshop, assess or partner with you to design, code, document and manage a system.",
         button_text="Learn More",
-        button_href="/design-systems.html",
+        button_href="/design-systems",
         class="escom-cta--components-publication escom-page-type--marketing"
     ) }}
 

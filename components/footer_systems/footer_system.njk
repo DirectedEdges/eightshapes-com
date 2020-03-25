@@ -7,7 +7,7 @@
 <ul class="escom-footer-systems__list">
     {% for post_id, post_object in posts %}
         {% if post_object.category === category_id %}
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/{{ post_object.id }}.html">{{ post_object.title_abbreviation }}</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/{{ post_object.id }}">{{ post_object.title_abbreviation }}</a></li>
         {% endif %}
     {% endfor %}
 </ul>

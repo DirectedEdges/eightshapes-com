@@ -3,8 +3,8 @@
 
   {% block main_article %}
     {% filter markdown %}
-_#2 of 6 of the series Documenting Components:_  
-[Overview](/articles/documenting-components.html) | **Intros** | [Examples](/articles/component-examples.html) | [Design](/articles/component-design-guidelines.html) | Code | Authoring
+_#2 of 6 of the series Documenting Components:_
+[Overview](/articles/documenting-components) | **Intros** | [Examples](/articles/component-examples) | [Design](/articles/component-design-guidelines) | Code | Authoring
 
 * * *
 
@@ -25,7 +25,7 @@ A component’s name (_Buttons_) appears as the page’s title, a label in site�
   ) }}
 
   {% filter markdown %}
-  
+
 
 _Drawer_ or _Accordion_ or _Collapsible_ is hard. Even harder? _Grid_ or _Layout_ or _Layout Grid_ or _Rows_ & _Columns_ or _Box_ or _Proportional Grid_ or whatever you call invisible scaffolding visually ordering a page. Even _Card_ isn’t universally defined: is it a generic container or the defined composite of all it contains? Making a library forces the choice.
 
@@ -40,7 +40,7 @@ _Drawer_ or _Accordion_ or _Collapsible_ is hard. Even harder? _Grid_ or _Layout
   ) }}
 
   {% filter markdown %}
-  
+
 
 For most doc sites, navigation relies on label alone. With a little effort, nav could be enhanced with a _thumbnail_, maybe only via a _tooltip_ on hover. That same snapshot—or fully rendered components—could also be arranged in a gallery introducing the Components section. We can do more.
 
@@ -55,7 +55,7 @@ For most doc sites, navigation relies on label alone. With a little effort, nav 
   ) }}
 
   {% filter markdown %}
-  
+
 
 If demystifying synonyms is your game, sprinkle in a little “also known as” subtlety to sensitize rather than confuse.
 
@@ -70,7 +70,7 @@ If demystifying synonyms is your game, sprinkle in a little “also known as” 
   ) }}
 
   {% filter markdown %}
-  
+
 
 _Takeaway_: A optimally clear title can be a challenge, so sweat the decision only just enough. Always pair it with a sensitizing example, and sprinkle hints elsewhere in the UI.
 
@@ -91,7 +91,7 @@ Names in code uniformly refer to a singular instance (`-button`, `-input`, `-car
   ) }}
 
   {% filter markdown %}
-  
+
 
 However, the singular form is common for components used once on a page. _Global Navigation_, _Footer_, and _Grid_ are thought to frame the page (although _Grids_ do repeat within a page). Similarly, a _Masthead_, _Hero_, or _Billboard_ can set the page’s tone, but aren’t repeated further down. When we verbalize these, the singular form sounds more natural.
 
@@ -111,7 +111,7 @@ The description can be short:
 
 - Buttons can be used to show the user’s choice of options for actions and assign these to a clear hierarchy. (<a href="http://www.audi.com/ci/en/guides/user-interface/components/buttons.html" rel="nofollow noopener" target="_blank">Audi</a>)
 - Grid systems are used for creating page layouts through a series of rows and columns that house your content. (<a href="http://carbondesignsystem.com/style/grid/design" rel="nofollow noopener" target="_blank">IBM Carbon</a>)
-  
+
 
 Each elaborates with details that sensitize: a _Button_’s action and hierarchy, a _Grid_’s rows, columns, and purpose to create page layout.
 
@@ -145,7 +145,7 @@ How long’s too long? I encourage teammates to embrace “Tweet length” (and 
   ) }}
 
   {% filter markdown %}
-  
+
 
 When writing an introduction, capture the essence, not the whole story. That means clarifying component structure and purpose instead of implementation details. For a _Grid_, “rows and columns” for “responsive layout” are favored over “12 columns” or “breakpoints at 768 and 1024.” For _Buttons_, keep it very short. Like 10 words or less short! Everyone knows what a button is.
 
@@ -161,21 +161,21 @@ For **Buttons** :
 - Buttons make common actions immediately visible and easy to perform with one click or tap. They can be used for any type of action, including navigation.(<a href="https://polaris.shopify.com/components/actions/button#navigation" rel="nofollow noopener" target="_blank">Shopify</a>)
 - Buttons are used for actions, like in forms, while textual hyperlinks are used for destinations, or moving from one page to another. (<a href="https://github.com/primer/primer/tree/master/modules/primer-buttons" rel="nofollow noopener" target="_blank">Github Primer</a>) %}
 - Buttons are used to invoke an event. (<a href="http://Buttons%20are%20used%20to%20invoke%20an%20event" rel="nofollow noopener" target="_blank">Salesforce Lightning</a>)
-  
+
 
 For **Cards** :
 
 - Provide entry into detailed content via an image, text, and related information. (<a href="https://comet.discoveryeducation.com/components/cards.html" rel="nofollow noopener" target="_blank">Discovery Comet</a>)
 - A card is a sheet of material that serves as an entry point to more detailed information. (<a href="https://material-ui-next.com/demos/cards/" rel="nofollow noopener" target="_blank">Material UI</a>)
 - Cards contain elements and functions on a single topic and can be used as teasers for further content. (<a href="http://www.audi.com/ci/en/guides/user-interface/components/card.html" rel="nofollow noopener" target="_blank">Audi</a>)
-  
+
 
 For **(Layout) Grids**:
 
 - This 12-column, responsive grid provides structure for website content. (<a href="https://designsystem.digital.gov/components/grids/" rel="nofollow noopener" target="_blank">USDS</a>)
 - The grid provides the foundation for harmoniously positioning elements, while maintaining a consistent and coherent look to the screen. (<a href="https://atlassian.design/guidelines/product/foundations/grid" rel="nofollow noopener" target="_blank">Atlassian</a>)
 - Box component provides an easy way to apply standardized size &amp; space to your layout. (<a href="http://mineral-ui.com/components/box/" rel="nofollow noopener" target="_blank">Mineral</a>)
-  
+
 * * *
 
 ## A Too-Detailed Introduction? “Get to the Goods!”
@@ -195,7 +195,7 @@ Component recognition relies as much or more on what a reader sees (the picture)
   ) }}
 
   {% filter markdown %}
-  
+
 
 In a introduction, avoid deep context setting and lengthy overviews. Save the feature details and expansive design and code guidelines for the examples.
 
@@ -205,7 +205,7 @@ _Takeaway_: Spare the gory details; instead, get to examples adopters can immedi
 
 Component introductions must be powerful yet short. The objective is to tantalize enough to ensure the reader is in the right place. As a result, minimize the distance from component title to a first glimpse of the “goods” that follow. Get to the examples you can to use.
 
-[**#1. Overview**](/articles/documenting-components.html) ← Previous | Next → [**#3. Examples**](/articles/component-examples.html)
+[**#1. Overview**](/articles/documenting-components) ← Previous | Next → [**#3. Examples**](/articles/component-examples)
 
 
 

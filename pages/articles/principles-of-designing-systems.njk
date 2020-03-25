@@ -11,7 +11,7 @@ So, why write on design system principles? Because I find myself repeating a few
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Design system principle #1: Systems solve the easy problems so Products can solve hard problems more easily.</p>&mdash; Nathan Curtis (@nathanacurtis) <a href="https://twitter.com/nathanacurtis/status/844908081935007744?ref_src=twsrc%5Etfw">March 23, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Buttons are the most atomic interactive component used _everywhere_ by _everyone_. [Buttons are complex](/articles/buttons-in-design-systems.html), with all their properties, states, types, variations, and complexities. The days of each and every team making their own buttons must come to an end. Just ask [Etsy](https://medium.com/etsy-design/designed-for-growth-cdc2a01a8a8a#.2vvndtaoz), or execs after I’ve depicted the six-figure button cost across their 10+ product portfolio.
+Buttons are the most atomic interactive component used _everywhere_ by _everyone_. [Buttons are complex](/articles/buttons-in-design-systems), with all their properties, states, types, variations, and complexities. The days of each and every team making their own buttons must come to an end. Just ask [Etsy](https://medium.com/etsy-design/designed-for-growth-cdc2a01a8a8a#.2vvndtaoz), or execs after I’ve depicted the six-figure button cost across their 10+ product portfolio.
 
 Thus, it makes sense to build buttons once, _really well_, to shave costs from every team. However, that doesn’t mean that systems teams suddenly own the design and build of the complete customer journey from start to finish. So start small, and build from there.
 
@@ -19,7 +19,7 @@ Thus, it makes sense to build buttons once, _really well_, to shave costs from e
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Design system principle #2: Include what’s shared, omit what’s not.</p>&mdash; Nathan Curtis (@nathanacurtis) <a href="https://twitter.com/nathanacurtis/status/844908229213728773?ref_src=twsrc%5Etfw">March 23, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-When collaborating with a community of designers and developers, I’ll hear “I’ve made something that’d be great for the system!”  
+When collaborating with a community of designers and developers, I’ll hear “I’ve made something that’d be great for the system!”
 
 A cursory demo reveals a carefully crafted solution, perfectly imbued with the system’s style, behavior, and voice. Certain carousels, date pickers, and dashboards modules come to mind. My reaction: “What a great solution! What other products need this?” Response: 🤔.
 
@@ -48,7 +48,7 @@ The arc of practicing design and development favors those that can collaborate, 
 ) }}
 
 {% filter markdown %}
- 
+
 Building a community is a critical component of practicing design systems. When the “Big G” (governance) comes up in early strategic discussions, I try to redirect the conversation. How’s your culture of cross-product critique, whether in design or engineering? Are design system offerings considered features by product managers? Have you established segment guides to curate and monitor topics like accessibility, motion, iconography, or UX patterns? While sometimes governance is necessary, I start with the carrot before donning the stick, knowing community building is a big, effortful track of work.
 
 * * *
@@ -65,7 +65,7 @@ He took the feedback to heart and returned with a solution that kept the simple 
 
 It’s really tempting to follow the path of least resistance: a documentation template as a big, empty Word/Google document. Just start typing stuff you want people to know. Yet, there’s no bigger buzzkill to an onboarding designer than to be told “Go read this tome called our design standards.”
 
-That why we start each component documentation page with rendered variations and copiable code, possibly introduced via [component explorers](https://blog.hichroma.com/the-crucial-tool-for-modern-frontend-engineers-fb849b06187a#.mn1np7yzw) demonstrations. That’s also why we write guidelines in the imperative (shortening sentences) and replace important ones with effective [do & don’t contrasts](/articles/design-system-doc-components.html). What’s better: a hefty table of hex code color values or clickable tints stack as a visualization that when clicked copy a hex code or variable value to your clipboard?
+That why we start each component documentation page with rendered variations and copiable code, possibly introduced via [component explorers](https://blog.hichroma.com/the-crucial-tool-for-modern-frontend-engineers-fb849b06187a#.mn1np7yzw) demonstrations. That’s also why we write guidelines in the imperative (shortening sentences) and replace important ones with effective [do & don’t contrasts](/articles/design-system-doc-components). What’s better: a hefty table of hex code color values or clickable tints stack as a visualization that when clicked copy a hex code or variable value to your clipboard?
 
 Take a look at your documentation, and ask yourself: how can I visualize these ideas better? Even more, how can I make these ideas into a tool?
 
@@ -82,7 +82,7 @@ I’m pretty adamant that despite how much we build – and how much fun we have
   ) }}
 
   {% filter markdown %}
-  
+
 
 Therefore, the first step of any system-product relationship is the dependency, these days first in the form of an NPM dependency in the product’s `package.json` file. From there, brief planning yields a map for integration: migrate to tokenized variables if needed, and then layer in HTML, CSS, or whatever way the system manifests. Those dependencies help form system success criteria that can be measured, monitored, and reported.
 
@@ -90,7 +90,7 @@ Therefore, the first step of any system-product relationship is the dependency, 
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Design system principle #8: Favor quality over quantity.</p>&mdash; Nathan Curtis (@nathanacurtis) <a href="https://twitter.com/nathanacurtis/status/844909151327322114?ref_src=twsrc%5Etfw">March 23, 2017</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Very early in a formative system period, two things happen: we make a [list of parts – mostly visual style and components – we want to make](/articles/picking-parts-products-people.html), and we identify the [minimum quality each must achieve](/articles/component-qa-in-design-systems.html). These concern create a familiar tension when discerning how far we’ll get, how fast.
+Very early in a formative system period, two things happen: we make a [list of parts – mostly visual style and components – we want to make](/articles/picking-parts-products-people), and we identify the [minimum quality each must achieve](/articles/component-qa-in-design-systems). These concern create a familiar tension when discerning how far we’ll get, how fast.
 
 However, a system’s quality must always meet or exceed the quality threshold held by a product team, lest the product not trust or respect it enough to adopt it. Therefore, be deliberate and trust your process to achieve a high level of quality, even if stakeholders (including me, sometimes!) want so much so much sooner.
 

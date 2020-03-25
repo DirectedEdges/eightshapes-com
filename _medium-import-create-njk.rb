@@ -78,7 +78,7 @@ def create_njk_from_medium(medium_url)
           masthead = true
           puts "Downloading Masthead image: #{img.attr('src')}"
           File.open("#{article_image_directory}/Masthead.png", 'wb') do |fo|
-            fo.write open(img.attr('src')).read 
+            fo.write open(img.attr('src')).read
           end
 
           # Remove the featured image figure from the article content
@@ -89,7 +89,7 @@ def create_njk_from_medium(medium_url)
           # Not the featured image
           puts "Downloading Article image: #{img.attr('src')}"
           File.open("#{article_image_directory}/#{numbered_image_index}.png", 'wb') do |fo|
-            fo.write open(img.attr('src')).read 
+            fo.write open(img.attr('src')).read
           end
 
           caption = ""
@@ -132,7 +132,7 @@ def create_njk_from_medium(medium_url)
             masthead = true
             puts "Downloading Masthead image: #{match[0]}"
             File.open("#{article_image_directory}/Masthead.png", 'wb') do |fo|
-              fo.write open(match[0]).read 
+              fo.write open(match[0]).read
             end
         end
       end
@@ -187,7 +187,7 @@ def create_njk_from_medium(medium_url)
       new_link_url = link_url.gsub(/https:\/\/medium.com\/eightshapes-llc\//, '')
       last_hypen_index = new_link_url.rindex(/-/)
       new_link_url.slice!(last_hypen_index, new_link_url.length)
-      l['href'] = "/articles/#{new_link_url}.html"
+      l['href'] = "/articles/#{new_link_url}"
     end
   end
 
@@ -240,7 +240,7 @@ def create_njk_from_medium(medium_url)
 
 
   # File.open('pie.png', 'wb') do |fo|
-  #   fo.write open("http://chart.googleapis.com/chart?#{failures_url}").read 
+  #   fo.write open("http://chart.googleapis.com/chart?#{failures_url}").read
   # end
 
   puts "COMPLETE"

@@ -25,7 +25,7 @@
   <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700&display=swap" rel="stylesheet">
   <!-— facebook open graph tags -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.eightshapes.com/articles/visual-breaking-change-in-design-systems.html" />
+  <meta property="og:url" content="https://www.eightshapes.com/articles/visual-breaking-change-in-design-systems" />
   <meta property="og:title" content="Visual Breaking Change in Design Systems" />
   <meta property="og:description" content="We Respect Code APIs. But What About Color, Type and Space?" />
   
@@ -40,7 +40,7 @@
   
   <meta name="twitter:image" content="https://eightshapes.com//images/articles/visual-breaking-change-in-design-systems/masthead.png" />
   
-  <meta name="twitter:url" value="https://www.eightshapes.com/articles/visual-breaking-change-in-design-systems.html" />
+  <meta name="twitter:url" value="https://www.eightshapes.com/articles/visual-breaking-change-in-design-systems" />
 
   <!-- No Shadow DOM, so link directly to styles -->
   <link rel="stylesheet" href="/styles/dependencies/esds-code-snippet.css"/>
@@ -102,7 +102,7 @@
                 </div>
                 <div class="escom-article__author-text">
                     <p class="escom-article__author">
-                        <a href="/nathan-curtis.html">Nathan Curtis</a>
+                        <a href="/nathan-curtis">Nathan Curtis</a>
                     </p>
                     <p class="escom-article__author-role">
                         Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist &amp; runner. Father &amp; husband. VT &amp; @uchicago grad.
@@ -259,7 +259,7 @@
 &lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Prior to &lt;code&gt;1.0.0&lt;/code&gt;, work diligently to to experiment, refine, and finalize type styles suitable to customer’s variety. Once &lt;code&gt;1.0.0&lt;/code&gt; passes, sustain a stable base and consider change cautiously. Consider reserving dangerous shifts for the next major release. Until then, incrementally add contained features, such as a Long Form Text component for styling &lt;em&gt;just&lt;/em&gt; article copy.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;breaking-space-and-size&quot;&gt;Breaking Space and Size&lt;/h2&gt;
-&lt;p&gt;At least you can see color and typography. &lt;a href=&quot;/articles/space-in-design-systems.html&quot;&gt;Space&lt;/a&gt; and size? Those are harder to define as concretely reusable, let alone monitor for breaking change.&lt;/p&gt;
+&lt;p&gt;At least you can see color and typography. &lt;a href=&quot;/articles/space-in-design-systems&quot;&gt;Space&lt;/a&gt; and size? Those are harder to define as concretely reusable, let alone monitor for breaking change.&lt;/p&gt;
 &lt;p&gt;In HTML, when you change a component’s box model properties — &lt;code&gt;padding&lt;/code&gt;, &lt;code&gt;margin&lt;/code&gt;, &lt;code&gt;width&lt;/code&gt;, &lt;code&gt;height&lt;/code&gt;, &lt;code&gt;display&lt;/code&gt;, &lt;code&gt;box-sizing&lt;/code&gt;, &lt;code&gt;position&lt;/code&gt;, &lt;code&gt;left&lt;/code&gt;, &lt;code&gt;right&lt;/code&gt;, &lt;code&gt;top&lt;/code&gt;, &lt;code&gt;bottom&lt;/code&gt; — you risk impacting layout composition that arranges that component with other page elements.&lt;/p&gt;
 &lt;h3 id=&quot;example-1-removing-vertical-spacing&quot;&gt;Example 1: Removing Vertical Spacing&lt;/h3&gt;
 &lt;p&gt;Your system team decides to remove vertical spacing applied form controls in the form of &lt;code&gt;margin-bottom&lt;/code&gt;. This impacts &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;label&amp;gt;&lt;/code&gt;, microcopy and other elements.&lt;/p&gt;
@@ -299,7 +299,7 @@
 &lt;p&gt;Some spatial change doesn’t impact adjacent elements or page composition. For example, tightening or expanding the inset &lt;code&gt;padding&lt;/code&gt; or stacked &lt;code&gt;margin&lt;/code&gt; between items in a Menu would not be a breaking change because these adjustments are contained within a block that&amp;#39;s completely specified by the system, includes no other customizable elements, and is layered in a manner that doesn’t otherwise impact page layout when opened and closed.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;what-else-can-break-visual-style&quot;&gt;What Else Can Break Visual Style?&lt;/h2&gt;
-&lt;p&gt;In general, changes in visual style could be specified as changes to a bevy of CSS properties, the range of which is exemplified by &lt;a href=&quot;/articles/tokens-in-design-systems.html&quot;&gt;design token&lt;/a&gt; collections in &lt;a href=&quot;https://www.lightningdesignsystem.com/design-tokens/&quot;&gt;Salesforce Lightning&lt;/a&gt;, &lt;a href=&quot;https://designsystem.morningstar.com/visual-language/constants.html&quot;&gt;Morningstar&lt;/a&gt;, &lt;a href=&quot;https://github.com/rei/rei-cedar-tokens/tree/master/tokens/foundations&quot;&gt;REI&lt;/a&gt;, and &lt;a href=&quot;https://github.com/opentable/design-tokens#otkit&quot;&gt;Open Table&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In general, changes in visual style could be specified as changes to a bevy of CSS properties, the range of which is exemplified by &lt;a href=&quot;/articles/tokens-in-design-systems&quot;&gt;design token&lt;/a&gt; collections in &lt;a href=&quot;https://www.lightningdesignsystem.com/design-tokens/&quot;&gt;Salesforce Lightning&lt;/a&gt;, &lt;a href=&quot;https://designsystem.morningstar.com/visual-language/constants.html&quot;&gt;Morningstar&lt;/a&gt;, &lt;a href=&quot;https://github.com/rei/rei-cedar-tokens/tree/master/tokens/foundations&quot;&gt;REI&lt;/a&gt;, and &lt;a href=&quot;https://github.com/opentable/design-tokens#otkit&quot;&gt;Open Table&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;What other properties could you monitor beyond those of color, typography, space, and size described above? &lt;code&gt;z-index&lt;/code&gt; applied across components like Popovers, Dialogs, Modals, and Tooltips is central to composition in the third, layered dimension of a layout. &lt;code&gt;opacity&lt;/code&gt; applied widely to semi-transparent layers (such as under a Modal) also seem a strong candidate. Even subtle changes like a &lt;code&gt;border-bottom&lt;/code&gt; have an impact.&lt;/p&gt;
 
 
@@ -315,7 +315,8 @@
 
 
   &lt;ul&gt;
-&lt;li&gt;Your system makes the &lt;code&gt;border-bottom&lt;/code&gt; of a vertical list&amp;#39;s last item transparent. An adopter had positioned that list snugly above another block, relying on the line to create contrast. After the system change, the block&amp;#39;s header blends with the label of the list&amp;#39;s last item in a manner not obvious to distinguish.&lt;br&gt;If so, &lt;em&gt;your system broke their product&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Your system makes the &lt;code&gt;border-bottom&lt;/code&gt; of a vertical list&amp;#39;s last item transparent. An adopter had positioned that list snugly above another block, relying on the line to create contrast. After the system change, the block&amp;#39;s header blends with the label of the list&amp;#39;s last item in a manner not obvious to distinguish.
+If so, &lt;em&gt;your system broke their product&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;But what of adjusting &lt;code&gt;box-shadow&lt;/code&gt;? Or fine tuning &lt;code&gt;border-radius&lt;/code&gt;? Cue designer ambivalence. It&amp;#39;d be hard to convince that those adjustments would break an adopter&amp;#39;s experience.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Review the vast collection of possible CSS properties and discuss the consequences of candidate properties with your team. A working session will fruitfully reveal the group’s tolerance for protecting adopters and drive towards documenting how far you’ll go.&lt;/p&gt;
@@ -339,7 +340,7 @@
   &lt;p&gt;In our work on the &lt;a href=&quot;https://designsystem.morningstar.com/about/versioning.html&quot;&gt;Morningstar Design System&lt;/a&gt;, we’ve documented what changes are considered major, minor, and patch. Our team asserts opinions confidently in critique discussions, comments on pull requests, and in our discussions with adopting and upgrading teams.&lt;/p&gt;
 &lt;p&gt;Our field will adapt to versioning as it deeply engrains in our practice. We’ll do what we can to communicate well with and protect our adopters.&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;#3.&lt;/strong&gt; &lt;a href=&quot;/articles/versioning-design-systems.html&quot;&gt;&lt;strong&gt;Versioning&lt;/strong&gt;&lt;/a&gt; ← Previous | Next → &lt;strong&gt;#5.&lt;/strong&gt; &lt;a href=&quot;/articles/dealing-with-dependencies-inside-design-systems.html&quot;&gt;&lt;strong&gt;Dependencies&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;#3.&lt;/strong&gt; &lt;a href=&quot;/articles/versioning-design-systems&quot;&gt;&lt;strong&gt;Versioning&lt;/strong&gt;&lt;/a&gt; ← Previous | Next → &lt;strong&gt;#5.&lt;/strong&gt; &lt;a href=&quot;/articles/dealing-with-dependencies-inside-design-systems&quot;&gt;&lt;strong&gt;Dependencies&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
 
 
 
@@ -362,35 +363,35 @@
 <ul class="escom-footer-systems__list">
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/color-in-design-systems.html">Color</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/color-in-design-systems">Color</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/typography-in-design-systems.html">Typography</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/typography-in-design-systems">Typography</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/space-in-design-systems.html">Space</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/space-in-design-systems">Space</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/size-in-design-systems.html">Size</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/size-in-design-systems">Size</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/light-dark.html">Light &amp; Dark Modes</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/light-dark">Light &amp; Dark Modes</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/tokens-in-design-systems.html">Tokens</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/tokens-in-design-systems">Tokens</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/reference-designs-for-systems.html">Reference Designs</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/reference-designs-for-systems">Reference Designs</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/cropping-away-negative-impacts-of-line-height.html">Cropping Line Height</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/cropping-away-negative-impacts-of-line-height">Cropping Line Height</a></li>
         
     
         
@@ -539,31 +540,31 @@
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/documenting-components.html">Overview</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/documenting-components">Overview</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/documenting-component-introductions.html">Introductions</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/documenting-component-introductions">Introductions</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/component-examples.html">Examples</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/component-examples">Examples</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/component-design-guidelines.html">Design Guidelines</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/component-design-guidelines">Design Guidelines</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/myths-of-documenting-components.html">Myths</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/myths-of-documenting-components">Myths</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/authoring-component-documentation.html">Authoring</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/authoring-component-documentation">Authoring</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/design-system-doc-components.html">Doc Components</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/design-system-doc-components">Doc Components</a></li>
         
     
         
@@ -664,39 +665,39 @@
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/buttons-in-design-systems.html">Buttons</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/buttons-in-design-systems">Buttons</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/and-you-thought-buttons-were-easy.html">Why Buttons Aren&#39;t Easy</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/and-you-thought-buttons-were-easy">Why Buttons Aren&#39;t Easy</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/cards-and-composability-in-design-systems.html">Cards and Composability</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/cards-and-composability-in-design-systems">Cards and Composability</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/on-classification-in-design-systems.html">Classification</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/on-classification-in-design-systems">Classification</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/patterns-components.html">UX Patterns vs UI Components</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/patterns-components">UX Patterns vs UI Components</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/right-sizing-the-rectangles.html">Decomposition and Hierarchy</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/right-sizing-the-rectangles">Decomposition and Hierarchy</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/component-qa-in-design-systems.html">Component QA</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/component-qa-in-design-systems">Component QA</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/component-testing-plans.html">Component Testing Plans</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/component-testing-plans">Component Testing Plans</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/getting-developers-started-with-a-design-system.html">Getting Developers Started</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/getting-developers-started-with-a-design-system">Getting Developers Started</a></li>
         
     
         
@@ -841,23 +842,23 @@
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/releasing-design-systems.html">Overview</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/releasing-design-systems">Overview</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/design-system-release-cadence.html">Cadence</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/design-system-release-cadence">Cadence</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/versioning-design-systems.html">Versioning</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/versioning-design-systems">Versioning</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/visual-breaking-change-in-design-systems.html">Visual Breaking Change</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/visual-breaking-change-in-design-systems">Visual Breaking Change</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/dealing-with-dependencies-inside-design-systems.html">Dependencies</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/dealing-with-dependencies-inside-design-systems">Dependencies</a></li>
         
     
         
@@ -990,35 +991,31 @@
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/a-design-system-isn-t-a-project-it-s-a-product-serving-products.html">A Product, Serving Products</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/a-design-system-isn-t-a-project-it-s-a-product-serving-products">A Product, Serving Products</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/defining-design-systems.html">Defining</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/defining-design-systems">Defining</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/principles-of-designing-systems.html">Principles</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/principles-of-designing-systems">Principles</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/adopting-design-systems.html">Adoption</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/adopting-design-systems">Adoption</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/finding-platform-balance-in-a-design-system.html">Platform Balance</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/finding-platform-balance-in-a-design-system">Platform Balance</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/accessible-design-systems-dont-guarantee-accessible-products.html">Accessibility</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/accessible-design-systems-dont-guarantee-accessible-products">Accessibility</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/measuring-design-system-success.html">Measuring Success</a></li>
-        
-    
-        
-    
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/measuring-design-system-success">Measuring Success</a></li>
         
     
         
@@ -1056,7 +1053,11 @@
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/a-design-system-s-reach.html">Reach</a></li>
+    
+        
+    
+        
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/a-design-system-s-reach">Reach</a></li>
         
     
         
@@ -1169,23 +1170,23 @@
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/contributions-to-design-systems.html">Contributions</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/contributions-to-design-systems">Contributions</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/defining-contributions.html">Defining Contributions</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/defining-contributions">Defining Contributions</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/why-contributions-matter.html">Why Contributions Matter</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/why-contributions-matter">Why Contributions Matter</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/stewarding-design-system-contributions.html">Stewarding</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/stewarding-design-system-contributions">Stewarding</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/i-made-this-does-it-go-in-the-system.html">Contribution Criteria</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/i-made-this-does-it-go-in-the-system">Contribution Criteria</a></li>
         
     
         
@@ -1290,19 +1291,19 @@
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/design-system-tiers.html">Tiers</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/design-system-tiers">Tiers</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/design-systems-intermediaries.html">Intermediaries</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/design-systems-intermediaries">Intermediaries</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/consolidating-design-systems.html">Consolidation</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/consolidating-design-systems">Consolidation</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/design-systems-architecture-diagrams.html">Architecture Diagrams</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/design-systems-architecture-diagrams">Architecture Diagrams</a></li>
         
     
         
@@ -1435,23 +1436,19 @@
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/starting-a-design-system.html">Starting a Design System</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/starting-a-design-system">Starting a Design System</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/roadmaps-for-design-systems.html">Roadmaps</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/roadmaps-for-design-systems">Roadmaps</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/design-system-features-step-by-step.html">Features, Step by Step</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/design-system-features-step-by-step">Features, Step by Step</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/design-system-subtasks-by-step.html">Subtasks, by Step</a></li>
-        
-    
-        
-    
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/design-system-subtasks-by-step">Subtasks, by Step</a></li>
         
     
         
@@ -1461,15 +1458,19 @@
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/design-system-communications.html">Communications</a></li>
+    
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/using-jira-for-design-systems.html">Using Jira</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/design-system-communications">Communications</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/practicing-design-systems.html">Building a Practice</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/using-jira-for-design-systems">Using Jira</a></li>
+        
+    
+        
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/practicing-design-systems">Building a Practice</a></li>
         
     
         
@@ -1562,15 +1563,15 @@
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/team-models-for-scaling-a-design-system.html">Team Models</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/team-models-for-scaling-a-design-system">Team Models</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/designing-a-systems-team.html">Designing a Team</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/designing-a-systems-team">Designing a Team</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/design-system-leader-s-manager-s.html">Leaders and Managers</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/design-system-leader-s-manager-s">Leaders and Managers</a></li>
         
     
         
@@ -1735,15 +1736,15 @@
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/the-component-cut-up-workshop.html">Component Cut Up</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/the-component-cut-up-workshop">Component Cut Up</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/picking-parts-products-people.html">Parts, Products and People</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/picking-parts-products-people">Parts, Products and People</a></li>
         
     
         
-    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/how-do-i-practice-cards-activity.html">How Do I? Cards</a></li>
+    <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/how-do-i-practice-cards-activity">How Do I? Cards</a></li>
         
     
 </ul>
@@ -1779,7 +1780,7 @@
         
     
 
-    <a class="esds-button esds-button--secondary esds-button--large escom-cta__action-button"  href=/design-systems.html>
+    <a class="esds-button esds-button--secondary esds-button--large escom-cta__action-button"  href=/design-systems>
         
         
             Learn More

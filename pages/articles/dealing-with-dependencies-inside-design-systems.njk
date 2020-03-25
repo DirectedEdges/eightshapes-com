@@ -19,7 +19,7 @@ Within a component library, what component has the most dependents (other compon
   ) }}
 
   {% filter markdown %}
-  
+
 
 Many, many components depend on `icon`: `checkbox`, `button`, `select`, `alert`, `list group`, and so many others. Even a simple, atomic `button` can include _two_ icons, one to the left and one to the right! Hopefully `icon` stabilizes early, and doesn’t change often. But when it does? All those dependent components must change too.
 
@@ -34,7 +34,7 @@ Many, many components depend on `icon`: `checkbox`, `button`, `select`, `alert`,
   ) }}
 
   {% filter markdown %}
-  
+
 
 Compositional depth isn’t limited to two levels, and components don’t exist only on one prescribed level, anyway. A `card` can depend on a `button`, and both of them can depend on `icon`. Effective system teams understand this and cope with change across this hierarchical chain of dependencies.
 
@@ -49,7 +49,7 @@ Compositional depth isn’t limited to two levels, and components don’t exist 
   ) }}
 
   {% filter markdown %}
-  
+
 
 Atlassian’s AtlasKit exposes dependent relationships visibly in NPM. Their published components reveal `icon`'s [dominance of 62 dependents](https://www.npmjs.com/package/@atlaskit/icon) that exceeds `button`'s [42](https://www.npmjs.com/package/@atlaskit/button), `avatar`'s [19](https://www.npmjs.com/package/@atlaskit/avatar), and `modal`'s [15](https://www.npmjs.com/package/@atlaskit/modal-dialog).
 
@@ -72,7 +72,7 @@ So many of our components are built using other, more primitive components in th
   ) }}
 
   {% filter markdown %}
-  
+
 
 Compositionally, a `menu` is a `popover` with a `list group` inside. The `popover` is `tooltip` with a flexible content area, reusing `tooltip`'s collision detection, directional notch, and layered appearance. Depending on how you architect your system, `menu` could depend on both `list-group` and `popover`, which might be a sibling of or dependent on `tooltip`.
 
@@ -97,9 +97,9 @@ For example, a `tooltip` exhibits many behaviors relevant to other layered compo
   ) }}
 
   {% filter markdown %}
-  
 
-Similarly, a `tooltip` usually imbues a shadow (separating it from content below), notch (connecting it with a trigger), elevation (within a page's z-index stack) and usually rounded shaped (produced by a border-radius). Such styles can be shared using [design tokens](/articles/tokens-in-design-systems.html), mixins, and other style tooling. It's guaranteed that other layered components also depend upon these styles.
+
+Similarly, a `tooltip` usually imbues a shadow (separating it from content below), notch (connecting it with a trigger), elevation (within a page's z-index stack) and usually rounded shaped (produced by a border-radius). Such styles can be shared using [design tokens](/articles/tokens-in-design-systems), mixins, and other style tooling. It's guaranteed that other layered components also depend upon these styles.
 
 _Takeaway_: Style and behavior, not just component objects, can propagate throughout a library. Therefore, establish predictable locations for both that can ease tracing from a decision’s root through the dependency chain.
 
@@ -120,11 +120,11 @@ If so commonly included, we should make icon first. For similarly reasons, butto
   ) }}
 
   {% filter markdown %}
-  
+
 
 At Morningstar, the team delivers dependent components in sequence. For example, the team first delivered [Header](https://designsystem.morningstar.com/components/headers.html) across many sized levels. Next, the team released a [Module Container](https://designsystem.morningstar.com/components/module-containers.html) for layouts with many content types. Finally, the team extended those features with an [Accordion](https://designsystem.morningstar.com/components/accordions.html).
 
-As Accordion took shape, the team had to reconsider how Header and Module Container were built. While they avoided [breaking changes](/articles/visual-breaking-change-in-design-systems.html), deploying Accordion required deprecating the original Module Container in favor of an adjusted version.
+As Accordion took shape, the team had to reconsider how Header and Module Container were built. While they avoided [breaking changes](/articles/visual-breaking-change-in-design-systems), deploying Accordion required deprecating the original Module Container in favor of an adjusted version.
 
 _Takeaway_: Order what you build from small (like `tooltip`) to large (like `menu`). As you do so, create opportunities to compose examples of small things in larger things to stress-test how the chain works.
 
@@ -161,7 +161,7 @@ Developers and designers share this challenge. For code, some may start with a s
   ) }}
 
   {% filter markdown %}
-  
+
 
 For designers, tracing through a Sketch file of library assets can be a chore. Imagine changing `button` spacing, or revising your interactive blue token. So many painstaking adjustments! Fortunately, Sketch plug-ins like [Symbol Instance Locator](https://github.com/sonburn/symbol-instance-locator) and [Find-all-instances-of-symbol](https://github.com/nmwoods1/Sketch---Find-all-instances-of-symbol) enable you to find symbols and instances across artboards and jump to their location.
 
@@ -180,7 +180,7 @@ As package management capabilities improve, teams improve how they cope and docu
   ) }}
 
   {% filter markdown %}
-  
+
 
 A team must decide version type for each impacted feature in the chain. Breaking `icon` means a major version increment. However, that doesn’t imply that `button`, `list group`, and `alert` also all incur a major increment. To some, it may simply be a patch increment to consume the new `icon` version.
 
@@ -213,7 +213,7 @@ Many teams offer sample page types composed with many components composed togeth
   ) }}
 
   {% filter markdown %}
-  
+
 
 For example, Discovery Education’s Comet design system provides a link on the [Product Bar](https://comet.discoveryeducation.com/components/product-bar.html) component page to demo the component composed along with a [nav](https://comet.discoveryeducation.com/components/page-shell.html) on the left, a [footer](https://comet.discoveryeducation.com/components/footer.html) at the bottom, and content like [cards](https://comet.discoveryeducation.com/components/cards.html) in rows.
 
@@ -238,7 +238,7 @@ Opinions are as varied as there are system teams, but some choose to separate hi
   ) }}
 
   {% filter markdown %}
-  
+
 
 This suggests releases must be coordinated across and published sequentially through that dependency chain. First, build tooling, then tokens, library, doc components, and ultimately the documentation site itself. Other teams like Shopify sequence releases similarly:
 
@@ -251,7 +251,7 @@ This suggests releases must be coordinated across and published sequentially thr
   ) }}
 
   {% filter markdown %}
-  
+
 
 A separated token dependency affords the flexibility to more quickly publish changes to a visual foundation prior to releasing component library outputs. However, that separation is _more useful_ for token adopters _avoiding_ your component library code and potentially just taking advantage of design tokens, sketch assets, doc or all three together.
 
@@ -273,7 +273,7 @@ _Takeaway_: Integrate third-party and framework dependencies that you are comfor
 
 * * *
 
-**#4.** [**Visual Breaking Change**](/articles/visual-breaking-change-in-design-systems.html) ← Previous | Next → **#6. Step-by-Step**
+**#4.** [**Visual Breaking Change**](/articles/visual-breaking-change-in-design-systems) ← Previous | Next → **#6. Step-by-Step**
 
 
 

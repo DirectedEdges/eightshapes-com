@@ -4,7 +4,7 @@
 {% block main_article %}
   {% filter markdown %}
 
-I’ve long referred to [Color](/articles/color-in-design-systems.html), Type and Icons as the “Big 3” of a system’s visual language. All UI components — from [Buttons](/articles/buttons-in-design-systems.html) on up — are built with them. But I left something out. Space, our final frontier.
+I’ve long referred to [Color](/articles/color-in-design-systems), Type and Icons as the “Big 3” of a system’s visual language. All UI components — from [Buttons](/articles/buttons-in-design-systems) on up — are built with them. But I left something out. Space, our final frontier.
 
 ### Space Rivals Color
 
@@ -21,7 +21,7 @@ Space is everywhere. CSS uses properties like _padding_, _margin_, and absolute 
   ) }}
 
   {% filter markdown %}
-  
+
 
 After removing effects (“zeroed” values like _:0;_ and reserved terms like _transparent_ or _auto_) where CSS already offers us a system for decisions, _space_ rules appeared more than anything except _color_. Nothing else — not _type_, _size_, _layout_ — was even close. There’s so much spatial complexity built into our libraries, let alone our products!
 
@@ -40,7 +40,7 @@ Space epitomizes the “I design this way, you build that way” gap between des
   ) }}
 
   {% filter markdown %}
-  
+
 
 Costs are huge: annotating, translating, discussing, visually scrubbing during QA. All that work … for something still not good enough. Thus space exacts an emotional toll, too.
 
@@ -69,7 +69,7 @@ Grids are rich with spatial decisions for columns, gutters, outer margins, and r
   ) }}
 
   {% filter markdown %}
-  
+
 
 A grid isn’t a complete spatial system. A grid is a component that _uses_ space, just like every other component. A grid feels different. It’s invisible, comes early, and only does space. But there’s more to space than grid.
 
@@ -92,7 +92,7 @@ Teams setup a memorable, even magical base number to ground all other spatial va
   ) }}
 
   {% filter markdown %}
-  
+
 
 Most systems I’ve worked use 16. It’s a good default font size. It’s a factor of all screen resolutions (320, 768, 1024). And it provides memorable multiples greater (32, 64, …) and factors less (8, 4, 2) than where it starts.
 
@@ -107,7 +107,7 @@ Most systems I’ve worked use 16. It’s a good default font size. It’s a fac
   ) }}
 
   {% filter markdown %}
-  
+
 
 _Takeaway_: Ground your spatial system’s range with a memorable base number, and limit expectations on how it’s used.
 
@@ -128,7 +128,7 @@ With an established base, teams can still slip into random steps (12, 14, 18, 22
   ) }}
 
   {% filter markdown %}
-  
+
 
 An alternative is non-linear. Options include the [golden ratio](https://en.wikipedia.org/wiki/Golden_ratio), [modular scale](http://zurb.com/word/modular-scale), or the similar [geometric progression](https://en.wikipedia.org/wiki/Geometric_progression) that could double each step. Starting from the base, we’ll go in both directions to stops smaller (16, 8, 4, 2) and larger (16, 32, 64, and… that’s about it) on the scale.
 
@@ -143,7 +143,7 @@ An alternative is non-linear. Options include the [golden ratio](https://en.wiki
   ) }}
 
   {% filter markdown %}
-  
+
 
 _Takeaway_: Consider a geometric progression or something similarly nonlinear. You might experience occasional tensions to add a 24 between 16 and 32. However, in my experience, such moments are rare and rarely justify breaking the simple system.
 
@@ -164,7 +164,7 @@ I love Gmail’s Compact, Cozy, Comfortable space toggle. So when we built our s
   ) }}
 
   {% filter markdown %}
-  
+
 
 So we did what we always do: use a t-shirt size scale. Medium corresponds to default and S, XS, L, XL and — if necessary — XXS and XXL are other options. It’s what most libraries (Bootstrap, Lightning, etc) do.
 
@@ -191,7 +191,7 @@ In reviewing our emerging work, there aren’t many distinct intents for applyin
   ) }}
 
   {% filter markdown %}
-  
+
 
 As a front-end developer, I envision all the boxes of elements that fit elements together.
 
@@ -206,7 +206,7 @@ As a front-end developer, I envision all the boxes of elements that fit elements
   ) }}
 
   {% filter markdown %}
-  
+
 
 The card provides a useful illustration of many spatial concept we use: insetting content from an edge, varying an inset’s shape, spacing items inline, and stacking items _within_ and _between_ a component.
 
@@ -221,7 +221,7 @@ The card provides a useful illustration of many spatial concept we use: insettin
   ) }}
 
   {% filter markdown %}
-  
+
 
 These concepts — inset, inset squish, inset stretch, stack, inline, and grid — cover the vast majority of our library’s CSS rules for space: _padding_, _margin_, _left_, _right_, _top_, and _bottom_. These concepts also enhance how each atomic is self-contained, improving [composability](https://en.wikipedia.org/wiki/Composability).
 
@@ -242,7 +242,7 @@ An inset offers indents content on all four sides like the matte of the framed p
   ) }}
 
   {% filter markdown %}
-  
+
 
 The default is also a useful starting point for mobile first design, expanding to large at a relevant viewport width like 768px.
 
@@ -257,7 +257,7 @@ The default is also a useful starting point for mobile first design, expanding t
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ### Concept 2: Squish Inset
@@ -275,7 +275,7 @@ A squished inset reduces space top and bottom, in our case by 50%. While less co
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ### Concept 3: Stretch Inset
@@ -293,7 +293,7 @@ Contrasted with a button or pill’s squish, we found ourselves vertically stret
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ### Concept 4: Stack
@@ -311,7 +311,7 @@ With all due respect to horizontally scrolled UI, the overwhelming majority scro
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ### Concept 5: Inline
@@ -329,7 +329,7 @@ We also arrange objects inline, wrapping as they flow like text from the left or
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ### Concept 6: Grid
@@ -351,7 +351,7 @@ So, as applied to a Card component, your styled padding and margin may look some
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ## What We Learned
@@ -373,7 +373,7 @@ Most collaborators can’t _see_ space, a primary reason it’s so arbitrarily a
   ) }}
 
   {% filter markdown %}
-  
+
 
 _Takeaway_: Teach your spatial concepts using a tight doc diagram or cheat sheet. Such references quicken how we grasp, apply, and sustain the concepts through design and code.
 
@@ -410,9 +410,9 @@ Simple inset _padding_ and stack _margin_ rules collided with a long-known spati
   ) }}
 
   {% filter markdown %}
-  
 
-However, we followed an idea’s spark (@kevinmpowell’s “Let’s negative margin space using pseudo elements! But how much?”) with some math (I can use my college degree!). The result was a [mixin formula combining type size and line-height to collapse space above and below colliding objects](/articles/cropping-away-negative-impacts-of-line-height.html).
+
+However, we followed an idea’s spark (@kevinmpowell’s “Let’s negative margin space using pseudo elements! But how much?”) with some math (I can use my college degree!). The result was a [mixin formula combining type size and line-height to collapse space above and below colliding objects](/articles/cropping-away-negative-impacts-of-line-height).
 
 _Takeaway_: Don’t give up on systematic clarity because of exceptions. Try to solve them. If you can overcome such nuances, even with a bit of CSS trickery, you can persist a simpler concept everyone can stick to.
 
@@ -433,7 +433,7 @@ With concepts like inset, stack, and grid, you can tune the dials of density wit
   ) }}
 
   {% filter markdown %}
-  
+
 
 _Takeaway_: You can tune spatial density even with a barely-beyond primitive set of options. Without them, density control is a dream. With them, you can gradually build towards a powerful engine to find, adjust, and tune space with great intent and less risk.
 
