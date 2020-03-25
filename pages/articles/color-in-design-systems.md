@@ -9,11 +9,9 @@
   date_updated :
   read_duration : 10
   masthead : true
+  layout: article.njk
 ---
-{% extends 'templates/article_11ty_layout.njk' %}
-
-{% block main_article %}
-  {% filter markdown %}
+{% import '../_includes/escom.njk' as escom with context %}
 
 I’m no color expert. Far from, actually. Throughout my career, I’ve depended on visual designers better than myself to produce an engaging palette and apply it harmoniously across a UI.
 
@@ -31,17 +29,14 @@ By primary, we’re talking colors used everywhere including your **brand colors
 
 _Takeaway_: Decide your essential brand colors early, because they spread widely, quickly.
 
-{% endfilter %}
+{{- escom.article_figure(
+    image_path = page.fileSlug,
+    image_number = '2',
+    image_alt = 'Primary red, white and blue colors',
+    caption = '',
+    class = ''
+) -}}
 
-  {{ escom.article_figure(
-      image_path = title_image_path,
-      image_number = '2',
-      image_alt = 'Primary red, white and blue colors',
-      caption = '',
-      class = ''
-  ) }}
-
-  {% filter markdown %}
 
 * * *
 
@@ -51,17 +46,15 @@ Is brand blue a bit dull? Can’t resist the urge to liven it up? Nothing poison
 
 _Takeaway_: Brand colors are the brand team’s territory. So discuss adjustments with them and defer to their judgment as needed.
 
-{% endfilter %}
 
   {{ escom.article_figure(
-      image_path = title_image_path,
+      image_path = page.fileSlug,
       image_number = '3',
       image_alt = 'Alternative orange tints for brand versus digital display',
       caption = '',
       class = ''
   ) }}
 
-  {% filter markdown %}
 
 * * *
 
@@ -71,17 +64,15 @@ From dark-as-night charcoal to fluffy light gray, neutrals provide essential UI 
 
 _Takeaway_: Provide a few light grays and a few dark grays to achieve useful contrast, but don’t get wishy washy wireframey. Consider avoiding medium grays in between.
 
-{% endfilter %}
 
   {{ escom.article_figure(
-      image_path = title_image_path,
+      image_path = page.fileSlug,
       image_number = '4',
       image_alt = 'Spectrum of neutral tints, with medium neutrals as an accessibility challenge to avoid',
       caption = '',
       class = ''
   ) }}
 
-  {% filter markdown %}
 
 * * *
 
@@ -91,17 +82,15 @@ My past five design systems settled on a saturated blue as a default button and 
 
 _Takeaway_: When (not if ;) ) you go with your “Digital Blue,” choose an accessible one and make sure it doesn’t clash with the brand’s own blue, or red, orange, purple, or green.
 
-{% endfilter %}
 
   {{ escom.article_figure(
-      image_path = title_image_path,
+      image_path = page.fileSlug,
       image_number = '5',
       image_alt = 'Blue used in links and buttons',
       caption = '',
       class = ''
   ) }}
 
-  {% filter markdown %}
 
 * * *
 
@@ -115,17 +104,15 @@ Color palette display patterns long predate the web. Yet I still love me a compa
 
 _Takeaway_: Stack available colors in each hue, and treat the stack as a visualization to include important details compactly.
 
-{% endfilter %}
 
   {{ escom.article_figure(
-      image_path = title_image_path,
+      image_path = page.fileSlug,
       image_number = '6',
       image_alt = 'Tint stacks of blue and orange from Google Material design',
       caption = '<a href="https://www.google.com/design/spec/style/color.html" rel="nofollow noopener" target="_blank">Material Design</a>’s Indigo and Deep Orange',
       class = ''
   ) }}
 
-  {% filter markdown %}
 
 * * *
 
@@ -135,17 +122,15 @@ We’ve all been there. A month into the system, the neutrals `$color-gray-1`, `
 
 _Takeaway_: Scale color names between 0 and 100 based on HSL’s lightness, such as `$color-gray-05` and `$color-gray-92`. The scale reflects a familiar range from dark to light, allows for injecting new options between, and heck if I won’t remember `$color-gray-93` until we retire it later.
 
-{% endfilter %}
 
   {{ escom.article_figure(
-      image_path = title_image_path,
+      image_path = page.fileSlug,
       image_number = '7',
       image_alt = 'Tint stacks of gray named poorly (enumerated) and well (using lightness)',
       caption = '',
       class = ''
   ) }}
 
-  {% filter markdown %}
 
 * * *
 
@@ -155,17 +140,15 @@ At the core of a good system is choice without endless options, a stable aesthet
 
 _Takeaway_: Offer a handful of options and avoid tedious variety. Empower system users with just enough choice: more than a single option, but only up to a few intentional choices.
 
-{% endfilter %}
 
   {{ escom.article_figure(
-      image_path = title_image_path,
+      image_path = page.fileSlug,
       image_number = '8',
       image_alt = 'Two orange tint stacks, one from Google Material with many and another with only a few',
       caption = '',
       class = ''
   ) }}
 
-  {% filter markdown %}
 
 * * *
 
@@ -177,17 +160,15 @@ But transforms can be troublesome: carefully crafted base colors can become inac
 
 _Takeaway_: Deliberately allow — or avoid — color transformations in your system. If you endorse the practice, then offer examples of when and how to do it effectively in your system, such as 5–10% for moderately bright cases and 10–20% in more extreme cases. If transformations should be avoided , document that succinctly.
 
-{% endfilter %}
 
   {{ escom.article_figure(
-      image_path = title_image_path,
+      image_path = page.fileSlug,
       image_number = '9',
       image_alt = 'Two orange tint stacks annotated for handpicked and functionally transformed colors, respectively',
       caption = '',
       class = ''
   ) }}
 
-  {% filter markdown %}
 
 * * *
 
@@ -201,17 +182,15 @@ Most systems reserve a certain red for errors, green for success, yellow for war
 
 _Takeaway_: Explore and define the standard feedback colors and other relevant sets to ensure that colors fit harmoniously rather wedging them in later or having teammates recall “I just grabbed it from Google.”
 
-{% endfilter %}
 
   {{ escom.article_figure(
-      image_path = title_image_path,
+      image_path = page.fileSlug,
       image_number = '10',
       image_alt = 'Green, yellow, red and blue colors as success, warning, error and informational',
       caption = 'Typical feedback colors: success, warning, error and informational',
       class = ''
   ) }}
 
-  {% filter markdown %}
 
 * * *
 
@@ -221,17 +200,15 @@ In some systems, color use is customized per product, section, or brand. Often, 
 
 _Takeaway_: Reveal the range of themes available compactly, and set boundaries around allowable theme colors in certain contexts.
 
-{% endfilter %}
 
   {{ escom.article_figure(
-      image_path = title_image_path,
+      image_path = page.fileSlug,
       image_number = '11',
       image_alt = 'A variety of theme colors for Marriott hotels',
       caption = 'Theme colors for multiple Marriott.com hotels, derived from <a href="http://www.marriott.com/hotels/travel/wasrw-renaissance-washington-dc-dupont-circle-hotel/" rel="nofollow noopener" target="_blank">product pages</a>',
       class = ''
   ) }}
 
-  {% filter markdown %}
 
 * * *
 
@@ -241,17 +218,15 @@ It’s not enough to simply say “Go ahead and theme it!” A theme color may a
 
 _Takeaway:_ Identify how theming works, particularly via reference to specific UI element properties in play. Just as important, articulate which — if not most — elements are off limits.
 
-{% endfilter %}
 
   {{ escom.article_figure(
-      image_path = title_image_path,
+      image_path = page.fileSlug,
       image_number = '12',
       image_alt = 'Theming color applied to a background, button and link',
       caption = '',
       class = ''
   ) }}
 
-  {% filter markdown %}
 
 * * *
 
@@ -277,17 +252,15 @@ It happens often: a few weeks or days before a product — or design system�
 
 _Takeaway_: Any system designer responsible for color must be familiar with WCAG 2.0 rules, have a tool (like Tanaguru) to test color pairs, and incorporate the practice into color selection.
 
-{% endfilter %}
 
   {{ escom.article_figure(
-      image_path = title_image_path,
+      image_path = page.fileSlug,
       image_number = '13',
       image_alt = 'A screenshot of the Tanaguru color contrast finder',
       caption = '<a href="http://contrast-finder.tanaguru.com/" rel="nofollow noopener" target="_blank">Tanaguru</a>, one of many accessibility calculators online',
       class = ''
   ) }}
 
-  {% filter markdown %}
 
 * * *
 
@@ -307,17 +280,15 @@ Conversation quickens when we reveal a spectrum of choices. There are a bevy of 
 
 We even built our own tool at EightShapes called the <a href="http://contrast-grid.eightshapes.com/">Contrast Grid</a>. This tool enables you to easily input a range of HEX codes, name them, and contrast every combination (even distinct colors for foreground and background).
 
-{% endfilter %}
+
 
   {{ escom.article_figure(
-      image_path = title_image_path,
+      image_path = page.fileSlug,
       image_number = '14',
       image_alt = 'Interactive colors displayed across a range of neutral backgrounds',
       caption = 'Explore foreground and background color contrast across ranges using <a href="http://contrast-grid.eightshapes.com/">Contrast Grid</a>',
       class = ''
   ) }}
-
-  {% filter markdown %}
 
 This quick visualization isn't just efficient for experimenting and choosing the right color, but also communicating contrast ranges to those less familiar with contrast subtleties. Recently, we're really encouraged about how such exploratory tools are being integrated directly into design tools, too.
 
@@ -333,17 +304,16 @@ This is especially true for reverse color treatments. It’s very common for a s
 
 _Takeaway:_ Solve for and recommend reversed pairings to adopt or avoid.
 
-{% endfilter %}
+
 
   {{ escom.article_figure(
-      image_path = title_image_path,
+      image_path = page.fileSlug,
       image_number = '15',
       image_alt = 'Link colors explored on light and dark neutral backgrounds',
       caption = 'A table of calculated contrast (using a SASS function) between neutral backgrounds and interactive blue alternatives',
       class = ''
   ) }}
 
-  {% filter markdown %}
 
 * * *
 
@@ -359,5 +329,4 @@ _Takeaway_: Seize the opportunity to advocate for accessibility. Always be probi
 
 **2020-01-24**: Revised color contrast section to highlight EightShapes contrast grid (including image), list other relevant contrast tools.
 
-  {% endfilter %}
-{% endblock %}
+

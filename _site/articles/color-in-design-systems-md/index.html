@@ -14,51 +14,52 @@
         <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
         <meta http-equiv="cleartype" content="on">
 
-        <title>EightShapes &gt; @components &gt; Design System Features, Step by Step</title>
+        
+            <title>Eightshapes > @components > Color in Design Systems</title>
+            <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700&display=swap" rel="stylesheet">
+            <!-— facebook open graph tags -->
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://www.eightshapes.com/articles/color-in-design-systems-md/" />
+            <meta property="og:title" content="Color in Design Systems" />
+            <meta property="og:description" content="16 Tips for Setting Up a System That Endures" />
+            
+            <meta property="og:image" content="https://eightshapes.com//images/articles//masthead.png" />
+            
+
+            <!-— twitter card tags additive with the og: tags -->
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:domain" value="eightshapes.com" />
+            <meta name="twitter:title" value="Color in Design Systems" />
+            <meta name="twitter:description" value="16 Tips for Setting Up a System That Endures" />
+            
+            <meta name="twitter:image" content="https://eightshapes.com//images/articles//masthead.png" />
+            
+            <meta name="twitter:url" value="https://www.eightshapes.com/articles/color-in-design-systems-md/" />
+
+            <!-- No Shadow DOM, so link directly to styles -->
+            <link rel="stylesheet" href="/dependencies/esds-code-snippet.css"/>
+
+            <!-- Separate webcomponents polyfill bundle for Edge, IE11, etc. -->
+            <script type="text/javascript" src="/dependencies/custom-elements.min.js"></script>
+
+            <!-- ESDS Doc components -->
+            <!-- The ESM "vanilla" version of the component for FF, Safari, Chrome and Edge -->
+            <script type="module" src="/dependencies/esds-code-snippet-web-component.js"></script>
+
+            <!-- A babel-compiled version of the component for IE11 -->
+            <script nomodule type="text/javascript" src="/dependencies/esds-code-snippet-legacy.js"></script>
+        
 
         <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,600" rel="stylesheet">
         <link rel="stylesheet" href="/dependencies/esds.css"> <!-- copied from esds-library dependency -->
         <link rel="stylesheet" href="/dist/escom.css">
-
-        
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700&display=swap" rel="stylesheet">
-  <!-— facebook open graph tags -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.eightshapes.com/articles/design-system-features-step-by-step" />
-  <meta property="og:title" content="Design System Features, Step by Step" />
-  <meta property="og:description" content="A Workflow to Design, Build and Document Each Part" />
-  
-  <meta property="og:image" content="https://eightshapes.com//images/articles/design-system-features-step-by-step/masthead.png" />
-  
-
-  <!-— twitter card tags additive with the og: tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:domain" value="eightshapes.com" />
-  <meta name="twitter:title" value="Design System Features, Step by Step" />
-  <meta name="twitter:description" value="A Workflow to Design, Build and Document Each Part" />
-  
-  <meta name="twitter:image" content="https://eightshapes.com//images/articles/design-system-features-step-by-step/masthead.png" />
-  
-  <meta name="twitter:url" value="https://www.eightshapes.com/articles/design-system-features-step-by-step" />
-
-  <!-- No Shadow DOM, so link directly to styles -->
-  <link rel="stylesheet" href="/dependencies/esds-code-snippet.css"/>
-
-  <!-- Separate webcomponents polyfill bundle for Edge, IE11, etc. -->
-  <script type="text/javascript" src="/dependencies/custom-elements.min.js"></script>
-
-  <!-- ESDS Doc components -->
-  <!-- The ESM "vanilla" version of the component for FF, Safari, Chrome and Edge -->
-  <script type="module" src="/dependencies/esds-code-snippet-web-component.js"></script>
-
-  <!-- A babel-compiled version of the component for IE11 -->
-  <script nomodule type="text/javascript" src="/dependencies/esds-code-snippet-legacy.js"></script>
-
     </head>
     <body class="">
         
-    
+
+
+
     
     
 
@@ -94,282 +95,229 @@
     </div>
 
 
-    <div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
-        <div class="esds-row__inner">
-            <div class="escom-article__author-row">
-                <div class="escom-article__author-avatar"
-                    style="background-image: url('/images/bios/bio-thumb-nathan-curtis.png')">
-                </div>
-                <div class="escom-article__author-text">
-                    <p class="escom-article__author">
-                        <a href="/nathan-curtis">Nathan Curtis</a>
-                    </p>
-                    <p class="escom-article__author-role">
-                        Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist &amp; runner. Father &amp; husband. VT &amp; @uchicago grad.
-                    </p>
-                    <p>
-                        <span class="escom-article__published-date">
-                            Originally published 9/14/2017 •
-                        </span>
-                        <span class="escom-article__read-duration">
-                            8min
-                        </span>
-                    </p>
-                </div>
+<div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
+    <div class="esds-row__inner">
+        <div class="escom-article__author-row">
+            <div class="escom-article__author-avatar"
+                style="background-image: url('/images/bios/bio-thumb-nathan-curtis.png')">
             </div>
-            <div class="escom-article__title-row">
-                <h1 class="escom-article__title">Design System Features, Step by Step</h1>
-                
-                <h2 class="escom-article__deck">A Workflow to Design, Build and Document Each Part</h2>
-                
+            <div class="escom-article__author-text">
+                <p class="escom-article__author">
+                    <a href="/nathan-curtis">Nathan Curtis</a>
+                </p>
+                <p class="escom-article__author-role">
+                    Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist &amp; runner. Father &amp; husband. VT &amp; @uchicago grad.
+                </p>
+                <p>
+                    <span class="escom-article__published-date">
+                        Originally published 4/13/2016 •
+                    </span>
+                    <span class="escom-article__read-duration">
+                        10min
+                    </span>
+                </p>
             </div>
-
-    
         </div>
-    </div>
-    <div class="esds-row esds-container--dark esds-row--no-inset escom-article">
-        <div class="esds-row__inner">
-            <img src="/images/articles/design-system-features-step-by-step/masthead.png" alt="Masthead" class="escom-article__masthead" >
+        <div class="escom-article__title-row">
+            <h1 class="escom-article__title">Color in Design Systems</h1>
+            
+            <h2 class="escom-article__deck">16 Tips for Setting Up a System That Endures</h2>
+            
         </div>
+
+
     </div>
-    <div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
-        <div class="esds-row__inner">
-    
-
-    
-    <p>Some teams barely organize how things get done. They’ll add a dash of design here, dive deep into code there, and maybe sprinkle on documentation as an afterthought. “Should we make this? What should it be? When do we QA?” For less disciplined teams, who the heck knows.</p>
-<p>Lacking a workflow, a team litters a backlog with heterogeneous, overlapping tasks. From afar, you can’t learn or remember task objective and outcome(s). It’s impossible to relate one task to another. Friction and uncertainty ensue as a team drifts through day to day collaboration.</p>
-<p>On the other hand, a defined workflow helps a team mutually understand the scope, reviewers, tools, and the definition of done at each step. With a workflow, collaboration tightens, delivery quickens, and the team predictably delivers features that products love.</p>
-
-
-  
-
-<figure class="escom-article-figure escom-article-figure--break-bleed">
-    <div class="escom-article-figure__image-container">
-        <img class="escom-article-figure__image" src="/images/articles/design-system-features-step-by-step/1.png" alt="Step by step process, from discover to design to build to doc to publish">
+</div>
+<div class="esds-row esds-container--dark esds-row--no-inset escom-article">
+    <div class="esds-row__inner">
+        <img src="/images/articles/color-in-design-systems/masthead.png" alt="Masthead" class="escom-article__masthead" >
     </div>
-    <figcaption class="escom-article-figure__caption">The EightShapes Five Step System Workflow</figcaption>
-</figure>
+</div>
+<div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
+    <div class="esds-row__inner">
 
-
-
-  <p>My system teams make most features — visual style, UI components, documentation tooling, UX patterns, and more — by following simple, identified steps of <strong>discover</strong> , <strong>design</strong> , <strong>build</strong> , <strong>documentation</strong> , and <strong>publish</strong>. I can’t imagine building a design system without it.</p>
+    <p>{&quot;date&quot;:&quot;2020-03-25T20:09:01.321Z&quot;,&quot;inputPath&quot;:&quot;./pages/articles/color-in-design-systems-md.md&quot;,&quot;fileSlug&quot;:&quot;color-in-design-systems-md&quot;,&quot;filePathStem&quot;:&quot;/articles/color-in-design-systems-md&quot;,&quot;url&quot;:&quot;/articles/color-in-design-systems-md/&quot;,&quot;outputPath&quot;:&quot;_site/articles/color-in-design-systems-md/index.html&quot;}
+I’m no color expert. Far from, actually. Throughout my career, I’ve depended on visual designers better than myself to produce an engaging palette and apply it harmoniously across a UI.</p>
+<p>Yet, as a systems designer, I’m often in the position to provoke and validate color decisions as a system takes shape. Here’s a 16 lessons I’ve learned while stabilizing a <strong>primary palette</strong> , <strong>tint and shade choices</strong> , <strong>secondary palettes</strong> , and solving for <strong>accessible</strong>  <strong>contrast</strong>.</p>
 <hr>
-<h2 id="1-discover">#1. Discover</h2>
-<p>Discovery clarifies the potential and the relevance of a new feature and decides whether or not to pursue it.</p>
-<p><em>Assigned To</em>: Anyone on the team, although usually a designer, front-end developer or product manager.</p>
-<p><em>Activities</em>: Triaging requests, interviews, products and system analysis, discussions with influential partners in the community, and even formal proposal processes like a <a href="/articles/contributions-to-design-systems">contributor’s Request for Comment</a>.</p>
-<p><em>Definition of Done</em>:</p>
-<ul>
-<li>As a system team, we understand the scope and cost of making this feature and who may do each step.</li>
-<li>As a system team (or product manager), we’ve (or I’ve) agreed or declined to or pursue this feature and prioritized it in our backlog.</li>
-</ul>
-<hr>
-<h2 id="2-design">#2. Design</h2>
-<p>Design finalizes a range of variations, states, and other dimensions at high fidelity so that Build can be completed, whether for visual style (e.g., new icons!), UI components (like a button), or documentation displays (like a Color page’s swatches).</p>
-<p><em>Assigned To</em>: A designer.</p>
-<p><em>Activities</em>: Iterative design work and critique.</p>
-<p><em>Tools</em>: We’ll employ tools like Sketch, InVision, or Photoshop, finalizing work at a high-fidelity consistent with system conventions.</p>
-<p><em>Definition of Done</em>:</p>
-<ul>
-<li>As a design director (or similar role), I’ve approved the final design.</li>
-<li>As system designer(s) <em>and</em> in the community, we’ve agreed that the design solves the problem and is suitable for use across products.</li>
-<li>As the assigned system engineer, I have the sufficient level of variations, states, and other details to complete a build.</li>
-</ul>
-<hr>
-<h2 id="3-build">#3. Build</h2>
-<p>Build results in the codification of HTML, CSS, JavaScript, and other code.</p>
-<p><em>Assigned To</em>: Usually a front-end developer, although at times a designer.</p>
-<p><em>Activities</em>: Front end development and <a href="/articles/component-qa-in-design-systems">testing, often in the context of a “kitchen sink” pages</a> (not documentation site pages) that demonstrates the range of the feature’s capabilities isolated from other system concerns.</p>
-<p><em>Tools</em>: Code and assets, git to manage within prescribed branches, and pull requests to comment and task corrections.</p>
-<p><em>Definition of Done</em>: To merge the feature into a release…</p>
-<ul>
-<li>As the assigned system designer, I’ve reviewed the build’s quality and confirmed it properly implemented scoped features.</li>
-<li>As a peer system engineer (or QA specialist), I’ve reviewed that the build functions properly, meets all <a href="/articles/component-qa-in-design-systems">quality criteria</a> (accessibility, browser support, etc), and adheres to system’s code styles and conventions.</li>
-</ul>
-<hr>
-<h2 id="4-doc">#4. Doc</h2>
-<p>Ah, Doc, the task often conflated with Design or Build or ignored until the last minute. To our teams, Doc is different, focused on communicating not <em>what to build</em>, but instead <em>what’s built</em> and <em>how to use it</em>. Doc is a separate task so that our authors focus on the quality and depth that system users crave.</p>
-<p><em>Assigned To</em>: The designer and/or front-end developer doing the work.</p>
-<p><em>Activities</em>:</p>
-<ul>
-<li>Author documentation copy for topics like Use When, Behaviors, Editorial, and other guidelines relevant to the feature and it’s variations.</li>
-<li>Identify if not create final code/example demonstrations.</li>
-<li>Compose illustrations, interactive demos, and screenshots.</li>
-</ul>
-<p><em>Tools</em>: <strong>Author in Google Docs, NOT Pull Requests!</strong> This collaboration includes a designer, engineer, reviewer(s), and ideally a technical editor too. Pull requests are primitive, limiting comments to lines.</p>
-
-
-  
-
+<h2>Primary Palette</h2>
+<p>By primary, we’re talking colors used everywhere including your <strong>brand colors</strong> , <strong>neutrals</strong> , and a typically <strong>interactive</strong> digital blue.</p>
+<h3>#1. Stabilize Brand Colors Quickly</h3>
+<p>︎Every organization has one, two, or no more than a few core brand colors. THE red. THE blue. THE orange. Settle on them. Even if reasonably set up with a color variable or two, nothing signals a design system team that can’t get their act together than constantly changing primary colors.</p>
+<p><em>Takeaway</em>: Decide your essential brand colors early, because they spread widely, quickly.</p>
 <figure class="escom-article-figure">
     <div class="escom-article-figure__image-container">
-        <img class="escom-article-figure__image" src="/images/articles/design-system-features-step-by-step/2.png" alt="Screenshot of Google Docs with many revisions highlighted">
+        <img class="escom-article-figure__image" src="/images/articles//2.png" alt="Primary red, white and blue colors">
     </div>
-    <figcaption class="escom-article-figure__caption">Google Docs revision history of a Color page, highlighting suggestions and edits from one of history’s 60 total edits.</figcaption>
+    <figcaption class="escom-article-figure__caption"></figcaption>
 </figure>
-
-
-
-  <p>Google Docs is made for collaborative authoring in which you can comment on any word or image as well as suggest and manage changes inline.</p>
-<p><em>Definition of Done</em>:</p>
+<hr>
+<h3>#2. Involve Brand (If You Alter a Brand Color)</h3>
+<p>Is brand blue a bit dull? Can’t resist the urge to liven it up? Nothing poisons early collaboration more than a casual “We saturated the brand orange for web” followed by brand reacting with “You did <em>what</em>?” Oh the sacrilege!</p>
+<p><em>Takeaway</em>: Brand colors are the brand team’s territory. So discuss adjustments with them and defer to their judgment as needed.</p>
+<figure class="escom-article-figure">
+    <div class="escom-article-figure__image-container">
+        <img class="escom-article-figure__image" src="/images/articles//3.png" alt="Alternative orange tints for brand versus digital display">
+    </div>
+    <figcaption class="escom-article-figure__caption"></figcaption>
+</figure>
+<hr>
+<h3>#3. Drop the Neutral Neutrals</h3>
+<p>From dark-as-night charcoal to fluffy light gray, neutrals provide essential UI scaffolding. Loading a system with neutrals, even a few, risks giving teams access to muddy colors. They can also lead to “wireframey” designs. And, neither dark nor light type has sufficiently accessible contrast on a medium gray background.</p>
+<p><em>Takeaway</em>: Provide a few light grays and a few dark grays to achieve useful contrast, but don’t get wishy washy wireframey. Consider avoiding medium grays in between.</p>
+<figure class="escom-article-figure">
+    <div class="escom-article-figure__image-container">
+        <img class="escom-article-figure__image" src="/images/articles//4.png" alt="Spectrum of neutral tints, with medium neutrals as an accessibility challenge to avoid">
+    </div>
+    <figcaption class="escom-article-figure__caption"></figcaption>
+</figure>
+<hr>
+<h3>#4. Go “Digital Blue.” Everybody Else Does.</h3>
+<p>My past five design systems settled on a saturated blue as a default button and link color. Links have always been blue, perhaps since the dawn of the first browser. This “Digital” blue, a utility color for links and clickable items, is essential in any core palette.</p>
+<p><em>Takeaway</em>: When (not if ;) ) you go with your “Digital Blue,” choose an accessible one and make sure it doesn’t clash with the brand’s own blue, or red, orange, purple, or green.</p>
+<figure class="escom-article-figure">
+    <div class="escom-article-figure__image-container">
+        <img class="escom-article-figure__image" src="/images/articles//5.png" alt="Blue used in links and buttons">
+    </div>
+    <figcaption class="escom-article-figure__caption"></figcaption>
+</figure>
+<hr>
+<h2>Tints &amp; Shades Per Color</h2>
+<p>You can’t have just a few colors and call it a day, right? System users often need to tune a color choice across a range, reuse with ease, and know their boundaries.</p>
+<h3>#5. Stack the Tint &amp; Shade Range, Per Color</h3>
+<p>Color palette display patterns long predate the web. Yet I still love me a compactly arranged tint stack. They can be just…gorgeous. The best stacks visualize more than just a color, combining its name with HEX codes, code variables, and other indicators (such as prohibiting overlaid type). A quick scan is all you need.</p>
+<p><em>Takeaway</em>: Stack available colors in each hue, and treat the stack as a visualization to include important details compactly.</p>
+<figure class="escom-article-figure">
+    <div class="escom-article-figure__image-container">
+        <img class="escom-article-figure__image" src="/images/articles//6.png" alt="Tint stacks of blue and orange from Google Material design">
+    </div>
+    <figcaption class="escom-article-figure__caption"><a href="https://www.google.com/design/spec/style/color.html" rel="nofollow noopener" target="_blank">Material Design</a>’s Indigo and Deep Orange</figcaption>
+</figure>
+<hr>
+<h3>#6. Name Tints &amp; Shades by Lightness</h3>
+<p>We’ve all been there. A month into the system, the neutrals <code>$color-gray-1</code>, <code>$color-gray-2</code>, ... , <code>$color-gray-7</code> — are stable. And then, in a stroke, you’ve got another tint to add stuck between -1 and -2. That numbering system stinks.</p>
+<p><em>Takeaway</em>: Scale color names between 0 and 100 based on HSL’s lightness, such as <code>$color-gray-05</code> and <code>$color-gray-92</code>. The scale reflects a familiar range from dark to light, allows for injecting new options between, and heck if I won’t remember <code>$color-gray-93</code> until we retire it later.</p>
+<figure class="escom-article-figure">
+    <div class="escom-article-figure__image-container">
+        <img class="escom-article-figure__image" src="/images/articles//7.png" alt="Tint stacks of gray named poorly (enumerated) and well (using lightness)">
+    </div>
+    <figcaption class="escom-article-figure__caption"></figcaption>
+</figure>
+<hr>
+<h3>#7. Limit Tint &amp; Shade Quantity</h3>
+<p>At the core of a good system is choice without endless options, a stable aesthetic to serve as a starting point. Odds are, you aren’t <a href="https://www.google.com/design/spec/style/color.html">Material Design</a>, intended to serve countless products. In most cases, a design system need not offer boundless choices. The more choices you provide, the tougher it’ll be to control harmonic combinations and a consistent feel across applications.</p>
+<p><em>Takeaway</em>: Offer a handful of options and avoid tedious variety. Empower system users with just enough choice: more than a single option, but only up to a few intentional choices.</p>
+<figure class="escom-article-figure">
+    <div class="escom-article-figure__image-container">
+        <img class="escom-article-figure__image" src="/images/articles//8.png" alt="Two orange tint stacks, one from Google Material with many and another with only a few">
+    </div>
+    <figcaption class="escom-article-figure__caption"></figcaption>
+</figure>
+<hr>
+<h3>#8. Tell Me How To Transform: Hand-Pick or Functionally</h3>
+<p>Modern tools like SASS and Stylus offer transformation functions like darken and lighten to shift a color by a brightness percentage. These handy tools enable a you to alter a color for subtle contrasts like a hovered button or tiered navigation.</p>
+<p>But transforms can be troublesome: carefully crafted base colors can become inaccessible alternatives (see below), a page’s overall palette can muddy, or a “5% system” that works on moderately bright colors yields insufficient contrast for a very light or dark case.</p>
+<p><em>Takeaway</em>: Deliberately allow — or avoid — color transformations in your system. If you endorse the practice, then offer examples of when and how to do it effectively in your system, such as 5–10% for moderately bright cases and 10–20% in more extreme cases. If transformations should be avoided , document that succinctly.</p>
+<figure class="escom-article-figure">
+    <div class="escom-article-figure__image-container">
+        <img class="escom-article-figure__image" src="/images/articles//9.png" alt="Two orange tint stacks annotated for handpicked and functionally transformed colors, respectively">
+    </div>
+    <figcaption class="escom-article-figure__caption"></figcaption>
+</figure>
+<hr>
+<h2>Secondary Palettes</h2>
+<p>Beyond the brand colors and their variants, well-considered color systems array the broader variety of colors reserved for varied purposes.</p>
+<h3>#9. Define Meaningful Sets Like Feedback Colors</h3>
+<p>Most systems reserve a certain red for errors, green for success, yellow for warning, and (possibly a lighter sky) blue for informational messages. Feedback color is critical, because it’s positioned at the top of the page interacting with other key components and/or encountered as a result of an unwelcome circumstance. Without system guidance, such messages become embedded in product code, the result of product teams solving a challenge quickly and moving on.</p>
+<p><em>Takeaway</em>: Explore and define the standard feedback colors and other relevant sets to ensure that colors fit harmoniously rather wedging them in later or having teammates recall “I just grabbed it from Google.”</p>
+<figure class="escom-article-figure">
+    <div class="escom-article-figure__image-container">
+        <img class="escom-article-figure__image" src="/images/articles//10.png" alt="Green, yellow, red and blue colors as success, warning, error and informational">
+    </div>
+    <figcaption class="escom-article-figure__caption">Typical feedback colors: success, warning, error and informational</figcaption>
+</figure>
+<hr>
+<h3>#10. Illustrate Theme Variety</h3>
+<p>In some systems, color use is customized per product, section, or brand. Often, this may be a result of relating a master brand (think, Marriott International) to its sub-brands (think Courtyard Hotels, Ritz Carlton, and Moxy Hotels). Or it’s a prefab themes like <em>Ambient Warmth</em> and <em>Frozen Blue</em>. Maybe the user is complete control, and you need to illustrate the breadth of (all the havoc of) what they can do.</p>
+<p><em>Takeaway</em>: Reveal the range of themes available compactly, and set boundaries around allowable theme colors in certain contexts.</p>
+<figure class="escom-article-figure">
+    <div class="escom-article-figure__image-container">
+        <img class="escom-article-figure__image" src="/images/articles//11.png" alt="A variety of theme colors for Marriott hotels">
+    </div>
+    <figcaption class="escom-article-figure__caption">Theme colors for multiple Marriott.com hotels, derived from <a href="http://www.marriott.com/hotels/travel/wasrw-renaissance-washington-dc-dupont-circle-hotel/" rel="nofollow noopener" target="_blank">product pages</a></figcaption>
+</figure>
+<hr>
+<h3>#11. Define <em>How</em> Theming Works</h3>
+<p>It’s not enough to simply say “Go ahead and theme it!” A theme color may apply to predictable accents throughout a UI such as button <em>background-color</em>, active tab <em>background-color</em>, or a primary navigation’s thick <em>border-top</em>. Just as important, theme colors may be forbidden from altering other bits, such as <em>long form type</em> or — yikes! — a <em>link color</em> that ends up invisible.</p>
+<p><em>Takeaway:</em> Identify how theming works, particularly via reference to specific UI element properties in play. Just as important, articulate which — if not most — elements are off limits.</p>
+<figure class="escom-article-figure">
+    <div class="escom-article-figure__image-container">
+        <img class="escom-article-figure__image" src="/images/articles//12.png" alt="Theming color applied to a background, button and link">
+    </div>
+    <figcaption class="escom-article-figure__caption"></figcaption>
+</figure>
+<hr>
+<h3>#12. Avoid Guiding on Color-Mixing Until (At Least) Dust Settles</h3>
+<p>One of my favorite all time design system tools is <a href="http://www.getmdl.io/customize/index.html">Google’s MDL Color Customizer</a>, which enables users to combine primary and secondary UI colors effectively. It’s so easy, and the outcome so helpful. Yet, the system teams I work with either don’t want to provide this kind of flexibility or lack the time and care necessary to solve such a combinatoric challenge.</p>
+<p><em>Takeaway</em>: Avoid the rabbit hole of solving for a vast array of color combinations unless it’s a core system value. In most cases, system users will pair up their own combinations or benefit from a tool more dedicated to doing just that. Help them propagate their choice rather than solving for every combination they may consider. That experimentation is their job.</p>
+<p>Serve users of your system by making it efficient to <em>propagate </em>their choice through a product, rather than <em>making the choice</em> for them.</p>
+<hr>
+<h2>Contrast &amp; Accessibility</h2>
+<p>Solving for accessible color contrast should a core practice of setting up any digital color system from the get go. However, design can be tumultuous place, and teams can lose sometimes. Or some members don’t know about accessibility. Or they simply don’t prioritize it.</p>
+<p>A systems team can engrain accessible practices into a workflow to provoke and spread values in accessibility broadly across an enterprise.</p>
+<h3>#13. Check Contrast Early &amp; Ritually</h3>
+<p>It happens often: a few weeks or days before a product — or design system — launch, <em>finally</em> somebody notices. The design team hasn’t taken necessary care to ensure the primary and secondary color palette is being applied in a way to meet WCAG 2.0 color contrast of 3.0 (for large, heavier type) or 4.5 (for standard type). So designers — and then, their developers — scramble to determine fixes and inject it into the code.</p>
+<p><em>Takeaway</em>: Any system designer responsible for color must be familiar with WCAG 2.0 rules, have a tool (like Tanaguru) to test color pairs, and incorporate the practice into color selection.</p>
+<figure class="escom-article-figure">
+    <div class="escom-article-figure__image-container">
+        <img class="escom-article-figure__image" src="/images/articles//13.png" alt="A screenshot of the Tanaguru color contrast finder">
+    </div>
+    <figcaption class="escom-article-figure__caption"><a href="http://contrast-finder.tanaguru.com/" rel="nofollow noopener" target="_blank">Tanaguru</a>, one of many accessibility calculators online</figcaption>
+</figure>
+<hr>
+<h3>#14. Explore Accessible Color Choices Across Ranges</h3>
+<p>A drawback of WCAG guidelines is its stark threshold: a color pair passes or fails. This leaves designers yearning for more, but worse leaves stakeholders flummoxed at how bad the color pair fails and how much it needs to change.</p>
+<p>Conversation quickens when we reveal a spectrum of choices. There are a bevy of tools in the design community for visualizing the contrast between foreground and background colors, including:</p>
 <ul>
-<li>As a system user, I’ll have sufficient design guidance (use when, behaviors, visual style, content, &amp; more) and code specs (reference tables, variables, code/example demos) to use the feature correctly.</li>
-<li>As a systems technical editor, the documentation reflects the content models and editorial standards for our documentation.</li>
+<li><a href="webaim.org/resources/contrastchecker/">webaim.org/resources/contrastchecker/</a></li>
+<li><a href="contrast-finder.tanaguru.com/">contrast-finder.tanaguru.com/</a></li>
+<li><a href="snook.ca/technical/colour_contrast/colour.html">snook.ca/technical/colour_contrast/- colour.html</a></li>
+<li><a href="www.checkmycolours.com/">www.checkmycolours.com/</a></li>
+<li><a href="https://usecontrast.com/">usecontrast.com/</a> (Mac app)</li>
+<li><a href="http://www.brandwood.com/a11y/">www.brandwood.com/a11y/</a> (Text on images)</li>
+<li><a href="http://www.webaxe.org/color-contrast-tools/">www.webaxe.org/color-contrast-tools/</a > (Comprehensive list of many tools)</li>
 </ul>
-<hr>
-<h2 id="5-publish">#5. Publish</h2>
-<p>Once documentation is complete, it must be migrated to the publishing platform for release.</p>
-<p><em>Assigned To</em>: Front-end developer or designer capable of working in code.</p>
-<p><em>Tools:</em> Most system teams I’ve come across use some form of HTML templating (ours: <a href="https://mozilla.github.io/nunjucks/templating.html">Nunjucks</a> weaving <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a> and homegrown <a href="/articles/design-system-doc-components">Documentation Components</a> together), while others hand-code HTML page-by-page (Ack!) or have a more formal CMS (Wordpress or Drupal, anyone?).</p>
-<p><em>Activities</em>:</p>
-<ul>
-<li>Migrating copy from Google Docs to the publishing platform.</li>
-<li>Uploading assets like images, design templates, and interactive demos.</li>
-<li>Finalizing live code/example demos.</li>
-<li>Testing page display, links, and other publishing QA.</li>
-</ul>
-<p><em>Tools</em>: Usually an assortment of assets that weave into a system’s site experience, the rubber meets the road with the composed and published page(s), achieved via however content is managed.</p>
-<p><em>Definition of Done</em>:</p>
-<ul>
-<li>As a system team collaborator, I’ve reviewed committed page changes and tested page displays and links.</li>
-<li>As a system user, I have access to in-depth documentation of a complete feature I can use.</li>
-</ul>
-<hr>
-<h2 id="steps-arent-a-waterfall-but-do-end-sequentially">Steps Aren’t a Waterfall, But Do End Sequentially</h2>
-<p>While the workflow suggests a strict sequence, that doesn’t necessarily imply a waterfall where subsequent steps don’t begin until their predecessor ends. Instead, it’s very common to conduct steps — Design, Build, and Doc — simultaneously, even if the intensity of one is driving the work.</p>
-
-
-  
-
-<figure class="escom-article-figure escom-article-figure--break-bleed">
-    <div class="escom-article-figure__image-container">
-        <img class="escom-article-figure__image" src="/images/articles/design-system-features-step-by-step/3.png" alt="Diagram of steps overlapping with many substeps annotated">
-    </div>
-    <figcaption class="escom-article-figure__caption"></figcaption>
-</figure>
-
-
-
-  <p>For example, as design solidifies, we’ll start our Google Doc to itemize requirements and collaborate on naming and also start to build prototype HTML and CSS to validate the design. Later on, we’ll review of draft of fully coded designs and shortly thereafter close the design step as a result.</p>
-<p>That’s why we’ll have top-level JIRA tasks for each step, since different people may be working different steps at the same time, and each task has different reviewers (for which we use subtasks). There are other ways to model this in JIRA, but this setup works for us.</p>
-<p>Nevertheless, the steps <em>end</em> sequentially, such that Design closes before Build, and Build closes before Doc. Publish, at the end, is the only task that doesn’t begin until all the other steps have concluded.</p>
-<hr>
-<h2 id="not-all-features-require-every-step">Not All Features Require Every Step</h2>
-<p>Discovery is unnecessary for many features of any self-respecting design system such as color, buttons, or form controls. Instead, each starts with design and progress through remaining steps.</p>
-
-
-  
-
+<p>We even built our own tool at EightShapes called the <a href="http://contrast-grid.eightshapes.com/">Contrast Grid</a>. This tool enables you to easily input a range of HEX codes, name them, and contrast every combination (even distinct colors for foreground and background).</p>
 <figure class="escom-article-figure">
     <div class="escom-article-figure__image-container">
-        <img class="escom-article-figure__image" src="/images/articles/design-system-features-step-by-step/4.png" alt="Diagram of steps overlapping yet ending in sequence">
+        <img class="escom-article-figure__image" src="/images/articles//14.png" alt="Interactive colors displayed across a range of neutral backgrounds">
     </div>
-    <figcaption class="escom-article-figure__caption"></figcaption>
+    <figcaption class="escom-article-figure__caption">Explore foreground and background color contrast across ranges using <a href="http://contrast-grid.eightshapes.com/">Contrast Grid</a></figcaption>
 </figure>
-
-
-
-  <p>However, many other tasks use a subset of the workflow to make things. A helpful Getting Started page or description of a Contribution process requires only documentation and thus omits Design and Build:</p>
-
-
-  
-
-<figure class="escom-article-figure">
-    <div class="escom-article-figure__image-container">
-        <img class="escom-article-figure__image" src="/images/articles/design-system-features-step-by-step/5.png" alt="Diagram of a subset of steps">
-    </div>
-    <figcaption class="escom-article-figure__caption"></figcaption>
-</figure>
-
-
-
-  <p>Similarly, UX patterns don’t result in reusable code, but can require discovery to assess cross-product relevance and needs and iterate through design ideas before being formally documented and published on a system site.</p>
-
-
-  
-
-<figure class="escom-article-figure">
-    <div class="escom-article-figure__image-container">
-        <img class="escom-article-figure__image" src="/images/articles/design-system-features-step-by-step/6.png" alt="Diagram of a subset of steps">
-    </div>
-    <figcaption class="escom-article-figure__caption"></figcaption>
-</figure>
-
-
-
-  <hr>
-<h2 id="for-trivial-tasks-combine-steps">For Trivial Tasks, Combine Steps</h2>
-<p>Our team will also classify Sketch symbol library development as a Design task that’s followed by combination of Doc (change the version number, describe the change in one line in the release history) and Publish as a single task:</p>
-
-
-  
-
-<figure class="escom-article-figure">
-    <div class="escom-article-figure__image-container">
-        <img class="escom-article-figure__image" src="/images/articles/design-system-features-step-by-step/7.png" alt="Diagram indicating combined steps">
-    </div>
-    <figcaption class="escom-article-figure__caption"></figcaption>
-</figure>
-
-
-
-  <p>In another case where a feature — like a disabled state — is documented sufficiently by a coded example and requires no further elaboration, we’ll skip the Doc step and combine Build / Publish step.</p>
-
-
-  
-
-<figure class="escom-article-figure">
-    <div class="escom-article-figure__image-container">
-        <img class="escom-article-figure__image" src="/images/articles/design-system-features-step-by-step/8.png" alt="Diagram indicating combined steps">
-    </div>
-    <figcaption class="escom-article-figure__caption"></figcaption>
-</figure>
-
-
-
-  <p>In any case where steps are combined into a single task, the completion criteria for all steps still apply to the task.</p>
+<p>This quick visualization isn't just efficient for experimenting and choosing the right color, but also communicating contrast ranges to those less familiar with contrast subtleties. Recently, we're really encouraged about how such exploratory tools are being integrated directly into design tools, too.</p>
+<p><em>Takeaway</em>: When exploring accessible color contrast, show a range of choices to help a team select a color that passes the test.</p>
 <hr>
-<h2 id="reflect-the-steps-in-task-or-subtask-titles">Reflect the Steps in Task or Subtask Titles</h2>
-<p>Naming conventions — or lack thereof — within a backlog can reflect a level of predictability and rigor of a team.</p>
-<p>As I’ve instituted this workflow across many teams over the past few years, our backlogs have become a scannable set of titled tasks for which we can accurately predict the outcomes, reviewers, and relationships of each one.</p>
-
-
-  
-
-<figure class="escom-article-figure escom-article-figure--break-bleed">
+<h3>#15. Solve the Reverse Light on Dark and Dark on Light</h3>
+<p>When creating a system, it’s up to the systems designer to be mindful of and solve for the entire range of choices on offer. It’s not enough to just test for accessibility problems as they arise. Instead, a color palette should be thoroughly reviewed prior to publishing a system for reuse.</p>
+<p>This is especially true for reverse color treatments. It’s very common for a system to default to dark text on a light background. However, most find themselves reversing color treatments, whether a black and white on light and dark neutrals or tints of another primary or secondary color.</p>
+<p><em>Takeaway:</em> Solve for and recommend reversed pairings to adopt or avoid.</p>
+<figure class="escom-article-figure">
     <div class="escom-article-figure__image-container">
-        <img class="escom-article-figure__image" src="/images/articles/design-system-features-step-by-step/9.png" alt="Comparison of Jira task titles, verbose and unstructured versus succinct and structured">
+        <img class="escom-article-figure__image" src="/images/articles//15.png" alt="Link colors explored on light and dark neutral backgrounds">
     </div>
-    <figcaption class="escom-article-figure__caption"></figcaption>
+    <figcaption class="escom-article-figure__caption">A table of calculated contrast (using a SASS function) between neutral backgrounds and interactive blue alternatives</figcaption>
 </figure>
-
-
-
-  <p>We’ll use the ticket’s title to reflect a feature’s name and workflow step, and leave the acceptance criteria and deeper descriptions to the details.</p>
 <hr>
-<h2 id="structure-reports-to-visualize-doneness">Structure Reports to Visualize Doneness</h2>
-<p>Using a well-modeled workflow, the system team can report on progress across features in a structured fashion, helping stakeholders (and sponsors!) see how the team progresses towards the goals of a first release or beyond.</p>
+<h3>#16. Use Color to Provoke Broader Accessibility Awareness</h3>
+<p>Color is fundamental to a system, and accessible color contrast is fundamental to color. This injects accessibility smack dab into the middle of a system’s formation. People that matter are paying attention: brand managers, design leads, developers, and execs. What a wonderful opportunity to use color to open a door to the broader array of accessibility considerations.</p>
+<p><em>Takeaway</em>: Seize the opportunity to advocate for accessibility. Always be probing a collaborator’s knowledge of accessibility (or lack thereof) and educate and advocate all you can.</p>
+<hr>
+<h2>Revision History</h2>
+<p><strong>2020-01-24</strong>: Revised color contrast section to highlight EightShapes contrast grid (including image), list other relevant contrast tools.</p>
 
-
-  
-
-<figure class="escom-article-figure escom-article-figure--break-bleed">
-    <div class="escom-article-figure__image-container">
-        <img class="escom-article-figure__image" src="/images/articles/design-system-features-step-by-step/10.png" alt="Doneness matrix as a scoreboard of a component library release">
     </div>
-    <figcaption class="escom-article-figure__caption">First Release <a href="https://medium.com/p/doneness-matrices-c7f0a026365f" target="_blank">Doneness Matrix</a></figcaption>
-</figure>
+</div>
 
-
-
-  <p>At the beginning of every sprint leading up to a first release, I’ll include this table of visual style and UI component features progressing across steps. This gives stakeholders a sense of progress, both item-by-item as well as for the overall release scope.</p>
-
-
-
-        </div>
-    </div>
-    
 
 <div class="esds-row esds-container--light esds-row--tall-inset">
     <div class="esds-row__inner escom-footer-systems__row">
@@ -1780,7 +1728,7 @@
 
 
 
-    
+
 
     
 
@@ -1817,7 +1765,6 @@
         
     </div>
 </div>
-
 
 
 

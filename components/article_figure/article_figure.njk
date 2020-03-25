@@ -7,11 +7,11 @@
     class = false
     ) %}
 
-    <figure class="escom-article-figure{% if class %} {{ class }}{% endif %}">
-        <div class="escom-article-figure__image-container">
-            <img class="escom-article-figure__image" src="/images/articles/{{ image_path }}/{{ image_number }}.{{ image_filetype }}" alt="{{ image_alt }}">
-        </div>
-        <figcaption class="escom-article-figure__caption">{{ caption | safe }}</figcaption>
-    </figure>
+<figure class="escom-article-figure{% if class %} {{ class }}{% endif %}">
+    <div class="escom-article-figure__image-container">
+        <img class="escom-article-figure__image" src="/images/articles/{{ image_path }}/{{ image_number }}.{{ image_filetype }}" alt="{{ image_alt }}">
+    </div>
+    <figcaption class="escom-article-figure__caption">{{ caption | safe }}</figcaption>
+</figure>
 
 {% endmacro %}
