@@ -137,7 +137,7 @@ section,
 summary {
     display: block;
 }
-/* 
+/*
   Fonts
 */
 /* ---------------------------------------------------------------------------*/
@@ -395,12 +395,6 @@ a:active {
     -ms-word-wrap: break-word;
     word-wrap: break-word;
 }
-.link-more:after {
-    content: url(/i/readmore-btn.png);
-    position: relative;
-    top: 5px;
-    margin-left: 4px;
-}
 /* ---------------------------------------------------------------------------*/
 /* NORMALIZATION: GROUPING ELEMENTS                                           */
 
@@ -518,7 +512,7 @@ td {
 }
 th {
     /* Distinguishing table headers from data cells. */
-    
+
     font-weight: bold;
     text-align: left;
 }

@@ -134,7 +134,7 @@ section,
 summary {
   display: block; }
 
-/* 
+/*
   Fonts
 */
 /* ---------------------------------------------------------------------------*/
@@ -383,12 +383,6 @@ a:active {
 .text-url {
   -ms-word-wrap: break-word;
   word-wrap: break-word; }
-
-.link-more:after {
-  content: url(../images/case_studies/i/readmore-btn.png);
-  position: relative;
-  top: 5px;
-  margin-left: 4px; }
 
 /* ---------------------------------------------------------------------------*/
 /* NORMALIZATION: GROUPING ELEMENTS                                           */

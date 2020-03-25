@@ -34,7 +34,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("dist");
   eleventyConfig.addPassthroughCopy("scripts");
   eleventyConfig.addPassthroughCopy({"node_modules/esds-library/dist" : "dependencies"});
+  eleventyConfig.addPassthroughCopy({"node_modules/@eightshapes/esds-code-snippet/dist" : "dependencies"});
   eleventyConfig.addPassthroughCopy({"node_modules/esds-library/dist/esds.svg" : "icons/esds.svg"});
+  eleventyConfig.addPassthroughCopy({"node_modules/@webcomponents/custom-elements/custom-elements.min.js" : "dependencies/custom-elements.min.js"});
   eleventyConfig.addWatchTarget("./templates");
   eleventyConfig.addWatchTarget("./_includes");
 
