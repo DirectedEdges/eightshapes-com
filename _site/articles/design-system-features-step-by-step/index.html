@@ -137,9 +137,9 @@
     
 
     
-    &lt;p&gt;Some teams barely organize how things get done. They’ll add a dash of design here, dive deep into code there, and maybe sprinkle on documentation as an afterthought. “Should we make this? What should it be? When do we QA?” For less disciplined teams, who the heck knows.&lt;/p&gt;
-&lt;p&gt;Lacking a workflow, a team litters a backlog with heterogeneous, overlapping tasks. From afar, you can’t learn or remember task objective and outcome(s). It’s impossible to relate one task to another. Friction and uncertainty ensue as a team drifts through day to day collaboration.&lt;/p&gt;
-&lt;p&gt;On the other hand, a defined workflow helps a team mutually understand the scope, reviewers, tools, and the definition of done at each step. With a workflow, collaboration tightens, delivery quickens, and the team predictably delivers features that products love.&lt;/p&gt;
+    <p>Some teams barely organize how things get done. They’ll add a dash of design here, dive deep into code there, and maybe sprinkle on documentation as an afterthought. “Should we make this? What should it be? When do we QA?” For less disciplined teams, who the heck knows.</p>
+<p>Lacking a workflow, a team litters a backlog with heterogeneous, overlapping tasks. From afar, you can’t learn or remember task objective and outcome(s). It’s impossible to relate one task to another. Friction and uncertainty ensue as a team drifts through day to day collaboration.</p>
+<p>On the other hand, a defined workflow helps a team mutually understand the scope, reviewers, tools, and the definition of done at each step. With a workflow, collaboration tightens, delivery quickens, and the team predictably delivers features that products love.</p>
 
 
   
@@ -153,51 +153,51 @@
 
 
 
-  &lt;p&gt;My system teams make most features — visual style, UI components, documentation tooling, UX patterns, and more — by following simple, identified steps of &lt;strong&gt;discover&lt;/strong&gt; , &lt;strong&gt;design&lt;/strong&gt; , &lt;strong&gt;build&lt;/strong&gt; , &lt;strong&gt;documentation&lt;/strong&gt; , and &lt;strong&gt;publish&lt;/strong&gt;. I can’t imagine building a design system without it.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;1-discover&quot;&gt;#1. Discover&lt;/h2&gt;
-&lt;p&gt;Discovery clarifies the potential and the relevance of a new feature and decides whether or not to pursue it.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Assigned To&lt;/em&gt;: Anyone on the team, although usually a designer, front-end developer or product manager.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Activities&lt;/em&gt;: Triaging requests, interviews, products and system analysis, discussions with influential partners in the community, and even formal proposal processes like a &lt;a href=&quot;/articles/contributions-to-design-systems&quot;&gt;contributor’s Request for Comment&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Definition of Done&lt;/em&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;As a system team, we understand the scope and cost of making this feature and who may do each step.&lt;/li&gt;
-&lt;li&gt;As a system team (or product manager), we’ve (or I’ve) agreed or declined to or pursue this feature and prioritized it in our backlog.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;2-design&quot;&gt;#2. Design&lt;/h2&gt;
-&lt;p&gt;Design finalizes a range of variations, states, and other dimensions at high fidelity so that Build can be completed, whether for visual style (e.g., new icons!), UI components (like a button), or documentation displays (like a Color page’s swatches).&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Assigned To&lt;/em&gt;: A designer.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Activities&lt;/em&gt;: Iterative design work and critique.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Tools&lt;/em&gt;: We’ll employ tools like Sketch, InVision, or Photoshop, finalizing work at a high-fidelity consistent with system conventions.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Definition of Done&lt;/em&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;As a design director (or similar role), I’ve approved the final design.&lt;/li&gt;
-&lt;li&gt;As system designer(s) &lt;em&gt;and&lt;/em&gt; in the community, we’ve agreed that the design solves the problem and is suitable for use across products.&lt;/li&gt;
-&lt;li&gt;As the assigned system engineer, I have the sufficient level of variations, states, and other details to complete a build.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;3-build&quot;&gt;#3. Build&lt;/h2&gt;
-&lt;p&gt;Build results in the codification of HTML, CSS, JavaScript, and other code.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Assigned To&lt;/em&gt;: Usually a front-end developer, although at times a designer.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Activities&lt;/em&gt;: Front end development and &lt;a href=&quot;/articles/component-qa-in-design-systems&quot;&gt;testing, often in the context of a “kitchen sink” pages&lt;/a&gt; (not documentation site pages) that demonstrates the range of the feature’s capabilities isolated from other system concerns.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Tools&lt;/em&gt;: Code and assets, git to manage within prescribed branches, and pull requests to comment and task corrections.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Definition of Done&lt;/em&gt;: To merge the feature into a release…&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;As the assigned system designer, I’ve reviewed the build’s quality and confirmed it properly implemented scoped features.&lt;/li&gt;
-&lt;li&gt;As a peer system engineer (or QA specialist), I’ve reviewed that the build functions properly, meets all &lt;a href=&quot;/articles/component-qa-in-design-systems&quot;&gt;quality criteria&lt;/a&gt; (accessibility, browser support, etc), and adheres to system’s code styles and conventions.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;4-doc&quot;&gt;#4. Doc&lt;/h2&gt;
-&lt;p&gt;Ah, Doc, the task often conflated with Design or Build or ignored until the last minute. To our teams, Doc is different, focused on communicating not &lt;em&gt;what to build&lt;/em&gt;, but instead &lt;em&gt;what’s built&lt;/em&gt; and &lt;em&gt;how to use it&lt;/em&gt;. Doc is a separate task so that our authors focus on the quality and depth that system users crave.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Assigned To&lt;/em&gt;: The designer and/or front-end developer doing the work.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Activities&lt;/em&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Author documentation copy for topics like Use When, Behaviors, Editorial, and other guidelines relevant to the feature and it’s variations.&lt;/li&gt;
-&lt;li&gt;Identify if not create final code/example demonstrations.&lt;/li&gt;
-&lt;li&gt;Compose illustrations, interactive demos, and screenshots.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;Tools&lt;/em&gt;: &lt;strong&gt;Author in Google Docs, NOT Pull Requests!&lt;/strong&gt; This collaboration includes a designer, engineer, reviewer(s), and ideally a technical editor too. Pull requests are primitive, limiting comments to lines.&lt;/p&gt;
+  <p>My system teams make most features — visual style, UI components, documentation tooling, UX patterns, and more — by following simple, identified steps of <strong>discover</strong> , <strong>design</strong> , <strong>build</strong> , <strong>documentation</strong> , and <strong>publish</strong>. I can’t imagine building a design system without it.</p>
+<hr>
+<h2 id="1-discover">#1. Discover</h2>
+<p>Discovery clarifies the potential and the relevance of a new feature and decides whether or not to pursue it.</p>
+<p><em>Assigned To</em>: Anyone on the team, although usually a designer, front-end developer or product manager.</p>
+<p><em>Activities</em>: Triaging requests, interviews, products and system analysis, discussions with influential partners in the community, and even formal proposal processes like a <a href="/articles/contributions-to-design-systems">contributor’s Request for Comment</a>.</p>
+<p><em>Definition of Done</em>:</p>
+<ul>
+<li>As a system team, we understand the scope and cost of making this feature and who may do each step.</li>
+<li>As a system team (or product manager), we’ve (or I’ve) agreed or declined to or pursue this feature and prioritized it in our backlog.</li>
+</ul>
+<hr>
+<h2 id="2-design">#2. Design</h2>
+<p>Design finalizes a range of variations, states, and other dimensions at high fidelity so that Build can be completed, whether for visual style (e.g., new icons!), UI components (like a button), or documentation displays (like a Color page’s swatches).</p>
+<p><em>Assigned To</em>: A designer.</p>
+<p><em>Activities</em>: Iterative design work and critique.</p>
+<p><em>Tools</em>: We’ll employ tools like Sketch, InVision, or Photoshop, finalizing work at a high-fidelity consistent with system conventions.</p>
+<p><em>Definition of Done</em>:</p>
+<ul>
+<li>As a design director (or similar role), I’ve approved the final design.</li>
+<li>As system designer(s) <em>and</em> in the community, we’ve agreed that the design solves the problem and is suitable for use across products.</li>
+<li>As the assigned system engineer, I have the sufficient level of variations, states, and other details to complete a build.</li>
+</ul>
+<hr>
+<h2 id="3-build">#3. Build</h2>
+<p>Build results in the codification of HTML, CSS, JavaScript, and other code.</p>
+<p><em>Assigned To</em>: Usually a front-end developer, although at times a designer.</p>
+<p><em>Activities</em>: Front end development and <a href="/articles/component-qa-in-design-systems">testing, often in the context of a “kitchen sink” pages</a> (not documentation site pages) that demonstrates the range of the feature’s capabilities isolated from other system concerns.</p>
+<p><em>Tools</em>: Code and assets, git to manage within prescribed branches, and pull requests to comment and task corrections.</p>
+<p><em>Definition of Done</em>: To merge the feature into a release…</p>
+<ul>
+<li>As the assigned system designer, I’ve reviewed the build’s quality and confirmed it properly implemented scoped features.</li>
+<li>As a peer system engineer (or QA specialist), I’ve reviewed that the build functions properly, meets all <a href="/articles/component-qa-in-design-systems">quality criteria</a> (accessibility, browser support, etc), and adheres to system’s code styles and conventions.</li>
+</ul>
+<hr>
+<h2 id="4-doc">#4. Doc</h2>
+<p>Ah, Doc, the task often conflated with Design or Build or ignored until the last minute. To our teams, Doc is different, focused on communicating not <em>what to build</em>, but instead <em>what’s built</em> and <em>how to use it</em>. Doc is a separate task so that our authors focus on the quality and depth that system users crave.</p>
+<p><em>Assigned To</em>: The designer and/or front-end developer doing the work.</p>
+<p><em>Activities</em>:</p>
+<ul>
+<li>Author documentation copy for topics like Use When, Behaviors, Editorial, and other guidelines relevant to the feature and it’s variations.</li>
+<li>Identify if not create final code/example demonstrations.</li>
+<li>Compose illustrations, interactive demos, and screenshots.</li>
+</ul>
+<p><em>Tools</em>: <strong>Author in Google Docs, NOT Pull Requests!</strong> This collaboration includes a designer, engineer, reviewer(s), and ideally a technical editor too. Pull requests are primitive, limiting comments to lines.</p>
 
 
   
@@ -211,33 +211,33 @@
 
 
 
-  &lt;p&gt;Google Docs is made for collaborative authoring in which you can comment on any word or image as well as suggest and manage changes inline.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Definition of Done&lt;/em&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;As a system user, I’ll have sufficient design guidance (use when, behaviors, visual style, content, &amp;amp; more) and code specs (reference tables, variables, code/example demos) to use the feature correctly.&lt;/li&gt;
-&lt;li&gt;As a systems technical editor, the documentation reflects the content models and editorial standards for our documentation.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;5-publish&quot;&gt;#5. Publish&lt;/h2&gt;
-&lt;p&gt;Once documentation is complete, it must be migrated to the publishing platform for release.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Assigned To&lt;/em&gt;: Front-end developer or designer capable of working in code.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Tools:&lt;/em&gt; Most system teams I’ve come across use some form of HTML templating (ours: &lt;a href=&quot;https://mozilla.github.io/nunjucks/templating.html&quot;&gt;Nunjucks&lt;/a&gt; weaving &lt;a href=&quot;https://daringfireball.net/projects/markdown/syntax&quot;&gt;Markdown&lt;/a&gt; and homegrown &lt;a href=&quot;/articles/design-system-doc-components&quot;&gt;Documentation Components&lt;/a&gt; together), while others hand-code HTML page-by-page (Ack!) or have a more formal CMS (Wordpress or Drupal, anyone?).&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Activities&lt;/em&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Migrating copy from Google Docs to the publishing platform.&lt;/li&gt;
-&lt;li&gt;Uploading assets like images, design templates, and interactive demos.&lt;/li&gt;
-&lt;li&gt;Finalizing live code/example demos.&lt;/li&gt;
-&lt;li&gt;Testing page display, links, and other publishing QA.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;Tools&lt;/em&gt;: Usually an assortment of assets that weave into a system’s site experience, the rubber meets the road with the composed and published page(s), achieved via however content is managed.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Definition of Done&lt;/em&gt;:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;As a system team collaborator, I’ve reviewed committed page changes and tested page displays and links.&lt;/li&gt;
-&lt;li&gt;As a system user, I have access to in-depth documentation of a complete feature I can use.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;steps-arent-a-waterfall-but-do-end-sequentially&quot;&gt;Steps Aren’t a Waterfall, But Do End Sequentially&lt;/h2&gt;
-&lt;p&gt;While the workflow suggests a strict sequence, that doesn’t necessarily imply a waterfall where subsequent steps don’t begin until their predecessor ends. Instead, it’s very common to conduct steps — Design, Build, and Doc — simultaneously, even if the intensity of one is driving the work.&lt;/p&gt;
+  <p>Google Docs is made for collaborative authoring in which you can comment on any word or image as well as suggest and manage changes inline.</p>
+<p><em>Definition of Done</em>:</p>
+<ul>
+<li>As a system user, I’ll have sufficient design guidance (use when, behaviors, visual style, content, &amp; more) and code specs (reference tables, variables, code/example demos) to use the feature correctly.</li>
+<li>As a systems technical editor, the documentation reflects the content models and editorial standards for our documentation.</li>
+</ul>
+<hr>
+<h2 id="5-publish">#5. Publish</h2>
+<p>Once documentation is complete, it must be migrated to the publishing platform for release.</p>
+<p><em>Assigned To</em>: Front-end developer or designer capable of working in code.</p>
+<p><em>Tools:</em> Most system teams I’ve come across use some form of HTML templating (ours: <a href="https://mozilla.github.io/nunjucks/templating.html">Nunjucks</a> weaving <a href="https://daringfireball.net/projects/markdown/syntax">Markdown</a> and homegrown <a href="/articles/design-system-doc-components">Documentation Components</a> together), while others hand-code HTML page-by-page (Ack!) or have a more formal CMS (Wordpress or Drupal, anyone?).</p>
+<p><em>Activities</em>:</p>
+<ul>
+<li>Migrating copy from Google Docs to the publishing platform.</li>
+<li>Uploading assets like images, design templates, and interactive demos.</li>
+<li>Finalizing live code/example demos.</li>
+<li>Testing page display, links, and other publishing QA.</li>
+</ul>
+<p><em>Tools</em>: Usually an assortment of assets that weave into a system’s site experience, the rubber meets the road with the composed and published page(s), achieved via however content is managed.</p>
+<p><em>Definition of Done</em>:</p>
+<ul>
+<li>As a system team collaborator, I’ve reviewed committed page changes and tested page displays and links.</li>
+<li>As a system user, I have access to in-depth documentation of a complete feature I can use.</li>
+</ul>
+<hr>
+<h2 id="steps-arent-a-waterfall-but-do-end-sequentially">Steps Aren’t a Waterfall, But Do End Sequentially</h2>
+<p>While the workflow suggests a strict sequence, that doesn’t necessarily imply a waterfall where subsequent steps don’t begin until their predecessor ends. Instead, it’s very common to conduct steps — Design, Build, and Doc — simultaneously, even if the intensity of one is driving the work.</p>
 
 
   
@@ -251,12 +251,12 @@
 
 
 
-  &lt;p&gt;For example, as design solidifies, we’ll start our Google Doc to itemize requirements and collaborate on naming and also start to build prototype HTML and CSS to validate the design. Later on, we’ll review of draft of fully coded designs and shortly thereafter close the design step as a result.&lt;/p&gt;
-&lt;p&gt;That’s why we’ll have top-level JIRA tasks for each step, since different people may be working different steps at the same time, and each task has different reviewers (for which we use subtasks). There are other ways to model this in JIRA, but this setup works for us.&lt;/p&gt;
-&lt;p&gt;Nevertheless, the steps &lt;em&gt;end&lt;/em&gt; sequentially, such that Design closes before Build, and Build closes before Doc. Publish, at the end, is the only task that doesn’t begin until all the other steps have concluded.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;not-all-features-require-every-step&quot;&gt;Not All Features Require Every Step&lt;/h2&gt;
-&lt;p&gt;Discovery is unnecessary for many features of any self-respecting design system such as color, buttons, or form controls. Instead, each starts with design and progress through remaining steps.&lt;/p&gt;
+  <p>For example, as design solidifies, we’ll start our Google Doc to itemize requirements and collaborate on naming and also start to build prototype HTML and CSS to validate the design. Later on, we’ll review of draft of fully coded designs and shortly thereafter close the design step as a result.</p>
+<p>That’s why we’ll have top-level JIRA tasks for each step, since different people may be working different steps at the same time, and each task has different reviewers (for which we use subtasks). There are other ways to model this in JIRA, but this setup works for us.</p>
+<p>Nevertheless, the steps <em>end</em> sequentially, such that Design closes before Build, and Build closes before Doc. Publish, at the end, is the only task that doesn’t begin until all the other steps have concluded.</p>
+<hr>
+<h2 id="not-all-features-require-every-step">Not All Features Require Every Step</h2>
+<p>Discovery is unnecessary for many features of any self-respecting design system such as color, buttons, or form controls. Instead, each starts with design and progress through remaining steps.</p>
 
 
   
@@ -270,7 +270,7 @@
 
 
 
-  &lt;p&gt;However, many other tasks use a subset of the workflow to make things. A helpful Getting Started page or description of a Contribution process requires only documentation and thus omits Design and Build:&lt;/p&gt;
+  <p>However, many other tasks use a subset of the workflow to make things. A helpful Getting Started page or description of a Contribution process requires only documentation and thus omits Design and Build:</p>
 
 
   
@@ -284,7 +284,7 @@
 
 
 
-  &lt;p&gt;Similarly, UX patterns don’t result in reusable code, but can require discovery to assess cross-product relevance and needs and iterate through design ideas before being formally documented and published on a system site.&lt;/p&gt;
+  <p>Similarly, UX patterns don’t result in reusable code, but can require discovery to assess cross-product relevance and needs and iterate through design ideas before being formally documented and published on a system site.</p>
 
 
   
@@ -298,9 +298,9 @@
 
 
 
-  &lt;hr&gt;
-&lt;h2 id=&quot;for-trivial-tasks-combine-steps&quot;&gt;For Trivial Tasks, Combine Steps&lt;/h2&gt;
-&lt;p&gt;Our team will also classify Sketch symbol library development as a Design task that’s followed by combination of Doc (change the version number, describe the change in one line in the release history) and Publish as a single task:&lt;/p&gt;
+  <hr>
+<h2 id="for-trivial-tasks-combine-steps">For Trivial Tasks, Combine Steps</h2>
+<p>Our team will also classify Sketch symbol library development as a Design task that’s followed by combination of Doc (change the version number, describe the change in one line in the release history) and Publish as a single task:</p>
 
 
   
@@ -314,7 +314,7 @@
 
 
 
-  &lt;p&gt;In another case where a feature — like a disabled state — is documented sufficiently by a coded example and requires no further elaboration, we’ll skip the Doc step and combine Build / Publish step.&lt;/p&gt;
+  <p>In another case where a feature — like a disabled state — is documented sufficiently by a coded example and requires no further elaboration, we’ll skip the Doc step and combine Build / Publish step.</p>
 
 
   
@@ -328,11 +328,11 @@
 
 
 
-  &lt;p&gt;In any case where steps are combined into a single task, the completion criteria for all steps still apply to the task.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;reflect-the-steps-in-task-or-subtask-titles&quot;&gt;Reflect the Steps in Task or Subtask Titles&lt;/h2&gt;
-&lt;p&gt;Naming conventions — or lack thereof — within a backlog can reflect a level of predictability and rigor of a team.&lt;/p&gt;
-&lt;p&gt;As I’ve instituted this workflow across many teams over the past few years, our backlogs have become a scannable set of titled tasks for which we can accurately predict the outcomes, reviewers, and relationships of each one.&lt;/p&gt;
+  <p>In any case where steps are combined into a single task, the completion criteria for all steps still apply to the task.</p>
+<hr>
+<h2 id="reflect-the-steps-in-task-or-subtask-titles">Reflect the Steps in Task or Subtask Titles</h2>
+<p>Naming conventions — or lack thereof — within a backlog can reflect a level of predictability and rigor of a team.</p>
+<p>As I’ve instituted this workflow across many teams over the past few years, our backlogs have become a scannable set of titled tasks for which we can accurately predict the outcomes, reviewers, and relationships of each one.</p>
 
 
   
@@ -346,10 +346,10 @@
 
 
 
-  &lt;p&gt;We’ll use the ticket’s title to reflect a feature’s name and workflow step, and leave the acceptance criteria and deeper descriptions to the details.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;structure-reports-to-visualize-doneness&quot;&gt;Structure Reports to Visualize Doneness&lt;/h2&gt;
-&lt;p&gt;Using a well-modeled workflow, the system team can report on progress across features in a structured fashion, helping stakeholders (and sponsors!) see how the team progresses towards the goals of a first release or beyond.&lt;/p&gt;
+  <p>We’ll use the ticket’s title to reflect a feature’s name and workflow step, and leave the acceptance criteria and deeper descriptions to the details.</p>
+<hr>
+<h2 id="structure-reports-to-visualize-doneness">Structure Reports to Visualize Doneness</h2>
+<p>Using a well-modeled workflow, the system team can report on progress across features in a structured fashion, helping stakeholders (and sponsors!) see how the team progresses towards the goals of a first release or beyond.</p>
 
 
   
@@ -363,7 +363,7 @@
 
 
 
-  &lt;p&gt;At the beginning of every sprint leading up to a first release, I’ll include this table of visual style and UI component features progressing across steps. This gives stakeholders a sense of progress, both item-by-item as well as for the overall release scope.&lt;/p&gt;
+  <p>At the beginning of every sprint leading up to a first release, I’ll include this table of visual style and UI component features progressing across steps. This gives stakeholders a sense of progress, both item-by-item as well as for the overall release scope.</p>
 
 
 

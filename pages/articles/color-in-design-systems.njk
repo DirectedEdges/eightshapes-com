@@ -1,5 +1,16 @@
-{% set post = systemsposts["color-in-design-systems"] %}
-{% extends 'templates/article_data.njk' %}
+---
+  category : Visual Style
+  id : color-in-design-systems
+  title : Color in Design Systems
+  deck : 16 Tips for Setting Up a System That Endures
+  title_abbreviation : Color
+  author_id : nathan
+  date_published : 4/13/2016
+  date_updated :
+  read_duration : 10
+  masthead : true
+---
+{% extends 'templates/article_11ty_layout.njk' %}
 
 {% block main_article %}
   {% filter markdown %}
@@ -31,7 +42,7 @@ _Takeaway_: Decide your essential brand colors early, because they spread widely
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ### #2. Involve Brand (If You Alter a Brand Color)
@@ -51,7 +62,7 @@ _Takeaway_: Brand colors are the brand team’s territory. So discuss adjustment
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ### #3. Drop the Neutral Neutrals
@@ -71,7 +82,7 @@ _Takeaway_: Provide a few light grays and a few dark grays to achieve useful con
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ### #4. Go “Digital Blue.” Everybody Else Does.
@@ -91,7 +102,7 @@ _Takeaway_: When (not if ;) ) you go with your “Digital Blue,” choose an acc
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ## Tints & Shades Per Color
@@ -115,7 +126,7 @@ _Takeaway_: Stack available colors in each hue, and treat the stack as a visuali
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ### #6. Name Tints & Shades by Lightness
@@ -135,7 +146,7 @@ _Takeaway_: Scale color names between 0 and 100 based on HSL’s lightness, such
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ### #7. Limit Tint & Shade Quantity
@@ -155,7 +166,7 @@ _Takeaway_: Offer a handful of options and avoid tedious variety. Empower system
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ### #8. Tell Me How To Transform: Hand-Pick or Functionally
@@ -177,7 +188,7 @@ _Takeaway_: Deliberately allow — or avoid — color transformations in
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ## Secondary Palettes
@@ -201,7 +212,7 @@ _Takeaway_: Explore and define the standard feedback colors and other relevant s
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ### #10. Illustrate Theme Variety
@@ -221,7 +232,7 @@ _Takeaway_: Reveal the range of themes available compactly, and set boundaries a
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ### #11. Define _How_ Theming Works
@@ -241,7 +252,7 @@ _Takeaway:_ Identify how theming works, particularly via reference to specific U
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ### #12. Avoid Guiding on Color-Mixing Until (At Least) Dust Settles
@@ -277,12 +288,12 @@ _Takeaway_: Any system designer responsible for color must be familiar with WCAG
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ### #14. Explore Accessible Color Choices Across Ranges
 
-A drawback of WCAG guidelines is its stark threshold: a color pair passes or fails. This leaves designers yearning for more, but worse leaves stakeholders flummoxed at how bad the color pair fails and how much it needs to change. 
+A drawback of WCAG guidelines is its stark threshold: a color pair passes or fails. This leaves designers yearning for more, but worse leaves stakeholders flummoxed at how bad the color pair fails and how much it needs to change.
 
 Conversation quickens when we reveal a spectrum of choices. There are a bevy of tools in the design community for visualizing the contrast between foreground and background colors, including:
 
@@ -294,7 +305,7 @@ Conversation quickens when we reveal a spectrum of choices. There are a bevy of 
 - <a href="http://www.brandwood.com/a11y/">www.brandwood.com/a11y/</a> (Text on images)
 - <a href="http://www.webaxe.org/color-contrast-tools/">www.webaxe.org/color-contrast-tools/</a > (Comprehensive list of many tools)
 
-We even built our own tool at EightShapes called the <a href="http://contrast-grid.eightshapes.com/">Contrast Grid</a>. This tool enables you to easily input a range of HEX codes, name them, and contrast every combination (even distinct colors for foreground and background). 
+We even built our own tool at EightShapes called the <a href="http://contrast-grid.eightshapes.com/">Contrast Grid</a>. This tool enables you to easily input a range of HEX codes, name them, and contrast every combination (even distinct colors for foreground and background).
 
 {% endfilter %}
 
@@ -307,7 +318,7 @@ We even built our own tool at EightShapes called the <a href="http://contrast-gr
   ) }}
 
   {% filter markdown %}
-  
+
 This quick visualization isn't just efficient for experimenting and choosing the right color, but also communicating contrast ranges to those less familiar with contrast subtleties. Recently, we're really encouraged about how such exploratory tools are being integrated directly into design tools, too.
 
 _Takeaway_: When exploring accessible color contrast, show a range of choices to help a team select a color that passes the test.
@@ -333,7 +344,7 @@ _Takeaway:_ Solve for and recommend reversed pairings to adopt or avoid.
   ) }}
 
   {% filter markdown %}
-  
+
 * * *
 
 ### #16. Use Color to Provoke Broader Accessibility Awareness

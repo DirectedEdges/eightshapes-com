@@ -137,8 +137,8 @@
     
 
     
-    &lt;p&gt;Within a component library, what component has the most dependents (other components in the library that include it)?&lt;/p&gt;
-&lt;p&gt;“Button!” is a knee-jerk response. Good guess! Buttons are reused heavily by many other components. &amp;quot;How about paragraph?&amp;quot; someone suggests. Not exactly. Paragraph is usually reused as a style, not a component. I pause, then reveal &amp;quot;Would you believe... icon?&amp;quot; Ahhh, of course, icon.&lt;/p&gt;
+    <p>Within a component library, what component has the most dependents (other components in the library that include it)?</p>
+<p>“Button!” is a knee-jerk response. Good guess! Buttons are reused heavily by many other components. &quot;How about paragraph?&quot; someone suggests. Not exactly. Paragraph is usually reused as a style, not a component. I pause, then reveal &quot;Would you believe... icon?&quot; Ahhh, of course, icon.</p>
 
 
   
@@ -152,7 +152,7 @@
 
 
 
-  &lt;p&gt;Many, many components depend on &lt;code&gt;icon&lt;/code&gt;: &lt;code&gt;checkbox&lt;/code&gt;, &lt;code&gt;button&lt;/code&gt;, &lt;code&gt;select&lt;/code&gt;, &lt;code&gt;alert&lt;/code&gt;, &lt;code&gt;list group&lt;/code&gt;, and so many others. Even a simple, atomic &lt;code&gt;button&lt;/code&gt; can include &lt;em&gt;two&lt;/em&gt; icons, one to the left and one to the right! Hopefully &lt;code&gt;icon&lt;/code&gt; stabilizes early, and doesn’t change often. But when it does? All those dependent components must change too.&lt;/p&gt;
+  <p>Many, many components depend on <code>icon</code>: <code>checkbox</code>, <code>button</code>, <code>select</code>, <code>alert</code>, <code>list group</code>, and so many others. Even a simple, atomic <code>button</code> can include <em>two</em> icons, one to the left and one to the right! Hopefully <code>icon</code> stabilizes early, and doesn’t change often. But when it does? All those dependent components must change too.</p>
 
 
   
@@ -166,7 +166,7 @@
 
 
 
-  &lt;p&gt;Compositional depth isn’t limited to two levels, and components don’t exist only on one prescribed level, anyway. A &lt;code&gt;card&lt;/code&gt; can depend on a &lt;code&gt;button&lt;/code&gt;, and both of them can depend on &lt;code&gt;icon&lt;/code&gt;. Effective system teams understand this and cope with change across this hierarchical chain of dependencies.&lt;/p&gt;
+  <p>Compositional depth isn’t limited to two levels, and components don’t exist only on one prescribed level, anyway. A <code>card</code> can depend on a <code>button</code>, and both of them can depend on <code>icon</code>. Effective system teams understand this and cope with change across this hierarchical chain of dependencies.</p>
 
 
   
@@ -180,11 +180,11 @@
 
 
 
-  &lt;p&gt;Atlassian’s AtlasKit exposes dependent relationships visibly in NPM. Their published components reveal &lt;code&gt;icon&lt;/code&gt;&amp;#39;s &lt;a href=&quot;https://www.npmjs.com/package/@atlaskit/icon&quot;&gt;dominance of 62 dependents&lt;/a&gt; that exceeds &lt;code&gt;button&lt;/code&gt;&amp;#39;s &lt;a href=&quot;https://www.npmjs.com/package/@atlaskit/button&quot;&gt;42&lt;/a&gt;, &lt;code&gt;avatar&lt;/code&gt;&amp;#39;s &lt;a href=&quot;https://www.npmjs.com/package/@atlaskit/avatar&quot;&gt;19&lt;/a&gt;, and &lt;code&gt;modal&lt;/code&gt;&amp;#39;s &lt;a href=&quot;https://www.npmjs.com/package/@atlaskit/modal-dialog&quot;&gt;15&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Composability made concrete exposes the dependency chain that a team must maintain as a library changes over time. As systems mature, teams build, trace, and update components as change ripple up through the hierarchy to keep their library outputs in sync as much as possible.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;dependencies-inside-a-library&quot;&gt;Dependencies &lt;em&gt;Inside&lt;/em&gt; a Library&lt;/h2&gt;
-&lt;p&gt;So many of our components are built using other, more primitive components in the library. Take, for example, a &lt;code&gt;menu&lt;/code&gt;.&lt;/p&gt;
+  <p>Atlassian’s AtlasKit exposes dependent relationships visibly in NPM. Their published components reveal <code>icon</code>&#39;s <a href="https://www.npmjs.com/package/@atlaskit/icon">dominance of 62 dependents</a> that exceeds <code>button</code>&#39;s <a href="https://www.npmjs.com/package/@atlaskit/button">42</a>, <code>avatar</code>&#39;s <a href="https://www.npmjs.com/package/@atlaskit/avatar">19</a>, and <code>modal</code>&#39;s <a href="https://www.npmjs.com/package/@atlaskit/modal-dialog">15</a>.</p>
+<p>Composability made concrete exposes the dependency chain that a team must maintain as a library changes over time. As systems mature, teams build, trace, and update components as change ripple up through the hierarchy to keep their library outputs in sync as much as possible.</p>
+<hr>
+<h2 id="dependencies-inside-a-library">Dependencies <em>Inside</em> a Library</h2>
+<p>So many of our components are built using other, more primitive components in the library. Take, for example, a <code>menu</code>.</p>
 
 
   
@@ -198,12 +198,12 @@
 
 
 
-  &lt;p&gt;Compositionally, a &lt;code&gt;menu&lt;/code&gt; is a &lt;code&gt;popover&lt;/code&gt; with a &lt;code&gt;list group&lt;/code&gt; inside. The &lt;code&gt;popover&lt;/code&gt; is &lt;code&gt;tooltip&lt;/code&gt; with a flexible content area, reusing &lt;code&gt;tooltip&lt;/code&gt;&amp;#39;s collision detection, directional notch, and layered appearance. Depending on how you architect your system, &lt;code&gt;menu&lt;/code&gt; could depend on both &lt;code&gt;list-group&lt;/code&gt; and &lt;code&gt;popover&lt;/code&gt;, which might be a sibling of or dependent on &lt;code&gt;tooltip&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Designers and developers level up system acumen by recognizing, unwinding, and delivering features with such compositional dependencies. Lessons learned decomposing this chain cost us sweat, tears, and scars, but are what earn our badges as “system thinkers.”&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;recognize-shared-styles-and-behaviors-as-implied-dependencies&quot;&gt;Recognize Shared Styles and Behaviors as Implied Dependencies&lt;/h3&gt;
-&lt;p&gt;Component-by-component dependencies should be visible and easy to trace. I &lt;em&gt;see&lt;/em&gt; an &lt;code&gt;icon&lt;/code&gt; in the &lt;code&gt;button&lt;/code&gt;. Other dependencies are implicit, especially styles and sometimes behaviors.&lt;/p&gt;
-&lt;p&gt;For example, a &lt;code&gt;tooltip&lt;/code&gt; exhibits many behaviors relevant to other layered components like &lt;code&gt;popover&lt;/code&gt;, &lt;code&gt;menu&lt;/code&gt;, &lt;code&gt;modal&lt;/code&gt;, and &lt;code&gt;dialog&lt;/code&gt;. These include states (opening and closing), animation (how it opens and closes), and &lt;a href=&quot;https://css-tricks.com/collision-detection/&quot;&gt;collision detection&lt;/a&gt; (how it adjusts location based on proximity to a viewport&amp;#39;s edge).&lt;/p&gt;
+  <p>Compositionally, a <code>menu</code> is a <code>popover</code> with a <code>list group</code> inside. The <code>popover</code> is <code>tooltip</code> with a flexible content area, reusing <code>tooltip</code>&#39;s collision detection, directional notch, and layered appearance. Depending on how you architect your system, <code>menu</code> could depend on both <code>list-group</code> and <code>popover</code>, which might be a sibling of or dependent on <code>tooltip</code>.</p>
+<p><em>Takeaway</em>: Designers and developers level up system acumen by recognizing, unwinding, and delivering features with such compositional dependencies. Lessons learned decomposing this chain cost us sweat, tears, and scars, but are what earn our badges as “system thinkers.”</p>
+<hr>
+<h3 id="recognize-shared-styles-and-behaviors-as-implied-dependencies">Recognize Shared Styles and Behaviors as Implied Dependencies</h3>
+<p>Component-by-component dependencies should be visible and easy to trace. I <em>see</em> an <code>icon</code> in the <code>button</code>. Other dependencies are implicit, especially styles and sometimes behaviors.</p>
+<p>For example, a <code>tooltip</code> exhibits many behaviors relevant to other layered components like <code>popover</code>, <code>menu</code>, <code>modal</code>, and <code>dialog</code>. These include states (opening and closing), animation (how it opens and closes), and <a href="https://css-tricks.com/collision-detection/">collision detection</a> (how it adjusts location based on proximity to a viewport&#39;s edge).</p>
 
 
   
@@ -217,11 +217,11 @@
 
 
 
-  &lt;p&gt;Similarly, a &lt;code&gt;tooltip&lt;/code&gt; usually imbues a shadow (separating it from content below), notch (connecting it with a trigger), elevation (within a page&amp;#39;s z-index stack) and usually rounded shaped (produced by a border-radius). Such styles can be shared using &lt;a href=&quot;/articles/tokens-in-design-systems&quot;&gt;design tokens&lt;/a&gt;, mixins, and other style tooling. It&amp;#39;s guaranteed that other layered components also depend upon these styles.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Style and behavior, not just component objects, can propagate throughout a library. Therefore, establish predictable locations for both that can ease tracing from a decision’s root through the dependency chain.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;build-small-to-large-but-design-across-levels-too&quot;&gt;Build Small to Large, But Design Across Levels Too&lt;/h3&gt;
-&lt;p&gt;If so commonly included, we should make icon first. For similarly reasons, buttons is among the first few components we will make. For the next layer of components, that order isn’t so clear. As we consider each, we decompose it into parts and gauge if some parts need to be delivered primitively first.&lt;/p&gt;
+  <p>Similarly, a <code>tooltip</code> usually imbues a shadow (separating it from content below), notch (connecting it with a trigger), elevation (within a page&#39;s z-index stack) and usually rounded shaped (produced by a border-radius). Such styles can be shared using <a href="/articles/tokens-in-design-systems">design tokens</a>, mixins, and other style tooling. It&#39;s guaranteed that other layered components also depend upon these styles.</p>
+<p><em>Takeaway</em>: Style and behavior, not just component objects, can propagate throughout a library. Therefore, establish predictable locations for both that can ease tracing from a decision’s root through the dependency chain.</p>
+<hr>
+<h3 id="build-small-to-large-but-design-across-levels-too">Build Small to Large, But Design Across Levels Too</h3>
+<p>If so commonly included, we should make icon first. For similarly reasons, buttons is among the first few components we will make. For the next layer of components, that order isn’t so clear. As we consider each, we decompose it into parts and gauge if some parts need to be delivered primitively first.</p>
 
 
   
@@ -235,12 +235,12 @@
 
 
 
-  &lt;p&gt;At Morningstar, the team delivers dependent components in sequence. For example, the team first delivered &lt;a href=&quot;https://designsystem.morningstar.com/components/headers.html&quot;&gt;Header&lt;/a&gt; across many sized levels. Next, the team released a &lt;a href=&quot;https://designsystem.morningstar.com/components/module-containers.html&quot;&gt;Module Container&lt;/a&gt; for layouts with many content types. Finally, the team extended those features with an &lt;a href=&quot;https://designsystem.morningstar.com/components/accordions.html&quot;&gt;Accordion&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;As Accordion took shape, the team had to reconsider how Header and Module Container were built. While they avoided &lt;a href=&quot;/articles/visual-breaking-change-in-design-systems&quot;&gt;breaking changes&lt;/a&gt;, deploying Accordion required deprecating the original Module Container in favor of an adjusted version.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Order what you build from small (like &lt;code&gt;tooltip&lt;/code&gt;) to large (like &lt;code&gt;menu&lt;/code&gt;). As you do so, create opportunities to compose examples of small things in larger things to stress-test how the chain works.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;tracing-how-change-ripples-through-dependents&quot;&gt;Tracing How Change Ripples Through Dependents&lt;/h3&gt;
-&lt;p&gt;You release &lt;code&gt;icon&lt;/code&gt; first, and then other components that depend on it later. Then, &lt;code&gt;icon&lt;/code&gt; adds minor features or suffers a &lt;a href=&quot;http://View%20story&quot;&gt;breaking change&lt;/a&gt;. If you update &lt;code&gt;icon&lt;/code&gt;, you can’t stop there. You must ripple that change through all of &lt;code&gt;icon&lt;/code&gt;’s dependent in the library too.&lt;/p&gt;
+  <p>At Morningstar, the team delivers dependent components in sequence. For example, the team first delivered <a href="https://designsystem.morningstar.com/components/headers.html">Header</a> across many sized levels. Next, the team released a <a href="https://designsystem.morningstar.com/components/module-containers.html">Module Container</a> for layouts with many content types. Finally, the team extended those features with an <a href="https://designsystem.morningstar.com/components/accordions.html">Accordion</a>.</p>
+<p>As Accordion took shape, the team had to reconsider how Header and Module Container were built. While they avoided <a href="/articles/visual-breaking-change-in-design-systems">breaking changes</a>, deploying Accordion required deprecating the original Module Container in favor of an adjusted version.</p>
+<p><em>Takeaway</em>: Order what you build from small (like <code>tooltip</code>) to large (like <code>menu</code>). As you do so, create opportunities to compose examples of small things in larger things to stress-test how the chain works.</p>
+<hr>
+<h3 id="tracing-how-change-ripples-through-dependents">Tracing How Change Ripples Through Dependents</h3>
+<p>You release <code>icon</code> first, and then other components that depend on it later. Then, <code>icon</code> adds minor features or suffers a <a href="http://View%20story">breaking change</a>. If you update <code>icon</code>, you can’t stop there. You must ripple that change through all of <code>icon</code>’s dependent in the library too.</p>
 
   
 
@@ -259,7 +259,7 @@
         </div>
 
 
-&lt;p&gt;Developers and designers share this challenge. For code, some may start with a search through the &lt;code&gt;src&lt;/code&gt; directory for instances. More sophisticated tooling enables teams to traces the repository in intelligent ways.&lt;/p&gt;
+<p>Developers and designers share this challenge. For code, some may start with a search through the <code>src</code> directory for instances. More sophisticated tooling enables teams to traces the repository in intelligent ways.</p>
 
   
 
@@ -290,10 +290,10 @@
 
 
 
-  &lt;p&gt;For designers, tracing through a Sketch file of library assets can be a chore. Imagine changing &lt;code&gt;button&lt;/code&gt; spacing, or revising your interactive blue token. So many painstaking adjustments! Fortunately, Sketch plug-ins like &lt;a href=&quot;https://github.com/sonburn/symbol-instance-locator&quot;&gt;Symbol Instance Locator&lt;/a&gt; and &lt;a href=&quot;https://github.com/nmwoods1/Sketch---Find-all-instances-of-symbol&quot;&gt;Find-all-instances-of-symbol&lt;/a&gt; enable you to find symbols and instances across artboards and jump to their location.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;automate-versioning-warnings-and-other-tooling&quot;&gt;Automate Versioning, Warnings, and Other Tooling&lt;/h3&gt;
-&lt;p&gt;As package management capabilities improve, teams improve how they cope and document a chain of impacted features. Atlassian’s AtlasKit release tool displays impacted dependencies and prompts authors to designate version increment level (breaking, minor, fix) for each one.&lt;/p&gt;
+  <p>For designers, tracing through a Sketch file of library assets can be a chore. Imagine changing <code>button</code> spacing, or revising your interactive blue token. So many painstaking adjustments! Fortunately, Sketch plug-ins like <a href="https://github.com/sonburn/symbol-instance-locator">Symbol Instance Locator</a> and <a href="https://github.com/nmwoods1/Sketch---Find-all-instances-of-symbol">Find-all-instances-of-symbol</a> enable you to find symbols and instances across artboards and jump to their location.</p>
+<hr>
+<h3 id="automate-versioning-warnings-and-other-tooling">Automate Versioning, Warnings, and Other Tooling</h3>
+<p>As package management capabilities improve, teams improve how they cope and document a chain of impacted features. Atlassian’s AtlasKit release tool displays impacted dependencies and prompts authors to designate version increment level (breaking, minor, fix) for each one.</p>
 
 
   
@@ -314,16 +314,16 @@
 
 
 
-  &lt;p&gt;A team must decide version type for each impacted feature in the chain. Breaking &lt;code&gt;icon&lt;/code&gt; means a major version increment. However, that doesn’t imply that &lt;code&gt;button&lt;/code&gt;, &lt;code&gt;list group&lt;/code&gt;, and &lt;code&gt;alert&lt;/code&gt; also all incur a major increment. To some, it may simply be a patch increment to consume the new &lt;code&gt;icon&lt;/code&gt; version.&lt;/p&gt;
-&lt;p&gt;Teams must also weed out inconsistent version dependencies within a catalog. Financial Time’s Origami errors when conflict occurs, like a &lt;a href=&quot;https://www.ft.com/__origami/service/build/v2/#dependency-conflicts&quot;&gt;compilation resulting in multiple versions&lt;/a&gt; of the same module being included.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Cannot complete build: conflicting dependencies exist.o-colors:- Required at version 1.7 by o-nav- Required at version 1.9 by o-cookiewarn&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Wouldn’t it be nice if tools like Sketch could automate detection of old and new text and layer styles across a catalog? Yes, yes it would.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Establish moments in a release process to check and require authors to confirm and communicate change chained across the library.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;dependencies-across-system-outputs&quot;&gt;Dependencies &lt;em&gt;Across&lt;/em&gt; System Outputs&lt;/h2&gt;
-&lt;p&gt;Most of our time as a system team is spent discussing the composible intricacies of the components we build. However, dependencies also span across the high-level outputs we deliver, from demo page types to the documentation and tokens too.&lt;/p&gt;
-&lt;h3 id=&quot;beyond-just-components-example-compositions-and-page-types&quot;&gt;Beyond Just Components: Example Compositions and Page Types&lt;/h3&gt;
-&lt;p&gt;Many teams offer sample page types composed with many components composed together.&lt;/p&gt;
+  <p>A team must decide version type for each impacted feature in the chain. Breaking <code>icon</code> means a major version increment. However, that doesn’t imply that <code>button</code>, <code>list group</code>, and <code>alert</code> also all incur a major increment. To some, it may simply be a patch increment to consume the new <code>icon</code> version.</p>
+<p>Teams must also weed out inconsistent version dependencies within a catalog. Financial Time’s Origami errors when conflict occurs, like a <a href="https://www.ft.com/__origami/service/build/v2/#dependency-conflicts">compilation resulting in multiple versions</a> of the same module being included.</p>
+<p><code>Cannot complete build: conflicting dependencies exist.o-colors:- Required at version 1.7 by o-nav- Required at version 1.9 by o-cookiewarn</code></p>
+<p>Wouldn’t it be nice if tools like Sketch could automate detection of old and new text and layer styles across a catalog? Yes, yes it would.</p>
+<p><em>Takeaway</em>: Establish moments in a release process to check and require authors to confirm and communicate change chained across the library.</p>
+<hr>
+<h2 id="dependencies-across-system-outputs">Dependencies <em>Across</em> System Outputs</h2>
+<p>Most of our time as a system team is spent discussing the composible intricacies of the components we build. However, dependencies also span across the high-level outputs we deliver, from demo page types to the documentation and tokens too.</p>
+<h3 id="beyond-just-components-example-compositions-and-page-types">Beyond Just Components: Example Compositions and Page Types</h3>
+<p>Many teams offer sample page types composed with many components composed together.</p>
 
 
   
@@ -337,12 +337,12 @@
 
 
 
-  &lt;p&gt;For example, Discovery Education’s Comet design system provides a link on the &lt;a href=&quot;https://comet.discoveryeducation.com/components/product-bar.html&quot;&gt;Product Bar&lt;/a&gt; component page to demo the component composed along with a &lt;a href=&quot;https://comet.discoveryeducation.com/components/page-shell.html&quot;&gt;nav&lt;/a&gt; on the left, a &lt;a href=&quot;https://comet.discoveryeducation.com/components/footer.html&quot;&gt;footer&lt;/a&gt; at the bottom, and content like &lt;a href=&quot;https://comet.discoveryeducation.com/components/cards.html&quot;&gt;cards&lt;/a&gt; in rows.&lt;/p&gt;
-&lt;p&gt;When releasing a new version of the library, system teams themselves must cope with the cascading changes beyond just the component library. The examples aren’t dependencies of other teams. But they are essential demos, starting points, and even fertile ground for testing whether a component works as expected. For testing, &lt;a href=&quot;https://designsystem.morningstar.com/test/components/forms-composed.html&quot;&gt;Morningstar’s form compositions&lt;/a&gt; reveals impacts in composed dependencies by signaling failures in automated visual regression testing.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Arranging components into compositions is a great way to stress test the library, yet it comes with a production and maintenance cost. Justify that cost by fortifying system quality through manual or automated tests that trace the impacts of dependencies.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;chained-system-repositories-release-in-sequence&quot;&gt;Chained System Repositories Release in Sequence&lt;/h3&gt;
-&lt;p&gt;Opinions are as varied as there are system teams, but some choose to separate high-level system concerns. For example, at EightShapes we’ll often separate UI component code for the library from design tokens, documentation content and templating, documentation components, and even build tools across separate chained repositories (refer to &lt;a href=&quot;https://github.com/EightShapes/esds-build&quot;&gt;ESDS Build&lt;/a&gt;).&lt;/p&gt;
+  <p>For example, Discovery Education’s Comet design system provides a link on the <a href="https://comet.discoveryeducation.com/components/product-bar.html">Product Bar</a> component page to demo the component composed along with a <a href="https://comet.discoveryeducation.com/components/page-shell.html">nav</a> on the left, a <a href="https://comet.discoveryeducation.com/components/footer.html">footer</a> at the bottom, and content like <a href="https://comet.discoveryeducation.com/components/cards.html">cards</a> in rows.</p>
+<p>When releasing a new version of the library, system teams themselves must cope with the cascading changes beyond just the component library. The examples aren’t dependencies of other teams. But they are essential demos, starting points, and even fertile ground for testing whether a component works as expected. For testing, <a href="https://designsystem.morningstar.com/test/components/forms-composed.html">Morningstar’s form compositions</a> reveals impacts in composed dependencies by signaling failures in automated visual regression testing.</p>
+<p><em>Takeaway</em>: Arranging components into compositions is a great way to stress test the library, yet it comes with a production and maintenance cost. Justify that cost by fortifying system quality through manual or automated tests that trace the impacts of dependencies.</p>
+<hr>
+<h3 id="chained-system-repositories-release-in-sequence">Chained System Repositories Release in Sequence</h3>
+<p>Opinions are as varied as there are system teams, but some choose to separate high-level system concerns. For example, at EightShapes we’ll often separate UI component code for the library from design tokens, documentation content and templating, documentation components, and even build tools across separate chained repositories (refer to <a href="https://github.com/EightShapes/esds-build">ESDS Build</a>).</p>
 
 
   
@@ -356,7 +356,7 @@
 
 
 
-  &lt;p&gt;This suggests releases must be coordinated across and published sequentially through that dependency chain. First, build tooling, then tokens, library, doc components, and ultimately the documentation site itself. Other teams like Shopify sequence releases similarly:&lt;/p&gt;
+  <p>This suggests releases must be coordinated across and published sequentially through that dependency chain. First, build tooling, then tokens, library, doc components, and ultimately the documentation site itself. Other teams like Shopify sequence releases similarly:</p>
 
 
   
@@ -377,17 +377,17 @@
 
 
 
-  &lt;p&gt;A separated token dependency affords the flexibility to more quickly publish changes to a visual foundation prior to releasing component library outputs. However, that separation is &lt;em&gt;more useful&lt;/em&gt; for token adopters &lt;em&gt;avoiding&lt;/em&gt; your component library code and potentially just taking advantage of design tokens, sketch assets, doc or all three together.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Do your best to synchronize system assets. While some assets (like documentation components) may rarely change, others — particularly design tokens, UI component code, Sketch assets, and a documentation site—can often change simultaneously from release to release.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;on-frameworks-and-third-party-dependencies&quot;&gt;On Frameworks and Third-Party Dependencies&lt;/h3&gt;
-&lt;p&gt;This post focused on dependencies &lt;em&gt;within&lt;/em&gt; a system team’s features. However, it’s worth recognizing two external dependencies that have impacted my system teams more than most: frameworks and third-party scripts.&lt;/p&gt;
-&lt;p&gt;Frameworks impact both engineers and designers. When coding components compliant to a JavaScript framework like Vue, Angular, or React, it can be an extraordinary cost to upgrade a library from one version to another. One team starting a library in early 2018 was extra flummoxed: build for React v15, v16, or… both? Picking the correct option is essential.&lt;/p&gt;
-&lt;p&gt;The same goes for designers with fast changing products like Sketch. Count me among the elated to hear about &lt;a href=&quot;https://blog.sketchapp.com/dark-mode-data-a-brand-new-look-and-more-in-sketch-52-e462c8a64d00&quot;&gt;Sketch 52’s Text and Layer Style overrides&lt;/a&gt;. Count me also among the freaked out, since a month prior I’d built a library using cruder styling methods that were “state of the art” before. There’s now a huge cloud hanging over my increasing design debt strewn across system assets as I continue making edits in the old way.&lt;/p&gt;
-&lt;p&gt;System teams have control over how often they upgrade their dependency. But they don’t control how often the dependency gets upgraded. More than one system team I’ve found depends heavily on &lt;a href=&quot;https://select2.org/getting-started/basic-usage&quot;&gt;Select2&lt;/a&gt; for quickly implementing combo boxes, yet laments it’s slow growth and incomplete accessibility configurations. Every six month planning session diverts into the “Should we just build this ourselves? When will it change? Should we ditch it?” 10 minute conversation before a facilitator urges the team to move on.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Integrate third-party and framework dependencies that you are comfortable with depending on &lt;em&gt;at least&lt;/em&gt; the current version offered. Avoid avoidable dependencies if you can, yet be cautious of building things yourself that the world struggles to do as community.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;#4.&lt;/strong&gt; &lt;a href=&quot;/articles/visual-breaking-change-in-design-systems&quot;&gt;&lt;strong&gt;Visual Breaking Change&lt;/strong&gt;&lt;/a&gt; ← Previous | Next → &lt;strong&gt;#6. Step-by-Step&lt;/strong&gt;&lt;/p&gt;
+  <p>A separated token dependency affords the flexibility to more quickly publish changes to a visual foundation prior to releasing component library outputs. However, that separation is <em>more useful</em> for token adopters <em>avoiding</em> your component library code and potentially just taking advantage of design tokens, sketch assets, doc or all three together.</p>
+<p><em>Takeaway</em>: Do your best to synchronize system assets. While some assets (like documentation components) may rarely change, others — particularly design tokens, UI component code, Sketch assets, and a documentation site—can often change simultaneously from release to release.</p>
+<hr>
+<h3 id="on-frameworks-and-third-party-dependencies">On Frameworks and Third-Party Dependencies</h3>
+<p>This post focused on dependencies <em>within</em> a system team’s features. However, it’s worth recognizing two external dependencies that have impacted my system teams more than most: frameworks and third-party scripts.</p>
+<p>Frameworks impact both engineers and designers. When coding components compliant to a JavaScript framework like Vue, Angular, or React, it can be an extraordinary cost to upgrade a library from one version to another. One team starting a library in early 2018 was extra flummoxed: build for React v15, v16, or… both? Picking the correct option is essential.</p>
+<p>The same goes for designers with fast changing products like Sketch. Count me among the elated to hear about <a href="https://blog.sketchapp.com/dark-mode-data-a-brand-new-look-and-more-in-sketch-52-e462c8a64d00">Sketch 52’s Text and Layer Style overrides</a>. Count me also among the freaked out, since a month prior I’d built a library using cruder styling methods that were “state of the art” before. There’s now a huge cloud hanging over my increasing design debt strewn across system assets as I continue making edits in the old way.</p>
+<p>System teams have control over how often they upgrade their dependency. But they don’t control how often the dependency gets upgraded. More than one system team I’ve found depends heavily on <a href="https://select2.org/getting-started/basic-usage">Select2</a> for quickly implementing combo boxes, yet laments it’s slow growth and incomplete accessibility configurations. Every six month planning session diverts into the “Should we just build this ourselves? When will it change? Should we ditch it?” 10 minute conversation before a facilitator urges the team to move on.</p>
+<p><em>Takeaway</em>: Integrate third-party and framework dependencies that you are comfortable with depending on <em>at least</em> the current version offered. Avoid avoidable dependencies if you can, yet be cautious of building things yourself that the world struggles to do as community.</p>
+<hr>
+<p><strong>#4.</strong> <a href="/articles/visual-breaking-change-in-design-systems"><strong>Visual Breaking Change</strong></a> ← Previous | Next → <strong>#6. Step-by-Step</strong></p>
 
 
 

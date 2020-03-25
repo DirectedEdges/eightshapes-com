@@ -1,5 +1,6 @@
 const marked = require('marked'),
-      stripIndent = require('strip-indent');
+      stripIndent = require('strip-indent'),
+      Nunjucks = require('nunjucks');
 
 module.exports = function(eleventyConfig) {
   // Nunjucks Filter
@@ -26,8 +27,10 @@ module.exports = function(eleventyConfig) {
           renderedMarkup = '<div class="' + wrapperClass + '">' + renderedMarkup + "</div>";
       }
 
-      // return env.filters.safe(renderedMarkup);
-      return renderedMarkup;
+      const env = new Nunjucks.Environment();
+
+      return env.filters.safe(renderedMarkup);
+    //   return renderedMarkup;
   });
 
   eleventyConfig.addPassthroughCopy("images");
@@ -45,6 +48,7 @@ module.exports = function(eleventyConfig) {
         data: "_data",
         includes: "_includes",
         input: "pages"
-    }
+    },
+    markdownTemplateEngine: "njk"
   }
 };

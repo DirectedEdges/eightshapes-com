@@ -137,8 +137,8 @@
     
 
     
-    &lt;p&gt;Design systems establish a baseline visual style that’s an essential dependency. These choices — color, typography, space and more — are robustly specified and expected to stably, predictably change release by release. When an adopter upgrades, a design system shouldn’t break their stuff unexpectedly.&lt;/p&gt;
-&lt;p&gt;So, ask yourself…&lt;/p&gt;
+    <p>Design systems establish a baseline visual style that’s an essential dependency. These choices — color, typography, space and more — are robustly specified and expected to stably, predictably change release by release. When an adopter upgrades, a design system shouldn’t break their stuff unexpectedly.</p>
+<p>So, ask yourself…</p>
 
 
   
@@ -155,12 +155,12 @@
 
 
 
-  &lt;p&gt;&lt;a href=&quot;https://semver.org/&quot;&gt;Semantic Versioning&lt;/a&gt; (SemVer) offers clear criteria to communicate change across releases using major, minor and patch designations. Every design system I encounter uses SemVer and monitoring change in their package’s application programming interface, or &lt;a href=&quot;about:invalid#zSoyz&quot;&gt;API&lt;/a&gt;. This is familiar territory for developers coding JavaScript props and HTML markup. Break your API, and your next version &lt;em&gt;must&lt;/em&gt; increment the version to a next major release, such as from &lt;code&gt;1.4.0&lt;/code&gt; to &lt;code&gt;2.0.0&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Specifying an interface to compositional visual style eludes us. It’s feels so difficult to define clear, simple rules to monitor style changes. System makers struggle to articulate what or why “Changing &lt;em&gt;this&lt;/em&gt; style breaks an adopter’s UI” versus “Changing &lt;em&gt;that&lt;/em&gt; style doesn’t.” Few system teams document such criteria. I ask “What specific types of visual changes trigger a major version for you?” Their response: ¯_(ツ)_/¯.&lt;/p&gt;
-&lt;p&gt;In this article, I propose that &lt;em&gt;at least&lt;/em&gt; &lt;strong&gt;Color&lt;/strong&gt; , &lt;strong&gt;Typography&lt;/strong&gt; , and &lt;strong&gt;Space&lt;/strong&gt; warrant criteria that constitute breaking change. There are other properties to consider, too. A design system can define, document and communicate these criteria so that adopters can upgrade release by release with confidence.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;breaking-color&quot;&gt;Breaking Color&lt;/h2&gt;
-&lt;p&gt;Most system teams feel safe in tuning a primary button’s background color. Maybe their motivation is to improve contrast against a usually white text label. “Let’s darken the teal a bit,” they say. “We’ll improve button’s accessible color contrast from a AA to AAA rating.”&lt;/p&gt;
+  <p><a href="https://semver.org/">Semantic Versioning</a> (SemVer) offers clear criteria to communicate change across releases using major, minor and patch designations. Every design system I encounter uses SemVer and monitoring change in their package’s application programming interface, or <a href="about:invalid#zSoyz">API</a>. This is familiar territory for developers coding JavaScript props and HTML markup. Break your API, and your next version <em>must</em> increment the version to a next major release, such as from <code>1.4.0</code> to <code>2.0.0</code>.</p>
+<p>Specifying an interface to compositional visual style eludes us. It’s feels so difficult to define clear, simple rules to monitor style changes. System makers struggle to articulate what or why “Changing <em>this</em> style breaks an adopter’s UI” versus “Changing <em>that</em> style doesn’t.” Few system teams document such criteria. I ask “What specific types of visual changes trigger a major version for you?” Their response: ¯_(ツ)_/¯.</p>
+<p>In this article, I propose that <em>at least</em> <strong>Color</strong> , <strong>Typography</strong> , and <strong>Space</strong> warrant criteria that constitute breaking change. There are other properties to consider, too. A design system can define, document and communicate these criteria so that adopters can upgrade release by release with confidence.</p>
+<hr>
+<h2 id="breaking-color">Breaking Color</h2>
+<p>Most system teams feel safe in tuning a primary button’s background color. Maybe their motivation is to improve contrast against a usually white text label. “Let’s darken the teal a bit,” they say. “We’ll improve button’s accessible color contrast from a AA to AAA rating.”</p>
 
 
   
@@ -174,10 +174,10 @@
 
 
 
-  &lt;p&gt;Certainly, adopting teams shouldn’t override a standard primary button’s color set. Overriding a system choice severs the connection with a system. At that point, an adopter is on their own. Therefore, adjusting the shade of primary button’s background color is safe and is not a breaking change.&lt;/p&gt;
-&lt;p&gt;However, changing colors elsewhere may put adopters in peril. Consider the following scenarios.&lt;/p&gt;
-&lt;h3 id=&quot;example-system-text-on-custom-backgrounds&quot;&gt;Example: System Text on Custom Backgrounds&lt;/h3&gt;
-&lt;p&gt;Imagine a system team fine-tuning interactive blue to improve color contrast. The &lt;code&gt;interactive-blue&lt;/code&gt; of &lt;code&gt;v1.4.0&lt;/code&gt; was accessible on a &lt;code&gt;white&lt;/code&gt; background but failed on the &lt;code&gt;charcoal&lt;/code&gt; background.&lt;/p&gt;
+  <p>Certainly, adopting teams shouldn’t override a standard primary button’s color set. Overriding a system choice severs the connection with a system. At that point, an adopter is on their own. Therefore, adjusting the shade of primary button’s background color is safe and is not a breaking change.</p>
+<p>However, changing colors elsewhere may put adopters in peril. Consider the following scenarios.</p>
+<h3 id="example-system-text-on-custom-backgrounds">Example: System Text on Custom Backgrounds</h3>
+<p>Imagine a system team fine-tuning interactive blue to improve color contrast. The <code>interactive-blue</code> of <code>v1.4.0</code> was accessible on a <code>white</code> background but failed on the <code>charcoal</code> background.</p>
 
 
   
@@ -191,7 +191,7 @@
 
 
 
-  &lt;p&gt;So, for &lt;code&gt;v1.5.0&lt;/code&gt;, the team adjusted &lt;code&gt;interactive-blue&lt;/code&gt; to a lighter, more saturated tone that worked on both &lt;code&gt;white&lt;/code&gt; and &lt;code&gt;charcoal&lt;/code&gt;.&lt;/p&gt;
+  <p>So, for <code>v1.5.0</code>, the team adjusted <code>interactive-blue</code> to a lighter, more saturated tone that worked on both <code>white</code> and <code>charcoal</code>.</p>
 
 
   
@@ -205,9 +205,9 @@
 
 
 
-  &lt;p&gt;However, an adopter had used the Ghost button dependent on that color on a light gray background. After the system change, the label&amp;#39;s text color contrast is inaccessible. &lt;em&gt;Your system broke their product&lt;/em&gt;.&lt;/p&gt;
-&lt;h3 id=&quot;example-system-backgrounds-with-custom-overlaid-text&quot;&gt;Example: System Backgrounds with Custom Overlaid Text&lt;/h3&gt;
-&lt;p&gt;Similarly, imagine a system darkens the Card component’s&lt;code&gt;background-color&lt;/code&gt;. The Card’s content area includes a &amp;quot;safe&amp;quot; &lt;code&gt;content-container&lt;/code&gt; zone where adopters insert whatever content and markup they want.&lt;/p&gt;
+  <p>However, an adopter had used the Ghost button dependent on that color on a light gray background. After the system change, the label&#39;s text color contrast is inaccessible. <em>Your system broke their product</em>.</p>
+<h3 id="example-system-backgrounds-with-custom-overlaid-text">Example: System Backgrounds with Custom Overlaid Text</h3>
+<p>Similarly, imagine a system darkens the Card component’s<code>background-color</code>. The Card’s content area includes a &quot;safe&quot; <code>content-container</code> zone where adopters insert whatever content and markup they want.</p>
 
 
   
@@ -221,23 +221,23 @@
 
 
 
-  &lt;p&gt;In that presumably safe zone, an adopter added secondary text that, while subtle moderate gray, passed a color contrast test. After the system change, the color contrast is no longer accessible. &lt;em&gt;Your system broke their product&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Imagine your system’s minor release included those adjustments. Backward compatible, you said? No risk in upgrading, they trusted? Nope! Your system broke their product!&lt;/p&gt;
-&lt;p&gt;Therefore, evaluate changed colors properties to determine if a system changed, such as:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Text &lt;code&gt;color&lt;/code&gt; that could appear above an adopter&amp;#39;s &lt;code&gt;background-color&lt;/code&gt;, image, or other texture.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;background-color&lt;/code&gt; on which an adopter&amp;#39;s text &lt;code&gt;color&lt;/code&gt; is overlaid.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;background-color&lt;/code&gt;, &lt;code&gt;border-color&lt;/code&gt;, text &lt;code&gt;color&lt;/code&gt;, &lt;code&gt;box-shadow&lt;/code&gt;, or other property composed beside, above, or below another component&amp;#39;s edge or content so as to diminish contrast between elements.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Accessibility drove these examples. There’s aesthetic risk as well, in that well-intentioned system changes could disrupt the colorful harmony achieved by a product designer. Color interactions abound throughout UI that a system designer doesn’t control or have visibility into.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Start breaking change conversation with color criteria. It’s easier to convey risk, it’s objectively measurable, and it’s tied to accessibility that stirs passions. Armed with a few criteria, you can move on to other concerns.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;breaking-typography-by-wrapping&quot;&gt;Breaking Typography (By Wrapping)&lt;/h2&gt;
-&lt;p&gt;Typography is a core facet of any visual style. Teams want to get it just right. And there are so many dials to tune: &lt;code&gt;font-family&lt;/code&gt;, &lt;code&gt;font-weight&lt;/code&gt;, &lt;code&gt;font-size&lt;/code&gt;, &lt;code&gt;text-transform&lt;/code&gt;, &lt;code&gt;line-height&lt;/code&gt;, &lt;code&gt;letter-spacing&lt;/code&gt;, and more.&lt;/p&gt;
-&lt;p&gt;Not all experiences risk breaking if a system adjusts typography. For content-heavy experiences, each element’s content can be unpredictable, of varying length, and designed to wrap and respond to changes in viewport width.&lt;/p&gt;
-&lt;p&gt;For denser interfaces, typography must be precise. Designers grind for hours fine-tuning typography, arranging labels to fit in compact areas. If you adjust system typography, their elements may wrap or crop in unexpected ways.&lt;/p&gt;
-&lt;h3 id=&quot;example-wrapping-tabs-are-awful&quot;&gt;Example: Wrapping Tabs Are Awful&lt;/h3&gt;
-&lt;p&gt;Imagine your system adjusts tab label&lt;code&gt;font-weight&lt;/code&gt; from normal to bold.&lt;/p&gt;
+  <p>In that presumably safe zone, an adopter added secondary text that, while subtle moderate gray, passed a color contrast test. After the system change, the color contrast is no longer accessible. <em>Your system broke their product</em>.</p>
+<p>Imagine your system’s minor release included those adjustments. Backward compatible, you said? No risk in upgrading, they trusted? Nope! Your system broke their product!</p>
+<p>Therefore, evaluate changed colors properties to determine if a system changed, such as:</p>
+<ul>
+<li>Text <code>color</code> that could appear above an adopter&#39;s <code>background-color</code>, image, or other texture.</li>
+<li><code>background-color</code> on which an adopter&#39;s text <code>color</code> is overlaid.</li>
+<li><code>background-color</code>, <code>border-color</code>, text <code>color</code>, <code>box-shadow</code>, or other property composed beside, above, or below another component&#39;s edge or content so as to diminish contrast between elements.</li>
+</ul>
+<p>Accessibility drove these examples. There’s aesthetic risk as well, in that well-intentioned system changes could disrupt the colorful harmony achieved by a product designer. Color interactions abound throughout UI that a system designer doesn’t control or have visibility into.</p>
+<p><em>Takeaway</em>: Start breaking change conversation with color criteria. It’s easier to convey risk, it’s objectively measurable, and it’s tied to accessibility that stirs passions. Armed with a few criteria, you can move on to other concerns.</p>
+<hr>
+<h2 id="breaking-typography-by-wrapping">Breaking Typography (By Wrapping)</h2>
+<p>Typography is a core facet of any visual style. Teams want to get it just right. And there are so many dials to tune: <code>font-family</code>, <code>font-weight</code>, <code>font-size</code>, <code>text-transform</code>, <code>line-height</code>, <code>letter-spacing</code>, and more.</p>
+<p>Not all experiences risk breaking if a system adjusts typography. For content-heavy experiences, each element’s content can be unpredictable, of varying length, and designed to wrap and respond to changes in viewport width.</p>
+<p>For denser interfaces, typography must be precise. Designers grind for hours fine-tuning typography, arranging labels to fit in compact areas. If you adjust system typography, their elements may wrap or crop in unexpected ways.</p>
+<h3 id="example-wrapping-tabs-are-awful">Example: Wrapping Tabs Are Awful</h3>
+<p>Imagine your system adjusts tab label<code>font-weight</code> from normal to bold.</p>
 
 
   
@@ -251,18 +251,18 @@
 
 
 
-  &lt;p&gt;An adopter upgrades. Their existing unresponsive tabs exceed allocated space, so they wrap. Ghastly! &lt;em&gt;Your system broke their product.&lt;/em&gt;&lt;/p&gt;
-&lt;h3 id=&quot;example-letter-spacing-mayhem&quot;&gt;Example: Letter Spacing Mayhem&lt;/h3&gt;
-&lt;p&gt;Brand guidelines evolve, yielding new heading hierarchy and style. Thus, your system adapts by increasing each heading’s &lt;code&gt;letter-spacing&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;An adopter upgrades their dense, single page radiology app that’s translated into 14 languages, composed of myriad control panels, each chock full of form elements and headings. They upgrade, and the UI is awash with headings unpredictably cropped. They call a crisis meeting. They invite the back-end data engineers, for goodness sakes! &lt;em&gt;Your system broke their product!&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Adjusting system typography can be dangerous. To you, it’s a refreshing typographic evolution deployed effortlessly across a library. To them, text begins misbehaving. They blame you. Maybe they flame you in the &lt;code&gt;#system-design&lt;/code&gt; Slack channel. Nobody needs that.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Prior to &lt;code&gt;1.0.0&lt;/code&gt;, work diligently to to experiment, refine, and finalize type styles suitable to customer’s variety. Once &lt;code&gt;1.0.0&lt;/code&gt; passes, sustain a stable base and consider change cautiously. Consider reserving dangerous shifts for the next major release. Until then, incrementally add contained features, such as a Long Form Text component for styling &lt;em&gt;just&lt;/em&gt; article copy.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;breaking-space-and-size&quot;&gt;Breaking Space and Size&lt;/h2&gt;
-&lt;p&gt;At least you can see color and typography. &lt;a href=&quot;/articles/space-in-design-systems&quot;&gt;Space&lt;/a&gt; and size? Those are harder to define as concretely reusable, let alone monitor for breaking change.&lt;/p&gt;
-&lt;p&gt;In HTML, when you change a component’s box model properties — &lt;code&gt;padding&lt;/code&gt;, &lt;code&gt;margin&lt;/code&gt;, &lt;code&gt;width&lt;/code&gt;, &lt;code&gt;height&lt;/code&gt;, &lt;code&gt;display&lt;/code&gt;, &lt;code&gt;box-sizing&lt;/code&gt;, &lt;code&gt;position&lt;/code&gt;, &lt;code&gt;left&lt;/code&gt;, &lt;code&gt;right&lt;/code&gt;, &lt;code&gt;top&lt;/code&gt;, &lt;code&gt;bottom&lt;/code&gt; — you risk impacting layout composition that arranges that component with other page elements.&lt;/p&gt;
-&lt;h3 id=&quot;example-1-removing-vertical-spacing&quot;&gt;Example 1: Removing Vertical Spacing&lt;/h3&gt;
-&lt;p&gt;Your system team decides to remove vertical spacing applied form controls in the form of &lt;code&gt;margin-bottom&lt;/code&gt;. This impacts &lt;code&gt;&amp;lt;input&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt;, &lt;code&gt;&amp;lt;label&amp;gt;&lt;/code&gt;, microcopy and other elements.&lt;/p&gt;
+  <p>An adopter upgrades. Their existing unresponsive tabs exceed allocated space, so they wrap. Ghastly! <em>Your system broke their product.</em></p>
+<h3 id="example-letter-spacing-mayhem">Example: Letter Spacing Mayhem</h3>
+<p>Brand guidelines evolve, yielding new heading hierarchy and style. Thus, your system adapts by increasing each heading’s <code>letter-spacing</code>.</p>
+<p>An adopter upgrades their dense, single page radiology app that’s translated into 14 languages, composed of myriad control panels, each chock full of form elements and headings. They upgrade, and the UI is awash with headings unpredictably cropped. They call a crisis meeting. They invite the back-end data engineers, for goodness sakes! <em>Your system broke their product!</em></p>
+<p>Adjusting system typography can be dangerous. To you, it’s a refreshing typographic evolution deployed effortlessly across a library. To them, text begins misbehaving. They blame you. Maybe they flame you in the <code>#system-design</code> Slack channel. Nobody needs that.</p>
+<p><em>Takeaway</em>: Prior to <code>1.0.0</code>, work diligently to to experiment, refine, and finalize type styles suitable to customer’s variety. Once <code>1.0.0</code> passes, sustain a stable base and consider change cautiously. Consider reserving dangerous shifts for the next major release. Until then, incrementally add contained features, such as a Long Form Text component for styling <em>just</em> article copy.</p>
+<hr>
+<h2 id="breaking-space-and-size">Breaking Space and Size</h2>
+<p>At least you can see color and typography. <a href="/articles/space-in-design-systems">Space</a> and size? Those are harder to define as concretely reusable, let alone monitor for breaking change.</p>
+<p>In HTML, when you change a component’s box model properties — <code>padding</code>, <code>margin</code>, <code>width</code>, <code>height</code>, <code>display</code>, <code>box-sizing</code>, <code>position</code>, <code>left</code>, <code>right</code>, <code>top</code>, <code>bottom</code> — you risk impacting layout composition that arranges that component with other page elements.</p>
+<h3 id="example-1-removing-vertical-spacing">Example 1: Removing Vertical Spacing</h3>
+<p>Your system team decides to remove vertical spacing applied form controls in the form of <code>margin-bottom</code>. This impacts <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, <code>&lt;label&gt;</code>, microcopy and other elements.</p>
 
 
   
@@ -276,9 +276,9 @@
 
 
 
-  &lt;p&gt;An adopter had laid out 38 different forms relying upon that spacing. After the system change, all their forms no longer vertically separate elements. &lt;em&gt;Your system broke their product&lt;/em&gt;.&lt;/p&gt;
-&lt;h3 id=&quot;example-2-custom-sizing-based-on-assumed-spacing&quot;&gt;Example 2: Custom Sizing Based on Assumed Spacing&lt;/h3&gt;
-&lt;p&gt;After extensive design community debate, your system concedes to expand a Card’s content block’s &lt;code&gt;padding&lt;/code&gt;.&lt;/p&gt;
+  <p>An adopter had laid out 38 different forms relying upon that spacing. After the system change, all their forms no longer vertically separate elements. <em>Your system broke their product</em>.</p>
+<h3 id="example-2-custom-sizing-based-on-assumed-spacing">Example 2: Custom Sizing Based on Assumed Spacing</h3>
+<p>After extensive design community debate, your system concedes to expand a Card’s content block’s <code>padding</code>.</p>
 
 
   
@@ -292,15 +292,15 @@
 
 
 
-  &lt;p&gt;An adopter had arranged and sized Cards based on their customer’s hardware settings. They’d also added an icon-only toolbar in the bottom row. After the system change, the icons wrap to two rows. &lt;em&gt;Your system broke their product&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: First, avoid spatial rules (usually &lt;code&gt;margin&lt;/code&gt;) outside a component’s boundary. Second, make spatial adjustments very, very cautiously. Degrading an adopter’s layout is a surefire way to create friction, diminish trust, and result in justifiable bad PR across a community.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;contained-non-breaking-spatial-change&quot;&gt;Contained, Non-Breaking Spatial Change&lt;/h3&gt;
-&lt;p&gt;Some spatial change doesn’t impact adjacent elements or page composition. For example, tightening or expanding the inset &lt;code&gt;padding&lt;/code&gt; or stacked &lt;code&gt;margin&lt;/code&gt; between items in a Menu would not be a breaking change because these adjustments are contained within a block that&amp;#39;s completely specified by the system, includes no other customizable elements, and is layered in a manner that doesn’t otherwise impact page layout when opened and closed.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;what-else-can-break-visual-style&quot;&gt;What Else Can Break Visual Style?&lt;/h2&gt;
-&lt;p&gt;In general, changes in visual style could be specified as changes to a bevy of CSS properties, the range of which is exemplified by &lt;a href=&quot;/articles/tokens-in-design-systems&quot;&gt;design token&lt;/a&gt; collections in &lt;a href=&quot;https://www.lightningdesignsystem.com/design-tokens/&quot;&gt;Salesforce Lightning&lt;/a&gt;, &lt;a href=&quot;https://designsystem.morningstar.com/visual-language/constants.html&quot;&gt;Morningstar&lt;/a&gt;, &lt;a href=&quot;https://github.com/rei/rei-cedar-tokens/tree/master/tokens/foundations&quot;&gt;REI&lt;/a&gt;, and &lt;a href=&quot;https://github.com/opentable/design-tokens#otkit&quot;&gt;Open Table&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;What other properties could you monitor beyond those of color, typography, space, and size described above? &lt;code&gt;z-index&lt;/code&gt; applied across components like Popovers, Dialogs, Modals, and Tooltips is central to composition in the third, layered dimension of a layout. &lt;code&gt;opacity&lt;/code&gt; applied widely to semi-transparent layers (such as under a Modal) also seem a strong candidate. Even subtle changes like a &lt;code&gt;border-bottom&lt;/code&gt; have an impact.&lt;/p&gt;
+  <p>An adopter had arranged and sized Cards based on their customer’s hardware settings. They’d also added an icon-only toolbar in the bottom row. After the system change, the icons wrap to two rows. <em>Your system broke their product</em>.</p>
+<p><em>Takeaway</em>: First, avoid spatial rules (usually <code>margin</code>) outside a component’s boundary. Second, make spatial adjustments very, very cautiously. Degrading an adopter’s layout is a surefire way to create friction, diminish trust, and result in justifiable bad PR across a community.</p>
+<hr>
+<h3 id="contained-non-breaking-spatial-change">Contained, Non-Breaking Spatial Change</h3>
+<p>Some spatial change doesn’t impact adjacent elements or page composition. For example, tightening or expanding the inset <code>padding</code> or stacked <code>margin</code> between items in a Menu would not be a breaking change because these adjustments are contained within a block that&#39;s completely specified by the system, includes no other customizable elements, and is layered in a manner that doesn’t otherwise impact page layout when opened and closed.</p>
+<hr>
+<h2 id="what-else-can-break-visual-style">What Else Can Break Visual Style?</h2>
+<p>In general, changes in visual style could be specified as changes to a bevy of CSS properties, the range of which is exemplified by <a href="/articles/tokens-in-design-systems">design token</a> collections in <a href="https://www.lightningdesignsystem.com/design-tokens/">Salesforce Lightning</a>, <a href="https://designsystem.morningstar.com/visual-language/constants.html">Morningstar</a>, <a href="https://github.com/rei/rei-cedar-tokens/tree/master/tokens/foundations">REI</a>, and <a href="https://github.com/opentable/design-tokens#otkit">Open Table</a>.</p>
+<p>What other properties could you monitor beyond those of color, typography, space, and size described above? <code>z-index</code> applied across components like Popovers, Dialogs, Modals, and Tooltips is central to composition in the third, layered dimension of a layout. <code>opacity</code> applied widely to semi-transparent layers (such as under a Modal) also seem a strong candidate. Even subtle changes like a <code>border-bottom</code> have an impact.</p>
 
 
   
@@ -314,17 +314,17 @@
 
 
 
-  &lt;ul&gt;
-&lt;li&gt;Your system makes the &lt;code&gt;border-bottom&lt;/code&gt; of a vertical list&amp;#39;s last item transparent. An adopter had positioned that list snugly above another block, relying on the line to create contrast. After the system change, the block&amp;#39;s header blends with the label of the list&amp;#39;s last item in a manner not obvious to distinguish.
-If so, &lt;em&gt;your system broke their product&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;But what of adjusting &lt;code&gt;box-shadow&lt;/code&gt;? Or fine tuning &lt;code&gt;border-radius&lt;/code&gt;? Cue designer ambivalence. It&amp;#39;d be hard to convince that those adjustments would break an adopter&amp;#39;s experience.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Review the vast collection of possible CSS properties and discuss the consequences of candidate properties with your team. A working session will fruitfully reveal the group’s tolerance for protecting adopters and drive towards documenting how far you’ll go.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;so-whats-a-visual-breaking-change&quot;&gt;So, What’s a Visual Breaking Change?&lt;/h2&gt;
-&lt;p&gt;At this point, are you thinking: does this really matter? Shouldn’t we use our system to control our visual language? Are adopters really going to care?&lt;/p&gt;
-&lt;p&gt;Engineers may care. Designers DEFINITELY care. They spend hours fine-tuning layouts, annotating, and communicating detail to collaborating devs. Therefore, a design system should describe how it changes. And, each time it changes, if it’s going to be a change that degrades their design.&lt;/p&gt;
-&lt;p&gt;In conversations with design system colleagues, sentiments are:&lt;/p&gt;
+  <ul>
+<li>Your system makes the <code>border-bottom</code> of a vertical list&#39;s last item transparent. An adopter had positioned that list snugly above another block, relying on the line to create contrast. After the system change, the block&#39;s header blends with the label of the list&#39;s last item in a manner not obvious to distinguish.
+If so, <em>your system broke their product</em>.</li>
+</ul>
+<p>But what of adjusting <code>box-shadow</code>? Or fine tuning <code>border-radius</code>? Cue designer ambivalence. It&#39;d be hard to convince that those adjustments would break an adopter&#39;s experience.</p>
+<p><em>Takeaway</em>: Review the vast collection of possible CSS properties and discuss the consequences of candidate properties with your team. A working session will fruitfully reveal the group’s tolerance for protecting adopters and drive towards documenting how far you’ll go.</p>
+<hr>
+<h2 id="so-whats-a-visual-breaking-change">So, What’s a Visual Breaking Change?</h2>
+<p>At this point, are you thinking: does this really matter? Shouldn’t we use our system to control our visual language? Are adopters really going to care?</p>
+<p>Engineers may care. Designers DEFINITELY care. They spend hours fine-tuning layouts, annotating, and communicating detail to collaborating devs. Therefore, a design system should describe how it changes. And, each time it changes, if it’s going to be a change that degrades their design.</p>
+<p>In conversations with design system colleagues, sentiments are:</p>
 
 
   
@@ -337,10 +337,10 @@ If so, &lt;em&gt;your system broke their product&lt;/em&gt;.&lt;/li&gt;
 
 
 
-  &lt;p&gt;In our work on the &lt;a href=&quot;https://designsystem.morningstar.com/about/versioning.html&quot;&gt;Morningstar Design System&lt;/a&gt;, we’ve documented what changes are considered major, minor, and patch. Our team asserts opinions confidently in critique discussions, comments on pull requests, and in our discussions with adopting and upgrading teams.&lt;/p&gt;
-&lt;p&gt;Our field will adapt to versioning as it deeply engrains in our practice. We’ll do what we can to communicate well with and protect our adopters.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;#3.&lt;/strong&gt; &lt;a href=&quot;/articles/versioning-design-systems&quot;&gt;&lt;strong&gt;Versioning&lt;/strong&gt;&lt;/a&gt; ← Previous | Next → &lt;strong&gt;#5.&lt;/strong&gt; &lt;a href=&quot;/articles/dealing-with-dependencies-inside-design-systems&quot;&gt;&lt;strong&gt;Dependencies&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+  <p>In our work on the <a href="https://designsystem.morningstar.com/about/versioning.html">Morningstar Design System</a>, we’ve documented what changes are considered major, minor, and patch. Our team asserts opinions confidently in critique discussions, comments on pull requests, and in our discussions with adopting and upgrading teams.</p>
+<p>Our field will adapt to versioning as it deeply engrains in our practice. We’ll do what we can to communicate well with and protect our adopters.</p>
+<hr>
+<p><strong>#3.</strong> <a href="/articles/versioning-design-systems"><strong>Versioning</strong></a> ← Previous | Next → <strong>#5.</strong> <a href="/articles/dealing-with-dependencies-inside-design-systems"><strong>Dependencies</strong></a></p>
 
 
 

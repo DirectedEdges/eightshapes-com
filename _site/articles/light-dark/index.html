@@ -137,12 +137,12 @@
     
 
     
-  &lt;p&gt;As described in &lt;a href=&quot;/articles/color-in-design-systems&quot;&gt;Color in Design Systems&lt;/a&gt;, systems codify color decisions and palettes for brand identity, interactive affordances, neutrals, feedback, and theming. However, having a deep library of harmonious colors doesn’t mean that you’ve sufficiently modeled how to color each component on a white, various grays, or a near black canvas.&lt;/p&gt;
-&lt;p&gt;With systems, you can encode predictable &lt;strong&gt;background&lt;/strong&gt; , &lt;strong&gt;text&lt;/strong&gt; , &lt;strong&gt;border&lt;/strong&gt; , interactive &lt;strong&gt;state&lt;/strong&gt; , and &lt;strong&gt;layered&lt;/strong&gt; color property combinations so that your components display well diverse background colors. This article tours lessons you can apply to prepare, codify, and implement accessible color choices across light and dark interface settings.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;prepping-for-a-light--dark-system&quot;&gt;Prepping for a Light &amp;amp; Dark System&lt;/h2&gt;
-&lt;h3 id=&quot;inventory-neutrals-use-across-components&quot;&gt;Inventory Neutrals Use Across Components&lt;/h3&gt;
-&lt;p&gt;Before selecting new colors, inventory the neutrals you already use. Some libraries already limit a small set of tints (8? 10? 12?). In other cases, I’ve seen teams with over 40 often barely distinct grays!&lt;/p&gt;
+  <p>As described in <a href="/articles/color-in-design-systems">Color in Design Systems</a>, systems codify color decisions and palettes for brand identity, interactive affordances, neutrals, feedback, and theming. However, having a deep library of harmonious colors doesn’t mean that you’ve sufficiently modeled how to color each component on a white, various grays, or a near black canvas.</p>
+<p>With systems, you can encode predictable <strong>background</strong> , <strong>text</strong> , <strong>border</strong> , interactive <strong>state</strong> , and <strong>layered</strong> color property combinations so that your components display well diverse background colors. This article tours lessons you can apply to prepare, codify, and implement accessible color choices across light and dark interface settings.</p>
+<hr>
+<h2 id="prepping-for-a-light--dark-system">Prepping for a Light &amp; Dark System</h2>
+<h3 id="inventory-neutrals-use-across-components">Inventory Neutrals Use Across Components</h3>
+<p>Before selecting new colors, inventory the neutrals you already use. Some libraries already limit a small set of tints (8? 10? 12?). In other cases, I’ve seen teams with over 40 often barely distinct grays!</p>
 
 
   
@@ -156,10 +156,10 @@
 
 
 
-  &lt;p&gt;Catalog the distinct HEX values, order them from light to dark, and prepare to prune to a reasonably-sized, non-duplicative, harmonious set.&lt;/p&gt;
-&lt;p&gt;Next, analyze color use across components to understand how neutrals are applied as text, background, and border colors. Look for patterns as well as inconsistencies. Are the neutrals harmonious? Is the primary text using 3, 4, or even 5 different neutrals? Does the benefit of all this variety outweigh the cost of complexity and variability?&lt;/p&gt;
-&lt;h3 id=&quot;arrange-component-designs-across-backgrounds&quot;&gt;Arrange Component Designs Across Backgrounds&lt;/h3&gt;
-&lt;p&gt;Whether on a Sketch canvas or lengthy kitchen sink HTML page, stacked your library’s more basic components densely on a white canvas. Then duplicate the stacked column for each background color your system endorses.&lt;/p&gt;
+  <p>Catalog the distinct HEX values, order them from light to dark, and prepare to prune to a reasonably-sized, non-duplicative, harmonious set.</p>
+<p>Next, analyze color use across components to understand how neutrals are applied as text, background, and border colors. Look for patterns as well as inconsistencies. Are the neutrals harmonious? Is the primary text using 3, 4, or even 5 different neutrals? Does the benefit of all this variety outweigh the cost of complexity and variability?</p>
+<h3 id="arrange-component-designs-across-backgrounds">Arrange Component Designs Across Backgrounds</h3>
+<p>Whether on a Sketch canvas or lengthy kitchen sink HTML page, stacked your library’s more basic components densely on a white canvas. Then duplicate the stacked column for each background color your system endorses.</p>
 
 
   
@@ -173,12 +173,12 @@
 
 
 
-  &lt;p&gt;With this setup, you can experiment with and demonstrate effectively designed components across backgrounds while describing the models.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;light--dark-properties&quot;&gt;Light &amp;amp; Dark Properties&lt;/h2&gt;
-&lt;p&gt;To create a system for light &amp;amp; dark, you must model the range of CSS properties you’ll control, from backgrounds and text to borders, layers, and more.&lt;/p&gt;
-&lt;h3 id=&quot;background-color-just-light-and-dark-settings-or-more-options&quot;&gt;Background Color: Just Light and Dark Settings, or More Options?&lt;/h3&gt;
-&lt;p&gt;How many different light &amp;amp; dark settings do you need? Most teams opt for a simple toggle: a “light”, often pure white &lt;code&gt;#FFFFFF&lt;/code&gt; canvas and “dark”, near black canvas such as&lt;code&gt;#222222&lt;/code&gt;.&lt;/p&gt;
+  <p>With this setup, you can experiment with and demonstrate effectively designed components across backgrounds while describing the models.</p>
+<hr>
+<h2 id="light--dark-properties">Light &amp; Dark Properties</h2>
+<p>To create a system for light &amp; dark, you must model the range of CSS properties you’ll control, from backgrounds and text to borders, layers, and more.</p>
+<h3 id="background-color-just-light-and-dark-settings-or-more-options">Background Color: Just Light and Dark Settings, or More Options?</h3>
+<p>How many different light &amp; dark settings do you need? Most teams opt for a simple toggle: a “light”, often pure white <code>#FFFFFF</code> canvas and “dark”, near black canvas such as<code>#222222</code>.</p>
 
 
   
@@ -192,7 +192,7 @@
 
 
 
-  &lt;p&gt;Other teams endorse a wider range of neutral backgrounds. For example, a system may overlay light gray modules on a white canvas (or vice versa, or both). In a dark setting, there may be a “pure black” alternative for a video player and photo gallery distinct from the default charcoal dark background. Therefore, having a pair of colors for each of light and dark is helpful.&lt;/p&gt;
+  <p>Other teams endorse a wider range of neutral backgrounds. For example, a system may overlay light gray modules on a white canvas (or vice versa, or both). In a dark setting, there may be a “pure black” alternative for a video player and photo gallery distinct from the default charcoal dark background. Therefore, having a pair of colors for each of light and dark is helpful.</p>
 
 
   
@@ -206,7 +206,7 @@
 
 
 
-  &lt;p&gt;A very sophisticated collection of layered backgrounds could start with white and near black and add successive layers of darkening light grays and lightening charcoals, respectively.&lt;/p&gt;
+  <p>A very sophisticated collection of layered backgrounds could start with white and near black and add successive layers of darkening light grays and lightening charcoals, respectively.</p>
 
 
   
@@ -220,21 +220,21 @@
 
 
 
-  &lt;p&gt;So much choice to optimize and maintain! I prefer things a bit simpler. That’s why at this point I’ll avoid solving for other thematic background colors (orange, blue, green and purple!) and photography, preferring to solve the core light &amp;amp; dark first.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Even if you target just two settings (“light” and “dark”), expect to solve for a background color shift in each setting. Finally, avoid ballooning the complexity of colorful and photography backdrops, at least early on.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;text-color-type-your-types&quot;&gt;Text Color: Type Your Types&lt;/h3&gt;
-&lt;p&gt;In a library, you may find there was no simple model of text colors. Instead, &lt;em&gt;card&lt;/em&gt; titles, labels in &lt;em&gt;pills&lt;/em&gt; and &lt;em&gt;forms&lt;/em&gt;, and other component text may be arbitrarily colored.&lt;/p&gt;
-&lt;p&gt;Text color can be more systematic, starting with basic types:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;primary&lt;/code&gt; text color for paragraphs, labels and other essentials&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;secondary&lt;/code&gt; text color like form microcopy, captions, and table headings&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;interactive&lt;/code&gt; text (mostly, links)&lt;/li&gt;
-&lt;li&gt;inline&lt;code&gt;error&lt;/code&gt; text color shown adjacent to controls&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;disabled&lt;/code&gt; text, usually in form controls and buttons&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Maybe there’s room for a &lt;code&gt;tertiary&lt;/code&gt; text color, although it can tend towards inaccessible contrast and lack sufficient distinction from &lt;code&gt;secondary&lt;/code&gt;. An &lt;code&gt;icon&lt;/code&gt; fill/text color could be included too, or you can color icons using the same &lt;code&gt;primary&lt;/code&gt;, &lt;code&gt;secondary&lt;/code&gt;, and &lt;code&gt;interactive&lt;/code&gt; types already in play.&lt;/p&gt;
-&lt;p&gt;With established types, choosing and applying text color per background becomes fill in the blank.&lt;/p&gt;
+  <p>So much choice to optimize and maintain! I prefer things a bit simpler. That’s why at this point I’ll avoid solving for other thematic background colors (orange, blue, green and purple!) and photography, preferring to solve the core light &amp; dark first.</p>
+<p><em>Takeaway</em>: Even if you target just two settings (“light” and “dark”), expect to solve for a background color shift in each setting. Finally, avoid ballooning the complexity of colorful and photography backdrops, at least early on.</p>
+<hr>
+<h3 id="text-color-type-your-types">Text Color: Type Your Types</h3>
+<p>In a library, you may find there was no simple model of text colors. Instead, <em>card</em> titles, labels in <em>pills</em> and <em>forms</em>, and other component text may be arbitrarily colored.</p>
+<p>Text color can be more systematic, starting with basic types:</p>
+<ul>
+<li><code>primary</code> text color for paragraphs, labels and other essentials</li>
+<li><code>secondary</code> text color like form microcopy, captions, and table headings</li>
+<li><code>interactive</code> text (mostly, links)</li>
+<li>inline<code>error</code> text color shown adjacent to controls</li>
+<li><code>disabled</code> text, usually in form controls and buttons</li>
+</ul>
+<p>Maybe there’s room for a <code>tertiary</code> text color, although it can tend towards inaccessible contrast and lack sufficient distinction from <code>secondary</code>. An <code>icon</code> fill/text color could be included too, or you can color icons using the same <code>primary</code>, <code>secondary</code>, and <code>interactive</code> types already in play.</p>
+<p>With established types, choosing and applying text color per background becomes fill in the blank.</p>
 
 
   
@@ -248,7 +248,7 @@
 
 
 
-  &lt;p&gt;One things for sure: finding link and error text color in dark settings that’s both accessible and harmonious is difficult. Efforts of my teams sometimes yields “use white” for those types on dark.&lt;/p&gt;
+  <p>One things for sure: finding link and error text color in dark settings that’s both accessible and harmonious is difficult. Efforts of my teams sometimes yields “use white” for those types on dark.</p>
 
 
   
@@ -262,10 +262,10 @@
 
 
 
-  &lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Identify a simple classification of type color that includes &lt;em&gt;at least&lt;/em&gt; primary, secondary, interactive, and error text. More cautiously consider additional types such as tertiary and distinct icon fill colors.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;borders-of-controls-keep-strokes-strong-enough&quot;&gt;Borders of Controls: Keep Strokes Strong Enough&lt;/h3&gt;
-&lt;p&gt;Input controls — &lt;code&gt;textbox&lt;/code&gt;, &lt;code&gt;textarea&lt;/code&gt;, &lt;code&gt;radio-button&lt;/code&gt; — require strong contrast for visibility and usability. The control’s border color can play a big role, and may or may not shift across backgrounds. Other features – a &lt;code&gt;:focus&lt;/code&gt; halo, a red border for field in error, and more – may also need attention.&lt;/p&gt;
+  <p><em>Takeaway</em>: Identify a simple classification of type color that includes <em>at least</em> primary, secondary, interactive, and error text. More cautiously consider additional types such as tertiary and distinct icon fill colors.</p>
+<hr>
+<h3 id="borders-of-controls-keep-strokes-strong-enough">Borders of Controls: Keep Strokes Strong Enough</h3>
+<p>Input controls — <code>textbox</code>, <code>textarea</code>, <code>radio-button</code> — require strong contrast for visibility and usability. The control’s border color can play a big role, and may or may not shift across backgrounds. Other features – a <code>:focus</code> halo, a red border for field in error, and more – may also need attention.</p>
 
 
   
@@ -279,10 +279,10 @@
 
 
 
-  &lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Consider the borders and focused states of UI controls, and see if a moderate neutral and identical halo is usable across all settings.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;borders-as-separators-need-heavy--light-hairlines&quot;&gt;Borders as Separators: Need Heavy &amp;amp; Light Hairlines?&lt;/h3&gt;
-&lt;p&gt;Designers can scaffold a UI using thin rules — or &lt;em&gt;hairlines&lt;/em&gt; — to delineate sections, rows in a &lt;em&gt;data table&lt;/em&gt;, or items in a &lt;em&gt;list group&lt;/em&gt;.&lt;/p&gt;
+  <p><em>Takeaway</em>: Consider the borders and focused states of UI controls, and see if a moderate neutral and identical halo is usable across all settings.</p>
+<hr>
+<h3 id="borders-as-separators-need-heavy--light-hairlines">Borders as Separators: Need Heavy &amp; Light Hairlines?</h3>
+<p>Designers can scaffold a UI using thin rules — or <em>hairlines</em> — to delineate sections, rows in a <em>data table</em>, or items in a <em>list group</em>.</p>
 
 
   
@@ -296,10 +296,10 @@
 
 
 
-  &lt;p&gt;Adjusting hairlines — even light and heavy variants — can benefit from a similar structure of simple property definitions across backgrounds.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Catalog a hairline or two (heavy vs light) across each background. Be wary of more. Choices beyond heavy get obese.&lt;/p&gt;
-&lt;h3 id=&quot;states-adjust-by-shifting-opacity&quot;&gt;States: Adjust by Shifting Opacity&lt;/h3&gt;
-&lt;p&gt;Don’t forget interactive states like the &lt;code&gt;hover&lt;/code&gt;, &lt;code&gt;active&lt;/code&gt;, and &lt;code&gt;selected&lt;/code&gt; states of &lt;em&gt;buttons&lt;/em&gt;, &lt;em&gt;tabs&lt;/em&gt;, &lt;em&gt;list groups&lt;/em&gt; and &lt;em&gt;links&lt;/em&gt;.&lt;/p&gt;
+  <p>Adjusting hairlines — even light and heavy variants — can benefit from a similar structure of simple property definitions across backgrounds.</p>
+<p><em>Takeaway</em>: Catalog a hairline or two (heavy vs light) across each background. Be wary of more. Choices beyond heavy get obese.</p>
+<h3 id="states-adjust-by-shifting-opacity">States: Adjust by Shifting Opacity</h3>
+<p>Don’t forget interactive states like the <code>hover</code>, <code>active</code>, and <code>selected</code> states of <em>buttons</em>, <em>tabs</em>, <em>list groups</em> and <em>links</em>.</p>
 
 
   
@@ -313,11 +313,11 @@
 
 
 
-  &lt;p&gt;As with color in general, states are a place where functional transformations (think: &lt;code&gt;darken(5%)&lt;/code&gt;) or adjusted opacity (think: &lt;code&gt;background-color: rgba(x,x,x,80%)&lt;/code&gt;) can work well. Other teams handpick even these colors, optimizing appearances per background.&lt;/p&gt;
-&lt;p&gt;I’m less concerned which approach is used, so long as it’s modeled soundly and assessed for accessibility across backgrounds.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Fine tune colors for each state using a consistent method, whether functional transform, opacity shift, or handpicked option.&lt;/p&gt;
-&lt;h3 id=&quot;backgrounds-on-backgrounds-prevent-undesirable-layering&quot;&gt;Backgrounds on Backgrounds: Prevent Undesirable Layering&lt;/h3&gt;
-&lt;p&gt;Things get more interesting when a component block — like a &lt;em&gt;card&lt;/em&gt; — has a neutral background that itself rests on a different neutral. Suddenly, you are solving for text on a background … on a background. System users will be curious about what background-on-background combinations work well and are consistently used.&lt;/p&gt;
+  <p>As with color in general, states are a place where functional transformations (think: <code>darken(5%)</code>) or adjusted opacity (think: <code>background-color: rgba(x,x,x,80%)</code>) can work well. Other teams handpick even these colors, optimizing appearances per background.</p>
+<p>I’m less concerned which approach is used, so long as it’s modeled soundly and assessed for accessibility across backgrounds.</p>
+<p><em>Takeaway</em>: Fine tune colors for each state using a consistent method, whether functional transform, opacity shift, or handpicked option.</p>
+<h3 id="backgrounds-on-backgrounds-prevent-undesirable-layering">Backgrounds on Backgrounds: Prevent Undesirable Layering</h3>
+<p>Things get more interesting when a component block — like a <em>card</em> — has a neutral background that itself rests on a different neutral. Suddenly, you are solving for text on a background … on a background. System users will be curious about what background-on-background combinations work well and are consistently used.</p>
 
 
   
@@ -331,12 +331,12 @@
 
 
 
-  &lt;p&gt;I’ve never seen such combinatorial madness woven into a system via variables or functions. Nevertheless, some explorations and a few Do’s and Don’ts in documentation can help and suggest when a bit more ornamentation — like a &lt;code&gt;box-shadow&lt;/code&gt; – can help when contrast is a bit too subtle.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Explore how chunkier components of various backgrounds rest on broad fields of other neutrals.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;further-considerations-when-implementing-light--dark-color-in-a-library&quot;&gt;Further Considerations When Implementing Light &amp;amp; Dark Color in a Library&lt;/h2&gt;
-&lt;h3 id=&quot;accessibility-stay-tuned-in-real-time&quot;&gt;Accessibility: Stay Tuned in Real Time&lt;/h3&gt;
-&lt;p&gt;As you select color combinations, keep an eye on accessibility. You’ll tune this neutral. You’ll adjust that neutral. All the while, stay in bounds with accessible contrast that passes muster. At EightShapes, we built a &lt;strong&gt;Contrast Grid&lt;/strong&gt; tool to quickly visualize and score many text and background color combos at once.&lt;/p&gt;
+  <p>I’ve never seen such combinatorial madness woven into a system via variables or functions. Nevertheless, some explorations and a few Do’s and Don’ts in documentation can help and suggest when a bit more ornamentation — like a <code>box-shadow</code> – can help when contrast is a bit too subtle.</p>
+<p><em>Takeaway</em>: Explore how chunkier components of various backgrounds rest on broad fields of other neutrals.</p>
+<hr>
+<h2 id="further-considerations-when-implementing-light--dark-color-in-a-library">Further Considerations When Implementing Light &amp; Dark Color in a Library</h2>
+<h3 id="accessibility-stay-tuned-in-real-time">Accessibility: Stay Tuned in Real Time</h3>
+<p>As you select color combinations, keep an eye on accessibility. You’ll tune this neutral. You’ll adjust that neutral. All the while, stay in bounds with accessible contrast that passes muster. At EightShapes, we built a <strong>Contrast Grid</strong> tool to quickly visualize and score many text and background color combos at once.</p>
 
 
   
@@ -350,11 +350,11 @@
 
 
 
-  &lt;p&gt;The tool visualizes each combination in a grid, enabling us to experiment with, discard, adjust, and converge on the right neutrals. We’ll also screenshot and paste the grid into a Slack convo, or copy and embed the HTML/CSS for it into web-based doc to educate collaborators.&lt;/p&gt;
-&lt;p&gt;To use the tool, visit &lt;a href=&quot;http://contrast-grid.eightshapes.com&quot;&gt;&lt;strong&gt;contrast-grid.eightshapes.com&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;refine-the-neutral-palette&quot;&gt;Refine the Neutral Palette&lt;/h3&gt;
-&lt;p&gt;To optimize a color system, expect change. Some teams can’t avoid revisiting the entire palette altogether, cooling a blander grayscale towards blueish gray “slates” or “charcoals.”&lt;/p&gt;
+  <p>The tool visualizes each combination in a grid, enabling us to experiment with, discard, adjust, and converge on the right neutrals. We’ll also screenshot and paste the grid into a Slack convo, or copy and embed the HTML/CSS for it into web-based doc to educate collaborators.</p>
+<p>To use the tool, visit <a href="http://contrast-grid.eightshapes.com"><strong>contrast-grid.eightshapes.com</strong></a>.</p>
+<hr>
+<h3 id="refine-the-neutral-palette">Refine the Neutral Palette</h3>
+<p>To optimize a color system, expect change. Some teams can’t avoid revisiting the entire palette altogether, cooling a blander grayscale towards blueish gray “slates” or “charcoals.”</p>
 
 
   
@@ -368,7 +368,7 @@
 
 
 
-  &lt;p&gt;Other times, you need add just one more neutral or to replace a moderate choice to pass a barely failing accessibility test.&lt;/p&gt;
+  <p>Other times, you need add just one more neutral or to replace a moderate choice to pass a barely failing accessibility test.</p>
 
 
   
@@ -382,22 +382,22 @@
 
 
 
-  &lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Add, adjust, and deprecate neutrals to ensure just enough options fulfill your pursuit of reversible color system.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;tokenize-choices&quot;&gt;Tokenize Choices&lt;/h3&gt;
-&lt;p&gt;With all that structure, tooling should ease implementation. &lt;a href=&quot;/articles/tokens-in-design-systems&quot;&gt;Design tokens&lt;/a&gt; are a great way to catalog decisions and establish hooks for others — designers and developers alike — to align to.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Create a taxonomy of tokenized variables used by system adopters and your library’s components. The more predictably your model is catalogued, the easier it is to apply, maintain, and endure.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;weave-lights--darks-thru-components&quot;&gt;Weave Lights &amp;amp; Darks Thru Components&lt;/h3&gt;
-&lt;p&gt;Don’t forget. Getting to the right colors is half the solution. You still have components to re-style, too.&lt;/p&gt;
-&lt;p&gt;Some low-hanging fruit like &lt;em&gt;button&lt;/em&gt; states should be easy to change. However, the vast component catalog might feel like a dizzily daunting task to adjust for each setting. So get the job done, incrementally.&lt;/p&gt;
-&lt;p&gt;For an existing system, this can mean a bevy of small adjustments, tracked via a litany of spreadsheet rows or JIRA subtasks. If that’s your reality, spread responsibility across a team to share the load and have ’em all learn by doing. This may motivate you to setup mixins, tokens, and other tooling more robustly.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: Finish what you’ve started by ensuring each library part supports toggling color. by divvying tickets across teammates to fill the gaps of availability over a coming release or two.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;both-light--dark-regions-on-the-same-page-whats-your-css-methodology&quot;&gt;Both Light &amp;amp; Dark Regions on the Same Page: What’s Your CSS Methodology?&lt;/h3&gt;
-&lt;p&gt;Once UIs combine dark and light areas together on the same page, risky CSS conflicts arise. One larger “light” container could contain another “dark” container itself with “light” components. Overly lengthy CSS selectors could get tedious, and applying a controlling class on the top-most container causes problems.&lt;/p&gt;
-&lt;p&gt;So, should a system provide a &lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt; CSS class for toggling a page to light or dark? Definitely, if the entire page’s interface can be exclusively one or the other. But if mixing on the same page, it’s unclear how to contain CSS effects on components, and count on each component sensing it’s context to color correctly, without targeting each and every component. That’s a pain.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Takeaway&lt;/em&gt;: We haven’t figured out a clean solution. Got advice? ;)&lt;/p&gt;
+  <p><em>Takeaway</em>: Add, adjust, and deprecate neutrals to ensure just enough options fulfill your pursuit of reversible color system.</p>
+<hr>
+<h3 id="tokenize-choices">Tokenize Choices</h3>
+<p>With all that structure, tooling should ease implementation. <a href="/articles/tokens-in-design-systems">Design tokens</a> are a great way to catalog decisions and establish hooks for others — designers and developers alike — to align to.</p>
+<p><em>Takeaway</em>: Create a taxonomy of tokenized variables used by system adopters and your library’s components. The more predictably your model is catalogued, the easier it is to apply, maintain, and endure.</p>
+<hr>
+<h3 id="weave-lights--darks-thru-components">Weave Lights &amp; Darks Thru Components</h3>
+<p>Don’t forget. Getting to the right colors is half the solution. You still have components to re-style, too.</p>
+<p>Some low-hanging fruit like <em>button</em> states should be easy to change. However, the vast component catalog might feel like a dizzily daunting task to adjust for each setting. So get the job done, incrementally.</p>
+<p>For an existing system, this can mean a bevy of small adjustments, tracked via a litany of spreadsheet rows or JIRA subtasks. If that’s your reality, spread responsibility across a team to share the load and have ’em all learn by doing. This may motivate you to setup mixins, tokens, and other tooling more robustly.</p>
+<p><em>Takeaway</em>: Finish what you’ve started by ensuring each library part supports toggling color. by divvying tickets across teammates to fill the gaps of availability over a coming release or two.</p>
+<hr>
+<h3 id="both-light--dark-regions-on-the-same-page-whats-your-css-methodology">Both Light &amp; Dark Regions on the Same Page: What’s Your CSS Methodology?</h3>
+<p>Once UIs combine dark and light areas together on the same page, risky CSS conflicts arise. One larger “light” container could contain another “dark” container itself with “light” components. Overly lengthy CSS selectors could get tedious, and applying a controlling class on the top-most container causes problems.</p>
+<p>So, should a system provide a <code>&lt;body&gt;</code> CSS class for toggling a page to light or dark? Definitely, if the entire page’s interface can be exclusively one or the other. But if mixing on the same page, it’s unclear how to contain CSS effects on components, and count on each component sensing it’s context to color correctly, without targeting each and every component. That’s a pain.</p>
+<p><em>Takeaway</em>: We haven’t figured out a clean solution. Got advice? ;)</p>
 
 
 

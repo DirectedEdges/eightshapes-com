@@ -137,9 +137,9 @@
     
 
     
-  &lt;p&gt;Every web font includes whitespace above and below the text, making it difficult to render space in UI components systematically. I created the &lt;a href=&quot;http://text-crop.eightshapes.com&quot;&gt;Text Crop Tool&lt;/a&gt; to empower designers and developers to remove this whitespace and more accurately render their components. This is how I did it.&lt;/p&gt;
-&lt;h2 id=&quot;how-itworks&quot;&gt;How it&amp;nbsp;works&lt;/h2&gt;
-&lt;p&gt;I’ve added a red border around this paragraph to illustrate the white space I want to remove.&lt;/p&gt;
+  <p>Every web font includes whitespace above and below the text, making it difficult to render space in UI components systematically. I created the <a href="http://text-crop.eightshapes.com">Text Crop Tool</a> to empower designers and developers to remove this whitespace and more accurately render their components. This is how I did it.</p>
+<h2 id="how-itworks">How it&nbsp;works</h2>
+<p>I’ve added a red border around this paragraph to illustrate the white space I want to remove.</p>
 
 
   
@@ -153,10 +153,10 @@
 
 
 
-  &lt;p&gt;To remove the space, add pseudo&amp;nbsp;:before and&amp;nbsp;:after elements to the text element, each with negative margins.&lt;/p&gt;
-&lt;p&gt;In the Original, the&amp;nbsp;:before and&amp;nbsp;:after elements have height, width and background colors but no negative margins.&lt;/p&gt;
-&lt;p&gt;In the Desired example, applying negative margins to the pseudo elements removes the undesirable space.&lt;/p&gt;
-&lt;p&gt;The key benefit of this technique is that it removes top and bottom whitespace while preserving line height between lines in a multi-line block of text:&lt;/p&gt;
+  <p>To remove the space, add pseudo&nbsp;:before and&nbsp;:after elements to the text element, each with negative margins.</p>
+<p>In the Original, the&nbsp;:before and&nbsp;:after elements have height, width and background colors but no negative margins.</p>
+<p>In the Desired example, applying negative margins to the pseudo elements removes the undesirable space.</p>
+<p>The key benefit of this technique is that it removes top and bottom whitespace while preserving line height between lines in a multi-line block of text:</p>
 
 
   
@@ -170,17 +170,17 @@
 
 
 
-  &lt;h2 id=&quot;finding-theformula&quot;&gt;Finding the&amp;nbsp;formula&lt;/h2&gt;
-&lt;p&gt;By experimenting at multiple font sizes and noting the offsets needed to crop the text at each size, a formula started to emerge:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;// Top crop:
+  <h2 id="finding-theformula">Finding the&nbsp;formula</h2>
+<p>By experimenting at multiple font sizes and noting the offsets needed to crop the text at each size, a formula started to emerge:</p>
+<pre><code>// Top crop:
 
 $top-crop + ($desired-line-height - $line-height-with-crop) \* ($font-size-with-crop / 2)), 0) / $font-size-with-crop;
 
 // Bottom crop:
 
-$bottom-crop + ($desired-line-height - $line-height-with-crop) \* ($font-size-with-crop / 2)), 0) / $font-size-with-crop;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The formula involved two “magic numbers,” constant values representing the top and bottom crop.&lt;/p&gt;
-&lt;p&gt;The end result was a mixin that worked regardless of font size and only required a unitless line height to perform the calculation.&lt;/p&gt;
-&lt;p&gt;But my confidence was dashed when I applied the mixin to a different font face.&lt;/p&gt;
+$bottom-crop + ($desired-line-height - $line-height-with-crop) \* ($font-size-with-crop / 2)), 0) / $font-size-with-crop;</code></pre><p>The formula involved two “magic numbers,” constant values representing the top and bottom crop.</p>
+<p>The end result was a mixin that worked regardless of font size and only required a unitless line height to perform the calculation.</p>
+<p>But my confidence was dashed when I applied the mixin to a different font face.</p>
 
 
   
@@ -194,8 +194,8 @@ $bottom-crop + ($desired-line-height - $line-height-with-crop) \* ($font-size-wi
 
 
 
-  &lt;h2 id=&quot;making-it-work-for-anyfont&quot;&gt;Making it work for any&amp;nbsp;font&lt;/h2&gt;
-&lt;p&gt;The mixin didn’t work when applied to different typefaces and I couldn’t figure out why. After months of head scratching and experimentation, I ran across this excellent article explaining &lt;a href=&quot;http://iamvdo.me/en/blog/css-font-metrics-line-height-and-vertical-align&quot;&gt;Font Metrics on the web&lt;/a&gt;. In the article, Vincent De Oliveira describes the &lt;a href=&quot;http://designwithfontforge.com/en-US/The_EM_Square.html&quot;&gt;Em Square&lt;/a&gt;.&lt;/p&gt;
+  <h2 id="making-it-work-for-anyfont">Making it work for any&nbsp;font</h2>
+<p>The mixin didn’t work when applied to different typefaces and I couldn’t figure out why. After months of head scratching and experimentation, I ran across this excellent article explaining <a href="http://iamvdo.me/en/blog/css-font-metrics-line-height-and-vertical-align">Font Metrics on the web</a>. In the article, Vincent De Oliveira describes the <a href="http://designwithfontforge.com/en-US/The_EM_Square.html">Em Square</a>.</p>
 
 
   
@@ -209,11 +209,11 @@ $bottom-crop + ($desired-line-height - $line-height-with-crop) \* ($font-size-wi
 
 
 
-  &lt;p&gt;I could now articulate in proper typographic terms what I aimed to do: crop the Em Square to the baseline and cap height of the font face.&lt;/p&gt;
-&lt;p&gt;However, &lt;em&gt;every font has a different em square definition&lt;/em&gt;. Therefore the “magic numbers” that work for one font don’t work necessarily for other fonts.&lt;/p&gt;
-&lt;p&gt;With this new understanding I created a tool to measure the amount of cropping required for the font’s Em Square. It outputs the code to implement that crop via SCSS, LESS, or Stylus.&lt;/p&gt;
-&lt;p&gt;The &lt;a href=&quot;http://text-crop.eightshapes.com&quot;&gt;EightShapes Text Crop Tool&lt;/a&gt; is the outcome of that effort.&lt;/p&gt;
-&lt;p&gt;Select a Google font from within the tool or load a Custom Font, and then use the sliders to measure the top and bottom crop you want. The tool calculates the properties and formulae for you, just copy and paste the generated SCSS, LESS, or Stylus mixin into your source code and enjoy the crop! It’s not perfect, but it’s far better than before.&lt;/p&gt;
+  <p>I could now articulate in proper typographic terms what I aimed to do: crop the Em Square to the baseline and cap height of the font face.</p>
+<p>However, <em>every font has a different em square definition</em>. Therefore the “magic numbers” that work for one font don’t work necessarily for other fonts.</p>
+<p>With this new understanding I created a tool to measure the amount of cropping required for the font’s Em Square. It outputs the code to implement that crop via SCSS, LESS, or Stylus.</p>
+<p>The <a href="http://text-crop.eightshapes.com">EightShapes Text Crop Tool</a> is the outcome of that effort.</p>
+<p>Select a Google font from within the tool or load a Custom Font, and then use the sliders to measure the top and bottom crop you want. The tool calculates the properties and formulae for you, just copy and paste the generated SCSS, LESS, or Stylus mixin into your source code and enjoy the crop! It’s not perfect, but it’s far better than before.</p>
 
 
   
@@ -227,10 +227,10 @@ $bottom-crop + ($desired-line-height - $line-height-with-crop) \* ($font-size-wi
 
 
 
-  &lt;h2 id=&quot;cropping-caveats&quot;&gt;Cropping Caveats&lt;/h2&gt;
-&lt;p&gt;Cropping the em square with this technique isn’t a silver bullet. Turns out typefaces (and em squares) render differently across operating systems. Cropping the em square to perfection on a Mac may be too much cropping or not enough on a Windows browser. Even on my local computer I’ve seen the crop be off by a pixel or two depending on whether I’m viewing on a regular resolution or retina display.&lt;/p&gt;
-&lt;p&gt;Despite these shortcomings the text crop tool has allowed me to fix many issues related to vertical alignment that previously required bespoke CSS pixel pushing. The versatility of this tool is especially useful alongside &lt;a href=&quot;/articles/space-in-design-systems&quot;&gt;space tokens&lt;/a&gt; in a design system.&lt;/p&gt;
-&lt;p&gt;Here are some common use cases for cropping the text:&lt;/p&gt;
+  <h2 id="cropping-caveats">Cropping Caveats</h2>
+<p>Cropping the em square with this technique isn’t a silver bullet. Turns out typefaces (and em squares) render differently across operating systems. Cropping the em square to perfection on a Mac may be too much cropping or not enough on a Windows browser. Even on my local computer I’ve seen the crop be off by a pixel or two depending on whether I’m viewing on a regular resolution or retina display.</p>
+<p>Despite these shortcomings the text crop tool has allowed me to fix many issues related to vertical alignment that previously required bespoke CSS pixel pushing. The versatility of this tool is especially useful alongside <a href="/articles/space-in-design-systems">space tokens</a> in a design system.</p>
+<p>Here are some common use cases for cropping the text:</p>
 
 
   
@@ -257,20 +257,20 @@ $bottom-crop + ($desired-line-height - $line-height-with-crop) \* ($font-size-wi
 
 
 
-  &lt;h2 id=&quot;three-tips-for-textcropping&quot;&gt;Three tips for text&amp;nbsp;cropping&lt;/h2&gt;
-&lt;p&gt;Here are some tips for using any typeface-specfic mixin you generate from the &lt;a href=&quot;http://text-crop.eightshapes.com&quot;&gt;Text Crop Tool&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;1. Use it only when it’s beneficial.&lt;/strong&gt;
-Only apply the text crop in situations that need it. Don’t do this:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;\* {
+  <h2 id="three-tips-for-textcropping">Three tips for text&nbsp;cropping</h2>
+<p>Here are some tips for using any typeface-specfic mixin you generate from the <a href="http://text-crop.eightshapes.com">Text Crop Tool</a></p>
+<p><strong>1. Use it only when it’s beneficial.</strong>
+Only apply the text crop in situations that need it. Don’t do this:</p>
+<pre><code>\* {
  @include text-crop;
-}&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This will affect any existing&amp;nbsp;:before and&amp;nbsp;:after pseudo elements you’re using and create undesirable effects on non-text elements.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;2. Create text-only HTML elements to reduce the scope.&lt;/strong&gt;
+}</code></pre><p>This will affect any existing&nbsp;:before and&nbsp;:after pseudo elements you’re using and create undesirable effects on non-text elements.</p>
+<p><strong>2. Create text-only HTML elements to reduce the scope.</strong>
 In most cases it’s best to apply text-crop to an element that contains only text content, not an element that contains child elements.
-If you have a parent element that contains text and other content, try wrapping a &amp;lt;span&amp;gt; around the text you want to crop and apply the mixin to only that &amp;lt;span&amp;gt;.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;3. Test everywhere!&lt;/strong&gt; &amp;nbsp;
-Be sure to test on all the browsers you need to support. Test across operating systems. Through this testing you’ll gain confidence that the cropping is having the effect you desire.&lt;/p&gt;
-&lt;h2 id=&quot;better-solutions&quot;&gt;Better solutions?&lt;/h2&gt;
-&lt;p&gt;I hope this tool can save you some time. I experienced a lot of “Google Drought” as I tried to find solutions for this problem. If you have a better way of doing this or a way to improve upon this technique I’d love to hear it. Shoot me a message on &lt;a href=&quot;https://twitter.com/kevinmpowell&quot;&gt;twitter&lt;/a&gt; or find me in the &lt;a href=&quot;http://design.systems/slack/&quot;&gt;Design Systems Slack&lt;/a&gt; (@kevinmpowell) if you want to chat!&lt;/p&gt;
+If you have a parent element that contains text and other content, try wrapping a &lt;span&gt; around the text you want to crop and apply the mixin to only that &lt;span&gt;.</p>
+<p><strong>3. Test everywhere!</strong> &nbsp;
+Be sure to test on all the browsers you need to support. Test across operating systems. Through this testing you’ll gain confidence that the cropping is having the effect you desire.</p>
+<h2 id="better-solutions">Better solutions?</h2>
+<p>I hope this tool can save you some time. I experienced a lot of “Google Drought” as I tried to find solutions for this problem. If you have a better way of doing this or a way to improve upon this technique I’d love to hear it. Shoot me a message on <a href="https://twitter.com/kevinmpowell">twitter</a> or find me in the <a href="http://design.systems/slack/">Design Systems Slack</a> (@kevinmpowell) if you want to chat!</p>
 
 
 
