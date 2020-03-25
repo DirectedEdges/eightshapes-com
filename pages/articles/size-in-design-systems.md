@@ -1,8 +1,20 @@
-{% set post = systemsposts["size-in-design-systems"] %}
-{% extends 'templates/article_data.njk' %}
+---
+  category : Visual Style
+  id : size-in-design-systems
+  title : Size in Design Systems
+  deck : Tuning Type & Space With an Eye on Height Per Component
+  title_abbreviation : Size
+  author_id : nathan
+  date_published : 4/25/2019
+  date_updated :
+  read_duration : 11
+  masthead : true
+  layout: article.njk
+  tags: ['size', 'design systems', 'visual style']
+---
+{% import '../_includes/escom.njk' as escom with context %}
 
-{% block main_article %}
-  {% filter markdown %}
+
 
 Higher density drives efficiency. Frequently used interfaces show you more and offer more diverse tasks via many interactive paths all without scrolling. On the other hand, a deep marketing message warrants a lengthy webpage that drives to a dominant call-to-action in a far less compact density. Yet, “rich app vs marketing webpage” is an incomplete contrast. Density can vary in the same product, page, or even component (such as for responsiveness).
 
@@ -20,33 +32,29 @@ Interface density results from a tapestry of typography and spatial choices — 
 
 A UI component control what’s inside its boundary, unless it also adds margin that risk neighborly conflict, which I like to avoid. There are many properties in play, including font-size, font-weight, line-height, padding and, if relevant, border. These properties blend together, impact density, and — vitally — result in a size.
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '1',
   image_alt = 'Button annotated for size, typography and padding',
   caption = 'Size Resulting from Space and Type',
   class = 'escom-article-figure--break-bleed'
 ) }}
 
-{% filter markdown %}
 
 Make no mistake: density ≠ size. But size impacts density and varying density can correlate strongly with tuning size. Increase or decrease font-size and padding, and the button gets larger or smaller, respectively.
 
 Yet, many component libraries size components inconsistently. Sizes do exist, mind you. There’s a small input here. There’s a small and large button there. There may even be extra large or even a “puffy” button (yes, that’s happened). Upon inspection, small input and small button aren’t the same small.
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '2',
   image_alt = 'Input and button size not aligned',
   caption = 'Inconsistent Component Height',
   class = 'escom-article-figure--break-bleed'
 ) }}
 
-{% filter markdown %}
 
 To build consistently and efficiently to varying densities using a system, adopters need a consistent component sizing model executed across a catalog. From both a visual and technical perspective, consistent sizing corresponds to a combination of it’s width and height. Width is often dictated by both context and content. On the other hand, consistent height is a realistic and desirable objective when arranging core components horizontally and vertically.
 
@@ -64,33 +72,29 @@ Achieving consistent size across the component catalog grounded required a few s
 
 For some teams, one is enough. Otherwise, how many sizes do we need?
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '3',
   image_alt = 'Spectrum with default and high',
   caption = '',
   class = 'escom-article-figure--break-bleed'
 ) }}
 
-{% filter markdown %}
 
 Some trend towards (1) Default versus (2) High density. The former serves most adopters with a sensible starting point. The latter offers those designing denser interfaces the compression appropriate for their customer needs.
 
 Two alternatives may not be enough. More often, we’ll see small, medium (the default) and large variants, serving experiences like:
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '4',
   image_alt = 'Spectrum with small, medium and large',
   caption = '',
   class = 'escom-article-figure--break-bleed'
 ) }}
 
-{% filter markdown %}
 
 - **Small**: high-density displays for frequently used interfaces that integrate considerable data and enable diverse tasks.
 - **Medium**: a default for many motifs and long-form reading experiences for any range of consumer, business, and internal apps and content.
@@ -106,17 +110,15 @@ _Takeaway_: A component library likely requires two or (at most) three sizes. Av
 
 Designing size across component starts with a small set of atomic elements. Not every component will implement every size (more on that later), and many components won’t be sized at all. Exclusions can be obvious (example: the invisible truncate), based on lack of demand (example: pagination), or unwarranted (who needs a large and medium footnote?).
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '5',
   image_alt = 'Various components to synchronize size',
   caption = '',
   class = ''
 ) }}
 
-{% filter markdown %}
 
 Common components across which height is unified
 
@@ -128,17 +130,15 @@ _Takeaway_: Avoid the temptation to solve all components across all sizes from t
 
 Once the components are identified and work begins, conventions emerge across components sizes. Work may start with the input or button.
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '6',
   image_alt = 'Button by size',
   caption = 'Button by size',
   class = ''
 ) }}
 
-{% filter markdown %}
 
 As button size stabilize, other elements follow suit: search field (a specialized input), select, combo box, list group item, and table cell.
 
@@ -148,17 +148,15 @@ As button size stabilize, other elements follow suit: search field (a specialize
 
 Typography starts with font-size, although size variants can also trigger shifts in font-weight, line-height, and other properties. Models emerge and become embedded in cross-component tools that vary style based on a size property.
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '7',
   image_alt = 'Button and Input with associated mixins used for typography',
   caption = 'Button and Input with associated mixins used for typography',
   class = ''
 ) }}
 
-{% filter markdown %}
 
 * * *
 
@@ -166,31 +164,27 @@ Typography starts with font-size, although size variants can also trigger shifts
 
 Similarly, a spatial model can govern how elements are inset within a component block, as described in <a href="space-in-design-systems.html">Space in Design Systems</a>. Small, medium, and large component sizes often apply a complementary mapping of insets across a scale, leveraged via <a href="tokens-in-design-systems.html">design tokens</a>.
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '8',
   image_alt = 'Button and Input with associated space tokens',
   caption = 'Button and Input with associated space tokens',
   class = ''
 ) }}
 
-{% filter markdown %}
 
 Less often, incrementing sizes can also result in other changes, such as thickening a `border`, changing a `border-radius`, or shifting icon weight.
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '9',
   image_alt = 'Grid of components by size',
   caption = 'Grid of components by size',
   class = 'escom-article-figure--break-bleed'
 ) }}
 
-{% filter markdown %}
 
 _Takeaway_: Normalizing size will either trigger or build upon cross-component tooling like mixins and design tokens. Embed conventions in such tooling, and leaving the fine-tuning per component for the next step.
 
@@ -200,17 +194,15 @@ _Takeaway_: Normalizing size will either trigger or build upon cross-component t
 
 To unify height, one could specify height and then override the typography and space of the contained elements. Alternatively, component height can arise automatically from the blend of well-modeled type and spatial properties and other content (particularly, images). We choose the latter. Thus our approach overrides per component to achieve consistent height.
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '10',
   image_alt = 'Overrides to default spacing models to account for borders and adjacent elements',
   caption = 'Overrides to default spacing models to account for borders and adjacent elements',
   class = ''
 ) }}
 
-{% filter markdown %}
 
 Component-specific extensions and overrides included things like:
 
@@ -230,45 +222,39 @@ Teams building components incrementally often apply space, per component, as eac
 
 Two components named the same size (Medium and Medium) yet have different typography and spacing values and, thus, different size.
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '11',
   image_alt = 'Same Size Name, Different Size Outcomes',
   caption = 'Same Size Name, Different Size Outcomes',
   class = ''
 ) }}
 
-{% filter markdown %}
 
 Two components named different sizes (Medium and Small) yet share typography and spacing and, thus, are the same size.
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '12',
   image_alt = 'Component naming inconsistency — Medium and Small — for the same visual size',
   caption = 'Component naming inconsistency — Medium and Small — for the same visual size',
   class = ''
 ) }}
 
-{% filter markdown %}
 
 Two components should be offered at the same size, yet only one’s available.
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '13',
   image_alt = 'Component availability unpredictability or incompleteness',
   caption = 'Component availability unpredictability or incompleteness',
   class = ''
 ) }}
 
-{% filter markdown %}
 
 _Takeaway_: Anticipate and reduce the impacts of drift by establishing concepts, building tools (such as mixins and tokens), and expecting tools to evolve.
 
@@ -288,31 +274,27 @@ _Takeaway_: If a catalog lacks size continuity, consider a pass across the entir
 
 The patterned use of some UI components runs counter to the intent of some stops on a sizing scale. Alerts, notifications, and other in-your-face cues must capture your attention, either by modally dominating a screen or presented so prominently that it can’t be missed. Offering a small variant runs counter to that mission.
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '14',
   image_alt = 'Medium and Large Alert (Small Unnecessary)',
   caption = 'Medium and Large Alert (Small Unnecessary)',
   class = ''
 ) }}
 
-{% filter markdown %}
 
 On the other hand, a tag component denoting an attribute’s value revels in compact subtlety. It works well at small or medium sizes regardless of display. Offering a large variant doesn’t make sense.
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '15',
   image_alt = 'Small and Medium Tag (Large Unnecessary)',
   caption = 'Small and Medium Tag (Large Unnecessary)',
   class = ''
 ) }}
 
-{% filter markdown %}
 
 Although the library may have changed since, at one point the Morningstar Design System offered sizes depending on component:
 
@@ -330,31 +312,27 @@ _Takeaway_: Component purpose may run counter to an possible size. In such cases
 
 While most sizing models concentrate on height, width can also vary per component with a set of discrete options. For example, a modal may be recommended at three discrete widths:400px, 600px, or 800px.
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '16',
   image_alt = 'Modals available at three discrete widths',
   caption = 'Modals available at three discrete widths',
   class = 'escom-article-figure--break-bleed'
 ) }}
 
-{% filter markdown %}
 
 On the other hand, dialog may offer 300px and500px variants, and a popover 200px and 300px variants.
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '17',
   image_alt = 'Popovers available at two discrete widths',
   caption = 'Popovers available at two discrete widths',
   class = 'escom-article-figure--break-bleed'
 ) }}
 
-{% filter markdown %}
 
 In this case, it could be tempting to apply S/M/L, S/M, and S/M names to the modal, dialog, and popover variants respectively. However, at least dialogs and popovers may also have variants applying typography and spacing rules similar to those above. Similarly, a component like modal may add 1000px as another variant, begging the question: is that ML? Me-rge? La-dium?
 
@@ -370,31 +348,27 @@ It’s common for design systems to offer up to 9 heading levels. As typography 
 
 A system could offer a long list of heading sizes (such as 1–5) and apply levels consistently across components per size:
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '18',
   image_alt = 'One heading set applied across component sizes',
   caption = 'One heading set applied across component sizes',
   class = ''
 ) }}
 
-{% filter markdown %}
 
 Alternatively, a system could offer a more limited set of heading levels, and specify font-size and other properties per size level:
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '19',
   image_alt = 'Heading level sets per component size',
   caption = 'Heading level sets per component size',
   class = ''
 ) }}
 
-{% filter markdown %}
 
 _Takeaway_: As a component collection implements sizing, it’s not only critical to standardize how heading styles are applied across components, but also how that model varies an element’s heading level for each size offered.
 
@@ -406,31 +380,27 @@ You’ve got small, medium and large elemental components. So naturally, as you 
 
 When it comes to composition, that’s not a given, and you may find justification in your very first component composition: icon into button. The Morningstar Design System team advises that small and medium buttons apply small icons, whereas a large button applied a medium icon.
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '20',
   image_alt = 'Mapping icon size to button size',
   caption = 'Mapping icon size to button size',
   class = ''
 ) }}
 
-{% filter markdown %}
 
 More surprisingly, their flat button worked well with a small icon in some cases and a medium icon in other cases. Therefore, the system offered a mds-button--flat-icon-m modifier empowering adopting teams to choose.
 
-{% endfilter %}
 
 {{ escom.article_figure(
-  image_path = title_image_path,
+  image_path = page.fileSlug,
   image_number = '21',
   image_alt = 'While small and large buttons have a fixed icon, the medium button offers choice',
   caption = 'While small and large buttons have a fixed icon, the medium button offers choice',
   class = ''
 ) }}
 
-{% filter markdown %}
 
 The lesson here? Mixing and matching of component sizes has validity even in the most atomic of cases: button and icon. Therefore, be prepared for justifiable cases of mixing and matching at any level of UI composition up to a full page layout with many, many components. Adopting teams mold pieces together to create contrast, solve their problems, and optimize an experience.
 
@@ -438,5 +408,3 @@ A design system plays a role in density by guiding use and providing tools. Cons
 
 Happy sizing!
 
-  {% endfilter %}
-{% endblock %}    

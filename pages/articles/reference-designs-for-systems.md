@@ -1,18 +1,27 @@
-{% set post = systemsposts["reference-designs-for-systems"] %}
-{% extends 'templates/article_data.njk' %}
+---
+  category : Visual Style
+  id : reference-designs-for-systems
+  title : Reference Designs for Systems
+  deck : Page Concepts Comparing Before & After, with a System Twist
+  title_abbreviation : Reference Designs
+  author_id : nathan
+  date_published : 8/22/2016
+  date_updated :
+  read_duration : 6
+  masthead : true
+  layout: article.njk
+  tags: ['design systems', 'visual style']
+---
+{% import '../_includes/escom.njk' as escom with context %}
 
-{% block main_article %}
-  {% filter markdown %}
 
 When it comes to selling a design system, you’ve gotta have a pitch. And by pitch, I mean a compelling, infomercial-like comparison of
 
-{% endfilter %}
 
 {{ escom.bar_quote(
     quote = '“Here’s what you look like, today, without a system” vs. “Here’s you look like, tomorrow, cohesive using a system.”'
 ) }}
 
-{% filter markdown %}
 
 
 Early on, nothing — not a library, not a sticker sheet, nothing! — demonstrates a beautiful future more than **reference designs**.
@@ -42,17 +51,15 @@ When creating reference page concepts, thoughtfully select pages representative 
 
 _Takeaway_: Don’t just launch into designing some cool pages. Thoughtfully consider such criteria to confidently select pages that demo well and inform the system.
 
-{% endfilter %}
 
   {{ escom.article_figure(
-      image_path = title_image_path,
+      image_path = page.fileSlug,
       image_number = '2',
       image_alt = 'Marriott.com planning doc, describing the rationale to design each page, back when we made such docs. 2012',
       caption = 'Marriott.com planning doc, describing the rationale to design each page, back when we made such docs. 2012.',
       class = ''
   ) }}
 
-  {% filter markdown %}
 
 ### How Many? At Least 5, Ideally 10+
 
@@ -76,10 +83,9 @@ _Takeaway:_ Minimize black-boxedness of conceptual exercises. This will bode wel
 
 When presenting reference designs, start with the old, reveal the new, and follow with key points of visual style (like color, typography, and space) and components (like buttons and global navigation). Once complete, rest your presenter’s display on a side-by-side view of old vs new to open discussion.
 
-{% endfilter %}
 
   {{ escom.article_figure(
-      image_path = title_image_path,
+      image_path = page.fileSlug,
       image_number = '3',
       image_alt = 'Google products before and after reference designs',
       caption = '<em>A comparison of current Google products to design explorations that led to Material Design, by </em><a href="http://www.behance.net/gallery/Google-Product-Redesign/4315369" rel="nofollow noopener" target="_blank">
@@ -88,24 +94,21 @@ When presenting reference designs, start with the old, reveal the new, and follo
       class = ''
   ) }}
 
-  {% filter markdown %}
 
 
 This lets the audience compare on their own. I may have a boundless passion for button varieties. But my audience usually isn’t like me. They are usually convinced by a bigger picture evoking today’s pain next to tomorrow’s promise.
 
 _Takeaway_: Sell your audience on the before and after, side-by-side. Revel in it. Let the comparison persuade them.
 
-{% endfilter %}
 
   {{ escom.article_figure(
-      image_path = title_image_path,
+      image_path = page.fileSlug,
       image_number = '4',
       image_alt = 'Red Gate Software designs on wall, comparing before and after',
       caption = '<a href="http://red-gate.com" rel="nofollow noopener" target="_blank">Red-gate.com</a> site and product reference designs in a hallway. August 2015.',
       class = ''
   ) }}
 
-  {% filter markdown %}
 
 ### Soliciting Input from Product Teams
 
@@ -116,17 +119,15 @@ The [hudl.com system](http://www.hudl.com/) team led by Kyle Murphy and John Hen
 - “LOVE! This is how we should feel!” using pink.
 - “NOPE! This is not how we should feel” using yellow.
 - “OPP! An idea for improvement” using green.
-{% endfilter %}
 
   {{ escom.article_figure(
-      image_path = title_image_path,
+      image_path = page.fileSlug,
       image_number = '5',
       image_alt = 'Hudl designs on wall, annotated with love, nope, and opportunities',
       caption = '<a href="http://www.hudl.com" rel="nofollow noopener" target="_blank">Hudl.com</a> early system artifacts in conference room, layered with feedback in notes and dots. Spring 2016.',
       class = ''
   ) }}
 
-  {% filter markdown %}
 
 
 Their wall of designs transformed into visualization. The systems team catalogued responses to inform early priorities and subsequent work on color, buttons, forms, and other components.
@@ -147,14 +148,12 @@ In my experience, I pull out reference designs as I build individual components 
 
 As a system’s library matures towards a first release, building full pages based on components you’ve built is essential. These pages showcase examples of what’s possible and stress test your build by fitting all the pieces together. More often than not, we’ll build our initial reference design concepts using the parts we’ve subsequently built.
 
-{% endfilter %}
 
   {{ escom.article_figure(
-      image_path = title_image_path,
+      image_path = page.fileSlug,
       image_number = '6',
       image_alt = 'NetApp page types built in code',
       caption = 'Fully built pages showcased in the NetApp LUCI library (<a href="http://luci.netapp.com/page-types.html" rel="nofollow noopener" target="_blank">http://luci.netapp.com/page-types.html</a>)',
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-{% endblock %}

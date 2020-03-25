@@ -26,9 +26,9 @@
     {% set class = class + " escom-bar-quote--" + quote_background %}
 {% endif %}
 
-        <div class="escom-bar-quote{% if class %} {{ class }}{% endif %}">
-            {{ quote | safe }}
-        </div>
+<div class="escom-bar-quote{% if class %} {{ class }}{% endif %}">
+    {{ quote | safe }}
+</div>
 
 {% endmacro %}
 {% macro bio_thumbnails() %}
@@ -125,18 +125,29 @@
 {% endmacro %}
 
 {% macro footer_systems_link_list (
-    category_id = "Visual Style"
+    category_id = false,
+    tag=false
     ) %}
-    {% set posts = systemsposts %}
 
+
+{% if category_id %}
 <h4 class="escom-footer-systems__header">{{ category_id }}</h4>
 <ul class="escom-footer-systems__list">
+    {% set posts = systemsposts %}
     {% for post_id, post_object in posts %}
         {% if post_object.category === category_id %}
     <li class="escom-footer-systems__list-item"><a  class="escom-footer-systems__list-item-link" href="/articles/{{ post_object.id }}">{{ post_object.title_abbreviation }}</a></li>
         {% endif %}
     {% endfor %}
 </ul>
+{% else %}
+<h4 class="escom-footer-systems__header">{{ tag }}</h4>
+<ul class="escom-footer-systems__list">
+    {% for post in collections[tag] %}
+        <li class="escom-footer-systems__list-item"><a class="escom-footer-systems__list-item-link" href="{{ post.url }}">{{ post.data.title_abbreviation }}</a></li>
+    {% endfor %}
+</ul>
+{% endif %}
 
 {% endmacro %}
 
@@ -150,7 +161,7 @@
         </div>
         <div class="escom-footer-systems__columnset">
             <div class="escom-footer-systems__column">
-                {% call footer_systems_link_list(category_id="Visual Style") %}{% endcall %}
+                {% call footer_systems_link_list(tag="visual style") %}{% endcall %}
                 {% call footer_systems_link_list(category_id="Documentation") %}{% endcall %}
             </div>
             <div class="escom-footer-systems__column">
