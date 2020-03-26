@@ -1,6 +1,9 @@
 const marked = require('marked'),
       stripIndent = require('strip-indent'),
-      Nunjucks = require('nunjucks');
+      Nunjucks = require('nunjucks'),
+      readingTime = require('eleventy-plugin-reading-time'),
+      pluginDate = require("eleventy-plugin-date");
+
 
 module.exports = function(eleventyConfig) {
   // Nunjucks Filter
@@ -42,6 +45,18 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"node_modules/@webcomponents/custom-elements/custom-elements.min.js" : "dependencies/custom-elements.min.js"});
   eleventyConfig.addWatchTarget("./templates");
   eleventyConfig.addWatchTarget("./_includes");
+  eleventyConfig.addPlugin(readingTime);
+  eleventyConfig.addPlugin(pluginDate, {
+    // Specify custom date formats
+    formats: {
+      // Change the readableDate filter to use abbreviated months.
+      readableDate: { year: "numeric", month: "numeric", day: "numeric" },
+      // Add a new filter to format a Date to just the month and year.
+      readableMonth: { year: "numeric", month: "long" },
+      // Add a new filter using formatting tokens.
+      timeZone: "z",
+    }
+  });
 
   return {
     dir: {

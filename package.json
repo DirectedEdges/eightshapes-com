@@ -26,6 +26,8 @@
     "@11ty/eleventy": "^0.10.0",
     "chokidar-cli": "^2.1.0",
     "del": "^3.0.0",
+    "eleventy-plugin-date": "^1.0.0",
+    "eleventy-plugin-reading-time": "0.0.1",
     "esds-build": "^0.51.0",
     "fs": "0.0.1-security",
     "glob": "^7.1.6",

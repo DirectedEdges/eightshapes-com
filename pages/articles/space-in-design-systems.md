@@ -5,9 +5,7 @@
   deck : From Basics to Expanded Concepts to Apply Space with Intent
   title_abbreviation : Space
   author_id : nathan
-  date_published : 9/25/2016
-  date_updated :
-  read_duration : 9
+  date : 2016-09-25
   masthead : true
   layout: article.njk
   tags: ['space', 'design systems', 'visual style']

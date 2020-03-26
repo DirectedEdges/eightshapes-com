@@ -4,9 +4,7 @@
   deck : 16 Tips for Setting Up a System That Endures
   title_abbreviation : Color
   author_id : nathan
-  date_published : 4/13/2016
-  date_updated :
-  read_duration : 10
+  date : 2016-04-13
   masthead : true
   layout: article.njk
   tags: ['color', 'design systems', 'visual style']

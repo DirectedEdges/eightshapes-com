@@ -4,9 +4,7 @@
   deck : Choose Fonts Set a Hierarchy and Integrate with Components
   title_abbreviation : Typography
   author_id : nathan
-  date_published : 5/19/2019
-  date_updated :
-  read_duration : 12
+  date : 2019-05-19
   masthead : true
   layout: article.njk
   tags: ['typography', 'design systems', 'visual style']

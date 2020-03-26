@@ -5,8 +5,7 @@
   deck : Tuning Type & Space With an Eye on Height Per Component
   title_abbreviation : Size
   author_id : nathan
-  date_published : 4/25/2019
-  date_updated :
+  date : 2019-04-25
   read_duration : 11
   masthead : true
   layout: article.njk

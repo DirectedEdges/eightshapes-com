@@ -5,9 +5,7 @@
   deck : Page Concepts Comparing Before & After, with a System Twist
   title_abbreviation : Reference Designs
   author_id : nathan
-  date_published : 8/22/2016
-  date_updated :
-  read_duration : 6
+  date : 2016-08-22
   masthead : true
   layout: article.njk
   tags: ['design systems', 'visual style']

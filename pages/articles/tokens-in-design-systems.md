@@ -5,9 +5,7 @@
   deck : 10 Tips to Architect & Implement Design Decisions for Everyone
   title_abbreviation : Tokens
   author_id : nathan
-  date_published : 6/24/16
-  date_updated :
-  read_duration : 9
+  date : 2016-06-24
   masthead : true
   layout: article.njk
   tags: ['tokens', 'design systems', 'visual style']

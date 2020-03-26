@@ -5,9 +5,7 @@
   deck : Getting rid of pesky space above and below HTML text
   title_abbreviation : Cropping Line Height
   author_id : kevin
-  date_published : 5/22/2018
-  date_updated :
-  read_duration : 5
+  date : 2018-05-22
   masthead : true
   layout: article.njk
   tags: ['typography', 'design systems', 'visual style']

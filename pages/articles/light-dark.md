@@ -5,9 +5,7 @@
   deck : Model Decisions Across Backgrounds Borders Text and More
   title_abbreviation : Light & Dark Modes
   author_id : nathan
-  date_published : 2/20/2017
-  date_updated :
-  read_duration : 8
+  date : 2017-02-20
   masthead : true
   layout: article.njk
   tags: ['color', 'design systems', 'visual style']
