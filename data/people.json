@@ -23,18 +23,6 @@
         "role" : "Designer • Co-founder of @eightshapes • Author of 3 books on UX • http://bit.ly/danbooks • Board gamer • Family cook",
         "image": "/images/components/bio_hero/bio-dan-brown-2018.png"
     },
-    "chris" : {
-        "name": "Chris Detzi",
-        "href": "/chris-detzi.html",
-        "title": "Sr. Director, UX",
-        "start_year": "2007",
-        "medium": "https://medium.com/@detzi",
-        "twitter": "https://twitter.com/detzi",
-        "linkedin": "https://www.linkedin.com/in/chrisdetzi",
-        "eightshapes_com": "chris-detzi.html",
-        "role" : "",
-        "image": "/images/components/bio_hero/bio-chris-detzi-2018.png"
-    },
     "james" : {
         "name": "James Melzer",
         "href": "/james-melzer.html",
