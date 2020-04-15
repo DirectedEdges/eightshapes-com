@@ -11,20 +11,20 @@ equalheight = function(container, itemUnit, minWidth) {
 
     // Remove style="min-height:NNpx" attribute
     $(container).find(itemUnit).removeAttr('style');
-    
+
     // Apply tallest one to all
     $(container).each(function() {
 
-      var $self   = $(this);
+      var $self = $(this);
       var $target = $self.find(itemUnit);
 
       $target.each(function(index) {
 
         var currentTallest = 0;
-        var $self      = $(this);
+        var $self = $(this);
         var selfHeight = $self.height();
 
-    		if(selfHeight > currentTallest) {
+    		if (selfHeight > currentTallest) {
     			currentTallest = selfHeight;
           //console.log('Current tallest is now ' + currentTallest);
     		}

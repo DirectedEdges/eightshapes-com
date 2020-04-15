@@ -37,11 +37,11 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.setTemplateFormats([
-    "html", "md", "njk", "jpg", "png"
+    "html", "md", "njk", "jpg", "png", "css"
   ]);
 
   eleventyConfig.addPassthroughCopy("dist");
-  eleventyConfig.addPassthroughCopy("scripts");
+  eleventyConfig.addPassthroughCopy("/pages/scripts");
   eleventyConfig.addPassthroughCopy({"node_modules/esds-library/dist" : "dependencies"});
   eleventyConfig.addPassthroughCopy({"node_modules/@eightshapes/esds-code-snippet/dist" : "dependencies"});
   eleventyConfig.addPassthroughCopy({"node_modules/esds-library/dist/esds.svg" : "icons/esds.svg"});
