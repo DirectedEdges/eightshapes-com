@@ -1,35 +1,38 @@
-{% set title_tag = "EightShapes" %}
-{% set body_classes = "escom-page-type--marketing" %}
-{% extends 'templates/base.njk' %}
+---
+title_tag : EightShapes
+body_classes : escom-page-type--marketing
+layout : base.njk
+---
+{% import './_includes/escom.njk' as escom with context %}
+{% import '../node_modules/esds-library/components/esds.njk' as esds %}
 
-{% block body %}
-    {{ escom.title_row(
-        class="escom-title-row--centered-deck esds-row--very-tall-inset",
-        logo=true,
-        background="brand",
-        decks=[
-            "EightShapes designs web-based products and systems that make for beautiful, usable, cohesive experiences."
-        ],
-        page_anchors=[
-          {
-            href: "#our-work",
-            label: "Our Work"
-          },
-          {
-            href: "#services",
-            label: "What We Do"
-          },
-          {
-            href: "#who-we-are",
-            label: "Who We Are"
-          },
-          {
-            href: "#contributions",
-            label: "Contributions"
-          }
-        ]
+{{ escom.title_row(
+    class="escom-title-row--centered-deck esds-row--very-tall-inset",
+    logo=true,
+    background="brand",
+    decks=[
+        "EightShapes designs web-based products and systems that make for beautiful, usable, cohesive experiences."
+    ],
+    page_anchors=[
+      {
+        href: "#our-work",
+        label: "Our Work"
+      },
+      {
+        href: "#services",
+        label: "What We Do"
+      },
+      {
+        href: "#who-we-are",
+        label: "Who We Are"
+      },
+      {
+        href: "#contributions",
+        label: "Contributions"
+      }
+    ]
 
-    ) }}
+) }}
 
   <!-- What We Do -->
   {% call esds.row(background="white", class="esds-row--tall-inset") %}
@@ -169,4 +172,3 @@
 
   <!-- Page CTA -->
   {{ escom.cta(heading="Ready?", deck="Crafting a strategy? Working on a UX design? Starting a design system?", button_text="Email Us", button_href="mailto:info@eightshapes.com") }}
-{% endblock %}
