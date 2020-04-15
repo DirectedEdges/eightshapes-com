@@ -36,11 +36,6 @@ module.exports = function(eleventyConfig) {
     //   return renderedMarkup;
   });
 
-  eleventyConfig.setTemplateFormats([
-    "jpg",
-    "png",
-  ]);
-
   eleventyConfig.addPassthroughCopy("dist");
   eleventyConfig.addPassthroughCopy("scripts");
   eleventyConfig.addPassthroughCopy({"node_modules/esds-library/dist" : "dependencies"});

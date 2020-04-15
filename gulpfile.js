@@ -14,11 +14,11 @@ gulp.task('deploy-to-gh-pages', function(done){
   // Clone the gh-pages branch into the /tmp directory
   execSync(`git clone --single-branch -b gh-pages ${repoUrl} tmp`);
 
-  // Build the latest release into the /docs directory
-  execSync('gulp build:all');
+  // Build the latest release into the /_site directory
+  execSync('npm run build');
 
-  // Rsync /docs into /tmp
-  execSync('rsync -a docs/ tmp/');
+  // Rsync /_site into /tmp
+  execSync('rsync -a _site/ tmp/');
 
   // Commit the changes to the gh-pages repo in tmp
   execSync('cd tmp && git add --all && git commit -m "Deploy release to gh-pages branch" && git push');
