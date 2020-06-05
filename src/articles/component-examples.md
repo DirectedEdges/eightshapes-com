@@ -15,8 +15,8 @@
 
 
 
-  
-    
+
+
 
 Visual examples are the most essential element of effective component doc. How do you best render, arrange, label, and order each one to with effective content (but not embedded guidelines!) to enable quick use and experimentation? There are many questions to answer as you set about composing examples spread widely across a library. What follows are 15 tips of how to best showcase components in your system documentation.
 
@@ -36,7 +36,7 @@ Show don’t tell. Seeing is believing. That’s why every component (even the i
       class = ''
   ) }}
 
-  
+
 
 
 The visualized example is _the_ most effective teaching moment on the page. Even better is the visualized example paired with code needed to render it.
@@ -51,7 +51,7 @@ The visualized example is _the_ most effective teaching moment on the page. Even
       class = ''
   ) }}
 
-  
+
 
 
 As teams tool up, it’s easy to be seduced by the alluring **component explorer** , adding a control panel beside the example/code pair. Revealing many (but not necessarily all) properties, component explorers invite experimentation and teach a ton in a tight space. However, that power comes at a cost: build the UI, build the logic layer, and implement per component.
@@ -70,7 +70,7 @@ As teams tool up, it’s easy to be seduced by the alluring **component explorer
       class = ''
   ) }}
 
-  
+
 
 
 For a design-only library, paired code— let alone an explorer — is impossible. Instead, an **image** will have to do. I’ve never heard anyone disparage [Google Material](http://material.google.com/)’s design spec, which is full of images and inline demos.
@@ -87,7 +87,7 @@ If limited to images, consider depicting the component’s elemental **anatomy**
       class = ''
   ) }}
 
-  
+
 
 
 _Takeaway_: For libraries with code, enable live examples pairing picture and code early in your process. Component explorers are alluring, but setup can painstaking and distracting to a team early on. Consider saving explorer for a splashy followup to your `1.0.0`.
@@ -110,7 +110,7 @@ Documenting patterns has long relied upon setting context chiefly through a visu
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 For UI components, the best sensitizing example depends on component. For atomic primitives, pick the most oft-used case such as a primary button or generic input. For components composed of many elements, the choice is less clear. Do you opt for…
@@ -128,7 +128,7 @@ For UI components, the best sensitizing example depends on component. For atomic
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 I love the highly versatile List Group component. But a glance at the essential — “Um, a stack of labels, linked?” — in unconvincing. The exhaustive case? Exhaustingly busy, unrealistic, even repellant. In this case, the best sensitizing example showcases elements like an heading, identifying icons, and maybe actions per row.
@@ -151,7 +151,7 @@ With a tone set by the sensitizing example, how do you order what’s left? This
       class = ''
   ) }}
 
-  
+
 
 
 For composed components, it may progress from a default with required elements to successive examples overlaying each additional element. For example, you may express list group options with successive examples illustrating actions, headings, subheadings, metadata, badges, and avatars.
@@ -166,8 +166,8 @@ For composed components, it may progress from a default with required elements t
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -177,8 +177,8 @@ For composed components, it may progress from a default with required elements t
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -188,8 +188,8 @@ For composed components, it may progress from a default with required elements t
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -199,8 +199,8 @@ For composed components, it may progress from a default with required elements t
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -210,8 +210,8 @@ For composed components, it may progress from a default with required elements t
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -221,7 +221,7 @@ For composed components, it may progress from a default with required elements t
       class = ''
   ) }}
 
-  
+
 
 
 This may maps to Props or CSS modifiers, but don’t get stuck thinking this is mapping is one-to-one. I’ve seen teams seek to shoehorn the succession of examples to the list of Props. It takes a few components to acknowledge that there’s more to teach via examples than _just_ Props by varying states, content, behaviors, and other cases.
@@ -236,7 +236,7 @@ This may maps to Props or CSS modifiers, but don’t get stuck thinking this is 
       class = ''
   ) }}
 
-  
+
 
 
 As your library grows, some properties may be repeated across many components, such as sizing (small, medium and large) or theming concerns. Consider including those examples last as a convention that recurring controls are explained after features unique to that component.
@@ -257,7 +257,7 @@ Back in the mid-2000s, I contributed to the Sun.com component library that conta
       class = ''
   ) }}
 
-  
+
 
 
 In the early 2010s, such rigorous hierarchy gave way — usually — to a flat example list per component. For simple components with a few examples, flat is fine. Armed with a good sensitizing example, users scroll to scan and find the closest approximation of what they need.
@@ -292,7 +292,7 @@ Many components — especially atomic ones — exhibit states as a user 
       class = ''
   ) }}
 
-  
+
 
 
 So display each state visibly, labeled and adjacent to one another, without requiring the reader to interact with the page. This usually means a little extra effort within the code, such as an extra documentation-only CSS class like `.system__button--doc-hover`.
@@ -307,7 +307,7 @@ So display each state visibly, labeled and adjacent to one another, without requ
       class = ''
   ) }}
 
-  
+
 
 
 Many libraries choose to take a shortcut and display states horizontally adjacent to one another. While more compact, the practice relies on components that are narrow and have just one label, embedding the annotation (“Active”) inside the art. The practice doesn’t scale.
@@ -332,7 +332,7 @@ If components can be placed on different canvases (usually, light to dark) or va
       class = ''
   ) }}
 
-  
+
 
 
 GE’s Predix documentation fully embraces the reversal of foreground / background colors, providing a toggle to the “light” and “dark” theme in the viewport’s upper corner.
@@ -349,7 +349,7 @@ GE’s Predix documentation fully embraces the reversal of foreground / backgrou
       class = ''
   ) }}
 
-  
+
 
 
 You can localizes this toggle to the component itself, insulating the display shift from the rest of the page and exposing more than a binary option.
@@ -366,7 +366,7 @@ You can localizes this toggle to the component itself, insulating the display sh
       class = ''
   ) }}
 
-  
+
 
 
 Semantic UI’s proves themability with a menu-driven demo in a row of the homepage. By shifting the style of essential components, prospective adopters are convinced quickly of the library’s potential.
@@ -389,8 +389,8 @@ So, what content should our examples include? [Dan Brown](https://medium.com/@br
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -400,8 +400,8 @@ So, what content should our examples include? [Dan Brown](https://medium.com/@br
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -411,7 +411,7 @@ So, what content should our examples include? [Dan Brown](https://medium.com/@br
       class = ''
   ) }}
 
-  
+
 
 
 Instead, opt for _real_ content (“Mary Smith”) or _labeled_ data (“[Full Name]”).
@@ -426,8 +426,8 @@ Instead, opt for _real_ content (“Mary Smith”) or _labeled_ data (“[Full N
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -437,7 +437,7 @@ Instead, opt for _real_ content (“Mary Smith”) or _labeled_ data (“[Full N
       class = ''
   ) }}
 
-  
+
 
 
 While it may seem tempting to reveal editorial guidelines or data requirements inside examples, it doesn’t scale and muddles design and annotation. The biggest culprit? Buttons with labels: Default, Hover, Active, and Disabled. Better to use a real label consistently like “Save Profile” so that button state displays mirror other, more complicated components.
@@ -452,7 +452,7 @@ While it may seem tempting to reveal editorial guidelines or data requirements i
       class = ''
   ) }}
 
-  
+
 
 
 Those editorial tips for “Key Benefits” feel convenient. But what if your list can’t exceed three bullets? Can I change the title? What about link labels? Imagine: how would you document editorial tips for a button component? The approach breaks down.
@@ -475,7 +475,7 @@ While most components are visible in the display by default, others require an i
       class = ''
   ) }}
 
-  
+
 
 
 The easiest path to provide access to these components is adding a trigger in place of where the sample would go. Usually a button or link, it either invokes (akwardly?) the component in the doc page itself or navigates to a separate page’s demonstration. However, that too is a treasure hunt.
@@ -490,7 +490,7 @@ The easiest path to provide access to these components is adding a trigger in pl
       class = ''
   ) }}
 
-  
+
 
 
 Embedding the layered display into the page’s canvas does require incremental effort. However, it’s essential to reveal the layered content – often via many examples—without pogosticking from one to another.
@@ -527,7 +527,7 @@ Many documentation sites display rendered examples in blocks that reach a maximu
       class = ''
   ) }}
 
-  
+
 
 
 Components like horizontal navigation bars and toolbars require more width than 700px or 800px to mimic results users see. Expanding available width creates tensions with competing elements in the overall page layout (usually, navigation on the left and right) as well as excessive [line measure](https://en.wikipedia.org/wiki/Line_length) (characters per line) of content above and below the example.
@@ -544,7 +544,7 @@ Components like horizontal navigation bars and toolbars require more width than 
       class = ''
   ) }}
 
-  
+
 
 
 If the overall layout constrains width, you can augment rendered code examples with screenshots (Example: [Morningstar](https://designsystem.morningstar.com/components/mastheads.html)) or present components embedded in an `iframe` to scale down a display (Example: [NetApp](http://luci.netapp.com/archives/3_3_2/component.property-bar.html)).
@@ -569,7 +569,7 @@ Some doc sites offer inline responsive viewing by changing available width via a
       class = ''
   ) }}
 
-  
+
 
 
 _Takeaway_: If you want the oohs and ahhs, this will do it. The UI design can be tricky, however, and the implementation – and managing examples shown therein – can get costly. Some teams choose to pass.
@@ -578,7 +578,7 @@ _Takeaway_: If you want the oohs and ahhs, this will do it. The UI design can be
 
 ## #12. Copy to Clipboard
 
-For code viewers, it’s essential that code is readably pretty, thus our consistent use of [Prettifier](need%20link). Beyond that, any self respecting code snippet usually offers a copy-to-clipboard button, ideally using the system’s own tooltip or other indicator to indicate the copy is complete.
+For code viewers, it’s essential that code is readably pretty, thus our consistent use of [Prism](https://prismjs.com). Beyond that, any self respecting code snippet usually offers a copy-to-clipboard button, ideally using the system’s own tooltip or other indicator to indicate the copy is complete.
 
 
 
@@ -590,7 +590,7 @@ For code viewers, it’s essential that code is readably pretty, thus our consis
       class = ''
   ) }}
 
-  
+
 
 * * *
 
@@ -608,7 +608,7 @@ The next most common interactions are a link to play with the component in isola
       class = ''
   ) }}
 
-  
+
 
 * * *
 
@@ -626,7 +626,7 @@ Depending on how it’s used, provide tabs for how to add a component to differe
       class = ''
   ) }}
 
-  
+
 
 
 For example, Hudl’s Uniform unifies component code across web and native, clearly expressing an intent to unify the experience across all platforms.
@@ -643,7 +643,7 @@ For example, Hudl’s Uniform unifies component code across web and native, clea
       class = ''
   ) }}
 
-  
+
 
 * * *
 
@@ -661,7 +661,7 @@ When it comes to code snippets, beware of scrolling. If code blocks are given a 
       class = ''
   ) }}
 
-  
+
 
 
 If it’s an issue, consider collapsing code by default and providing individual or page-level switches toggle to open it.
@@ -676,7 +676,7 @@ If it’s an issue, consider collapsing code by default and providing individual
       class = ''
   ) }}
 
-  
+
 
 
 _Takeaway_: Tooling up a viewer requires non-trivial feature development, so balance the extra sauce — Codepens, automated direct links, rendered examples across framework types — as needs require.
@@ -687,15 +687,15 @@ _Takeaway_: Tooling up a viewer requires non-trivial feature development, so bal
 
 
 
-  
 
 
 
 
 
 
-  
-    
+
+
+
 
 Visual examples are the most essential element of effective component doc. How do you best render, arrange, label, and order each one to with effective content (but not embedded guidelines!) to enable quick use and experimentation? There are many questions to answer as you set about composing examples spread widely across a library. What follows are 15 tips of how to best showcase components in your system documentation.
 
@@ -715,7 +715,7 @@ Show don’t tell. Seeing is believing. That’s why every component (even the i
       class = ''
   ) }}
 
-  
+
 
 
 The visualized example is _the_ most effective teaching moment on the page. Even better is the visualized example paired with code needed to render it.
@@ -730,7 +730,7 @@ The visualized example is _the_ most effective teaching moment on the page. Even
       class = ''
   ) }}
 
-  
+
 
 
 As teams tool up, it’s easy to be seduced by the alluring **component explorer** , adding a control panel beside the example/code pair. Revealing many (but not necessarily all) properties, component explorers invite experimentation and teach a ton in a tight space. However, that power comes at a cost: build the UI, build the logic layer, and implement per component.
@@ -749,7 +749,7 @@ As teams tool up, it’s easy to be seduced by the alluring **component explorer
       class = ''
   ) }}
 
-  
+
 
 
 For a design-only library, paired code— let alone an explorer — is impossible. Instead, an **image** will have to do. I’ve never heard anyone disparage [Google Material](http://material.google.com/)’s design spec, which is full of images and inline demos.
@@ -766,7 +766,7 @@ If limited to images, consider depicting the component’s elemental **anatomy**
       class = ''
   ) }}
 
-  
+
 
 
 _Takeaway_: For libraries with code, enable live examples pairing picture and code early in your process. Component explorers are alluring, but setup can painstaking and distracting to a team early on. Consider saving explorer for a splashy followup to your `1.0.0`.
@@ -789,7 +789,7 @@ Documenting patterns has long relied upon setting context chiefly through a visu
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 For UI components, the best sensitizing example depends on component. For atomic primitives, pick the most oft-used case such as a primary button or generic input. For components composed of many elements, the choice is less clear. Do you opt for…
@@ -807,7 +807,7 @@ For UI components, the best sensitizing example depends on component. For atomic
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 I love the highly versatile List Group component. But a glance at the essential — “Um, a stack of labels, linked?” — in unconvincing. The exhaustive case? Exhaustingly busy, unrealistic, even repellant. In this case, the best sensitizing example showcases elements like an heading, identifying icons, and maybe actions per row.
@@ -830,7 +830,7 @@ With a tone set by the sensitizing example, how do you order what’s left? This
       class = ''
   ) }}
 
-  
+
 
 
 For composed components, it may progress from a default with required elements to successive examples overlaying each additional element. For example, you may express list group options with successive examples illustrating actions, headings, subheadings, metadata, badges, and avatars.
@@ -845,8 +845,8 @@ For composed components, it may progress from a default with required elements t
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -856,8 +856,8 @@ For composed components, it may progress from a default with required elements t
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -867,8 +867,8 @@ For composed components, it may progress from a default with required elements t
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -878,8 +878,8 @@ For composed components, it may progress from a default with required elements t
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -889,8 +889,8 @@ For composed components, it may progress from a default with required elements t
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -900,7 +900,7 @@ For composed components, it may progress from a default with required elements t
       class = ''
   ) }}
 
-  
+
 
 
 This may maps to Props or CSS modifiers, but don’t get stuck thinking this is mapping is one-to-one. I’ve seen teams seek to shoehorn the succession of examples to the list of Props. It takes a few components to acknowledge that there’s more to teach via examples than _just_ Props by varying states, content, behaviors, and other cases.
@@ -915,7 +915,7 @@ This may maps to Props or CSS modifiers, but don’t get stuck thinking this is 
       class = ''
   ) }}
 
-  
+
 
 
 As your library grows, some properties may be repeated across many components, such as sizing (small, medium and large) or theming concerns. Consider including those examples last as a convention that recurring controls are explained after features unique to that component.
@@ -936,7 +936,7 @@ Back in the mid-2000s, I contributed to the Sun.com component library that conta
       class = ''
   ) }}
 
-  
+
 
 
 In the early 2010s, such rigorous hierarchy gave way — usually — to a flat example list per component. For simple components with a few examples, flat is fine. Armed with a good sensitizing example, users scroll to scan and find the closest approximation of what they need.
@@ -971,7 +971,7 @@ Many components — especially atomic ones — exhibit states as a user 
       class = ''
   ) }}
 
-  
+
 
 
 So display each state visibly, labeled and adjacent to one another, without requiring the reader to interact with the page. This usually means a little extra effort within the code, such as an extra documentation-only CSS class like `.system__button--doc-hover`.
@@ -986,7 +986,7 @@ So display each state visibly, labeled and adjacent to one another, without requ
       class = ''
   ) }}
 
-  
+
 
 
 Many libraries choose to take a shortcut and display states horizontally adjacent to one another. While more compact, the practice relies on components that are narrow and have just one label, embedding the annotation (“Active”) inside the art. The practice doesn’t scale.
@@ -1011,7 +1011,7 @@ If components can be placed on different canvases (usually, light to dark) or va
       class = ''
   ) }}
 
-  
+
 
 
 GE’s Predix documentation fully embraces the reversal of foreground / background colors, providing a toggle to the “light” and “dark” theme in the viewport’s upper corner.
@@ -1028,7 +1028,7 @@ GE’s Predix documentation fully embraces the reversal of foreground / backgrou
       class = ''
   ) }}
 
-  
+
 
 
 You can localizes this toggle to the component itself, insulating the display shift from the rest of the page and exposing more than a binary option.
@@ -1045,7 +1045,7 @@ You can localizes this toggle to the component itself, insulating the display sh
       class = ''
   ) }}
 
-  
+
 
 
 Semantic UI’s proves themability with a menu-driven demo in a row of the homepage. By shifting the style of essential components, prospective adopters are convinced quickly of the library’s potential.
@@ -1068,8 +1068,8 @@ So, what content should our examples include? [Dan Brown](https://medium.com/@br
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -1079,8 +1079,8 @@ So, what content should our examples include? [Dan Brown](https://medium.com/@br
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -1090,7 +1090,7 @@ So, what content should our examples include? [Dan Brown](https://medium.com/@br
       class = ''
   ) }}
 
-  
+
 
 
 Instead, opt for _real_ content (“Mary Smith”) or _labeled_ data (“[Full Name]”).
@@ -1105,8 +1105,8 @@ Instead, opt for _real_ content (“Mary Smith”) or _labeled_ data (“[Full N
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -1116,7 +1116,7 @@ Instead, opt for _real_ content (“Mary Smith”) or _labeled_ data (“[Full N
       class = ''
   ) }}
 
-  
+
 
 
 While it may seem tempting to reveal editorial guidelines or data requirements inside examples, it doesn’t scale and muddles design and annotation. The biggest culprit? Buttons with labels: Default, Hover, Active, and Disabled. Better to use a real label consistently like “Save Profile” so that button state displays mirror other, more complicated components.
@@ -1131,7 +1131,7 @@ While it may seem tempting to reveal editorial guidelines or data requirements i
       class = ''
   ) }}
 
-  
+
 
 
 Those editorial tips for “Key Benefits” feel convenient. But what if your list can’t exceed three bullets? Can I change the title? What about link labels? Imagine: how would you document editorial tips for a button component? The approach breaks down.
@@ -1154,7 +1154,7 @@ While most components are visible in the display by default, others require an i
       class = ''
   ) }}
 
-  
+
 
 
 The easiest path to provide access to these components is adding a trigger in place of where the sample would go. Usually a button or link, it either invokes (akwardly?) the component in the doc page itself or navigates to a separate page’s demonstration. However, that too is a treasure hunt.
@@ -1169,7 +1169,7 @@ The easiest path to provide access to these components is adding a trigger in pl
       class = ''
   ) }}
 
-  
+
 
 
 Embedding the layered display into the page’s canvas does require incremental effort. However, it’s essential to reveal the layered content – often via many examples—without pogosticking from one to another.
@@ -1206,7 +1206,7 @@ Many documentation sites display rendered examples in blocks that reach a maximu
       class = ''
   ) }}
 
-  
+
 
 
 Components like horizontal navigation bars and toolbars require more width than 700px or 800px to mimic results users see. Expanding available width creates tensions with competing elements in the overall page layout (usually, navigation on the left and right) as well as excessive [line measure](https://en.wikipedia.org/wiki/Line_length) (characters per line) of content above and below the example.
@@ -1223,7 +1223,7 @@ Components like horizontal navigation bars and toolbars require more width than 
       class = ''
   ) }}
 
-  
+
 
 
 If the overall layout constrains width, you can augment rendered code examples with screenshots (Example: [Morningstar](https://designsystem.morningstar.com/components/mastheads.html)) or present components embedded in an `iframe` to scale down a display (Example: [NetApp](http://luci.netapp.com/archives/3_3_2/component.property-bar.html)).
@@ -1248,7 +1248,7 @@ Some doc sites offer inline responsive viewing by changing available width via a
       class = ''
   ) }}
 
-  
+
 
 
 _Takeaway_: If you want the oohs and ahhs, this will do it. The UI design can be tricky, however, and the implementation – and managing examples shown therein – can get costly. Some teams choose to pass.
@@ -1257,7 +1257,7 @@ _Takeaway_: If you want the oohs and ahhs, this will do it. The UI design can be
 
 ## #12. Copy to Clipboard
 
-For code viewers, it’s essential that code is readably pretty, thus our consistent use of [Prettifier](need%20link). Beyond that, any self respecting code snippet usually offers a copy-to-clipboard button, ideally using the system’s own tooltip or other indicator to indicate the copy is complete.
+For code viewers, it’s essential that code is readably pretty, thus our consistent use of [PrismJS](https://prismjs.com). Beyond that, any self respecting code snippet usually offers a copy-to-clipboard button, ideally using the system’s own tooltip or other indicator to indicate the copy is complete.
 
 
 
@@ -1269,7 +1269,7 @@ For code viewers, it’s essential that code is readably pretty, thus our consis
       class = ''
   ) }}
 
-  
+
 
 * * *
 
@@ -1287,7 +1287,7 @@ The next most common interactions are a link to play with the component in isola
       class = ''
   ) }}
 
-  
+
 
 * * *
 
@@ -1305,7 +1305,7 @@ Depending on how it’s used, provide tabs for how to add a component to differe
       class = ''
   ) }}
 
-  
+
 
 
 For example, Hudl’s Uniform unifies component code across web and native, clearly expressing an intent to unify the experience across all platforms.
@@ -1322,7 +1322,7 @@ For example, Hudl’s Uniform unifies component code across web and native, clea
       class = ''
   ) }}
 
-  
+
 
 * * *
 
@@ -1340,7 +1340,7 @@ When it comes to code snippets, beware of scrolling. If code blocks are given a 
       class = ''
   ) }}
 
-  
+
 
 
 If it’s an issue, consider collapsing code by default and providing individual or page-level switches toggle to open it.
@@ -1355,7 +1355,7 @@ If it’s an issue, consider collapsing code by default and providing individual
       class = ''
   ) }}
 
-  
+
 
 
 _Takeaway_: Tooling up a viewer requires non-trivial feature development, so balance the extra sauce — Codepens, automated direct links, rendered examples across framework types — as needs require.
@@ -1366,4 +1366,4 @@ _Takeaway_: Tooling up a viewer requires non-trivial feature development, so bal
 
 
 
-  
+

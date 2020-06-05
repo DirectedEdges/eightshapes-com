@@ -15,8 +15,8 @@
 
 
 
-  
-    
+
+
 
 Defining design systems seems a daunting challenge. It’s not as if our community hasn’t made [many](https://css-tricks.com/design-systems-building-future/), [many](https://medium.com/ge-design/ges-predix-design-system-8236d47b0891), [many](https://the-pastry-box-project.net/jina-bolton/2015-march-28), [many](https://www.webdesignerdepot.com/2016/11/creating-a-design-system-language/), [many](https://medium.com/buildit/design-systems-wtf-42956f673250), [many](https://medium.freecodecamp.org/how-to-construct-a-design-system-864adbf2a117), [many](https://uxdesign.cc/selling-a-design-system-before-asking-for-buy-in-eeb45e88f66a), [many](https://medium.com/@amiltonpaglia/design-systems-na-pr%C3%A1tica-preparando-o-terreno-cfd5c29d2ae), [many](https://medium.com/hello-group/design-systems-faq-cvi-and-styleguides-ef85736e83cd), [many](https://medium.com/initialized-capital/instacarts-lead-product-designer-on-creating-design-systems-4cffefdfca00), [many](https://www.uxpin.com/studio/blog/design-systems-vs-pattern-libraries-vs-style-guides-whats-difference/), [many](https://uxcellence.com/2017/design-systems-style-guides-pattern-libraries), [many](https://medium.com/@sturobson/styleguides-pattern-libraries-and-design-languages-84746902c51c) attempts. Recently, [Sarah Federman](https://medium.com/@Sarah_federman) wrote about [distilling it into its essence](https://medium.com/design-systems/distilling-how-we-think-about-design-systems-b26432eefef9) and warns us to avoid getting trapped defining things and being dogmatic about what it is and isn’t.
 
@@ -40,7 +40,7 @@ If I have ~30 seconds in an elevator or over animated slides, I’ll lead with:
       quote = 'A design system is made by an <a href="/articles/team-models-for-scaling-a-design-system" target="_blank">individual, team, and/or community</a>. While some arise less formally, organizations now dedicate <a href="/articles/designing-a-systems-team" target="_blank">small to large squad</a>(s) to develop and release system versions and processes over time.'
   ) }}
 
-  
+
 
 
 If only 10 seconds, I’ll say:
@@ -51,7 +51,7 @@ If only 10 seconds, I’ll say:
       quote = 'A design system offers a library of visual style, components, and other concerns documented and released by an individual, team or community as code and design tools so that adopting products can be more efficient and cohesive.'
   ) }}
 
-  
+
 
 Formally, a [system](https://en.wikipedia.org/wiki/System) is a set of interconnected parts forming a unified whole. In the case of design systems, this definition actually alludes to not one but three interrelated systems you’ll need to solve for to be successful:
 
@@ -71,7 +71,7 @@ To its primary customers, the system is a set of tangible outputs that they enco
       quote = 'Almost always, a design system offers a library of visual style and components documented and released as reusable code for developers and/or tool(s) for designers.'
   ) }}
 
-  
+
 
 
 These days, a system of parts connects a codifed visual style (e.g., color, space, typography) to [composible](https://en.wikipedia.org/wiki/Composability) UI components (buttons, forms, headings, so much more) used to design and build interfaces.
@@ -86,7 +86,7 @@ These days, a system of parts connects a codifed visual style (e.g., color, spac
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 This starting point packs a punch of intention, revealing beliefs: A system serves developers _and_ designers, in that order. A system must be well-documented. A system must offer style and UI components. Yet every system is different, so I’ll expand a system’s scope to include:
@@ -97,7 +97,7 @@ This starting point packs a punch of intention, revealing beliefs: A system serv
       quote = 'A system may also offer guidance on accessibility, page layout, and editorial and less often branding, data viz, UX patterns, and other tools.'
   ) }}
 
-  
+
 
 
 This variability fosters useful conversations that draw boundaries around what an organization wants and needs. Some concerns (always style and components) are realized far more often than others (editorial guidance and data visualization).
@@ -116,7 +116,7 @@ Invoking product concepts trigger a cascade of concepts useful for those familia
       quote = 'A design system is adopted by and supported for other teams making experiences. These teams use it to develop and ship features more efficiently to form a more cohesive customer journey.'
   ) }}
 
-  
+
 
 
 Design systems invest in **marketing** to product teams to consume the kit of parts to form a unified and cohesively holistic experience. [Fostering adoption](/articles/adopting-design-systems) requires clear messaging to sell others to adopt system and improving themselves (individually and collectively) by realizing its benefits over time as a dependency.
@@ -131,7 +131,7 @@ Design systems invest in **marketing** to product teams to consume the kit of pa
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 Product management also evokes how design systems fit in product **operations** , such as [DevOps](https://en.wikipedia.org/wiki/DevOps) delivery (“How do we release it? How is it automated?”), integration (“How do we version? What’s a breaking change? How, how frequently, and when do we upgrade?”), and infrastructure (“Where’s our repo? Where’s our doc hosted? Is it public?”).
@@ -152,10 +152,10 @@ To help stakeholders understand the impacts of a system, I also route conversati
       quote = 'A design system is made by an individual, team, and/or community. While some arise less formally, organizations now dedicate <a href="/articles/designing-a-systems-team" target="_blank">small to large squad</a>(s) to develop and release system versions and processes over time.'
   ) }}
 
-  
 
 
-Characterizing a system team as a product squad sets the choice in terms familiar to product and marketing professionals: is this important enough to put a [team](/articles/designing-a-systems-team) behind it? That team can adopt rituals, showcase work, and [evolve a roadmap](/articles/what-s-will-your-design-system-deliver) to become part of the fabric of how enterprises make products.
+
+Characterizing a system team as a product squad sets the choice in terms familiar to product and marketing professionals: is this important enough to put a [team](/articles/designing-a-systems-team) behind it? That team can adopt rituals, showcase work, and [evolve a roadmap](/articles/roadmaps-for-design-systems) to become part of the fabric of how enterprises make products.
 
 In cases I’ve observed, this team is responsible for the workflows, connections, and community engagement across an enterprise to decide how a system is applied and evolved. Historically referred to as “governance,” I’ll avoid that term to favor a tone of collaboration over control.
 
@@ -169,7 +169,7 @@ In cases I’ve observed, this team is responsible for the workflows, connection
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 From the outside, a designer, engineer, or someone else in a community may not sense the level of execution behind such activities. That doesn’t mean that they aren’t developed, operated, supported, and used deliberately for months or years. This execution of community interactions is an effortful yet intangible product that make a system successful.
@@ -190,7 +190,7 @@ While not my intent, this writing returned me to the framework of a [Parts, Prod
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 However, it’s reasonable to precede or replace this meticulous activity with a leaner, fill-in-the-blanks template to ground understanding:
@@ -211,15 +211,15 @@ What flummoxes our community is the variability of systems composition. The cons
 
 There’s no de-facto formula, no winning methodology (but we’re getting better). Instead, system success requires adapting how you define it to conditions and constraints of the enterprise it serves.
 
-  
 
 
 
 
 
 
-  
-    
+
+
+
 
 Defining design systems seems a daunting challenge. It’s not as if our community hasn’t made [many](https://css-tricks.com/design-systems-building-future/), [many](https://medium.com/ge-design/ges-predix-design-system-8236d47b0891), [many](https://the-pastry-box-project.net/jina-bolton/2015-march-28), [many](https://www.webdesignerdepot.com/2016/11/creating-a-design-system-language/), [many](https://medium.com/buildit/design-systems-wtf-42956f673250), [many](https://medium.freecodecamp.org/how-to-construct-a-design-system-864adbf2a117), [many](https://uxdesign.cc/selling-a-design-system-before-asking-for-buy-in-eeb45e88f66a), [many](https://medium.com/@amiltonpaglia/design-systems-na-pr%C3%A1tica-preparando-o-terreno-cfd5c29d2ae), [many](https://medium.com/hello-group/design-systems-faq-cvi-and-styleguides-ef85736e83cd), [many](https://medium.com/initialized-capital/instacarts-lead-product-designer-on-creating-design-systems-4cffefdfca00), [many](https://www.uxpin.com/studio/blog/design-systems-vs-pattern-libraries-vs-style-guides-whats-difference/), [many](https://uxcellence.com/2017/design-systems-style-guides-pattern-libraries), [many](https://medium.com/@sturobson/styleguides-pattern-libraries-and-design-languages-84746902c51c) attempts. Recently, [Sarah Federman](https://medium.com/@Sarah_federman) wrote about [distilling it into its essence](https://medium.com/design-systems/distilling-how-we-think-about-design-systems-b26432eefef9) and warns us to avoid getting trapped defining things and being dogmatic about what it is and isn’t.
 
@@ -243,7 +243,7 @@ If I have ~30 seconds in an elevator or over animated slides, I’ll lead with:
       quote = 'A design system is made by an <a href="/articles/team-models-for-scaling-a-design-system" target="_blank">individual, team, and/or community</a>. While some arise less formally, organizations now dedicate <a href="/articles/designing-a-systems-team" target="_blank">small to large squad</a>(s) to develop and release system versions and processes over time.'
   ) }}
 
-  
+
 
 
 If only 10 seconds, I’ll say:
@@ -254,7 +254,7 @@ If only 10 seconds, I’ll say:
       quote = 'A design system offers a library of visual style, components, and other concerns documented and released by an individual, team or community as code and design tools so that adopting products can be more efficient and cohesive.'
   ) }}
 
-  
+
 
 Formally, a [system](https://en.wikipedia.org/wiki/System) is a set of interconnected parts forming a unified whole. In the case of design systems, this definition actually alludes to not one but three interrelated systems you’ll need to solve for to be successful:
 
@@ -274,7 +274,7 @@ To its primary customers, the system is a set of tangible outputs that they enco
       quote = 'Almost always, a design system offers a library of visual style and components documented and released as reusable code for developers and/or tool(s) for designers.'
   ) }}
 
-  
+
 
 
 These days, a system of parts connects a codifed visual style (e.g., color, space, typography) to [composible](https://en.wikipedia.org/wiki/Composability) UI components (buttons, forms, headings, so much more) used to design and build interfaces.
@@ -289,7 +289,7 @@ These days, a system of parts connects a codifed visual style (e.g., color, spac
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 This starting point packs a punch of intention, revealing beliefs: A system serves developers _and_ designers, in that order. A system must be well-documented. A system must offer style and UI components. Yet every system is different, so I’ll expand a system’s scope to include:
@@ -300,7 +300,7 @@ This starting point packs a punch of intention, revealing beliefs: A system serv
       quote = 'A system may also offer guidance on accessibility, page layout, and editorial and less often branding, data viz, UX patterns, and other tools.'
   ) }}
 
-  
+
 
 
 This variability fosters useful conversations that draw boundaries around what an organization wants and needs. Some concerns (always style and components) are realized far more often than others (editorial guidance and data visualization).
@@ -319,7 +319,7 @@ Invoking product concepts trigger a cascade of concepts useful for those familia
       quote = 'A design system is adopted by and supported for other teams making experiences. These teams use it to develop and ship features more efficiently to form a more cohesive customer journey.'
   ) }}
 
-  
+
 
 
 Design systems invest in **marketing** to product teams to consume the kit of parts to form a unified and cohesively holistic experience. [Fostering adoption](/articles/adopting-design-systems) requires clear messaging to sell others to adopt system and improving themselves (individually and collectively) by realizing its benefits over time as a dependency.
@@ -334,7 +334,7 @@ Design systems invest in **marketing** to product teams to consume the kit of pa
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 Product management also evokes how design systems fit in product **operations** , such as [DevOps](https://en.wikipedia.org/wiki/DevOps) delivery (“How do we release it? How is it automated?”), integration (“How do we version? What’s a breaking change? How, how frequently, and when do we upgrade?”), and infrastructure (“Where’s our repo? Where’s our doc hosted? Is it public?”).
@@ -355,10 +355,10 @@ To help stakeholders understand the impacts of a system, I also route conversati
       quote = 'A design system is made by an individual, team, and/or community. While some arise less formally, organizations now dedicate <a href="/articles/designing-a-systems-team" target="_blank">small to large squad</a>(s) to develop and release system versions and processes over time.'
   ) }}
 
-  
 
 
-Characterizing a system team as a product squad sets the choice in terms familiar to product and marketing professionals: is this important enough to put a [team](/articles/designing-a-systems-team) behind it? That team can adopt rituals, showcase work, and [evolve a roadmap](/articles/what-s-will-your-design-system-deliver) to become part of the fabric of how enterprises make products.
+
+Characterizing a system team as a product squad sets the choice in terms familiar to product and marketing professionals: is this important enough to put a [team](/articles/designing-a-systems-team) behind it? That team can adopt rituals, showcase work, and [evolve a roadmap](/articles/roadmaps-for-design-systems) to become part of the fabric of how enterprises make products.
 
 In cases I’ve observed, this team is responsible for the workflows, connections, and community engagement across an enterprise to decide how a system is applied and evolved. Historically referred to as “governance,” I’ll avoid that term to favor a tone of collaboration over control.
 
@@ -372,7 +372,7 @@ In cases I’ve observed, this team is responsible for the workflows, connection
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 From the outside, a designer, engineer, or someone else in a community may not sense the level of execution behind such activities. That doesn’t mean that they aren’t developed, operated, supported, and used deliberately for months or years. This execution of community interactions is an effortful yet intangible product that make a system successful.
@@ -393,7 +393,7 @@ While not my intent, this writing returned me to the framework of a [Parts, Prod
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 However, it’s reasonable to precede or replace this meticulous activity with a leaner, fill-in-the-blanks template to ground understanding:
@@ -414,4 +414,4 @@ What flummoxes our community is the variability of systems composition. The cons
 
 There’s no de-facto formula, no winning methodology (but we’re getting better). Instead, system success requires adapting how you define it to conditions and constraints of the enterprise it serves.
 
-  
+

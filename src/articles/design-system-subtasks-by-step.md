@@ -16,7 +16,7 @@
 
 
 
-  
+
 
 Top-level steps to develop a system feature-from `Propose` and `Design` to `Code` and `Doc`-are valuable but not enough. Teammates made different assumptions about what's needed to complete a step. High-level definitions-of-done were helpful. Yet, outputs lacked robustness when smaller substeps were completed inconsistently. Team members called for checklists to identify everything expected along the way.
 
@@ -291,7 +291,7 @@ There's more to documentation than just code's Props, Methods, and Events (which
 ### Common Documentation Subtasks
 
 - **`START`**: Set up a documentation file from a template, such as a Microsoft Word, Google Doc, or a generated code file.
-- **`COMPOSE`**: Author varying content types, from <a href="/articles/component-introductions">component introductions</a> to <a href="/articles/component-examples">examples with real content</a>, from <a href="/articles/component-design-guidelines">design guidelines</a> to accessibility notes for design and code.
+- **`COMPOSE`**: Author varying content types, from <a href="/articles/documenting-component-introductions">component introductions</a> to <a href="/articles/component-examples">examples with real content</a>, from <a href="/articles/component-design-guidelines">design guidelines</a> to accessibility notes for design and code.
 - **`TEST`**, **`PRESENT`**: N/A for Doc, or at least optional depending on the scale of material.
 - **`REVIEW`**: For `Doc`, reviews  feel more contained within the system core team. Both disciplines-designer, developer-should review all content types. Additionally, I value when teams engage a content strategist as a "System Editor" for quick reviews queued ad-hoc over time.
 - **`DELIVER`**: Depending on your process, migrating (to Markdown?) and publishing may be a subtask within _this_ `Doc` step or a `Publish` step.
@@ -365,7 +365,7 @@ Nevertheless, tools like Jira and Asana exist for a reason. We're currently far 
 
 
 
-Therefore, teams integrate common, repeatable checklists as subtasks per step into how they use Asana or <a href="/articles/jira-for-design-systems">Jira for design systems</a>. For example, one team I worked with created checklists consistent with their workflow, easily copied into Jira's Create Multiple Subtasks dialog when the time is right (below, for a `Propose` task).
+Therefore, teams integrate common, repeatable checklists as subtasks per step into how they use Asana or <a href="/articles/using-jira-for-design-systems">Jira for design systems</a>. For example, one team I worked with created checklists consistent with their workflow, easily copied into Jira's Create Multiple Subtasks dialog when the time is right (below, for a `Propose` task).
 
 
 <esds-code-snippet max-height="none">
@@ -409,7 +409,6 @@ Subtasks per step offer robustness, lead to quality, and generate confidence and
 
 As I work with teams, I encourage two things: balance and gradual, incremental growth. It's hard for a team to adapt to all these steps all at once. It's a lot. So take it one step at a time. Use these categories, examples, and practices to norm operations on a practice that suits you best. You'll get there!
 
-  
 
 
 
@@ -418,7 +417,8 @@ As I work with teams, I encourage two things: balance and gradual, incremental g
 
 
 
-  
+
+
 
 Top-level steps to develop a system feature-from `Propose` and `Design` to `Code` and `Doc`-are valuable but not enough. Teammates made different assumptions about what's needed to complete a step. High-level definitions-of-done were helpful. Yet, outputs lacked robustness when smaller substeps were completed inconsistently. Team members called for checklists to identify everything expected along the way.
 
@@ -693,7 +693,7 @@ There's more to documentation than just code's Props, Methods, and Events (which
 ### Common Documentation Subtasks
 
 - **`START`**: Set up a documentation file from a template, such as a Microsoft Word, Google Doc, or a generated code file.
-- **`COMPOSE`**: Author varying content types, from <a href="/articles/component-introductions">component introductions</a> to <a href="/articles/component-examples">examples with real content</a>, from <a href="/articles/component-design-guidelines">design guidelines</a> to accessibility notes for design and code.
+- **`COMPOSE`**: Author varying content types, from <a href="/articles/documenting-component-introductions">component introductions</a> to <a href="/articles/component-examples">examples with real content</a>, from <a href="/articles/component-design-guidelines">design guidelines</a> to accessibility notes for design and code.
 - **`TEST`**, **`PRESENT`**: N/A for Doc, or at least optional depending on the scale of material.
 - **`REVIEW`**: For `Doc`, reviews  feel more contained within the system core team. Both disciplines-designer, developer-should review all content types. Additionally, I value when teams engage a content strategist as a "System Editor" for quick reviews queued ad-hoc over time.
 - **`DELIVER`**: Depending on your process, migrating (to Markdown?) and publishing may be a subtask within _this_ `Doc` step or a `Publish` step.
@@ -767,7 +767,7 @@ Nevertheless, tools like Jira and Asana exist for a reason. We're currently far 
 
 
 
-Therefore, teams integrate common, repeatable checklists as subtasks per step into how they use Asana or <a href="/articles/jira-for-design-systems">Jira for design systems</a>. For example, one team I worked with created checklists consistent with their workflow, easily copied into Jira's Create Multiple Subtasks dialog when the time is right (below, for a `Propose` task).
+Therefore, teams integrate common, repeatable checklists as subtasks per step into how they use Asana or <a href="/articles/using-jira-for-design-systems">Jira for design systems</a>. For example, one team I worked with created checklists consistent with their workflow, easily copied into Jira's Create Multiple Subtasks dialog when the time is right (below, for a `Propose` task).
 
 
 <esds-code-snippet max-height="none">
@@ -811,5 +811,5 @@ Subtasks per step offer robustness, lead to quality, and generate confidence and
 
 As I work with teams, I encourage two things: balance and gradual, incremental growth. It's hard for a team to adapt to all these steps all at once. It's a lot. So take it one step at a time. Use these categories, examples, and practices to norm operations on a practice that suits you best. You'll get there!
 
-  
+
 

@@ -114,7 +114,7 @@ When it comes to naming text colors based on intent, I find the <a href="http://
 ) }}
 
 
-These types are typical, encountered during early component designs like button, input and link. As a library grows, they become littered throughout the component catalog via tools like tokens and mixin. Notably, they become necessary as component designs span in <a href="light-dark.html">light and dark settings</a>.
+These types are typical, encountered during early component designs like button, input and link. As a library grows, they become littered throughout the component catalog via tools like tokens and mixin. Notably, they become necessary as component designs span in <a href="/articles/light-dark">light and dark settings</a>.
 
 For example, in the <a href="https://github.com/EightShapes/esds-library/blob/master/library/styles/shared/color.scss">eightshapes.com library</a> (far less rigorously maintained, cobbler’s children and all), we employ a text coloring mixin that iterates through background colors, by type.
 
@@ -228,7 +228,7 @@ and CSS modifier class like sys-header--responsive:
 </div>
 ````
 
-Systems can release components that lack responsive typography. It’s OK. Don’t feel too bad. In fact, some systems lack centralized responsive type controls for months or beyond a year. However, doing so risks a cost down the road. So early technical design may be warranted so that code tools and <a href="component-testing-plans.html">testing plans</a> anticipate responsiveness eventually.
+Systems can release components that lack responsive typography. It’s OK. Don’t feel too bad. In fact, some systems lack centralized responsive type controls for months or beyond a year. However, doing so risks a cost down the road. So early technical design may be warranted so that code tools and <a href="/articles/component-testing-plans">testing plans</a> anticipate responsiveness eventually.
 
 _Takeaway_: While an MVP might not solve for it, responsive typography is a hallmark of a mature, stable system. Establish a scale per breakpoint, and make invokable at varying hierarchy composition levels: by element, by component, by region of a page, and for an overall page.
 

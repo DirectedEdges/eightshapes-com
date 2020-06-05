@@ -15,8 +15,8 @@
 
 
 
-  
-    
+
+
 An enterprise usually has many concurrent design systems. Separate groups chart paths loosely aware or even willfully ignorant of what others do. Many systems isn’t necessarily bad. Different programs may support different experiences and teams with different tools, and that’s ok.
 
 Other times, systems keep experiences and teams apart. Unjustifiable inconsistency. Varying quality. Unmistakable redundancy. “We can do better,” an enterprise leader may say, “designing at scale.” And so they ponder:
@@ -27,7 +27,7 @@ Other times, systems keep experiences and teams apart. Unjustifiable inconsisten
       quote = 'Should we consolidate our design systems? If so, how?'
   ) }}
 
-  
+
 
 
 Consolidation takes effort, time, and an emotional capability to relinquish (some) control. Heretofore independent systems may resist this uncomfortable change. So an approach to consolidation is best shared, rational, and yet also decisive. First, share an understanding of how each system arose. Second, rationalize the features, outputs, and practices on offer. Finally, define a consolidated identity and how it comes together.
@@ -48,7 +48,7 @@ Products (here, a circle) adopt systems (here, a diamond) to efficiently and con
       class = ''
   ) }}
 
-  
+
 
 
 Across an enterprise, disparate systems can arise separate by myriad boundaries of teams, organization units, and platforms.
@@ -74,7 +74,7 @@ Larger entities — think the size of Microsofts, Amazons, IBMs, GEs, or any
       class = ''
   ) }}
 
-  
+
 
 
 In other cases, lines of business also create boundaries, such as a bank’s groups and apps for credit card, banking accounts, and loans. Leaders in design, product and engineering may be on their consolidation journey, having consolidated some (like credit card and banking) while others (loans and institutional) lag behind.
@@ -88,7 +88,7 @@ Distinct systems can also emerge due to a fairly basic premise:
       class = 'escom-pull-quote--light'
   ) }}
 
-  
+
 
 
 Maybe native design conventions differ from the better-funded web system. Or, there’s a belief that “Employee tools have different needs than customers. Therefore, we need a different visual style and components.” Flat out, maybe it’s thinly-veiled hubris: _their_ system isn’t good enough for _our_ stuff. Digging into this more subjective and often emotional divisiveness is important.
@@ -115,7 +115,7 @@ To start, compare features of visual style, UI components, and other categories.
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 For example, a Product group’s system may be more robustly featured and funded. On the other hand, Intranet’s system may be less mature, minimally funded. In that case, a high-level comparison would communicate:
@@ -136,7 +136,7 @@ Both teams invested heavily in quality code documenting and contain relevant des
 Systems aren’t just features. You must also evaluate how each system gets work done, expressed through the teams, processes, and depth of adoption already established. So also compare:
 
 - **People** dedicated to making the system (and who funds their capacity) and the contribution activity from each community.
-_Reference_: [Designing a System Teams](/articles/designing-a-systems-team), [Team Models for Scaling Design Systems](View%20story), [Contributions to Design Systems](/articles/contributions-to-design-systems)
+_Reference_: [Designing a System Teams](/articles/designing-a-systems-team), [Team Models for Scaling Design Systems](/articles/team-models-for-scaling-a-design-system), [Contributions to Design Systems](/articles/contributions-to-design-systems)
 - **Processes** done regularly with proficiency as a system team and group.
 _Reference_: [Practicing Design Systems](/articles/practicing-design-systems)
 - **Products** (and other sites and experiences) serving as the customers would adopt the consolidated system across organizational boundaries.
@@ -162,7 +162,7 @@ Sometimes, teams walk away from the table. They aren’t ready to yield the auto
       class = ''
   ) }}
 
-  
+
 
 - For features, **nothing changes**. Both persist redundant libraries.
 - For people and processes, **disconnected** practices remain.
@@ -188,7 +188,7 @@ Complete consolidation may be too ambitious, yet teams could start with subsyste
       class = ''
   ) }}
 
-  
+
 
 - For features, **converge foundations, even if design before code**. Start with style (color, typography) applied to essential components (buttons, forms). Do teams share a dependency on [design tokens](/articles/tokens-in-design-systems) that are separated from any given component library? Be realistic that a single source-of-truth for front-end code and documentation probably come later.
 - For people and process, **increase collaboration** across groups. Brown bags and random shares should give way to vibrant Slack discussions and and regularly attended critique. Leaders must create space and time for this, but it may not yet be time to unify rituals into a single team.
@@ -214,7 +214,7 @@ Instead of sustaining existing features from one or both systems, you may retire
       class = ''
   ) }}
 
-  
+
 
 - For features, once a **new design language** is in play, so too will be UI components and code too. The “softer” libraries like UX patterns and editorial may avoid reimagination, but they won’t be in the spotlight.
 - For people and processes, a **larger team** may combines the capacity of both existing programs under a bigger umbrella, although maybe **efficiencies risk trimming system capacity**.
@@ -238,7 +238,7 @@ Rationalization often indicates a predominant choice. A stronger system. As such
       class = ''
   ) }}
 
-  
+
 
 - For features, acquired customers will **demand feature parity** with what they currently use. You can’t drop components, features, frameworks, and supported platforms, can you? Possibly, but the surviving system will need to grow and diversify to serve a wider customer base.
 - For people and processes, combine both to ideally **grow the team** to serve the wider base. Adopting a stronger system favors adopting the workflows and operations of that system, but not always.
@@ -259,15 +259,15 @@ When talking mergers and acquisitions, “look into the books” of weaker syste
 These imbalances makes consolidation conversations difficult. Your goal? Realizing the promise of a thriving practice serving more teams at scale. So time to exercise some leadership _and_ management to make consolidation best serve your community!
 
 
-  
 
 
 
 
 
 
-  
-    
+
+
+
 An enterprise usually has many concurrent design systems. Separate groups chart paths loosely aware or even willfully ignorant of what others do. Many systems isn’t necessarily bad. Different programs may support different experiences and teams with different tools, and that’s ok.
 
 Other times, systems keep experiences and teams apart. Unjustifiable inconsistency. Varying quality. Unmistakable redundancy. “We can do better,” an enterprise leader may say, “designing at scale.” And so they ponder:
@@ -278,7 +278,7 @@ Other times, systems keep experiences and teams apart. Unjustifiable inconsisten
       quote = 'Should we consolidate our design systems? If so, how?'
   ) }}
 
-  
+
 
 
 Consolidation takes effort, time, and an emotional capability to relinquish (some) control. Heretofore independent systems may resist this uncomfortable change. So an approach to consolidation is best shared, rational, and yet also decisive. First, share an understanding of how each system arose. Second, rationalize the features, outputs, and practices on offer. Finally, define a consolidated identity and how it comes together.
@@ -299,7 +299,7 @@ Products (here, a circle) adopt systems (here, a diamond) to efficiently and con
       class = ''
   ) }}
 
-  
+
 
 
 Across an enterprise, disparate systems can arise separate by myriad boundaries of teams, organization units, and platforms.
@@ -325,7 +325,7 @@ Larger entities — think the size of Microsofts, Amazons, IBMs, GEs, or any
       class = ''
   ) }}
 
-  
+
 
 
 In other cases, lines of business also create boundaries, such as a bank’s groups and apps for credit card, banking accounts, and loans. Leaders in design, product and engineering may be on their consolidation journey, having consolidated some (like credit card and banking) while others (loans and institutional) lag behind.
@@ -339,7 +339,7 @@ Distinct systems can also emerge due to a fairly basic premise:
       class = 'escom-pull-quote--light'
   ) }}
 
-  
+
 
 
 Maybe native design conventions differ from the better-funded web system. Or, there’s a belief that “Employee tools have different needs than customers. Therefore, we need a different visual style and components.” Flat out, maybe it’s thinly-veiled hubris: _their_ system isn’t good enough for _our_ stuff. Digging into this more subjective and often emotional divisiveness is important.
@@ -366,7 +366,7 @@ To start, compare features of visual style, UI components, and other categories.
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 For example, a Product group’s system may be more robustly featured and funded. On the other hand, Intranet’s system may be less mature, minimally funded. In that case, a high-level comparison would communicate:
@@ -387,7 +387,7 @@ Both teams invested heavily in quality code documenting and contain relevant des
 Systems aren’t just features. You must also evaluate how each system gets work done, expressed through the teams, processes, and depth of adoption already established. So also compare:
 
 - **People** dedicated to making the system (and who funds their capacity) and the contribution activity from each community.
-_Reference_: [Designing a System Teams](/articles/designing-a-systems-team), [Team Models for Scaling Design Systems](View%20story), [Contributions to Design Systems](/articles/contributions-to-design-systems)
+_Reference_: [Designing a System Teams](/articles/designing-a-systems-team), [Team Models for Scaling Design Systems](/articles/team-models-for-scaling-a-design-system), [Contributions to Design Systems](/articles/contributions-to-design-systems)
 - **Processes** done regularly with proficiency as a system team and group.
 _Reference_: [Practicing Design Systems](/articles/practicing-design-systems)
 - **Products** (and other sites and experiences) serving as the customers would adopt the consolidated system across organizational boundaries.
@@ -413,7 +413,7 @@ Sometimes, teams walk away from the table. They aren’t ready to yield the auto
       class = ''
   ) }}
 
-  
+
 
 - For features, **nothing changes**. Both persist redundant libraries.
 - For people and processes, **disconnected** practices remain.
@@ -439,7 +439,7 @@ Complete consolidation may be too ambitious, yet teams could start with subsyste
       class = ''
   ) }}
 
-  
+
 
 - For features, **converge foundations, even if design before code**. Start with style (color, typography) applied to essential components (buttons, forms). Do teams share a dependency on [design tokens](/articles/tokens-in-design-systems) that are separated from any given component library? Be realistic that a single source-of-truth for front-end code and documentation probably come later.
 - For people and process, **increase collaboration** across groups. Brown bags and random shares should give way to vibrant Slack discussions and and regularly attended critique. Leaders must create space and time for this, but it may not yet be time to unify rituals into a single team.
@@ -465,7 +465,7 @@ Instead of sustaining existing features from one or both systems, you may retire
       class = ''
   ) }}
 
-  
+
 
 - For features, once a **new design language** is in play, so too will be UI components and code too. The “softer” libraries like UX patterns and editorial may avoid reimagination, but they won’t be in the spotlight.
 - For people and processes, a **larger team** may combines the capacity of both existing programs under a bigger umbrella, although maybe **efficiencies risk trimming system capacity**.
@@ -489,7 +489,7 @@ Rationalization often indicates a predominant choice. A stronger system. As such
       class = ''
   ) }}
 
-  
+
 
 - For features, acquired customers will **demand feature parity** with what they currently use. You can’t drop components, features, frameworks, and supported platforms, can you? Possibly, but the surviving system will need to grow and diversify to serve a wider customer base.
 - For people and processes, combine both to ideally **grow the team** to serve the wider base. Adopting a stronger system favors adopting the workflows and operations of that system, but not always.
@@ -510,4 +510,4 @@ When talking mergers and acquisitions, “look into the books” of weaker syste
 These imbalances makes consolidation conversations difficult. Your goal? Realizing the promise of a thriving practice serving more teams at scale. So time to exercise some leadership _and_ management to make consolidation best serve your community!
 
 
-  
+

@@ -17,11 +17,11 @@
 
 
 
-  
+
 
 Contributing to a design system should be simple, even if you aren't on the core team. Find it, change it, publish it, and everyone uses it! Easy peasy.
 
-Unfortunately, completing most design system features is slightly more complicated. <a href="defining-contributions.html">Bug fixes and tiny enhancements</a> should be autonomous and quick. However, most prospective contributors don't know or want to do all the steps involved in delivering <a href="defining-contributions.html">large enhancements or new features</a>.
+Unfortunately, completing most design system features is slightly more complicated. <a href="/articles/defining-contributions">Bug fixes and tiny enhancements</a> should be autonomous and quick. However, most prospective contributors don't know or want to do all the steps involved in delivering <a href="/articles/defining-contributions">large enhancements or new features</a>.
 
 That's why a design system program needs stewards: selfless, knowledgable, attentive and warm people to guide contributors through their work. This post explores what to name the role, how to guide a contributor through their journey, and tips on building your system program's stewards over time.
 
@@ -38,7 +38,7 @@ There's no consistent name for this role across system teams. "We're the **core 
 ) }}
 
 
-  
+
 For years, I've used shepherd for a core team member assigned to guide a contributor. The job can definitely feel like herding well intentioned yet directionless folk through an unfamiliar place. 
 
 For many, a shepherd metaphor invokes lambs, a smart, sensitive, and loyal species. Yet, some perceive lambs as dull, stupid, and impassive, not really the spirit you intend. Shepherds evoke religious themes, too. For a few, lambs even trigger Mariah Carey, who refers to her flock as her <a href="https://the-mariah-carey.fandom.com/wiki/The_Lambily">Lambily</a>. Sigh. Shepherd has baggage.
@@ -52,7 +52,7 @@ For many, a shepherd metaphor invokes lambs, a smart, sensitive, and loyal speci
 ) }}
 
 
-  
+
 Steward resonates.  I encountered stewardship in my personal experience managing annual giving for non-profits. Taking responsibility for the interests and intent  of contributions mirrors design system motivations. Recently, I've found myself suggesting steward as the preferred term.
 
 <i>Takeaway</i>: Steward, shepherd–you decide. But definitely decide. Name the role of the person assigned to guide contributors through the process.
@@ -312,7 +312,6 @@ Pairing contributors and stewards, both of varying expertise, requires balance. 
 
 <i>Takeaway</i>: Favor contributor success over team development. Systems work and expertise spans disciplines and features, so grow stewards capability to serve. Yet, always sure that contributor experience is positive and successful, for you may have yet another steward in your midst!
 
-  
 
 
 
@@ -322,11 +321,12 @@ Pairing contributors and stewards, both of varying expertise, requires balance. 
 
 
 
-  
+
+
 
 Contributing to a design system should be simple, even if you aren't on the core team. Find it, change it, publish it, and everyone uses it! Easy peasy.
 
-Unfortunately, completing most design system features is slightly more complicated. <a href="defining-contributions.html">Bug fixes and tiny enhancements</a> should be autonomous and quick. However, most prospective contributors don't know or want to do all the steps involved in delivering <a href="defining-contributions.html">large enhancements or new features</a>.
+Unfortunately, completing most design system features is slightly more complicated. <a href="/articles/defining-contributions">Bug fixes and tiny enhancements</a> should be autonomous and quick. However, most prospective contributors don't know or want to do all the steps involved in delivering <a href="/articles/defining-contributions">large enhancements or new features</a>.
 
 That's why a design system program needs stewards: selfless, knowledgable, attentive and warm people to guide contributors through their work. This post explores what to name the role, how to guide a contributor through their journey, and tips on building your system program's stewards over time.
 
@@ -343,7 +343,7 @@ There's no consistent name for this role across system teams. "We're the **core 
 ) }}
 
 
-  
+
 For years, I've used shepherd for a core team member assigned to guide a contributor. The job can definitely feel like herding well intentioned yet directionless folk through an unfamiliar place. 
 
 For many, a shepherd metaphor invokes lambs, a smart, sensitive, and loyal species. Yet, some perceive lambs as dull, stupid, and impassive, not really the spirit you intend. Shepherds evoke religious themes, too. For a few, lambs even trigger Mariah Carey, who refers to her flock as her <a href="https://the-mariah-carey.fandom.com/wiki/The_Lambily">Lambily</a>. Sigh. Shepherd has baggage.
@@ -357,7 +357,7 @@ For many, a shepherd metaphor invokes lambs, a smart, sensitive, and loyal speci
 ) }}
 
 
-  
+
 Steward resonates.  I encountered stewardship in my personal experience managing annual giving for non-profits. Taking responsibility for the interests and intent  of contributions mirrors design system motivations. Recently, I've found myself suggesting steward as the preferred term.
 
 <i>Takeaway</i>: Steward, shepherd–you decide. But definitely decide. Name the role of the person assigned to guide contributors through the process.
@@ -617,5 +617,5 @@ Pairing contributors and stewards, both of varying expertise, requires balance. 
 
 <i>Takeaway</i>: Favor contributor success over team development. Systems work and expertise spans disciplines and features, so grow stewards capability to serve. Yet, always sure that contributor experience is positive and successful, for you may have yet another steward in your midst!
 
-  
+
 

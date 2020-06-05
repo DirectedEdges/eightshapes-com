@@ -15,8 +15,8 @@
 
 
 
-  
-    
+
+
 Starting a design system to serve a product portfolio isn’t a typical project. Sure, the effort produces recognizable outputs like a visual language and UI components. Making it should feel familiar, cycling through iterations of design, development, and documentation.
 
 However, the system’s promise isn’t a delivered library. The system’s promise is enabling a consistent experience spread across products and sustained with a dependable, predictable practice. System enthusiasts must become entrepreneurs, pitching and selling ideas that get a possibly resistant organization to commit. Over time, a system achieves meaningful outcomes by coordinating and collaborating across organizational boundaries and pesky culture. It’s a process.
@@ -39,7 +39,7 @@ A design system doesn’t start with choosing a first color. Instead, ground a s
       class = ''
   ) }}
 
-  
+
 
 * * *
 
@@ -65,7 +65,7 @@ Discovery can lead to in-person presentations and working sessions to summarize 
 - Define system and products scope via exercises like [Parts, Products & People](/articles/picking-parts-products-people) and [Component Cut Up](/articles/the-component-cut-up-workshop) inventories of existing products.
 - Discuss models and candidates for [system teams](/articles/designing-a-systems-team) and [leaders](/articles/design-system-leader-s-manager-s), [community participation](/articles/team-models-for-scaling-a-design-system), and [contributions](/articles/contributions-to-design-systems).
 - Gather engineers and tech managers to confirm assumptions, choose framework(s), and identify dev environment and hosting needs.
-- [Roadmap upcoming system activity](/articles/what-s-will-your-design-system-deliver) including [reference design](/articles/reference-designs-for-systems) concepts, first release cycle process, and how we’ll [measure success](/articles/measuring-design-system-success).
+- [Roadmap upcoming system activity](/articles/roadmaps-for-design-systems) including [reference design](/articles/reference-designs-for-systems) concepts, first release cycle process, and how we’ll [measure success](/articles/measuring-design-system-success).
 
 * * *
 
@@ -85,7 +85,7 @@ Therefore, it’s critical to demonstrate conceptually your new visual direction
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 For more on preparing and presenting concepts, read [Reference Designs for Systems: Page Concepts Comparing Before & After, with a System Twist](/articles/reference-designs-for-systems).
@@ -106,7 +106,7 @@ Ultimately, a strategy is nothing if the people that matter – both executives 
       class = ''
   ) }}
 
-  
+
 
 
 Our typical strategy pitch presentation covers topics like:
@@ -134,7 +134,7 @@ We’ll often leave a pitch with direct or tacit approval to get on with it. I�
       quote = 'What you shared is very compelling and valuable. Great job. Let me know whatever you need to make this happen.'
   ) }}
 
-  
+
 
 
 Yet verbal approvals don’t mean starting tomorrow. Sometimes, things stall.
@@ -149,7 +149,7 @@ Yet verbal approvals don’t mean starting tomorrow. Sometimes, things stall.
       class = ''
   ) }}
 
-  
+
 
 
 Many factors can slow momentum. Maybe your first pitch triggered a followup pitch to operations and HR to shift staff. Perhaps you have to wait for the next round in an enterprise’s quarterly operating budget process. Or there’s simply a transition period as the system team shifts from product team commitments. Stay the course! Stay persistent! You’ll get there.
@@ -172,7 +172,7 @@ You’ve secured an organizational mandate and a squad of designers, engineers, 
       class = ''
   ) }}
 
-  
+
 
 
 As essential parts emerge, an alpha `0.1` provides early adopters a sneak peek. As the component library grows, early adoption can commence using beta releases like `0.3` and beyond.
@@ -197,7 +197,7 @@ During that time, a newly formed team will acclimate to a development process to
       class = ''
   ) }}
 
-  
+
 
 
 For high-level planning, detailed workflows per item aren’t important. Neither is the order or names of specific components in the example above (although, frankly, that’s a pretty common scope and order of delivery). Instead, I focus on how our team is:
@@ -225,7 +225,7 @@ As a result, I’ll be working with leadership to arrange capacity and processes
       class = ''
   ) }}
 
-  
+
 
 
 The second development cycle also settles into a regular cadence of planning and delivery, such as quarters of six or seven sprints. The objective isn’t launch an unexpected `2.0`, which would be premature and tumultuous. Instead, in contrast with an intense push to `1.0`, the team must start to perform with discipline and be perceived as “business as usual.”
@@ -250,7 +250,7 @@ This ongoing program requires a pivot from a formative to operational mindset. N
       class = ''
   ) }}
 
-  
+
 
 
 In particular, helping a product organization [adopt a design system](/articles/adopting-design-systems) requires deliberate, focused, and effortful collaboration. Be equipped with a concise presentation deck and demo, and ready to present it over and over and over. Emphasizing adoption in a high-level plan creates a useful focus on your most important relationships: a system and all its adopting products.
@@ -259,7 +259,7 @@ In particular, helping a product organization [adopt a design system](/articles/
 
 ### Invest the Program in Regular Time Increments
 
-These periods maintain a growing library but must also must continue delivering demonstrable business value. Like a system’s own patterns, planning and [delivering the program over increments](http://www.scaledagileframework.com/program-increment/) builds a pattern of newsworthy progress, syncing with products, and [roadmapping](/articles/what-s-will-your-design-system-deliver).
+These periods maintain a growing library but must also must continue delivering demonstrable business value. Like a system’s own patterns, planning and [delivering the program over increments](http://www.scaledagileframework.com/program-increment/) builds a pattern of newsworthy progress, syncing with products, and [roadmapping](/articles/roadmaps-for-design-systems).
 
 
 
@@ -271,7 +271,7 @@ These periods maintain a growing library but must also must continue delivering 
       class = ''
   ) }}
 
-  
+
 
 
 For each quarter, you could deliver **epics** like:
@@ -285,15 +285,15 @@ Elongating the time scale even more, mature system programs grow into establishi
 
 This may seem far off or even scary as you get a system off the ground. But even as you deliver essentials first, you can use concepts of regular planning cadence, epics and themes to illustrate where your system journey may go.
 
-  
 
 
 
 
 
 
-  
-    
+
+
+
 Starting a design system to serve a product portfolio isn’t a typical project. Sure, the effort produces recognizable outputs like a visual language and UI components. Making it should feel familiar, cycling through iterations of design, development, and documentation.
 
 However, the system’s promise isn’t a delivered library. The system’s promise is enabling a consistent experience spread across products and sustained with a dependable, predictable practice. System enthusiasts must become entrepreneurs, pitching and selling ideas that get a possibly resistant organization to commit. Over time, a system achieves meaningful outcomes by coordinating and collaborating across organizational boundaries and pesky culture. It’s a process.
@@ -316,7 +316,7 @@ A design system doesn’t start with choosing a first color. Instead, ground a s
       class = ''
   ) }}
 
-  
+
 
 * * *
 
@@ -342,7 +342,7 @@ Discovery can lead to in-person presentations and working sessions to summarize 
 - Define system and products scope via exercises like [Parts, Products & People](/articles/picking-parts-products-people) and [Component Cut Up](/articles/the-component-cut-up-workshop) inventories of existing products.
 - Discuss models and candidates for [system teams](/articles/designing-a-systems-team) and [leaders](/articles/design-system-leader-s-manager-s), [community participation](/articles/team-models-for-scaling-a-design-system), and [contributions](/articles/contributions-to-design-systems).
 - Gather engineers and tech managers to confirm assumptions, choose framework(s), and identify dev environment and hosting needs.
-- [Roadmap upcoming system activity](/articles/what-s-will-your-design-system-deliver) including [reference design](/articles/reference-designs-for-systems) concepts, first release cycle process, and how we’ll [measure success](/articles/measuring-design-system-success).
+- [Roadmap upcoming system activity](/articles/roadmaps-for-design-systems) including [reference design](/articles/reference-designs-for-systems) concepts, first release cycle process, and how we’ll [measure success](/articles/measuring-design-system-success).
 
 * * *
 
@@ -362,7 +362,7 @@ Therefore, it’s critical to demonstrate conceptually your new visual direction
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 For more on preparing and presenting concepts, read [Reference Designs for Systems: Page Concepts Comparing Before & After, with a System Twist](/articles/reference-designs-for-systems).
@@ -383,7 +383,7 @@ Ultimately, a strategy is nothing if the people that matter – both executives 
       class = ''
   ) }}
 
-  
+
 
 
 Our typical strategy pitch presentation covers topics like:
@@ -411,7 +411,7 @@ We’ll often leave a pitch with direct or tacit approval to get on with it. I�
       quote = 'What you shared is very compelling and valuable. Great job. Let me know whatever you need to make this happen.'
   ) }}
 
-  
+
 
 
 Yet verbal approvals don’t mean starting tomorrow. Sometimes, things stall.
@@ -426,7 +426,7 @@ Yet verbal approvals don’t mean starting tomorrow. Sometimes, things stall.
       class = ''
   ) }}
 
-  
+
 
 
 Many factors can slow momentum. Maybe your first pitch triggered a followup pitch to operations and HR to shift staff. Perhaps you have to wait for the next round in an enterprise’s quarterly operating budget process. Or there’s simply a transition period as the system team shifts from product team commitments. Stay the course! Stay persistent! You’ll get there.
@@ -449,7 +449,7 @@ You’ve secured an organizational mandate and a squad of designers, engineers, 
       class = ''
   ) }}
 
-  
+
 
 
 As essential parts emerge, an alpha `0.1` provides early adopters a sneak peek. As the component library grows, early adoption can commence using beta releases like `0.3` and beyond.
@@ -474,7 +474,7 @@ During that time, a newly formed team will acclimate to a development process to
       class = ''
   ) }}
 
-  
+
 
 
 For high-level planning, detailed workflows per item aren’t important. Neither is the order or names of specific components in the example above (although, frankly, that’s a pretty common scope and order of delivery). Instead, I focus on how our team is:
@@ -502,7 +502,7 @@ As a result, I’ll be working with leadership to arrange capacity and processes
       class = ''
   ) }}
 
-  
+
 
 
 The second development cycle also settles into a regular cadence of planning and delivery, such as quarters of six or seven sprints. The objective isn’t launch an unexpected `2.0`, which would be premature and tumultuous. Instead, in contrast with an intense push to `1.0`, the team must start to perform with discipline and be perceived as “business as usual.”
@@ -527,7 +527,7 @@ This ongoing program requires a pivot from a formative to operational mindset. N
       class = ''
   ) }}
 
-  
+
 
 
 In particular, helping a product organization [adopt a design system](/articles/adopting-design-systems) requires deliberate, focused, and effortful collaboration. Be equipped with a concise presentation deck and demo, and ready to present it over and over and over. Emphasizing adoption in a high-level plan creates a useful focus on your most important relationships: a system and all its adopting products.
@@ -536,7 +536,7 @@ In particular, helping a product organization [adopt a design system](/articles/
 
 ### Invest the Program in Regular Time Increments
 
-These periods maintain a growing library but must also must continue delivering demonstrable business value. Like a system’s own patterns, planning and [delivering the program over increments](http://www.scaledagileframework.com/program-increment/) builds a pattern of newsworthy progress, syncing with products, and [roadmapping](/articles/what-s-will-your-design-system-deliver).
+These periods maintain a growing library but must also must continue delivering demonstrable business value. Like a system’s own patterns, planning and [delivering the program over increments](http://www.scaledagileframework.com/program-increment/) builds a pattern of newsworthy progress, syncing with products, and [roadmapping](/articles/roadmaps-for-design-systems).
 
 
 
@@ -548,7 +548,7 @@ These periods maintain a growing library but must also must continue delivering 
       class = ''
   ) }}
 
-  
+
 
 
 For each quarter, you could deliver **epics** like:
@@ -562,4 +562,4 @@ Elongating the time scale even more, mature system programs grow into establishi
 
 This may seem far off or even scary as you get a system off the ground. But even as you deliver essentials first, you can use concepts of regular planning cadence, epics and themes to illustrate where your system journey may go.
 
-  
+

@@ -161,7 +161,7 @@ Typography starts with font-size, although size variants can also trigger shifts
 
 ### 5. Unify Space
 
-Similarly, a spatial model can govern how elements are inset within a component block, as described in <a href="space-in-design-systems.html">Space in Design Systems</a>. Small, medium, and large component sizes often apply a complementary mapping of insets across a scale, leveraged via <a href="tokens-in-design-systems.html">design tokens</a>.
+Similarly, a spatial model can govern how elements are inset within a component block, as described in <a href="/articles/space-in-design-systems">Space in Design Systems</a>. Small, medium, and large component sizes often apply a complementary mapping of insets across a scale, leveraged via <a href="/articles/tokens-in-design-systems">design tokens</a>.
 
 
 {{ escom.article_figure(

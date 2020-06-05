@@ -15,8 +15,8 @@
 
 
 
-  
-    
+
+
 Early on, design system efforts can focus on [defining _what_ a system is](/articles/defining-design-systems) or fret over [principles](/articles/principles-of-designing-systems). However, conversation can shift swiftly towards defining and documenting _how_ it works. Stakeholders want answers to:
 
 
@@ -27,8 +27,8 @@ Early on, design system efforts can focus on [defining _what_ a system is](/arti
       class = 'escom-pull-quote--light'
   ) }}
 
-  
-  
+
+
 
   {{ escom.pull_quote(
       quote = 'How do I … get my pull request approved by teammates?',
@@ -36,8 +36,8 @@ Early on, design system efforts can focus on [defining _what_ a system is](/arti
       class = 'escom-pull-quote--light'
   ) }}
 
-  
-  
+
+
 
   {{ escom.pull_quote(
       quote = 'How do I … adopt a system, without it getting in the way of my priorities?',
@@ -45,7 +45,7 @@ Early on, design system efforts can focus on [defining _what_ a system is](/arti
       class = 'escom-pull-quote--light'
   ) }}
 
-  
+
 
 
 One client recently started a Google Doc, [freelisted](http://www.usabilitybok.org/free-listing) questions, and three pages later was befuddled at what to do next. So many questions! Unlocking the answers is essential for a system to thrive as a practice within an organization.
@@ -103,7 +103,7 @@ From each perspective, we’ll formulate many “How do I…?” questions that 
 
 ### As an Individual of a Specific Discipline
 
-For example, as a **_System Team Developer_** , how do I [**build a system feature**](/articles/system-features-step-by-step) in code?&nbsp;… **release** a version?&nbsp;… release a **hot fix**?
+For example, as a **_System Team Developer_** , how do I [**build a system feature**](/articles/design-system-features-step-by-step) in code?&nbsp;… **release** a version?&nbsp;… release a **hot fix**?
 
 ### As an Individual of Any Discipline
 
@@ -136,7 +136,7 @@ On the other hand, other processes are vitally important and require deliberatel
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 I’ve always appreciated the details and clarity of [Material Design Lite’s Getting Started walkthrough](https://getmdl.io/started/index.html). U.S. Web Design Standards effectively pairs [a developer guide](https://standards.usa.gov/getting-started/developers/) with a “Getting Started” guide for designers too. GE’s Predix library has [_an entire section of their site_](https://www.predix-ui.com/#/about/introduction) devoted to this process, with full videos, links to tutorials, and so much more.
@@ -154,7 +154,7 @@ Every team and organization is different. Surely there are additional questions 
 ### System Team
 
 - As a system team, how do we get [from nothing to **launch a first release**](/articles/starting-a-design-system)?
-- As a system team, how do we evolve our [**roadmap**](/articles/what-s-will-your-design-system-deliver) & priorities?
+- As a system team, how do we evolve our [**roadmap**](/articles/roadmaps-for-design-systems) & priorities?
 - As a system team, how do we convene regularly to plan **release cycles**?
 - As a system team, how do we **organize** & **track** our work on a daily basis?
 - As a system team, how do we meet as a team to discuss **status**?
@@ -162,13 +162,13 @@ Every team and organization is different. Surely there are additional questions 
 - As a system team member, how do I **request a review** from a teammate so I can complete my task?
 - As a system team, how do we [**compose our system team**](/articles/designing-a-systems-team)?
 - As a system team, how do we **plan for rotating team members** and approving future capacity?
-- As a system team, how do we follow [**steps to make things**](/articles/system-features-step-by-step) like a component, including approvers?
+- As a system team, how do we follow [**steps to make things**](/articles/design-system-features-step-by-step) like a component, including approvers?
 - As a system team, how do we validate feature **usability** via research?
-- As a system team, how do we [discover and decide on potential system features](/articles/system-features-step-by-step) we choose to design, build and document?
+- As a system team, how do we [discover and decide on potential system features](/articles/design-system-features-step-by-step) we choose to design, build and document?
 - As a system team designer, how do I collect **examples and design requirements** from a design community for system features?
-- As a system team designer, how do I [**design a system feature**](/articles/system-features-step-by-step)?
+- As a system team designer, how do I [**design a system feature**](/articles/design-system-features-step-by-step)?
 - As a system team designer, how do I **engage my design community** and leadership to validate emerging system feature designs?
-- As a system team developer, how do I [**build a system feature**](/articles/system-features-step-by-step) in code?
+- As a system team developer, how do I [**build a system feature**](/articles/design-system-features-step-by-step) in code?
 - As a system team developer, how do I **release** a version?
 - As a system team developer, how do I release a **hot fix**?
 - As a system team member, how do I author and review **documentation**?
@@ -216,15 +216,15 @@ Every team and organization is different. Surely there are additional questions 
 - As a leader, how do I get an **introduction** to the system?
 - As a leader, how do I get regular **system updates** on progress?
 
-  
 
 
 
 
 
 
-  
-    
+
+
+
 Early on, design system efforts can focus on [defining _what_ a system is](/articles/defining-design-systems) or fret over [principles](/articles/principles-of-designing-systems). However, conversation can shift swiftly towards defining and documenting _how_ it works. Stakeholders want answers to:
 
 
@@ -235,8 +235,8 @@ Early on, design system efforts can focus on [defining _what_ a system is](/arti
       class = 'escom-pull-quote--light'
   ) }}
 
-  
-  
+
+
 
   {{ escom.pull_quote(
       quote = 'How do I … get my pull request approved by teammates?',
@@ -244,8 +244,8 @@ Early on, design system efforts can focus on [defining _what_ a system is](/arti
       class = 'escom-pull-quote--light'
   ) }}
 
-  
-  
+
+
 
   {{ escom.pull_quote(
       quote = 'How do I … adopt a system, without it getting in the way of my priorities?',
@@ -253,7 +253,7 @@ Early on, design system efforts can focus on [defining _what_ a system is](/arti
       class = 'escom-pull-quote--light'
   ) }}
 
-  
+
 
 
 One client recently started a Google Doc, [freelisted](http://www.usabilitybok.org/free-listing) questions, and three pages later was befuddled at what to do next. So many questions! Unlocking the answers is essential for a system to thrive as a practice within an organization.
@@ -311,7 +311,7 @@ From each perspective, we’ll formulate many “How do I…?” questions that 
 
 ### As an Individual of a Specific Discipline
 
-For example, as a **_System Team Developer_** , how do I [**build a system feature**](/articles/system-features-step-by-step) in code?&nbsp;… **release** a version?&nbsp;… release a **hot fix**?
+For example, as a **_System Team Developer_** , how do I [**build a system feature**](/articles/design-system-features-step-by-step) in code?&nbsp;… **release** a version?&nbsp;… release a **hot fix**?
 
 ### As an Individual of Any Discipline
 
@@ -344,7 +344,7 @@ On the other hand, other processes are vitally important and require deliberatel
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 I’ve always appreciated the details and clarity of [Material Design Lite’s Getting Started walkthrough](https://getmdl.io/started/index.html). U.S. Web Design Standards effectively pairs [a developer guide](https://standards.usa.gov/getting-started/developers/) with a “Getting Started” guide for designers too. GE’s Predix library has [_an entire section of their site_](https://www.predix-ui.com/#/about/introduction) devoted to this process, with full videos, links to tutorials, and so much more.
@@ -362,7 +362,7 @@ Every team and organization is different. Surely there are additional questions 
 ### System Team
 
 - As a system team, how do we get [from nothing to **launch a first release**](/articles/starting-a-design-system)?
-- As a system team, how do we evolve our [**roadmap**](/articles/what-s-will-your-design-system-deliver) & priorities?
+- As a system team, how do we evolve our [**roadmap**](/articles/roadmaps-for-design-systems) & priorities?
 - As a system team, how do we convene regularly to plan **release cycles**?
 - As a system team, how do we **organize** & **track** our work on a daily basis?
 - As a system team, how do we meet as a team to discuss **status**?
@@ -370,13 +370,13 @@ Every team and organization is different. Surely there are additional questions 
 - As a system team member, how do I **request a review** from a teammate so I can complete my task?
 - As a system team, how do we [**compose our system team**](/articles/designing-a-systems-team)?
 - As a system team, how do we **plan for rotating team members** and approving future capacity?
-- As a system team, how do we follow [**steps to make things**](/articles/system-features-step-by-step) like a component, including approvers?
+- As a system team, how do we follow [**steps to make things**](/articles/design-system-features-step-by-step) like a component, including approvers?
 - As a system team, how do we validate feature **usability** via research?
-- As a system team, how do we [discover and decide on potential system features](/articles/system-features-step-by-step) we choose to design, build and document?
+- As a system team, how do we [discover and decide on potential system features](/articles/design-system-features-step-by-step) we choose to design, build and document?
 - As a system team designer, how do I collect **examples and design requirements** from a design community for system features?
-- As a system team designer, how do I [**design a system feature**](/articles/system-features-step-by-step)?
+- As a system team designer, how do I [**design a system feature**](/articles/design-system-features-step-by-step)?
 - As a system team designer, how do I **engage my design community** and leadership to validate emerging system feature designs?
-- As a system team developer, how do I [**build a system feature**](/articles/system-features-step-by-step) in code?
+- As a system team developer, how do I [**build a system feature**](/articles/design-system-features-step-by-step) in code?
 - As a system team developer, how do I **release** a version?
 - As a system team developer, how do I release a **hot fix**?
 - As a system team member, how do I author and review **documentation**?
@@ -424,4 +424,4 @@ Every team and organization is different. Surely there are additional questions 
 - As a leader, how do I get an **introduction** to the system?
 - As a leader, how do I get regular **system updates** on progress?
 
-  
+

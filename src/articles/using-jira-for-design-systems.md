@@ -16,7 +16,7 @@
 
 
 
-  
+
 
 I _really_ like using Jira. I value the order it brings to the complicated chaos of making, curating, and contributing to design systems. I’m no Jira admin, and I ain’t no certified scrummaster. That said, I’ve brought enough order to design system chaos using Jira to share the durable approaches I’ve learned.
 
@@ -62,7 +62,7 @@ Examples here use `DS-` (for a generic `d`esign `s`ystem). In real contexts, I�
 
 ### Feature Development (50% of stories)
 
-A design system backlog is rich with features we make, from visual style’s Color and Typography to a UI component library’s Icon, Button and Modal. Since 2016, my teams have been breaking down work per feature into repeatable steps: `Propose` (or Discover), `Design`, `Code`, `Doc`, and `Publish` as described in <a href="design-system-features-step-by-step">Design System Features, Step-by-Step</a>.
+A design system backlog is rich with features we make, from visual style’s Color and Typography to a UI component library’s Icon, Button and Modal. Since 2016, my teams have been breaking down work per feature into repeatable steps: `Propose` (or Discover), `Design`, `Code`, `Doc`, and `Publish` as described in <a href="/articles/design-system-features-step-by-step">Design System Features, Step-by-Step</a>.
 
 
 
@@ -129,7 +129,7 @@ Some design systems work is like the mail: <a href="https://www.youtube.com/watc
 
 ### Formative Epics
 
-When <a href="starting-a-design-system.html">starting a design system</a>, big investments are required even if they eventually taper off into normal business as usual. As a result, a formative period may also deliver on epics like:
+When <a href="/articles/starting-a-design-system">starting a design system</a>, big investments are required even if they eventually taper off into normal business as usual. As a result, a formative period may also deliver on epics like:
 
 - **Strategy** including the roadshow decks, presentations, cross functional alignment, solicitation of staff capacity, and the like.
 - **Early Adopter** coordination to discover, align, collaborate, and experiment with how the system works.
@@ -372,15 +372,15 @@ I’ve seen some teams employ a much more complex Active Sprints view, with many
 Jira is an acquired taste, and using it effectively across a team takes time, commitment, flexibility, and a willingness to converge on a shared language. In my work across many teams, Jira’s effectiveness seems correlated with those teams invested in a system’s long arc. Those are just the teams and systems I want to work with most.
 
 
-  
-    
 
 
 
 
 
 
-  
+
+
+
 
 I _really_ like using Jira. I value the order it brings to the complicated chaos of making, curating, and contributing to design systems. I’m no Jira admin, and I ain’t no certified scrummaster. That said, I’ve brought enough order to design system chaos using Jira to share the durable approaches I’ve learned.
 
@@ -426,7 +426,7 @@ Examples here use `DS-` (for a generic `d`esign `s`ystem). In real contexts, I�
 
 ### Feature Development (50% of stories)
 
-A design system backlog is rich with features we make, from visual style’s Color and Typography to a UI component library’s Icon, Button and Modal. Since 2016, my teams have been breaking down work per feature into repeatable steps: `Propose` (or Discover), `Design`, `Code`, `Doc`, and `Publish` as described in <a href="design-system-features-step-by-step">Design System Features, Step-by-Step</a>.
+A design system backlog is rich with features we make, from visual style’s Color and Typography to a UI component library’s Icon, Button and Modal. Since 2016, my teams have been breaking down work per feature into repeatable steps: `Propose` (or Discover), `Design`, `Code`, `Doc`, and `Publish` as described in <a href="/articles/design-system-features-step-by-step">Design System Features, Step-by-Step</a>.
 
 
 
@@ -493,7 +493,7 @@ Some design systems work is like the mail: <a href="https://www.youtube.com/watc
 
 ### Formative Epics
 
-When <a href="starting-a-design-system.html">starting a design system</a>, big investments are required even if they eventually taper off into normal business as usual. As a result, a formative period may also deliver on epics like:
+When <a href="/articles/starting-a-design-system">starting a design system</a>, big investments are required even if they eventually taper off into normal business as usual. As a result, a formative period may also deliver on epics like:
 
 - **Strategy** including the roadshow decks, presentations, cross functional alignment, solicitation of staff capacity, and the like.
 - **Early Adopter** coordination to discover, align, collaborate, and experiment with how the system works.
@@ -736,5 +736,4 @@ I’ve seen some teams employ a much more complex Active Sprints view, with many
 Jira is an acquired taste, and using it effectively across a team takes time, commitment, flexibility, and a willingness to converge on a shared language. In my work across many teams, Jira’s effectiveness seems correlated with those teams invested in a system’s long arc. Those are just the teams and systems I want to work with most.
 
 
-  
-    
+

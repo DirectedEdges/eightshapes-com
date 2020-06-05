@@ -268,10 +268,10 @@ A drawback of WCAG guidelines is its stark threshold: a color pair passes or fai
 
 Conversation quickens when we reveal a spectrum of choices. There are a bevy of tools in the design community for visualizing the contrast between foreground and background colors, including:
 
-- <a href="webaim.org/resources/contrastchecker/">webaim.org/resources/contrastchecker/</a>
-- <a href="contrast-finder.tanaguru.com/">contrast-finder.tanaguru.com/</a>
-- <a href="snook.ca/technical/colour_contrast/colour.html">snook.ca/technical/colour_contrast/- colour.html</a>
-- <a href="www.checkmycolours.com/">www.checkmycolours.com/</a>
+- <a href="https://webaim.org/resources/contrastchecker/">webaim.org/resources/contrastchecker/</a>
+- <a href="https://contrast-finder.tanaguru.com/">contrast-finder.tanaguru.com/</a>
+- <a href="https://snook.ca/technical/colour_contrast/colour.html">snook.ca/technical/colour_contrast/- colour.html</a>
+- <a href="https://www.checkmycolours.com/">www.checkmycolours.com/</a>
 - <a href="https://usecontrast.com/">usecontrast.com/</a> (Mac app)
 - <a href="http://www.brandwood.com/a11y/">www.brandwood.com/a11y/</a> (Text on images)
 - <a href="http://www.webaxe.org/color-contrast-tools/">www.webaxe.org/color-contrast-tools/</a > (Comprehensive list of many tools)

@@ -109,7 +109,7 @@ Components must not be impacted by styling applied elsewhere in the page. Introd
 
 ### ✔︎ Styled with Design Tokens
 
-Components must be infused with <a href="tokens-in-design-systems.html">design tokens</a> codifying visual style, which requires a token dependency setup from the beginning. Both developers and designers are expected to review how tokens are applied via code reviews.
+Components must be infused with <a href="/articles/tokens-in-design-systems">design tokens</a> codifying visual style, which requires a token dependency setup from the beginning. Both developers and designers are expected to review how tokens are applied via code reviews.
 
 ### ✔︎ Tested Across Browsers, Manually
 
@@ -146,7 +146,7 @@ System designers and developers deliver with accessibility in mind. However, the
 
 ### ✔︎ Changes Logged Readably
 
-I’d expect a team to norm on how to version components, deal with dependencies, and assess <a href="visual-breaking-change-in-design-systems.html">breaking changes</a> as they get started. Nevertheless, they’ll acclimate to making—and documenting—those decisions as they iterate through early cycles. Proof will be in how successful features are packaged and changes logged.
+I’d expect a team to norm on how to version components, deal with dependencies, and assess <a href="/articles/visual-breaking-change-in-design-systems">breaking changes</a> as they get started. Nevertheless, they’ll acclimate to making—and documenting—those decisions as they iterate through early cycles. Proof will be in how successful features are packaged and changes logged.
 
 
 * * *
@@ -157,7 +157,7 @@ Depending on the features of your system, there may be additional criteria relev
 
 ### ✔︎ Display in both Light & Dark Settings
 
-Also known as “Light and Dark Mode,” a component can be placed on both <a href="light-dark.html">light and dark background settings</a>. Many start with white and “black” (which actually may be a darkest gray like #222). More sophisticated systems may offer four (white, black, light gray and dark gray) or even eight settings.
+Also known as “Light and Dark Mode,” a component can be placed on both <a href="/articles/light-dark">light and dark background settings</a>. Many start with white and “black” (which actually may be a darkest gray like #222). More sophisticated systems may offer four (white, black, light gray and dark gray) or even eight settings.
 
 ### ✔︎ Display on Additional “Brand” Background Settings
 
@@ -311,7 +311,7 @@ Components must not be impacted by styling applied elsewhere in the page. Introd
 
 ### ✔︎ Styled with Design Tokens
 
-Components must be infused with <a href="tokens-in-design-systems.html">design tokens</a> codifying visual style, which requires a token dependency setup from the beginning. Both developers and designers are expected to review how tokens are applied via code reviews.
+Components must be infused with <a href="/articles/tokens-in-design-systems">design tokens</a> codifying visual style, which requires a token dependency setup from the beginning. Both developers and designers are expected to review how tokens are applied via code reviews.
 
 ### ✔︎ Tested Across Browsers, Manually
 
@@ -348,7 +348,7 @@ System designers and developers deliver with accessibility in mind. However, the
 
 ### ✔︎ Changes Logged Readably
 
-I’d expect a team to norm on how to version components, deal with dependencies, and assess <a href="visual-breaking-change-in-design-systems.html">breaking changes</a> as they get started. Nevertheless, they’ll acclimate to making—and documenting—those decisions as they iterate through early cycles. Proof will be in how successful features are packaged and changes logged.
+I’d expect a team to norm on how to version components, deal with dependencies, and assess <a href="/articles/visual-breaking-change-in-design-systems">breaking changes</a> as they get started. Nevertheless, they’ll acclimate to making—and documenting—those decisions as they iterate through early cycles. Proof will be in how successful features are packaged and changes logged.
 
 
 * * *
@@ -359,7 +359,7 @@ Depending on the features of your system, there may be additional criteria relev
 
 ### ✔︎ Display in both Light & Dark Settings
 
-Also known as “Light and Dark Mode,” a component can be placed on both <a href="light-dark.html">light and dark background settings</a>. Many start with white and “black” (which actually may be a darkest gray like #222). More sophisticated systems may offer four (white, black, light gray and dark gray) or even eight settings.
+Also known as “Light and Dark Mode,” a component can be placed on both <a href="/articles/light-dark">light and dark background settings</a>. Many start with white and “black” (which actually may be a darkest gray like #222). More sophisticated systems may offer four (white, black, light gray and dark gray) or even eight settings.
 
 ### ✔︎ Display on Additional “Brand” Background Settings
 
