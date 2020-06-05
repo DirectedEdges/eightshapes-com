@@ -49,11 +49,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"node_modules/@eightshapes/esds-code-snippet/dist" : "dependencies"});
   eleventyConfig.addPassthroughCopy({"node_modules/@webcomponents/custom-elements/custom-elements.min.js" : "dependencies/custom-elements.min.js"});
   eleventyConfig.addWatchTarget("./templates");
-  eleventyConfig.addWatchTarget("./src/_includes");
-  eleventyConfig.addWatchTarget("./src/_images");
-  eleventyConfig.addWatchTarget("./src/_icons");
-  eleventyConfig.addWatchTarget("./src/_scripts");
-  eleventyConfig.addWatchTarget("./src/_styles");
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginDate, {
     // Specify custom date formats

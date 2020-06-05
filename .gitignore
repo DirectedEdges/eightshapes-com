@@ -2,12 +2,8 @@
 logs
 npm-debug.log*
 
-# Bower dependency directory (https://bower.io/)
-bower_components
-
 # Dependency directories
 node_modules/
-jspm_packages/
 
 # Optional npm cache directory
 .npm
@@ -18,21 +14,11 @@ jspm_packages/
 # dotenv environment variables file
 .env
 
-# Auto-generated files
-/dist
-/data/icons.json
-
-/tokens/*
-# Keep yaml token source file
-!/tokens/*.yaml
-
-# Ignore root .njk files in /components
-/components/*
-# keep files in subdirectories in /components
-!/components/*/
+# Ignore concatenated .njk file that includes all components
+src/_includes/escom.njk
 
 # Webroot
-/docs
+_site
 
 # Deploy build tmp directory
 /tmp
@@ -40,4 +26,3 @@ jspm_packages/
 # MacOS folder attributes
 *.DS_Store
 
-_site
