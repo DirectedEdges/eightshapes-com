@@ -52,7 +52,7 @@ The key benefit of this technique is that it removes top and bottom whitespace w
 
 By experimenting at multiple font sizes and noting the offsets needed to crop the text at each size, a formula started to emerge:
 
-```scss
+````scss
     // Top crop:
 
     $top-crop + ($desired-line-height - $line-height-with-crop) \* ($font-size-with-crop / 2)), 0) / $font-size-with-crop;
@@ -60,7 +60,7 @@ By experimenting at multiple font sizes and noting the offsets needed to crop th
     // Bottom crop:
 
     $bottom-crop + ($desired-line-height - $line-height-with-crop) \* ($font-size-with-crop / 2)), 0) / $font-size-with-crop;
-```
+````
 
 The formula involved two “magic numbers,” constant values representing the top and bottom crop.
 
@@ -147,11 +147,11 @@ Here are some tips for using any typeface-specfic mixin you generate from the [T
 **1. Use it only when it’s beneficial.**
 Only apply the text crop in situations that need it. Don’t do this:
 
-```scss
+````scss
 * {
   @include text-crop;
 }
-```
+````
 
 This will affect any existing&nbsp;:before and&nbsp;:after pseudo elements you’re using and create undesirable effects on non-text elements.
 

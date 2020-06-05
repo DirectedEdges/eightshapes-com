@@ -7,7 +7,7 @@
   date : 2018-03-20
   masthead : true
   layout : article.njk
-  tags : []
+  tags : [documentation]
 ---
 
 
@@ -15,8 +15,8 @@
 
 
 
-  
-    
+
+
 _#1 of 6 of the series Documenting Components:_
 **Overview** | [Intros](/articles/documenting-component-introductions) | [Examples](/articles/component-examples) | [Design](/articles/component-design-guidelines) | Code | Authoring
 
@@ -52,7 +52,7 @@ Beyond that, is it for anyone else? Possibly, especially as a system entrenches 
       class = ''
   ) }}
 
-  
+
 
 
 Many system teams also publish a system as publicly visible to a community. While intrinsically they seek to share, extrinsically they justify a visible site as a recruiting tool. The system shall expose rigor and quality, craft and collaboration, practices elevated so that a talented recruit sees strength.
@@ -79,7 +79,7 @@ So, who’s most important? My experience suggests a clear starting point: syste
       class = ''
   ) }}
 
-  
+
 
 
 What about engineers versus designers? Every system I’ve worked recently serves both, guiding both design and code. Some doc I observe from other orgs reflects a strong bias towards one or the other, or separates destinations for each (more on that later). There are many dimensions to consider: your objectives, their frequency of use, content depth, quality, cost of content production, and relevance to their work.
@@ -94,7 +94,7 @@ What about engineers versus designers? Every system I’ve worked recently serve
       class = ''
   ) }}
 
-  
+
 
 
 I’m a designer. But I’m also a pragmatist. If I had to choose one, without any context, I’d favor engineers. Getting 50 engineers to code well-designed components is more likely to result in cohesive, efficiently built experiences compared to 50 designers reading tomes of guidance about decisions already built into that code.
@@ -117,8 +117,8 @@ Component doc connects the your audience with content you can provide. The conte
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -128,7 +128,7 @@ Component doc connects the your audience with content you can provide. The conte
       class = ''
   ) }}
 
-  
+
 
 
 At a high level, component doc usually includes these four types:
@@ -154,7 +154,7 @@ The cost of each varies. An _Introduction_ should be quick and cheap, riffing of
       class = ''
   ) }}
 
-  
+
 
 
 But, take a deep breath. Effective _Design_ reference can be very costly, skimped to achieve only basics, or skipped altogether. Design narratives depend on a system’s goals, team capacity and talent, and a community’s appetite.
@@ -185,7 +185,7 @@ Google Material’s doc ecosystem illustrates fragmentation. [Material’s desig
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 This fragmentation isn’t just essential, it’s meaningful and justified. Material’s spread across frameworks, teams, platforms, and—let’s be honest—the world exceeds every other design system in practice today. Newsflash: we all aren’t aiming to be Google Material!
@@ -204,7 +204,7 @@ For the rest of us, a design goes here engineering goes there mentality is commo
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 A design/code separation carries risks, too. Over time, sites fall out of sync as:
@@ -236,7 +236,7 @@ In many systems programs I’ve led in recent years, such as the [Morningstar De
       class = ''
   ) }}
 
-  
+
 
 
 A threaded page comes with tradeoffs: it runs longer with content varyingly relevant per discipline. As an alternative, other systems follow an introduction with content organized into tabs.
@@ -251,7 +251,7 @@ A threaded page comes with tradeoffs: it runs longer with content varyingly rele
       class = ''
   ) }}
 
-  
+
 
 
 _Takeaway_: Blend design and code is possible, and a team can choose the UI—stacked, tabs, something else—that suits their interest.
@@ -279,8 +279,8 @@ Examples rule, and so long as deeper design and code reference is a click away, 
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -290,8 +290,8 @@ Examples rule, and so long as deeper design and code reference is a click away, 
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -301,7 +301,7 @@ Examples rule, and so long as deeper design and code reference is a click away, 
       class = ''
   ) }}
 
-  
+
 
 
 [IBM Carbon](http://carbondesignsystem.com/components/checkbox/code) values examples revealing _Code_ first and foremost, leaving design details for _Usage_ and _Style_ to subsequent tabs. [Hudl’s Uniform](http://uniform.hudl.com/components/forms/checkbox/design) system reverses priority, telling the _Design_ before _Code_, relegated to a second tab with a content taxonomy that’s similar but not exactly the same. Salesforce’s [Lightning Design System](https://www.lightningdesignsystem.com/components/cards/) presents a sensitizing example as a component explorer above a default _Developer Guidelines_ tab, yet _Implementation Notes_ and _Design Guidelines_ tabs remain curiously empty.
@@ -328,7 +328,7 @@ The longer your page, the more important it is to signal what’s there and wher
       class = ''
   ) }}
 
-  
+
 
 
 _Takeaway_: The UI — across tabs or in a single scrollable view — can be a matter of taste, although many sites trend towards a vertical navigation that sticks. Ask your audience, know your content, maximize usability, and no matter what: keep section names and order consistent across the library.
@@ -371,7 +371,7 @@ In a similar vein, [Hudl’s Uniform](http://uniform.hudl.com/components/forms/c
       class = ''
   ) }}
 
-  
+
 
 
 The implementation is smooth and yet comes with a cost: build the UI _and_ manage content effectively. Other clients I’ve served have sought a similar breakdown, finding my heart with acknowledging the separate yet open borders between design and engineering.
@@ -386,15 +386,15 @@ Next → [**#2. Introductions**](/articles/documenting-component-introductions)
 
 
 
-  
 
 
 
 
 
 
-  
-    
+
+
+
 _#1 of 6 of the series Documenting Components:_
 **Overview** | [Intros](/articles/documenting-component-introductions) | [Examples](/articles/component-examples) | [Design](/articles/component-design-guidelines) | Code | Authoring
 
@@ -430,7 +430,7 @@ Beyond that, is it for anyone else? Possibly, especially as a system entrenches 
       class = ''
   ) }}
 
-  
+
 
 
 Many system teams also publish a system as publicly visible to a community. While intrinsically they seek to share, extrinsically they justify a visible site as a recruiting tool. The system shall expose rigor and quality, craft and collaboration, practices elevated so that a talented recruit sees strength.
@@ -457,7 +457,7 @@ So, who’s most important? My experience suggests a clear starting point: syste
       class = ''
   ) }}
 
-  
+
 
 
 What about engineers versus designers? Every system I’ve worked recently serves both, guiding both design and code. Some doc I observe from other orgs reflects a strong bias towards one or the other, or separates destinations for each (more on that later). There are many dimensions to consider: your objectives, their frequency of use, content depth, quality, cost of content production, and relevance to their work.
@@ -472,7 +472,7 @@ What about engineers versus designers? Every system I’ve worked recently serve
       class = ''
   ) }}
 
-  
+
 
 
 I’m a designer. But I’m also a pragmatist. If I had to choose one, without any context, I’d favor engineers. Getting 50 engineers to code well-designed components is more likely to result in cohesive, efficiently built experiences compared to 50 designers reading tomes of guidance about decisions already built into that code.
@@ -495,8 +495,8 @@ Component doc connects the your audience with content you can provide. The conte
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -506,7 +506,7 @@ Component doc connects the your audience with content you can provide. The conte
       class = ''
   ) }}
 
-  
+
 
 
 At a high level, component doc usually includes these four types:
@@ -532,7 +532,7 @@ The cost of each varies. An _Introduction_ should be quick and cheap, riffing of
       class = ''
   ) }}
 
-  
+
 
 
 But, take a deep breath. Effective _Design_ reference can be very costly, skimped to achieve only basics, or skipped altogether. Design narratives depend on a system’s goals, team capacity and talent, and a community’s appetite.
@@ -563,7 +563,7 @@ Google Material’s doc ecosystem illustrates fragmentation. [Material’s desig
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 This fragmentation isn’t just essential, it’s meaningful and justified. Material’s spread across frameworks, teams, platforms, and—let’s be honest—the world exceeds every other design system in practice today. Newsflash: we all aren’t aiming to be Google Material!
@@ -582,7 +582,7 @@ For the rest of us, a design goes here engineering goes there mentality is commo
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 A design/code separation carries risks, too. Over time, sites fall out of sync as:
@@ -614,7 +614,7 @@ In many systems programs I’ve led in recent years, such as the [Morningstar De
       class = ''
   ) }}
 
-  
+
 
 
 A threaded page comes with tradeoffs: it runs longer with content varyingly relevant per discipline. As an alternative, other systems follow an introduction with content organized into tabs.
@@ -629,7 +629,7 @@ A threaded page comes with tradeoffs: it runs longer with content varyingly rele
       class = ''
   ) }}
 
-  
+
 
 
 _Takeaway_: Blend design and code is possible, and a team can choose the UI—stacked, tabs, something else—that suits their interest.
@@ -657,8 +657,8 @@ Examples rule, and so long as deeper design and code reference is a click away, 
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -668,8 +668,8 @@ Examples rule, and so long as deeper design and code reference is a click away, 
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -679,7 +679,7 @@ Examples rule, and so long as deeper design and code reference is a click away, 
       class = ''
   ) }}
 
-  
+
 
 
 [IBM Carbon](http://carbondesignsystem.com/components/checkbox/code) values examples revealing _Code_ first and foremost, leaving design details for _Usage_ and _Style_ to subsequent tabs. [Hudl’s Uniform](http://uniform.hudl.com/components/forms/checkbox/design) system reverses priority, telling the _Design_ before _Code_, relegated to a second tab with a content taxonomy that’s similar but not exactly the same. Salesforce’s [Lightning Design System](https://www.lightningdesignsystem.com/components/cards/) presents a sensitizing example as a component explorer above a default _Developer Guidelines_ tab, yet _Implementation Notes_ and _Design Guidelines_ tabs remain curiously empty.
@@ -706,7 +706,7 @@ The longer your page, the more important it is to signal what’s there and wher
       class = ''
   ) }}
 
-  
+
 
 
 _Takeaway_: The UI — across tabs or in a single scrollable view — can be a matter of taste, although many sites trend towards a vertical navigation that sticks. Ask your audience, know your content, maximize usability, and no matter what: keep section names and order consistent across the library.
@@ -749,7 +749,7 @@ In a similar vein, [Hudl’s Uniform](http://uniform.hudl.com/components/forms/c
       class = ''
   ) }}
 
-  
+
 
 
 The implementation is smooth and yet comes with a cost: build the UI _and_ manage content effectively. Other clients I’ve served have sought a similar breakdown, finding my heart with acknowledging the separate yet open borders between design and engineering.
@@ -764,4 +764,4 @@ Next → [**#2. Introductions**](/articles/documenting-component-introductions)
 
 
 
-  
+

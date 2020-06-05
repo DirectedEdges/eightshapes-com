@@ -15,7 +15,7 @@
 
 
 
-  
+
 
 Operating a design system shares much in common with operating any product venture, from developing to supporting to marketing it. With marketing comes communications, spreading messages far and wide to engage designers and developers how they want to be engaged. Addressing their problems. Using the tools and places they observe and participate in.
 
@@ -190,7 +190,7 @@ There’s a duality in many messages, from minor releases and and patch fixes to
 
 Messages also seem to be either regular or irregular. Most teams develop a rhythm of workflows they repeat over and over: sprints, releases, patches, asset updates. For example, a routine message could be the announcement of a new minor release, targeting all system customers in the #system-general messaging channel and other locations, using a template like:
 
-```
+````
 *NEW RELEASE*
 [system name] *v#.#.#* is now available, including:
 
@@ -201,7 +201,7 @@ Messages also seem to be either regular or irregular. Most teams develop a rhyth
 * Fixes that include [fix], [fix], and [fix]
 
 Read release details at: [Release history URL]
-```
+````
 
 ### Major Milestones & Campaigns
 
@@ -273,7 +273,7 @@ A message matrix enables those not steeped in marketing communications lore to p
 
 _Takeaway_: Challenge your systems team to relate the messages they project to the problems their constituents face. By constructing a message matrix, you can prioritize and reorient investments towards messages that matter. Additionally, this structure is useful when overlaying communications thinking onto something as big as planning a major release cycle or as narrow as discussing how to handle a critical defect.
 
-* * * 
+* * *
 
 ## Call to Action
 
@@ -406,14 +406,14 @@ Avoid public relations crises like these. Yet, if they happen, be deliberate abo
 - Create opportunities to collaborate with those concerned?
 - Engage leaders to clarify direction to you, them, and everyone else?
 
-  
-    
 
 
 
 
 
-  
+
+
+
 
 Operating a design system shares much in common with operating any product venture, from developing to supporting to marketing it. With marketing comes communications, spreading messages far and wide to engage designers and developers how they want to be engaged. Addressing their problems. Using the tools and places they observe and participate in.
 
@@ -588,7 +588,7 @@ There’s a duality in many messages, from minor releases and and patch fixes to
 
 Messages also seem to be either regular or irregular. Most teams develop a rhythm of workflows they repeat over and over: sprints, releases, patches, asset updates. For example, a routine message could be the announcement of a new minor release, targeting all system customers in the #system-general messaging channel and other locations, using a template like:
 
-```
+````
 *NEW RELEASE*
 [system name] *v#.#.#* is now available, including:
 
@@ -599,7 +599,7 @@ Messages also seem to be either regular or irregular. Most teams develop a rhyth
 * Fixes that include [fix], [fix], and [fix]
 
 Read release details at: [Release history URL]
-```
+````
 
 ### Major Milestones & Campaigns
 
@@ -671,7 +671,7 @@ A message matrix enables those not steeped in marketing communications lore to p
 
 _Takeaway_: Challenge your systems team to relate the messages they project to the problems their constituents face. By constructing a message matrix, you can prioritize and reorient investments towards messages that matter. Additionally, this structure is useful when overlaying communications thinking onto something as big as planning a major release cycle or as narrow as discussing how to handle a critical defect.
 
-* * * 
+* * *
 
 ## Call to Action
 
@@ -804,5 +804,4 @@ Avoid public relations crises like these. Yet, if they happen, be deliberate abo
 - Create opportunities to collaborate with those concerned?
 - Engage leaders to clarify direction to you, them, and everyone else?
 
-  
-    
+

@@ -8,45 +8,28 @@ layout : base.njk
 
 
 {% macro section_contents (
-    posts = false,
-    category = "Visual Style",
-    heading = false
+    category = "Visual Style"
     ) %}
 
 
 
 <div class="escom-section-contents">
-    <h4 class="escom-section-contents__header">{% if heading %}{{ heading}}{%else %}{{ category }}{% endif %}</h4>
+    <h4 class="escom-section-contents__header">{{ category }}</h4>
     <ul class="escom-section-contents__list">
-    {% if posts == false %}
-        {% for post in collections[category] %}
-            <li class="escom-section-contents__item">
-                <h5 class="escom-section-contents__item-title">
-                    <a  class="escom-section-contents__item-title-link" href="{{ post.url }}">
-                        {{ post.data.title_abbreviation }}
-                    </a>
-                </h5>
-                <p class="escom-section-contents__item-deck">
-                    {{ post.data.deck }}
-                </p>
-            </li>
+        {%- for post in collections.all -%}
+            {%- if post.data.category == category -%}
+                <li class="escom-section-contents__item">
+                    <h5 class="escom-section-contents__item-title">
+                        <a  class="escom-section-contents__item-title-link" href="{{ post.url }}">
+                            {{ post.data.title_abbreviation }}
+                        </a>
+                    </h5>
+                    <p class="escom-section-contents__item-deck">
+                        {{ post.data.deck }}
+                    </p>
+                </li>
+            {%- endif -%}
         {% endfor %}
-    {% else %}
-        {% for post_id, post_object in posts %}
-            {% if post_object.category === category %}
-            <li class="escom-section-contents__item">
-                <h5 class="escom-section-contents__item-title">
-                    <a  class="escom-section-contents__item-title-link" href="/articles/{{ post_object.id }}">
-                        {{ post_object.title_abbreviation }}
-                    </a>
-                </h5>
-                <p class="escom-section-contents__item-deck">
-                    {{ post_object.deck }}
-                </p>
-            </li>
-            {% endif %}
-        {% endfor %}
-    {% endif %} 
     </ul>
 </div>
 
@@ -63,16 +46,16 @@ layout : base.njk
         </p>
     </div>
     <div class="escom-section-contents__container">
-        {% call section_contents(false, "visual style", "Visual Style") %}{% endcall %}
-        {% call section_contents(false, "ui components", "UI Components") %}{% endcall %}
-        {% call section_contents(systemsposts, "Documentation") %}{% endcall %}
-        {% call section_contents(systemsposts, "Releases") %}{% endcall %}
-        {% call section_contents(systemsposts, "Strategy") %}{% endcall %}
-        {% call section_contents(systemsposts, "Process") %}{% endcall %}
-        {% call section_contents(systemsposts, "Contributions") %}{% endcall %}
-        {% call section_contents(systemsposts, "People") %}{% endcall %}
-        {% call section_contents(systemsposts, "Systems of Systems") %}{% endcall %}
-        {% call section_contents(systemsposts, "Workshop Activities") %}{% endcall %}
+        {{ section_contents("Visual Style") }}
+        {{ section_contents("UI Components") }}
+        {{ section_contents("Documentation") }}
+        {{ section_contents("Releases") }}
+        {{ section_contents("Strategy") }}
+        {{ section_contents("Process") }}
+        {{ section_contents("Contributions") }}
+        {{ section_contents("People") }}
+        {{ section_contents("Systems of Systems") }}
+        {{ section_contents("Workshop Activities") }}
     </div>
 
 {% endcall %}

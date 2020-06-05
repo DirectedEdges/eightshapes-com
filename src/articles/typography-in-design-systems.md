@@ -213,20 +213,20 @@ Systems can offer centrally-tuned responsive type sizes across a predictable set
 
 If responsiveness is included, a system must choose whether it’s “always on” or optional. If it’s optional, is responsiveness on or off by default? If off by default, responsiveness may be enabled via an API for tools like mixin like sys-heading-level-2:
 
-```scss
+````scss
 @mixin sys-heading-level-2($responsive: false);
-```
+````
 
 and CSS modifier class like sys-header--responsive:
 
-```html
+````html
 <div class="sys-header sys-header--responsive">
       <h2 class"sys-header__title">
       Heading
       </h2>
     <div class="sys-header__actions">...</div>
 </div>
-```
+````
 
 Systems can release components that lack responsive typography. It’s OK. Don’t feel too bad. In fact, some systems lack centralized responsive type controls for months or beyond a year. However, doing so risks a cost down the road. So early technical design may be warranted so that code tools and <a href="component-testing-plans.html">testing plans</a> anticipate responsiveness eventually.
 
@@ -242,11 +242,11 @@ In rarer ecosystems, a system is central and authoritative. It defines how all f
 
 In those scenarios, a system can’t rely on page-level resets. Instead, elements are reset at a boundary that is controlled, such as a component block mixin…
 
-```css
+````css
 .system-button {
   @include component-font-reset();
   ...
-```
+````
 
 …to reset at least a range of type properties, such as:
 
@@ -260,15 +260,15 @@ A system never offers “all the components you’ll ever need.” Adopters buil
 
 For example, an adopter could want to apply a heading to title element…
 
-```css
+````css
 .my-custom-component-title {
     @include system-level-3-heading();
 }
-```
+````
 
 …in order to obtain system-compliant CSS like:
 
-```css
+````css
 .my-custom-component-title {
     font-size: 24px;
     font-family: "Barlow", ...;
@@ -276,7 +276,7 @@ For example, an adopter could want to apply a heading to title element…
     font-weight: "Semibold";
     line-height: 1.2;
 }
-```
+````
 
 While code tools shouldn’t overwhelm gorgeous typography doc, that page is a reasonable location many developers should find handy, powerful tools.
 

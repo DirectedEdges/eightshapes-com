@@ -7,16 +7,10 @@
   date : 2018-03-22
   masthead : true
   layout : article.njk
-  tags : []
+  tags : [documentation]
 ---
-
-
 {% import '../_includes/escom.njk' as escom with context %}
 
-
-
-  
-    
 _#2 of 6 of the series Documenting Components:_
 [Overview](/articles/documenting-components) | **Intros** | [Examples](/articles/component-examples) | [Design](/articles/component-design-guidelines) | Code | Authoring
 
@@ -38,7 +32,7 @@ A component’s name (_Buttons_) appears as the page’s title, a label in site�
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 _Drawer_ or _Accordion_ or _Collapsible_ is hard. Even harder? _Grid_ or _Layout_ or _Layout Grid_ or _Rows_ & _Columns_ or _Box_ or _Proportional Grid_ or whatever you call invisible scaffolding visually ordering a page. Even _Card_ isn’t universally defined: is it a generic container or the defined composite of all it contains? Making a library forces the choice.
@@ -53,7 +47,7 @@ _Drawer_ or _Accordion_ or _Collapsible_ is hard. Even harder? _Grid_ or _Layout
       class = ''
   ) }}
 
-  
+
 
 
 For most doc sites, navigation relies on label alone. With a little effort, nav could be enhanced with a _thumbnail_, maybe only via a _tooltip_ on hover. That same snapshot—or fully rendered components—could also be arranged in a gallery introducing the Components section. We can do more.
@@ -68,7 +62,7 @@ For most doc sites, navigation relies on label alone. With a little effort, nav 
       class = ''
   ) }}
 
-  
+
 
 
 If demystifying synonyms is your game, sprinkle in a little “also known as” subtlety to sensitize rather than confuse.
@@ -83,7 +77,7 @@ If demystifying synonyms is your game, sprinkle in a little “also known as” 
       class = ''
   ) }}
 
-  
+
 
 
 _Takeaway_: A optimally clear title can be a challenge, so sweat the decision only just enough. Always pair it with a sensitizing example, and sprinkle hints elsewhere in the UI.
@@ -104,7 +98,7 @@ Names in code uniformly refer to a singular instance (`-button`, `-input`, `-car
       class = ''
   ) }}
 
-  
+
 
 
 However, the singular form is common for components used once on a page. _Global Navigation_, _Footer_, and _Grid_ are thought to frame the page (although _Grids_ do repeat within a page). Similarly, a _Masthead_, _Hero_, or _Billboard_ can set the page’s tone, but aren’t repeated further down. When we verbalize these, the singular form sounds more natural.
@@ -147,8 +141,8 @@ How long’s too long? I encourage teammates to embrace “Tweet length” (and 
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -158,7 +152,7 @@ How long’s too long? I encourage teammates to embrace “Tweet length” (and 
       class = ''
   ) }}
 
-  
+
 
 
 When writing an introduction, capture the essence, not the whole story. That means clarifying component structure and purpose instead of implementation details. For a _Grid_, “rows and columns” for “responsive layout” are favored over “12 columns” or “breakpoints at 768 and 1024.” For _Buttons_, keep it very short. Like 10 words or less short! Everyone knows what a button is.
@@ -208,7 +202,7 @@ Component recognition relies as much or more on what a reader sees (the picture)
       quote = '“I don’t want to read all this.”<br>“Show me stuff I can immediately use.”<br>“Get me to the goods.”<br>“Where are the tools?”'
   ) }}
 
-  
+
 
 
 In a introduction, avoid deep context setting and lengthy overviews. Save the feature details and expansive design and code guidelines for the examples.
@@ -223,15 +217,15 @@ Component introductions must be powerful yet short. The objective is to tantaliz
 
 
 
-  
 
 
 
 
 
 
-  
-    
+
+
+
 _#2 of 6 of the series Documenting Components:_
 [Overview](/articles/documenting-components) | **Intros** | [Examples](/articles/component-examples) | [Design](/articles/component-design-guidelines) | Code | Authoring
 
@@ -253,7 +247,7 @@ A component’s name (_Buttons_) appears as the page’s title, a label in site�
       class = 'escom-article-figure--break-bleed'
   ) }}
 
-  
+
 
 
 _Drawer_ or _Accordion_ or _Collapsible_ is hard. Even harder? _Grid_ or _Layout_ or _Layout Grid_ or _Rows_ & _Columns_ or _Box_ or _Proportional Grid_ or whatever you call invisible scaffolding visually ordering a page. Even _Card_ isn’t universally defined: is it a generic container or the defined composite of all it contains? Making a library forces the choice.
@@ -268,7 +262,7 @@ _Drawer_ or _Accordion_ or _Collapsible_ is hard. Even harder? _Grid_ or _Layout
       class = ''
   ) }}
 
-  
+
 
 
 For most doc sites, navigation relies on label alone. With a little effort, nav could be enhanced with a _thumbnail_, maybe only via a _tooltip_ on hover. That same snapshot—or fully rendered components—could also be arranged in a gallery introducing the Components section. We can do more.
@@ -283,7 +277,7 @@ For most doc sites, navigation relies on label alone. With a little effort, nav 
       class = ''
   ) }}
 
-  
+
 
 
 If demystifying synonyms is your game, sprinkle in a little “also known as” subtlety to sensitize rather than confuse.
@@ -298,7 +292,7 @@ If demystifying synonyms is your game, sprinkle in a little “also known as” 
       class = ''
   ) }}
 
-  
+
 
 
 _Takeaway_: A optimally clear title can be a challenge, so sweat the decision only just enough. Always pair it with a sensitizing example, and sprinkle hints elsewhere in the UI.
@@ -319,7 +313,7 @@ Names in code uniformly refer to a singular instance (`-button`, `-input`, `-car
       class = ''
   ) }}
 
-  
+
 
 
 However, the singular form is common for components used once on a page. _Global Navigation_, _Footer_, and _Grid_ are thought to frame the page (although _Grids_ do repeat within a page). Similarly, a _Masthead_, _Hero_, or _Billboard_ can set the page’s tone, but aren’t repeated further down. When we verbalize these, the singular form sounds more natural.
@@ -362,8 +356,8 @@ How long’s too long? I encourage teammates to embrace “Tweet length” (and 
       class = ''
   ) }}
 
-  
-  
+
+
 
   {{ escom.article_figure(
       image_path = page.fileSlug,
@@ -373,7 +367,7 @@ How long’s too long? I encourage teammates to embrace “Tweet length” (and 
       class = ''
   ) }}
 
-  
+
 
 
 When writing an introduction, capture the essence, not the whole story. That means clarifying component structure and purpose instead of implementation details. For a _Grid_, “rows and columns” for “responsive layout” are favored over “12 columns” or “breakpoints at 768 and 1024.” For _Buttons_, keep it very short. Like 10 words or less short! Everyone knows what a button is.
@@ -423,7 +417,7 @@ Component recognition relies as much or more on what a reader sees (the picture)
       quote = '“I don’t want to read all this.”<br>“Show me stuff I can immediately use.”<br>“Get me to the goods.”<br>“Where are the tools?”'
   ) }}
 
-  
+
 
 
 In a introduction, avoid deep context setting and lengthy overviews. Save the feature details and expansive design and code guidelines for the examples.
@@ -438,4 +432,4 @@ Component introductions must be powerful yet short. The objective is to tantaliz
 
 
 
-  
+
