@@ -60,10 +60,7 @@
     <body class="{{ body_classes }}">
         {{ content | safe }}
         {{ escom.site_footer() }}
-        {# jQuery pulled in to support legacy code concatenated into escom.js #}
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        {# Remove when legacy JS that depends on jquery is gone #}
-        <script src="/dist/escom.js"></script>
+        <script src="/scripts/svg4everybody.js"></script>
         {% include "_google_analytics.html" %}
         <!-- GENERATED WITH 11ty -->
     </body>
