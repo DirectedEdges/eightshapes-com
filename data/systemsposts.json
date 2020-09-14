@@ -706,5 +706,17 @@
         "date_updated" : "",
         "read_duration" : 5,
         "masthead" : true
+    },
+    "design-system-support" : {
+        "category" : "Process",
+        "id" : "design-system-support",
+        "title" : "Design System Support",
+        "deck" : "Operating a Workflow to Resolve Designer and Developer Needs",
+        "title_abbreviation" : "Support",
+        "author_id" : "nathan",
+        "date_published" : "09/10/2020",
+        "date_updated" : "",
+        "read_duration" : 12,
+        "masthead" : true
     }
 }
