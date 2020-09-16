@@ -58,7 +58,7 @@
        ] %}
     <div class="escom-bio-thumbnails">
       {% for thumbnail in bio_thumbnails %}
-          <a class="escom-bio-thumbnail" href="{{ thumbnail.image_path }}.html">
+          <a class="escom-bio-thumbnail" href="{{ thumbnail.image_path }}">
             <div class="escom-bio-thumbnail__image-wrap">
               <img class="escom-bio-thumbnail__image" src="images/bios/bio-thumb-{{ thumbnail.image_path }}.png" alt="{{ up.header }}">
             </div>
@@ -186,7 +186,7 @@
     prev_href="#",
     next_href="#"
   ) %}
-    {% set bio = profiles[profile_index] %}
+s    {% set bio = profiles[profile_index] %}
     {% set next_index = profile_index + 1 %}
     {# Wrap around if the next index is larger than the number of profiles #}
     {% if next_index > profiles.length - 1 %}
