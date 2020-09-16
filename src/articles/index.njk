@@ -1,16 +1,17 @@
-{% set title_tag = "EightShapes Article Directory" %}
-{% set body_classes = "escom-page-type--marketing" %}
-{% extends 'templates/base.njk' %}
+---
+title_tag : EightShapes Article Directory
+layout : base.njk
+---
+{% import '../../node_modules/esds-library/components/esds.njk' as esds %}
 
-{% block body %}
-  {% call esds.row(background="white", class="esds-row--tall-inset") %}
-    <div class="escom-long-form-text">
-      <h2 id="services">Articles</h2>
-      <ul>
-          {% for article in articles %}
-            <li><a href="/articles/{{ article }}">{{ article | replace('-', ' ') | title }}</a></li>
-          {% endfor %}
-      </ul>
-    </div>
-  {% endcall %}
-{% endblock %}
+
+{% call esds.row(background="white", class="esds-row--tall-inset") %}
+  <div class="escom-long-form-text">
+    <h2 id="services">Articles</h2>
+    <ul>
+        {% for post in collections.alphabeticalPosts %}
+          <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+        {% endfor %}
+    </ul>
+  </div>
+{% endcall %}
