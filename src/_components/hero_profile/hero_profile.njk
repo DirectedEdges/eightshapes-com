@@ -4,7 +4,7 @@
     prev_href="#",
     next_href="#"
   ) %}
-s    {% set bio = profiles[profile_index] %}
+    {% set bio = profiles[profile_index] %}
     {% set next_index = profile_index + 1 %}
     {# Wrap around if the next index is larger than the number of profiles #}
     {% if next_index > profiles.length - 1 %}

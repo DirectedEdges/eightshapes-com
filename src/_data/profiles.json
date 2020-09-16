@@ -1,50 +1,50 @@
 [
-    {
-        "name": "Nathan Curtis",
-        "href": "/nathan-curtis",
-        "title": "Founder and Principal",
-        "start_year": "2006",
-        "medium": "https://medium.com/@nathanacurtis",
-        "twitter": "https://twitter.com/nathanacurtis",
-        "linkedin": "https://www.linkedin.com/in/nathancurtis",
-        "eightshapes_com": "nathan-curtis",
-        "image": "/images/components/bio_hero/bio-nathan-curtis-2018.png",
-        "role" : "Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad."
-    },
-    {
-        "name": "Dan Brown",
-        "href": "/dan-brown",
-        "title": "Founder and Principal",
-        "start_year": "2006",
-        "medium": "https://medium.com/@brownorama",
-        "twitter": "https://twitter.com/brownorama",
-        "linkedin": "https://www.linkedin.com/in/danmbrown",
-        "eightshapes_com": "dan-brown",
-        "role" : "Designer • Co-founder of @eightshapes • Author of 3 books on UX • http://bit.ly/danbooks • Board gamer • Family cook",
-        "image": "/images/components/bio_hero/bio-dan-brown-2018.png"
-    },
-    {
-        "name": "James Melzer",
-        "href": "/james-melzer",
-        "title": "Sr. Director, UX",
-        "start_year": "2009",
-        "medium": "https://medium.com/@jamesmelzer",
-        "twitter": "https://twitter.com/jamesmelzer",
-        "linkedin": "https://www.linkedin.com/in/jamesmelzer",
-        "eightshapes_com": "james-melzer",
-        "role" : "",
-        "image": "/images/components/bio_hero/bio-james-melzer-2018.png"
-    },
-    {
-        "name": "Kevin Powell",
-        "href": "/kevin-powell",
-        "title": "Principal Front End Developer",
-        "start_year": "2014",
-        "medium": "https://medium.com/@kevinmpowell",
-        "twitter": "https://twitter.com/kevinmpowell",
-        "linkedin": "https://www.linkedin.com/in/kevinmpowell",
-        "eightshapes_com": "kevin-powell",
-        "role" : "Husband & Father, Builder of Design Systems @eightshapes.",
-        "image": "/images/components/bio_hero/bio-kevin-powell-2018.png"
-    }
+  {
+    "name": "Nathan Curtis",
+    "href": "/nathan-curtis.html",
+    "title": "Founder and Principal",
+    "start_year": "2006",
+    "medium": "https://medium.com/@nathanacurtis",
+    "twitter": "https://twitter.com/nathanacurtis",
+    "linkedin": "https://www.linkedin.com/in/nathancurtis",
+    "eightshapes_com": "nathan-curtis",
+    "image": "/images/components/bio_hero/bio-nathan-curtis-2018.png",
+    "role": "Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist & runner. Father & husband. VT & @uchicago grad."
+  },
+  {
+    "name": "Dan Brown",
+    "href": "/dan-brown.html",
+    "title": "Founder and Principal",
+    "start_year": "2006",
+    "medium": "https://medium.com/@brownorama",
+    "twitter": "https://twitter.com/brownorama",
+    "linkedin": "https://www.linkedin.com/in/danmbrown",
+    "eightshapes_com": "dan-brown",
+    "role": "Designer • Co-founder of @eightshapes • Author of 3 books on UX • http://bit.ly/danbooks • Board gamer • Family cook",
+    "image": "/images/components/bio_hero/bio-dan-brown-2018.png"
+  },
+  {
+    "name": "James Melzer",
+    "href": "/james-melzer.html",
+    "title": "Sr. Director, UX",
+    "start_year": "2009",
+    "medium": "https://medium.com/@jamesmelzer",
+    "twitter": "https://twitter.com/jamesmelzer",
+    "linkedin": "https://www.linkedin.com/in/jamesmelzer",
+    "eightshapes_com": "james-melzer",
+    "role": "",
+    "image": "/images/components/bio_hero/bio-james-melzer-2018.png"
+  },
+  {
+    "name": "Kevin Powell",
+    "href": "/kevin-powell.html",
+    "title": "Principal Front End Developer",
+    "start_year": "2014",
+    "medium": "https://medium.com/@kevinmpowell",
+    "twitter": "https://twitter.com/kevinmpowell",
+    "linkedin": "https://www.linkedin.com/in/kevinmpowell",
+    "eightshapes_com": "kevin-powell",
+    "role": "Husband & Father, Builder of Design Systems @eightshapes.",
+    "image": "/images/components/bio_hero/bio-kevin-powell-2018.png"
+  }
 ]
