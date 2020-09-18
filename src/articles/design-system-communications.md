@@ -344,6 +344,6 @@ It happens. The design system team solicits input, charts a course, and begins t
 
 Avoid public relations crises like these. Yet, if they happen, be deliberate about communications. Over even a two or four week period, how might a message matrix help you…
 
-- iden and participate more in open channels?
+- Widen and participate more in open channels?
 - Create opportunities to collaborate with those concerned?
 - Engage leaders to clarify direction to you, them, and everyone else?
