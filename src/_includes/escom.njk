@@ -683,6 +683,9 @@ s    {% set bio = profiles[profile_index] %}
 {% endmacro %}
 
 {% macro tabs(class, tabs) %}
+    <script type="text/javascript">
+        {% include '../_components/tabs/tabs.js' %}
+    </script>
     <div class="escom-tabs{{ ' ' + class if class }}">
         <div class="escom-tabs__tabs">
             {% for tab in tabs %}
