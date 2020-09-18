@@ -1,0 +1,70 @@
+.escom-bio-thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.escom-bio-thumbnails__placeholder,
+.escom-bio-thumbnail {
+  flex: 1 1 50%;
+  padding: $esds-space-inset-1-x;
+  text-align: center;
+  text-decoration: none;
+
+  @media screen and (min-width: 900px) {
+    flex: 1 1 25%;
+  }
+}
+
+.escom-bio-thumbnails__placeholder {
+  height: 0;
+  overflow: hidden;
+}
+
+.escom-bio-thumbnail__image-wrap {
+  border-radius: $esds-border-radius-default;
+  margin: $esds-space-stack-half-x;
+  overflow: hidden;
+  position: relative;
+
+  &:before {
+    background: darken($esds-interactive-color-hover-on-light, 10);
+    border-radius: $esds-border-radius-default;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity 0.5s;
+    z-index: 1;
+  }
+
+  .escom-bio-thumbnail:hover &:before {
+    opacity: 0.5;
+  }
+}
+
+.escom-bio-thumbnail__image {
+  display: block;
+  max-width: 100%;
+}
+
+.escom-bio-thumbnail__name {
+  color: $esds-text-color-link-on-light;
+  font-size: $esds-font-size-body-m-default;
+  margin: 0;
+  text-transform: uppercase;
+
+  .escom-bio-thumbnail:hover & {
+    text-decoration: underline;
+  }
+}
+
+.escom-bio-thumbnail__role {
+  color: $esds-text-color-secondary-on-light;
+  font-size: $esds-font-size-body-m-default;
+  font-weight: $esds-font-weight-light;
+  margin: 0;
+}

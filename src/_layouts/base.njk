@@ -1,0 +1,67 @@
+{% import '../../node_modules/esds-library/components/esds.njk' as esds %}
+{% import '../_includes/escom.njk' as escom with context %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="{{ meta_keywords | default(global.meta_keywords) }}">
+        <meta name="description" content="{{ meta_description | default(global.meta_description) }}">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+        <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+        <meta http-equiv="cleartype" content="on">
+
+        {% if layout == 'article.njk' %}
+            <title>Eightshapes > @components > {{ title }}</title>
+            <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700&display=swap" rel="stylesheet">
+            <!-— facebook open graph tags -->
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://www.eightshapes.com{{ page.url }}" />
+            <meta property="og:title" content="{{ title }}" />
+            <meta property="og:description" content="{{ deck }}" />
+            {% if masthead %}
+            <meta property="og:image" content="https://eightshapes.com//images/articles/{{ title_image_path }}/masthead.png" />
+            {% endif %}
+
+            <!-— twitter card tags additive with the og: tags -->
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:domain" value="eightshapes.com" />
+            <meta name="twitter:title" value="{{ title }}" />
+            <meta name="twitter:description" value="{{ deck }}" />
+            {% if masthead %}
+            <meta name="twitter:image" content="https://eightshapes.com//images/articles/{{ title_image_path }}/masthead.png" />
+            {% endif %}
+            <meta name="twitter:url" value="https://www.eightshapes.com{{ page.url }}" />
+
+            <!-- No Shadow DOM, so link directly to styles -->
+            <link rel="stylesheet" href="/dependencies/esds-code-snippet.css"/>
+
+            <!-- Separate webcomponents polyfill bundle for Edge, IE11, etc. -->
+            <script type="text/javascript" src="/dependencies/custom-elements.min.js"></script>
+
+            <!-- ESDS Doc components -->
+            <!-- The ESM "vanilla" version of the component for FF, Safari, Chrome and Edge -->
+            <script type="module" src="/dependencies/esds-code-snippet-web-component.js"></script>
+
+            <!-- A babel-compiled version of the component for IE11 -->
+            <script nomodule type="text/javascript" src="/dependencies/esds-code-snippet-legacy.js"></script>
+        {% else %}
+            <title>{{ title_tag | default(global.title_tag) }}</title>
+        {% endif %}
+
+        <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="/dependencies/esds.css"> <!-- copied from esds-library dependency -->
+        <link rel="stylesheet" href="/styles/escom.css">
+    </head>
+    <body class="{{ body_classes }}">
+        {{ content | safe }}
+        {{ escom.site_footer() }}
+        <script src="/scripts/svg4everybody.js"></script>
+        {% include "_google_analytics.html" %}
+        <!-- GENERATED WITH 11ty -->
+    </body>
+</html>

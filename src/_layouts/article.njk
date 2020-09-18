@@ -1,0 +1,72 @@
+---
+  title: Post Title
+  deck: false
+  read_duration: false
+  masthead: false
+  layout: base.njk
+---
+
+{% import '../../node_modules/esds-library/components/esds.njk' as esds %}
+{% import '../_includes/escom.njk' as escom with context %}
+{{ esds.breadcrumb(section_href="/components/", section="@components") }}
+
+{# {% set author = author_id | getPersonById(profiles) %}
+{{ author | dump }} #}
+
+<div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
+    <div class="esds-row__inner">
+        <div class="escom-article__author-row">
+            <div class="escom-article__author-avatar"
+                style="background-image: url('/images/bios/bio-thumb-{{ people[author_id].name | lower | replace(' ', '-') }}.png')">
+            </div>
+            <div class="escom-article__author-text">
+                <p class="escom-article__author">
+                    <a href="{{ people[author_id].href }}">{{ people[author_id].name }}</a>
+                </p>
+                <p class="escom-article__author-role">
+                    {{ people[author_id].role }}
+                </p>
+                <p>
+                    <span class="escom-article__published-date">
+                        Originally published {{ page.date | readableDate | default(date_published) }} •
+                    </span>
+                    <span class="escom-article__read-duration">
+                      {% if read_duration %}
+                        {{ read_duration }}min
+                      {% else %}
+                        {{ content | readingTime({ speed: 215 }) }}
+                      {% endif %}
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="escom-article__title-row{% if not masthead %} escom-article__title-row--no-masthead-next{% endif %}">
+            <h1 class="escom-article__title">{{ title }}</h1>
+            {% if deck %}
+            <h2 class="escom-article__deck">{{ deck }}</h2>
+            {% endif %}
+        </div>
+
+{% if masthead %}
+    </div>
+</div>
+<div class="esds-row esds-container--dark esds-row--no-inset escom-article">
+    <div class="esds-row__inner">
+        <img src="/images/articles/{{ page.fileSlug }}/masthead.png" alt="Masthead" class="escom-article__masthead" >
+    </div>
+</div>
+<div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
+    <div class="esds-row__inner">
+{% endif %}
+    {{ content | safe }}
+    </div>
+</div>
+{{ escom.footer_systems() }}
+
+{{ escom.cta(
+    heading="Need help with your system?",
+    deck="EightShapes can energize your efforts to coach, workshop, assess or partner with you to design, code, document and manage a system.",
+    button_text="Learn More",
+    button_href="/design-systems",
+    class="escom-cta--components-publication escom-page-type--marketing"
+) }}

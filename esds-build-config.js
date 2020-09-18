@@ -40,11 +40,6 @@ module.exports = {
             watch: true
         },
         {
-            name: 'icon-dependencies',
-            sources: [`node_modules/esds-library/dist/esds.svg`],
-            destination: `docs/icons`
-        },
-        {
             name: 'esds-doc-web-component-scripts',
             sources: [
                 `node_modules/@webcomponents/custom-elements/custom-elements.min.js`,
