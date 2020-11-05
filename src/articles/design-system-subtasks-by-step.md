@@ -98,10 +98,11 @@ The Propose step requires a system to consider not a quick component for themsel
 - **`START`**: A proposal starts with basics (a template like: What? Why? For Who/How Many? By When?) whether by system team or contributor. An audit across experiences follows to assess needs and current patterns.
 - **`COMPOSE`**: The proposer articulates feature direction, scope, and related ideas. For simple UI components, lists of "Must", "Should", "Could", "Nice to…", and "Won't" Haves may suffice (see List Group below). Proposing a complex layout grids with rows, columns, offsets, breakpoints, and more may take pages and include proposed values and code demos. These details lead to feature prioritization during reviews and presentations.
 
-<esds-code-snippet max-height="none">
-  List Group Proposal
+```
+List Group Proposal
 
-MUST HAVE
+## MUST HAVE
+
 Item names, vertically stacked
 Linked (Linked or unlinked items)
 Size (Large, medium or small)
@@ -109,7 +110,8 @@ Microcopy (above OR below but not both?)
 Pill (trails title as span element)
 Icon (on left)
 
-COULD HAVE
+## COULD HAVE
+
 Sublist (indented, L2 small text within L1 medium text, L2 medium text with L1 large text)
 Sublist expand/collapse
 Sublist expanded (default false)
@@ -119,14 +121,15 @@ Eyebrow heading (included or separate component? If so, include ARIA connection 
 Badge (for count of items)
 Checkbox (for interactively toggling an item)
 
-DEPENDENCIES
+## DEPENDENCIES
+
 heading
 icon
 link?
 checkbox?
 pill? (for badge)
 accordion? (for sublist expand/collapse)
-</esds-code-snippet>
+```
 
 - **`TEST`**: N/A for Propose.
 - **`REVIEW`**: System team members, product owner, and a community should have the opportunity to read, comment and make suggestions.
