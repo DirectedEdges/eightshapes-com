@@ -159,7 +159,7 @@ On the other hand, large enhancements and new features can be much more costly. 
   class = 'escom-article-figure--break-bleed'
 ) }}
 
-The relationship of frequency versus helpfully grounds conversations on how to model contribution workflows. In an ideal world, there’d be a continuous healthy flow of fixed defects and small enhancements from a wide community. The larger the feature gets, the more involved and longer the work is, and thus the more likely the central team is going to be involved to curate and guide the work.
+The relationship of frequency versus cost helpfully grounds conversations on how to model contribution workflows. In an ideal world, there’d be a continuous healthy flow of fixed defects and small enhancements from a wide community. The larger the feature gets, the more involved and longer the work is, and thus the more likely the central team is going to be involved to curate and guide the work.
 
 ---
 
