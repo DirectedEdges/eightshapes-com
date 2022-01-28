@@ -15,6 +15,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addNunjucksFilter("markdown", function (
+    // This filter is used by nested esds and escom components. Without it, the build fails
     string,
     includeWrapper,
     wrapperClass

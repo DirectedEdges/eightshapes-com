@@ -40,7 +40,7 @@
                 {% if item.href %}
                 <a class="escom-link-list__link" href="{{ item.href }}">
                 {% endif %}
-                    {{ item.title | markdown | replace('<p>', '') | replace('</p>', '') }} {# markdown wraps everything processed with <p> tags, we don't want that here #}
+                    {{ item.title }}
                 {% if item.href %}
                 </a>
                 {% endif %}

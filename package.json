@@ -11,8 +11,6 @@
     "build:11ty": "npx @11ty/eleventy",
     "build:styles": "node build-tasks/compile-sass.js",
     "clean:site": "npx trash _site/*",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "migrate-articles-to-md": "node build-tasks/article-njk-to-md-migration.js",
     "concatenate-component-macros": "node build-tasks/concatenate-component-macros.js",
     "watch:concatenate-component-macros": "chokidar \"src/_components/**/*.njk\" -c \"npm run concatenate-component-macros\"",
     "watch:styles": "chokidar \"src/_styles/**/*.scss\" -c \"npm run build:styles\"",
