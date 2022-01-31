@@ -14,11 +14,11 @@ Running the dev environment locally requires Node 8.11.0 or higher and npm 6.3.0
 
 ## Publishing to eightshapes.com
 
-`gulp deploy-to-gh-pages`
+The site automatically builds to the `/docs` directory in the root of the project. Github watches that directory for changes and will deploy anything new that's committed to the __master__ branch's `/docs` directory.
 
 ### Troubleshooting
 
-If you've run the `gulp deploy-to-gh-pages` command but still don't see your changes on eightshapes.com:
+If you've committed changes to the __master__ branch's `/docs` directory but still don't see your changes on eightshapes.com:
 
-1. Go to the site's [github repo](https://github.com/EightShapes/eightshapes-com) and switch to the `gh-pages` branch using the web UI. Confirm your changes are present in that branch.
-2. Check [Github's status page](https://www.githubstatus.com) and make sure there are no issues related to "Github Pages Builds"
+1. Check the status of the repo's [Github Pages](https://github.com/EightShapes/eightshapes-com/settings/pages) settings and make sure it says it's deployed the latest.
+1. Check [Github's status page](https://www.githubstatus.com) and make sure there are no issues related to "Github Pages Builds"
