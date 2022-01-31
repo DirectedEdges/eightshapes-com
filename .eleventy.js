@@ -94,6 +94,7 @@ module.exports = function (eleventyConfig) {
       includes: "_includes",
       input: "src",
       layouts: "_layouts",
+      output: "docs",
     },
     markdownTemplateEngine: "njk",
   };

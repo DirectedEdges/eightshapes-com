@@ -10,7 +10,7 @@
     "build": "npm-run-all clean:site concatenate-component-macros build:11ty build:styles",
     "build:11ty": "npx @11ty/eleventy",
     "build:styles": "node build-tasks/compile-sass.js",
-    "clean:site": "npx trash _site/*",
+    "clean:site": "npx trash docs/*",
     "test": "echo \"Error: no test specified\" && exit 1",
     "migrate-articles-to-md": "node build-tasks/article-njk-to-md-migration.js",
     "concatenate-component-macros": "node build-tasks/concatenate-component-macros.js",
