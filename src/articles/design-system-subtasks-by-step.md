@@ -303,7 +303,7 @@ Nevertheless, tools like Jira and Asana exist for a reason. We're currently far 
 
 Therefore, teams integrate common, repeatable checklists as subtasks per step into how they use Asana or <a href="/articles/using-jira-for-design-systems">Jira for design systems</a>. For example, one team I worked with created checklists consistent with their workflow, easily copied into Jira's Create Multiple Subtasks dialog when the time is right (below, for a `Propose` task).
 
-<esds-code-snippet max-height="none">
+````
 - Discover requirements, including audits / assignee:"@current"
 - Obtain input on scope from communities / assignee:"@current"
 - Document scope and plan / assignee:"@current"
@@ -314,7 +314,7 @@ Therefore, teams integrate common, repeatable checklists as subtasks per step in
 - Review by system eveloper
 - Approve or decline proposal, including feature name / assignee:"@current"
 - Add, prioritize and assign Jira tasks / assignee:"@current"
-</esds-code-snippet>
+````
 
 ---
 

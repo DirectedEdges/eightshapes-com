@@ -37,18 +37,6 @@
             
             <meta name="twitter:url" value="https://www.eightshapes.com/articles/design-system-subtasks-by-step/" />
 
-            <!-- No Shadow DOM, so link directly to styles -->
-            <link rel="stylesheet" href="/dependencies/esds-code-snippet.css"/>
-
-            <!-- Separate webcomponents polyfill bundle for Edge, IE11, etc. -->
-            <script type="text/javascript" src="/dependencies/custom-elements.min.js"></script>
-
-            <!-- ESDS Doc components -->
-            <!-- The ESM "vanilla" version of the component for FF, Safari, Chrome and Edge -->
-            <script type="module" src="/dependencies/esds-code-snippet-web-component.js"></script>
-
-            <!-- A babel-compiled version of the component for IE11 -->
-            <script nomodule type="text/javascript" src="/dependencies/esds-code-snippet-legacy.js"></script>
         
 
         <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,600" rel="stylesheet">
@@ -362,18 +350,17 @@ accordion? (for sublist expand/collapse)
     <figcaption class="escom-article-figure__caption">Propose story, with subtasks generated and assigned</figcaption>
 </figure>
 <p>Therefore, teams integrate common, repeatable checklists as subtasks per step into how they use Asana or <a href="/articles/using-jira-for-design-systems">Jira for design systems</a>. For example, one team I worked with created checklists consistent with their workflow, easily copied into Jira's Create Multiple Subtasks dialog when the time is right (below, for a <code>Propose</code> task).</p>
-<esds-code-snippet max-height="none">
-- Discover requirements, including audits / assignee:"@current"
-- Obtain input on scope from communities / assignee:"@current"
-- Document scope and plan / assignee:"@current"
-- Present in system team critique / assignee:"@current"
-- Present in design critique / assignee:"@current"
+<pre><code>- Discover requirements, including audits / assignee:&quot;@current&quot;
+- Obtain input on scope from communities / assignee:&quot;@current&quot;
+- Document scope and plan / assignee:&quot;@current&quot;
+- Present in system team critique / assignee:&quot;@current&quot;
+- Present in design critique / assignee:&quot;@current&quot;
 - Review by system product owner
 - Review by system designer
 - Review by system eveloper
-- Approve or decline proposal, including feature name / assignee:"@current"
-- Add, prioritize and assign Jira tasks / assignee:"@current"
-</esds-code-snippet>
+- Approve or decline proposal, including feature name / assignee:&quot;@current&quot;
+- Add, prioritize and assign Jira tasks / assignee:&quot;@current&quot;
+</code></pre>
 <hr>
 <h3>Split Subtasks Across Iterations to Not Overwhelm</h3>
 <p>Kevin Powell and I work together often across different client engagements. He's experienced workflows like these many times, and bristles at a Code step with so many substeps obviously unrealistic to complete in an iteration.</p>

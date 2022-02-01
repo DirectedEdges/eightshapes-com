@@ -74,7 +74,7 @@ A design system team versions its library as a single, monolithic package or sep
 
 A design system versioning by library applies the same version number to all system assets simultaneously, such as `1.4.0` applies across all components.
 
-<esds-code-snippet copyable="false" preformatted max-height="none">
+```
   library 1.4.0
   ├─ visual style
   └─ components
@@ -84,7 +84,7 @@ A design system versioning by library applies the same version number to all sys
       ├─ checkbox
       ├─ radio button
       └─ ...
-</esds-code-snippet>
+```
 
 If _any_ component adds a backwards-compatible feature, then the entire library increments a minor version from `1.4.0` to `1.5.0`. Similarly, if _any_ component has a breaking change, the entire library increments the major number from `1.4.0` to `2.0.0`.
 
@@ -96,7 +96,7 @@ You can’t include a `core.css` from 2 or more versions without CSS conflicts. 
 
 Versioning “by component” enables adopting teams to mix and match button version `5.3.1` with form checkbox `3.1.0` and radio `1.1.0` in the same page.
 
-<esds-code-snippet copyable="false" preformatted max-height="none">
+```
   library
     ├─ visual style
     └─ components
@@ -106,7 +106,7 @@ Versioning “by component” enables adopting teams to mix and match button ver
         ├─ checkbox 3.1.0
         ├─ radio button 1.1.0
         └─ ...
-</esds-code-snippet>
+```
 
 Adopters need not worry about when each was released, since HTML markup, style and script is encapsulated and won’t conflict with other components types included in the the same page. This may or may not mean you can uses multiple versions of one component simultaneously. “Can I include button’s `1.7.0` in one part of the page along with button `1.2.0` and `2.5.0` elsewhere on the same page?" Depends on how the library works.
 
@@ -239,7 +239,7 @@ Should the library release for every little doc change? No. A UX pattern or work
 
 Systems teams I lead take the mindset that the “doc site” (and its content) is a product consuming the system library. We separate the two codebases.
 
-<esds-code-snippet copyable="false" preformatted max-height="none">
+```
   /doc-site
    /components ## Doc site-only components
      /code-example-pair
@@ -252,8 +252,8 @@ Systems teams I lead take the mindset that the “doc site” (and its content) 
      /getting-started
      /ux-patterns
      /visual-style
-</esds-code-snippet>
-<esds-code-snippet copyable="false" preformatted max-height="none">
+```
+```
   /library
    /style ## Library core style
      /color
@@ -264,7 +264,7 @@ Systems teams I lead take the mindset that the “doc site” (and its content) 
      /button
      /icon
      /radio\_button
-</esds-code-snippet>
+```
 
 I’m also unwilling to cede another tradeoff: diminished non-developer participation _and_ content serving wider audiences. The more doc is woven into complex code, the less flexible your content model and the less capable your other authors—designers, content strategists, accessibility specialists—are in editing or expanding it. A tight coupling of code and doc could also slow down how you publish a guideline in response to a community resolving a standard in critique.
 
