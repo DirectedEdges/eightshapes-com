@@ -66,7 +66,8 @@ module.exports = function (eleventyConfig) {
       "dependencies/custom-elements.min.js",
   });
   eleventyConfig.addWatchTarget("./templates");
-  eleventyConfig.addWatchTarget("./docs/styles");
+  eleventyConfig.addWatchTarget("src/_styles");
+  eleventyConfig.setWatchThrottleWaitTime(2000);
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginDate, {
     // Specify custom date formats
