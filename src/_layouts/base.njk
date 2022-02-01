@@ -41,15 +41,47 @@
             <title>{{ title_tag | default(global.title_tag) }}</title>
         {% endif %}
 
-        <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/dependencies/esds.css"> <!-- copied from esds-library dependency -->
         <link rel="stylesheet" href="/styles/escom.css">
     </head>
     <body class="{{ body_classes }}">
+        <div class="header">
+            <div class="header-logo">
+                {% include '../_icons/eightshapes-logo.svg' %}
+            </div>
+        </div>
         {{ content | safe }}
-        {{ escom.site_footer() }}
+        <div class="footer">
+            <div class="footer-inner">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        {% include '../_icons/eightshapes-logo.svg' %}
+                    </div>
+
+                    <p>
+                        12805 Misty Creek Ln, Fairfax VA 22033
+                        <br/>
+                        (703) 296-8831 &#8226; <a href="mailto:info@eightshapes.com">info@eightshapes.com</a>
+                    </p>
+
+                    <p>
+                        &copy;2022 EightShapes LLC.
+                        <br/>
+                        All rights reserved.
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <p>
+                        Find us on
+                        <br/>
+                        <a href="https://twitter.com/eightshapes">Twitter</a><br/>
+                        <a href="https://www.linkedin.com/company/eightshapes-llc">LinkedIn</a><br/>
+                        <a href="https://medium.com/eightshapes-llc">Medium</a>
+                    </p>
+                </div>
+            </div>
+        </div>
         {% include "_google_analytics.html" %}
-        <!-- GENERATED WITH 11ty -->
-        <!-- Testing 2022 -->
     </body>
 </html>
