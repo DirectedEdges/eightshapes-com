@@ -3,17 +3,61 @@
   deck: false
   read_duration: false
   masthead: false
-  layout: base.njk
 ---
 
 {% import '../../node_modules/esds-library/components/esds.njk' as esds %}
 {% import '../_includes/escom.njk' as escom with context %}
-{{ esds.breadcrumb(section_href="/components/", section="@components") }}
 
-{# {% set author = author_id | getPersonById(profiles) %}
-{{ author | dump }} #}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="{{ meta_keywords | default(global.meta_keywords) }}">
+        <meta name="description" content="{{ meta_description | default(global.meta_description) }}">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+        <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
+        <meta http-equiv="cleartype" content="on">
 
-<div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
+        <title>Eightshapes > @components > {{ title }}</title>
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700&display=swap" rel="stylesheet">
+        <!-— facebook open graph tags -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.eightshapes.com{{ page.url }}" />
+        <meta property="og:title" content="{{ title }}" />
+        <meta property="og:description" content="{{ deck }}" />
+        {% if masthead %}
+        <meta property="og:image" content="https://eightshapes.com//images/articles/{{ title_image_path }}/masthead.png" />
+        {% endif %}
+
+        <!-— twitter card tags additive with the og: tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:domain" value="eightshapes.com" />
+        <meta name="twitter:title" value="{{ title }}" />
+        <meta name="twitter:description" value="{{ deck }}" />
+        {% if masthead %}
+        <meta name="twitter:image" content="https://eightshapes.com//images/articles/{{ title_image_path }}/masthead.png" />
+        {% endif %}
+        <meta name="twitter:url" value="https://www.eightshapes.com{{ page.url }}" />
+        <link rel="stylesheet" href="/styles/articles.css">
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/styles/escom.css">
+    </head>
+    <body class="{{ body_classes }}">
+    {{ esds.breadcrumb(section_href="/components/", section="@components") }}
+
+        <a class="header" href="/">
+            <div class="header-logo">
+                {% include '../_icons/eightshapes-logo.svg' %}
+            </div>
+        </a>
+        {<div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
     <div class="esds-row__inner">
         <div class="escom-article__author-row">
             <div class="escom-article__author-avatar"
@@ -47,26 +91,72 @@
             {% endif %}
         </div>
 
-{% if masthead %}
-    </div>
-</div>
-<div class="esds-row esds-container--dark esds-row--no-inset escom-article">
-    <div class="esds-row__inner">
-        <img src="/images/articles/{{ page.fileSlug }}/masthead.png" alt="Masthead" class="escom-article__masthead" >
-    </div>
-</div>
-<div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
-    <div class="esds-row__inner">
-{% endif %}
-    {{ content | safe }}
-    </div>
-</div>
-{{ escom.footer_systems() }}
+        {% if masthead %}
+                </div>
+            </div>
+            <div class="esds-row esds-container--dark esds-row--no-inset escom-article">
+                <div class="esds-row__inner">
+                    <img src="/images/articles/{{ page.fileSlug }}/masthead.png" alt="Masthead" class="escom-article__masthead" >
+                </div>
+            </div>
+            <div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
+                <div class="esds-row__inner">
+        {% endif %}
+            {{ content | safe }}
+            </div>
+        </div>
+        {{ escom.footer_systems() }}
 
-{{ escom.cta(
-    heading="Need help with your system?",
-    deck="EightShapes can energize your efforts to coach, workshop, assess or partner with you to design, code, document and manage a system.",
-    button_text="Learn More",
-    button_href="/design-systems/",
-    class="escom-cta--components-publication escom-page-type--marketing"
-) }}
+        {{ escom.cta(
+            heading="Need help with your system?",
+            deck="EightShapes can energize your efforts to coach, workshop, assess or partner with you to design, code, document and manage a system.",
+            button_text="Learn More",
+            button_href="/design-systems/",
+            class="escom-cta--components-publication escom-page-type--marketing"
+        ) }}
+        <div class="footer">
+            <div class="footer-inner">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        {% include '../_icons/eightshapes-logo.svg' %}
+                    </div>
+
+                    <p>
+                        12805 Misty Creek Ln, Fairfax VA 22033
+                        <br/>
+                        (703) 296-8831 &#8226; <a href="mailto:info@eightshapes.com">info@eightshapes.com</a>
+                    </p>
+
+                    <p>
+                        &copy;2022 EightShapes LLC.
+                        <br/>
+                        All rights reserved.
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <p>
+                        Find us on
+                        <br/>
+                        <a href="https://twitter.com/eightshapes">Twitter</a><br/>
+                        <a href="https://www.linkedin.com/company/eightshapes-llc">LinkedIn</a><br/>
+                        <a href="https://medium.com/eightshapes-llc">Medium</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% include "_google_analytics.html" %}
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
