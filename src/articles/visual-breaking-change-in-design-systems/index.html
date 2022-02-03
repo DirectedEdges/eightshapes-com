@@ -14,52 +14,35 @@
         <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
         <meta http-equiv="cleartype" content="on">
 
+        <title>Eightshapes > @components > Visual Breaking Change in Design Systems</title>
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700&display=swap" rel="stylesheet">
+        <!-— facebook open graph tags -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.eightshapes.com/articles/visual-breaking-change-in-design-systems/" />
+        <meta property="og:title" content="Visual Breaking Change in Design Systems" />
+        <meta property="og:description" content="We Respect Code APIs. But What About Color, Type and Space?" />
         
-            <title>Eightshapes > @components > Visual Breaking Change in Design Systems</title>
-            <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700&display=swap" rel="stylesheet">
-            <!-— facebook open graph tags -->
-            <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://www.eightshapes.com/articles/visual-breaking-change-in-design-systems/" />
-            <meta property="og:title" content="Visual Breaking Change in Design Systems" />
-            <meta property="og:description" content="We Respect Code APIs. But What About Color, Type and Space?" />
-            
-            <meta property="og:image" content="https://eightshapes.com//images/articles//masthead.png" />
-            
-
-            <!-— twitter card tags additive with the og: tags -->
-            <meta name="twitter:card" content="summary_large_image">
-            <meta name="twitter:domain" value="eightshapes.com" />
-            <meta name="twitter:title" value="Visual Breaking Change in Design Systems" />
-            <meta name="twitter:description" value="We Respect Code APIs. But What About Color, Type and Space?" />
-            
-            <meta name="twitter:image" content="https://eightshapes.com//images/articles//masthead.png" />
-            
-            <meta name="twitter:url" value="https://www.eightshapes.com/articles/visual-breaking-change-in-design-systems/" />
-
-            <!-- No Shadow DOM, so link directly to styles -->
-            <link rel="stylesheet" href="/dependencies/esds-code-snippet.css"/>
-
-            <!-- Separate webcomponents polyfill bundle for Edge, IE11, etc. -->
-            <script type="text/javascript" src="/dependencies/custom-elements.min.js"></script>
-
-            <!-- ESDS Doc components -->
-            <!-- The ESM "vanilla" version of the component for FF, Safari, Chrome and Edge -->
-            <script type="module" src="/dependencies/esds-code-snippet-web-component.js"></script>
-
-            <!-- A babel-compiled version of the component for IE11 -->
-            <script nomodule type="text/javascript" src="/dependencies/esds-code-snippet-legacy.js"></script>
+        <meta property="og:image" content="https://eightshapes.com//images/articles//masthead.png" />
         
+
+        <!-— twitter card tags additive with the og: tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:domain" value="eightshapes.com" />
+        <meta name="twitter:title" value="Visual Breaking Change in Design Systems" />
+        <meta name="twitter:description" value="We Respect Code APIs. But What About Color, Type and Space?" />
+        
+        <meta name="twitter:image" content="https://eightshapes.com//images/articles//masthead.png" />
+        
+        <meta name="twitter:url" value="https://www.eightshapes.com/articles/visual-breaking-change-in-design-systems/" />
 
         <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="/dependencies/esds.css"> <!-- copied from esds-library dependency -->
-        <link rel="stylesheet" href="/styles/escom.css">
+        <link rel="stylesheet" href="/styles/articles.css">
     </head>
     <body class="">
         
-
-
-
+        
+        
     
     
 
@@ -95,52 +78,50 @@
     </div>
 
 
+        <div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
+            <div class="esds-row__inner">
+                <div class="escom-article__author-row">
+                    <div class="escom-article__author-avatar"
+                        style="background-image: url('/images/bios/bio-thumb-nathan-curtis.png')">
+                    </div>
+                    <div class="escom-article__author-text">
+                        <p class="escom-article__author">
+                            <a href="/nathan-curtis">Nathan Curtis</a>
+                        </p>
+                        <p class="escom-article__author-role">
+                            Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist &amp; runner. Father &amp; husband. VT &amp; @uchicago grad.
+                        </p>
+                        <p>
+                            <span class="escom-article__published-date">
+                                Originally published 8/24/2018 •
+                            </span>
+                            <span class="escom-article__read-duration">
+                            
+                                17 min
+                            
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="escom-article__title-row">
+                    <h1 class="escom-article__title">Visual Breaking Change in Design Systems</h1>
+                    
+                    <h2 class="escom-article__deck">We Respect Code APIs. But What About Color, Type and Space?</h2>
+                    
+                </div>
 
-
-<div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
-    <div class="esds-row__inner">
-        <div class="escom-article__author-row">
-            <div class="escom-article__author-avatar"
-                style="background-image: url('/images/bios/bio-thumb-nathan-curtis.png')">
-            </div>
-            <div class="escom-article__author-text">
-                <p class="escom-article__author">
-                    <a href="/nathan-curtis">Nathan Curtis</a>
-                </p>
-                <p class="escom-article__author-role">
-                    Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist &amp; runner. Father &amp; husband. VT &amp; @uchicago grad.
-                </p>
-                <p>
-                    <span class="escom-article__published-date">
-                        Originally published 8/24/2018 •
-                    </span>
-                    <span class="escom-article__read-duration">
-                      
-                        17 min
-                      
-                    </span>
-                </p>
+        
             </div>
         </div>
-        <div class="escom-article__title-row">
-            <h1 class="escom-article__title">Visual Breaking Change in Design Systems</h1>
-            
-            <h2 class="escom-article__deck">We Respect Code APIs. But What About Color, Type and Space?</h2>
-            
+        <div class="esds-row esds-container--dark esds-row--no-inset escom-article">
+            <div class="esds-row__inner">
+                <img src="/images/articles/visual-breaking-change-in-design-systems/masthead.png" alt="Masthead" class="escom-article__masthead" >
+            </div>
         </div>
-
-
-    </div>
-</div>
-<div class="esds-row esds-container--dark esds-row--no-inset escom-article">
-    <div class="esds-row__inner">
-        <img src="/images/articles/visual-breaking-change-in-design-systems/masthead.png" alt="Masthead" class="escom-article__masthead" >
-    </div>
-</div>
-<div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
-    <div class="esds-row__inner">
-
-    <p>Design systems establish a baseline visual style that’s an essential dependency. These choices — color, typography, space and more — are robustly specified and expected to stably, predictably change release by release. When an adopter upgrades, a design system shouldn’t break their stuff unexpectedly.</p>
+        <div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
+            <div class="esds-row__inner">
+        
+            <p>Design systems establish a baseline visual style that’s an essential dependency. These choices — color, typography, space and more — are robustly specified and expected to stably, predictably change release by release. When an adopter upgrades, a design system shouldn’t break their stuff unexpectedly.</p>
 <p>So, ask yourself…</p>
 <pre><code>    &lt;div class=&quot;escom-pull-quote escom-pull-quote--light&quot;&gt;
         &lt;div class=&quot;escom-pull-quote__the-quote&quot;&gt;
@@ -403,9 +384,9 @@ If so, <em>your system broke their product</em>.</li>
 <hr>
 <p><strong>#3.</strong> <a href="/articles/versioning-design-systems"><strong>Versioning</strong></a> ← Previous | Next → <strong>#5.</strong> <a href="/articles/dealing-with-dependencies-inside-design-systems"><strong>Dependencies</strong></a></p>
 
-    </div>
-</div>
-
+            </div>
+        </div>
+        
 
 <div class="esds-row esds-container--light esds-row--tall-inset">
     <div class="esds-row__inner escom-footer-systems__row">
@@ -639,7 +620,7 @@ If so, <em>your system broke their product</em>.</li>
 
 
 
-
+        
 
     
 
@@ -676,7 +657,6 @@ If so, <em>your system broke their product</em>.</li>
         
     </div>
 </div>
-
 
 
 
@@ -753,7 +733,6 @@ If so, <em>your system broke their product</em>.</li>
 
 
 
-        <script src="/scripts/svg4everybody.js"></script>
           <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -764,7 +743,22 @@ If so, <em>your system broke their product</em>.</li>
     pageTracker._trackPageview();
   </script>
 
-        <!-- GENERATED WITH 11ty -->
-        <!-- Testing 2022 -->
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -14,52 +14,35 @@
         <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
         <meta http-equiv="cleartype" content="on">
 
+        <title>Eightshapes > @components > Using Jira for Design Systems</title>
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700&display=swap" rel="stylesheet">
+        <!-— facebook open graph tags -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.eightshapes.com/articles/using-jira-for-design-systems/" />
+        <meta property="og:title" content="Using Jira for Design Systems" />
+        <meta property="og:description" content="Iterate Work with Stories, Epics, Versions, Tasks and More" />
         
-            <title>Eightshapes > @components > Using Jira for Design Systems</title>
-            <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700&display=swap" rel="stylesheet">
-            <!-— facebook open graph tags -->
-            <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://www.eightshapes.com/articles/using-jira-for-design-systems/" />
-            <meta property="og:title" content="Using Jira for Design Systems" />
-            <meta property="og:description" content="Iterate Work with Stories, Epics, Versions, Tasks and More" />
-            
-            <meta property="og:image" content="https://eightshapes.com//images/articles//masthead.png" />
-            
-
-            <!-— twitter card tags additive with the og: tags -->
-            <meta name="twitter:card" content="summary_large_image">
-            <meta name="twitter:domain" value="eightshapes.com" />
-            <meta name="twitter:title" value="Using Jira for Design Systems" />
-            <meta name="twitter:description" value="Iterate Work with Stories, Epics, Versions, Tasks and More" />
-            
-            <meta name="twitter:image" content="https://eightshapes.com//images/articles//masthead.png" />
-            
-            <meta name="twitter:url" value="https://www.eightshapes.com/articles/using-jira-for-design-systems/" />
-
-            <!-- No Shadow DOM, so link directly to styles -->
-            <link rel="stylesheet" href="/dependencies/esds-code-snippet.css"/>
-
-            <!-- Separate webcomponents polyfill bundle for Edge, IE11, etc. -->
-            <script type="text/javascript" src="/dependencies/custom-elements.min.js"></script>
-
-            <!-- ESDS Doc components -->
-            <!-- The ESM "vanilla" version of the component for FF, Safari, Chrome and Edge -->
-            <script type="module" src="/dependencies/esds-code-snippet-web-component.js"></script>
-
-            <!-- A babel-compiled version of the component for IE11 -->
-            <script nomodule type="text/javascript" src="/dependencies/esds-code-snippet-legacy.js"></script>
+        <meta property="og:image" content="https://eightshapes.com//images/articles//masthead.png" />
         
+
+        <!-— twitter card tags additive with the og: tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:domain" value="eightshapes.com" />
+        <meta name="twitter:title" value="Using Jira for Design Systems" />
+        <meta name="twitter:description" value="Iterate Work with Stories, Epics, Versions, Tasks and More" />
+        
+        <meta name="twitter:image" content="https://eightshapes.com//images/articles//masthead.png" />
+        
+        <meta name="twitter:url" value="https://www.eightshapes.com/articles/using-jira-for-design-systems/" />
 
         <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="/dependencies/esds.css"> <!-- copied from esds-library dependency -->
-        <link rel="stylesheet" href="/styles/escom.css">
+        <link rel="stylesheet" href="/styles/articles.css">
     </head>
     <body class="">
         
-
-
-
+        
+        
     
     
 
@@ -95,52 +78,50 @@
     </div>
 
 
+        <div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
+            <div class="esds-row__inner">
+                <div class="escom-article__author-row">
+                    <div class="escom-article__author-avatar"
+                        style="background-image: url('/images/bios/bio-thumb-nathan-curtis.png')">
+                    </div>
+                    <div class="escom-article__author-text">
+                        <p class="escom-article__author">
+                            <a href="/nathan-curtis">Nathan Curtis</a>
+                        </p>
+                        <p class="escom-article__author-role">
+                            Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist &amp; runner. Father &amp; husband. VT &amp; @uchicago grad.
+                        </p>
+                        <p>
+                            <span class="escom-article__published-date">
+                                Originally published 10/14/2019 •
+                            </span>
+                            <span class="escom-article__read-duration">
+                            
+                                13 min
+                            
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="escom-article__title-row">
+                    <h1 class="escom-article__title">Using Jira for Design Systems</h1>
+                    
+                    <h2 class="escom-article__deck">Iterate Work with Stories, Epics, Versions, Tasks and More</h2>
+                    
+                </div>
 
-
-<div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
-    <div class="esds-row__inner">
-        <div class="escom-article__author-row">
-            <div class="escom-article__author-avatar"
-                style="background-image: url('/images/bios/bio-thumb-nathan-curtis.png')">
-            </div>
-            <div class="escom-article__author-text">
-                <p class="escom-article__author">
-                    <a href="/nathan-curtis">Nathan Curtis</a>
-                </p>
-                <p class="escom-article__author-role">
-                    Founder of UX firm @eightshapes. Speaker. Writer. Fan of Arsenal, Hokies. Cyclist &amp; runner. Father &amp; husband. VT &amp; @uchicago grad.
-                </p>
-                <p>
-                    <span class="escom-article__published-date">
-                        Originally published 10/14/2019 •
-                    </span>
-                    <span class="escom-article__read-duration">
-                      
-                        13 min
-                      
-                    </span>
-                </p>
+        
             </div>
         </div>
-        <div class="escom-article__title-row">
-            <h1 class="escom-article__title">Using Jira for Design Systems</h1>
-            
-            <h2 class="escom-article__deck">Iterate Work with Stories, Epics, Versions, Tasks and More</h2>
-            
+        <div class="esds-row esds-container--dark esds-row--no-inset escom-article">
+            <div class="esds-row__inner">
+                <img src="/images/articles/using-jira-for-design-systems/masthead.png" alt="Masthead" class="escom-article__masthead" >
+            </div>
         </div>
-
-
-    </div>
-</div>
-<div class="esds-row esds-container--dark esds-row--no-inset escom-article">
-    <div class="esds-row__inner">
-        <img src="/images/articles/using-jira-for-design-systems/masthead.png" alt="Masthead" class="escom-article__masthead" >
-    </div>
-</div>
-<div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
-    <div class="esds-row__inner">
-
-    <p>I <em>really</em> like using Jira. I value the order it brings to the complicated chaos of making, curating, and contributing to design systems. I’m no Jira admin, and I ain’t no certified scrummaster. That said, I’ve brought enough order to design system chaos using Jira to share the durable approaches I’ve learned.</p>
+        <div class="esds-row esds-container--white esds-row--tall-inset esds-row--article-max-width escom-article">
+            <div class="esds-row__inner">
+        
+            <p>I <em>really</em> like using Jira. I value the order it brings to the complicated chaos of making, curating, and contributing to design systems. I’m no Jira admin, and I ain’t no certified scrummaster. That said, I’ve brought enough order to design system chaos using Jira to share the durable approaches I’ve learned.</p>
 <p>Others have their <em>feelings</em> about Jira, too. I don’t know how your enterprise uses Jira. I don’t know how your team wants to manage tasks. Every team is different: what’s been good for my teams may not work well for your teams. Most of my clients use Jira, but there are some that don’t. If you don’t, or if you use Jira differently, I hope the ideas presented here still help you.</p>
 <p>I’ll start with how I approach starting a <strong>Project</strong>, add stories with good names (<strong>Summary</strong>) and organization (<strong>Epics</strong>), and iterate (<strong>Sprints</strong>) work over time and releases (<strong>Versions</strong>). Things will get complex as we break down work (<strong>Subtasks</strong>). Yet, all this data must lead us to coordinate efficiently in day-to-day ceremonies like the <strong>Grooming</strong>, <strong>Planning</strong>, and <strong>Standups</strong>. Let’s dig in.</p>
 <hr>
@@ -372,9 +353,9 @@
 <hr>
 <p>Jira is an acquired taste, and using it effectively across a team takes time, commitment, flexibility, and a willingness to converge on a shared language. In my work across many teams, Jira’s effectiveness seems correlated with those teams invested in a system’s long arc. Those are just the teams and systems I want to work with most.</p>
 
-    </div>
-</div>
-
+            </div>
+        </div>
+        
 
 <div class="esds-row esds-container--light esds-row--tall-inset">
     <div class="esds-row__inner escom-footer-systems__row">
@@ -608,7 +589,7 @@
 
 
 
-
+        
 
     
 
@@ -645,7 +626,6 @@
         
     </div>
 </div>
-
 
 
 
@@ -722,7 +702,6 @@
 
 
 
-        <script src="/scripts/svg4everybody.js"></script>
           <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -733,7 +712,22 @@
     pageTracker._trackPageview();
   </script>
 
-        <!-- GENERATED WITH 11ty -->
-        <!-- Testing 2022 -->
     </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
