@@ -12,6 +12,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/_scripts": "scripts" });
   eleventyConfig.addPassthroughCopy({ "src/_images": "images" });
   eleventyConfig.addPassthroughCopy({ "src/_styles/*.css": "styles" });
+  eleventyConfig.addPassthroughCopy({ "src/articles": "article" });
 
   eleventyConfig.addWatchTarget("./templates");
   eleventyConfig.addWatchTarget("src/_styles");
