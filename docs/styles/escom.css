@@ -53,6 +53,11 @@ h2:first-child {
   }
 }
 
+h3 {
+  font-size: 24px;
+  margin: 0 0 16px;
+}
+
 p,
 li {
   font-size: 22.6px;
@@ -237,6 +242,10 @@ li {
     -moz-column-count: 3;
          column-count: 3;
   }
+  .client-list.bio-client-list {
+    -moz-column-count: 4;
+         column-count: 4;
+  }
   .client-list li {
     font-size: 22.6px;
   }
@@ -282,5 +291,128 @@ li {
   .bio-thumbnails {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.bio-header {
+  padding: 28px 32px 0;
+}
+.bio-header h1 {
+  margin: 0;
+}
+.bio-header h2 {
+  color: #8c8c8c;
+  font-size: 15px;
+  letter-spacing: 2px;
+  margin: 0;
+  max-width: 120px;
+  text-transform: uppercase;
+}
+.bio-header img {
+  display: block;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .bio-header .bio-header-inner {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 770px;
+  }
+  .bio-header h2 {
+    max-width: none;
+  }
+}
+
+.row {
+  padding: 32px;
+}
+
+.row-inner {
+  margin: 0 auto;
+  max-width: 770px;
+}
+
+.row.reverse {
+  background: #262626;
+  color: #ffffff;
+}
+.row.reverse a {
+  color: #43aab5;
+}
+
+.row.secondary {
+  background: #f3f1f1;
+}
+
+.secondary-text {
+  color: #6b6b6b;
+}
+
+.media-thumbnail {
+  color: #0d0d0d;
+  display: block;
+  margin: 0 0 16px;
+}
+.media-thumbnail img {
+  border-radius: 9.25px;
+  display: block;
+  margin: 0 0 8px;
+  max-width: 200px;
+}
+.media-thumbnail .secondary-text {
+  display: block;
+  font-size: 19.2px;
+}
+
+.dot-divider {
+  align-items: center;
+  display: flex;
+  height: 16px;
+  justify-content: center;
+  margin: 0 0 16px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .dot-divider {
+    margin: 16px 0 32px;
+  }
+}
+
+.dot-divider-inner {
+  align-items: center;
+  display: flex;
+  height: 4px;
+  justify-content: space-between;
+  width: 44px;
+}
+.dot-divider-inner b {
+  background: #b3b1b1;
+  border-radius: 4px;
+  display: block;
+  height: 4px;
+  width: 4px;
+}
+
+.unstyled {
+  margin: 0 0 24px;
+  padding: 0;
+}
+.unstyled li {
+  font-size: 19.2px;
+  list-style: none;
+  margin: 0 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .bio-section-row {
+    display: flex;
+  }
+  .bio-section-row .bio-section {
+    flex: 1 1 50%;
+  }
+  .bio-section-row .bio-section .dot-divider {
+    display: none;
   }
 }
