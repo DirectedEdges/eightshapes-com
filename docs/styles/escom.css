@@ -57,6 +57,31 @@ h3 {
   font-size: 24px;
   margin: 0 0 16px;
 }
+@media screen and (min-width: 768px) {
+  h3 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  h3 {
+    font-size: 32px;
+  }
+}
+
+h4 {
+  font-size: 19.2px;
+  margin: 0 0 16px;
+}
+@media screen and (min-width: 768px) {
+  h4 {
+    font-size: 19.2px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  h4 {
+    font-size: 24px;
+  }
+}
 
 p,
 li {
@@ -71,7 +96,7 @@ li {
 @media screen and (min-width: 1400px) {
   p,
 li {
-    font-size: 32px;
+    font-size: 22.6px;
   }
 }
 

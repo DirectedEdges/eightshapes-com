@@ -187,6 +187,27 @@ h2 {
 h3 {
   font-size: $heading-level-4;
   margin: 0 0 16px;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: $heading-level-4;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: $heading-level-3;
+  }
+}
+
+h4 {
+  font-size: $heading-level-5;
+  margin: 0 0 16px;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: $heading-level-5;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: $heading-level-4;
+  }
 }
 
 p,
@@ -198,7 +219,7 @@ li {
   }
 
   @media screen and (min-width: $desktop-width) {
-    font-size: $slide-body-small;
+    font-size: $body-large;
   }
 }
 
