@@ -1,7 +1,6 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.setTemplateFormats(["html", "md", "njk"]);
 
-  eleventyConfig.addPassthroughCopy("dist");
   eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });
   eleventyConfig.addPassthroughCopy({ "src/_scripts": "scripts" });
   eleventyConfig.addPassthroughCopy({ "src/_images": "images" });
