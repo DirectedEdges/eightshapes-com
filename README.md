@@ -11,6 +11,9 @@ Running the dev environment locally requires Node 8.11.0 or higher and npm 6.3.0
 2. `npm install` - you may encounter warnings, they're safe to ignore
 3. `npm start`
 
+## Stopping the local environment
+1. `ctrl + C` will stop the build and server processes from running.
+
 ## Making changes
 Nunjucks (.njk) files in the `/src` directory comprise the site. Each .njk file is compiled to HTML by 11ty. To edit site content or markup, run the dev environment locally (`npm start`) and make changes to the .njk files.
 
