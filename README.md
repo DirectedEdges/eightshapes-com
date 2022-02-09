@@ -1,5 +1,8 @@
 # EightShapes.com
 
+## Prerequisites
+1. Install NPM before attempting to run the dev environment locally. Go to https://nodejs.org/en/ and install the "LTS" version using the instructions there.
+
 ## Running locally
 
 Running the dev environment locally requires Node 8.11.0 or higher and npm 6.3.0 or higher
