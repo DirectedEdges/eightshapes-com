@@ -108,6 +108,7 @@ p {
   background: #ffffff;
   border-radius: 8px;
   color: #e85200;
+  display: inline-block;
   font-size: 28.8px;
   font-weight: 300;
   padding: 8px 24px;
@@ -148,7 +149,7 @@ p {
 }
 @media screen and (min-width: 767px) {
   .footer-cta {
-    padding: 80px 60px;
+    padding: 60px;
   }
   .footer-cta p {
     font-size: 22.6px;

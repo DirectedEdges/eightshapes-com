@@ -227,6 +227,7 @@ p {
   background: $esds-color-background-light-primary;
   border-radius: 8px;
   color: $esds-color-brand;
+  display: inline-block;
   font-size: $body-lead;
   font-weight: $esds-font-weight-regular;
   padding: 8px 24px;
@@ -271,7 +272,7 @@ p {
   }
 
   @media screen and (min-width: $tablet-width) {
-    padding: 80px 60px;
+    padding: 60px;
 
     p {
       font-size: $body-large;
