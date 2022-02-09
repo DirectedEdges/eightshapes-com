@@ -482,9 +482,27 @@ li {
   img {
     display: block;
     margin: 0;
+    margin-left: auto;
   }
 
-  @media screen and (min-width: $tablet-width) {
+  .bio-header-inner {
+    min-height: 300px;
+    position: relative;
+  }
+
+  .bio-header-text {
+    position: relative;
+    z-index: 10;
+  }
+
+  @media screen and (min-width: 620px) {
+    // This is a custom breakpoint that works for the names: Nathan Curtis, James Melzer, and Dan Brown
+    img {
+      bottom: 0;
+      position: absolute;
+      right: 0;
+    }
+
     .bio-header-inner {
       align-items: center;
       display: flex;

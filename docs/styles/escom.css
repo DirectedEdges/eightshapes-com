@@ -336,8 +336,22 @@ li {
 .bio-header img {
   display: block;
   margin: 0;
+  margin-left: auto;
 }
-@media screen and (min-width: 768px) {
+.bio-header .bio-header-inner {
+  min-height: 300px;
+  position: relative;
+}
+.bio-header .bio-header-text {
+  position: relative;
+  z-index: 10;
+}
+@media screen and (min-width: 620px) {
+  .bio-header img {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+  }
   .bio-header .bio-header-inner {
     align-items: center;
     display: flex;
