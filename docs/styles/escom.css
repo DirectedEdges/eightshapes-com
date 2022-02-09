@@ -356,6 +356,9 @@ p {
   z-index: 10;
 }
 @media screen and (min-width: 620px) {
+  .bio-header {
+    padding-top: 0;
+  }
   .bio-header img {
     bottom: 0;
     position: absolute;

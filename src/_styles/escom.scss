@@ -504,6 +504,7 @@ p {
   }
 
   @media screen and (min-width: 620px) {
+    padding-top: 0;
     // This is a custom breakpoint that works for the names: Nathan Curtis, James Melzer, and Dan Brown
     img {
       bottom: 0;
