@@ -26,3 +26,5 @@ _site
 # MacOS folder attributes
 *.DS_Store
 
+docs/styles/escom.css.map
+
