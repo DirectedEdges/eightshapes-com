@@ -471,6 +471,11 @@ p {
   list-style: none;
   margin: 0 0 8px;
 }
+@media screen and (min-width: 1023px) {
+  .unstyled li {
+    font-size: 22.6px;
+  }
+}
 
 @media screen and (min-width: 767px) {
   .bio-section-row {
