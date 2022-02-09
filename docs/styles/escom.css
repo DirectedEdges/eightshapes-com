@@ -187,7 +187,7 @@ p {
   width: 100%;
 }
 @media screen and (min-width: 767px) {
-  .footer .footer-inner {
+  .footer .footer-flex-wrap {
     display: flex;
     justify-content: space-between;
   }

@@ -316,7 +316,7 @@ p {
   }
 
   @media screen and (min-width: $tablet-width) {
-    .footer-inner {
+    .footer-flex-wrap {
       display: flex;
       justify-content: space-between;
     }
