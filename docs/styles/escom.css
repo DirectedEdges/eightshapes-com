@@ -27,6 +27,9 @@ a {
   color: #005663;
   text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
 
 h1,
 h2,
@@ -112,6 +115,9 @@ p {
   font-size: 28.8px;
   font-weight: 300;
   padding: 8px 24px;
+}
+.button:hover {
+  text-decoration: none;
 }
 
 .header {
@@ -304,6 +310,9 @@ p {
   display: block;
   margin: 0 0 48px;
 }
+.bio-thumbnail:hover {
+  text-decoration: none;
+}
 .bio-thumbnail img {
   max-width: 200px;
 }
@@ -428,6 +437,9 @@ p {
   color: #0d0d0d;
   display: block;
   margin: 0 0 16px;
+}
+.media-thumbnail:hover {
+  text-decoration: none;
 }
 .media-thumbnail img {
   border-radius: 9.25px;

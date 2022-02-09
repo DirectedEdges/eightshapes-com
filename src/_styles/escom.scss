@@ -154,6 +154,10 @@ img {
 a {
   color: $esds-color-text-link-on-light;
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 h1,
@@ -231,6 +235,10 @@ p {
   font-size: $body-lead;
   font-weight: $esds-font-weight-regular;
   padding: 8px 24px;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 // Header
@@ -442,6 +450,10 @@ p {
   display: block;
   margin: 0 0 48px;
 
+  &:hover {
+    text-decoration: none;
+  }
+
   img {
     max-width: 200px;
   }
@@ -586,6 +598,10 @@ p {
   color: $esds-color-text-primary-on-light;
   display: block;
   margin: 0 0 16px;
+
+  &:hover {
+    text-decoration: none;
+  }
 
   img {
     border-radius: 9.25px;
