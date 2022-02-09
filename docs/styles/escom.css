@@ -382,6 +382,12 @@ p {
   }
 }
 
+@media screen and (min-width: 1023px) {
+  .bio-anchor-nav {
+    display: none;
+  }
+}
+
 .row {
   padding: 32px;
 }

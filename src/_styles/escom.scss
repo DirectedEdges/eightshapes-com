@@ -533,6 +533,13 @@ p {
   }
 }
 
+// Anchor nav
+.bio-anchor-nav {
+  @media screen and (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 // Row
 .row {
   padding: 32px;
