@@ -123,8 +123,8 @@ $esds-breakpoints-width-1200: 1200px;
 
 $content-max-width: 770px;
 
-$tablet-width: 768px;
-$desktop-width: 1400px;
+$tablet-width: 767px;
+$desktop-width: 1399px;
 
 html {
   box-sizing: border-box;
@@ -217,6 +217,10 @@ li {
   @media screen and (min-width: $desktop-width) {
     font-size: $body-large;
   }
+}
+
+p {
+  margin: 0 0 16px;
 }
 
 .button {
@@ -379,6 +383,10 @@ li {
 // Page Content
 .page-content {
   padding: 48px 32px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 48px;
+  }
 }
 
 .page-content-inner {
@@ -520,6 +528,10 @@ li {
 // Row
 .row {
   padding: 32px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 48px;
+  }
 }
 
 .row-inner {

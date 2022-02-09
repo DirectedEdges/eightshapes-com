@@ -42,12 +42,12 @@ h2 {
 h2:first-child {
   margin-top: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   h2 {
     font-size: 32px;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1399px) {
   h2 {
     font-size: 45px;
   }
@@ -57,12 +57,12 @@ h3 {
   font-size: 24px;
   margin: 0 0 16px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   h3 {
     font-size: 24px;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1399px) {
   h3 {
     font-size: 32px;
   }
@@ -72,12 +72,12 @@ h4 {
   font-size: 19.2px;
   margin: 0 0 8px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   h4 {
     font-size: 19.2px;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1399px) {
   h4 {
     font-size: 24px;
   }
@@ -87,17 +87,21 @@ p,
 li {
   font-size: 19.2px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   p,
 li {
     font-size: 22.6px;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1399px) {
   p,
 li {
     font-size: 22.6px;
   }
+}
+
+p {
+  margin: 0 0 16px;
 }
 
 .button {
@@ -142,7 +146,7 @@ li {
   max-width: 770px;
   width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .footer-cta {
     padding: 80px 60px;
   }
@@ -150,7 +154,7 @@ li {
     font-size: 22.6px;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1399px) {
   .footer-cta {
     padding: 120px 48px;
   }
@@ -181,7 +185,7 @@ li {
   max-width: 770px;
   width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .footer .footer-inner {
     display: flex;
     justify-content: space-between;
@@ -190,7 +194,7 @@ li {
     text-align: right;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1399px) {
   .footer {
     padding: 120px 48px;
   }
@@ -216,7 +220,7 @@ li {
   font-size: 16px;
   margin: 0 0 16px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .page-header h1 {
     font-size: 45px;
   }
@@ -224,7 +228,7 @@ li {
     font-size: 22.6px;
   }
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1399px) {
   .page-header h1 {
     font-size: 64px;
   }
@@ -241,6 +245,11 @@ li {
 
 .page-content {
   padding: 48px 32px;
+}
+@media screen and (min-width: 767px) {
+  .page-content {
+    padding: 48px;
+  }
 }
 
 .page-content-inner {
@@ -262,7 +271,7 @@ li {
   list-style: none;
   margin-bottom: 16px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .client-list {
     -moz-column-count: 3;
          column-count: 3;
@@ -279,7 +288,7 @@ li {
 .client-list-intro {
   font-size: 19.2px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .client-list-intro {
     font-size: 22.6px;
   }
@@ -306,13 +315,13 @@ li {
 .bio-thumbnail .metadata {
   color: #6b6b6b;
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1399px) {
   .bio-thumbnail img {
     max-width: 300px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .bio-thumbnails {
     display: flex;
     justify-content: space-between;
@@ -367,6 +376,11 @@ li {
 .row {
   padding: 32px;
 }
+@media screen and (min-width: 767px) {
+  .row {
+    padding: 48px;
+  }
+}
 
 .row-inner {
   margin: 0 auto;
@@ -413,7 +427,7 @@ li {
   margin: 0 0 16px;
   width: 100%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .dot-divider {
     margin: 16px 0 32px;
   }
@@ -444,7 +458,7 @@ li {
   margin: 0 0 8px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .bio-section-row {
     display: flex;
   }
