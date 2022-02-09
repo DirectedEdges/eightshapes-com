@@ -228,16 +228,43 @@ p {
 }
 
 .button {
-  background: $esds-color-background-light-primary;
+  background: transparent;
+  border: solid 1px $esds-color-white;
   border-radius: 8px;
-  color: $esds-color-brand;
+  color: $esds-color-white;
   display: inline-block;
   font-size: $body-lead;
   font-weight: $esds-font-weight-regular;
   padding: 8px 24px;
+  position: relative;
 
   &:hover {
+    background: $esds-color-white;
+    color: $esds-color-brand;
+    opacity: 0.8;
     text-decoration: none;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  &:focus {
+    background: $esds-color-white;
+    color: $esds-color-brand;
+    opacity: 1;
+    outline: none;
+
+    &::after {
+      border: dashed 1px $esds-color-white;
+      border-radius: 10px;
+      bottom: -3px;
+      content: "";
+      left: -3px;
+      position: absolute;
+      right: -3px;
+      top: -3px;
+    }
   }
 }
 

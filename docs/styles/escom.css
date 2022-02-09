@@ -108,16 +108,40 @@ p {
 }
 
 .button {
-  background: #ffffff;
+  background: transparent;
+  border: solid 1px #ffffff;
   border-radius: 8px;
-  color: #e85200;
+  color: #ffffff;
   display: inline-block;
   font-size: 28.8px;
   font-weight: 300;
   padding: 8px 24px;
+  position: relative;
 }
 .button:hover {
+  background: #ffffff;
+  color: #e85200;
+  opacity: 0.8;
   text-decoration: none;
+}
+.button:active {
+  opacity: 1;
+}
+.button:focus {
+  background: #ffffff;
+  color: #e85200;
+  opacity: 1;
+  outline: none;
+}
+.button:focus::after {
+  border: dashed 1px #ffffff;
+  border-radius: 10px;
+  bottom: -3px;
+  content: "";
+  left: -3px;
+  position: absolute;
+  right: -3px;
+  top: -3px;
 }
 
 .header {
