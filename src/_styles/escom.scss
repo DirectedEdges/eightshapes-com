@@ -124,7 +124,7 @@ $esds-breakpoints-width-1200: 1200px;
 $content-max-width: 770px;
 
 $tablet-width: 767px;
-$desktop-width: 1399px;
+$desktop-width: 1023px;
 
 html {
   box-sizing: border-box;
@@ -211,7 +211,7 @@ li {
   font-size: $body-medium;
 
   @media screen and (min-width: $tablet-width) {
-    font-size: $body-large;
+    font-size: $body-medium;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -418,6 +418,12 @@ p {
     }
 
     li {
+      font-size: $body-medium;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    li {
       font-size: $body-large;
     }
   }
@@ -546,6 +552,15 @@ p {
 
   a {
     color: $esds-color-text-link-on-dark;
+  }
+}
+
+.row.feature {
+  // Bumps the <p> size of the row up to body-large at tablet width instead of desktop width
+  @media screen and (min-width: $tablet-width) {
+    p {
+      font-size: $body-large;
+    }
   }
 }
 

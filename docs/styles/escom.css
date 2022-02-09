@@ -47,7 +47,7 @@ h2:first-child {
     font-size: 32px;
   }
 }
-@media screen and (min-width: 1399px) {
+@media screen and (min-width: 1023px) {
   h2 {
     font-size: 45px;
   }
@@ -62,7 +62,7 @@ h3 {
     font-size: 24px;
   }
 }
-@media screen and (min-width: 1399px) {
+@media screen and (min-width: 1023px) {
   h3 {
     font-size: 32px;
   }
@@ -77,7 +77,7 @@ h4 {
     font-size: 19.2px;
   }
 }
-@media screen and (min-width: 1399px) {
+@media screen and (min-width: 1023px) {
   h4 {
     font-size: 24px;
   }
@@ -90,10 +90,10 @@ li {
 @media screen and (min-width: 767px) {
   p,
 li {
-    font-size: 22.6px;
+    font-size: 19.2px;
   }
 }
-@media screen and (min-width: 1399px) {
+@media screen and (min-width: 1023px) {
   p,
 li {
     font-size: 22.6px;
@@ -154,7 +154,7 @@ p {
     font-size: 22.6px;
   }
 }
-@media screen and (min-width: 1399px) {
+@media screen and (min-width: 1023px) {
   .footer-cta {
     padding: 120px 48px;
   }
@@ -194,7 +194,7 @@ p {
     text-align: right;
   }
 }
-@media screen and (min-width: 1399px) {
+@media screen and (min-width: 1023px) {
   .footer {
     padding: 120px 48px;
   }
@@ -228,7 +228,7 @@ p {
     font-size: 22.6px;
   }
 }
-@media screen and (min-width: 1399px) {
+@media screen and (min-width: 1023px) {
   .page-header h1 {
     font-size: 64px;
   }
@@ -281,6 +281,11 @@ p {
          column-count: 4;
   }
   .client-list li {
+    font-size: 19.2px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .client-list li {
     font-size: 22.6px;
   }
 }
@@ -315,7 +320,7 @@ p {
 .bio-thumbnail .metadata {
   color: #6b6b6b;
 }
-@media screen and (min-width: 1399px) {
+@media screen and (min-width: 1023px) {
   .bio-thumbnail img {
     max-width: 300px;
   }
@@ -396,6 +401,12 @@ p {
 }
 .row.reverse a {
   color: #43aab5;
+}
+
+@media screen and (min-width: 767px) {
+  .row.feature p {
+    font-size: 22.6px;
+  }
 }
 
 .row.secondary {
