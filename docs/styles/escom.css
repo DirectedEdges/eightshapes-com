@@ -234,6 +234,9 @@ p {
   }
 }
 
+.footer-logo {
+  margin-bottom: 16px;
+}
 .footer-logo svg {
   fill: #ffffff;
   height: 30px;

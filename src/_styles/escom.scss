@@ -371,9 +371,12 @@ p {
   }
 }
 
-.footer-logo svg {
-  fill: $esds-color-text-primary-on-dark;
-  height: 30px;
+.footer-logo {
+  margin-bottom: 16px;
+  svg {
+    fill: $esds-color-text-primary-on-dark;
+    height: 30px;
+  }
 }
 
 // Page Header
