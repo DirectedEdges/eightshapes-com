@@ -78,40 +78,6 @@ $esds-font-weight-semi-bold: 600;
 $esds-border-radius-control: 4px;
 $esds-border-radius-default: 8px;
 
-$esds-space-16-x: 256px;
-$esds-space-8-x: 128px;
-$esds-space-4-x: 64px;
-$esds-space-3-x: 48px;
-$esds-space-2-x: 32px;
-$esds-space-1-and-half-x: 24px;
-$esds-space-1-x: 16px;
-$esds-space-three-quarter-x: 12px;
-$esds-space-half-x: 8px;
-$esds-space-quarter-x: 4px;
-$esds-space-eighth-x: 2px;
-$esds-space-inset-8-x: 128px;
-$esds-space-inset-4-x: 64px;
-$esds-space-inset-2-x: 32px;
-$esds-space-inset-1-and-half-x: 24px;
-$esds-space-inset-1-x: 16px;
-$esds-space-inset-half-x: 8px;
-$esds-space-inset-quarter-x: 4px;
-$esds-space-inset-eighth-x: 2px;
-$esds-space-inset-squish-4-x: 32px 64px;
-$esds-space-inset-squish-2-x: 16px 32px;
-$esds-space-inset-squish-1-and-half-x: 12px 24px;
-$esds-space-inset-squish-1-x: 8px 12px;
-$esds-space-inset-squish-half-x: 6px 8px;
-$esds-space-inset-squish-quarter-x: 2px 4px;
-$esds-space-stack-4-x: 0 0 64px;
-$esds-space-stack-3-x: 0 0 48px;
-$esds-space-stack-2-x: 0 0 32px;
-$esds-space-stack-1-and-half-x: 0 0 24px;
-$esds-space-stack-1-x: 0 0 16px;
-$esds-space-stack-three-quarter-x: 0 0 12px;
-$esds-space-stack-half-x: 0 0 8px;
-$esds-space-stack-quarter-x: 0 0 4px;
-$esds-space-stack-eighth-x: 0 0 2px;
 $esds-size-icon-s: 16px;
 $esds-size-icon-m: 20px;
 $esds-size-icon-l: 24px;
@@ -126,8 +92,8 @@ $content-max-width: 770px;
 $tablet-width: 767px;
 $desktop-width: 1023px;
 
-$row-side-margin-mobile: 32px;
-$row-side-margin-tablet: 48px;
+$space-inset-row-mobile: 32px;
+$space-inset-row-tablet: 48px;
 
 html {
   box-sizing: border-box;
@@ -289,7 +255,7 @@ p {
 .footer-cta {
   background: $esds-color-brand;
   color: $esds-color-text-primary-on-dark;
-  padding: 48px $row-side-margin-mobile;
+  padding: $space-inset-row-mobile;
   width: 100vw;
 
   h2 {
@@ -310,7 +276,7 @@ p {
   }
 
   @media screen and (min-width: $tablet-width) {
-    padding: 60px $row-side-margin-tablet;
+    padding: $space-inset-row-tablet;
 
     p {
       font-size: $body-large;
@@ -318,7 +284,7 @@ p {
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding: 120px $row-side-margin-tablet;
+    padding: $space-inset-row-tablet;
 
     h2 {
       font-size: $heading-level-2;
@@ -334,12 +300,12 @@ p {
 .footer {
   background: $esds-color-background-dark-primary;
   color: $esds-color-text-primary-on-dark;
-  padding: 80px $row-side-margin-mobile;
+  padding: $space-inset-row-mobile;
   width: 100vw;
 
   p {
     font-size: $body-medium;
-    margin: 0 0 $esds-space-stack-1-x;
+    margin: 0 0 16px;
   }
 
   a {
@@ -354,7 +320,7 @@ p {
   }
 
   @media screen and (min-width: $tablet-width) {
-    padding: 80px $row-side-margin-tablet;
+    padding: $space-inset-row-tablet;
 
     .footer-flex-wrap {
       display: flex;
@@ -365,14 +331,11 @@ p {
       text-align: right;
     }
   }
-
-  @media screen and (min-width: $desktop-width) {
-    padding: 120px $row-side-margin-tablet;
-  }
 }
 
 .footer-logo {
   margin-bottom: 16px;
+
   svg {
     fill: $esds-color-text-primary-on-dark;
     height: 30px;
@@ -384,7 +347,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   color: $esds-color-text-primary-on-dark;
-  padding: 64px $row-side-margin-mobile;
+  padding: 64px $space-inset-row-mobile;
   width: 100vw;
 
   h1 {
@@ -398,7 +361,7 @@ p {
   }
 
   @media screen and (min-width: $tablet-width) {
-    padding: 64px $row-side-margin-tablet;
+    padding: 64px $space-inset-row-tablet;
 
     h1 {
       font-size: $heading-level-2;
@@ -428,10 +391,10 @@ p {
 
 // Page Content
 .page-content {
-  padding: 48px $row-side-margin-mobile;
+  padding: $space-inset-row-mobile;
 
   @media screen and (min-width: $tablet-width) {
-    padding: 48px $row-side-margin-tablet;
+    padding: $space-inset-row-tablet;
   }
 }
 
@@ -528,7 +491,7 @@ p {
 
 // Bio Header
 .bio-header {
-  padding: 28px $row-side-margin-mobile 0;
+  padding: 28px $space-inset-row-mobile 0;
 
   h1 {
     margin: 0;
@@ -583,8 +546,8 @@ p {
   }
 
   @media screen and (min-width: $tablet-width) {
-    padding-left: $row-side-margin-tablet;
-    padding-right: $row-side-margin-tablet;
+    padding-left: $space-inset-row-tablet;
+    padding-right: $space-inset-row-tablet;
   }
 }
 
@@ -599,10 +562,10 @@ p {
 
 // Row
 .row {
-  padding: 32px;
+  padding: $space-inset-row-mobile;
 
   @media screen and (min-width: $tablet-width) {
-    padding: 48px;
+    padding: $space-inset-row-tablet;
   }
 }
 

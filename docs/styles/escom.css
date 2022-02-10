@@ -160,7 +160,7 @@ p {
 .footer-cta {
   background: #e85200;
   color: #ffffff;
-  padding: 48px 32px;
+  padding: 32px;
   width: 100vw;
 }
 .footer-cta h2 {
@@ -179,7 +179,7 @@ p {
 }
 @media screen and (min-width: 767px) {
   .footer-cta {
-    padding: 60px 48px;
+    padding: 48px;
   }
   .footer-cta p {
     font-size: 22.6px;
@@ -187,7 +187,7 @@ p {
 }
 @media screen and (min-width: 1023px) {
   .footer-cta {
-    padding: 120px 48px;
+    padding: 48px;
   }
   .footer-cta h2 {
     font-size: 45px;
@@ -200,12 +200,12 @@ p {
 .footer {
   background: #262626;
   color: #ffffff;
-  padding: 80px 32px;
+  padding: 32px;
   width: 100vw;
 }
 .footer p {
   font-size: 19.2px;
-  margin: 0 0 0 0 16px;
+  margin: 0 0 16px;
 }
 .footer a {
   color: #43aab5;
@@ -218,7 +218,7 @@ p {
 }
 @media screen and (min-width: 767px) {
   .footer {
-    padding: 80px 48px;
+    padding: 48px;
   }
   .footer .footer-flex-wrap {
     display: flex;
@@ -226,11 +226,6 @@ p {
   }
   .footer .footer-right {
     text-align: right;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .footer {
-    padding: 120px 48px;
   }
 }
 
@@ -284,11 +279,11 @@ p {
 }
 
 .page-content {
-  padding: 48px 32px;
+  padding: 32px;
 }
 @media screen and (min-width: 767px) {
   .page-content {
-    padding: 48px 48px;
+    padding: 48px;
   }
 }
 
