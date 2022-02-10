@@ -126,6 +126,9 @@ $content-max-width: 770px;
 $tablet-width: 767px;
 $desktop-width: 1023px;
 
+$row-side-margin-mobile: 32px;
+$row-side-margin-tablet: 48px;
+
 html {
   box-sizing: border-box;
   font-family: $esds-font-family-sans-serif;
@@ -286,7 +289,7 @@ p {
 .footer-cta {
   background: $esds-color-brand;
   color: $esds-color-text-primary-on-dark;
-  padding: 48px 32px;
+  padding: 48px $row-side-margin-mobile;
   width: 100vw;
 
   h2 {
@@ -307,7 +310,7 @@ p {
   }
 
   @media screen and (min-width: $tablet-width) {
-    padding: 60px;
+    padding: 60px $row-side-margin-tablet;
 
     p {
       font-size: $body-large;
@@ -315,7 +318,7 @@ p {
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding: 120px 48px;
+    padding: 120px $row-side-margin-tablet;
 
     h2 {
       font-size: $heading-level-2;
@@ -331,7 +334,7 @@ p {
 .footer {
   background: $esds-color-background-dark-primary;
   color: $esds-color-text-primary-on-dark;
-  padding: 80px 48px;
+  padding: 80px $row-side-margin-mobile;
   width: 100vw;
 
   p {
@@ -351,6 +354,8 @@ p {
   }
 
   @media screen and (min-width: $tablet-width) {
+    padding: 80px $row-side-margin-tablet;
+
     .footer-flex-wrap {
       display: flex;
       justify-content: space-between;
@@ -362,7 +367,7 @@ p {
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding: 120px 48px;
+    padding: 120px $row-side-margin-tablet;
   }
 }
 
@@ -376,7 +381,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   color: $esds-color-text-primary-on-dark;
-  padding: 64px 32px;
+  padding: 64px $row-side-margin-mobile;
   width: 100vw;
 
   h1 {
@@ -390,6 +395,8 @@ p {
   }
 
   @media screen and (min-width: $tablet-width) {
+    padding: 64px $row-side-margin-tablet;
+
     h1 {
       font-size: $heading-level-2;
     }
@@ -418,10 +425,10 @@ p {
 
 // Page Content
 .page-content {
-  padding: 48px 32px;
+  padding: 48px $row-side-margin-mobile;
 
   @media screen and (min-width: $tablet-width) {
-    padding: 48px;
+    padding: 48px $row-side-margin-tablet;
   }
 }
 
@@ -518,7 +525,7 @@ p {
 
 // Bio Header
 .bio-header {
-  padding: 28px 32px 0;
+  padding: 28px $row-side-margin-mobile 0;
 
   h1 {
     margin: 0;
@@ -550,8 +557,9 @@ p {
   }
 
   @media screen and (min-width: 620px) {
-    padding-top: 0;
     // This is a custom breakpoint that works for the names: Nathan Curtis, James Melzer, and Dan Brown
+    padding-top: 0;
+
     img {
       bottom: 0;
       position: absolute;
@@ -569,6 +577,11 @@ p {
     h2 {
       max-width: none;
     }
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    padding-left: $row-side-margin-tablet;
+    padding-right: $row-side-margin-tablet;
   }
 }
 
