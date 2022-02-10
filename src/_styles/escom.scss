@@ -574,6 +574,8 @@ p {
 
 // Anchor nav
 .bio-anchor-nav {
+  margin-top: 16px;
+
   @media screen and (min-width: $desktop-width) {
     display: none;
   }
@@ -603,6 +605,10 @@ p {
 }
 
 .row.feature {
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+
   // Bumps the <p> size of the row up to body-large at tablet width instead of desktop width
   @media screen and (min-width: $tablet-width) {
     p {

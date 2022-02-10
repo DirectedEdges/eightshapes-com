@@ -415,6 +415,9 @@ p {
   }
 }
 
+.bio-anchor-nav {
+  margin-top: 16px;
+}
 @media screen and (min-width: 1023px) {
   .bio-anchor-nav {
     display: none;
@@ -443,6 +446,9 @@ p {
   color: #43aab5;
 }
 
+.row.feature p:last-of-type {
+  margin-bottom: 0;
+}
 @media screen and (min-width: 767px) {
   .row.feature p {
     font-size: 22.6px;
