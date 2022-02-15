@@ -313,22 +313,90 @@ p {
     font-size: $body-medium;
   }
 
+  h5 {
+    color: $esds-color-text-secondary-on-dark;
+    font-size: $eyebrow-medium;
+    font-weight: $esds-font-weight-semi-bold;
+    letter-spacing: 0.2em;
+    margin: 0 0 16px;
+    text-transform: uppercase;
+  }
+
   .footer-inner {
     margin: 0 auto;
     max-width: $content-max-width;
     width: 100%;
   }
 
+  .footer-flex-wrap > * {
+    margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .footer-social-section {
+    margin: 0 0 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   @media screen and (min-width: $tablet-width) {
     padding: $space-inset-row-tablet;
 
-    .footer-flex-wrap {
+    .footer-logo {
+      margin-bottom: 32px;
+    }
+
+    .footer-tool-links {
+      align-items: stretch;
       display: flex;
       justify-content: space-between;
     }
 
-    .footer-right {
-      text-align: right;
+    .tool-link {
+      width: 49%;
+    }
+
+    .footer-flex-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-address,
+    .footer-social {
+      flex: 0 0 49%;
+      margin-bottom: 0;
+    }
+
+    .footer-tools {
+      flex: 0 0 100%;
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    .footer-flex-wrap > * {
+      flex: 1 1 28%;
+      justify-content: space-between;
+    }
+
+    .footer-tools {
+      flex: 1 1 40%;
+      order: 3;
+      width: auto;
+    }
+
+    .footer-tool-links {
+      display: block;
+    }
+
+    .tool-link {
+      width: 100%;
     }
   }
 }
@@ -339,6 +407,41 @@ p {
   svg {
     fill: $esds-color-text-primary-on-dark;
     height: 30px;
+  }
+}
+
+// Tool links {
+.tool-link {
+  background: $esds-color-background-dark-secondary;
+  border-radius: 8px;
+  display: block;
+  margin: 0 0 16px;
+  max-width: 420px;
+  padding: 16px;
+  text-decoration: none;
+  transition: background 0.3s;
+
+  &:hover {
+    background: $esds-color-brand;
+    text-decoration: none;
+
+    p {
+      color: $esds-color-text-primary-on-dark;
+    }
+  }
+
+  h3 {
+    color: $esds-color-text-primary-on-dark;
+    font-size: $body-medium;
+    font-weight: $esds-font-weight-regular;
+    margin: 0 0 2px;
+  }
+
+  p {
+    color: $esds-color-text-secondary-on-dark;
+    font-size: $body-small;
+    margin: 0;
+    transition: color 0.3s;
   }
 }
 
@@ -414,11 +517,11 @@ p {
   padding: 0;
 
   li {
+    display: inline-block;
     font-size: $body-medium;
     list-style: none;
     margin-bottom: 16px;
     position: relative;
-    display: inline-block;
     width: 100%;
   }
 

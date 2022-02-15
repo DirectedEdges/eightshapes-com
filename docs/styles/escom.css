@@ -211,21 +211,76 @@ p {
   color: #43aab5;
   font-size: 19.2px;
 }
+.footer h5 {
+  color: #8c8c8c;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  margin: 0 0 16px;
+  text-transform: uppercase;
+}
 .footer .footer-inner {
   margin: 0 auto;
   max-width: 770px;
   width: 100%;
 }
+.footer .footer-flex-wrap > * {
+  margin-bottom: 32px;
+}
+.footer .footer-flex-wrap > *:last-child {
+  margin-bottom: 0;
+}
+.footer .footer-social-section {
+  margin: 0 0 16px;
+}
+.footer .footer-social-section:last-child {
+  margin-bottom: 0;
+}
 @media screen and (min-width: 767px) {
   .footer {
     padding: 48px;
   }
-  .footer .footer-flex-wrap {
+  .footer .footer-logo {
+    margin-bottom: 32px;
+  }
+  .footer .footer-tool-links {
+    align-items: stretch;
     display: flex;
     justify-content: space-between;
   }
-  .footer .footer-right {
-    text-align: right;
+  .footer .tool-link {
+    width: 49%;
+  }
+  .footer .footer-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer .footer-address,
+.footer .footer-social {
+    flex: 0 0 49%;
+    margin-bottom: 0;
+  }
+  .footer .footer-tools {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .footer .footer-flex-wrap > * {
+    flex: 1 1 28%;
+    justify-content: space-between;
+  }
+  .footer .footer-tools {
+    flex: 1 1 40%;
+    order: 3;
+    width: auto;
+  }
+  .footer .footer-tool-links {
+    display: block;
+  }
+  .footer .tool-link {
+    width: 100%;
   }
 }
 
@@ -235,6 +290,36 @@ p {
 .footer-logo svg {
   fill: #ffffff;
   height: 30px;
+}
+
+.tool-link {
+  background: #0d0d0d;
+  border-radius: 8px;
+  display: block;
+  margin: 0 0 16px;
+  max-width: 420px;
+  padding: 16px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.tool-link:hover {
+  background: #e85200;
+  text-decoration: none;
+}
+.tool-link:hover p {
+  color: #ffffff;
+}
+.tool-link h3 {
+  color: #ffffff;
+  font-size: 19.2px;
+  font-weight: 300;
+  margin: 0 0 2px;
+}
+.tool-link p {
+  color: #8c8c8c;
+  font-size: 16px;
+  margin: 0;
+  transition: color 0.3s;
 }
 
 .page-header {
@@ -302,11 +387,11 @@ p {
   padding: 0;
 }
 .client-list li {
+  display: inline-block;
   font-size: 19.2px;
   list-style: none;
   margin-bottom: 16px;
   position: relative;
-  display: inline-block;
   width: 100%;
 }
 @media screen and (min-width: 767px) {
