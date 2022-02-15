@@ -305,6 +305,9 @@ p {
   font-size: 19.2px;
   list-style: none;
   margin-bottom: 16px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
 }
 @media screen and (min-width: 767px) {
   .client-list {
