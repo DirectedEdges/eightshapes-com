@@ -95,6 +95,8 @@ $desktop-width: 1023px;
 $space-inset-row-mobile: 32px;
 $space-inset-row-tablet: 48px;
 
+$hover-transition-timing: 0.3s;
+
 html {
   box-sizing: border-box;
   font-family: $esds-font-family-sans-serif;
@@ -206,6 +208,8 @@ p {
   font-weight: $esds-font-weight-regular;
   padding: 8px 24px;
   position: relative;
+  transition: background $hover-transition-timing,
+    color $hover-transition-timing, border-color $hover-transition-timing;
 
   &:hover {
     background: $esds-color-white;
@@ -419,7 +423,7 @@ p {
   max-width: 420px;
   padding: 16px;
   text-decoration: none;
-  transition: background 0.3s;
+  transition: background $hover-transition-timing;
 
   &:hover {
     background: $esds-color-brand;
@@ -441,7 +445,7 @@ p {
     color: $esds-color-text-secondary-on-dark;
     font-size: $body-small;
     margin: 0;
-    transition: color 0.3s;
+    transition: color $hover-transition-timing;
   }
 }
 
@@ -556,12 +560,29 @@ p {
   display: block;
   margin: 0 0 48px;
 
+  &:last-child {
+    margin-right: 0;
+  }
+
   &:hover {
     text-decoration: none;
   }
 
   img {
-    max-width: 200px;
+    display: block;
+    margin: 0;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .bio-thumbnail-image-wrap {
+    background: white;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    max-width: 375px;
+    overflow: hidden;
   }
 
   h3 {
@@ -581,14 +602,24 @@ p {
     color: $esds-color-text-secondary-on-light;
   }
 
-  @media screen and (min-width: $desktop-width) {
-    img {
-      max-width: 300px;
+  @media screen and (min-width: $tablet-width) {
+    flex: 1 1 30%;
+    margin: 0 36px 0 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .bio-thumbnail-image-wrap {
+      height: 190px;
+      max-width: none;
     }
   }
 }
 
 .bio-thumbnails {
+  margin-top: 32px;
+
   @media screen and (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;

@@ -117,6 +117,7 @@ p {
   font-weight: 300;
   padding: 8px 24px;
   position: relative;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
 }
 .button:hover {
   background: #ffffff;
@@ -426,11 +427,27 @@ p {
   display: block;
   margin: 0 0 48px;
 }
+.bio-thumbnail:last-child {
+  margin-right: 0;
+}
 .bio-thumbnail:hover {
   text-decoration: none;
 }
 .bio-thumbnail img {
-  max-width: 200px;
+  display: block;
+  margin: 0;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.bio-thumbnail .bio-thumbnail-image-wrap {
+  background: white;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  max-width: 375px;
+  overflow: hidden;
 }
 .bio-thumbnail h3 {
   color: #005663;
@@ -446,12 +463,23 @@ p {
 .bio-thumbnail .metadata {
   color: #6b6b6b;
 }
-@media screen and (min-width: 1023px) {
-  .bio-thumbnail img {
-    max-width: 300px;
+@media screen and (min-width: 767px) {
+  .bio-thumbnail {
+    flex: 1 1 30%;
+    margin: 0 36px 0 0;
+  }
+  .bio-thumbnail:last-child {
+    margin-right: 0;
+  }
+  .bio-thumbnail .bio-thumbnail-image-wrap {
+    height: 190px;
+    max-width: none;
   }
 }
 
+.bio-thumbnails {
+  margin-top: 32px;
+}
 @media screen and (min-width: 767px) {
   .bio-thumbnails {
     display: flex;
