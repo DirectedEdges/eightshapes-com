@@ -1,26 +1,118 @@
 ---
 layout : base.njk
+show_site_header: false
 ---
+<div class="site-header">
+  <div class="services-carousel">
+    <div class="services-carousel-controls">
+      <div class="services-carousel-logo">
+      {% include './_icons/eightshapes-logo.svg' %}
+      </div>
+      <p class="services-carousel-tagline">
+        We design digital products and systems that make for clear, usable, beautiful, and cohesive experiences.
+      </p>
+      <ul class="services-carousel-services-list">
+        <li>
+          <button class="selected" data-slide-id="information-architecture">
+            <span class="services-carousel-selected-icon">{% include './_icons/angle-right.svg' %}</span>
+            Information Architecture
+          </button>
+        </li>
+        <li>
+          <button data-slide-id="user-experience-design">
+            <span class="services-carousel-selected-icon">{% include './_icons/angle-right.svg' %}</span>
+            User Experience Design
+          </button>
+        </li>
+        <li>
+          <button data-slide-id="design-systems">
+            <span class="services-carousel-selected-icon">{% include './_icons/angle-right.svg' %}</span>
+            Design Systems
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="services-carousel-slides">
 
-<div class="page-content">
-  <div class="page-content-inner">
-    <ul>
-      <li><a href="/design-systems">Design Systems</a></li>
-      <li><a href="/information-architecture">Information Architecture</a></li>
-      <li><a href="/research-and-design">Research and Design</a></li>
-      <li><a href="/nathan-curtis">Nathan Curtis</a></li>
-      <li><a href="/components">@components</a></li>
-    </ul>
+      <div class="services-carousel-slide information-architecture active">
+        <div class="services-carousel-image-wrap">
+          <img src="/images/homepage/information_architecture.jpg" role="presentation" class="services-carousel-image"/>
+        </div>
+        <div class="services-carousel-card teal">
+          <div class="services-carousel-card-inner">
+            <h2>Information Architecture</h2>
+            <p>We’ve been organizing information for 25 years. We’ve categorized it all -- from storage devices to childrens books.</p>
+            <a href="/information-architecture">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="services-carousel-slide user-experience">
+        <div class="services-carousel-image-wrap">
+          <img src="/images/homepage/user_experience_design.jpg" role="presentation" class="services-carousel-image"/>
+        </div>
+        <div class="services-carousel-card secondary">
+          <div class="services-carousel-card-inner">
+            <h2>User Experience Design</h2>
+            <p>Discover user needs and design end-to-end journeys that enable users and businesses to succeed.</p>
+            <a href="/user-experience-design">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="services-carousel-slide design-systems">
+        <div class="services-carousel-image-wrap">
+          <img src="/images/homepage/design_systems.jpg" role="presentation" class="services-carousel-image"/>
+        </div>
+        <div class="services-carousel-card brand">
+          <div class="services-carousel-card-inner">
+            <h2>Design Systems</h2>
+            <p>Build a foundation of style and components to scale design and development across an enterprise.</p>
+            <a href="/design-systems">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
   </div>
 </div>
-<div class="row reverse">
+
+<div class="row reverse-secondary">
   <div class="row-inner">
     <h3>Our Experience</h3>
     <p>
-      Dan has lead design projects, consulted, and run workshops for:
+      EightShapes serves clients across many industries and domains:
     </p>
+    <ul class="client-list homepage">
+      <li>Alcatel-Lucent</li>
+      <li>AstraZeneca</li>
+      <li>American Chemical Society</li>
+      <li>Houghton Mifflin Harcourt</li>
+      <li>Travelers Insurance</li>
+      <li>PayPal</li>
+      <li>Sonatype</li>
+      <li>National Council of Architecture Review Boards</li>
+      <li>Cisco</li>
+      <li>Marriott</li>
+      <li>Ritz-Carlton</li>
+      <li>NetApp</li>
+      <li>Cvent</li>
+      <li>Rally Health</li>
+      <li>World Bank</li>
+      <li>Juvenile Diabetes Research Foundation</li>
+      <li>Morningstar</li>
+      <li>Verizon</li>
+      <li>Twitter</li>
+      <li>Capital One</li>
+      <li>Target</li>
+      <li>Salesforce</li>
+      <li>Atlassian</li>
+      <li>Google</li>
+    </ul>
   </div>
 </div>
+
 <div class="row secondary">
   <div class="row-inner">
     <h3>Who We Are</h3>

@@ -1,3 +1,5 @@
+{% set show_site_header = show_site_header | default(true) %}
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -19,12 +21,14 @@
     </head>
     <body class="{{ body_classes }}">
 
+        {% if show_site_header %}
         {# Site Header #}
         <a class="header" href="/">
             <div class="header-logo">
                 {% include '../_icons/eightshapes-logo.svg' %}
             </div>
         </a>
+        {% endif %}
 
         {# Page content is injected below #}
         {{ content | safe }}
@@ -78,7 +82,7 @@
                             <h5>Read</h5>
                             <a href="#">Discovery</a><br/>
                             <a href="#">Design</a><br/>
-                            <a href="#">Design Systems</a>
+                            <a href="/components">Design Systems</a>
                         </div>
                     </div>
                 </div>

@@ -87,7 +87,7 @@ $esds-breakpoints-width-768: 768px;
 $esds-breakpoints-width-1000: 1000px;
 $esds-breakpoints-width-1200: 1200px;
 
-$content-max-width: 770px;
+$content-max-width: 776px;
 
 $tablet-width: 767px;
 $desktop-width: 1023px;
@@ -241,6 +241,246 @@ p {
   }
 }
 
+// Homepage header
+.site-header {
+  background: $esds-color-background-dark-primary;
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    width: 100%;
+  }
+}
+
+// Services Carousel
+.services-carousel {
+  h2,
+  p {
+    color: $esds-color-text-primary-on-dark;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    margin: 0 auto;
+    width: $content-max-width;
+  }
+}
+
+.services-carousel-controls {
+  padding: 64px 32px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 96px 64px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    flex: 0 0 434px;
+    padding: 130px 84px;
+    padding-left: 0;
+  }
+
+  button {
+    background: none;
+    border: 0;
+    color: $esds-color-text-secondary-on-dark;
+    cursor: pointer;
+    font-family: $esds-font-family-sans-serif;
+    font-size: 33px;
+    font-weight: $esds-font-weight-regular;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: left;
+
+    &:hover {
+      color: $esds-color-text-primary-on-dark;
+    }
+
+    &.selected {
+      color: $esds-color-text-primary-on-dark;
+    }
+  }
+}
+
+.services-carousel-selected-icon {
+  left: -24px;
+  position: absolute;
+  top: 2px; // vertical alignment of icon and text;
+  visibility: hidden;
+
+  svg {
+    fill: $esds-color-text-primary-on-dark;
+  }
+
+  .selected & {
+    visibility: visible;
+  }
+}
+
+.services-carousel-logo {
+  margin: 0 0 32px;
+  text-align: center;
+
+  svg {
+    fill: $esds-color-text-primary-on-dark;
+    width: 246px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 48px;
+    text-align: left;
+  }
+}
+
+.services-carousel-services-list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+
+  li {
+    margin: 0 0 24px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.services-carousel-card {
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  background: $esds-color-background-light-primary;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  padding: 32px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+
+  h2,
+  a,
+  p {
+    color: $esds-color-text-primary-on-dark;
+  }
+
+  h2 {
+    font-size: $eyebrow-medium;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  p,
+  a {
+    font-size: $body-medium;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    h2 {
+      font-size: $eyebrow-large;
+    }
+
+    p {
+      font-size: $body-large;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 5vw;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 80px;
+    margin-right: auto;
+  }
+}
+
+.services-carousel-tagline {
+  font-size: $body-medium;
+
+  @media screen and (min-width: $tablet-width) {
+    font-size: $body-lead;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    font-size: $body-large;
+    margin-bottom: 48px;
+  }
+}
+
+.services-carousel-slides {
+  position: relative;
+
+  @media screen and (min-width: $desktop-width) {
+    flex: 0 0 50vw;
+    width: 50vw;
+  }
+}
+
+.services-carousel-slide {
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  padding: 48px;
+  position: relative;
+
+  @media screen and (min-width: $desktop-width) {
+    align-items: center;
+    aspect-ratio: initial;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+  }
+}
+
+.services-carousel-slide.active {
+  visibility: visible;
+}
+
+.services-carousel-image-wrap {
+  bottom: 0;
+  left: 0;
+  max-width: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.services-carousel-image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.services-carousel-card.teal {
+  background-color: rgba($esds-color-teal-28, 0.95);
+}
+
+.services-carousel-card.brand {
+  background-color: rgba($esds-color-brand, 0.95);
+}
+
+.services-carousel-card.secondary {
+  background-color: rgba($esds-color-background-light-secondary, 0.95);
+
+  h2,
+  p,
+  a {
+    color: $esds-color-text-primary-on-light;
+  }
+}
+
+.services-carousel-card.reverse {
+  background-color: $esds-color-background-dark-primary;
+}
+
 // Header
 .header {
   align-items: center;
@@ -289,10 +529,6 @@ p {
 
   @media screen and (min-width: $desktop-width) {
     padding: $space-inset-row-tablet;
-
-    h2 {
-      font-size: $heading-level-2;
-    }
 
     p {
       font-size: $slide-body-small;
@@ -548,6 +784,12 @@ p {
   }
 }
 
+.client-list.homepage li {
+  @media screen and (min-width: $desktop-width) {
+    font-size: $body-medium;
+  }
+}
+
 .client-list-intro {
   font-size: $body-medium;
   @media screen and (min-width: $tablet-width) {
@@ -713,6 +955,15 @@ p {
 
 .row.reverse {
   background: $esds-color-background-dark-primary;
+  color: $esds-color-text-primary-on-dark;
+
+  a {
+    color: $esds-color-text-link-on-dark;
+  }
+}
+
+.row.reverse-secondary {
+  background: $esds-color-background-dark-secondary;
   color: $esds-color-text-primary-on-dark;
 
   a {

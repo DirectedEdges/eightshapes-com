@@ -145,6 +145,243 @@ p {
   top: -3px;
 }
 
+.site-header {
+  background: #262626;
+}
+@media screen and (min-width: 1023px) {
+  .site-header {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.services-carousel h2,
+.services-carousel p {
+  color: #ffffff;
+}
+@media screen and (min-width: 1023px) {
+  .services-carousel {
+    display: flex;
+    margin: 0 auto;
+    width: 776px;
+  }
+}
+
+.services-carousel-controls {
+  padding: 64px 32px;
+}
+@media screen and (min-width: 767px) {
+  .services-carousel-controls {
+    padding: 96px 64px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .services-carousel-controls {
+    flex: 0 0 434px;
+    padding: 130px 84px;
+    padding-left: 0;
+  }
+}
+.services-carousel-controls button {
+  background: none;
+  border: 0;
+  color: #8c8c8c;
+  cursor: pointer;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 33px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: left;
+}
+.services-carousel-controls button:hover {
+  color: #ffffff;
+}
+.services-carousel-controls button.selected {
+  color: #ffffff;
+}
+
+.services-carousel-selected-icon {
+  left: -24px;
+  position: absolute;
+  top: 2px;
+  visibility: hidden;
+}
+.services-carousel-selected-icon svg {
+  fill: #ffffff;
+}
+.selected .services-carousel-selected-icon {
+  visibility: visible;
+}
+
+.services-carousel-logo {
+  margin: 0 0 32px;
+  text-align: center;
+}
+.services-carousel-logo svg {
+  fill: #ffffff;
+  width: 246px;
+}
+@media screen and (min-width: 1023px) {
+  .services-carousel-logo {
+    margin-bottom: 48px;
+    text-align: left;
+  }
+}
+
+.services-carousel-services-list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.services-carousel-services-list li {
+  margin: 0 0 24px;
+}
+@media screen and (min-width: 1023px) {
+  .services-carousel-services-list {
+    display: block;
+  }
+}
+
+.services-carousel-card {
+  align-items: center;
+  aspect-ratio: 1/1;
+  background: #ffffff;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  padding: 32px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+.services-carousel-card h2,
+.services-carousel-card a,
+.services-carousel-card p {
+  color: #ffffff;
+}
+.services-carousel-card h2 {
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.services-carousel-card p,
+.services-carousel-card a {
+  font-size: 19.2px;
+}
+@media screen and (min-width: 767px) {
+  .services-carousel-card h2 {
+    font-size: 20px;
+  }
+  .services-carousel-card p {
+    font-size: 22.6px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .services-carousel-card {
+    margin-left: 0;
+    margin-right: 5vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services-carousel-card {
+    margin-left: 80px;
+    margin-right: auto;
+  }
+}
+
+.services-carousel-tagline {
+  font-size: 19.2px;
+}
+@media screen and (min-width: 767px) {
+  .services-carousel-tagline {
+    font-size: 28.8px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .services-carousel-tagline {
+    font-size: 22.6px;
+    margin-bottom: 48px;
+  }
+}
+
+.services-carousel-slides {
+  position: relative;
+}
+@media screen and (min-width: 1023px) {
+  .services-carousel-slides {
+    flex: 0 0 50vw;
+    width: 50vw;
+  }
+}
+
+.services-carousel-slide {
+  align-items: center;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  padding: 48px;
+  position: relative;
+}
+@media screen and (min-width: 1023px) {
+  .services-carousel-slide {
+    align-items: center;
+    aspect-ratio: initial;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+  }
+}
+
+.services-carousel-slide.active {
+  visibility: visible;
+}
+
+.services-carousel-image-wrap {
+  bottom: 0;
+  left: 0;
+  max-width: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.services-carousel-image {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.services-carousel-card.teal {
+  background-color: rgba(0, 122, 141, 0.95);
+}
+
+.services-carousel-card.brand {
+  background-color: rgba(232, 82, 0, 0.95);
+}
+
+.services-carousel-card.secondary {
+  background-color: rgba(243, 241, 241, 0.95);
+}
+.services-carousel-card.secondary h2,
+.services-carousel-card.secondary p,
+.services-carousel-card.secondary a {
+  color: #0d0d0d;
+}
+
+.services-carousel-card.reverse {
+  background-color: #262626;
+}
+
 .header {
   align-items: center;
   background: #e85200;
@@ -175,7 +412,7 @@ p {
 }
 .footer-cta .footer-cta-inner {
   margin: 0 auto;
-  max-width: 770px;
+  max-width: 776px;
   width: 100%;
 }
 @media screen and (min-width: 767px) {
@@ -189,9 +426,6 @@ p {
 @media screen and (min-width: 1023px) {
   .footer-cta {
     padding: 48px;
-  }
-  .footer-cta h2 {
-    font-size: 45px;
   }
   .footer-cta p {
     font-size: 32px;
@@ -222,7 +456,7 @@ p {
 }
 .footer .footer-inner {
   margin: 0 auto;
-  max-width: 770px;
+  max-width: 776px;
   width: 100%;
 }
 .footer .footer-flex-wrap > * {
@@ -360,7 +594,7 @@ p {
 
 .page-header-inner {
   margin: 0 auto;
-  max-width: 770px;
+  max-width: 776px;
   width: 100%;
 }
 
@@ -375,7 +609,7 @@ p {
 
 .page-content-inner {
   margin: 0 auto;
-  max-width: 770px;
+  max-width: 776px;
 }
 
 .design-systems-page-header {
@@ -411,6 +645,12 @@ p {
 @media screen and (min-width: 1023px) {
   .client-list li {
     font-size: 22.6px;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .client-list.homepage li {
+    font-size: 19.2px;
   }
 }
 
@@ -528,7 +768,7 @@ p {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 770px;
+    max-width: 776px;
   }
   .bio-header h2 {
     max-width: none;
@@ -561,7 +801,7 @@ p {
 
 .row-inner {
   margin: 0 auto;
-  max-width: 770px;
+  max-width: 776px;
 }
 
 .row.reverse {
@@ -569,6 +809,14 @@ p {
   color: #ffffff;
 }
 .row.reverse a {
+  color: #43aab5;
+}
+
+.row.reverse-secondary {
+  background: #0d0d0d;
+  color: #ffffff;
+}
+.row.reverse-secondary a {
   color: #43aab5;
 }
 
