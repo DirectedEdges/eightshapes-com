@@ -194,9 +194,23 @@ p {
   padding: 0;
   position: relative;
   text-align: left;
+  transition: color 0.3s;
 }
 .services-carousel-controls button:hover {
   color: #ffffff;
+}
+.services-carousel-controls button:focus {
+  outline: none;
+}
+.services-carousel-controls button:focus::after {
+  border: dashed 1px #8c8c8c;
+  border-radius: 4px;
+  bottom: -3px;
+  content: "";
+  left: -3px;
+  position: absolute;
+  right: -3px;
+  top: -3px;
 }
 .services-carousel-controls button.selected {
   color: #ffffff;
@@ -333,15 +347,18 @@ p {
     aspect-ratio: initial;
     bottom: 0;
     left: 0;
+    opacity: 0;
     padding: 0;
     position: absolute;
     right: 0;
     top: 0;
+    transition: opacity 0.3s, visibility 0.3s 0s;
     visibility: hidden;
   }
 }
 
-.services-carousel-slide.active {
+.services-carousel-slide.selected {
+  opacity: 1;
   visibility: visible;
 }
 

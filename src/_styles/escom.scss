@@ -289,9 +289,25 @@ p {
     padding: 0;
     position: relative;
     text-align: left;
+    transition: color $hover-transition-timing;
 
     &:hover {
       color: $esds-color-text-primary-on-dark;
+    }
+
+    &:focus {
+      outline: none;
+
+      &::after {
+        border: dashed 1px $esds-color-text-secondary-on-dark;
+        border-radius: 4px;
+        bottom: -3px;
+        content: "";
+        left: -3px;
+        position: absolute;
+        right: -3px;
+        top: -3px;
+      }
     }
 
     &.selected {
@@ -432,15 +448,19 @@ p {
     aspect-ratio: initial;
     bottom: 0;
     left: 0;
+    opacity: 0;
     padding: 0;
     position: absolute;
     right: 0;
     top: 0;
+    transition: opacity $hover-transition-timing,
+      visibility $hover-transition-timing 0s;
     visibility: hidden;
   }
 }
 
-.services-carousel-slide.active {
+.services-carousel-slide.selected {
+  opacity: 1;
   visibility: visible;
 }
 
