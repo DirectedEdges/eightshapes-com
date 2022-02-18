@@ -415,7 +415,6 @@ p {
 .footer-cta {
   background: #e85200;
   color: #ffffff;
-  padding: 32px;
   width: 100vw;
 }
 .footer-cta h2 {
@@ -425,7 +424,7 @@ p {
 }
 .footer-cta p {
   font-size: 19.2px;
-  margin: 0 0 48px;
+  margin: 0 0 32px;
 }
 .footer-cta .footer-cta-inner {
   margin: 0 auto;
@@ -433,19 +432,8 @@ p {
   width: 100%;
 }
 @media screen and (min-width: 767px) {
-  .footer-cta {
-    padding: 48px;
-  }
   .footer-cta p {
     font-size: 22.6px;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .footer-cta {
-    padding: 48px;
-  }
-  .footer-cta p {
-    font-size: 32px;
   }
 }
 
@@ -454,6 +442,11 @@ p {
   color: #ffffff;
   padding: 32px;
   width: 100vw;
+}
+.footer .footer-inner {
+  margin: 0 auto;
+  max-width: 776px;
+  width: 100%;
 }
 .footer p {
   font-size: 19.2px;
@@ -471,11 +464,6 @@ p {
   margin: 0 0 16px;
   text-transform: uppercase;
 }
-.footer .footer-inner {
-  margin: 0 auto;
-  max-width: 776px;
-  width: 100%;
-}
 .footer .footer-flex-wrap > * {
   margin-bottom: 32px;
 }
@@ -490,7 +478,7 @@ p {
 }
 @media screen and (min-width: 767px) {
   .footer {
-    padding: 48px;
+    padding: 64px;
   }
   .footer .footer-logo {
     margin-bottom: 32px;
@@ -591,7 +579,7 @@ p {
 }
 @media screen and (min-width: 767px) {
   .page-header {
-    padding: 64px 48px;
+    padding: 64px 64px;
   }
   .page-header h1 {
     font-size: 45px;
@@ -620,7 +608,7 @@ p {
 }
 @media screen and (min-width: 767px) {
   .page-content {
-    padding: 48px;
+    padding: 64px;
   }
 }
 
@@ -706,7 +694,7 @@ p {
   max-width: 375px;
   overflow: hidden;
 }
-.bio-thumbnail h3 {
+.bio-thumbnail h4 {
   color: #005663;
   font-size: 28.8px;
   margin: 0 0 4px;
@@ -793,8 +781,8 @@ p {
 }
 @media screen and (min-width: 767px) {
   .bio-header {
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-left: 64px;
+    padding-right: 64px;
   }
 }
 
@@ -812,7 +800,12 @@ p {
 }
 @media screen and (min-width: 767px) {
   .row {
-    padding: 48px;
+    padding: 64px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .row {
+    padding: 96px;
   }
 }
 
