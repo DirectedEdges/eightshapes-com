@@ -246,7 +246,8 @@ p {
   background: $esds-color-background-dark-primary;
   @media screen and (min-width: $desktop-width) {
     display: flex;
-    width: 100%;
+    overflow: hidden;
+    width: 100vw;
   }
 }
 
@@ -933,7 +934,11 @@ $bio-thumbnail-two-column-breakpoint: 375px;
   @media screen and (min-width: $tablet-width) {
     margin: 0 36px 0 0;
 
-    &:last-child {
+    &:nth-child(even) {
+      margin-right: 36px;
+    }
+
+    &:nth-child(3n) {
       margin-right: 0;
     }
 

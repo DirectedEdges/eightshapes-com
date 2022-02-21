@@ -150,7 +150,8 @@ p {
 @media screen and (min-width: 1023px) {
   .site-header {
     display: flex;
-    width: 100%;
+    overflow: hidden;
+    width: 100vw;
   }
 }
 
@@ -776,7 +777,10 @@ p {
   .bio-thumbnail {
     margin: 0 36px 0 0;
   }
-  .bio-thumbnail:last-child {
+  .bio-thumbnail:nth-child(even) {
+    margin-right: 36px;
+  }
+  .bio-thumbnail:nth-child(3n) {
     margin-right: 0;
   }
   .bio-thumbnail .bio-thumbnail-image-wrap {
