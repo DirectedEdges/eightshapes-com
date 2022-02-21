@@ -426,6 +426,7 @@ p {
 .footer-cta {
   background: #e85200;
   color: #ffffff;
+  padding: 32px;
   width: 100vw;
 }
 .footer-cta h2 {
@@ -443,8 +444,16 @@ p {
   width: 100%;
 }
 @media screen and (min-width: 767px) {
+  .footer-cta {
+    padding: 64px;
+  }
   .footer-cta p {
     font-size: 22.6px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .footer-cta {
+    padding: 96px;
   }
 }
 
@@ -478,8 +487,10 @@ p {
 .footer .footer-flex-wrap > * {
   margin-bottom: 32px;
 }
-.footer .footer-flex-wrap > *:last-child {
-  margin-bottom: 0;
+.footer .footer-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .footer .footer-social-section {
   margin: 0 0 16px;
@@ -487,9 +498,22 @@ p {
 .footer .footer-social-section:last-child {
   margin-bottom: 0;
 }
+.footer .footer-address {
+  margin-bottom: 0;
+  order: 3;
+}
+.footer .footer-social {
+  margin-right: 32px;
+}
+.footer .footer-tools {
+  width: 100%;
+}
 @media screen and (min-width: 767px) {
   .footer {
     padding: 64px;
+  }
+  .footer .footer-flex-wrap {
+    justify-content: flex-start;
   }
   .footer .footer-logo {
     margin-bottom: 32px;
@@ -500,17 +524,21 @@ p {
     justify-content: space-between;
   }
   .footer .tool-link {
+    margin-bottom: 0;
     width: 49%;
-  }
-  .footer .footer-flex-wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
   .footer .footer-address,
 .footer .footer-social {
-    flex: 0 0 49%;
+    flex: 1 1 40%;
     margin-bottom: 0;
+  }
+  .footer .footer-address {
+    margin-right: 16px;
+    order: 2;
+  }
+  .footer .footer-social {
+    margin-right: 0;
+    order: 3;
   }
   .footer .footer-tools {
     flex: 0 0 100%;
@@ -519,8 +547,14 @@ p {
 }
 @media screen and (min-width: 1023px) {
   .footer .footer-flex-wrap > * {
-    flex: 1 1 28%;
+    flex: 1 1 26%;
     justify-content: space-between;
+  }
+  .footer .footer-social {
+    order: 2;
+  }
+  .footer .footer-address {
+    margin-right: 32px;
   }
   .footer .footer-tools {
     flex: 1 1 40%;
@@ -531,6 +565,7 @@ p {
     display: block;
   }
   .footer .tool-link {
+    margin-bottom: 16px;
     width: 100%;
   }
 }
@@ -551,6 +586,9 @@ p {
   padding: 16px;
   text-decoration: none;
   transition: background 0.3s;
+}
+.tool-link:last-child {
+  margin-bottom: 0;
 }
 .tool-link:hover {
   background: #006170;

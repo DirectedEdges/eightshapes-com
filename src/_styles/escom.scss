@@ -536,6 +536,7 @@ p {
 .footer-cta {
   background: $esds-color-brand;
   color: $esds-color-text-primary-on-dark;
+  padding: $space-inset-row-mobile;
   width: 100vw;
 
   h2 {
@@ -556,9 +557,14 @@ p {
   }
 
   @media screen and (min-width: $tablet-width) {
+    padding: $space-inset-row-tablet;
     p {
       font-size: $body-large;
     }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: $space-inset-row-desktop;
   }
 }
 
@@ -596,10 +602,12 @@ p {
 
   .footer-flex-wrap > * {
     margin-bottom: 32px;
+  }
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+  .footer-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .footer-social-section {
@@ -610,8 +618,25 @@ p {
     }
   }
 
+  .footer-address {
+    margin-bottom: 0;
+    order: 3;
+  }
+
+  .footer-social {
+    margin-right: 32px;
+  }
+
+  .footer-tools {
+    width: 100%;
+  }
+
   @media screen and (min-width: $tablet-width) {
     padding: $space-inset-row-tablet;
+
+    .footer-flex-wrap {
+      justify-content: flex-start;
+    }
 
     .footer-logo {
       margin-bottom: 32px;
@@ -624,19 +649,24 @@ p {
     }
 
     .tool-link {
+      margin-bottom: 0;
       width: 49%;
-    }
-
-    .footer-flex-wrap {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
     }
 
     .footer-address,
     .footer-social {
-      flex: 0 0 49%;
+      flex: 1 1 40%;
       margin-bottom: 0;
+    }
+
+    .footer-address {
+      margin-right: 16px;
+      order: 2;
+    }
+
+    .footer-social {
+      margin-right: 0;
+      order: 3;
     }
 
     .footer-tools {
@@ -647,8 +677,16 @@ p {
 
   @media screen and (min-width: $desktop-width) {
     .footer-flex-wrap > * {
-      flex: 1 1 28%;
+      flex: 1 1 26%;
       justify-content: space-between;
+    }
+
+    .footer-social {
+      order: 2;
+    }
+
+    .footer-address {
+      margin-right: 32px;
     }
 
     .footer-tools {
@@ -662,6 +700,7 @@ p {
     }
 
     .tool-link {
+      margin-bottom: 16px;
       width: 100%;
     }
   }
@@ -685,6 +724,10 @@ p {
   padding: 16px;
   text-decoration: none;
   transition: background $hover-transition-timing;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &:hover {
     background: $esds-color-teal-22;
