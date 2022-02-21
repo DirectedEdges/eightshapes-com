@@ -366,6 +366,7 @@ p {
   bottom: 0;
   left: 0;
   max-width: none;
+  overflow: hidden;
   position: absolute;
   right: 0;
   top: 0;
@@ -376,6 +377,17 @@ p {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+}
+@media screen and (min-width: 1023px) {
+  #information-architecture .services-carousel-image {
+    filter: blur(20px);
+  }
+  #user-experience-design .services-carousel-image {
+    filter: blur(8px);
+  }
+  #design-systems .services-carousel-image {
+    filter: blur(4px);
+  }
 }
 
 .services-carousel-card.teal {

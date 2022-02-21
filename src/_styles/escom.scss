@@ -1,4 +1,4 @@
-// 2022 styles 
+// 2022 styles
 
 $esds-color-white: #ffffff;
 $esds-color-black: #000000;
@@ -432,6 +432,7 @@ p {
 
   @media screen and (min-width: $desktop-width) {
     flex: 0 0 50vw;
+    // max-width: 700px;  // Enable to prevent full-bleed right on the homepage carousel background images
     width: 50vw;
   }
 }
@@ -469,6 +470,7 @@ p {
   bottom: 0;
   left: 0;
   max-width: none;
+  overflow: hidden;
   position: absolute;
   right: 0;
   top: 0;
@@ -478,6 +480,21 @@ p {
   height: 100%;
   object-fit: cover;
   width: 100%;
+
+  @media screen and (min-width: $desktop-width) {
+    // Individual blur settings for each carousel image - all of them kick in at desktop breakpoint
+    #information-architecture & {
+      filter: blur(20px);
+    }
+
+    #user-experience-design & {
+      filter: blur(8px);
+    }
+
+    #design-systems & {
+      filter: blur(4px);
+    }
+  }
 }
 
 .services-carousel-card.teal {
