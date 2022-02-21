@@ -549,13 +549,12 @@ p {
   border-radius: 8px;
   display: block;
   margin: 0 0 16px;
-  max-width: 420px;
   padding: 16px;
   text-decoration: none;
   transition: background 0.3s;
 }
 .tool-link:hover {
-  background: #e85200;
+  background: #006170;
   text-decoration: none;
 }
 .tool-link:hover p {

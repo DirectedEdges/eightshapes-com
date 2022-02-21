@@ -683,13 +683,12 @@ p {
   border-radius: 8px;
   display: block;
   margin: 0 0 16px;
-  max-width: 420px;
   padding: 16px;
   text-decoration: none;
   transition: background $hover-transition-timing;
 
   &:hover {
-    background: $esds-color-brand;
+    background: $esds-color-teal-22;
     text-decoration: none;
 
     p {
