@@ -215,7 +215,6 @@ p {
   &:hover {
     background: $esds-color-white;
     color: $esds-color-brand;
-    opacity: 0.8;
     text-decoration: none;
   }
 
@@ -824,8 +823,17 @@ p {
 }
 
 // Bio Thumbnail
+
+$bio-thumbnail-two-column-breakpoint: 375px;
+.bio-thumbnail-spacer {
+  flex: 1 1 30%;
+  height: 0;
+  margin: 0 0 48px;
+}
+
 .bio-thumbnail {
   display: block;
+  flex: 1 1 48%;
   margin: 0 0 48px;
 
   &:last-child {
@@ -870,8 +878,16 @@ p {
     color: $esds-color-text-secondary-on-light;
   }
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: $bio-thumbnail-two-column-breakpoint) {
     flex: 1 1 30%;
+    margin: 0 36px 48px 0;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width: $tablet-width) {
     margin: 0 36px 0 0;
 
     &:last-child {
@@ -888,8 +904,9 @@ p {
 .bio-thumbnails {
   margin-top: 32px;
 
-  @media screen and (min-width: $tablet-width) {
+  @media screen and (min-width: $bio-thumbnail-two-column-breakpoint) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }

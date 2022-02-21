@@ -122,7 +122,6 @@ p {
 .button:hover {
   background: #ffffff;
   color: #e85200;
-  opacity: 0.8;
   text-decoration: none;
 }
 .button:active {
@@ -679,8 +678,15 @@ p {
   }
 }
 
+.bio-thumbnail-spacer {
+  flex: 1 1 30%;
+  height: 0;
+  margin: 0 0 48px;
+}
+
 .bio-thumbnail {
   display: block;
+  flex: 1 1 48%;
   margin: 0 0 48px;
 }
 .bio-thumbnail:last-child {
@@ -719,9 +725,17 @@ p {
 .bio-thumbnail .metadata {
   color: #6b6b6b;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 375px) {
   .bio-thumbnail {
     flex: 1 1 30%;
+    margin: 0 36px 48px 0;
+  }
+  .bio-thumbnail:nth-child(even) {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 767px) {
+  .bio-thumbnail {
     margin: 0 36px 0 0;
   }
   .bio-thumbnail:last-child {
@@ -736,9 +750,10 @@ p {
 .bio-thumbnails {
   margin-top: 32px;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 375px) {
   .bio-thumbnails {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
