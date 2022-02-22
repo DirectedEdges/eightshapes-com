@@ -13,6 +13,7 @@ layout : base.njk
   </div>
 </div>
 
+<<<<<<< Updated upstream
 <div class="row reverse feature">
   <div class="row-inner">
     <p>
@@ -21,44 +22,57 @@ layout : base.njk
   </div>
 </div>
 
+=======
+>>>>>>> Stashed changes
 <div class="row secondary">
   <div class="row-inner">
     <h3 id="experience">Experience</h3>
     <p>
-      Dan has lead design projects, consulted, and run workshops for:
+<<<<<<< Updated upstream
+Dan has lead design projects, consulted, and run workshops for:
     </p>
     <ul class="client-list bio-client-list">
-      <li>College of the South</li>
-      <li>AstraZeneca</li>
-      <li>Alcatel-Lucent</li>
-      <li>Career Key</li>
-      <li>Creative Market</li>
-      <li>Delta Dental of Virginia</li>
-      <li>LinkedIn</li>
-      <li>Marriott</li>
-      <li>RingCentral</li>
-      <li>StreetShares</li>
-      <li>Travelers Insurance</li>
-      <li>Department of Energy</li>
-      <li>Knowledge to Practice</li>
-      <li>Discovery</li>
-      <li>NetApp</li>
-      <li>Reveal News</li>
-      <li>Education Advisory Board</li>
-      <li>Houghton Mifflin Harcourt</li>
-      <li>Interfolio</li>
-      <li>PayPal</li>
-      <li>Sonatype</li>
-      <li>WebEx</li>
+<li>College of the South</li>
+<li>AstraZeneca</li>
+<li>Alcatel-Lucent</li>
+<li>Career Key</li>
+<li>Creative Market</li>
+<li>Delta Dental of Virginia</li>
+<li>LinkedIn</li>
+<li>Marriott</li>
+<li>RingCentral</li>
+<li>StreetShares</li>
+<li>Travelers Insurance</li>
+<li>Department of Energy</li>
+<li>Knowledge to Practice</li>
+<li>Discovery</li>
+<li>NetApp</li>
+<li>Reveal News</li>
+<li>Education Advisory Board</li>
+<li>Houghton Mifflin Harcourt</li>
+<li>Interfolio</li>
+<li>PayPal</li>
+<li>Sonatype</li>
+<li>WebEx</li>
+<li>World Bank</li>
+<li>Netflix</li>
+<li>National Council of Architecture Review Boards</li>
+<li>Association of Social Work Boards</li>
+<li>American Psychological Association</li>
+<li>American Chemical Society</li>
+<li>NCR</li>
+<li>Riot Games</li>
+<li>Cisco</li>
+    </ul>
+  </div>
+</div>
+=======
+    Dan has lead design projects, consulted, and run workshops for:
+    </p>
+    <ul class="client-list bio-client-list">
       <li>World Bank</li>
       <li>Netflix</li>
-      <li>National Council of Architecture Review Boards</li>
-      <li>Association of Social Work Boards</li>
-      <li>American Psychological Association</li>
-      <li>American Chemical Society</li>
-      <li>NCR</li>
-      <li>Riot Games</li>
-      <li>Cisco</li>
+
     </ul>
   </div>
 </div>
@@ -66,56 +80,40 @@ layout : base.njk
 <div class="page-content">
   <div class="page-content-inner">
     <h3 id="books">Books</h3>
-    <div class="media-flex-wrap">
-      <a href="https://www.amazon.com/Communicating-Design-Developing-Documentation-Planning/dp/0321712463" class="media-thumbnail">
-        <img src="/images/communicating-design.jpg" role="presentation">
+    <div class="books-flex-wrap">
+      <a href="https://www.amazon.com/Modular-Web-Design-Components-Documentation/dp/0321601351" class="media-thumbnail">
+        <img src="/images/modular-web-design-cover-photo.jpg" alt="Modular Web Design">
         Communicating Design
         <span class="secondary-text">2010</span>
       </a>
-      <a href="https://www.amazon.com/Designing-Together-collaboration-management-professionals/dp/0321918630/ref=sr_1_2" class="media-thumbnail">
-        <img src="/images/designing-together.jpg" role="presentation">
+      <a href="https://www.designbetter.co/design-systems-handbook" class="media-thumbnail">
+        <img src="/images/design-systems-handbook.jpg" alt="Modular Web Design">
         Designing Together
         <span class="secondary-text">2013</span>
       </a>
-      <a href="https://www.amazon.com/Practical-Design-Discovery-Dan-Brown/dp/1937557448/ref=sr_1_1" class="media-thumbnail">
-        <img src="/images/practical-design-discovery.jpg" role="presentation">
+      <a href="https://www.designbetter.co/design-systems-handbook" class="media-thumbnail">
+        <img src="/images/design-systems-handbook.jpg" alt="Modular Web Design">
         Practical Design Discovery
         <span class="secondary-text">2017</span>
       </a>
       <div class="media-thumbnail-spacer"></div>
     </div>
-
-    <div class="dot-divider"><span class="dot-divider-inner"><b></b><b></b><b></b></span></div>
-
-    <div class="two-up-flex-wrap">
-      <div>
-        <h3 id="Blog">Blog</h3>
-        <p>
-          Dan posts articles to Medium.com on topics like information architecture, <a href="https://medium.com/eightshapes-llc/tagged/discovery">discovery</a>, and collaboration.
-        </p>
-      </div>
-      <div>
-        <h3 id="Podcast">Podcast</h3>
-        <p>
-          <a href="https://podcasts.apple.com/us/podcast/a-lens-a-day-conversations-about-information-architecture/id1586150744">Lenses on Information Architecture</a> is an ongoing interview series about the practice of information architecture.
-        </p>
-      </div>
-    </div>
-
-    <div class="dot-divider"><span class="dot-divider-inner"><b></b><b></b><b></b></span></div>
-
-    <h3 id="games">Games</h3>
-    <div class="media-flex-wrap">
-      <a href="#" class="media-thumbnail">
-        <img src="/images/information-architecture-lenses.jpg" role="presentation">
-        Information Architecture Lenses
-      </a>
-      <a href="#" class="media-thumbnail">
-        <img src="/images/surviving-design-projects.jpg" role="presentation">
-        Surviving Design Projects
-      </a>
-    </div>
-
+        {# <div class="bio-section">
+          <h3 id="blog">Blog</h3>
+          <p>Since 2015, Nathan has blogged on Medium.com across design system topics that include:</p>
+          <ul class="unstyled">
+            <li><a href="https://medium.com/@nathanacurtis/list/visual-style-a70978d80056">Visual Style</a></li>
+            <li><a href="https://medium.com/@nathanacurtis/list/ui-components-90c74982dd7e">UI Components</a></li>
+            <li><a href="https://medium.com/@nathanacurtis/list/documentation-840a06090c66">Documentation</a></li>
+            <li><a href="https://medium.com/@nathanacurtis/list/releases-a6203df2a767">Releases</a></li>
+            <li><a href="https://medium.com/@nathanacurtis/list/planning-c9a34f4e0526">Planning</a></li>
+            <li><a href="https://medium.com/@nathanacurtis/list/process-86df670f62c0">Process</a></li>
+            <li><a href="https://medium.com/@nathanacurtis/list/people-teams-627847d004e3">People and Teams</a></li>
+            <li><a href="https://medium.com/@nathanacurtis/list/systems-of-systems-c5c4edef3560">Systems of Systems</a></li>
+          </ul>
+          <p>Most of these articles are also reprinted on eightshapes.com as the <a href="/components">@components publication</a>.</p>
+        </div>
+      </div> #}
       <div class="dot-divider"><span class="dot-divider-inner"><b></b><b></b><b></b></span></div>
 
 
@@ -246,3 +244,4 @@ layout : base.njk
         <a class="button" href="mailto:info@eightshapes.com">Email Us</a>
     </div>
 </div>
+>>>>>>> Stashed changes
