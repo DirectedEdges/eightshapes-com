@@ -273,8 +273,11 @@ p {
   width: 100%;
   z-index: 10;
 }
+.services-carousel-card:hover {
+  text-decoration: none;
+}
 .services-carousel-card h2,
-.services-carousel-card a,
+.services-carousel-card .services-carousel-card-link-text,
 .services-carousel-card p {
   color: #ffffff;
 }
@@ -283,8 +286,7 @@ p {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-.services-carousel-card p,
-.services-carousel-card a {
+.services-carousel-card p {
   font-size: 19.2px;
 }
 @media screen and (min-width: 767px) {
@@ -308,6 +310,13 @@ p {
   }
 }
 
+.services-carousel-card-link-text {
+  font-size: 19.2px;
+}
+.services-carousel-card:hover .services-carousel-card-link-text {
+  text-decoration: underline;
+}
+
 .services-carousel-tagline {
   font-size: 19.2px;
 }
@@ -329,6 +338,7 @@ p {
 @media screen and (min-width: 1023px) {
   .services-carousel-slides {
     flex: 0 0 50vw;
+    max-width: 700px;
     width: 50vw;
   }
 }
@@ -403,7 +413,7 @@ p {
 }
 .services-carousel-card.secondary h2,
 .services-carousel-card.secondary p,
-.services-carousel-card.secondary a {
+.services-carousel-card.secondary .services-carousel-card-link-text {
   color: #0d0d0d;
 }
 
@@ -1036,7 +1046,7 @@ p {
 }
 
 .media-thumbnail {
-  color: #0d0d0d;
+  color: #005663;
   display: block;
   margin: 0 0 16px;
 }

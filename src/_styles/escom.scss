@@ -376,8 +376,12 @@ p {
   width: 100%;
   z-index: 10;
 
+  &:hover {
+    text-decoration: none;
+  }
+
   h2,
-  a,
+  .services-carousel-card-link-text,
   p {
     color: $esds-color-text-primary-on-dark;
   }
@@ -388,8 +392,7 @@ p {
     text-transform: uppercase;
   }
 
-  p,
-  a {
+  p {
     font-size: $body-medium;
   }
 
@@ -414,6 +417,14 @@ p {
   }
 }
 
+.services-carousel-card-link-text {
+  font-size: $body-medium;
+
+  .services-carousel-card:hover & {
+    text-decoration: underline;
+  }
+}
+
 .services-carousel-tagline {
   font-size: $body-medium;
 
@@ -432,7 +443,7 @@ p {
 
   @media screen and (min-width: $desktop-width) {
     flex: 0 0 50vw;
-    // max-width: 700px;  // Enable to prevent full-bleed right on the homepage carousel background images
+    max-width: 700px; // Enable to prevent full-bleed right on the homepage carousel background images
     width: 50vw;
   }
 }
@@ -510,7 +521,7 @@ p {
 
   h2,
   p,
-  a {
+  .services-carousel-card-link-text {
     color: $esds-color-text-primary-on-light;
   }
 }
@@ -1230,7 +1241,7 @@ $bio-thumbnail-two-column-breakpoint: 375px;
 
 // Media Thumbnail
 .media-thumbnail {
-  color: $esds-color-text-primary-on-light;
+  color: $esds-color-text-link-on-light;
   display: block;
   margin: 0 0 16px;
 
