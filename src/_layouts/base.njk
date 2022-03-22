@@ -24,9 +24,7 @@
         {% if show_site_header %}
         {# Site Header #}
         <a class="header" href="/">
-            <div class="header-logo">
-                {% include '../_icons/eightshapes-logo.svg' %}
-            </div>
+            <div class="header-logo">{% include '../_icons/eightshapes-logo.svg' %}</div>
         </a>
         {% endif %}
 
@@ -35,27 +33,42 @@
 
 
         {# Site Footer #}
-        <div class="footer">
-            <div class="footer-inner">
-                <div class="footer-logo">
-                    {% include '../_icons/eightshapes-logo.svg' %}
-                </div>
-                <div class="footer-flex-wrap">
-                    <div class="footer-tools">
-                        <h5>Play</h5>
-                        <div class="footer-tool-links">
-                            <a class="tool-link" href="https://contrast-grid.eightshapes.com">
-                                <h3>EightShapes Contrast Grid</h3>
-                                <p>Check many, many color values for accessible contrast</p>
+        <div class="row reverse">
+            <div class="row-inner">
+                <div class="footer-sections">
+                    <div class="footer-section footer-section--logo">
+                        {% include '../_icons/eightshapes-logo.svg' %}
+                    </div>
+                    <div class="footer-section footer-section--tools">
+                        <h5 class="eyebrow">Play</h5>
+                        <div class="footer-tools">
+                            <a class="footer-tools_link" href="https://contrast-grid.eightshapes.com">
+                                <h5 class="footer-tools_link-heading">Visual Difference</h5>
+                                <p class="small">Compare snapshots of Figma objects as they change.</p>
                             </a>
-                            <a class="tool-link" href="https://text-crop.eightshapes.com">
-                                <h3>EightShapes Text Crop</h3>
-                                <p>Remove pesky space above and below text due to line height.</p>
+                            <a class="footer-tools_link" href="https://contrast-grid.eightshapes.com">
+                                <h5 class="footer-tools_link-heading">Contrast Grid</h5>
+                                <p class="small">Check many, many color values for accessible contrast.</p>
+                            </a>
+                            <a class="footer-tools_link" href="https://text-crop.eightshapes.com">
+                                <h5 class="footer-tools_link-heading">Text Crop</h5>
+                                <p class="small">Remove pesky space above and below text due to line height.</p>
                             </a>
                         </div>
                     </div>
-                    <div class="footer-address">
-                        <h5>Contact</h5>
+                    <div class="footer-section footer-section--connect">
+                        <h5 class="eyebrow">Connect</h5>
+                        <p><a href="https://twitter.com/eightshapes">Twitter</a></p>
+                        <p><a href="https://www.linkedin.com/company/eightshapes-llc">LinkedIn</a></p>
+                    </div>
+                    <div class="footer-section footer-section--read">
+                        <h5 class="eyebrow">Read</h5>
+                        <p><a href="https://medium.com/eightshapes-llc/tagged/discovery">Discovery</a></p>
+                        <p><a href="https://medium.com/eightshapes-llc/tagged/design">Design</a></p>
+                        <p><a href="https://medium.com/@nathanacurtis/lists">Design Systems</a></p>
+                    </div>
+                    <div class="footer-section footer-section--contact">
+                        <h5 class="eyebrow">Contact</h5>
                         <p>
                             12805 Misty Creek Ln<br/>
                             Fairfax VA 22033
@@ -70,20 +83,6 @@
                             <br/>
                             All rights reserved.
                         </p>
-                    </div>
-                    <div class="footer-social">
-                        <div class="footer-social-section">
-                            <h5>Connect</h5>
-                            <a href="https://twitter.com/eightshapes">Twitter</a><br/>
-                            <a href="https://www.linkedin.com/company/eightshapes-llc">LinkedIn</a><br/>
-                        </div>
-
-                        <div class="footer-social-section">
-                            <h5>Read</h5>
-                            <a href="https://medium.com/eightshapes-llc/tagged/discovery">Discovery</a><br/>
-                            <a href="https://medium.com/eightshapes-llc/tagged/design">Design</a><br/>
-                            <a href="https://medium.com/@nathanacurtis/lists">Design Systems</a>
-                        </div>
                     </div>
                 </div>
             </div>
