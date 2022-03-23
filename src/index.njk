@@ -1,74 +1,75 @@
 ---
+title_tag : EightShapes, a UX and Design Systems Agency
 layout : base.njk
 show_site_header: false
 ---
 <div class="site-header">
-  <div class="services-carousel">
-    <div class="services-carousel-controls">
-      <div class="services-carousel-logo">
+  <div class="home-hero">
+    <div class="home-hero-controls">
+      <div class="home-hero-logo">
       {% include './_icons/eightshapes-logo.svg' %}
       </div>
-      <p class="services-carousel-tagline">
+      <p class="home-hero-tagline lead">
         We design digital products and systems that make for clear, usable, beautiful, and cohesive experiences.
       </p>
-      <ul class="services-carousel-services-list">
+      <ul class="home-hero-services-list">
         <li>
           <button class="selected" data-slide-id="information-architecture">
-            <span class="services-carousel-selected-icon">{% include './_icons/angle-right.svg' %}</span>
+            <span class="home-hero-selected-icon">{% include './_icons/angle-right.svg' %}</span>
             Information Architecture
           </button>
         </li>
         <li>
           <button data-slide-id="user-experience-design">
-            <span class="services-carousel-selected-icon">{% include './_icons/angle-right.svg' %}</span>
+            <span class="home-hero-selected-icon">{% include './_icons/angle-right.svg' %}</span>
             User Experience Design
           </button>
         </li>
         <li>
           <button data-slide-id="design-systems">
-            <span class="services-carousel-selected-icon">{% include './_icons/angle-right.svg' %}</span>
+            <span class="home-hero-selected-icon">{% include './_icons/angle-right.svg' %}</span>
             Design Systems
           </button>
         </li>
       </ul>
     </div>
-    <div class="services-carousel-slides">
+    <div class="home-hero-slides">
 
-      <div id="information-architecture" class="services-carousel-slide information-architecture selected">
-        <div class="services-carousel-image-wrap">
-          <img src="/images/homepage/information_architecture.jpg" role="presentation" class="services-carousel-image"/>
+      <div id="information-architecture" class="home-hero-slide information-architecture selected">
+        <div class="home-hero-image-wrap">
+          <img src="/images/homepage/information_architecture.jpg" role="presentation" class="home-hero-image"/>
         </div>
-        <a href="/information-architecture" class="services-carousel-card teal">
-          <div class="services-carousel-card-inner">
-            <h2>Information Architecture</h2>
+        <a href="/information-architecture" class="home-hero-card teal">
+          <div class="home-hero-card-inner">
+            <h2 class="eyebrow eyebrow--large">Information Architecture</h2>
             <p>We’ve been organizing information for 25 years. We’ve categorized it all -- from storage devices to childrens books.</p>
-            <span class="services-carousel-card-link-text">Learn more</span>
+            <span class="button">Learn more</span>
           </div>
         </a>
       </div>
 
-      <div  id="user-experience-design" class="services-carousel-slide user-experience">
-        <div class="services-carousel-image-wrap">
-          <img src="/images/homepage/user_experience_design.jpg" role="presentation" class="services-carousel-image"/>
+      <div  id="user-experience-design" class="home-hero-slide user-experience">
+        <div class="home-hero-image-wrap">
+          <img src="/images/homepage/user_experience_design.jpg" role="presentation" class="home-hero-image"/>
         </div>
-        <a href="/user-experience-design" class="services-carousel-card secondary">
-          <div class="services-carousel-card-inner">
-            <h2>User Experience Design</h2>
+        <a href="/user-experience-design" class="home-hero-card secondary">
+          <div class="home-hero-card-inner">
+            <h2 class="eyebrow eyebrow--large">User Experience Design</h2>
             <p>Discover user needs and design end-to-end journeys that enable users and businesses to succeed.</p>
-            <span class="services-carousel-card-link-text">Learn more</span>
+            <span class="button">Learn more</span>
           </div>
         </a>
       </div>
 
-      <div id="design-systems" class="services-carousel-slide design-systems">
-        <div class="services-carousel-image-wrap">
-          <img src="/images/homepage/design_systems.jpg" role="presentation" class="services-carousel-image"/>
+      <div id="design-systems" class="home-hero-slide design-systems">
+        <div class="home-hero-image-wrap">
+          <img src="/images/homepage/design_systems.jpg" role="presentation" class="home-hero-image"/>
         </div>
-        <a href="/design-systems" class="services-carousel-card brand">
-          <div class="services-carousel-card-inner">
-            <h2>Design Systems</h2>
+        <a href="/design-systems" class="home-hero-card brand">
+          <div class="home-hero-card-inner">
+            <h2 class="eyebrow eyebrow--large">Design Systems</h2>
             <p>Build a foundation of style and components to scale design and development across an enterprise.</p>
-            <span class="services-carousel-card-link-text">Learn more</span>
+            <span class="button">Learn more</span>
           </div>
         </a>
       </div>
@@ -119,31 +120,31 @@ show_site_header: false
     <p>
       Tenacious in solving complex problems, we believe successful projects depend on transparency, discipline, and cooperation.
     </p>
-    <div class="bio-thumbnails">
-        <a href="/dan-brown" class="bio-thumbnail">
-            <div class="bio-thumbnail-image-wrap">
-              <img src="/images/bios/bio-thumb-dan-brown.png" alt="Dan Brown">
+    <div class="thumbnails">
+        <a href="/dan-brown" class="thumbnail">
+            <div class="thumbnail_image-wrap">
+              <img class="thumbnail_image" src="/images/bios/bio-thumb-dan-brown.png" alt="Dan Brown">
             </div>
-            <h3>Dan Brown</h3>
-            <p>Founder</p>
+            <h4 class="thumbnail_name">Dan Brown</h4>
+            <p class="secondary-text">Founder</p>
         </a>
 
-        <a href="/nathan-curtis" class="bio-thumbnail">
-            <div class="bio-thumbnail-image-wrap">
-              <img src="/images/bios/bio-thumb-nathan-curtis.png" alt="James Melzer">
+        <a href="/nathan-curtis" class="thumbnail">
+            <div class="thumbnail_image-wrap">
+              <img class="thumbnail_image" src="/images/bios/bio-thumb-nathan-curtis.png" alt="Nathan Curtis">
             </div>
-            <h3>Nathan Curtis</h3>
-            <p>Founder</p>
+            <h4 class="thumbnail_name">Nathan Curtis</h4>
+            <p class="secondary-text">Founder</p>
         </a>
 
-        <a href="/james-melzer" class="bio-thumbnail">
-            <div class="bio-thumbnail-image-wrap">
-              <img src="/images/bios/bio-thumb-james-melzer.png" alt="James Melzer">
+        <a href="/james-melzer" class="thumbnail">
+            <div class="thumbnail_image-wrap">
+              <img class="thumbnail_image" src="/images/bios/bio-thumb-james-melzer.png" alt="James Melzer">
             </div>
-            <h3>James Melzer</h3>
-            <p>Sr. Director, UX</p>
+            <h4 class="thumbnail_name">James Melzer</h4>
+            <p class="secondary-text">Sr. Director, UX</p>
         </a>
-        <div class="bio-thumbnail-spacer"></div>
+        <div class="thumbnail_spacer"></div>
     </div>
   </div>
 </div>

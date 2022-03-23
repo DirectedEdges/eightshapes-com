@@ -1,5 +1,3 @@
-// 2022 styles
-
 $esds-color-white: #ffffff;
 $esds-color-black: #000000;
 $esds-color-orange-41: #d24b00;
@@ -49,32 +47,16 @@ $esds-color-icon-secondary-on-dark: #8c8c8c;
 $esds-font-family-sans-serif: "Barlow Semi Condensed", sans-serif;
 $esds-font-family-monospace: "Roboto Mono", monospace;
 
-$heading-level-1: 64px;
-$heading-level-2: 45px;
-$heading-level-3: 32px;
-$heading-level-4: 24px;
-$heading-level-5: 20px;
-$heading-level-6: 17px;
-
 $body-lead: 28.8px;
 $body-large: 22.6px;
 $body-medium: 19.2px;
 $body-small: 16px;
 $body-very-small: 13px;
 
-$slide-body-small: 32px;
-$slide-body-medium: 45px;
-$slide-body-large: 64px;
-
-$eyebrow-large: 20px;
-$eyebrow-medium: 15px;
-$eyebrow-small: 13px;
-$eyebrow-very-small: 11px;
-
 $line-height: 1.2;
 
 $esds-font-weight-regular: 300;
-$esds-font-weight-semi-bold: 600;
+$esds-font-weight-semi-bold: 500;
 
 $esds-border-radius-control: 4px;
 $esds-border-radius-default: 8px;
@@ -83,10 +65,6 @@ $esds-size-icon-s: 16px;
 $esds-size-icon-m: 20px;
 $esds-size-icon-l: 24px;
 $esds-transition-interactive-hover-speed: 0.2s;
-$esds-breakpoints-width-500: 500px;
-$esds-breakpoints-width-768: 768px;
-$esds-breakpoints-width-1000: 1000px;
-$esds-breakpoints-width-1200: 1200px;
 
 $content-max-width: 776px;
 
@@ -95,15 +73,9 @@ $desktop-width: 1023px;
 
 $space-inset-row-mobile: 48px 32px;
 $space-inset-row-tablet: 64px;
-$space-inset-row-desktop: 64px 96px;
+$space-inset-row-desktop: 72px 96px;
 
 $hover-transition-timing: 0.3s;
-
-html {
-  box-sizing: border-box;
-  font-family: $esds-font-family-sans-serif;
-  font-weight: $esds-font-weight-regular;
-}
 
 *,
 *::before,
@@ -112,11 +84,12 @@ html {
 }
 
 body {
+  box-sizing: border-box;
+  font-family: $esds-font-family-sans-serif;
+  font-weight: $esds-font-weight-regular;
   background: $esds-color-background-light-primary;
   color: $esds-color-text-primary-on-light;
-  font-size: $body-large;
   line-height: $line-height;
-  margin: 0;
   padding: 0;
 }
 
@@ -133,126 +106,118 @@ a {
   }
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-weight: $esds-font-weight-semi-bold;
-}
-
-h1 {
-  font-size: $heading-level-3;
-  margin: 0 0 16px;
+@mixin typography($mobile, $tablet, $desktop, $margin, $weight:$esds-font-weight-regular,$letter-spacing: 0) {
+  font-size: $mobile;
+  font-weight: $weight;
+  letter-spacing: $letter-spacing;
+  margin: $margin;
 
   @media screen and (min-width: $tablet-width) {
-    font-size: $heading-level-2;
+    font-size: $tablet;
   }
 
   @media screen and (min-width: $desktop-width) {
-    font-size: $heading-level-1;
+    font-size: $desktop;
   }
 }
 
-h2 {
-  font-size: $heading-level-4;
-  margin: 48px 0 16px;
+h1               { @include typography(45px,56px,56px,0 0 16px,$esds-font-weight-semi-bold,-1px); }
+h2               { @include typography(28px,32px,40px,0 0 16px,$esds-font-weight-semi-bold,-1px); }
+h3               { @include typography(24px,28px,32px,0 0 8px,$esds-font-weight-semi-bold,-1px); }
+p.lead           { @include typography(24px,24px,28px,0 0 16px); }
+h4               { @include typography(20px,20px,24px,0 0 8px,$esds-font-weight-semi-bold); }
+body             { @include typography(20px,20px,24px,0 0 16px); }
+p                { @include typography(20px,20px,24px,0 0 16px); }
+li               { @include typography(20px,20px,24px,0); }
+h5               { @include typography(20px,20px,20px,0 0 8px,$esds-font-weight-semi-bold); }
+p.small          { @include typography(18px,18px,20px,0 0 16px); }
+.eyebrow--large  { @include typography(17px,20px,22px,0 0 16px,$esds-font-weight-semi-bold); }
+.eyebrow--medium { @include typography(14px,14px,18px,0 0 16px,$esds-font-weight-semi-bold); }
+.eyebrow--small  { @include typography(12px,12px,15px,0 0 16px,$esds-font-weight-semi-bold); }
 
-  &:first-child {
-    margin-top: 0;
-  }
-
-  @media screen and (min-width: $tablet-width) {
-    font-size: $heading-level-3;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    font-size: $heading-level-2;
-  }
-}
-
-h3 {
-  font-size: $heading-level-5;
-  margin: 0 0 16px;
-
-  @media screen and (min-width: $tablet-width) {
-    font-size: $heading-level-4;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    font-size: $heading-level-3;
-  }
-}
-
-h4 {
-  font-size: $heading-level-5;
-  margin: 0 0 8px;
-
-  @media screen and (min-width: $tablet-width) {
-    font-size: $heading-level-5;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    font-size: $heading-level-4;
-  }
-}
-
-h5 {
-  font-size: $heading-level-6;
-  margin: 0 0 8px;
-
-  @media screen and (min-width: $tablet-width) {
-    font-size: $heading-level-6;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    font-size: $heading-level-5;
-  }
-}
-
-p,
-li {
-  font-size: $body-medium;
-
-  @media screen and (min-width: $tablet-width) {
-    font-size: $body-medium;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    font-size: $body-large;
-  }
-}
-
-p {
-  margin: 0 0 16px;
-}
-
-p.lead {
-  font-size: $body-medium;
-  margin: 0 0 16px;
-
-  @media screen and (min-width: $tablet-width) {
-    font-size: $body-large;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    font-size: $slide-body-small;
-  }
-}
-
-p.small {
-  font-size: $body-small;
-
-  @media screen and (min-width: $tablet-width) {
-    font-size: $body-small;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    font-size: $body-medium;
-  }
+.eyebrow--medium,
+.eyebrow--large,
+.eyebrow--small {
+  color: $esds-color-text-secondary-on-dark;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .secondary-text {
   color: $esds-color-text-secondary-on-light;
+}
+
+.reverse {
+  background: $esds-color-background-dark-primary;
+  color: $esds-color-text-primary-on-dark;
+
+  .secondary-text,
+  .eyebrow--small,
+  .eyebrow--medium,
+  .eyebrow--large {
+    color: $esds-color-text-secondary-on-dark;
+  }
+
+  a:not(.button) {
+    color: $esds-color-text-link-on-dark;
+  }
+
+  svg {
+    fill: $esds-color-text-primary-on-dark;
+  }
+}
+
+.row {
+  padding: $space-inset-row-mobile;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: $space-inset-row-tablet;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding: $space-inset-row-desktop;
+  }
+}
+
+.row-inner {
+  margin: 0 auto;
+  max-width: $content-max-width;
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.row.reverse.brand {
+  background: $esds-color-brand;
+}
+
+.row.reverse.secondary {
+  background: $esds-color-background-dark-secondary;
+}
+
+.row.feature {
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.row.secondary {
+  background: $esds-color-background-light-secondary;
+}
+
+.row.row--design-systems-header {
+  background-image: url("/images/systems/systems-hero.png");
+}
+
+.row.row--user-experience-design-header {
+  background-image: url("/images/user-experience-header.png");
+}
+
+.row.row--information-architecture-header {
+  background-image: url("/images/information-architecture-header.png");
 }
 
 // Homepage header
@@ -264,286 +229,6 @@ p.small {
     width: 100vw;
   }
 }
-
-// Services Carousel
-.services-carousel {
-  h2,
-  p {
-    color: $esds-color-text-primary-on-dark;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    display: flex;
-    margin: 0 auto;
-    width: $content-max-width;
-  }
-}
-
-.services-carousel-controls {
-  padding: 48px 32px 36px;
-
-  @media screen and (min-width: $tablet-width) {
-    padding: 96px 64px;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    flex: 0 0 434px;
-    padding: 130px 84px;
-    padding-left: 0;
-  }
-
-  button {
-    background: none;
-    border: 0;
-    color: $esds-color-text-secondary-on-dark;
-    cursor: pointer;
-    font-family: $esds-font-family-sans-serif;
-    font-size: 33px;
-    font-weight: $esds-font-weight-regular;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    text-align: left;
-    transition: color $hover-transition-timing;
-
-    &:hover {
-      color: $esds-color-text-primary-on-dark;
-    }
-
-    &:focus {
-      outline: none;
-
-      &::after {
-        border: dashed 1px $esds-color-text-secondary-on-dark;
-        border-radius: 4px;
-        bottom: -3px;
-        content: "";
-        left: -3px;
-        position: absolute;
-        right: -3px;
-        top: -3px;
-      }
-    }
-
-    &.selected {
-      color: $esds-color-text-primary-on-dark;
-    }
-  }
-}
-
-.services-carousel-selected-icon {
-  left: -24px;
-  position: absolute;
-  top: 2px; // vertical alignment of icon and text;
-  visibility: hidden;
-
-  svg {
-    fill: $esds-color-text-primary-on-dark;
-  }
-
-  .selected & {
-    visibility: visible;
-  }
-}
-
-.services-carousel-logo {
-  margin: 0 0 32px;
-  text-align: center;
-
-  svg {
-    fill: $esds-color-text-primary-on-dark;
-    width: 200px;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    margin-bottom: 48px;
-    text-align: left;
-  }
-}
-
-.services-carousel-services-list {
-  display: none;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: left;
-
-  li {
-    margin: 0 0 24px;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    display: block;
-  }
-}
-
-.services-carousel-card {
-  align-items: center;
-  aspect-ratio: 1 / 1;
-  background: $esds-color-background-light-primary;
-  border-radius: 24px;
-  display: flex;
-  justify-content: center;
-  max-width: 400px;
-  padding: 32px;
-  position: relative;
-  width: 100%;
-  z-index: 10;
-
-  &:hover {
-    text-decoration: none;
-  }
-
-  h2,
-  .services-carousel-card-link-text,
-  p {
-    color: $esds-color-text-primary-on-dark;
-  }
-
-  h2 {
-    font-size: $eyebrow-medium;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-  }
-
-  p {
-    font-size: $body-medium;
-  }
-
-  @media screen and (min-width: $tablet-width) {
-    h2 {
-      font-size: $eyebrow-large;
-    }
-
-    p {
-      font-size: $body-large;
-    }
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    margin-left: 0;
-    margin-right: 5vw;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-left: 80px;
-    margin-right: auto;
-  }
-}
-
-.services-carousel-card-link-text {
-  font-size: $body-medium;
-
-  .services-carousel-card:hover & {
-    text-decoration: underline;
-  }
-}
-
-.services-carousel-tagline {
-  font-size: $body-medium;
-
-  @media screen and (min-width: $tablet-width) {
-    font-size: $body-lead;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    font-size: $body-large;
-    margin-bottom: 48px;
-  }
-}
-
-.services-carousel-slides {
-  position: relative;
-
-  @media screen and (min-width: $desktop-width) {
-    flex: 0 0 50vw;
-    max-width: 700px; // Enable to prevent full-bleed right on the homepage carousel background images
-    width: 50vw;
-  }
-}
-
-.services-carousel-slide {
-  align-items: center;
-  aspect-ratio: 1 / 1;
-  display: flex;
-  justify-content: center;
-  padding: 48px;
-  position: relative;
-
-  @media screen and (min-width: $desktop-width) {
-    align-items: center;
-    aspect-ratio: initial;
-    bottom: 0;
-    left: 0;
-    opacity: 0;
-    padding: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: opacity $hover-transition-timing,
-      visibility $hover-transition-timing 0s;
-    visibility: hidden;
-  }
-}
-
-.services-carousel-slide.selected {
-  opacity: 1;
-  visibility: visible;
-}
-
-.services-carousel-image-wrap {
-  bottom: 0;
-  left: 0;
-  max-width: none;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.services-carousel-image {
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-
-  @media screen and (min-width: $desktop-width) {
-    // Individual blur settings for each carousel image - all of them kick in at desktop breakpoint
-    #information-architecture & {
-      filter: blur(20px);
-    }
-
-    #user-experience-design & {
-      filter: blur(8px);
-    }
-
-    #design-systems & {
-      filter: blur(4px);
-    }
-  }
-}
-
-.services-carousel-card.teal {
-  background-color: rgba($esds-color-teal-28, 0.95);
-}
-
-.services-carousel-card.brand {
-  background-color: rgba($esds-color-brand, 0.95);
-}
-
-.services-carousel-card.secondary {
-  background-color: rgba($esds-color-background-light-secondary, 0.95);
-
-  h2,
-  p,
-  .services-carousel-card-link-text {
-    color: $esds-color-text-primary-on-light;
-  }
-}
-
-.services-carousel-card.reverse {
-  background-color: $esds-color-background-dark-primary;
-}
-
 // Header
 .header {
   align-items: center;
@@ -553,25 +238,15 @@ p.small {
   justify-content: center;
 }
 
-.header-logo {
-  height: 30px
-}
-
 .header-logo svg {
   fill: $esds-color-text-primary-on-dark;
   height: 30px;
+  @media screen and (min-width: $tablet-width) {
+    height: 40px;
+  }
 }
 
 // Site Footer
-h5.eyebrow {
-  color: $esds-color-text-secondary-on-dark;
-  font-size: $eyebrow-medium;
-  font-weight: $esds-font-weight-semi-bold;
-  letter-spacing: 0.2em;
-  margin: 0 0 16px;
-  text-transform: uppercase;
-}
-
 .footer-sections {
   display: flex;
   flex-wrap: wrap;
@@ -717,7 +392,6 @@ h5.eyebrow {
 
   li {
     display: inline-block;
-    font-size: $body-medium;
     list-style: none;
     margin-bottom: 12px;
     position: relative;
@@ -727,95 +401,85 @@ h5.eyebrow {
   @media screen and (min-width: $tablet-width) {
     column-count: 3;
 
-    &.bio-client-list {
-      column-count: 4;
-    }
-
     li {
-      font-size: $body-medium;
       margin-bottom: 16px;
     }
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    li {
-      font-size: $body-large;
-    }
-  }
-}
-
-.client-list.homepage li {
-  @media screen and (min-width: $desktop-width) {
-    font-size: $body-medium;
-  }
-}
-
-.client-list-intro {
-  font-size: $body-medium;
-  @media screen and (min-width: $tablet-width) {
-    font-size: $body-large;
   }
 }
 
 // Bio Header
 .bio-header {
-  padding: 28px $space-inset-row-mobile 0;
 
-  h1 {
-    margin: 0;
-  }
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-top: 32px;
 
-  h2 {
-    color: $esds-color-text-secondary-on-dark;
-    font-size: $eyebrow-medium;
-    letter-spacing: 2px;
-    margin: 0;
-    max-width: 120px;
-    text-transform: uppercase;
-  }
-
-  img {
-    display: block;
-    margin: 0;
-    margin-left: auto;
-  }
-
-  .bio-header-inner {
-    min-height: 300px;
+  .bio-header_inner {
     position: relative;
   }
 
-  .bio-header-text {
+  .bio-header_text {
+    height: 290px;
     position: relative;
     z-index: 10;
   }
 
-  @media screen and (min-width: 620px) {
-    // This is a custom breakpoint that works for the names: Nathan Curtis, James Melzer, and Dan Brown
+  .bio-header_title {
+    margin: 0;
+  }
+
+  .bio-header_since {
+    max-width: 120px;
+  }
+
+  .bio-header_image {
+    bottom: 0;
+    display: block;
+    height: 229px;
+    position: absolute;
+    right: 16px;
+  }
+
+  @media screen and (min-width: 550px) {
     padding-top: 0;
 
-    img {
-      bottom: 0;
-      position: absolute;
-      right: 0;
+    .bio-header_text {
+      height: 270px;
+      padding-top: 90px;
     }
 
-    .bio-header-inner {
-      align-items: center;
-      display: flex;
-      justify-content: space-between;
-      margin: 0 auto;
-      max-width: $content-max-width;
-    }
-
-    h2 {
+    .bio-header_since {
       max-width: none;
+    }
+
+    .bio-header_image {
+      height: 240px;
     }
   }
 
   @media screen and (min-width: $tablet-width) {
-    padding-left: $space-inset-row-tablet;
-    padding-right: $space-inset-row-tablet;
+    padding-right: 64px;
+
+    .bio-header_text {
+      padding-top: 84px;
+    }
+
+    .bio-header_image {
+      height: 260px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-right: 96px;
+    
+    .bio-header_text {
+      height: 300px;
+      padding-top: 100px;
+    }
+
+    .bio-header_image {
+      height: 290px;
+    }
   }
 }
 
@@ -828,81 +492,92 @@ h5.eyebrow {
   }
 }
 
-// Row
-.row {
-  padding: $space-inset-row-mobile;
-  background-repeat: no-repeat;
-  background-size: cover;
+// Bio Thumbnail
+
+.thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.thumbnail {
+  display: block;
+  flex: 1 1 30%;
+  margin: 16px 32px 16px 0;
 
   @media screen and (min-width: $tablet-width) {
-    padding: $space-inset-row-tablet;
+    flex-basis: 25%;
   }
 
-  @media screen and (min-width: $desktop-width) {
-    padding: $space-inset-row-desktop;
-  }
-}
-
-.row-inner {
-  margin: 0 auto;
-  max-width: $content-max-width;
-}
-
-.row.reverse {
-  background: $esds-color-background-dark-primary;
-  color: $esds-color-text-primary-on-dark;
-
-  .secondary-text {
-    color: $esds-color-text-secondary-on-dark;
+  &:hover {
+    text-decoration: none;
   }
 
-  a:not(.button) {
-    color: $esds-color-text-link-on-dark;
+  &_image {
+    display: block;
+    margin: 0;
+    width: 100%;
+    object-fit: cover;
   }
 
-  svg {
-    fill: $esds-color-text-primary-on-dark;
+  &_image-wrap {
+    background: white;
+    border-radius: 16px;
+    display: flex;
+    height: 140px;
+    justify-content: center;
+    margin-bottom: 8px;
+    overflow: hidden; 
+
+    @media screen and (min-width: $tablet-width) {
+      height: 190px;
+      max-width: none;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      height: 220px;
+    }
   }
-}
 
-.row.reverse.brand {
-  background: $esds-color-brand;
-}
-
-.row.reverse.secondary {
-  background: $esds-color-background-dark-secondary;
-}
-
-.row.feature {
-  p:last-of-type {
+  &_name {
     margin-bottom: 0;
   }
 
-  // Bumps the <p> size of the row up to body-large at tablet width instead of desktop width
-  @media screen and (min-width: $tablet-width) {
-    p {
-      font-size: $body-large;
-    }
+  &_spacer {
+    flex: 1 1 30%;
+    height: 0;
+    margin: 0 32px 48px 0;
   }
 }
 
-.row.secondary {
-  background: $esds-color-background-light-secondary;
-}
+.bio-section {
+  &-row {
+    display: block;
+    @media screen and (min-width: $tablet-width) {
+      display: flex;
+    }
+  }
 
-// Hero Headers
-.row.row--design-systems-header {
-  background-image: url("/images/systems/systems-hero.png");
-}
+  margin: 0 0 16px;
 
-.row.row--user-experience-design-header {
-  background-image: url("/images/user-experience-header.png");
-}
+  @media screen and (min-width: $tablet-width) {
+    flex: 1 1 50%;
+    margin: 0 0 32px;
 
-.row.row--information-architecture-header {
-  background-image: url("/images/information-architecture-header.png");
-}
+    .dot-divider {
+      display: none;
+    }
+  }
 
+  ul {
+    margin: 0 0 24px;
+    padding: 0;
+    li {
+      list-style: none;
+      margin: 0 0 8px;
+    }
+  }
+}
 
 // Dot Divider
 .dot-divider {
@@ -910,7 +585,7 @@ h5.eyebrow {
   display: flex;
   height: 16px;
   justify-content: center;
-  margin: 0 0 16px;
+  margin: 16px 0;
   width: 100%;
 
   @media screen and (min-width: $tablet-width) {
@@ -931,230 +606,6 @@ h5.eyebrow {
     display: block;
     height: 4px;
     width: 4px;
-  }
-}
-
-// Unstyled List
-.unstyled {
-  margin: 0 0 24px;
-  padding: 0;
-  li {
-    font-size: $body-medium;
-    list-style: none;
-    margin: 0 0 8px;
-  }
-
-  @media screen and (min-width: $desktop-width) {
-    li {
-      font-size: $body-large;
-    }
-  }
-}
-
-.bio-section-row {
-  @media screen and (min-width: $tablet-width) {
-    display: flex;
-
-    .bio-section {
-      flex: 1 1 50%;
-
-      .dot-divider {
-        display: none;
-      }
-    }
-  }
-}
-
-// Bio Thumbnail
-
-$bio-thumbnail-two-column-breakpoint: 375px;
-.bio-thumbnail-spacer {
-  flex: 1 1 30%;
-  height: 0;
-  margin: 0 0 48px;
-}
-
-.bio-thumbnail {
-  display: block;
-  flex: 1 1 48%;
-  margin: 16px 0 0 0;
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  &:hover {
-    text-decoration: none;
-  }
-
-  img {
-    display: block;
-    margin: 0;
-    max-width: 100%;
-    object-fit: cover;
-  }
-
-  .bio-thumbnail-image-wrap {
-    background: white;
-    border-radius: 16px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 8px;
-    max-width: 375px;
-    overflow: hidden;
-  }
-
-  h3 {
-    color: $esds-color-text-link-on-light;
-  }
-
-  p,
-  .metadata {
-    margin: 0 0 4px;
-  }
-
-  .metadata {
-    color: $esds-color-text-secondary-on-light;
-  }
-
-  @media screen and (min-width: $bio-thumbnail-two-column-breakpoint) {
-    flex: 1 1 30%;
-    margin-right: 36px;
-
-    &:nth-child(even) {
-      margin-right: 0;
-    }
-  }
-
-  @media screen and (min-width: $tablet-width) {
-    margin-right: 36px;
-
-    &:nth-child(even) {
-      margin-right: 36px;
-    }
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
-
-    .bio-thumbnail-image-wrap {
-      height: 190px;
-      max-width: none;
-    }
-  }
-}
-
-.bio-thumbnails {
-  @media screen and (min-width: $bio-thumbnail-two-column-breakpoint) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
-
-
-// Media Thumbnails
-.media-flex-wrap {
-  @media screen and (min-width: 400px) {
-    display: flex;
-    flex-wrap: wrap;
-
-    .media-thumbnail-spacer {
-      flex: 1 1 calc(50% - 16px);
-      height: 0;
-    }
-
-    .media-thumbnail {
-      display: flex;
-      flex: 1 1 calc(50% - 16px);
-      flex-direction: column;
-      margin-right: 16px;
-
-      &:last-child,
-      &:nth-child(even) {
-        margin-right: 0;
-      }
-
-      img {
-        flex: 0 0 130px;
-        height: 130px;
-        object-fit: cover;
-      }
-    }
-  }
-
-  @media screen and (min-width: 640px) {
-    .media-thumbnail {
-      flex: 1 1 calc(33% - 16px);
-
-      &:nth-child(even) {
-        margin-right: 16px;
-      }
-
-      &:last-child,
-      &:nth-child(3n) {
-        margin-right: 0;
-      }
-
-      img {
-        flex: 0 0 150px;
-        height: 190px;
-      }
-    }
-  }
-
-  @media screen and (min-width: $tablet-width) {
-    &.stack-tablet {
-      display: block;
-
-      .media-thumbnail,
-      .media-thumbnail:last-child {
-        margin-right: 32px;
-
-        img {
-          max-width: 200px;
-        }
-      }
-    }
-
-    .media-thumbnail {
-      flex: 1 1 calc(33% - 32px);
-      margin-right: 32px;
-
-      &:nth-child(even) {
-        margin-right: 32px;
-      }
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
-}
-
-// Media Thumbnail
-.media-thumbnail {
-  color: $esds-color-text-link-on-light;
-  display: block;
-  margin: 0 0 16px;
-
-  &:hover {
-    text-decoration: none;
-  }
-
-  img {
-    border-radius: 9.25px;
-    display: block;
-    margin: 0 0 8px;
-    max-height: 200px;
-    max-width: 100%;
-    object-fit: cover;
-    width: 100%;
-  }
-
-  .secondary-text {
-    display: block;
-    font-size: $body-medium;
   }
 }
 
@@ -1186,3 +637,265 @@ $bio-thumbnail-two-column-breakpoint: 375px;
     }
   }
 }
+
+
+// Services Carousel
+.home-hero {
+  h2,
+  p {
+    color: $esds-color-text-primary-on-dark;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    margin: 0 auto;
+    width: $content-max-width;
+  }
+}
+
+.home-hero-controls {
+  padding: 48px 32px 36px;
+
+  @media screen and (min-width: $tablet-width) {
+    padding: 96px 64px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    flex: 0 0 434px;
+    padding: 130px 84px;
+    padding-left: 0;
+  }
+
+  button {
+    background: none;
+    border: 0;
+    color: $esds-color-text-secondary-on-dark;
+    cursor: pointer;
+    font-family: $esds-font-family-sans-serif;
+    font-size: 33px;
+    font-weight: $esds-font-weight-regular;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    transition: color $hover-transition-timing;
+
+    &:hover {
+      color: $esds-color-text-primary-on-dark;
+    }
+
+    &:focus {
+      outline: none;
+
+      &::after {
+        border: dashed 1px $esds-color-text-secondary-on-dark;
+        border-radius: 4px;
+        bottom: -3px;
+        content: "";
+        left: -3px;
+        position: absolute;
+        right: -3px;
+        top: -3px;
+      }
+    }
+
+    &.selected {
+      color: $esds-color-text-primary-on-dark;
+    }
+  }
+}
+
+.home-hero-selected-icon {
+  left: -24px;
+  position: absolute;
+  top: 2px; // vertical alignment of icon and text;
+  visibility: hidden;
+
+  svg {
+    fill: $esds-color-text-primary-on-dark;
+  }
+
+  .selected & {
+    visibility: visible;
+  }
+}
+
+.home-hero-logo {
+  margin: 0 0 32px;
+  text-align: center;
+
+  svg {
+    fill: $esds-color-text-primary-on-dark;
+    width: 246px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 48px;
+    text-align: left;
+  }
+}
+
+.home-hero-services-list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+
+  li {
+    margin: 0 0 24px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.home-hero-card {
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  background: $esds-color-background-light-primary;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+  padding: 32px;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  h2,
+  .home-hero-card-link-text,
+  p {
+    color: $esds-color-text-primary-on-dark;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.home-hero-card-link-text {
+  font-size: $body-medium;
+
+  .home-hero-card:hover & {
+    text-decoration: underline;
+  }
+}
+
+p.home-hero-tagline {
+  display: block;
+  margin: auto;
+  width: 370px;
+
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 48px;
+    width: 100%;
+  }
+}
+
+.home-hero-slides {
+  position: relative;
+
+  @media screen and (min-width: $desktop-width) {
+    flex: 0 0 50vw;
+    max-width: 700px; // Enable to prevent full-bleed right on the homepage carousel background images
+    width: 50vw;
+  }
+}
+
+.home-hero-slide {
+  align-items: center;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  padding: 48px;
+  position: relative;
+
+  @media screen and (min-width: $desktop-width) {
+    align-items: center;
+    aspect-ratio: initial;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity $hover-transition-timing,
+      visibility $hover-transition-timing 0s;
+    visibility: hidden;
+  }
+}
+
+.home-hero-slide.selected {
+  opacity: 1;
+  visibility: visible;
+}
+
+.home-hero-image-wrap {
+  bottom: 0;
+  left: 0;
+  max-width: none;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.home-hero-image {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.home-hero-card.teal {
+  background-color: rgba($esds-color-teal-28, 0.95);
+
+  .button:hover {
+    color: $esds-color-teal-28;
+  }
+}
+
+.home-hero-card.brand {
+  background-color: rgba($esds-color-brand, 0.95);
+
+  .button:hover {
+    color: $esds-color-brand;
+  }
+}
+
+.home-hero-card.secondary {
+  background-color: rgba($esds-color-background-light-secondary, 0.95);
+
+  h2,
+  p,
+  .home-hero-card-link-text {
+    color: $esds-color-text-primary-on-light;
+  }
+
+  .button {
+    color: $esds-color-text-primary-on-light;
+    border-color: $esds-color-text-primary-on-light;
+  }
+  .button:hover {
+    color: $esds-color-text-primary-on-dark;
+    border-color: $esds-color-text-primary-on-dark;
+    background-color: $esds-color-background-dark-primary;
+  }
+}
+
+.home-hero-card.reverse {
+  background-color: $esds-color-background-dark-primary;
+}
+

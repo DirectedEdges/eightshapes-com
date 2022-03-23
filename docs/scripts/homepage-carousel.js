@@ -1,5 +1,5 @@
 const carouselButtons = document.querySelectorAll("[data-slide-id]");
-const carouselSlides = document.querySelectorAll(".services-carousel-slide");
+const carouselSlides = document.querySelectorAll(".home-hero-slide");
 const slideIds = Array.from(carouselSlides).map((s) => s.id);
 const slidePauseDuration = 5000; // How long the auto-rotate should stay on a single slide, in milliseconds
 let slideIndex = 0;
