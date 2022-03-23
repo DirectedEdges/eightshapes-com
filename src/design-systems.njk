@@ -1,318 +1,118 @@
 ---
 title_tag : EightShapes > Design Systems
-body_classes : escom-page-type--marketing
 layout : base.njk
 ---
-{% import './_includes/escom.njk' as escom with context %}
-{% import '../node_modules/esds-library/components/esds.njk' as esds %}
-
-
-{{ esds.breadcrumb() }}
-
-{{ escom.title_row(
-    background_image="/images/systems/systems-hero.png",
-    heading="Design Systems",
-    logo=false,
-    inset_class="esds-row--very-tall-inset",
-    decks=[
-        "Improve <strong>cohesiveness</strong> and quicken <strong>speed-to-market</strong> with a design system that serves your teams.",
-        "It’s not <i>just</i> a style guide. Modern organizations invest in systems so they can deliver innovative and beautiful products, together as an organization. <a href='mailto:nathan@eightshapes.com' class='esds-link'>EightShapes can guide you</a>."
-    ]
-) }}
-
-{# What We Do #}
-
-{% call esds.row(background="light", class="esds-row--tall-inset") %}
-
-    <div class="escom-long-form-text">
-        <h2>What We Do</h2>
-        <p class="escom-long-form-text__lead">
-        With over 11 years of design systems experience with organizations large and small, EightShapes systems engagements take one of four forms:
+<div class="row reverse row--design-systems-header">
+    <div class="row-inner">
+        <h1>
+            Design Systems
+        </h1>
+        <p class="lead">
+            Make cohesive experiences at scale to improve efficiency and lift quality while serving a community.
+        </p>
+        <p class="lead">
+            EightShapes can guide you.
         </p>
     </div>
+</div>
 
-    {{ esds.tiles(
-        class="esds-tiles--secondary esds-tiles--2-column",
-        container="white",
-        items = [
-            {
-                heading: "Workshops",
-                description: "Gather a group to learn about systems, conduct hands-on activities, and direct a program.",
-                property: "1—2 days",
-                href: "/systems/workshops"
-            },
-            {
-                heading: "Coaching",
-                description: "Convene regularly for critique of design, code, doc, process, people...anything systems!",
-                property: "3-6 months"
-            },
-            {
-                heading: "Strategy & Planning",
-                description: "Research, architect, scope and plan a first – or next – generation of a design system program.",
-                property: "2-3 months"
-            },
-            {
-                heading: "Partner",
-                description: "Blend our experts into your team to design, code and document a system and operate it effectively.",
-                property: "3–12 months"
-            }
-        ]
-    ) }}
-{% endcall %}
-
-{# How We Team With You #}
-
-{% call esds.row(background="dark", class="esds-row--tall-inset") %}
-
-    <div class="escom-long-form-text">
-        <h2>How We Team With You</h2>
-        <p class="escom-long-form-text__lead">For strategy and assessments, you work with a system lead. For longer efforts, EightShapes' experts — a leader, a developer, and a designer if needed — blend with your <a href="https://medium.com/eightshapes-llc/designing-a-systems-team-d22f27a2d81d">systems team</a> as a squad together across <a href="https://medium.com/eightshapes-llc/releasing-design-systems-57fca91a23f6">releases</a>.</p>
-        <p><img src="/images/systems/Teams.png" alt="EightShapes and In-House staffing of designers, engineers, and product managers." style="width: 100%"></p>
-    </div>
-{% endcall %}
-
-{# Clients #}
-
-{% call esds.row(background="black", class="esds-row--tall-inset") %}
-    <div class="escom-long-form-text">
-        <h2>Design System Clients</h2>
-        <p class="escom-long-form-text__lead">
-            Since 2006, we've helped many clients form strategies, create visual languages, design, build and document libraries, and operate a program across releases.
+<div class="row">
+    <div class="row-inner">
+        <h2>Working with us</h2>
+        <p>
+            EightShapes customizes projects to suit client needs, budget, and ambition, combining activities like:
         </p>
+        <ul>
+            <li>
+                <strong>Office hours,</strong> getting advice via regular critique sessions
+            </li>
+            <li>
+                <strong>Workshops</strong> mixing lecture and activities to learn together
+            </li>
+            <li>
+                <strong>Projects</strong> to plan and work through challenges with you
+            </li>
+            <li>
+                <strong>Embedding</strong> on your team for longer periods
+            </li>
+        </ul>
     </div>
+</div>
 
-    <div class="escom-logo-grid">
-        <img src="/images/client_brands/logos/Google.png" alt="Google" class="logo-grid__image">
-        <img src="/images/client_brands/logos/Target.png" alt="Target" class="logo-grid__image">
-        <img src="/images/client_brands/logos/REI.png" alt="REI" class="logo-grid__image">
-        <img src="/images/client_brands/logos/Marriott.png" alt="Marriott" class="logo-grid__image">
-        <img src="/images/client_brands/logos/Morningstar.png" alt="Morningstar" class="logo-grid__image">
-        <img src="/images/client_brands/logos/Fidelity.png" alt="Fidelity" class="logo-grid__image">
-        <img src="/images/client_brands/logos/CapitalOne.png" alt="Capital One" class="logo-grid__image">
-        <img src="/images/client_brands/logos/Cisco.png" alt="Cisco" class="logo-grid__image">
-        <img src="/images/client_brands/logos/DiscoveryEducation.png" alt="Discovery Education" class="logo-grid__image">
-        <img src="/images/client_brands/logos/eBay.png" alt="eBay" class="logo-grid__image">
-        <img src="/images/client_brands/logos/NetApp.png" alt="NetApp" class="logo-grid__image">
-        <img src="/images/client_brands/logos/Yahoo.png" alt="Yahoo" class="logo-grid__image">
-        <img src="/images/client_brands/logos/Hudl.png" alt="Hudl" class="logo-grid__image">
-        <img src="/images/client_brands/logos/3M.png" alt="3M" class="logo-grid__image">
-        <img src="/images/client_brands/logos/Wikia.png" alt="Wikia" class="logo-grid__image">
-        <img src="/images/client_brands/logos/Sprint.png" alt="Sprint" class="logo-grid__image">
-        <img src="/images/client_brands/logos/NationalGeographic.png" alt="National Geographic" class="logo-grid__image">
-        <img src="/images/client_brands/logos/Sun.png" alt="Sun Microsystems" class="logo-grid__image">
+<div class="row secondary">
+    <div class="row-inner">
+        <h2>Our experts</h2>
+        <p>Our partner with a client’s design system team to learn, work and grow together. Our full-time staff is extended by partners also with deep design system experience.</p>
+
+        <div class="thumbnails">
+
+            <a href="/nathan-curtis" class="thumbnail">
+                <div class="thumbnail_image-wrap">
+                  <img class="thumbnail_image" src="/images/bios/bio-thumb-nathan-curtis.png" alt="Nathan Curtis">
+                </div>
+                <h4 class="thumbnail_name">Nathan Curtis</h4>
+                <p class="secondary-text">System Lead and Architect</p>
+            </a>
+
+            <a href="/james-melzer" class="thumbnail">
+                <div class="thumbnail_image-wrap">
+                  <img class="thumbnail_image" src="/images/bios/bio-thumb-james-melzer.png" alt="James Melzer">
+                </div>
+                <h4 class="thumbnail_name">James Melzer</h4>
+                <p class="secondary-text">System Lead and Architect</p>
+            </a>
+        </div>
     </div>
-{% endcall %}
+</div>
 
-{# Recent Systems #}
-
-{% call esds.row(background_only="light", class="esds-row--tall-inset") %}
-    <div class="escom-long-form-text">
-        <h2>Recent Systems</h2>
+<div class="row reverse">
+    <div class="row-inner">
+        <h2>Our experience</h2>
+        <p>
+            Since 2006, EightShapes has helped 50+ clients across plan, create, launch, operate and assess design systems. Past clients include:</p>
+        <ul class="client-list">
+            <li>Morningstar</li>
+            <li>REI</li>
+            <li>Target</li>
+            <li>Cisco</li>
+            <li>Riot Games</li>
+            <li>Twitter</li>
+            <li>World Bank</li>
+            <li>JDRF</li>
+            <li>Paylocity</li>
+            <li>Yahoo</li>
+            <li>Atlassian</li>
+            <li>Fidelity</li>
+            <li>Sun Microsystems</li>
+            <li>Autodesk</li>
+            <li>Google</li>
+            <li>eBay</li>
+            <li>Cvent</li>
+            <li>Amgen</li>
+            <li>Northwestern Mutual</li>
+            <li>Collibra</li>
+            <li>Verizon</li>
+            <li>Mariott</li>
+            <li>Capital One</li>
+            <li>Dropbox</li>
+            <li>Netapp</li>
+            <li>Salesforce</li>
+            <li>Discovery Education</li>
+            <li>Wells Fargo</li>
+            <li>Key Bank</li>
+            <li>Nationwide</li>
+        </ul>
     </div>
-    {% call escom.card_grid() %}
-        {{ esds.card(
-            container="white",
-            date="2017—18",
-            thumbnail_image="/images/systems/casestudies/Morningstar.png",
-            title="Morningstar",
-            description="MDS, components and charts for digital products.",
-            href="https://designsystem.morningstar.com",
-            cta="View the Library",
-            width="auto"
-        ) }}
-        {{ esds.card(
-            container="white",
-            date="2017",
-            thumbnail_image="/images/systems/casestudies/LUCI.png",
-            title="NetApp",
-            description="LUCI, for NetApp digital marketing and products.",
-            href="https://luci.netapp.com",
-            cta="View the Library",
-            width="auto"
-        ) }}
-        {{ esds.card(
-            container="white",
-            date="2017–18",
-            thumbnail_image="/images/systems/casestudies/Target.png",
-            title="Target",
-            description="Nicollet, for .com experiences including ecommerce and registry.",
-            width="auto"
-        ) }}
-        {{ esds.card(
-            container="white",
-            date="2016–17",
-            thumbnail_image="/images/systems/casestudies/Comet.png",
-            title="Discovery Education",
-            description="Comet, for educational digital apps and sites.",
-            href="https://comet.discoveryeducation.com",
-            cta="View the Library",
-            width="auto"
-        ) }}
-        {{ esds.card(
-            container="white",
-            date="2017",
-            thumbnail_image="/images/systems/casestudies/Indigo.png",
-            title="Indigo Design System",
-            description="A system for the Universal Service Administrative Co.",
-            href="https://indigo.universalservice.org",
-            cta="View the Library",
-            width="auto"
-        ) }}
-        {{ esds.card(
-            container="white",
-            date="2018",
-            thumbnail_image="/images/systems/casestudies/REI.png",
-            title="REI",
-            description="Cedar, a web-based system for rei.com apps and properties.",
-            width="auto"
-        ) }}
-    {% endcall %}
-{% endcall %}
+</div>
 
-{# How We Help #}
 
-{% call esds.row(background="white", class="esds-row--tall-inset") %}
-    <div class="escom-long-form-text">
-        <h2>Areas of Expertise</h2>
-        <p class="escom-long-form-text__lead">
-            Visit EightShapes' <a href="https://medium.com/eightshapes-llc/tagged/design-systems/">Medium.com Systems channel</a> to see how lift your system's design, code, documentation, processes, and strategy. Like these articles? Let us consult with you to provide deeper advice nuanced to your organization.
+<div class="row reverse brand">
+    <div class="row-inner">
+        <h2>Ready?</h2>
+        <p>
+            Whether to set up office hours, a workshop, or explore a larger project, contact EightShapes to get started.
         </p>
-        <h3>Strategy</h3>
+
+        <a class="button" href="mailto:info@eightshapes.com">Email Us</a>
     </div>
-    {% call escom.card_grid() %}
-        {{ esds.card(
-            container="light",
-            type="October 2017",
-            title="Defining Design Systems",
-            description="Getting to the root of what your system needs to be",
-            href="/articles/defining-design-systems",
-            thumbnail_image="/images/components/content_card/DefiningDesignSystems.png",
-            width="auto"
-        ) }}
-
-        {{ esds.card(
-            container="light",
-            type="August 2017",
-            title="Starting a Design System",
-            description="From pitching a strategy to launching 1.0.0 and beyond",
-            href="/articles/starting-a-design-system",
-            thumbnail_image="/images/components/content_card/StartingADesignSystem.png",
-            width="auto"
-        ) }}
-
-        {{ esds.card(
-            container="light",
-            type="February 2018",
-            title="System Intermediaries",
-            description="Relating to the distributors, translators, and themers in between",
-            href="/articles/design-systems-intermediaries",
-            thumbnail_image="/images/components/content_card/Intermediaries.png",
-            width="auto"
-        ) }}
-    {% endcall %}
-    <div class="escom-long-form-text">
-        <h3>Visual Style and UI Components</h3>
-    </div>
-    {% call escom.card_grid() %}
-        {{ esds.card(
-            container="light",
-            type="April 2016",
-            title="Color",
-            description="Exploring palettes, theming, tints and shades, and accessibility",
-            href="/articles/color-in-design-systems",
-            thumbnail_image="/images/components/content_card/Color.png",
-            width="auto"
-        ) }}
-
-        {{ esds.card(
-            container="light",
-            type="September 2016",
-            title="Space",
-            description="From basics to expanded concepts that apply space with intent",
-            href="/articles/space-in-design-systems",
-            thumbnail_image="/images/components/content_card/Space.png",
-            width="auto"
-        ) }}
-
-        {{ esds.card(
-            container="light",
-            type="April 2016",
-            title="Buttons",
-            description="12 tips for setting up a button system that endures",
-            href="/articles/buttons-in-design-systems",
-            thumbnail_image="/images/components/content_card/buttons.png",
-            width="auto"
-        ) }}
-    {% endcall %}
-    <div class="escom-long-form-text">
-        <h3>Documentation</h3>
-    </div>
-    {% call escom.card_grid() %}
-        {{ esds.card(
-            container="light",
-            type="April 2016",
-            title="Documenting Components",
-            description="Serve a system’s audiences with well-architected content",
-            href="/articles/documenting-components",
-            thumbnail_image="/images/components/content_card/DocumentingComponents.png",
-            width="auto"
-        ) }}
-
-        {{ esds.card(
-            container="light",
-            type="March 2018",
-            title="Component Examples",
-            description="Showcase your component’s quality, depth and versatility",
-            href="/articles/component-examples",
-            thumbnail_image="/images/components/content_card/ComponentExamples.png",
-            width="auto"
-        ) }}
-
-        {{ esds.card(
-            container="light",
-            type="June 2018",
-            title="Design Guidelines",
-            description="Write words and add pictures to empower designers",
-            href="/articles/component-design-guidelines",
-            thumbnail_image="/images/components/content_card/ComponentDesignGuidelines.png",
-            width="auto"
-        ) }}
-    {% endcall %}
-    <div class="escom-long-form-text">
-        <h3>People and Process</h3>
-    </div>
-    {% call escom.card_grid() %}
-        {{ esds.card(
-            container="light",
-            type="October 2015",
-            title="Team Models for Scale",
-            description="Evolving past overlords to centralize and federate design",
-            href="/articles/team-models-for-scaling-a-design-system",
-            thumbnail_image="/images/components/content_card/TeamModels.png",
-            width="auto"
-        ) }}
-
-        {{ esds.card(
-            container="light",
-            type="April 2017",
-            title="Designing a Systems Team",
-            description="Models to scale a design systems team to serve the enterprise",
-            href="/articles/designing-a-systems-team",
-            thumbnail_image="/images/components/content_card/DesigningaSystemsTeam.png",
-            width="auto"
-        ) }}
-
-        {{ esds.card(
-            container="light",
-            type="September 2017",
-            title="Features, Step-by-Step",
-            description="A workflow to discover, design, code and document a system",
-            href="/articles/design-system-features-step-by-step",
-            thumbnail_image="/images/components/content_card/DesignSystemFeaturesStepbyStep.png",
-            width="auto"
-        ) }}
-    {% endcall %}
-{% endcall %}
-
-{{ escom.cta(heading="Ready?", deck="Need a workshop? Want a coach? Ready for a system  check? Looking for a partner to design, code, and document your system with you?", button_text="Email Us", button_href="mailto:info@eightshapes.com") }}
-
+</div>

@@ -1,421 +1,237 @@
 ---
 title_tag : EightShapes > Dan Brown
-body_classes : escom-page-type--marketing
 layout : base.njk
 ---
-{% import './_includes/escom.njk' as escom with context %}
-{% import '../node_modules/esds-library/components/esds.njk' as esds %}
 
-{{ esds.breadcrumb(href="/") }}
-
-{% call esds.row(background_only="dark") %}
-    {{ escom.hero_profile(profile_index=1, prev_href="/nathan-curtis", next_href="/james-melzer") }}
-    <div class="esds-container--dark">
-        <div class="escom-long-form-text">
-            <p class="escom-long-form-text__p--l">
-                Since 1994, Dan’s focused on <a href="/design-discovery/">digital product discovery and definition</a>, user research, information architecture, content strategy and interaction design for content-heavy sites and complex web applications. He’s worked on teams large and small to perfect collaboration and productivity. In 2006, Dan co-founded EightShapes with <a href="/nathan-curtis">Nathan Curtis</a> to serve clients in healthcare, education, not-for-profit, and high-tech.
-            </p>
-        </div>
+<div class="row bio-header">
+  <div class="row-inner bio-header_inner">
+    <div class="bio-header_text">
+      <h1 class="bio-header_title">Dan Brown</h1>
+      <h5 class="eyebrow--large bio-header_since">EightShapes Since 2006</h5>
     </div>
-{% endcall %}
+    <img class="bio-header_image" src="/images/bios/bio-thumb-dan-brown.png" alt="Dan Brown Headshot">
+  </div>
+</div>
 
-{% call esds.row(background="white", class="esds-row--tall-inset") %}
+<div class="row reverse">
+  <div class="row-inner">
+    <p class="lead">
+    Together with <a href="/nathan-curtis/">Nathan Curtis</a>, Dan Brown founded EightShapes in 2006. Though specializing in <a href="/information-architecture/">information architecture</a>, <a href="/user-experience-design/">user research, and design discovery</a>, Dan’s career spans most aspects of UX design. 
+    </p>
+    <p class="lead">
+    Dan <a href="https://greenonions.com/books/home">wrote three books</a> on the practice of user experience, including <a href="https://greenonions.com/communicating-design-by-dan-brown-92fb8224512b">Communicating Design</a>, widely considered essential to the UX canon. He writes articles on the messier side of design, speaks widely on discovery and collaboration, and occasionally creates <a href="https://greenonions.com/games/home">decks of cards</a> to help teams work on their issues.
+    </p>
+  </div>
+</div>
 
-    {{ escom.tabs(tabs=[
-        {
-            label: 'Appearances',
-            content: appearances_tab_content,
-            active: true
-        },
-        {
-            label: 'Books',
-            content: books_tab_content
-        },
-        {
-            label: 'Webinars',
-            content: webinars_tab_content
-        },
-        {
-            label: 'Podcasts',
-            content: podcasts_tab_content
-        },
-        {
-            label: 'Games',
-            content: games_tab_content
-        }
-    ]) }}
+<div class="row secondary">
+  <div class="row-inner">
+    <h2 id="experience">Experience</h2>
+    <p>
+      Dan has lead design projects, consulted, and run workshops for:
+    </p>
+    <ul class="client-list bio-client-list">
+       <li>Travelers Insurance</li>
+      <li>Department of Energy</li>
+     	<li>College of the South</li>
+      <li>AstraZeneca</li>
+      <li>Alcatel-Lucent</li>
+      <li>Career Key</li>
+      <li>Riot Games</li>
+      <li>Creative Market</li>
+      <li>Delta Dental of Virginia</li>
+      <li>LinkedIn</li>
+      <li>Association of Social Work Boards</li>
+      <li>Marriott</li>
+      <li>RingCentral</li>
+      <li>StreetShares</li>
+      <li>Knowledge to Practice</li>
+      <li>Discovery</li>
+      <li>NetApp</li>
+      <li>Reveal News</li>
+      <li>Education Advisory Board</li>
+      <li>Houghton Mifflin Harcourt</li>
+      <li>Interfolio</li>
+      <li>PayPal</li>
+      <li>Sonatype</li>
+      <li>WebEx</li>
+      <li>World Bank</li>
+      <li>Netflix</li>
+      <li>American Psychological Association</li>
+      <li>American Chemical Society</li>
+      <li>NCR</li>
+      <li>Cisco</li>
+      <li>National Council of Architecture Review Boards</li>
+    </ul>
+  </div>
+</div>
 
-    {% call escom.tab_pane(label='appearances', active=true) %}
-            {{ escom.timeline(
-                class = "escom-timeline--years-only",
-                items = [
-                    {
-                        heading: "2019",
-                        content_right: [
-                            esds.list(
-                                class = "esds-list--large",
-                                items = [
-                                    {
-                                        title: "Confab, Minneapolis MN",
-                                        description: "April 2019 • Workshop",
-                                        href: "https://www.confabevents.com/speakers/dan-brown"
-                                    },
-                                    {
-                                        title: "Pixel Up! Cape Town South Africa",
-                                        description: "March 2019 • Workshop",
-                                        href: "https://pixelup.co.za/people/dan-brown"
-                                    }
-                                ]
-                            )
-                        ]
-                    },
-                    {
-                        heading: "2018",
-                        content_right: [
-                            esds.list(
-                                class = "esds-list--large",
-                                items = [
-                                    {
-                                        title: "Enterprise UX, San Franscisco",
-                                        description: "June 2018 • Workshop",
-                                        href: "https://rosenfeldmedia.com/eux2018/sessions/scalable-design-systems/"
-                                    },
-                                    {
-                                        title: "UXLX, Lisbon Portugal",
-                                        description: "May 2018 • Workshop",
-                                        href: ""
-                                    },
-                                    {
-                                        title: "IA Summit, Chicago IL",
-                                        description: "March 2018 • Talk",
-                                        href: "http://www.iasummit.org/talk/ia-lenses-new-tool-designing-digital-structures/"
-                                    },
-                                    {
-                                        title: "Convey UX, Seattle WA",
-                                        description: "February 2018 • Workshop",
-                                        href: "https://conveyux.com/post-event-resources-conveyux-seattle-18/"
-                                    }
-                                ]
-                            )
-                        ]
-                    },
-                    {
-                        heading: "2017",
-                        content_right: [
-                            esds.list(
-                                class = "esds-list--large",
-                                items = [
-                                    {
-                                        title: "Digital PM Summit, Las Vegas NV",
-                                        description: "October 2017 • Talk",
-                                        href: "https://drive.google.com/file/d/0Byqti55ngR7LSGZjemhZNks2YXc/view"
-                                    },
-                                    {
-                                        title: "EuroIA, Stockholm, Sweden",
-                                        description: "September 2017 • Workshop",
-                                        href: "http://2017.euroia.org/sessions/crafting-the-discovery-phase"
-                                    },
-                                    {
-                                        title: "UX Cambridge",
-                                        description: "September 2017 • Workshop",
-                                        href: "https://uxcambridge.net/2017/sessions/index.php?session=49"
-                                    },
-                                    {
-                                        title: "Interaction 17, New York NY",
-                                        description: "Feburary 2017 • Workshop",
-                                        href: "http://interaction17.ixda.org/speaker/dan-brown/index.html"
-                                    }
-                                ]
-                            )
-                        ]
-                    },
-                    {
-                        heading: "2016",
-                        content_right: [
-                            esds.list(
-                                class = "esds-list--large",
-                                items = [
-                                    {
-                                        title: "UI21, Boston, MA",
-                                        description: "November 2016 • Talk+Workshop",
-                                        href: "https://ui21.uie.com/"
-                                    },
-                                    {
-                                        title: "Fluxible, Waterloo ON",
-                                        description: "Septembver 2016 • Talk",
-                                        href: ""
-                                    },
-                                    {
-                                        title: "IA Summit",
-                                        description: "May 2016 • Talk",
-                                        href: ""
-                                    },
-                                    {
-                                        description: "Jan 2016 • Workshop",
-                                        title: "O'Reilly Design Conference, San Francisco",
-                                        href: "http://conferences.oreilly.com/design/ux-interaction-iot-us/public/schedule/detail/45380"
-                                    }
-                                ]
-                            )
-                        ]
-                    },
-                    {
-                        heading: "2015",
-                        content_right: [
-                            esds.list(
-                                class = "esds-list--large",
-                                items = [
-                                    {
-                                        eyebrow: "OCT 2015 / MIDWEST UX, PITTSBURGH",
-                                        title: "Crafting the Discovery Phase: First Steps in Effective UX Projects",
-                                        href: "http://midwestux2015.sched.org/event/4CCY/crafting-the-discovery-phase-first-steps-in-effective-ux-projects"
-                                    },
-                                    {
-                                        eyebrow: "OCT 2015 / UXDC, WASHINGTON, DC",
-                                        title: "The Four Essential Activities of Design Discovery",
-                                        href: "http://user-centered.org/uxdc/slides/craftingdiscovery.brown.talk-distro.pdf"
-                                    },
-                                    {
-                                        eyebrow: "MAY 2015 / 18F SPEAKER SERIES, WASHINGTON, DC",
-                                        title: "Stop Fighting, Start Designing",
-                                        href: "https://18f.gsa.gov/2015/05/27/dan-brown-conflict-in-design/"
-                                    },
-                                    {
-                                        eyebrow: "APR 2015 / IA SUMMIT 2015, MINNEAPOLIS",
-                                        title: "Crafting the Discovery Phase: First Steps in Effective UX Projects",
-                                        href: "http://www.iasummit.org/node/450"
-                                    }
-                                ]
-                            )
-                        ]
-                    },
-                    {
-                        heading: "2014",
-                        content_right: [
-                            esds.list(
-                                class = "esds-list--large",
-                                items = [
-                                    {
-                                        eyebrow: "MAR 2014 / IA SUMMIT 2014, SAN DIEGO",
-                                        title: "Collaboration Workshop"
-                                    },
-                                    {
-                                        eyebrow: "FEB 2014 / INTERACTION 14, AMSTERDAM",
-                                        title: "Stop Fighting, Start Designing",
-                                        href: "https://vimeo.com/86763622"
-                                    }
-                                ]
-                            )
-                        ]
-                    }
-                ]
-            ) }}
-    {% endcall %}
+<div class="row">
+  <div class="row-inner">
+    <h3 id="books">Books</h3>
+    <div class="thumbnails">
+      <a href="https://www.amazon.com/Communicating-Design-Developing-Documentation-Planning/dp/0321712463" class="thumbnail">
+        <div class="thumbnail_image-wrap"><img src="/images/communicating-design.jpg" role="presentation" class="thumbnail_image"></div>
+        <h4 class="thumbnail_name">Communicating Design</h4>
+        <span class="secondary-text">2010</span>
+      </a>
+      <a href="https://www.amazon.com/Designing-Together-collaboration-management-professionals/dp/0321918630/ref=sr_1_2" class="thumbnail">
+        <div class="thumbnail_image-wrap"><img src="/images/designing-together.jpg" role="presentation" class="thumbnail_image"></div>
+        <h4 class="thumbnail_name">Designing Together</h4>
+        <span class="secondary-text">2013</span>
+      </a>
+      <a href="https://www.amazon.com/Practical-Design-Discovery-Dan-Brown/dp/1937557448/ref=sr_1_1" class="thumbnail">
+        <div class="thumbnail_image-wrap"><img src="/images/practical-design-discovery.jpg" role="presentation" class="thumbnail_image"></div>
+        <h4 class="thumbnail_name">Practical Design Discovery</h4>
+        <span class="secondary-text">2017</span>
+      </a>
+      <div class="thumbnail_spacer"></div>
+    </div>
 
-    {% call escom.tab_pane(label='books') %}
-        {{ esds.list(
-            class = "esds-list--large",
-            items = [
-                {
-                    eyebrow: "2017 / A BOOK APART",
-                    title: "Practical Design Discovery",
-                    href: "https://abookapart.com/products/practical-design-discovery"
-                },
-                {
-                    eyebrow: "2013 / NEW RIDERS",
-                    title: "Designing Together: The Collaboration and Conflict Management Handbook for Creative Professionals",
-                    href: "http://designingtogetherbook.com/"
-                },
-                {
-                    eyebrow: "2011 / NEW RIDERS",
-                    title: "Communicating Design: Developing Web Site Documentation for Design and Planning",
-                    href: "http://amzn.to/1Re6tnk"
-                }
-            ]
-        ) }}
-    {% endcall %}
+    <div class="dot-divider"><span class="dot-divider-inner"><b></b><b></b><b></b></span></div>
 
-    {% call escom.tab_pane(label='webinars') %}
-        {{ esds.list(
-            class = "esds-list--large",
-            items = [
-                {
-                    eyebrow: "UIE",
-                    title: "IA Lenses: Helpful Perspectives for Information Architects",
-                    href: "https://aycl.uie.com/virtual_seminars/ia_lenses"
-                },
-                {
-                    eyebrow: "UIE",
-                    title: "Discovery: The First Step of the Design Process",
-                    href: "https://aycl.uie.com/virtual_seminars/discovery_the_first_step_of_the_design_process"
-                },
-                {
-                    eyebrow: "UIE",
-                    title: "Collaborative Design Discovery: Four Essential Techniques for Successful Product Definition",
-                    href: "https://aycl.uie.com/virtual_seminars/collaborative_design_discovery_four_essential_techniques"
-                },
-                {
-                    eyebrow: "DEC 2015 / O'REILLY",
-                    title: "Collaborative Design Discovery: Four Essential Techniques for Successful Product Definition",
-                    href: "http://www.oreilly.com/pub/e/3605"
-                },
-                {
-                    eyebrow: "UIE",
-                    title: "The Secrets of Great UX Documentation",
-                    href: "http://aycl.uie.com/virtual_seminars/the_secrets_of_great_ux_documentation"
-                },
-                {
-                    eyebrow: "UIE",
-                    title: "Plays Well With Others: Survival Skills for Design Teams",
-                    href: "http://aycl.uie.com/virtual_seminars/plays_well_with_others"
-                },
-                {
-                    eyebrow: "UIE",
-                    title: "Make Collaboration Happen, Even with Stubborn People",
-                    href: "http://aycl.uie.com/virtual_seminars/make_collaboration_happen_even_with_stubborn_people"
-                },
-                {
-                    eyebrow: "UIE",
-                    title: "Five Simple Principles to Improve Your Information Architecture",
-                    href: "http://aycl.uie.com/virtual_seminars/5_simple_principles_to_improve_your_information_architecture"
-                }
-            ]
-        ) }}
-    {% endcall %}
+    <div class="bio-section-row">
+      <div class="bio-section">
+        <h3 id="Blog">Blog</h3>
+        <p>
+          Dan posts articles to Medium.com on topics like <a href="https://medium.com/@brownorama/list/information-architecture-06be11032702">information architecture</a>, <a href="https://medium.com/eightshapes-llc/tagged/discovery">discovery</a>, and <a href="https://medium.com/@brownorama/list/collaboration-245ddf11772c">collaboration</a>.
+        </p>
+        <div class="dot-divider"><span class="dot-divider-inner"><b></b><b></b><b></b></span></div>
+      </div>
+      <div class="bio-section">
+        <h3 id="Podcast">Podcast</h3>
+        <p>
+          <a href="https://podcasts.apple.com/us/podcast/a-lens-a-day-conversations-about-information-architecture/id1586150744">Lenses on Information Architecture</a> is an ongoing interview series about the practice of information architecture.
+        </p>
+      </div>
+    </div>
 
-    {% call escom.tab_pane(label='podcasts') %}
-        {{ esds.list(
-            class = "esds-list--large",
-            items = [
-                {
-                    eyebrow: "JUN 2018 / VOICE OF DESIGN",
-                    title: "Episode 4: People Are the Problem",
-                    href: "https://vod.podbean.com/e/vod4-people-are-the-problem/"
-                },
-                {
-                    eyebrow: "MAY 2018 / ROSENFELD REVIEW PODCAST",
-                    title: "Facilitation for Designers: A Talk with Dan Brown",
-                    href: "https://soundcloud.com/rosenfeld-media/dan-brown-podcast"
-                },
-                {
-                    eyebrow: "OCT 2017 / UX PODCAST",
-                    title: "Discovery with Dan Brown",
-                    href: "https://uxpodcast.com/170-discovery-phase-dan-brown/"
-                },
-                {
-                    eyebrow: "SEP 2017 / CHICAGO CAMPS",
-                    title: "Curiosity, Skepticism, and Humility: The Right Mindset for Design Discovery",
-                    href: "http://podcasts.chicagocamps.org/ppp2017-1-dan-brown"
-                },
-                {
-                    eyebrow: "JUL 2017 / USER DEFENDERS PODCAST",
-                    title: "Practical Design Discovery with Dan Brown",
-                    href: "https://userdefenders.com/podcast/042-practical-design-discovery-with-dan-brown/"
-                },
-                {
-                    eyebrow: "MAY 2017 / NON-BREAKING SPACE SHOW",
-                    title: "Dan Brown",
-                    href: "https://goodstuff.fm/nbsp/120"
-                },
-                {
-                    eyebrow: "APR 2017 / AURELIUS PODCAST",
-                    title: "Episode 5 with Dan Brown on Design Discovery",
-                    href: "https://blog.aureliuslab.com/dan-brown-ux-design-discovery-and-product-design"
-                },
-                {
-                    eyebrow: "MAR 2017 / THE BIG WEB SHOW WITH JEFFREY ZELDMAN",
-                    title: "Practical Design Discovery with Dan Brown",
-                    href: "http://5by5.tv/bigwebshow/156"
-                },
-                {
-                    eyebrow: "NOV 2015 / O'REILLY",
-                    title: "Mindsets, Managing Designers, and Mastering Imposter Syndrome",
-                    href: "https://www.oreilly.com/ideas/dan-brown-on-mindsets-managing-designers-and-mastering-impostor-syndrome"
-                },
-                {
-                    eyebrow: "APR 2015 / MODEV",
-                    title: "Modev Presents: Dan Brown",
-                    href: "http://go.modev.com/blog/modev-presents-dan-brown"
-                },
-                {
-                    eyebrow: "NOV 2014 / DPM RADIO INTERVIEW",
-                    title: "Interview",
-                    href: "https://soundcloud.com/dpm-radio/interview-dan-brown"
-                },
-                {
-                    eyebrow: "MAY 2014 / UX DISCOVERY SESSION",
-                    title: "Dan Brown of EightShapes",
-                    href: "http://uxdiscoverysession.com/2014/05/11/ds029-dan-brown-eightshapes/"
-                },
-                {
-                    eyebrow: "DEC 2013 / PROJECT MANAGEMENT PODCAST",
-                    title: "Designing Together - Podcast Interview with Dan Brown",
-                    href: "http://www.projectmanagement.com/blog/Drunken-PM/7217/"
-                },
-                {
-                    eyebrow: "DEC 2013 / UX RADIO",
-                    title: "Surviving Design Projects",
-                    href: "http://ux-radio.com/2013/12/dan-brown/"
-                },
-                {
-                    eyebrow: "OCT 2013 / THE BIG WEB SHOW WITH JEFFREY ZELDMAN",
-                    title: "Works Well With Others",
-                    href: "http://www.muleradio.net/thebigwebshow/100/"
-                },
-                {
-                    eyebrow: "AUG 2013 / UIE BOOK CORNER",
-                    title: "Dan Brown's Designing Together",
-                    href: "https://www.uie.com/brainsparks/2013/08/27/uie-book-corner-dan-browns-designing-together/"
-                }
-            ]
-        ) }}
-    {% endcall %}
+    <div class="dot-divider"><span class="dot-divider-inner"><b></b><b></b><b></b></span></div>
 
-    {% call escom.tab_pane(label='games') %}
-        {{ esds.list(
-            class = "esds-list--large",
-            items = [
-                {
-                    eyebrow: "2013",
-                    title: "Surviving Design Projects: The Creative Team's Conflict Management Training Game",
-                    href: "https://greenonions.com/how-to-play-surviving-design-projects-5cbe8ac6acd1"
-                },
-                {
-                    eyebrow: "2018",
-                    title: "IA Lenses: Useful Perspectives for Information Architects",
-                    href: "https://medium.com/eightshapes-llc/information-architecture-lenses-8a3929a106dd"
-                }
-            ]
-        ) }}
-    {% endcall %}
-{% endcall %}
+    <h3 id="games">Games</h3>
 
-{% call esds.row(background="black", class="esds-row--tall-inset") %}
-    {% call escom.fifty_fifty(image="/images/discovery/practical-design-discovery-book.jpg", class="esds-container--dark") %}
-        <div class="escom-long-form-text">
-            <h3>Practical Design Discovery:<br/>The Book</h3>
-            <p>
-                A handbook for planning discovery projects, Practical Design Discovery provides a framework for helping teams understand the why and how of discovery. It uses this framework to clarify the role of different activities and outputs, walking readers through planning a discovery phase.
-            </p>
-            <p><a href="https://abookapart.com/products/practical-design-discovery">Learn More</a></p>
-        </div>
-    {% endcall %}
-    {% call escom.fifty_fifty(image="/images/components/fiftyfifty/SurvivingDesignProjects.png", class="esds-container--dark") %}
-        <div class="escom-long-form-text">
-            <h3>Surviving Design Projects:<br/>The Game</h3>
-            <p>
-                Teach creative teams how to deal with difficult situations with story-telling.
-            </p>
-            <p><a href="https://greenonions.com/how-to-play-surviving-design-projects-5cbe8ac6acd1">Learn More</a></p>
-        </div>
-    {% endcall %}
-    {% call escom.fifty_fifty(image="/images/components/fiftyfifty/IALenses.png", class="esds-container--dark") %}
-        <div class="escom-long-form-text">
-            <h3>Information Architecture Lenses:<br/>The Cards</h3>
-            <p>
-                Give designers different perspectives on their ideas to look at their decisions in a whole new way.
-            </p>
-            <p><a href="https://www.thegamecrafter.com/games/information-architecture-lenses">Learn More</a></p>
-        </div>
-    {% endcall %}
-{% endcall %}
+    <div class="thumbnails">
+      <a href="https://medium.com/eightshapes-llc/information-architecture-lenses-8a3929a106dd" class="thumbnail">
+        <div class="thumbnail_image-wrap"><img src="/images/information-architecture-lenses.jpg" role="presentation"></div>
+        <h4 class="thumbnail_name">Information Architecture Lenses</h4>
+      </a>
+      <a href="https://greenonions.com/how-to-play-surviving-design-projects-5cbe8ac6acd1" class="thumbnail">
+        <div class="thumbnail_image-wrap"><img src="/images/surviving-design-projects.jpg" role="presentation"></div>
+        <h4 class="thumbnail_name">Surviving Design Projects</h4>
+      </a>
+    </div>
+
+    <div class="dot-divider"><span class="dot-divider-inner"><b></b><b></b><b></b></span></div>
+
+    <div class="bio-section-row">
+      <div class="bio-section">
+        <h3 id="recent-talks-and-workshops">Recent Talks &amp; Workshops</h3>
+        <h4>2021</h4>
+        <ul>
+          <li>Interact Global</li>
+        </ul>
+        <h4>2020</h4></li>
+        <ul>
+          <li>UX Australia</li>
+        </ul>
+        <h4>2019</h4></li>
+        <ul>
+          <li>UX New Zealand, Wellington</li>
+          <li>Confab, Minneapolis MN</li>
+          <li>Enterprise Experience, San Francisco</li>
+          <li>Pixel Up! Cape Town South Africa</li>
+        </ul>
+        <h4>2018</h4></li>
+        <ul>
+          <li>Enterprise UX, San Francisco</li>
+          <li>Centre Center, Chattanooga</li>
+          <li>UXLX, Lisbon Portugal</li>
+          <li>IA Summit, Chicago IL</li>
+          <li>Convey UX, Seattle WA</li>
+        </ul>
+        <h4>2017</h4></li>
+        <ul>
+          <li>Digital PM Summit, Las Vegas NV</li>
+          <li>EuroIA, Stockholm, Sweden</li>
+          <li>UX Cambridge</li>
+          <li>Interaction 17, New York NY</li>
+        </ul>
+        <h4>2016</h4></li>
+        <ul>
+          <li>UI21, Boston, MA</li>
+          <li>Fluxible, Waterloo ON</li>
+          <li>IA Summit, Atlanta</li>
+          <li>O'Reilly Design Conference, San Francisco</li>
+        </ul>
+        <h4>2015</h4></li>
+        <ul>
+          <li>Midwest UX, Pittsburgh</li>
+          <li>UXDC, Washington, DC</li>
+          <li>18F Speaker Series, Washington, DC</li>
+          <li>IA Summit, Minneapolis</li>
+        </ul>
+        <h4>2014</h4></li>
+        <ul>
+          <li>IA Summit, San Diego</li>
+          <li>Interaction 14, Amsterdam</li>
+        </ul>
+        <div class="dot-divider"><span class="dot-divider-inner"><b></b><b></b><b></b></span></div>
+      </div>
+
+      <div class="bio-section">
+        <h3 id="other-appearances">Podcasts and Other Appearances</h3>
+        <h4>2022</h4>
+        <ul>
+          <li>Content Strategy Podcast</li>
+        </ul>
+        <h4>2021</h4>
+        <ul>
+          <li>The Informed Life</li>
+          <li>Saving UX</li>
+          <li>Brave UX</li>
+        </ul>
+        <h4>2018</h4>
+        <ul>
+          <li>Voice of Design - Episode 4: People Are the Problem</li>
+          <li>Rosenfeld Review Podcast - Facilitation for Designers: A Talk with Dan Brown</li>
+        </ul>
+        <h4>2017</h4>
+        <ul>
+          <li>UX Podcast - Discovery with Dan Brown</li>
+          <li>Chicago Camps - Curiosity, Skepticism, and Humility: The Right Mindset for Design Discovery</li>
+          <li>User Defenders Podcast - Practical Design Discovery with Dan Brown</li>
+          <li>Non-Breaking Space Show - Dan Brown</li>
+          <li>Aurelius Podcast - Episode 5 with Dan Brown on Design Discovery</li>
+          <li>The Big Web Show With Jeffrey Zeldman - Practical Design Discovery with Dan Brown</li>
+        </ul>
+        <h4>2015</h4>
+        <ul>
+          <li>O'Reilly - Mindsets, Managing Designers, and Mastering Imposter Syndrome</li>
+          <li>MODEV - Modev Presents: Dan Brown</li>
+        </ul>
+        <h4>2014</h4>
+        <ul>
+          <li>DPM Radio Interview - Interview</li>
+          <li>UX Discovery Session - Dan Brown of EightShapes</li>
+        </ul>
+        <h4>2013</h4>
+        <ul>
+          <li>Project Management Podcast - Designing Together - Podcast Interview with Dan Brown</li>
+          <li>UX Radio - Surviving Design Projects</li>
+          <li>The Big Web Show With Jeffrey Zeldman - Works Well With Others</li>
+          <li>UIE Book Corner - Dan Brown's Designing Together</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row reverse brand">
+    <div class="row-inner">
+        <h2>Ready?</h2>
+        <p>
+            Whether to set up office hours, a workshop, or explore a larger project, contact EightShapes to get started.
+        </p>
+
+        <a class="button" href="mailto:info@eightshapes.com">Email Us</a>
+    </div>
+</div>

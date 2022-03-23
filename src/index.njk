@@ -1,174 +1,163 @@
 ---
-title_tag : EightShapes
-body_classes : escom-page-type--marketing
+title_tag : EightShapes, a UX and Design Systems Agency
 layout : base.njk
+show_site_header: false
 ---
-{% import './_includes/escom.njk' as escom with context %}
-{% import '../node_modules/esds-library/components/esds.njk' as esds %}
-
-{{ escom.title_row(
-    class="escom-title-row--centered-deck esds-row--very-tall-inset",
-    logo=true,
-    background="brand",
-    decks=[
-        "EightShapes designs web-based products and systems that make for beautiful, usable, cohesive experiences."
-    ],
-    page_anchors=[
-      {
-        href: "#our-work",
-        label: "Our Work"
-      },
-      {
-        href: "#services",
-        label: "What We Do"
-      },
-      {
-        href: "#who-we-are",
-        label: "Who We Are"
-      },
-      {
-        href: "#contributions",
-        label: "Contributions"
-      }
-    ]
-
-) }}
-
-  <!-- What We Do -->
-  {% call esds.row(background="white", class="esds-row--tall-inset") %}
-    <div class="escom-long-form-text">
-      <h2 id="services">What We Do</h2>
-    </div>
-    {{ esds.tiles(
-        container="light",
-        items = [
-            {
-                heading: "Discovery",
-                description: "Align around a shared product vision through design principles, customer insights, prototyped concepts.",
-                property: "Includes brainstorming, workshops, prototyping, planning, and usability research",
-                href: "/design-discovery/"
-            },
-            {
-                heading: "Design & Front End Dev",
-                description: "Deliver end-to-end UX, visual design, and front-end style guides so your team can build an experience.",
-                property: "Includes UX design, information architecture, visual design, front-end dev, and research"
-            },
-            {
-                heading: "Systems",
-                description: "Design, code, and document systems so your teams can make innovative, beautiful experiences together.",
-                property: "Includes strategy, design, code, doc, coaching, assessments, and workshops",
-                href: "/design-systems/"
-            }
-        ]
-    ) }}
-  {% endcall %}
-
-  <!-- Our Work -->
-  {% call esds.row(background_only="dark", class="esds-row--tall-inset") %}
-    <div class="esds-container--dark">
-        <div class="escom-long-form-text">
-            <h2 id="our-work">Our Work</h2>
-        </div>
-    </div>
-    {% call escom.card_grid() %}
-        {{ esds.card(
-            container="white",
-            type="Case Study",
-            title="Sonatype Product Design",
-            href="/case-studies/sonatype",
-            thumbnail_image="/images/casestudies/case-study-thumbnail-sonatype.png",
-            width="auto"
-        ) }}
-
-        {{ esds.card(
-            container="white",
-            type="Case Study",
-            title="NCARB Product Design",
-            href="/case-studies/ncarb",
-            thumbnail_image="/images/casestudies/case-study-thumbnail-ncarb.png",
-            width="auto"
-        ) }}
-
-        {{ esds.card(
-            container="white",
-            type="Case Study",
-            title="AACT Design Strategy",
-            href="/case-studies/aact",
-            thumbnail_image="/images/casestudies/case-study-thumbnail-aact.png",
-            width="auto"
-        ) }}
-
-        {{ esds.card(
-            container="white",
-            date="Design System",
-            thumbnail_image="/images/systems/casestudies/Morningstar.png",
-            title="Morningstar, MDS",
-            description="Style, UI components and charts for digital products.",
-            href="https://designsystem.morningstar.com",
-            width="auto"
-        ) }}
-
-        {{ esds.card(
-            container="white",
-            date="Design System",
-            thumbnail_image="/images/systems/casestudies/REI.png",
-            title="REI's Cedar",
-            description="A web-based system for rei.com apps and properties.",
-            width="auto"
-        ) }}
-
-        {{ esds.card(
-            container="white",
-            date="Design System",
-            thumbnail_image="/images/systems/casestudies/Comet.png",
-            title="Discovery Ed Comet",
-            description="A system for educational digital apps and sites.",
-            href="http://comet.discoveryeducation.com",
-            width="auto"
-        ) }}
-    {% endcall %}
-  {% endcall %}
-
-{# Clients #}
-
-{% call esds.row(background="black", class="esds-row--tall-inset") %}
-    <div class="escom-long-form-text">
-        <h2>Our Clients</h2>
-        <p class="escom-long-form-text__lead">Since 2006, EightShapes has served large enterprises, small startups, non-profit associations, and federal government clients.</p>
-    </div>
-    <div class="escom-logo-grid">
-        <img src="/images/client_brands/logos/Google.png" alt="Google" class="logo-grid__image">
-        <img src="/images/client_brands/logos/Target.png" alt="Target" class="logo-grid__image">
-        <img src="/images/client_brands/logos/REI.png" alt="REI" class="logo-grid__image">
-        <img src="/images/client_brands/logos/Marriott.png" alt="Marriott" class="logo-grid__image">
-        <img src="/images/client_brands/logos/Morningstar.png" alt="Morningstar" class="logo-grid__image">
-        <img src="/images/client_brands/logos/Fidelity.png" alt="Fidelity" class="logo-grid__image">
-        <img src="/images/client_brands/logos/CapitalOne.png" alt="Capital One" class="logo-grid__image">
-        <img src="/images/client_brands/logos/Cisco.png" alt="Cisco" class="logo-grid__image">
-        <img src="/images/client_brands/logos/DiscoveryEducation.png" alt="Discovery Education" class="logo-grid__image">
-        <img src="/images/client_brands/logos/eBay.png" alt="eBay" class="logo-grid__image">
-        <img src="/images/client_brands/logos/NetApp.png" alt="NetApp" class="logo-grid__image">
-        <img src="/images/client_brands/logos/Yahoo.png" alt="Yahoo" class="logo-grid__image">
-        <img src="/images/client_brands/logos/Hudl.png" alt="Hudl" class="logo-grid__image">
-        <img src="/images/client_brands/logos/3M.png" alt="3M" class="logo-grid__image">
-        <img src="/images/client_brands/logos/Wikia.png" alt="Wikia" class="logo-grid__image">
-        <img src="/images/client_brands/logos/Sprint.png" alt="Sprint" class="logo-grid__image">
-        <img src="/images/client_brands/logos/NationalGeographic.png" alt="National Geographic" class="logo-grid__image">
-        <img src="/images/client_brands/logos/Sun.png" alt="Sun Microsystems" class="logo-grid__image">
-    </div>
-{% endcall %}
-
-  <!-- People -->
-  {% call esds.row(background="light", class="esds-row--tall-inset") %}
-    <div class="escom-long-form-text">
-      <h2 id="who-we-are">Who We Are</h2>
-      <p class="escom-long-form-text__lead">
-        Tenacious in solving complex design problems, we believe successful projects depend on transparency, discipline, cooperation, and Post-Its.
+<div class="site-header">
+  <div class="home-hero">
+    <div class="home-hero-controls">
+      <div class="home-hero-logo">
+      {% include './_icons/eightshapes-logo.svg' %}
+      </div>
+      <p class="home-hero-tagline lead">
+        We design digital products and systems that make for clear, usable, beautiful, and cohesive experiences.
       </p>
+      <ul class="home-hero-services-list">
+        <li>
+          <button class="selected" data-slide-id="information-architecture">
+            <span class="home-hero-selected-icon">{% include './_icons/angle-right.svg' %}</span>
+            Information Architecture
+          </button>
+        </li>
+        <li>
+          <button data-slide-id="user-experience-design">
+            <span class="home-hero-selected-icon">{% include './_icons/angle-right.svg' %}</span>
+            User Experience Design
+          </button>
+        </li>
+        <li>
+          <button data-slide-id="design-systems">
+            <span class="home-hero-selected-icon">{% include './_icons/angle-right.svg' %}</span>
+            Design Systems
+          </button>
+        </li>
+      </ul>
     </div>
-    {{ escom.bio_thumbnails() }}
-  {% endcall %}
+    <div class="home-hero-slides">
+
+      <div id="information-architecture" class="home-hero-slide information-architecture selected">
+        <div class="home-hero-image-wrap">
+          <img src="/images/homepage/information_architecture.jpg" role="presentation" class="home-hero-image"/>
+        </div>
+        <a href="/information-architecture" class="home-hero-card teal">
+          <div class="home-hero-card-inner">
+            <h2 class="eyebrow eyebrow--large">Information Architecture</h2>
+            <p>We’ve been organizing information for 25 years. We’ve categorized it all -- from storage devices to childrens books.</p>
+            <span class="button">Learn more</span>
+          </div>
+        </a>
+      </div>
+
+      <div  id="user-experience-design" class="home-hero-slide user-experience">
+        <div class="home-hero-image-wrap">
+          <img src="/images/homepage/user_experience_design.jpg" role="presentation" class="home-hero-image"/>
+        </div>
+        <a href="/user-experience-design" class="home-hero-card secondary">
+          <div class="home-hero-card-inner">
+            <h2 class="eyebrow eyebrow--large">User Experience Design</h2>
+            <p>Discover user needs and design end-to-end journeys that enable users and businesses to succeed.</p>
+            <span class="button">Learn more</span>
+          </div>
+        </a>
+      </div>
+
+      <div id="design-systems" class="home-hero-slide design-systems">
+        <div class="home-hero-image-wrap">
+          <img src="/images/homepage/design_systems.jpg" role="presentation" class="home-hero-image"/>
+        </div>
+        <a href="/design-systems" class="home-hero-card brand">
+          <div class="home-hero-card-inner">
+            <h2 class="eyebrow eyebrow--large">Design Systems</h2>
+            <p>Build a foundation of style and components to scale design and development across an enterprise.</p>
+            <span class="button">Learn more</span>
+          </div>
+        </a>
+      </div>
 
 
-  <!-- Page CTA -->
-  {{ escom.cta(heading="Ready?", deck="Crafting a strategy? Working on a UX design? Starting a design system?", button_text="Email Us", button_href="mailto:info@eightshapes.com") }}
+    </div>
+  </div>
+</div>
+
+<div class="row reverse secondary">
+  <div class="row-inner">
+    <h2>Our experience</h2>
+    <p>
+      EightShapes serves clients across many industries and domains:
+    </p>
+    <ul class="client-list homepage">
+      <li>Marriott</li>
+      <li>Salesforce</li>
+      <li>Sonatype</li>
+      <li>Cisco</li>
+      <li>Atlassian</li>
+      <li>Travelers Insurance</li>
+      <li>Alcatel-Lucent</li>
+      <li>National Council of Architecture Review Boards</li>
+      <li>Twitter</li>
+      <li>Ritz-Carlton</li>
+      <li>NetApp</li>
+      <li>Cvent</li>
+      <li>Rally Health</li>
+      <li>World Bank</li>
+      <li>Verizon</li>
+      <li>Juvenile Diabetes Research Foundation</li>
+      <li>Morningstar</li>
+      <li>Google</li>
+      <li>Capital One</li>
+      <li>Target</li>
+      <li>AstraZeneca</li>
+      <li>Houghton Mifflin Harcourt</li>
+      <li>PayPal</li>
+      <li>American Chemical Society</li>
+    </ul>
+  </div>
+</div>
+
+<div class="row secondary">
+  <div class="row-inner">
+    <h2>Who we are</h2>
+    <p>
+      Tenacious in solving complex problems, we believe successful projects depend on transparency, discipline, and cooperation.
+    </p>
+    <div class="thumbnails">
+        <a href="/dan-brown" class="thumbnail">
+            <div class="thumbnail_image-wrap">
+              <img class="thumbnail_image" src="/images/bios/bio-thumb-dan-brown.png" alt="Dan Brown">
+            </div>
+            <h4 class="thumbnail_name">Dan Brown</h4>
+            <p class="secondary-text">Founder</p>
+        </a>
+
+        <a href="/nathan-curtis" class="thumbnail">
+            <div class="thumbnail_image-wrap">
+              <img class="thumbnail_image" src="/images/bios/bio-thumb-nathan-curtis.png" alt="Nathan Curtis">
+            </div>
+            <h4 class="thumbnail_name">Nathan Curtis</h4>
+            <p class="secondary-text">Founder</p>
+        </a>
+
+        <a href="/james-melzer" class="thumbnail">
+            <div class="thumbnail_image-wrap">
+              <img class="thumbnail_image" src="/images/bios/bio-thumb-james-melzer.png" alt="James Melzer">
+            </div>
+            <h4 class="thumbnail_name">James Melzer</h4>
+            <p class="secondary-text">Sr. Director, UX</p>
+        </a>
+        <div class="thumbnail_spacer"></div>
+    </div>
+  </div>
+</div>
+
+<div class="row reverse brand">
+    <div class="row-inner">
+        <h2>Ready?</h2>
+        <p>
+            Whether to set up office hours, a workshop, or explore a larger project, contact EightShapes to get started.
+        </p>
+
+        <a class="button" href="mailto:info@eightshapes.com">Email Us</a>
+    </div>
+</div>
+
+<script src="/scripts/homepage-carousel.js"></script>

@@ -1,5 +1,5 @@
-{% import '../../node_modules/esds-library/components/esds.njk' as esds %}
-{% import '../_includes/escom.njk' as escom with context %}
+{% set show_site_header = show_site_header | default(true) %}
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,55 +14,79 @@
         <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
         <meta http-equiv="cleartype" content="on">
 
-        {% if layout == 'article.njk' %}
-            <title>Eightshapes > @components > {{ title }}</title>
-            <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
-            <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:700&display=swap" rel="stylesheet">
-            <!-— facebook open graph tags -->
-            <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://www.eightshapes.com{{ page.url }}" />
-            <meta property="og:title" content="{{ title }}" />
-            <meta property="og:description" content="{{ deck }}" />
-            {% if masthead %}
-            <meta property="og:image" content="https://eightshapes.com//images/articles/{{ title_image_path }}/masthead.png" />
-            {% endif %}
+        <title>{{ title_tag | default(global.title_tag) }}</title>
 
-            <!-— twitter card tags additive with the og: tags -->
-            <meta name="twitter:card" content="summary_large_image">
-            <meta name="twitter:domain" value="eightshapes.com" />
-            <meta name="twitter:title" value="{{ title }}" />
-            <meta name="twitter:description" value="{{ deck }}" />
-            {% if masthead %}
-            <meta name="twitter:image" content="https://eightshapes.com//images/articles/{{ title_image_path }}/masthead.png" />
-            {% endif %}
-            <meta name="twitter:url" value="https://www.eightshapes.com{{ page.url }}" />
-
-            <!-- No Shadow DOM, so link directly to styles -->
-            <link rel="stylesheet" href="/dependencies/esds-code-snippet.css"/>
-
-            <!-- Separate webcomponents polyfill bundle for Edge, IE11, etc. -->
-            <script type="text/javascript" src="/dependencies/custom-elements.min.js"></script>
-
-            <!-- ESDS Doc components -->
-            <!-- The ESM "vanilla" version of the component for FF, Safari, Chrome and Edge -->
-            <script type="module" src="/dependencies/esds-code-snippet-web-component.js"></script>
-
-            <!-- A babel-compiled version of the component for IE11 -->
-            <script nomodule type="text/javascript" src="/dependencies/esds-code-snippet-legacy.js"></script>
-        {% else %}
-            <title>{{ title_tag | default(global.title_tag) }}</title>
-        {% endif %}
-
-        <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="/dependencies/esds.css"> <!-- copied from esds-library dependency -->
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/styles/escom.css">
     </head>
     <body class="{{ body_classes }}">
+
+        {% if show_site_header %}
+        {# Site Header #}
+        <a class="header" href="/">
+            <div class="header-logo">{% include '../_icons/eightshapes-logo.svg' %}</div>
+        </a>
+        {% endif %}
+
+        {# Page content is injected below #}
         {{ content | safe }}
-        {{ escom.site_footer() }}
-        <script src="/scripts/svg4everybody.js"></script>
+
+
+        {# Site Footer #}
+        <div class="row reverse">
+            <div class="row-inner">
+                <div class="footer-sections">
+                    <div class="footer-section footer-section--logo">
+                        {% include '../_icons/eightshapes-logo.svg' %}
+                    </div>
+                    <div class="footer-section footer-section--tools">
+                        <h5 class="eyebrow eyebrow--medium">Play</h5>
+                        <div class="footer-tools">
+                            <a class="footer-tools_link" href="https://contrast-grid.eightshapes.com">
+                                <h5 class="footer-tools_link-heading">Visual Difference</h5>
+                                <p class="small">Compare snapshots of Figma objects as they change.</p>
+                            </a>
+                            <a class="footer-tools_link" href="https://contrast-grid.eightshapes.com">
+                                <h5 class="footer-tools_link-heading">Contrast Grid</h5>
+                                <p class="small">Check many, many color values for accessible contrast.</p>
+                            </a>
+                            <a class="footer-tools_link" href="https://text-crop.eightshapes.com">
+                                <h5 class="footer-tools_link-heading">Text Crop</h5>
+                                <p class="small">Remove pesky space above and below text due to line height.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-section footer-section--connect">
+                        <h5 class="eyebrow eyebrow--medium">Connect</h5>
+                        <p><a href="https://twitter.com/eightshapes">Twitter</a></p>
+                        <p><a href="https://www.linkedin.com/company/eightshapes-llc">LinkedIn</a></p>
+                    </div>
+                    <div class="footer-section footer-section--read">
+                        <h5 class="eyebrow eyebrow--medium">Read</h5>
+                        <p><a href="https://medium.com/eightshapes-llc/tagged/discovery">Discovery</a></p>
+                        <p><a href="https://medium.com/eightshapes-llc/tagged/design">Design</a></p>
+                        <p><a href="https://medium.com/@nathanacurtis/lists">Design Systems</a></p>
+                    </div>
+                    <div class="footer-section footer-section--contact">
+                        <h5 class="eyebrow eyebrow--medium">Contact</h5>
+                        <p>
+                            12805 Misty Creek Ln<br/>
+                            Fairfax VA 22033
+                            <br/>
+                            <br/>
+                            (703) 296-8831<br/>
+                            <a href="mailto:info@eightshapes.com">info@eightshapes.com</a>
+                        </p>
+
+                        <p class="secondary-text">
+                            &copy;2022 EightShapes LLC.
+                            <br/>
+                            All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
         {% include "_google_analytics.html" %}
-        <!-- GENERATED WITH 11ty -->
-        <!-- Testing 2022 -->
     </body>
 </html>

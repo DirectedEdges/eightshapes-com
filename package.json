@@ -4,31 +4,27 @@
   "description": "Marketing site",
   "main": "index.html",
   "scripts": {
-    "start": "npm-run-all build --parallel start:11ty watch:concatenate-component-macros watch:styles",
+    "start": "npm-run-all build --parallel start:11ty watch:styles",
     "start:11ty": "npx @11ty/eleventy --serve",
     "start:11ty-debug": "DEBUG=Eleventy* npx @11ty/eleventy --serve",
-    "build": "npm-run-all clean:site concatenate-component-macros build:11ty build:styles",
+    "build": "npm-run-all clean:site build:11ty build:styles",
     "build:11ty": "npx @11ty/eleventy",
     "build:styles": "node build-tasks/compile-sass.js",
     "clean:site": "npx trash docs/*",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "migrate-articles-to-md": "node build-tasks/article-njk-to-md-migration.js",
-    "concatenate-component-macros": "node build-tasks/concatenate-component-macros.js",
-    "watch:concatenate-component-macros": "chokidar \"src/_components/**/*.njk\" -c \"npm run concatenate-component-macros\"",
     "watch:styles": "chokidar \"src/_styles/**/*.scss\" -c \"npm run build:styles\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://nathanacurtis@github.com/EightShapes/eightshapes_com.git"
   },
-  "authors": "Nathan Curtis, Dan Brown, Chris Detzi, James Melzer, Kevin Powell",
+  "authors": "Nathan Curtis, Dan Brown, James Melzer, Kevin Powell",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/EightShapes/eightshapes_com/issues"
   },
   "homepage": "http://eightshapes.com",
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy": "^1.0.0",
     "autoprefixer": "^9.8.0",
     "chokidar-cli": "^2.1.0",
     "del": "^3.0.0",
@@ -50,8 +46,6 @@
     "trash-cli": "^3.0.0"
   },
   "dependencies": {
-    "@eightshapes/esds-code-snippet": "^0.10.2",
-    "@webcomponents/webcomponentsjs": "^2.4.1",
     "esds-library": "^0.11.0"
   }
 }
