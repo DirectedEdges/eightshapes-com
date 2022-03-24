@@ -229,41 +229,76 @@ p.small          { @include typography(18px,18px,20px,0 0 16px); }
     width: 100vw;
   }
 }
-// Header
+
 .header {
   align-items: center;
   background: $esds-color-brand;
   display: flex;
   height: 100px;
   justify-content: center;
-}
 
-.header-logo svg {
-  fill: $esds-color-text-primary-on-dark;
-  height: 30px;
-  @media screen and (min-width: $tablet-width) {
-    height: 40px;
+  &-logo svg {
+    fill: $esds-color-text-primary-on-dark;
+    height: 30px;
+    @media screen and (min-width: $tablet-width) {
+      height: 40px;
+    }
   }
 }
 
-// Site Footer
-.footer-sections {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+.footer-section {
 
-.footer-section--logo,
-.footer-section--tools,
-.footer-section--connect,
-.footer-section--read,
-.footer-section--contact {
-  margin-bottom: 32px;
-  width: 100%;
-}
+  // Sections container
+  &s {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-.footer-section--logo svg {
-  height: 30px;
+  &_logo,
+  &_tools,
+  &_connect,
+  &_read,
+  &_contact {
+    margin-bottom: 32px;
+    width: 100%;
+  }
+
+  &_logo svg {
+    height: 30px;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    &_tools {
+      flex: 0 0 100%;
+      width: 100%;
+    }
+
+    &_contact {
+      flex: 1 1 40%;
+      order: 2;
+      margin-bottom: 0;
+    }
+
+    &_connect {
+      flex: 1 1 20%;
+      order: 3;
+      margin-bottom: 0;
+    }
+
+    &_read {
+      flex: 1 1 20%;
+      order: 4;
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    &_tools {
+      flex: 1 1 100%;
+      width: auto;
+    }
+  }
 }
 
 .footer-tools_link {
@@ -300,37 +335,7 @@ p.small          { @include typography(18px,18px,20px,0 0 16px); }
   }
 }
 
-@media screen and (min-width: $tablet-width) {
-  .footer-section--tools {
-    flex: 0 0 100%;
-    width: 100%;
-  }
-
-  .footer-section--contact {
-    flex: 1 1 40%;
-    order: 2;
-    margin-bottom: 0;
-  }
-
-  .footer-section--connect {
-    flex: 1 1 20%;
-    order: 3;
-    margin-bottom: 0;
-  }
-
-  .footer-section--read {
-    flex: 1 1 20%;
-    order: 4;
-    margin-bottom: 0;
-  }
-}
-
 @media screen and (min-width: $desktop-width) {
-  .footer-section--tools {
-    flex: 1 1 100%;
-    width: auto;
-  }
-
   .footer-tools {
     display: flex;
     justify-content: space-between;
@@ -492,8 +497,6 @@ p.small          { @include typography(18px,18px,20px,0 0 16px); }
   }
 }
 
-// Bio Thumbnail
-
 .thumbnails {
   display: flex;
   flex-wrap: wrap;
@@ -575,6 +578,19 @@ p.small          { @include typography(18px,18px,20px,0 0 16px); }
     li {
       list-style: none;
       margin: 0 0 8px;
+    }
+  }
+}
+
+.content-tiles {
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+
+    &__tile {
+      flex: 1 1 30%;
+      margin: 0 32px 16px 0;
     }
   }
 }
@@ -796,7 +812,11 @@ p.small          { @include typography(18px,18px,20px,0 0 16px); }
 p.home-hero-tagline {
   display: block;
   margin: auto;
-  width: 370px;
+  width: 310px;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 340px;
+  }
 
   @media screen and (min-width: $desktop-width) {
     margin-bottom: 48px;
