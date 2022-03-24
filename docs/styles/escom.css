@@ -654,6 +654,12 @@ p.small {
   margin: 0 0 8px;
 }
 
+.content-tiles__tile {
+  margin-bottom: 16px;
+}
+.content-tiles__tile:last-child {
+  margin-bottom: 0;
+}
 @media screen and (min-width: 767px) {
   .content-tiles {
     display: flex;
@@ -663,7 +669,7 @@ p.small {
   }
   .content-tiles__tile {
     flex: 1 1 30%;
-    margin: 0 32px 16px 0;
+    margin-right: 32px;
   }
 }
 
