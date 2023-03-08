@@ -24,7 +24,7 @@
   },
   "homepage": "http://eightshapes.com",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy": "^2.0.0",
     "autoprefixer": "^9.8.0",
     "chokidar-cli": "^2.1.0",
     "del": "^3.0.0",
