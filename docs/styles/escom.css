@@ -328,6 +328,19 @@ p.small {
   background-image: url("/images/information-architecture-header.png");
 }
 
+.home-closing {
+  background: #0d0d0d;
+}
+.home-closing p {
+  color: white;
+}
+.home-closing a {
+  color: #f77647;
+}
+.home-closing a:hover {
+  color: #f77647;
+}
+
 .site-header {
   background: #262626;
 }

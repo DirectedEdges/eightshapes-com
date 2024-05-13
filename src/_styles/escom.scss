@@ -221,6 +221,24 @@ p.small          { @include typography(18px,18px,20px,0 0 16px); }
 }
 
 // Homepage header
+.home-closing {
+  background: $esds-color-background-dark-secondary;
+
+  p {
+    color: white;
+  }
+
+  a {
+    color: #f77647;
+    // text-decoration: underline;
+  }
+  
+  a:hover {
+    color: #f77647;
+
+  }
+}
+
 .site-header {
   background: $esds-color-background-dark-primary;
   @media screen and (min-width: $desktop-width) {
