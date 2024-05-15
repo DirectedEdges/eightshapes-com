@@ -3,160 +3,21 @@ title_tag : EightShapes, a UX and Design Systems Agency
 layout : base.njk
 show_site_header: false
 ---
-<div class="site-header">
-  <div class="home-hero">
-    <div class="home-hero-controls">
-      <div class="home-hero-logo">
-      {% include './_icons/eightshapes-logo.svg' %}
-      </div>
-      <p class="home-hero-tagline">
-        We design digital products and systems that make for clear, usable, beautiful, and cohesive experiences.
-      </p>
-      <ul class="home-hero-services-list">
-        <li>
-          <button class="selected" data-slide-id="information-architecture">
-            <span class="home-hero-selected-icon">{% include './_icons/angle-right.svg' %}</span>
-            Information Architecture
-          </button>
-        </li>
-        <li>
-          <button data-slide-id="user-experience-design">
-            <span class="home-hero-selected-icon">{% include './_icons/angle-right.svg' %}</span>
-            User Experience Design
-          </button>
-        </li>
-        <li>
-          <button data-slide-id="design-systems">
-            <span class="home-hero-selected-icon">{% include './_icons/angle-right.svg' %}</span>
-            Design Systems
-          </button>
-        </li>
-      </ul>
-    </div>
-    <div class="home-hero-slides">
-
-      <div id="information-architecture" class="home-hero-slide information-architecture selected">
-        <div class="home-hero-image-wrap">
-          <img src="/images/homepage/information_architecture.jpg" role="presentation" class="home-hero-image"/>
+<div class="home-closing row">
+    <div class="home-closing-goodbye__inner row-inner">
+        <div class="home-hero-logo">
+        {% include './_icons/eightshapes-logo.svg' %}
         </div>
-        <a href="/information-architecture" class="home-hero-card teal">
-          <div class="home-hero-card-inner">
-            <h2 class="eyebrow eyebrow--large">Information Architecture</h2>
-            <p>We’ve been organizing information for 25 years. We’ve categorized it all -- from storage devices to childrens books.</p>
-            <span class="button">Learn more</span>
-          </div>
-        </a>
-      </div>
-
-      <div  id="user-experience-design" class="home-hero-slide user-experience">
-        <div class="home-hero-image-wrap">
-          <img src="/images/homepage/user_experience_design.jpg" role="presentation" class="home-hero-image"/>
-        </div>
-        <a href="/user-experience-design" class="home-hero-card secondary">
-          <div class="home-hero-card-inner">
-            <h2 class="eyebrow eyebrow--large">User Experience Design</h2>
-            <p>Discover user needs and design end-to-end journeys that enable users and businesses to succeed.</p>
-            <span class="button">Learn more</span>
-          </div>
-        </a>
-      </div>
-
-      <div id="design-systems" class="home-hero-slide design-systems">
-        <div class="home-hero-image-wrap">
-          <img src="/images/homepage/design_systems.jpg" role="presentation" class="home-hero-image"/>
-        </div>
-        <a href="/design-systems" class="home-hero-card brand">
-          <div class="home-hero-card-inner">
-            <h2 class="eyebrow eyebrow--large">Design Systems</h2>
-            <p>Build a foundation of style and components to scale design and development across an enterprise.</p>
-            <span class="button">Learn more</span>
-          </div>
-        </a>
-      </div>
-
-
-    </div>
-  </div>
-</div>
-
-<div class="row reverse secondary">
-  <div class="row-inner">
-    <h2>Our experience</h2>
-    <p>
-      EightShapes serves clients across many industries and domains:
-    </p>
-    <ul class="client-list homepage">
-      <li>Marriott</li>
-      <li>Salesforce</li>
-      <li>Sonatype</li>
-      <li>Cisco</li>
-      <li>Atlassian</li>
-      <li>Travelers Insurance</li>
-      <li>Alcatel-Lucent</li>
-      <li>National Council of Architecture Review Boards</li>
-      <li>Twitter</li>
-      <li>Ritz-Carlton</li>
-      <li>NetApp</li>
-      <li>Cvent</li>
-      <li>Rally Health</li>
-      <li>World Bank</li>
-      <li>Verizon</li>
-      <li>Juvenile Diabetes Research Foundation</li>
-      <li>Morningstar</li>
-      <li>Google</li>
-      <li>Capital One</li>
-      <li>Target</li>
-      <li>AstraZeneca</li>
-      <li>Houghton Mifflin Harcourt</li>
-      <li>PayPal</li>
-      <li>American Chemical Society</li>
-    </ul>
-  </div>
-</div>
-
-<div class="row secondary">
-  <div class="row-inner">
-    <h2>Who we are</h2>
-    <p>
-      Tenacious in solving complex problems, we believe successful projects depend on transparency, discipline, and cooperation.
-    </p>
-    <div class="thumbnails">
-        <a href="/dan-brown" class="thumbnail">
-            <div class="thumbnail_image-wrap">
-              <img class="thumbnail_image" src="/images/bios/bio-thumb-dan-brown.png" alt="Dan Brown">
-            </div>
-            <h4 class="thumbnail_name">Dan Brown</h4>
-            <p class="secondary-text">Founder</p>
-        </a>
-
-        <a href="/nathan-curtis" class="thumbnail">
-            <div class="thumbnail_image-wrap">
-              <img class="thumbnail_image" src="/images/bios/bio-thumb-nathan-curtis.png" alt="Nathan Curtis">
-            </div>
-            <h4 class="thumbnail_name">Nathan Curtis</h4>
-            <p class="secondary-text">Founder</p>
-        </a>
-
-        <a href="/james-melzer" class="thumbnail">
-            <div class="thumbnail_image-wrap">
-              <img class="thumbnail_image" src="/images/bios/bio-thumb-james-melzer.png" alt="James Melzer">
-            </div>
-            <h4 class="thumbnail_name">James Melzer</h4>
-            <p class="secondary-text">Sr. Director, UX</p>
-        </a>
-        <div class="thumbnail_spacer"></div>
-    </div>
-  </div>
-</div>
-
-<div class="row reverse brand">
-    <div class="row-inner">
-        <h2>Ready?</h2>
-        <p>
-            Whether to set up office hours, a workshop, or explore a larger project, contact EightShapes to get started.
-        </p>
-
-        <a class="button" href="mailto:info@eightshapes.com">Email Us</a>
+        <p>May 15, 2024</p>
+        <p>Goodbye, EightShapes</p>
+        <p>EightShapes opened in 2006 to bring high quality user experience and information architecture consulting to Washington, DC. It started as just us - Nathan Curtis and Dan Brown - but in two years grew to half a dozen designers and soon to sixteen. We served a range of industries including finance, high tech, non-profit, professional services, pharmaceutical, real estate, and associations across the US and in Europe too.</p>
+        <p>We are proud of what EightShapes became. We helped people grow while delivering value. We created elegant and useful experiences. We consulted with hundreds of companies on projects involving user experience, product design and discovery, front end development, user research, and of course information architecture. We led or advised over 100 design system teams. We employed 27 people over our 18-year history and partnered with 57 more subcontractors.  </p>
+        <p>Numbers alone do not tell the whole story. EightShapes became a well-known name in user experience and technology circles. We shared our knowledge with the community. We gave workshops and talks all over the world, wrote articles that defined the industry, published books, created indispensable tools, served on W3C working groups, and contributed to and produced podcasts. Even one of the first tools we made - EightShapes Unify for Adobe InDesign (!) - still gets shout-outs.</p>
+        <p>To turn 18 is to hit a point of transition. Many leave home at 18 to continue their journey but begin new adventures. And so it is for those of us at EightShapes.</p>
+        <p>We, <a href="https://www.linkedin.com/in/nathancurtis/">Nathan</a> and <a href="https://www.linkedin.com/in/danmbrown/">Dan</a>, are ready for a change. Our individual journeys will continue, but EightShapes will wind down this summer. In its place, we are each starting new companies that build on what we're doing while also pursuing new directions. Keep an eye on our LinkedIn profiles for news about our next moves.</p>
+        <p>We are forever grateful to those we worked with and took a chance on us. Thank you team members for your hard work and unflagging commitment to quality -- especially James Melzer, with us until the end. Thank you clients who understood that a small team can do so much. Thank you design community for your interest in our work: your enthusiasm fuels our engines.</p>
+        <p>EightShapes may be going quietly into the night, but individually we will continue to offer services, contribute to the field, and engage the community. We will find new homes for resources. But rest assured our writing will remain on <strong>Medium</strong>, the <strong>Contrast Grid</strong> on the web, Nathan and Kevin's <strong>Specs plug-in</strong> in Figma, and Dan's <strong>information architecture podcast</strong> on most platforms.</p>
+        <p>One thing that hasn't changed: Our inboxes are always open. No matter what banner we carry, we always look forward to interacting with colleagues, clients, and our community.</p>
     </div>
 </div>
 
